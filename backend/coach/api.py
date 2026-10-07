@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field, field_validator
 from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from coach import activities, chatgpt, db, garmin_jobs, garmin_schedule, memory
+from coach import activities, chatgpt, db, garmin_jobs, garmin_schedule, memory, planning
 from coach.config import data_dir, web_settings
 from coach.secrets import read_secret
 
@@ -165,6 +165,7 @@ def dashboard():
         "notes": db.history("notes", 20),
         "messages": db.history("messages", 40),
         "memory_cards": [f for f in memory.state()["facts"] if f.get("chat_message_id")],
+        "planning_cards": planning.cards(),
         "garmin_job": garmin_jobs.status(),
         "coverage": {"activities": db.coverage("activity"), "health": db.coverage("health")},
         "integrations": {
@@ -270,6 +271,35 @@ def resume_sync():
 @app.post("/api/garmin/jobs/cancel", dependencies=[Depends(require_session)])
 def cancel_sync():
     return garmin_jobs.cancel()
+
+
+@app.get("/api/planning", dependencies=[Depends(require_session)])
+def planning_calendar(start: date, end: date):
+    try:
+        return planning.calendar(start, end)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.post("/api/planning", status_code=201, dependencies=[Depends(require_session)])
+def add_planned_session(body: planning.Session):
+    try:
+        return planning.create(body)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.put("/api/planning/{key}", dependencies=[Depends(require_session)])
+def edit_planned_session(key: str, body: planning.Session):
+    try:
+        result = planning.update(key, body)
+        if result is None:
+            raise HTTPException(404, "Séance introuvable.")
+        return result
+    except planning.Conflict as exc:
+        raise HTTPException(409, str(exc)) from None
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
 
 
 @app.put("/api/profile", dependencies=[Depends(require_session)])
@@ -621,6 +651,7 @@ def coach_context(question="", recent_ids=()):
         ]
         selection["details_limited_to"] = 30
     return {
+        "planning": planning.context(),
         "selected_activity_period": selection,
         "as_of": db.now(),
         "profile": db.profile(),
@@ -650,6 +681,7 @@ def chat(body: Chat):
         answer, usage = chatgpt.respond(body.model, context, messages)
         usage = dict(usage)
         proposals = usage.pop("_memory_proposals", [])
+        plan_proposals = usage.pop("_planning_proposals", [])
         if not answer.strip():
             raise ValueError("Réponse vide.")
         source_id = db.append("messages", body.content, "user")
@@ -663,12 +695,22 @@ def chat(body: Chat):
             )
         except Exception:
             pass  # Completed replies remain valid if suggestion storage is unavailable.
+        plan_cards = []
+        try:
+            plan_cards = planning.propose(plan_proposals, assistant_id)
+        except Exception:
+            pass  # Planning failures never discard the completed answer.
         db.upsert_record("integration", "chatgpt", {"last_response_at": db.now(), "usage": usage})
         try:
             memory.launch(body.model)
         except Exception:
             pass  # A derived-memory failure must never discard a completed chat.
-        return {"content": answer, "usage": usage, "memory_proposals": cards}
+        return {
+            "content": answer,
+            "usage": usage,
+            "memory_proposals": cards,
+            "planning_proposals": plan_cards,
+        }
     except ValueError as exc:
         raise HTTPException(503, str(exc)) from None
     except Exception:

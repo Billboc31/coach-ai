@@ -86,3 +86,17 @@ Les fiches utilisent records/activity et un cache séparé records/activity_deta
 mesures autorisées du summaryDTO et des lapDTOs. Les tours sont plafonnés ; aucune récupération
 massive de détails pendant le backfill. La recherche et les totaux s’effectuent en SQL avec
 paramètres et ownership. Les valeurs manquantes restent null. Aucun nouveau schéma ni appel IA.
+
+## Planning multisport
+
+Records/planned_session conserve chaque séance avec UUID, dates locales, état, révision,
+source et historique borné. Les mutations sont sérialisées ; elles exigent la révision actuelle.
+Le lien Garmin est propriétaire, existant et unique entre séances réalisées. Les mesures
+Garmin restent distinctes des consignes et durées prévues. L’API de calendrier lit par période
+avec paramètres SQL et ownership, plafonds signalés ; elle convertit les dates GMT sans date
+locale vers le fuseau du profil. Aucun changement du schéma SQLite.
+Le même appel coach propose au maximum cinq séances structurées ; le serveur valide les dates,
+les sports et les champs, force le statut proposed et retire les liens Garmin. Les suggestions
+sont attachées au message assistant, confirmables dans le chat et visibles dans le calendrier.
+Les séances prévues/réalisées et leurs statuts intègrent le contexte coach. Aucun outil de mutation
+libre pour le modèle ni rapprochement implicite Garmin : confirmation/liaison restent explicites.

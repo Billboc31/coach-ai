@@ -108,6 +108,12 @@ Dépendances : GYM-02, COACH-02. Progression par exercice, proposition prochaine
 réps, RPE et déduplication de la charge multisport.
 
 ### PLAN-01 — Semaine multisport (P1)
+Livré : calendrier mensuel et agenda du jour, séances manuelles, propositions du coach dans
+la réponse avec confirmation/ajustement/refus, modification/annulation/réalisation, liens
+Garmin explicites uniques, activités réalisées dans le calendrier, contexte du planning pour
+le coach, révisions et historique borné. Tests simulés passent ; validation réelle du calendrier
+et de la pertinence des propositions à effectuer. Restent : vue semaine avancée, récurrences,
+propositions de déplacement/remplacement, agenda externe et envoi des entraînements vers Garmin.
 Dépendances : COACH-02. Agenda des séances/matchs, priorités, disponibilités et adaptations
 expliquées ; suggestions soumises à validation. Critères : déplacement cohérent, historique des
 changements, contraintes respectées et distinction séance planifiée/réalisée.

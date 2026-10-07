@@ -226,3 +226,30 @@ supplémentaire attend sa fin. Un échec conserve les détails précédents. Le 
 est limité à 500 par séance. Courbes, tracé GPS, FIT et séries de musculation restent à développer.
 L’interface ouverte vérifie les nouvelles données toutes les 30 secondes, sans recharger la page.
 Les tests de ce lot sont simulés ; vérifier mesures et tours sur les vraies séances Garmin.
+
+### Calendrier multisport
+
+**Mon planning** affiche un calendrier mensuel et l’agenda du jour sélectionné : propositions
+du coach, séances prévues, séances déclarées réalisées et activités Garmin synchronisées.
+Ajouter/modifier permet de choisir sport, date, heure facultative, durée et consignes. Les
+séances peuvent être annulées, marquées faites ou reliées explicitement à une activité Garmin.
+Le rapprochement reste manuel pour éviter d’associer à tort deux entraînements du même sport.
+Un lien ne peut servir à deux séances. Les totaux du mois et les cases du calendrier ne comptent
+pas deux fois une séance liée à une activité Garmin. Les dates Garmin sans heure locale sont
+converties dans le fuseau du profil. Cliquer une activité ouvre sa fiche.
+
+**Organiser avec mon coach** prépare une demande dans la discussion. La réponse peut proposer
+jusqu’à cinq nouvelles séances datées, chacune avec **Ajouter au planning**, **Ajuster** ou
+**Ignorer**. Elles restent proposées avant confirmation ; une proposition ne peut pas déclarer
+une séance réalisée ni lui associer un identifiant Garmin. Le modèle reçoit les séances des
+14 derniers jours et des 60 prochains jours, avec leurs statuts et le fuseau/date du profil.
+Ces propositions utilisent le même appel IA que la réponse, sans appel supplémentaire pour
+les créer. Si le modèle répond sans propositions structurées valides, aucun ajout n’est fait.
+La pertinence des séances suggérées reste à évaluer sur de vraies discussions.
+
+Les modifications persistent avec révision et historique limité aux 50 états précédents.
+Une modification concurrente renvoie un conflit sans écraser la version récente. La vue est
+limitée à 400 séances et 500 activités par période de 93 jours maximum, avec signalement de
+troncature. Les propositions restent disponibles dans le calendrier après sortie de l’historique
+récent du chat. Ce lot ne synchronise pas de calendrier externe, n’envoie pas de séances vers
+la montre et ne déplace pas automatiquement les séances existantes : les ajuster dans le planning.
