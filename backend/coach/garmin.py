@@ -14,6 +14,7 @@ from garminconnect import (
 
 from coach import db
 from coach.config import data_dir
+from coach.garmin_lock import storage_lock
 from coach.secrets import read_secret, write_secret
 
 
@@ -27,6 +28,11 @@ def validate_session(value: object) -> dict:
 
 
 def import_session(value: dict) -> None:
+    with storage_lock():
+        _import_session(value)
+
+
+def _import_session(value: dict) -> None:
     """Verify existing authorization on this host before replacing saved credentials."""
     value = validate_session(value)
     logging.getLogger("garminconnect").setLevel(logging.CRITICAL)
@@ -77,6 +83,11 @@ def session_path():
 
 
 def authenticate(reauth: bool = False) -> bool:
+    with storage_lock():
+        return _authenticate(reauth)
+
+
+def _authenticate(reauth: bool = False) -> bool:
     """Interactive local login; credentials never pass through the web application."""
     logging.getLogger("garminconnect").setLevel(logging.CRITICAL)
     if not reauth:
@@ -110,6 +121,11 @@ def authenticate(reauth: bool = False) -> bool:
 
 
 def sync(days: int = 7) -> dict:
+    with storage_lock():
+        return _sync(days)
+
+
+def _sync(days: int = 7) -> dict:
     """Idempotent sync. Persist successful sources; never replace missing values with zero."""
     client = Garmin()
     client.login(session_path())

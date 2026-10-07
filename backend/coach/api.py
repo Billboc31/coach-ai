@@ -3,6 +3,8 @@ import os
 import secrets
 import threading
 import time
+from contextlib import asynccontextmanager
+from datetime import date
 from pathlib import Path
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
@@ -13,12 +15,20 @@ from pydantic import BaseModel, Field, field_validator
 from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from coach import chatgpt, db
+from coach import chatgpt, db, garmin_jobs
 from coach.config import data_dir, web_settings
 from coach.secrets import read_secret
 
 settings = web_settings()
-app = FastAPI(title="Coach AI", docs_url=None, redoc_url=None, openapi_url=None)
+
+
+@asynccontextmanager
+async def lifespan(app):
+    garmin_jobs.recover(sync_lock)
+    yield
+
+
+app = FastAPI(title="Coach AI", docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan)
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=settings.hosts)
 sessions: dict[str, float] = {}
 login_attempts: dict[str, list[float]] = {}
@@ -76,6 +86,19 @@ class Chat(Note):
     model: str = Field(min_length=1, max_length=100)
 
 
+class SyncPeriod(BaseModel):
+    mode: str = "range"
+    start: date | None = None
+    end: date | None = None
+
+    @field_validator("mode")
+    @classmethod
+    def valid_mode(cls, value):
+        if value not in {"range", "all"}:
+            raise ValueError("Choisir range ou all")
+        return value
+
+
 @app.get("/api/health")
 def health():
     return {"status": "ok", "version": "0.1.0"}
@@ -125,15 +148,15 @@ def logout(request: Request, response: Response):
 def dashboard():
     garmin = db.records("integration", 5)
     account = read_secret(chatgpt.credential_path())
-    activities = sorted(
-        db.records("activity", 100), key=lambda r: r["data"].get("startTimeGMT", ""), reverse=True
-    )
+    activities = db.activity_page(0, 20)
     return {
         "profile": db.profile(),
         "activities": activities[:20],
         "health": db.records("health", 7),
         "notes": db.history("notes", 20),
         "messages": db.history("messages", 40),
+        "garmin_job": garmin_jobs.status(),
+        "coverage": {"activities": db.coverage("activity"), "health": db.coverage("health")},
         "integrations": {
             "garmin": next((r["data"] for r in garmin if r["key"] == "garmin"), None),
             "chatgpt": {
@@ -142,6 +165,39 @@ def dashboard():
             },
         },
     }
+
+
+@app.get("/api/activities", dependencies=[Depends(require_session)])
+def activities_page(offset: int = 0):
+    if offset < 0:
+        raise HTTPException(422, "Pagination invalide.")
+    return {"items": db.activity_page(offset, 50), "total": db.coverage("activity")["count"]}
+
+
+@app.get("/api/garmin/jobs", dependencies=[Depends(require_session)])
+def sync_status():
+    return garmin_jobs.status()
+
+
+@app.post("/api/garmin/jobs", status_code=202, dependencies=[Depends(require_session)])
+def start_sync(body: SyncPeriod):
+    try:
+        return garmin_jobs.launch(sync_lock, mode=body.mode, start=body.start, end=body.end)
+    except ValueError as exc:
+        raise HTTPException(409 if sync_lock.locked() else 422, str(exc)) from None
+
+
+@app.post("/api/garmin/jobs/resume", status_code=202, dependencies=[Depends(require_session)])
+def resume_sync():
+    try:
+        return garmin_jobs.launch(sync_lock, resume=True)
+    except ValueError as exc:
+        raise HTTPException(409, str(exc)) from None
+
+
+@app.post("/api/garmin/jobs/cancel", dependencies=[Depends(require_session)])
+def cancel_sync():
+    return garmin_jobs.cancel()
 
 
 @app.put("/api/profile", dependencies=[Depends(require_session)])
@@ -234,22 +290,29 @@ def coach_context():
     recovery = []
     for record in db.records("health", 7):
         h = record["data"]
-        summary = h.get("summary") or {}
-        sleep = (h.get("sleep") or {}).get("dailySleepDTO") or {}
+
+        def fresh(source):
+            state = h.get("_sources", {}).get(source, {}).get("status")
+            return h.get(source) if state in {None, "ok"} else None
+
+        summary = fresh("summary") or {}
+        sleep = (fresh("sleep") or {}).get("dailySleepDTO") or {}
         recovery.append(
             {
                 "date": record["key"],
                 "steps": summary.get("totalSteps"),
-                "resting_hr": (h.get("heart_rate") or {}).get("restingHeartRate"),
+                "resting_hr": (fresh("heart_rate") or {}).get("restingHeartRate"),
                 "sleep_seconds": sleep.get("sleepTimeSeconds"),
-                "hrv": (h.get("hrv") or {}).get("hrvSummary"),
-                "readiness": h.get("readiness"),
+                "hrv": (fresh("hrv") or {}).get("hrvSummary"),
+                "readiness": fresh("readiness"),
+                "sources": h.get("_sources", {}),
             }
         )
     return {
         "as_of": db.now(),
         "profile": db.profile(),
         "recent_activities": activities[:10],
+        "history_months": db.activity_months(),
         "activity_units": {"distance": "meters", "duration": "seconds", "heart_rate": "bpm"},
         "recovery": recovery,
         "notes": [

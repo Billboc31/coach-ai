@@ -90,6 +90,61 @@ def records(kind: str, limit: int = 30) -> list[dict]:
     return [{"key": r[0], "data": json.loads(r[1]), "updated_at": r[2]} for r in rows]
 
 
+def record(kind: str, key: str) -> dict:
+    with connection() as conn:
+        row = conn.execute(
+            text("SELECT data FROM records WHERE user_id=:u AND kind=:k AND record_key=:r"),
+            {"u": user_id(), "k": kind, "r": key},
+        ).first()
+    return json.loads(row[0]) if row else {}
+
+
+def coverage(kind: str) -> dict:
+    with connection() as conn:
+        row = conn.execute(
+            text(
+                "SELECT COUNT(*), MIN(record_key), MAX(record_key) FROM records "
+                "WHERE user_id=:u AND kind=:k"
+            ),
+            {"u": user_id(), "k": kind},
+        ).first()
+    return {"count": row[0], "first": row[1], "last": row[2]}
+
+
+def activity_page(offset: int, limit: int) -> list[dict]:
+    with connection() as conn:
+        rows = conn.execute(
+            text(
+                "SELECT record_key,data,updated_at FROM records WHERE user_id=:u AND kind='activity' "
+                "ORDER BY COALESCE(json_extract(data,'$.startTimeLocal'), "
+                "json_extract(data,'$.startTimeGMT'), '') DESC, record_key DESC LIMIT :l OFFSET :o"
+            ),
+            {"u": user_id(), "l": limit, "o": offset},
+        ).all()
+    return [{"key": r[0], "data": json.loads(r[1]), "updated_at": r[2]} for r in rows]
+
+
+def activity_months() -> list[dict]:
+    with connection() as conn:
+        rows = (
+            conn.execute(
+                text(
+                    "SELECT substr(COALESCE(json_extract(data,'$.startTimeLocal'), "
+                    "json_extract(data,'$.startTimeGMT')),1,7) AS month, "
+                    "json_extract(data,'$.activityType.typeKey') AS sport, COUNT(*) AS activities, "
+                    "SUM(json_extract(data,'$.duration')) AS duration_seconds, "
+                    "SUM(json_extract(data,'$.distance')) AS distance_meters "
+                    "FROM records WHERE user_id=:u AND kind='activity' GROUP BY month,sport "
+                    "ORDER BY month DESC, sport LIMIT 120"
+                ),
+                {"u": user_id()},
+            )
+            .mappings()
+            .all()
+        )
+    return [dict(r) for r in rows]
+
+
 def append(table: str, content: str, role: str | None = None):
     if table not in {"messages", "notes"}:
         raise ValueError("Unknown table")

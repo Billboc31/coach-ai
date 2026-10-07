@@ -32,11 +32,17 @@ comme si son 127.0.0.1 pointait vers le serveur. Critères : accès mobile autor
 session, déconnexion, démarrage documenté, aucune fuite de jeton. Pas de déploiement public implicite.
 
 ### GARMIN-02 — Synchronisation planifiée et backfill (P1)
+Livré : périodes et historique d’activités paginé, dix sources santé, progression persistante,
+reprise/arrêt, verrou CLI/API, backoff borné, provenance et pagination UI. Import complet réel
+à valider sur Railway. Restent : planification récurrente et détails/FIT d’activités.
 Dépendances : VALID-01. Import historique paginé et reprise incrémentale, planning configurable,
 backoff sur limite, verrou partagé CLI/API. Critères : pas de doublon après reprise ; source
 manquante signalée, dernier succès/échec, déconnexion propre, tests de panne.
 
 ### HEALTH-02 — Provenance et récupération (P1)
+Partiellement livré : état et date de lecture par source pour les nouveaux imports ; le contexte
+coach exclut les anciennes valeurs dont une nouvelle lecture a échoué. Normalisation/tendances
+approfondies et conversion des anciens enregistrements restent à faire.
 Dépendances : GARMIN-02. Enregistrer la date de lecture et validité par source ; normaliser FC,
 sommeil, VFC, readiness selon la montre. Éviter qu’une ancienne source conservée paraisse fraîche.
 Critères : unités explicites, null distingué de zéro, tendances vérifiables, dates/fuseaux testés.

@@ -69,6 +69,36 @@ le serveur devient responsable du renouvellement. Un redémarrage du serveur sui
 synchronisation permet de vérifier la persistance ; le renouvellement reste à valider dans
 la durée. La planification automatique est encore le ticket GARMIN-02.
 
+### Import historique depuis l’interface
+
+Dans Connexions → Garmin, choisir 7/30/90/365 jours, une période personnalisée ou tout
+l’historique accessible. Le bouton démarre un travail en arrière-plan ; les compteurs,
+la date traitée, les erreurs et la fin de synchronisation sont visibles. La page peut
+être fermée. Arrêter et Reprendre permettent de conserver les résultats déjà enregistrés.
+
+Le mode complet récupère les activités par pages jusqu’à épuisement. Les données santé
+commencent à la première activité trouvée ; une date explicite permet d’importer les
+mesures antérieures. Il n’existe pas de date de première mesure fiable utilisée par ce
+lot : pour une montre utilisée avant les premières activités, préciser cette date.
+
+Sources santé : résumé quotidien, sommeil, FC, VFC, readiness, stress, Body Battery,
+respiration, SpO2 et composition corporelle si accessibles. Chaque source garde son état
+et sa date de lecture. Une absence ne devient pas zéro ; une ancienne lecture conservée
+ne devient pas fraîche. L’historique visible est paginé par 50 activités. Les agrégats
+mensuels par sport sont disponibles dans le contexte du coach (120 groupes maximum),
+sans transmettre l’intégralité des réponses Garmin au modèle.
+
+Les checkpoints sont enregistrés dans SQLite après chaque page et journée ; un import
+en cours est repris au prochain démarrage du serveur. Une page d’activités peut être rejouée
+sans doublon. En cas de 429, pauses progressives de 60/120/240 secondes puis état En pause ;
+un 403 ou une erreur d’authentification arrête le travail. Un verrou de fichier sérialise
+la session avec les opérations CLI. Garder une seule réplique et désactiver la mise en veille.
+
+Le premier import peut prendre plusieurs heures selon la profondeur et les réponses Garmin.
+Ce n’est pas une sauvegarde intégrale du compte Garmin : les fichiers FIT/GPX, courbes et
+splits détaillés des activités, équipements, nutrition et autres domaines ne sont pas
+importés par ce lot. Les limites de conservation du fournisseur restent applicables.
+
 ChatGPT : la CLI actuelle utilise un callback sur `127.0.0.1` de l’ordinateur local.
 Ce parcours ne fonctionne pas directement depuis l’interface Railway. L’éligibilité et
 l’authentification d’une application hébergée sont à traiter séparément avant d’activer
