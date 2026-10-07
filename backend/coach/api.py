@@ -159,6 +159,7 @@ def dashboard():
         "health": db.records("health", 7),
         "notes": db.history("notes", 20),
         "messages": db.history("messages", 40),
+        "memory_cards": [f for f in memory.state()["facts"] if f.get("chat_message_id")],
         "garmin_job": garmin_jobs.status(),
         "coverage": {"activities": db.coverage("activity"), "health": db.coverage("health")},
         "integrations": {
@@ -575,19 +576,30 @@ def chat(body: Chat):
         suppressed = set(memory.state()["suppressed_ids"])
         recent = [m for m in db.history("messages", 20) if m["id"] not in suppressed]
         messages = recent + [{"role": "user", "content": body.content}]
-        answer, usage = chatgpt.respond(
-            body.model, coach_context(body.content, [m["id"] for m in recent]), messages
-        )
+        context = coach_context(body.content, [m["id"] for m in recent])
+        context["request_memory_proposals"] = True
+        answer, usage = chatgpt.respond(body.model, context, messages)
+        usage = dict(usage)
+        proposals = usage.pop("_memory_proposals", [])
         if not answer.strip():
             raise ValueError("Réponse vide.")
-        db.append("messages", body.content, "user")
-        db.append("messages", answer, "assistant")
+        source_id = db.append("messages", body.content, "user")
+        assistant_id = db.append("messages", answer, "assistant")
+        cards = []
+        try:
+            cards = memory.propose_from_reply(
+                proposals,
+                {"id": source_id, "role": "user", "content": body.content, "created_at": db.now()},
+                assistant_id,
+            )
+        except Exception:
+            pass  # Completed replies remain valid if suggestion storage is unavailable.
         db.upsert_record("integration", "chatgpt", {"last_response_at": db.now(), "usage": usage})
         try:
             memory.launch(body.model)
         except Exception:
             pass  # A derived-memory failure must never discard a completed chat.
-        return {"content": answer, "usage": usage}
+        return {"content": answer, "usage": usage, "memory_proposals": cards}
     except ValueError as exc:
         raise HTTPException(503, str(exc)) from None
     except Exception:

@@ -154,10 +154,11 @@ def append(table: str, content: str, role: str | None = None):
     with connection() as conn:
         if table == "messages":
             params["r"] = role
-            conn.execute(
+            inserted = conn.execute(
                 text("INSERT INTO messages(user_id,role,content,created_at) VALUES (:u,:r,:c,:t)"),
                 params,
             )
+            return inserted.lastrowid
         else:
             conn.execute(
                 text("INSERT INTO notes(user_id,content,created_at) VALUES (:u,:c,:t)"), params

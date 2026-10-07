@@ -236,7 +236,13 @@ def update(model):
             signature = hashlib.sha256(
                 (fact["category"] + fact["content"].casefold()).encode()
             ).hexdigest()
-            if signature not in signatures and len(value["facts"]) < 200:
+            duplicate_source = any(
+                f["category"] == fact["category"]
+                and f["source_ids"] == fact["source_ids"]
+                and f.get("quote") == fact.get("quote")
+                for f in value["facts"]
+            )
+            if signature not in signatures and not duplicate_source and len(value["facts"]) < 200:
                 value["facts"].append({**fact, "id": str(uuid.uuid4())})
                 signatures.add(signature)
         value.update(
@@ -384,3 +390,52 @@ def activity_selection(question):
     if start and end and start > end:
         return None
     return db.period_activities(start, end, sports)
+
+
+def propose_from_reply(proposals, source, assistant_id):
+    """Source-grounded suggestions from the same inference as the coach's reply."""
+    if not isinstance(proposals, list):
+        return []
+    checked = []
+    for proposal in proposals[:3]:
+        if not isinstance(proposal, dict):
+            continue
+        try:
+            _, facts = validated_result(
+                json.dumps(
+                    {
+                        "summary": "Proposition dans le chat.",
+                        "facts": [{**proposal, "source_id": source["id"]}],
+                    }
+                ),
+                [source],
+            )
+            checked.extend(facts)
+        except (ValueError, TypeError):
+            continue
+    with mutation_lock:
+        value = state()
+        added = []
+        for fact in checked:
+            if len(value["facts"]) >= 200:
+                break
+            if any(
+                (
+                    f["category"] == fact["category"]
+                    and (
+                        f["content"].casefold() == fact["content"].casefold()
+                        or (
+                            f["source_ids"] == fact["source_ids"]
+                            and f.get("quote") == fact["quote"]
+                        )
+                    )
+                )
+                for f in value["facts"]
+            ):
+                continue
+            saved = {**fact, "id": str(uuid.uuid4()), "chat_message_id": assistant_id}
+            value["facts"].append(saved)
+            added.append(saved)
+        if added:
+            save(value)
+        return added

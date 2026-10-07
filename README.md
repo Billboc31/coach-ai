@@ -127,8 +127,14 @@ la première authentification Garmin/MFA reste locale dans ce lot.
 L’onglet **Mémoire** permet d’ajouter, confirmer, corriger, archiver et supprimer les
 informations utiles au coach. Catégories : objectif, contrainte, préférence, décision et
 contexte santé. Une date de fin facultative empêche un souvenir périmé d’être considéré
-comme actuel. Les faits proposés automatiquement restent à confirmer ; leur citation et
-l’identifiant/date du message source sont visibles.
+comme actuel. Les nouveaux faits exprimés dans un message peuvent être proposés directement
+sous la réponse du coach : **Confirmer**, **Corriger**, **Ignorer**. La correction s’effectue
+sur place et confirme la version corrigée. Les boutons et leur état persistent après rechargement.
+Ces propositions viennent du même appel IA que la réponse, sans appel d’extraction supplémentaire.
+Elles sont vérifiées contre une citation exacte du dernier message utilisateur avant enregistrement.
+Une sortie non sourcée est ignorée. Une proposition ne devient active qu’après confirmation.
+L’onglet Mémoire reste disponible pour gérer l’ensemble et voir les sources. Le résumé périodique
+peut également proposer des souvenirs provenant des échanges plus anciens.
 
 Le résumé est généré en arrière-plan après 10 nouveaux messages (5 échanges réussis),
 avec le modèle de la discussion. L’actualisation manuelle permet de traiter les échanges

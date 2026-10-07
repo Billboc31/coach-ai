@@ -56,7 +56,8 @@ déduplication, correction, suppression/export ; aucun fichier personnel dans le
 
 ### MEM-02 — Profil et mémoire temporelle (P1)
 Livré pour les conversations de l’app : souvenirs manuels et propositions sourcées, validation,
-correction, suppression/archive/refus, expiration, résumé daté avec checkpoint, contrôle des
+correction, suppression/archive/refus, expiration, cartes Confirmer/Corriger/Ignorer dans le chat
+dès la réponse (sans appel IA supplémentaire), résumé daté avec checkpoint, contrôle des
 révisions concurrentes, option automatique et UI. Les anciens objectifs ne sont pas automatiquement
 confirmés. Validation réelle et qualité des résumés à évaluer ; import ChatGPT reste MEM-01.
 Dépendances : MEM-01. Extraire objectifs, contraintes et décisions proposés au propriétaire ;

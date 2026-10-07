@@ -256,7 +256,44 @@ def respond(model: str, context: dict, messages: list[dict]) -> tuple[str, dict]
         "Pour une douleur inhabituelle, adapte prudemment et propose une évaluation appropriée.\n"
         + json.dumps(context, ensure_ascii=False)
     )
+    if context.get("request_memory_proposals"):
+        instructions += (
+            '\nRéponds uniquement en JSON avec {"answer":"ta réponse normale au coach",'
+            '"memory_proposals":[{"content":"souvenir bref","category":"preference",'
+            '"quote":"citation exacte du dernier message utilisateur","expires_on":null}]}.'
+            " Propose au maximum 3 souvenirs durables explicitement déclarés dans le DERNIER "
+            "message utilisateur, catégories goal, constraint, preference, decision ou health_context. "
+            "Les conseils du coach ne sont pas des décisions de l’utilisateur. "
+            "Ne transforme pas un ressenti temporaire en caractéristique durable. "
+            "N’extrais aucun mot de passe, secret ou jeton. expires_on reste null sauf date ISO "
+            "explicite dans la citation. Ne repropose pas un souvenir déjà confirmé. "
+            "Si aucune information durable nouvelle n’est exprimée, renvoie memory_proposals: []. "
+            "N’affirme pas avoir mémorisé une proposition : elle attend la confirmation."
+        )
+        text, usage = complete(model, instructions, messages)
+        return unpack_coach_reply(text, usage)
     return complete(model, instructions, messages)
+
+
+def unpack_coach_reply(text: str, usage: dict) -> tuple[str, dict]:
+    # If a model ignores the JSON request, preserve its ordinary completed answer.
+    cleaned = text.strip()
+    if cleaned.startswith("```"):
+        lines = cleaned.splitlines()
+        if len(lines) >= 3 and lines[-1].strip() == "```":
+            cleaned = "\n".join(lines[1:-1])
+    try:
+        value = json.loads(cleaned)
+    except ValueError:
+        if cleaned.startswith("{"):
+            raise ValueError("Réponse du coach mal formatée ; réessaye.") from None
+        return text, usage
+    if not isinstance(value, dict) or not isinstance(value.get("answer"), str):
+        raise ValueError("Réponse du coach mal formatée ; réessaye.")
+    proposals = value.get("memory_proposals", [])
+    if not isinstance(proposals, list):
+        proposals = []
+    return value["answer"], {**usage, "_memory_proposals": proposals[:3]}
 
 
 def complete(model: str, instructions: str, messages: list[dict]) -> tuple[str, dict]:

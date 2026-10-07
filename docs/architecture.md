@@ -45,6 +45,12 @@ Un seul worker de résumé par process, en arrière-plan ; échec sans perte, st
 après restart, reprise manuelle ou lors d’un prochain échange éligible. Une seule réplique.
 L’extraction exige des citations exactes d’un message utilisateur du lot ; aucune proposition
 n’est automatiquement confirmée. Le résumé demeure une synthèse historique non vérifiée.
+Le chat demande une enveloppe JSON contenant la réponse et au plus trois propositions ancrées
+dans le dernier message utilisateur, dans le même appel Responses. La réponse et les suggestions
+sont séparées avant stockage ; les propositions invalides sont ignorées sans perdre une réponse
+valide. Une sortie JSON mal formée n’est pas enregistrée comme conseil. Les modèles ignorant
+l’enveloppe peuvent toujours fournir une réponse texte, sans suggestion. Les cartes possèdent
+l’ID du message assistant correspondant et leurs états sont conservés dans la mémoire durable.
 
 Le contexte assemble mémoire structurée, résumé, recherche FTS5 sur la question, échanges
 récents, profil/notes et Garmin. Les plafonds figurent dans README. Les outils sémantiques,
