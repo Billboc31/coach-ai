@@ -1,5 +1,6 @@
 import logging
 import re
+import tempfile
 from datetime import date, datetime, timedelta
 from getpass import getpass
 from zoneinfo import ZoneInfo
@@ -13,6 +14,34 @@ from garminconnect import (
 
 from coach import db
 from coach.config import data_dir
+from coach.secrets import read_secret, write_secret
+
+
+def validate_session(value: object) -> dict:
+    fields = {"di_token", "di_refresh_token", "di_client_id"}
+    if not isinstance(value, dict) or set(value) != fields:
+        raise ValueError("Format de session Garmin incompatible.")
+    if any(not isinstance(value[k], str) or not value[k] or len(value[k]) > 32000 for k in fields):
+        raise ValueError("Session Garmin incomplète ou trop volumineuse.")
+    return value
+
+
+def import_session(value: dict) -> None:
+    """Verify existing authorization on this host before replacing saved credentials."""
+    value = validate_session(value)
+    logging.getLogger("garminconnect").setLevel(logging.CRITICAL)
+    with tempfile.TemporaryDirectory(prefix="garmin-check-", dir=data_dir()) as folder:
+        from pathlib import Path
+
+        path = Path(folder) / "garmin_tokens.json"
+        write_secret(path, value)
+        client = Garmin()
+        client.login(folder)
+        client.get_user_summary(date.today().isoformat())
+        # Save any token rotation performed by the validation call, not the old upload.
+        client.client.dump(folder)
+        updated = validate_session(read_secret(path))
+        write_secret(Path(session_path()) / "garmin_tokens.json", updated)
 
 
 def safe_failure(exc: Exception) -> str:

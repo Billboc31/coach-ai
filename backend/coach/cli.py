@@ -10,6 +10,7 @@ def main():
     parser = argparse.ArgumentParser(description="Coach AI : configuration et connexions locales")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("init")
+    sub.add_parser("garmin-transfer")
     garmin = sub.add_parser("garmin-login")
     garmin.add_argument("--reauth", action="store_true")
     sync = sub.add_parser("garmin-sync")
@@ -28,6 +29,10 @@ def main():
                 write_secret(path, saved)
             print("Clé d’accès locale (à saisir dans l’interface, ne pas partager) :")
             print(saved["access_key"])
+        elif args.command == "garmin-transfer":
+            from coach.transfer import transfer
+
+            transfer()
         elif args.command == "garmin-login":
             from coach.garmin import authenticate
 

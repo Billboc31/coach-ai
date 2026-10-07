@@ -1,3 +1,4 @@
+import json
 import os
 import secrets
 import threading
@@ -9,6 +10,7 @@ from fastapi import Depends, FastAPI, HTTPException, Request, Response
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
+from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from coach import chatgpt, db
@@ -154,6 +156,31 @@ def add_note(body: Note):
         raise HTTPException(422, "Note vide.")
     db.append("notes", body.content.strip())
     return {"ok": True}
+
+
+@app.post("/api/garmin/session", dependencies=[Depends(require_session)])
+async def receive_garmin_session(request: Request):
+    # Manual parsing avoids Pydantic echoing rejected credential input in a 422 response.
+    payload = bytearray()
+    async for chunk in request.stream():
+        payload.extend(chunk)
+        if len(payload) > 65536:
+            raise HTTPException(413, "Session trop volumineuse.")
+    from coach.garmin import import_session, safe_failure, validate_session
+
+    try:
+        value = validate_session(json.loads(payload))
+    except (ValueError, UnicodeError):
+        raise HTTPException(422, "Format de session Garmin incompatible.") from None
+    if not sync_lock.acquire(blocking=False):
+        raise HTTPException(409, "Synchronisation déjà en cours.")
+    try:
+        await run_in_threadpool(import_session, value)
+        return {"ok": True}
+    except Exception as exc:
+        raise HTTPException(502, safe_failure(exc)) from None
+    finally:
+        sync_lock.release()
 
 
 @app.post("/api/garmin/sync", dependencies=[Depends(require_session)])

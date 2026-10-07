@@ -44,6 +44,31 @@ Garmin : dans un terminal **du conteneur déployé** (Railway SSH), exécuter
 `coach garmin-login`, puis `coach garmin-sync --days 7`. Le compte et le MFA restent à
 valider. `railway run` exécute localement : ce n’est pas le stockage du conteneur.
 
+### Session Garmin déjà validée sur l’ordinateur
+
+Si la connexion directe échoue sur Railway alors qu’elle fonctionne localement, tester la
+reprise de cette autorisation avec `coach garmin-transfer`, depuis la racine du dépôt sur
+l’ordinateur, environnement Python activé et code à jour (`git pull`). La commande demande
+le domaine HTTPS exact de l’app, puis la clé COACH_ACCESS_KEY avec saisie masquée.
+
+Elle envoie uniquement les trois champs DI de `.local/garmin/garmin_tokens.json` directement
+à l’app protégée. Aucun mot de passe Garmin n’est transmis à Railway. Ne pas envoyer ce
+fichier dans une discussion ou le committer. La commande refuse HTTP et les redirections.
+
+Le serveur contrôle l’accès, l’Origin, le format et la taille du transfert. Il teste une
+lecture Garmin avec les jetons dans un dossier temporaire privé avant de remplacer sa
+session enregistrée ; un échec conserve la précédente. Toute rotation pendant le test
+est enregistrée. La commande lance ensuite une synchronisation depuis Railway et indique
+les nombres récupérés. Le bouton Synchroniser de l’app utilisera ensuite cette session.
+
+Ce test ne garantit pas que Garmin autorisera les lectures ou le renouvellement depuis
+Railway. Un 403 sur la session réutilisée doit être traité comme un refus ; aucun contournement
+de protection ou fallback de connexion automatique n’est ajouté. Après un transfert réussi,
+éviter de synchroniser depuis les deux ordinateurs avec la même copie de la session :
+le serveur devient responsable du renouvellement. Un redémarrage du serveur suivi d’une
+synchronisation permet de vérifier la persistance ; le renouvellement reste à valider dans
+la durée. La planification automatique est encore le ticket GARMIN-02.
+
 ChatGPT : la CLI actuelle utilise un callback sur `127.0.0.1` de l’ordinateur local.
 Ce parcours ne fonctionne pas directement depuis l’interface Railway. L’éligibilité et
 l’authentification d’une application hébergée sont à traiter séparément avant d’activer
