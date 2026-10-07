@@ -50,7 +50,29 @@ def main():
         print("Interrompu.")
         raise SystemExit(130) from None
     except Exception as exc:
-        print("Échec : " + (str(exc) if isinstance(exc, ValueError) else type(exc).__name__))
+        if args.command in {"garmin-login", "garmin-sync"}:
+            from garminconnect import (
+                GarminConnectAuthenticationError,
+                GarminConnectConnectionError,
+                GarminConnectTooManyRequestsError,
+            )
+
+            from coach.garmin import safe_failure
+
+            if isinstance(
+                exc,
+                (
+                    GarminConnectAuthenticationError,
+                    GarminConnectConnectionError,
+                    GarminConnectTooManyRequestsError,
+                ),
+            ):
+                detail = safe_failure(exc)
+            else:
+                detail = str(exc) if isinstance(exc, ValueError) else type(exc).__name__
+        else:
+            detail = str(exc) if isinstance(exc, ValueError) else type(exc).__name__
+        print("Échec : " + detail)
         print("Aucun identifiant ni détail de réponse externe affiché.")
         raise SystemExit(1) from None
 

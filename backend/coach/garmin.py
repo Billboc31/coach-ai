@@ -1,4 +1,5 @@
 import logging
+import re
 from datetime import date, datetime, timedelta
 from getpass import getpass
 from zoneinfo import ZoneInfo
@@ -6,11 +7,38 @@ from zoneinfo import ZoneInfo
 from garminconnect import (
     Garmin,
     GarminConnectAuthenticationError,
+    GarminConnectConnectionError,
     GarminConnectTooManyRequestsError,
 )
 
 from coach import db
 from coach.config import data_dir
+
+
+def safe_failure(exc: Exception) -> str:
+    """Classify failures without printing provider bodies, URLs or credentials."""
+    chain = []
+    current = exc
+    while current is not None and len(chain) < 8 and all(current is not e for e in chain):
+        chain.append(current)
+        current = current.__cause__ or current.__context__
+    if any(isinstance(e, GarminConnectTooManyRequestsError) for e in chain):
+        return "Garmin limite les tentatives (429). Attendre avant de réessayer."
+    if any(isinstance(e, GarminConnectAuthenticationError) for e in chain):
+        return "Authentification refusée. Vérifier le compte dans Garmin Connect."
+    # Read text for classification only; never return even a truncated original error.
+    diagnostic = " ".join(str(e).lower() for e in chain)
+    if re.search(r"(?:http|status|returned|api error)\s*[:=]?\s*403\b", diagnostic):
+        return "Garmin refuse la requête HTTP (403). Cause exacte non confirmée."
+    if re.search(r"(?:http|status|returned|api error)\s*[:=]?\s*429\b", diagnostic):
+        return "Garmin limite les tentatives (429). Attendre avant de réessayer."
+    if "timeout" in diagnostic or "timed out" in diagnostic:
+        return "Délai de connexion à Garmin dépassé."
+    if any(word in diagnostic for word in ("resolve host", "name resolution", "getaddrinfo")):
+        return "Résolution DNS Garmin impossible depuis le serveur."
+    if any(word in diagnostic for word in ("certificate verify", "sslerror", "ssl certificate")):
+        return "Échec de vérification du certificat TLS Garmin."
+    return "Connexion Garmin impossible ; cause non déterminée par le connecteur."
 
 
 def session_path():
@@ -37,8 +65,16 @@ def authenticate(reauth: bool = False) -> bool:
     )
     del password
     try:
+        print("Connexion à Garmin en cours…", flush=True)
         client.login(session_path())
+        print("Vérification de l’accès aux données Garmin…", flush=True)
         client.get_user_summary(date.today().isoformat())
+    except (
+        GarminConnectConnectionError,
+        GarminConnectAuthenticationError,
+        GarminConnectTooManyRequestsError,
+    ) as exc:
+        raise ValueError(safe_failure(exc)) from None
     finally:
         client.password = None
     return False

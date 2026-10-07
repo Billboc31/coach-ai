@@ -1,7 +1,44 @@
 import pytest
-from garminconnect import GarminConnectTooManyRequestsError
+from garminconnect import GarminConnectConnectionError, GarminConnectTooManyRequestsError
 
 from coach import db, garmin
+
+
+@pytest.mark.parametrize(
+    "message, expected",
+    [
+        ("Mobile login: HTTP 403 token=private-secret", "403"),
+        ("request timed out private-secret", "Délai"),
+        ("Could not resolve host private-secret", "DNS"),
+        ("certificate verify failed private-secret", "TLS"),
+        ("All login strategies exhausted private-secret", "non déterminée"),
+    ],
+)
+def test_connection_diagnostic_never_exposes_upstream(message, expected):
+    result = garmin.safe_failure(GarminConnectConnectionError(message))
+    assert expected in result
+    assert "private-secret" not in result
+
+
+def test_login_failure_reports_progress_without_credentials(tmp_path, monkeypatch, capsys):
+    monkeypatch.setenv("COACH_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr("builtins.input", lambda _: "athlete@example.invalid")
+    monkeypatch.setattr(garmin, "getpass", lambda _: "private-password")
+    clients = []
+
+    class Fake:
+        def __init__(self, **kwargs):
+            self.password = kwargs.get("password")
+            clients.append(self)
+
+        def login(self, path):
+            raise GarminConnectConnectionError("HTTP 403 private-password")
+
+    monkeypatch.setattr(garmin, "Garmin", Fake)
+    with pytest.raises(ValueError, match="403"):
+        garmin.authenticate(reauth=True)
+    assert clients[0].password is None
+    assert "en cours" in capsys.readouterr().out
 
 
 def test_sync_deduplicates_activities_and_retains_unavailable_sources(tmp_path, monkeypatch):
