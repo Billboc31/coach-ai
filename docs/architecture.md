@@ -118,3 +118,9 @@ original est conservé sans changement. Les URLs de médias sont limitées aux f
 supportés ; les vidéos YouTube sont rendues depuis un identifiant validé, après clic.
 Un brouillon de séries reste dans sessionStorage pendant l’autosave et n’est pas assimilé
 à une écriture réussie en base. La comparaison de versions précède une reprise après conflit.
+
+Les noms de cycles sont des valeurs explicites de sélecteur, espaces conservés. Le format
+Excel jour/mois restaure les consignes textuelles ; aucune répétition réalisée n’en est déduite.
+La réparation versionnée des anciens programmes relit leur source privée, sans changer
+les IDs ni les logs/révisions de séances. Le décodage des performances porte la dernière
+charge numérique uniquement sur les X de la même ligne ; succès et reps restent distincts.

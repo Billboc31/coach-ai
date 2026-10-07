@@ -59,6 +59,111 @@ ALIASES = {
 }
 
 
+def display_cell(cell):
+    """Restore Excel's day/month labels without treating them as measured reps."""
+    value = cell.value
+    fmt = cell.number_format.lower()
+    if getattr(cell, "is_date", False) and fmt in {"d/m", "dd/mm", "d/mm", "dd/m"}:
+        day = str(value.day).zfill(2) if fmt.startswith("dd") else str(value.day)
+        month = str(value.month).zfill(2) if fmt.endswith("mm") else str(value.month)
+        return day + "/" + month
+    if isinstance(value, float) and value.is_integer():
+        return str(int(value))
+    return str(value) if value is not None else ""
+
+
+def performance_view(entry):
+    last_weight = None
+    decoded = []
+    kg = entry.get("performances_are_kg", True)
+    for raw in entry.get("performance", []):
+        value = str(raw).strip()
+        weight = numeric(value, kg=True) if kg else None
+        success = value.lower() == "x" or weight is not None
+        if weight is not None:
+            last_weight = weight
+        elif value.lower() == "x":
+            weight = last_weight
+        decoded.append({"raw": raw, "weight": weight, "success": success, "reps": None})
+    return {
+        **entry,
+        "performance_sets": decoded,
+        "weights_kg": [v["weight"] for v in decoded] if kg else None,
+    }
+
+
+def repair_program(program):
+    """Repair old display labels in place; preserve IDs and all actual workout logs."""
+    if not program or program.get("display_version") == 2:
+        return program
+    source = db.record("gym_source", program["id"])
+    if not source:
+        return program
+    book = load_workbook(io.BytesIO(base64.b64decode(source["base64"])), keep_links=False)
+    try:
+        for day in program["days"]:
+            for item in day["exercises"]:
+                if item["sheet"] not in book.sheetnames:
+                    continue
+                sheet = book[item["sheet"]]
+                row = item["source_row"]
+                repaired = set()
+                saved_sheet = next(
+                    (v for v in program.get("source_sheets", []) if v["name"] == item["sheet"]), {}
+                )
+                col = saved_sheet.get("mapping", {}).get("sets")
+                if col is not None and "sets_label" not in item:
+                    cell = sheet.cell(row, col + 1)
+                    for merged in sheet.merged_cells.ranges:
+                        if cell.coordinate in merged and merged.min_col == merged.max_col:
+                            cell = sheet.cell(merged.min_row, merged.min_col)
+                            break
+                    item["sets_label"] = display_cell(cell)
+                    if getattr(cell, "is_date", False) and item["sets_label"] != str(cell.value):
+                        repaired.add("sets")
+                for field in ("reps", "rm", "rest", "short_rest", "tempo", "sets_label"):
+                    original = item.get(field, "")
+                    if not original:
+                        continue
+                    matches = [c for c in sheet[row] if str(c.value) == original]
+                    values = {display_cell(c) for c in matches}
+                    if len(values) == 1:
+                        item[field] = values.pop()
+                        if item[field] != original:
+                            repaired.add(field)
+                item["warnings"] = [
+                    w for w in item.get("warnings", []) if w.split(":", 1)[0] not in repaired
+                ]
+        program["display_version"] = 2
+        db.upsert_record("gym_program", program["id"], program)
+    finally:
+        book.close()
+    return program
+
+
+def workout_view(value):
+    if not value:
+        return value
+    program = repair_program(db.record("gym_program", value["program_id"]))
+    items = {e["id"]: e for d in (program or {}).get("days", []) for e in d["exercises"]}
+    exercises = []
+    for exercise in value["exercises"]:
+        item = items.get(exercise["id"], {})
+        labels = {
+            k: item[k]
+            for k in ("reps", "rm", "rest", "short_rest", "tempo", "sets_label", "warnings")
+            if k in item
+        }
+        exercises.append(
+            {
+                **exercise,
+                **labels,
+                "excel_history": [performance_view(h) for h in exercise.get("excel_history", [])],
+            }
+        )
+    return {**value, "exercises": exercises}
+
+
 def preview(filename, encoded):
     if not filename.lower().endswith(".xlsx"):
         raise ValueError("Choisir un fichier .xlsx ; convertir les anciens .xls dans Excel.")
@@ -83,7 +188,7 @@ def preview(filename, encoded):
             rows = []
             if sheet.max_row > 1000 or sheet.max_column > 40:
                 raise ValueError("1000 lignes et 40 colonnes maximum par feuille.")
-            links, dates = {}, []
+            links, dates, display_rows = {}, [], []
             for i, cells in enumerate(sheet.iter_rows()):
                 row = [c.value for c in cells]
                 for c in cells:
@@ -95,15 +200,17 @@ def preview(filename, encoded):
                     raise ValueError(
                         "Une feuille dépasse 1000 lignes. Réduis le fichier avant import."
                     )
+                display_rows.append([display_cell(c) for c in cells])
                 rows.append([str(v) if v is not None else "" for v in row])
             while rows and not any(rows[-1]):
                 rows.pop()
-            expanded = [list(row) for row in rows]
+            display_rows = display_rows[: len(rows)]
+            expanded = [list(row) for row in display_rows]
             for merged in sheet.merged_cells.ranges:
                 if merged.min_col == merged.max_col and merged.min_row <= len(rows):
                     col = merged.min_col - 1
                     for j in range(merged.min_row, min(merged.max_row, len(rows))):
-                        expanded[j][col] = rows[merged.min_row - 1][col]
+                        expanded[j][col] = display_rows[merged.min_row - 1][col]
             best = 0
             mapping = {}
             for i, row in enumerate(rows[:30]):
@@ -138,6 +245,7 @@ def preview(filename, encoded):
                     "name": sheet.title,
                     "rows": rows,
                     "expanded": expanded,
+                    "display_rows": display_rows,
                     "links": links,
                     "date_cells": dates,
                     "header": best,
@@ -176,7 +284,7 @@ class SheetMapping(BaseModel):
 
 class ImportSelection(BaseModel):
     title: str = Field(min_length=1, max_length=120)
-    performances_are_kg: bool = False
+    performances_are_kg: bool = True
     sheets: list[SheetMapping] = Field(min_length=1, max_length=30)
 
 
@@ -244,7 +352,9 @@ def confirm(key, selection):
                         ),
                         len(row),
                     )
-                    perf = [v for v in row[perf_col:end] if v]
+                    perf = list(row[perf_col:end])
+                    while perf and not perf[-1].strip():
+                        perf.pop()
                 if perf:
                     imported.append(
                         {
@@ -269,9 +379,13 @@ def confirm(key, selection):
                             "row": index,
                             "performance": perf,
                             "reps": cell("reps"),
-                            "weights_kg": [numeric(v, kg=True) for v in perf]
-                            if selection.performances_are_kg
-                            else None,
+                            "performances_are_kg": selection.performances_are_kg,
+                            "weights_kg": performance_view(
+                                {
+                                    "performance": perf,
+                                    "performances_are_kg": selection.performances_are_kg,
+                                }
+                            )["weights_kg"],
                             "imported_at": db.now(),
                         }
                     )
@@ -281,6 +395,7 @@ def confirm(key, selection):
                         "exercise_id": eid,
                         "name": name[:200],
                         "sets": count,
+                        "sets_label": cell("sets"),
                         "reps": cell("reps"),
                         "weight": numeric(cell("weight"), kg=True),
                         "rest": cell("rest"),
@@ -300,6 +415,7 @@ def confirm(key, selection):
                             f"{field}: cellule Excel de type date, à vérifier."
                             for field in ("reps", "sets")
                             if f"{index}:{chosen.mapping.get(field)}" in sheet.get("date_cells", [])
+                            and cell(field) == sheet["rows"][index - 1][chosen.mapping[field]]
                         ],
                         "source_row": index,
                         "source_values": sheet["rows"][index - 1],
@@ -327,6 +443,7 @@ def confirm(key, selection):
             "created_at": db.now(),
             "source": source["filename"],
             "source_sheets": source["sheets"],
+            "display_version": 2,
         }
         # Exercise history never gets replaced by re-importing a program.
         for eid, exercise in exercises.items():
@@ -390,17 +507,17 @@ def recent_workouts(limit=50):
 def overview():
     return {
         "programs": [
-            {k: v for k, v in r["data"].items() if k != "source_sheets"}
+            {k: v for k, v in repair_program(r["data"]).items() if k != "source_sheets"}
             for r in db.records("gym_program", 30)
         ],
         "exercises": [r["data"] for r in db.records("gym_exercise", 1000)],
-        "workouts": recent_workouts(),
+        "workouts": [workout_view(w) for w in recent_workouts()],
     }
 
 
 def start(program_id, day_id):
     with lock:
-        program = db.record("gym_program", program_id)
+        program = repair_program(db.record("gym_program", program_id))
         day = next((d for d in program.get("days", []) if d["id"] == day_id), None)
         if not day:
             raise ValueError("Programme ou séance introuvable.")
@@ -552,7 +669,7 @@ def imported_history(exercise_id):
             ),
             {"u": user_id(), "e": exercise_id},
         ).all()
-    return [json.loads(r[0]) for r in rows]
+    return [performance_view(json.loads(r[0])) for r in rows]
 
 
 def context():

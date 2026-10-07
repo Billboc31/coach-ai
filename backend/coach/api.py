@@ -351,7 +351,7 @@ def gym_start(body: GymStart):
 
 @app.get("/api/gym/workouts/{key}", dependencies=[Depends(require_session)])
 def gym_workout_read(key: str):
-    value = db.record("gym_workout", key)
+    value = gym.workout_view(db.record("gym_workout", key))
     if not value:
         raise HTTPException(404, "Séance introuvable.")
     return value

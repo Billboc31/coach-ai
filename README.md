@@ -261,7 +261,8 @@ la montre et ne déplace pas automatiquement les séances existantes : les ajust
 avec Excel. L’aperçu propose les colonnes détectées et permet de les ajuster avant validation.
 Les layouts de coaching avec ordre, semaines et titres « Séance » sont séparés en séances.
 Les fusions verticales sont appliquées aux consignes sans modifier les valeurs originales.
-Les formules ne sont pas exécutées. Les dates dans les champs reps/séries sont signalées ;
+Les formules ne sont pas exécutées. Les consignes au format Excel jour/mois (`10/10`, `5/5`, `2/3`) retrouvent leur affichage ;
+les autres dates dans les champs reps/séries sont signalées ;
 les séries ambiguës ne deviennent pas des prescriptions chiffrées inventées.
 La notice, toutes les cellules, les hyperliens supportés et le fichier original sont conservés
 privément ; l’original reste téléchargeable sans modification. Images/objets Excel restent dans
@@ -269,10 +270,14 @@ l’original et ne sont pas tous reproduits dans la grille de l’app. L’impor
 
 Les anciennes performances restent des entrées Excel distinctes des séries réalisées dans
 l’app. Une case d’import permet de confirmer que les performances numériques simples sont en
-kg ; seules ces valeurs peuvent alors servir de références chiffrées. Les nombres complexes,
-les « X », les valeurs par côté et les dates non interprétables restent du texte. Aucun
+kg (activée par défaut). `X`/`x` signifie une série réussie avec la dernière charge explicite
+sur la même ligne : `5, X, X, X` représente quatre réussites à 5 kg. Sans charge précédente,
+le poids reste inconnu. Les cellules vides gardent leur position ; les valeurs complexes
+restent du texte. Les anciens imports utilisent désormais cette convention. Aucun
 calcul de performance réelle à partir du nombre de répétitions prévu. Les imports identiques
 sont dédupliqués ; importer un programme ne remplace pas l’historique des exercices.
+Les programmes déjà importés sont réparés depuis leur source privée à la lecture ; les
+identifiants, séries réellement saisies et révisions de séances restent inchangés.
 
 Choisir programme/cycle/semaine, puis **Commencer la séance**. Saisir kg et reps, ou secondes
 pour un maintien, puis valider chaque série. Ajouter des séries libres si le programme ne

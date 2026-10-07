@@ -235,3 +235,107 @@ def test_invalid_file_and_private_api(workspace):
             ).status_code
             == 403
         )
+
+
+def test_performance_x_keeps_row_weight_and_unknown_reps():
+    entry = gym.performance_view({"performance": ["5", "x", "X", "X"]})
+    assert entry["weights_kg"] == [5, 5, 5, 5]
+    assert all(s["success"] and s["reps"] is None for s in entry["performance_sets"])
+    assert entry["performance"] == ["5", "x", "X", "X"]
+    entry = gym.performance_view({"performance": ["X", "0", "", "X", "7,5 kg", "X"]})
+    assert entry["weights_kg"] == [None, 0, None, 0, 7.5, 7.5]
+    assert not entry["performance_sets"][2]["success"]
+    assert gym.performance_view({"performance": ["X"]})["weights_kg"] == [None]
+    assert (
+        gym.performance_view({"performance": ["5", "X"], "performances_are_kg": False})[
+            "weights_kg"
+        ]
+        is None
+    )
+
+
+def labelled_workbook():
+    from datetime import datetime
+
+    from openpyxl import Workbook
+
+    book = Workbook()
+    sheet = book.active
+    sheet.title = "Cycle  exemple"
+    sheet.append(["Exercice", "Rep", "Série", "Performance", "", "", "", "Notes"])
+    sheet.append(
+        ["Exercice Alpha", datetime(2026, 10, 10), datetime(2026, 3, 2), 5, "x", "X", "X", "Texte"]
+    )
+    sheet["B2"].number_format = sheet["C2"].number_format = "d/m"
+    sheet.append(["Exercice Beta", "12\n12", 3, "X", "", 8, "X"])
+    sheet.merge_cells("D1:G1")
+    output = io.BytesIO()
+    book.save(output)
+    return output.getvalue()
+
+
+def test_excel_labels_and_performance_positions(workspace):
+    preview = gym.preview("labels.xlsx", base64.b64encode(labelled_workbook()).decode())
+    sheet = preview["sheets"][0]
+    p = gym.confirm(
+        preview["id"],
+        gym.ImportSelection(
+            title="Labels",
+            sheets=[gym.SheetMapping(**{k: sheet[k] for k in ("name", "header", "mapping")})],
+        ),
+    )
+    a, b = p["days"][0]["exercises"]
+    assert a["reps"] == "10/10" and a["sets_label"] == "2/3"
+    assert a["sets"] is None and not a["warnings"]
+    assert b["reps"] == "12\n12"
+    assert b["performance"] == ["X", "", "8", "X"]
+    assert gym.imported_history(a["exercise_id"])[0]["weights_kg"] == [5] * 4
+    assert gym.imported_history(b["exercise_id"])[0]["weights_kg"] == [None, None, 8, 8]
+    assert p["source_sheets"][0]["rows"][1][1] == "2026-10-10 00:00:00"
+
+
+def test_legacy_program_repair_keeps_actual_sessions(workspace):
+    preview = gym.preview("labels.xlsx", base64.b64encode(labelled_workbook()).decode())
+    sheet = preview["sheets"][0]
+    p = gym.confirm(
+        preview["id"],
+        gym.ImportSelection(
+            title="Labels",
+            sheets=[gym.SheetMapping(**{k: sheet[k] for k in ("name", "header", "mapping")})],
+        ),
+    )
+    # Simulate the old parser's stored program and workout snapshot.
+    p.pop("display_version")
+    a = p["days"][0]["exercises"][0]
+    a["reps"] = "2026-10-10 00:00:00"
+    a.pop("sets_label")
+    a["warnings"] = [
+        "reps: cellule Excel de type date, à vérifier.",
+        "sets: cellule Excel de type date, à vérifier.",
+    ]
+    db.upsert_record("gym_program", p["id"], p)
+    w = {
+        "id": "legacy",
+        "program_id": p["id"],
+        "revision": 7,
+        "finished_at": db.now(),
+        "started_at": db.now(),
+        "exercises": [
+            {
+                **a,
+                "logged_sets": [{"weight": 0, "reps": 6, "seconds": None, "done": True}],
+                "excel_history": [{"performance": ["5", "X", "X", "X"], "weights_kg": None}],
+            }
+        ],
+    }
+    db.upsert_record("gym_workout", w["id"], w)
+    view = gym.overview()
+    repaired = view["programs"][0]["days"][0]["exercises"][0]
+    assert repaired["id"] == a["id"] and repaired["reps"] == "10/10"
+    assert repaired["sets_label"] == "2/3" and not repaired["warnings"]
+    result = gym.workout_view(db.record("gym_workout", "legacy"))
+    assert result["exercises"][0]["reps"] == "10/10"
+    assert result["exercises"][0]["excel_history"][0]["weights_kg"] == [5] * 4
+    assert result["revision"] == 7 and result["finished_at"] == w["finished_at"]
+    assert db.record("gym_workout", "legacy") == w
+    assert gym.overview()["programs"][0]["days"][0]["exercises"][0] == repaired

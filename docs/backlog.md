@@ -95,7 +95,9 @@ aucune affirmation de causalité tirée d’une simple corrélation Garmin.
 ### GYM-01 — Import Excel du vrai programme (P1)
 Livré : aperçu XLSX, association de colonnes, cellules fusionnées, séparation cycles/semaines/
 séances, conservation des sources et fichier original, consignes/tempos/repos/commentaires,
-performances historiques séparées, déduplication et signalement des dates ambiguës. Parser
+performances historiques séparées, X de réussite avec maintien de charge sur la ligne,
+sélection des feuilles avec espaces, restauration des consignes jour/mois et multilignes,
+réparation des anciens programmes sans modifier les logs, déduplication et dates ambiguës. Parser
 essayé sur le fichier fourni. Restent : autres layouts, XLS/ODS, images intégrées dans la fiche.
 Dépendances : fichier utilisateur. Mapping feuilles/exercices/séries/réps/charges/repos,
 prévisualisation et corrections. Critères : conservation de la structure du programme,
