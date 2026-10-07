@@ -339,3 +339,221 @@ def test_legacy_program_repair_keeps_actual_sessions(workspace):
     assert result["revision"] == 7 and result["finished_at"] == w["finished_at"]
     assert db.record("gym_workout", "legacy") == w
     assert gym.overview()["programs"][0]["days"][0]["exercises"][0] == repaired
+
+
+def action(program, name, **extra):
+    return gym.manage_program(
+        program["id"], gym.ProgramAction(revision=program.get("revision", 1), action=name, **extra)
+    )
+
+
+def test_program_removal_restore_keeps_sessions_and_original(workspace):
+    _, p, _ = imported(True)
+    day = p["days"][0]
+    item = day["exercises"][0]
+    w = gym.start(p["id"], day["id"])
+    original = db.record("gym_source", p["id"])
+    p = action(p, "hide_exercise", day_id=day["id"], exercise_id=item["id"])
+    assert len(gym.start(p["id"], day["id"])["exercises"]) == 1
+    p = action(p, "restore_exercise", day_id=day["id"], exercise_id=item["id"])
+    assert len(gym.start(p["id"], day["id"])["exercises"]) == 2
+    for hide, restore, extra in [
+        ("hide_day", "restore_day", {"day_id": day["id"]}),
+        ("hide_sheet", "restore_sheet", {"sheet": day["sheet"]}),
+        ("archive", "restore_program", {}),
+    ]:
+        p = action(p, hide, **extra)
+        with pytest.raises(ValueError):
+            gym.start(p["id"], day["id"])
+        assert db.record("gym_workout", w["id"]) == w
+        p = action(p, restore, **extra)
+        assert gym.start(p["id"], day["id"])["exercises"][0]["id"] == item["id"]
+    assert db.record("gym_source", p["id"]) == original
+
+
+def test_reanalysis_retains_edits_ids_removals_and_history(workspace):
+    _, p, _ = imported(True)
+    day = p["days"][0]
+    item = day["exercises"][0]
+    w = gym.start(p["id"], day["id"])
+    body = gym.ExerciseEdit(
+        revision=p["revision"],
+        name="Exercice corrigé",
+        sets=4,
+        reps="10/10",
+        weight=0,
+        rest="120 s",
+        tempo="3010",
+        notes="Consigne",
+        illustration="row",
+    )
+    p = gym.edit_exercise(p["id"], day["id"], item["id"], body)
+    p = action(p, "hide_sheet", sheet=day["sheet"])
+    count = len(db.records("gym_excel_history", 100))
+    source = db.record("gym_source", p["id"])
+    for _ in range(2):
+        previous_revision = p["revision"]
+        p = gym.reanalyse(p["id"], previous_revision)
+        assert p["revision"] == previous_revision + 1
+        rebuilt = p["days"][0]["exercises"][0]
+        assert p["days"][0]["id"] == day["id"] and rebuilt["id"] == item["id"]
+        assert rebuilt["name"] == "Exercice corrigé" and rebuilt["reps"] == "10/10"
+        assert rebuilt["sets"] == 4 and rebuilt["weight"] == 0 and rebuilt["illustration"] == "row"
+        assert p["hidden_sheets"] == [day["sheet"]]
+        assert len(db.records("gym_excel_history", 100)) == count
+        assert db.record("gym_workout", w["id"]) == w
+        assert gym.workout_view(w)["exercises"][0]["reps"] == item["reps"]
+        assert db.record("gym_source", p["id"]) == source
+
+
+def test_legacy_reanalysis_restores_raw_positions_without_duplicates(workspace):
+    preview = gym.preview("labels.xlsx", base64.b64encode(labelled_workbook()).decode())
+    sheet = preview["sheets"][0]
+    p = gym.confirm(
+        preview["id"],
+        gym.ImportSelection(
+            title="Labels",
+            sheets=[gym.SheetMapping(**{k: sheet[k] for k in ("name", "header", "mapping")})],
+        ),
+    )
+    # Simulate legacy collapsed performance and date labels; history IDs came from that parser.
+    p.pop("selection")
+    p.pop("revision")
+    p.pop("display_version")
+    with db.connection() as conn:
+        from sqlalchemy import text
+
+        conn.execute(
+            text("DELETE FROM records WHERE user_id=:u AND kind='gym_excel_history'"),
+            {"u": "local"},
+        )
+    import hashlib
+    import json
+
+    for item in p["days"][0]["exercises"]:
+        item.pop("imported_history_id")
+        item["performance"] = [v for v in item["performance"] if v]
+        if item["name"] == "Exercice Alpha":
+            item["reps"] = "2026-10-10 00:00:00"
+        key = hashlib.sha256(
+            json.dumps(
+                [
+                    p["source"],
+                    item["sheet"],
+                    item["source_row"],
+                    item["exercise_id"],
+                    item["performance"],
+                    item["reps"],
+                ],
+                ensure_ascii=False,
+            ).encode()
+        ).hexdigest()
+        db.upsert_record(
+            "gym_excel_history",
+            key,
+            {
+                "id": key,
+                "exercise_id": item["exercise_id"],
+                "sheet": item["sheet"],
+                "row": item["source_row"],
+                "performance": item["performance"],
+                "reps": item["reps"],
+                "imported_at": db.now(),
+            },
+        )
+    db.upsert_record("gym_program", p["id"], p)
+    for expected_revision in (1, 2):
+        p = gym.reanalyse(p["id"], expected_revision)
+        assert p["revision"] == expected_revision + 1
+        assert p["days"][0]["exercises"][0]["reps"] == "10/10"
+        assert p["days"][0]["exercises"][1]["performance"] == ["X", "", "8", "X"]
+        assert len(db.records("gym_excel_history", 100)) == 2
+
+
+def test_program_mutations_validate_revision_ownership_and_fields(workspace, monkeypatch):
+    _, p, _ = imported()
+    day = p["days"][0]
+    old = p
+    p = action(p, "hide_day", day_id=day["id"])
+    with pytest.raises(gym.Conflict):
+        action(old, "archive")
+    with pytest.raises(gym.Conflict):
+        gym.reanalyse(p["id"], 1)
+    with pytest.raises(ValueError):
+        action(p, "hide_sheet", sheet="Unknown")
+    with pytest.raises(ValueError):
+        gym.ExerciseEdit(revision=1, name="Alpha", sets=0)
+    monkeypatch.setattr(db, "user_id", lambda: "other")
+    assert action(p, "archive") is None
+    assert gym.reanalyse(p["id"], p["revision"]) is None
+    assert (
+        gym.edit_exercise(
+            p["id"],
+            day["id"],
+            day["exercises"][0]["id"],
+            gym.ExerciseEdit(revision=p["revision"], name="Alpha"),
+        )
+        is None
+    )
+
+
+def test_program_api_edit_reanalyse_remove_security(workspace):
+    write_secret(workspace / "app.json", {"access_key": "test-key"})
+    api.sessions.clear()
+    api.login_attempts.clear()
+    _, p, _ = imported(True)
+    path = "/api/gym/programs/" + p["id"]
+    with TestClient(api.app, headers={"Origin": "http://localhost:8000"}) as c:
+        assert c.post(path + "/reanalyse", json={"revision": 1}).status_code == 401
+        c.post("/api/login", json={"access_key": "test-key"})
+        assert (
+            c.post(
+                path + "/manage",
+                json={"revision": 1, "action": "archive"},
+                headers={"Origin": "https://bad.example"},
+            ).status_code
+            == 403
+        )
+        day = p["days"][0]
+        item = day["exercises"][0]
+        edit = c.put(
+            path + "/days/" + day["id"] + "/exercises/" + item["id"],
+            json={"revision": 1, "name": "Alpha", "sets": 2, "reps": "8", "weight": 0},
+        ).json()
+        assert edit["revision"] == 2
+        assert c.post(path + "/reanalyse", json={"revision": 1}).status_code == 409
+        rebuilt = c.post(path + "/reanalyse", json={"revision": 2}).json()
+        assert rebuilt["revision"] == 3 and rebuilt["days"][0]["exercises"][0]["name"] == "Alpha"
+        assert c.post(path + "/manage", json={"revision": 3, "action": "archive"}).json()[
+            "archived"
+        ]
+        assert (
+            c.post(
+                "/api/gym/workouts", json={"program_id": p["id"], "day_id": day["id"]}
+            ).status_code
+            == 422
+        )
+        assert (
+            c.post("/api/gym/programs/unknown/reanalyse", json={"revision": 1}).status_code == 404
+        )
+
+
+def test_rename_titles_survive_refresh_and_keep_source_names(workspace):
+    _, p, _ = imported(True)
+    day = p["days"][0]
+    key = p["id"]
+    p = gym.rename_program_item(
+        key, gym.ProgramTitle(revision=p["revision"], title="Mon programme")
+    )
+    p = gym.rename_program_item(
+        key, gym.ProgramTitle(revision=p["revision"], sheet=day["sheet"], title="Mon cycle")
+    )
+    p = gym.rename_program_item(
+        key, gym.ProgramTitle(revision=p["revision"], day_id=day["id"], title="Ma séance")
+    )
+    p = gym.reanalyse(key, p["revision"])
+    assert p["title"] == "Mon programme"
+    assert p["sheet_titles"][day["sheet"]] == "Mon cycle"
+    assert p["days"][0]["sheet"] == day["sheet"]
+    assert p["days"][0]["name"] == day["name"]
+    assert gym.start(key, day["id"])["title"] == "Ma séance"

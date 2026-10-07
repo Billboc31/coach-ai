@@ -317,6 +317,41 @@ def gym_confirm(key: str, body: gym.ImportSelection):
         raise HTTPException(422, str(exc)) from None
 
 
+def gym_program_result(callback):
+    try:
+        value = callback()
+        if value is None:
+            raise HTTPException(404, "Programme introuvable.")
+        return value
+    except gym.Conflict as exc:
+        raise HTTPException(409, str(exc)) from None
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.post("/api/gym/programs/{key}/manage", dependencies=[Depends(require_session)])
+def gym_manage(key: str, body: gym.ProgramAction):
+    return gym_program_result(lambda: gym.manage_program(key, body))
+
+
+@app.put(
+    "/api/gym/programs/{key}/days/{day_id}/exercises/{item_id}",
+    dependencies=[Depends(require_session)],
+)
+def gym_exercise_edit(key: str, day_id: str, item_id: str, body: gym.ExerciseEdit):
+    return gym_program_result(lambda: gym.edit_exercise(key, day_id, item_id, body))
+
+
+@app.post("/api/gym/programs/{key}/reanalyse", dependencies=[Depends(require_session)])
+def gym_reanalyse(key: str, body: gym.ProgramRevision):
+    return gym_program_result(lambda: gym.reanalyse(key, body.revision))
+
+
+@app.put("/api/gym/programs/{key}/title", dependencies=[Depends(require_session)])
+def gym_title(key: str, body: gym.ProgramTitle):
+    return gym_program_result(lambda: gym.rename_program_item(key, body))
+
+
 @app.get("/api/gym/programs/{key}/download", dependencies=[Depends(require_session)])
 def gym_original_download(key: str):
     import base64

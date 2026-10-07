@@ -279,6 +279,17 @@ sont dédupliqués ; importer un programme ne remplace pas l’historique des ex
 Les programmes déjà importés sont réparés depuis leur source privée à la lecture ; les
 identifiants, séries réellement saisies et révisions de séances restent inchangés.
 
+Les boutons **Corriger** permettent d’ajuster le nom, séries, répétitions/durée, charge,
+repos, tempo, consignes et dessin d’un exercice. Programme, feuille et séance sont renommables.
+**Supprimer** retire un programme, une feuille, une séance ou un exercice des prochaines
+séances ; **Éléments supprimés → Restaurer** annule cette action. Les séances déjà réalisées
+et l’Excel source restent conservés. Ces actions sont confirmées dans l’interface.
+**Réanalyser l’Excel** relit le fichier privé déjà stocké avec le parser courant, sans nouvel
+upload. Les IDs, corrections manuelles, noms personnalisés, suppressions et séries saisies
+restent conservés. Les anciennes performances Excel sont mises à jour sans entrées doublonnées.
+Une révision de programme protège les modifications concurrentes. Les corrections concernent
+les futures séances ; la prescription des séances créées par cette version reste figée.
+
 Choisir programme/cycle/semaine, puis **Commencer la séance**. Saisir kg et reps, ou secondes
 pour un maintien, puis valider chaque série. Ajouter des séries libres si le programme ne
 précise pas leur nombre. Autosave après une courte pause, statut visible, reprise des séances
@@ -296,9 +307,16 @@ pas fusionnés arbitrairement. Le panneau montre jusqu’à 20 séances récente
 séances et jusqu’à 30 programmes. Le coach reçoit les séries validées des cinq séances récentes,
 avec unités et distinction séance en cours/terminée, au maximum 25 exercices par séance.
 
+Neuf familles de mouvements disposent de dessins SVG locaux dans les cartes et fiches.
+Le dessin est un schéma général, ajustable depuis **Corriger**, avec un pictogramme pour les
+mouvements inconnus ; la variante exacte reste indiquée par le nom et la vidéo.
 Les liens vidéo/images OneDrive présents dans Excel restent ouvrables. Un lien YouTube importé
 ou enregistré dans la fiche permet d’afficher le lecteur sur place. Sans lien YouTube, la fiche
-propose une recherche et la saisie d’une URL ; aucune démonstration n’est sélectionnée automatiquement
-pour une variante inconnue. La vidéo ne charge qu’après clic ; sa disponibilité dépend du fournisseur.
+propose une recherche modifiable reprenant le nom précis et la saisie d’une URL. Quelques
+variantes courantes proposent des tutoriels publics sélectionnables (squat barre, développé
+couché, rowing haltère à un bras, fentes). Les suggestions ont des règles de variantes
+conservatrices ; elles demandent un choix et ne remplacent pas automatiquement une vidéo.
+Les liens ont été vérifiés par recherche le 7 octobre 2026 ; lecture/embedding restent à
+vérifier chez le fournisseur. Aucun appel de recherche payant ni scraping YouTube à l’exécution. La vidéo ne charge qu’après clic ; sa disponibilité dépend du fournisseur.
 Le parser a été essayé localement sur le fichier fourni par l’utilisateur. Tests API simulés,
 lint et build vérifiés ; interaction mobile et vidéos à vérifier dans l’app Railway.

@@ -124,3 +124,16 @@ Excel jour/mois restaure les consignes textuelles ; aucune répétition réalis�
 La réparation versionnée des anciens programmes relit leur source privée, sans changer
 les IDs ni les logs/révisions de séances. Le décodage des performances porte la dernière
 charge numérique uniquement sur les X de la même ligne ; succès et reps restent distincts.
+
+Les mutations de programme exigent une révision et sont sérialisées. Les suppressions sont
+réversibles (archived, hidden_sheets, hidden sur séance/exercice) ; start refuse les éléments
+retirés et les séances vides. Les noms de feuilles source restent des identités stables ;
+sheet_titles et display_name portent les noms personnalisés. Les edits d’exercice ne
+contiennent que les champs modifiés, réappliqués après réanalyse. Le fichier original reste
+privé et inchangé ; selection conserve le mapping confirmé. Le refresh du parser réutilise
+les IDs par feuille/ligne et séance source, et les IDs d’historique existants (y compris
+anciens formats). Une séance nouvelle porte display_version=2 et garde sa prescription
+figée lors d’éditions ultérieures du programme. Le parser ne touche jamais les logs réels.
+Les illustrations SVG sont locales ; les tutoriels publics sélectionnables sont définis
+dans gym-visuals avec liens de provenance et règles de variantes. Pas de clé YouTube, pas
+d’envoi de programme privé à un service de recherche, lecteur chargé après clic.

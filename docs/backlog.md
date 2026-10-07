@@ -98,7 +98,10 @@ séances, conservation des sources et fichier original, consignes/tempos/repos/c
 performances historiques séparées, X de réussite avec maintien de charge sur la ligne,
 sélection des feuilles avec espaces, restauration des consignes jour/mois et multilignes,
 réparation des anciens programmes sans modifier les logs, déduplication et dates ambiguës. Parser
-essayé sur le fichier fourni. Restent : autres layouts, XLS/ODS, images intégrées dans la fiche.
+essayé sur le fichier fourni. Gestion livrée : corrections d’exercice, renommage programme/
+feuille/séance, suppression réversible à chaque niveau, réanalyse du fichier stocké avec
+conservation des corrections/IDs/historique et contrôle des révisions. Restent : autres
+layouts, XLS/ODS, images intégrées dans la fiche.
 Dépendances : fichier utilisateur. Mapping feuilles/exercices/séries/réps/charges/repos,
 prévisualisation et corrections. Critères : conservation de la structure du programme,
 unités et consignes ; gérer cellules vides/fusionnées sans inventer de prescription.
@@ -114,7 +117,9 @@ pas de perte/duplication, saisie mobile rapide et distinction prévu/réalisé.
 ### GYM-03 — Progression et contexte coach (P1)
 Livré : références de charge du même exercice entre programmes, performances Excel conservées
 et unités confirmables, historique par exercice, séries validées dans le contexte coach, liens
-média Excel et lecteur YouTube configurable. Restent : comparaison/progression approfondie,
+média Excel, neuf familles de dessins locaux et lecteur YouTube configurable. Tutoriels
+sélectionnables pour quelques variantes courantes et recherche précise modifiable.
+Restent : comparaison/progression approfondie,
 suggestions chiffrées évaluées, synonymes/matériel, fusion calendrier/Garmin et catalogue vidéos.
 Dépendances : GYM-02, COACH-02. Progression par exercice, proposition prochaine séance sans
 écraser programme source ; associer Garmin et saisie si même séance. Critères : gestion charges,

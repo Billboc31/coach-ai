@@ -18,7 +18,7 @@ from sqlalchemy import text
 from coach import db
 from coach.config import user_id
 
-lock = threading.Lock()
+lock = threading.RLock()
 MAX_FILE = 5 * 1024 * 1024
 
 
@@ -152,7 +152,7 @@ def workout_view(value):
         labels = {
             k: item[k]
             for k in ("reps", "rm", "rest", "short_rest", "tempo", "sets_label", "warnings")
-            if k in item
+            if k in item and value.get("display_version") != 2
         }
         exercises.append(
             {
@@ -164,7 +164,7 @@ def workout_view(value):
     return {**value, "exercises": exercises}
 
 
-def preview(filename, encoded):
+def preview(filename, encoded, *, refresh=False):
     if not filename.lower().endswith(".xlsx"):
         raise ValueError("Choisir un fichier .xlsx ; convertir les anciens .xls dans Excel.")
     try:
@@ -270,7 +270,10 @@ def preview(filename, encoded):
             {"u": user_id(), "f": value["fingerprint"]},
         ).first()
     if existing:
-        return json.loads(existing[0])
+        old = json.loads(existing[0])
+        if not refresh:
+            return old
+        value.update(id=old["id"], program_id=old.get("program_id"), created_at=old["created_at"])
     db.upsert_record("gym_source", value["id"], {"filename": filename, "base64": encoded})
     db.upsert_record("gym_import", value["id"], value)
     return value
@@ -298,13 +301,14 @@ def numeric(value, *, kg=False):
         return None
 
 
-def confirm(key, selection):
+def confirm(key, selection, *, rebuild=False):
     with lock:
         source = db.record("gym_import", key)
         if not source:
             return None
-        if source.get("program_id"):
+        if source.get("program_id") and not rebuild:
             return db.record("gym_program", source["program_id"])
+        previous = db.record("gym_program", key) if rebuild else {}
         days = []
         imported = []
         exercises = {}
@@ -373,6 +377,7 @@ def confirm(key, selection):
                             ).hexdigest(),
                             "exercise_id": eid,
                             "source": "excel",
+                            "program_id": key,
                             "sheet": chosen.name,
                             "week": week,
                             "session": session,
@@ -410,6 +415,7 @@ def confirm(key, selection):
                         "order": cell("order"),
                         "tempo": cell("tempo"),
                         "performance": perf,
+                        "imported_history_id": imported[-1]["id"] if perf else None,
                         "media_url": safe_media(media),
                         "warnings": [
                             f"{field}: cellule Excel de type date, à vérifier."
@@ -444,7 +450,75 @@ def confirm(key, selection):
             "source": source["filename"],
             "source_sheets": source["sheets"],
             "display_version": 2,
+            "revision": previous.get("revision", 1) + 1 if previous else 1,
+            "selection": selection.model_dump(),
         }
+        if previous:
+            program["created_at"] = previous["created_at"]
+            program["hidden_sheets"] = previous.get("hidden_sheets", [])
+            program["sheet_titles"] = previous.get("sheet_titles", {})
+            program["archived"] = previous.get("archived", False)
+            old_days = {(d["sheet"], d["week"], d["name"]): d for d in previous["days"]}
+            old_items = {
+                (e["sheet"], e["source_row"]): e for d in previous["days"] for e in d["exercises"]
+            }
+            for day in days:
+                old_day = old_days.get((day["sheet"], day["week"], day["name"]))
+                if old_day:
+                    day.update(id=old_day["id"], hidden=old_day.get("hidden", False))
+                    if old_day.get("display_name"):
+                        day["display_name"] = old_day["display_name"]
+                for item in day["exercises"]:
+                    old_item = old_items.get((item["sheet"], item["source_row"]))
+                    if old_item:
+                        item.update(id=old_item["id"], hidden=old_item.get("hidden", False))
+                        for field, value in old_item.get("edits", {}).items():
+                            item[field] = value
+                        item["edits"] = old_item.get("edits", {})
+            # Reuse legacy history keys as well as modern keys; no duplicate rows on refresh.
+            with db.connection() as conn:
+                existing_keys = {
+                    r[0]
+                    for r in conn.execute(
+                        text(
+                            "SELECT record_key FROM records WHERE user_id=:u AND kind='gym_excel_history'"
+                        ),
+                        {"u": user_id()},
+                    )
+                }
+            for entry in imported:
+                old_item = old_items.get((entry["sheet"], entry["row"]))
+                if not old_item:
+                    continue
+                candidates = [old_item.get("reps", ""), *old_item.get("source_values", [])]
+                history_key = old_item.get("imported_history_id")
+                if history_key in existing_keys:
+                    existing = db.record("gym_excel_history", history_key)
+                    entry.update(id=history_key, imported_at=existing["imported_at"])
+                    continue
+                for reps in candidates:
+                    legacy_key = hashlib.sha256(
+                        json.dumps(
+                            [
+                                previous["source"],
+                                entry["sheet"],
+                                entry["row"],
+                                old_item["exercise_id"],
+                                old_item.get("performance", []),
+                                reps,
+                            ],
+                            ensure_ascii=False,
+                        ).encode()
+                    ).hexdigest()
+                    if legacy_key in existing_keys:
+                        existing = db.record("gym_excel_history", legacy_key)
+                        entry["id"] = existing["id"]
+                        entry["imported_at"] = existing["imported_at"]
+                        break
+        history_ids = {(h["sheet"], h["row"]): h["id"] for h in imported}
+        for day in days:
+            for item in day["exercises"]:
+                item["imported_history_id"] = history_ids.get((item["sheet"], item["source_row"]))
         # Exercise history never gets replaced by re-importing a program.
         for eid, exercise in exercises.items():
             old = db.record("gym_exercise", eid)
@@ -507,7 +581,11 @@ def recent_workouts(limit=50):
 def overview():
     return {
         "programs": [
-            {k: v for k, v in repair_program(r["data"]).items() if k != "source_sheets"}
+            {
+                k: v
+                for k, v in repair_program(r["data"]).items()
+                if k not in {"source_sheets", "selection"}
+            }
             for r in db.records("gym_program", 30)
         ],
         "exercises": [r["data"] for r in db.records("gym_exercise", 1000)],
@@ -519,10 +597,17 @@ def start(program_id, day_id):
     with lock:
         program = repair_program(db.record("gym_program", program_id))
         day = next((d for d in program.get("days", []) if d["id"] == day_id), None)
-        if not day:
-            raise ValueError("Programme ou séance introuvable.")
+        if (
+            not day
+            or program.get("archived")
+            or day.get("hidden")
+            or day["sheet"] in program.get("hidden_sheets", [])
+        ):
+            raise ValueError("Programme ou séance introuvable ou supprimé.")
         rows = []
         for item in day["exercises"]:
+            if item.get("hidden"):
+                continue
             past = history(item["exercise_id"])
             reference = past[0] if past else None
             logs = [
@@ -537,10 +622,13 @@ def start(program_id, day_id):
                     "excel_history": imported_history(item["exercise_id"]),
                 }
             )
+        if not rows:
+            raise ValueError("Cette séance ne contient plus d’exercice actif.")
         value = {
             "id": uuid.uuid4().hex,
+            "display_version": 2,
             "program_id": program_id,
-            "title": day["name"],
+            "title": day.get("display_name") or day["name"],
             "started_at": db.now(),
             "finished_at": None,
             "revision": 1,
@@ -686,3 +774,175 @@ def context():
         }
         for w in recent_workouts(5)
     ]
+
+
+class ProgramAction(BaseModel):
+    revision: int = Field(ge=1)
+    action: str = Field(
+        pattern="^(archive|restore_program|hide_sheet|restore_sheet|hide_day|restore_day|hide_exercise|restore_exercise)$"
+    )
+    sheet: str = Field(default="", max_length=100)
+    day_id: str = Field(default="", max_length=100)
+    exercise_id: str = Field(default="", max_length=100)
+
+
+class ProgramRevision(BaseModel):
+    revision: int = Field(ge=1)
+
+
+class ExerciseEdit(BaseModel):
+    revision: int = Field(ge=1)
+    name: str = Field(min_length=1, max_length=200)
+    sets: int | None = Field(default=None, ge=1, le=20)
+    reps: str = Field(default="", max_length=200)
+    weight: float | None = Field(default=None, ge=0, le=2000, allow_inf_nan=False)
+    rest: str = Field(default="", max_length=200)
+    tempo: str = Field(default="", max_length=100)
+    notes: str = Field(default="", max_length=2000)
+    illustration: str = Field(
+        default="auto",
+        pattern="^(auto|generic|squat|lunge|hinge|press|row|pullup|curl|plank|raise)$",
+    )
+
+
+def program_for_edit(key, revision):
+    program = db.record("gym_program", key)
+    if not program:
+        return None
+    if program.get("revision", 1) != revision:
+        raise Conflict("Programme modifié ailleurs. Recharge avant de continuer.")
+    return program
+
+
+def save_program(program):
+    program["revision"] = program.get("revision", 1) + 1
+    program["updated_at"] = db.now()
+    db.upsert_record("gym_program", program["id"], program)
+    return {k: v for k, v in program.items() if k not in {"source_sheets", "selection"}}
+
+
+def manage_program(key, body):
+    with lock:
+        program = program_for_edit(key, body.revision)
+        if not program:
+            return None
+        action = body.action
+        if action in {"archive", "restore_program"}:
+            program["archived"] = action == "archive"
+        elif action in {"hide_sheet", "restore_sheet"}:
+            if body.sheet not in {d["sheet"] for d in program["days"]}:
+                raise ValueError("Feuille introuvable.")
+            hidden = set(program.get("hidden_sheets", []))
+            if action == "hide_sheet":
+                hidden.add(body.sheet)
+            else:
+                hidden.discard(body.sheet)
+            program["hidden_sheets"] = sorted(hidden)
+        else:
+            day = next((d for d in program["days"] if d["id"] == body.day_id), None)
+            if not day:
+                raise ValueError("Séance introuvable.")
+            if action in {"hide_day", "restore_day"}:
+                day["hidden"] = action == "hide_day"
+            else:
+                item = next((e for e in day["exercises"] if e["id"] == body.exercise_id), None)
+                if not item:
+                    raise ValueError("Exercice introuvable.")
+                item["hidden"] = action == "hide_exercise"
+        return save_program(program)
+
+
+def edit_exercise(key, day_id, item_id, body):
+    with lock:
+        program = program_for_edit(key, body.revision)
+        if not program:
+            return None
+        item = next(
+            (
+                e
+                for d in program["days"]
+                if d["id"] == day_id
+                for e in d["exercises"]
+                if e["id"] == item_id
+            ),
+            None,
+        )
+        if not item:
+            raise ValueError("Exercice introuvable.")
+        fields = body.model_dump(exclude={"revision"})
+        fields["name"] = fields["name"].strip()
+        if not fields["name"]:
+            raise ValueError("Nom d’exercice requis.")
+        changes = {
+            k: v
+            for k, v in fields.items()
+            if v != item.get(k, "auto" if k == "illustration" else "")
+        }
+        if "sets" in changes:
+            changes["sets_label"] = str(fields["sets"]) if fields["sets"] is not None else ""
+        if "sets" in changes or "reps" in changes:
+            changes["warnings"] = [
+                w for w in item.get("warnings", []) if w.split(":", 1)[0] not in changes
+            ]
+        item.update(changes)
+        item["edits"] = {**item.get("edits", {}), **changes}
+        return save_program(program)
+
+
+def reanalyse(key, revision):
+    with lock:
+        program = program_for_edit(key, revision)
+        if not program:
+            return None
+        source = db.record("gym_source", key)
+        if not source:
+            raise ValueError("Fichier Excel d’origine introuvable.")
+        fresh = preview(source["filename"], source["base64"], refresh=True)
+        selection = program.get("selection") or {
+            "title": program["title"],
+            "performances_are_kg": True,
+            "sheets": [
+                {k: s[k] for k in ("name", "header", "mapping")}
+                for s in program["source_sheets"]
+                if s["name"] in {d["sheet"] for d in program["days"]}
+            ],
+        }
+        if fresh["id"] != key:
+            raise ValueError("Source de programme incohérente.")
+        result = confirm(key, ImportSelection(**selection), rebuild=True)
+        return {k: v for k, v in result.items() if k not in {"source_sheets", "selection"}}
+
+
+class ProgramTitle(BaseModel):
+    revision: int = Field(ge=1)
+    title: str = Field(min_length=1, max_length=200)
+    sheet: str = Field(default="", max_length=100)
+    day_id: str = Field(default="", max_length=100)
+
+
+def rename_program_item(key, body):
+    with lock:
+        program = program_for_edit(key, body.revision)
+        if not program:
+            return None
+        title = body.title.strip()
+        if not title:
+            raise ValueError("Nom requis.")
+        if body.sheet and body.day_id:
+            raise ValueError("Choisir une feuille ou une séance.")
+        if body.sheet:
+            if body.sheet not in {d["sheet"] for d in program["days"]}:
+                raise ValueError("Feuille introuvable.")
+            program.setdefault("sheet_titles", {})[body.sheet] = title
+        elif body.day_id:
+            day = next((d for d in program["days"] if d["id"] == body.day_id), None)
+            if not day:
+                raise ValueError("Séance introuvable.")
+            day["display_name"] = title
+        else:
+            if len(title) > 120:
+                raise ValueError("120 caractères maximum pour le programme.")
+            program["title"] = title
+            if program.get("selection"):
+                program["selection"]["title"] = title
+        return save_program(program)
