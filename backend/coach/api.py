@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field, field_validator
 from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from coach import activities, chatgpt, db, garmin_jobs, garmin_schedule, memory, planning
+from coach import activities, chatgpt, db, garmin_jobs, garmin_schedule, gym, memory, planning
 from coach.config import data_dir, web_settings
 from coach.secrets import read_secret
 
@@ -271,6 +271,121 @@ def resume_sync():
 @app.post("/api/garmin/jobs/cancel", dependencies=[Depends(require_session)])
 def cancel_sync():
     return garmin_jobs.cancel()
+
+
+class GymStart(BaseModel):
+    program_id: str
+    day_id: str
+
+
+class GymVideo(BaseModel):
+    url: str = Field(default="", max_length=500)
+
+
+@app.get("/api/gym", dependencies=[Depends(require_session)])
+def gym_overview():
+    return gym.overview()
+
+
+@app.post("/api/gym/import", dependencies=[Depends(require_session)])
+async def gym_import(request: Request):
+    chunks = bytearray()
+    async for chunk in request.stream():
+        chunks.extend(chunk)
+        if len(chunks) > 7 * 1024 * 1024:
+            raise HTTPException(413, "Fichier trop volumineux (5 Mo maximum).")
+    try:
+        value = json.loads(chunks)
+        filename, encoded = value["filename"], value["base64"]
+        if not isinstance(filename, str) or not isinstance(encoded, str):
+            raise ValueError()
+        return await run_in_threadpool(gym.preview, filename, encoded)
+    except (ValueError, KeyError, TypeError):
+        raise HTTPException(
+            422, "Import impossible : choisir un fichier .xlsx de 5 Mo maximum."
+        ) from None
+
+
+@app.post("/api/gym/import/{key}/confirm", dependencies=[Depends(require_session)])
+def gym_confirm(key: str, body: gym.ImportSelection):
+    try:
+        value = gym.confirm(key, body)
+        if value is None:
+            raise HTTPException(404, "Import introuvable.")
+        return value
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.get("/api/gym/programs/{key}/download", dependencies=[Depends(require_session)])
+def gym_original_download(key: str):
+    import base64
+
+    if not db.record("gym_program", key):
+        raise HTTPException(404, "Programme introuvable.")
+    value = db.record("gym_source", key)
+    if not value:
+        raise HTTPException(404, "Fichier source introuvable.")
+    return Response(
+        base64.b64decode(value["base64"]),
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        headers={"Content-Disposition": 'attachment; filename="programme-original.xlsx"'},
+    )
+
+
+@app.get("/api/gym/programs/{key}/source", dependencies=[Depends(require_session)])
+def gym_source(key: str):
+    value = db.record("gym_program", key)
+    if not value:
+        raise HTTPException(404, "Programme introuvable.")
+    return value["source_sheets"]
+
+
+@app.post("/api/gym/workouts", status_code=201, dependencies=[Depends(require_session)])
+def gym_start(body: GymStart):
+    try:
+        return gym.start(body.program_id, body.day_id)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.get("/api/gym/workouts/{key}", dependencies=[Depends(require_session)])
+def gym_workout_read(key: str):
+    value = db.record("gym_workout", key)
+    if not value:
+        raise HTTPException(404, "Séance introuvable.")
+    return value
+
+
+@app.put("/api/gym/workouts/{key}", dependencies=[Depends(require_session)])
+def gym_workout_update(key: str, body: gym.WorkoutUpdate):
+    try:
+        value = gym.update_workout(key, body)
+        if value is None:
+            raise HTTPException(404, "Séance introuvable.")
+        return value
+    except gym.Conflict as exc:
+        raise HTTPException(409, str(exc)) from None
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.get("/api/gym/exercises/{key}/history", dependencies=[Depends(require_session)])
+def gym_history(key: str):
+    if not db.record("gym_exercise", key):
+        raise HTTPException(404, "Exercice introuvable.")
+    return {"sessions": gym.history(key), "imported": gym.imported_history(key)}
+
+
+@app.put("/api/gym/exercises/{key}/video", dependencies=[Depends(require_session)])
+def gym_video(key: str, body: GymVideo):
+    try:
+        value = gym.set_video(key, body.url)
+        if value is None:
+            raise HTTPException(404, "Exercice introuvable.")
+        return value
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
 
 
 @app.get("/api/planning", dependencies=[Depends(require_session)])
@@ -651,6 +766,7 @@ def coach_context(question="", recent_ids=()):
         ]
         selection["details_limited_to"] = 30
     return {
+        "strength_training": gym.context(),
         "planning": planning.context(),
         "selected_activity_period": selection,
         "as_of": db.now(),

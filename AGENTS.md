@@ -15,8 +15,9 @@ React/TypeScript frontend. Run commands from the repository root.
 - ChatGPT uses official authorization and public Responses endpoints only. No paid API
   fallback without explicit user configuration. Preserve terminal streaming validation.
 - Do not claim an integration is validated with real accounts based on mocked tests.
-- Vector RAG, conversation imports, Excel import and workout logging remain backlog work.
-  Editable memory, derived summaries and owner-scoped lexical retrieval are implemented.
+- Vector RAG and conversation imports remain backlog work. XLSX preview/mapping, strength
+  workout logging, editable memory and owner-scoped lexical retrieval are implemented.
+  Preserve raw Excel values and links; never infer actual reps/weights from ambiguous performances.
 - Match each ticket to acceptance checks; avoid unrelated changes.
 
 Checks: `ruff check backend`, `ruff format --check backend`, `pytest backend/tests`,

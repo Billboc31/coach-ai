@@ -18,7 +18,7 @@ et les informations que tu lui racontes. Première version personnelle, utilisab
 
 **À valider avec de vrais comptes** : accès Garmin et autorisation/inférence ChatGPT.
 Un fichier de jetons indique une configuration enregistrée ; il ne prouve pas un accès actif.
-La recherche vectorielle, l’import de conversations, l’import Excel et le suivi muscu ne sont pas encore développés.
+La recherche vectorielle et l’import de conversations ne sont pas encore développés.
 
 ## Railway
 
@@ -253,3 +253,47 @@ limitée à 400 séances et 500 activités par période de 93 jours maximum, ave
 troncature. Les propositions restent disponibles dans le calendrier après sortie de l’historique
 récent du chat. Ce lot ne synchronise pas de calendrier externe, n’envoie pas de séances vers
 la montre et ne déplace pas automatiquement les séances existantes : les ajuster dans le planning.
+
+### Musculation et Excel
+
+**Musculation → Importer mon Excel** accepte les fichiers `.xlsx` (5 Mo, 30 feuilles,
+1000 lignes et 40 colonnes maximum par feuille). Les anciens `.xls` doivent être convertis
+avec Excel. L’aperçu propose les colonnes détectées et permet de les ajuster avant validation.
+Les layouts de coaching avec ordre, semaines et titres « Séance » sont séparés en séances.
+Les fusions verticales sont appliquées aux consignes sans modifier les valeurs originales.
+Les formules ne sont pas exécutées. Les dates dans les champs reps/séries sont signalées ;
+les séries ambiguës ne deviennent pas des prescriptions chiffrées inventées.
+La notice, toutes les cellules, les hyperliens supportés et le fichier original sont conservés
+privément ; l’original reste téléchargeable sans modification. Images/objets Excel restent dans
+l’original et ne sont pas tous reproduits dans la grille de l’app. L’import n’édite pas Drive.
+
+Les anciennes performances restent des entrées Excel distinctes des séries réalisées dans
+l’app. Une case d’import permet de confirmer que les performances numériques simples sont en
+kg ; seules ces valeurs peuvent alors servir de références chiffrées. Les nombres complexes,
+les « X », les valeurs par côté et les dates non interprétables restent du texte. Aucun
+calcul de performance réelle à partir du nombre de répétitions prévu. Les imports identiques
+sont dédupliqués ; importer un programme ne remplace pas l’historique des exercices.
+
+Choisir programme/cycle/semaine, puis **Commencer la séance**. Saisir kg et reps, ou secondes
+pour un maintien, puis valider chaque série. Ajouter des séries libres si le programme ne
+précise pas leur nombre. Autosave après une courte pause, statut visible, reprise des séances
+en cours et brouillon dans l’onglet navigateur en cas d’échec. Un conflit exige une comparaison
+et une action explicite avant remplacement. Ce lot exige le réseau pour créer/terminer les
+séances ; le brouillon d’onglet ne constitue pas un mode hors ligne complet ni une sauvegarde.
+Terminer conserve la séance et son historique ; la correction d’une séance terminée reste
+à développer. Les logs sont distincts des activités Garmin et ne sont pas fusionnés dans le calendrier.
+
+La fiche propose les précédentes charges du même nom d’exercice normalisé, sans augmentation
+automatique. Un exercice inédit sans référence garde ses charges vides. Conserver la même
+convention de saisie (par haltère/charge totale et même matériel). Les noms différents ne sont
+pas fusionnés arbitrairement. Le panneau montre jusqu’à 20 séances récentes de cet exercice et
+30 entrées Excel ; toutes les séries restent en base. La liste générale montre les 50 dernières
+séances et jusqu’à 30 programmes. Le coach reçoit les séries validées des cinq séances récentes,
+avec unités et distinction séance en cours/terminée, au maximum 25 exercices par séance.
+
+Les liens vidéo/images OneDrive présents dans Excel restent ouvrables. Un lien YouTube importé
+ou enregistré dans la fiche permet d’afficher le lecteur sur place. Sans lien YouTube, la fiche
+propose une recherche et la saisie d’une URL ; aucune démonstration n’est sélectionnée automatiquement
+pour une variante inconnue. La vidéo ne charge qu’après clic ; sa disponibilité dépend du fournisseur.
+Le parser a été essayé localement sur le fichier fourni par l’utilisateur. Tests API simulés,
+lint et build vérifiés ; interaction mobile et vidéos à vérifier dans l’app Railway.

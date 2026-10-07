@@ -100,3 +100,21 @@ les sports et les champs, force le statut proposed et retire les liens Garmin. L
 sont attachées au message assistant, confirmables dans le chat et visibles dans le calendrier.
 Les séances prévues/réalisées et leurs statuts intègrent le contexte coach. Aucun outil de mutation
 libre pour le modèle ni rapprochement implicite Garmin : confirmation/liaison restent explicites.
+
+## Musculation
+
+Records séparés : gym_import (aperçu, mapping, déduplication par empreinte), gym_source (fichier
+original privé), gym_program (séances et sources), gym_exercise (nom normalisé, vidéo),
+gym_excel_history (performances d’origine), gym_workout (séries saisies, révision, dates).
+Aucune nouvelle table ; le volume SQLite existant garde l’ensemble. Les identifiants d’exercice
+sont dérivés du nom normalisé, sans résolution automatique des synonymes ou du matériel.
+Les requêtes sont propriétaire-scopées. Les écritures de séance sont sérialisées, exigent la
+révision actuelle et refusent les séances terminées. Les séries réalisées ne sont pas
+préremplies ni marquées faites à partir d’un import. Requêtes SQL par exercice pour les
+références, quel que soit l’âge de sa dernière occurrence ; affichage borné.
+L’upload est borné, ZIP contrôlé avant lecture, aucun fetch de liens ni exécution de formules.
+La prévisualisation associe explicitement les colonnes et signale les ambiguïtés ; le fichier
+original est conservé sans changement. Les URLs de médias sont limitées aux fournisseurs
+supportés ; les vidéos YouTube sont rendues depuis un identifiant validé, après clic.
+Un brouillon de séries reste dans sessionStorage pendant l’autosave et n’est pas assimilé
+à une écriture réussie en base. La comparaison de versions précède une reprise après conflit.

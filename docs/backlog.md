@@ -93,16 +93,27 @@ aucune affirmation de causalité tirée d’une simple corrélation Garmin.
 ## Musculation et planning
 
 ### GYM-01 — Import Excel du vrai programme (P1)
+Livré : aperçu XLSX, association de colonnes, cellules fusionnées, séparation cycles/semaines/
+séances, conservation des sources et fichier original, consignes/tempos/repos/commentaires,
+performances historiques séparées, déduplication et signalement des dates ambiguës. Parser
+essayé sur le fichier fourni. Restent : autres layouts, XLS/ODS, images intégrées dans la fiche.
 Dépendances : fichier utilisateur. Mapping feuilles/exercices/séries/réps/charges/repos,
 prévisualisation et corrections. Critères : conservation de la structure du programme,
 unités et consignes ; gérer cellules vides/fusionnées sans inventer de prescription.
 
 ### GYM-02 — Saisie pendant la séance (P1)
+Livré : écran de séance, kg/reps/secondes par série, validation, ajout de séries, autosave,
+brouillon d’onglet, reprise, historique en base, contrôle des révisions et fin de séance.
+Restent : vrai mode hors ligne, minuteur de repos/RPE, correction des séances terminées.
 Dépendances : GYM-01. Poids/réps par série, précédente performance, minuteur, difficulté et
 notes. Autosave et reprise après fermeture ; mode hors ligne avec synchronisation. Critères :
 pas de perte/duplication, saisie mobile rapide et distinction prévu/réalisé.
 
 ### GYM-03 — Progression et contexte coach (P1)
+Livré : références de charge du même exercice entre programmes, performances Excel conservées
+et unités confirmables, historique par exercice, séries validées dans le contexte coach, liens
+média Excel et lecteur YouTube configurable. Restent : comparaison/progression approfondie,
+suggestions chiffrées évaluées, synonymes/matériel, fusion calendrier/Garmin et catalogue vidéos.
 Dépendances : GYM-02, COACH-02. Progression par exercice, proposition prochaine séance sans
 écraser programme source ; associer Garmin et saisie si même séance. Critères : gestion charges,
 réps, RPE et déduplication de la charge multisport.
