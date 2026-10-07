@@ -1,3 +1,4 @@
+import os
 import secrets
 import threading
 import time
@@ -11,21 +12,17 @@ from pydantic import BaseModel, Field, field_validator
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from coach import chatgpt, db
-from coach.config import data_dir
+from coach.config import data_dir, web_settings
 from coach.secrets import read_secret
 
+settings = web_settings()
 app = FastAPI(title="Coach AI", docs_url=None, redoc_url=None, openapi_url=None)
-app.add_middleware(TrustedHostMiddleware, allowed_hosts=["127.0.0.1", "localhost", "testserver"])
+app.add_middleware(TrustedHostMiddleware, allowed_hosts=settings.hosts)
 sessions: dict[str, float] = {}
 login_attempts: dict[str, list[float]] = {}
 chat_lock = threading.Lock()
 sync_lock = threading.Lock()
-ALLOWED_ORIGINS = {
-    "http://127.0.0.1:5173",
-    "http://localhost:5173",
-    "http://127.0.0.1:8000",
-    "http://localhost:8000",
-}
+ALLOWED_ORIGINS = settings.origins
 
 
 @app.middleware("http")
@@ -45,7 +42,7 @@ def require_session(request: Request):
     value = request.cookies.get("coach_session", "")
     if sessions.get(value, 0) < time.time():
         sessions.pop(value, None)
-        raise HTTPException(401, "Saisis ta clé d’accès locale.")
+        raise HTTPException(401, "Saisis ta clé d’accès.")
 
 
 class Login(BaseModel):
@@ -91,9 +88,11 @@ def login(body: Login, request: Request, response: Response):
     if len(attempts) >= 5:
         raise HTTPException(429, "Trop d’essais ; attends une minute.")
     attempts.append(stamp)
-    key = read_secret(data_dir() / "app.json").get("access_key", "")
+    key = os.environ.get("COACH_ACCESS_KEY") or read_secret(data_dir() / "app.json").get(
+        "access_key", ""
+    )
     if not key or not secrets.compare_digest(key, body.access_key):
-        raise HTTPException(401, "Clé incorrecte. Lance coach init sur l’ordinateur.")
+        raise HTTPException(401, "Clé incorrecte.")
     login_attempts.pop(remote, None)
     for token, expires in list(sessions.items()):
         if expires < stamp:
@@ -101,15 +100,22 @@ def login(body: Login, request: Request, response: Response):
     token = secrets.token_urlsafe(32)
     sessions[token] = stamp + 8 * 3600
     response.set_cookie(
-        "coach_session", token, httponly=True, samesite="strict", max_age=8 * 3600, secure=False
-    )  # Loopback HTTP only in this milestone.
+        "coach_session",
+        token,
+        httponly=True,
+        samesite="strict",
+        max_age=8 * 3600,
+        secure=settings.production,
+    )
     return {"ok": True}
 
 
 @app.post("/api/logout", dependencies=[Depends(require_session)])
 def logout(request: Request, response: Response):
     sessions.pop(request.cookies.get("coach_session", ""), None)
-    response.delete_cookie("coach_session")
+    response.delete_cookie(
+        "coach_session", secure=settings.production, httponly=True, samesite="strict"
+    )
     return {"ok": True}
 
 
@@ -250,7 +256,11 @@ def chat(body: Chat):
         chat_lock.release()
 
 
-frontend = Path(__file__).resolve().parents[2] / "frontend" / "dist"
+frontend = Path(
+    os.environ.get(
+        "COACH_FRONTEND_DIR", str(Path(__file__).resolve().parents[2] / "frontend" / "dist")
+    )
+)
 if frontend.exists():
     app.mount("/assets", StaticFiles(directory=frontend / "assets"), name="assets")
 

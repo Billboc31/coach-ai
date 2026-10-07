@@ -1,13 +1,13 @@
 # Coach AI
 
 Un coach conversationnel qui croise tous tes sports, tes activités Garmin, tes objectifs
-et les informations que tu lui racontes. Première version personnelle, hébergée localement.
+et les informations que tu lui racontes. Première version personnelle, utilisable localement ou déployable sur Railway.
 
 ## Premier lot
 
 - Interface responsive : vue d’ensemble, activités, profil, notes, chat et connexions.
 - Base SQLite persistante avec propriétaire utilisateur et schéma initial versionné.
-- Accès local par clé et cookie HttpOnly. Les données ne sont pas publiques.
+- Accès par clé et cookie HttpOnly (Secure en production). Les données ne sont pas publiques.
 - Connexion Garmin dans le terminal, MFA et session persistante ; synchronisation manuelle
   des 100 activités récentes et de 1 à 30 jours de santé (7 jours depuis l’interface).
 - Parcours officiel Sign in with ChatGPT pour applications locales : PKCE, state, nonce,
@@ -18,6 +18,13 @@ et les informations que tu lui racontes. Première version personnelle, héberg�
 **À valider avec de vrais comptes** : accès Garmin et autorisation/inférence ChatGPT.
 Un fichier de jetons indique une configuration enregistrée ; il ne prouve pas un accès actif.
 La mémoire RAG, l’import de conversations, l’import Excel et le suivi muscu ne sont pas encore développés.
+
+## Railway
+
+La configuration Docker et `railway.json` sont incluses. Connecter ce dépôt depuis Railway,
+attacher un volume `/data`, définir une clé privée et générer le domaine HTTPS.
+Les étapes et vérifications sont dans [docs/railway.md](docs/railway.md).
+Garmin nécessite encore une connexion sur le serveur ; ChatGPT local n’est pas encore adapté au cloud.
 
 ## Démarrer (Mac, Linux ou WSL)
 
@@ -104,9 +111,9 @@ avec les mêmes paramètres ; ouvrir http://127.0.0.1:8000.
 
 ## Limites de ce lot
 
-Usage **sur l’ordinateur local uniquement**. Le serveur et Vite écoutent sur loopback.
-L’accès depuis l’iPhone à distance sera ajouté avec HTTPS et une authentification adaptée.
-Ne pas remplacer simplement `127.0.0.1` par `0.0.0.0`.
+Le démarrage local reste sur loopback. Pour un accès iPhone par HTTPS, suivre
+[le déploiement Railway](docs/railway.md). Le conteneur sert l’interface et l’API ensemble.
+L’authentification est personnelle ; elle ne constitue pas un accès multi-utilisateur.
 
 La base actuelle utilise SQLite et des migrations SQL locales ; PostgreSQL/pgvector est
 une évolution prévue, pas une compatibilité déjà validée. Pas de diagnostic médical.

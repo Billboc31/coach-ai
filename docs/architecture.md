@@ -25,8 +25,10 @@ et ChatGPT sont des fichiers locaux distincts, jamais des champs du profil ni de
 Application locale par défaut, accès par clé aléatoire et session HttpOnly valable 8 heures.
 Sessions en mémoire : redémarrer le serveur exige une nouvelle connexion. Contrôle Origin
 sur les mutations, contrôle Host et limitation des tentatives de connexion. HTTP et cookie
-sans Secure uniquement car les listeners sont sur loopback. HTTPS/session robuste requis
-avant réseau. La clé locale s’affiche uniquement via `coach init`.
+sans Secure uniquement sur loopback. En production : origine HTTPS exacte, Host autorisé,
+cookie Secure et clé COACH_ACCESS_KEY (32 caractères minimum). Railway termine TLS.
+Une seule réplique/un seul worker ; les redémarrages invalident les sessions. Le stockage
+SQLite et les jetons résident dans le volume /data. La clé locale s’affiche via `coach init`.
 
 Secrets écrits atomiquement avec permissions 0600 sur Unix, dossier privé. Sur Windows,
 les permissions dépendent du compte et des ACL locales. Ne pas synchroniser `.local` vers git.

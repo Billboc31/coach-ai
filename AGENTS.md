@@ -6,8 +6,9 @@ React/TypeScript frontend. Run commands from the repository root.
 - Read README.md, docs/architecture.md and docs/backlog.md before implementation.
 - Keep real user data, credentials, tokens and exports out of git. No personal medical
   history in fixtures, example profiles or prompts checked into this public repository.
-- This milestone is loopback-only and single-user. Do not expose a listener to the LAN
-  or internet until LOCAL-02 is implemented and verified.
+- Single-user only. Production requires HTTPS ingress, an exact public origin, a strong
+  environment access key and persistent storage. Use coach.server for Railway; one replica
+  and one worker. Do not assume local ChatGPT OAuth is supported on the hosted app.
 - Preserve user ownership in queries and records. Never treat missing health data as zero.
 - Never log auth callback URLs, tokens, passwords or provider error bodies.
 - Garmin is a replaceable unofficial adapter. Do not bypass MFA or access controls.
