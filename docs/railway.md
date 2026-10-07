@@ -99,13 +99,33 @@ Ce n’est pas une sauvegarde intégrale du compte Garmin : les fichiers FIT/GPX
 splits détaillés des activités, équipements, nutrition et autres domaines ne sont pas
 importés par ce lot. Les limites de conservation du fournisseur restent applicables.
 
-ChatGPT : la CLI actuelle utilise un callback sur `127.0.0.1` de l’ordinateur local.
-Ce parcours ne fonctionne pas directement depuis l’interface Railway. L’éligibilité et
-l’authentification d’une application hébergée sont à traiter séparément avant d’activer
-le coach en ligne. Aucun appel via API payante n’est activé automatiquement.
+### Session ChatGPT autorisée sur le poste
+
+Après mise à jour du dépôt, lancer `coach chatgpt-transfer` depuis le poste où la connexion
+ChatGPT a réussi. Saisir le domaine HTTPS puis la clé d’accès de l’app. Aucun jeton ne doit
+être copié dans GitHub, les variables Railway ou une discussion. Après validation du serveur,
+la session locale est retirée pour laisser Railway gérer seul les rotations du refresh token.
+
+L’interface Connexions permet aussi d’importer `.local/chatgpt.json`, de tester une vraie
+réponse neutre et de déconnecter l’app. Après l’import par navigateur, ne plus utiliser la
+copie source sur le poste ; le navigateur ne peut pas la supprimer. Un import périmé est
+refusé : renouveler localement avant de réessayer. Aucun conseil ni donnée Garmin envoyé
+lors de ce test. Le test utilise le forfait/crédits ChatGPT. Les messages du coach utilisent
+ensuite le contexte santé décrit précédemment.
+
+Le runtime crée/conserve son propre host ID sur le volume ; un ID du poste n’est jamais
+importé. Vérification de la signature JWT, issuer/audience, identité liée au token d’accès,
+client ID, scope du forfait et catalogue avant remplacement atomique. Un refus conserve
+le compte précédent. Les renouvellements sont sérialisés entre CLI/API sur ce runtime.
+
+Ce parcours reprend la documentation officielle pour une application open source exécutée
+sur un serveur personnel. Le callback initial reste local. La commercialisation ou le
+service hébergé destiné à d’autres comptes nécessite une démarche séparée. Aucun fallback
+API payant. Le transfert et l’inférence réels sur Railway restent à valider par le propriétaire.
 
 ## Références
 
+- https://developers.openai.com/siwc/token-sharing-open-source/self-hosted-vms
 - https://docs.railway.com/services
 - https://docs.railway.com/volumes
 - https://docs.railway.com/deployments/healthchecks

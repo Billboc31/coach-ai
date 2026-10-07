@@ -7,8 +7,8 @@ from coach.config import data_dir
 
 
 @contextmanager
-def storage_lock():
-    path = data_dir() / "garmin.lock"
+def storage_lock(name="garmin"):
+    path = data_dir() / f"{name}.lock"
     with path.open("a+b") as handle:
         try:
             if os.name == "posix":
@@ -23,7 +23,7 @@ def storage_lock():
                 handle.seek(0)
                 msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
         except OSError:
-            raise ValueError("Une autre opération Garmin utilise déjà la session.") from None
+            raise ValueError(f"Une autre opération {name} utilise déjà la session.") from None
         try:
             yield
         finally:

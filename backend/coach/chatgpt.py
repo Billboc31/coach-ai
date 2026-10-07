@@ -3,6 +3,7 @@
 import base64
 import hashlib
 import json
+import math
 import secrets
 import time
 import uuid
@@ -14,6 +15,7 @@ import httpx
 import jwt
 
 from coach.config import data_dir
+from coach.garmin_lock import storage_lock
 from coach.secrets import read_secret, write_secret
 
 ISSUER = "https://auth.openai.com"
@@ -88,7 +90,12 @@ def verify_identity(tokens: dict, client_id: str, nonce: str, saved: dict, key_c
     return claims
 
 
-def sign_in(port: int = 1455):
+def sign_in(port: int = 1455, on_authorization=None):
+    with storage_lock("chatgpt"):
+        return _sign_in(port, on_authorization)
+
+
+def _sign_in(port, on_authorization):
     saved = read_secret(credential_path())
     host_path = data_dir() / "host.json"
     host = read_secret(host_path).get("id") or "urn:uuid:" + str(uuid.uuid4())
@@ -120,9 +127,12 @@ def sign_in(port: int = 1455):
 
     with HTTPServer(("127.0.0.1", port), Handler) as server:
         server.timeout = 1
-        print("Ouvre cette adresse sur cet ordinateur pour autoriser Coach AI :")
-        print(url)
-        webbrowser.open(url)
+        if on_authorization:
+            on_authorization(url)
+        else:
+            print("Ouvre cette adresse sur cet ordinateur pour autoriser Coach AI :")
+            print(url)
+            webbrowser.open(url)
         deadline = time.monotonic() + 300
         while not callback and time.monotonic() < deadline:
             server.handle_request()
@@ -153,17 +163,23 @@ def sign_in(port: int = 1455):
             "expires_at": time.time() + tokens["expires_in"],
         },
     )
-    print("Identité et autorisation du forfait validées. Le test d’inférence reste à faire.")
+    if not on_authorization:
+        print("Identité et autorisation du forfait validées. Le test d’inférence reste à faire.")
 
 
 def access_token() -> str:
+    with storage_lock("chatgpt"):
+        return _access_token()
+
+
+def _access_token() -> str:
     saved = read_secret(credential_path())
     if not saved.get("access_token"):
         raise ValueError("Connecte ChatGPT dans le terminal : coach chatgpt-login")
     if "chatgpt.tokens.use.direct" not in saved.get("scope", "").split():
         raise ValueError("Autorisation du forfait manquante.")
     if time.time() >= saved["expires_at"] - 60:
-        if time.time() < saved.get("earliest_refresh_at", 0):
+        if time.time() < (saved.get("earliest_refresh_at") or 0):
             raise ValueError("Renouvellement pas encore autorisé ; réessaye plus tard.")
         with httpx.Client(timeout=30) as client:
             response = client.post(
@@ -187,10 +203,12 @@ def access_token() -> str:
 
 
 def models() -> list[dict]:
+    return catalogue(access_token())
+
+
+def catalogue(token: str) -> list[dict]:
     with httpx.Client(timeout=30) as client:
-        response = client.get(
-            RESOURCE + "/models", headers={"Authorization": "Bearer " + access_token()}
-        )
+        response = client.get(RESOURCE + "/models", headers={"Authorization": "Bearer " + token})
         if response.status_code != 200:
             raise ValueError("Catalogue ChatGPT inaccessible.")
         return [
@@ -250,3 +268,95 @@ def respond(model: str, context: dict, messages: list[dict]) -> tuple[str, dict]
             if response.status_code != 200:
                 raise ValueError("Requête ChatGPT refusée. Vérifie la session et le quota.")
             return consume_events(response.iter_lines())
+
+
+def validate_session(value: dict) -> dict:
+    allowed = {
+        "access_token",
+        "refresh_token",
+        "id_token",
+        "client_id",
+        "subject",
+        "email",
+        "scope",
+        "expires_at",
+        "expires_in",
+        "token_type",
+        "earliest_refresh_at",
+    }
+    if not isinstance(value, dict) or set(value) - allowed:
+        raise ValueError("Format de session ChatGPT incompatible.")
+    for key in ("access_token", "refresh_token", "id_token", "client_id", "subject", "scope"):
+        item = value.get(key)
+        if not isinstance(item, str) or not item or len(item) > 32000:
+            raise ValueError("Session ChatGPT incomplète.")
+    for key in ("expires_at", "expires_in", "earliest_refresh_at"):
+        item = value.get(key)
+        if item is not None and (
+            isinstance(item, bool) or not isinstance(item, (int, float)) or not math.isfinite(item)
+        ):
+            raise ValueError("Échéance de session incompatible.")
+    if value.get("client_id") == "dynamic_agent_client":
+        raise ValueError("Client ChatGPT non enregistré.")
+    if "chatgpt.tokens.use.direct" not in value["scope"].split():
+        raise ValueError("Autorisation du forfait manquante.")
+    if value.get("expires_at", 0) <= time.time() + 60:
+        raise ValueError(
+            "Session trop ancienne : lance coach chatgpt-test sur le poste, puis réessaye."
+        )
+    return value
+
+
+def import_session(value: dict, key_client=None) -> list[dict]:
+    value = validate_session(value)
+    with storage_lock("chatgpt"):
+        # This is a previously completed OAuth session, not a new callback. The
+        # retained identity token may be expired; still verify signature/issuer/audience.
+        key_client = key_client or jwt.PyJWKClient(ISSUER + "/.well-known/jwks.json", timeout=20)
+        key = key_client.get_signing_key_from_jwt(value["id_token"]).key
+        claims = jwt.decode(
+            value["id_token"],
+            key,
+            algorithms=["RS256"],
+            audience=value["client_id"],
+            issuer=ISSUER,
+            options={"require": ["sub", "exp", "iat"], "verify_exp": False},
+        )
+        if claims["sub"] != value["subject"]:
+            raise ValueError("Identité de session incompatible.")
+        access_key = key_client.get_signing_key_from_jwt(value["access_token"]).key
+        access_claims = jwt.decode(
+            value["access_token"],
+            access_key,
+            algorithms=["RS256"],
+            audience=RESOURCE,
+            issuer=ISSUER,
+            leeway=5,
+            options={"require": ["sub", "exp", "iat", "client_id", "scope"]},
+        )
+        if (
+            access_claims["sub"] != claims["sub"]
+            or access_claims["client_id"] != value["client_id"]
+            or "chatgpt.tokens.use.direct" not in access_claims["scope"].split()
+        ):
+            raise ValueError("Autorisation de session incompatible.")
+        value = {**value, "expires_at": min(value["expires_at"], access_claims["exp"])}
+        previous = read_secret(credential_path())
+        if previous.get("subject") and (
+            previous["subject"] != claims["sub"] or previous.get("client_id") != value["client_id"]
+        ):
+            raise ValueError("Déconnecte le compte actuel avant de changer de compte.")
+        choices = catalogue(value["access_token"])
+        if not choices:
+            raise ValueError("Aucun modèle accessible pour cette session.")
+        # Assign the runtime its own stable identity; never copy the laptop host ID.
+        host_path = data_dir() / "host.json"
+        if not read_secret(host_path).get("id"):
+            write_secret(host_path, {"id": "urn:uuid:" + str(uuid.uuid4())})
+        write_secret(credential_path(), {**value, "email": claims.get("email")})
+        return choices
+
+
+def disconnect():
+    with storage_lock("chatgpt"):
+        credential_path().unlink(missing_ok=True)

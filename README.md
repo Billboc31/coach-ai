@@ -24,7 +24,8 @@ La mémoire RAG, l’import de conversations, l’import Excel et le suivi muscu
 La configuration Docker et `railway.json` sont incluses. Connecter ce dépôt depuis Railway,
 attacher un volume `/data`, définir une clé privée et générer le domaine HTTPS.
 Les étapes et vérifications sont dans [docs/railway.md](docs/railway.md).
-Garmin nécessite encore une connexion sur le serveur ; ChatGPT local n’est pas encore adapté au cloud.
+Les sessions locales Garmin et ChatGPT peuvent être importées dans Connexions.
+Pour ChatGPT : autorisation locale, puis transfert privé vers le serveur personnel.
 
 ## Démarrer (Mac, Linux ou WSL)
 
@@ -86,8 +87,8 @@ forfait. Le callback doit revenir sur **le même ordinateur**, à `127.0.0.1:145
 Si le port est occupé : `coach chatgpt-login --port 1456`.
 
 Dans l’interface, charger les modèles et envoyer une question. Les données de contexte
-sont envoyées à OpenAI uniquement lors de cette action. Les jetons ne sont jamais exposés
-au frontend. Une réponse n’est enregistrée qu’après `response.completed` ; un quota épuisé
+sont envoyées à OpenAI uniquement lors de cette action. L’API ne renvoie jamais les jetons au frontend. Lors d’un import manuel,
+le navigateur lit le fichier choisi et le transmet directement à l’app privée. Une réponse n’est enregistrée qu’après `response.completed` ; un quota épuisé
 ou un flux interrompu est signalé comme échec. Le flux externe est streamé, mais cette
 première UI affiche la réponse complète à la fin.
 
@@ -97,6 +98,28 @@ Pour retirer les jetons locaux : `coach chatgpt-logout`. Révoquer également l�
 Cette intégration est en preview : ses possibilités et l’éligibilité de ce projet restent
 à tester. Elle utilise les limites existantes du forfait. L’accès commercial/hébergé à
 distance nécessite une démarche séparée. Elle n’importe aucune mémoire ChatGPT.
+
+### Transférer ChatGPT vers Railway
+
+Après `git pull`, dans l’environnement Python déjà activé : `coach chatgpt-transfer`.
+Saisir le domaine HTTPS de l’app puis sa clé privée. La session est validée côté serveur
+(signature et identité, autorisation du forfait, accès au catalogue) avant enregistrement.
+Après succès, la copie locale est supprimée : Railway possède les prochains renouvellements.
+En cas d’échec, la session locale est conservée. Aucun test d’inférence automatique au transfert.
+
+Autre possibilité : dans **Connexions → ChatGPT → Importer la session**, choisir
+`.local/chatgpt.json`. Le navigateur ne peut pas supprimer le fichier source : ne plus
+utiliser cette copie sur le poste après un import réussi. Si la session est trop ancienne,
+relancer `coach chatgpt-test` sur le poste puis réimporter le fichier mis à jour.
+Le bouton **Tester la connexion** demande une réponse neutre sans profil ni Garmin et
+consomme le forfait/crédits connectés. **Déconnecter ChatGPT** retire les jetons de l’app ;
+la révocation distante reste dans les réglages ChatGPT.
+
+Dans l’interface **locale**, **Autoriser ChatGPT sur ce poste** permet de démarrer OAuth
+sans saisir la commande de login : suivre le lien OpenAI dans le navigateur de ce poste.
+Sur Railway ce bouton est remplacé par l’import ; son callback loopback ne peut pas être
+redirigé vers le serveur. Garmin propose l’import de `.local/garmin/garmin_tokens.json` ;
+la première authentification Garmin/MFA reste locale dans ce lot.
 
 ## Vérifier
 

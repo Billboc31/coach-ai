@@ -34,6 +34,7 @@ sessions: dict[str, float] = {}
 login_attempts: dict[str, list[float]] = {}
 chat_lock = threading.Lock()
 sync_lock = threading.Lock()
+chatgpt_login = {"status": "idle"}
 ALLOWED_ORIGINS = settings.origins
 
 
@@ -150,6 +151,8 @@ def dashboard():
     account = read_secret(chatgpt.credential_path())
     activities = db.activity_page(0, 20)
     return {
+        "local_connections": not settings.production,
+        "garmin_configured": (data_dir() / "garmin" / "garmin_tokens.json").exists(),
         "profile": db.profile(),
         "activities": activities[:20],
         "health": db.records("health", 7),
@@ -258,13 +261,126 @@ def sync_garmin():
         sync_lock.release()
 
 
+async def private_payload(request: Request):
+    payload = bytearray()
+    async for chunk in request.stream():
+        payload.extend(chunk)
+        if len(payload) > 65536:
+            raise HTTPException(413, "Session trop volumineuse.")
+    try:
+        return json.loads(payload)
+    except (ValueError, UnicodeError):
+        raise HTTPException(422, "Format de session incompatible.") from None
+
+
+@app.post("/api/chatgpt/session", dependencies=[Depends(require_session)])
+async def receive_chatgpt_session(request: Request):
+    value = await private_payload(request)
+    try:
+        chatgpt.validate_session(value)
+    except ValueError:
+        raise HTTPException(
+            422, "Session incompatible ou trop ancienne. Relance le test local."
+        ) from None
+    if not chat_lock.acquire(blocking=False):
+        raise HTTPException(409, "Une opération ChatGPT est déjà en cours.")
+    try:
+        choices = await run_in_threadpool(chatgpt.import_session, value)
+        return {"ok": True, "models": choices}
+    except Exception:
+        raise HTTPException(
+            502,
+            "Session ChatGPT non validée ; compte précédent conservé. "
+            "Vérifie le compte, l’autorisation et la connexion réseau.",
+        ) from None
+    finally:
+        chat_lock.release()
+
+
+@app.post("/api/chatgpt/disconnect", dependencies=[Depends(require_session)])
+def disconnect_chatgpt():
+    if not chat_lock.acquire(blocking=False):
+        raise HTTPException(409, "Une opération ChatGPT est déjà en cours.")
+    try:
+        chatgpt.disconnect()
+        return {
+            "ok": True,
+            "message": "Connexion retirée de cette app. "
+            "Pour révoquer l’autorisation, utilise les réglages ChatGPT.",
+        }
+    finally:
+        chat_lock.release()
+
+
+@app.post("/api/chatgpt/test", dependencies=[Depends(require_session)])
+def test_chatgpt():
+    if not chat_lock.acquire(blocking=False):
+        raise HTTPException(409, "Une opération ChatGPT est déjà en cours.")
+    try:
+        choices = chatgpt.models()
+        if not choices:
+            raise ValueError("Aucun modèle disponible.")
+        answer, _ = chatgpt.respond(
+            choices[0]["id"], {}, [{"role": "user", "content": "Réponds : connexion réussie."}]
+        )
+        if not answer.strip():
+            raise ValueError("Réponse vide.")
+        return {"ok": True, "models": choices}
+    except Exception:
+        raise HTTPException(503, "Test ChatGPT échoué. Vérifie la session et le quota.") from None
+    finally:
+        chat_lock.release()
+
+
+@app.post("/api/chatgpt/login", status_code=202, dependencies=[Depends(require_session)])
+def start_chatgpt_login():
+    if settings.production:
+        raise HTTPException(409, "Autorise ChatGPT sur ton poste puis importe la session ici.")
+    if not chat_lock.acquire(blocking=False):
+        raise HTTPException(409, "Une opération ChatGPT est déjà en cours.")
+    chatgpt_login.clear()
+    chatgpt_login.update(status="starting")
+
+    def worker():
+        try:
+
+            def ready(url):
+                chatgpt_login.update(status="awaiting", url=url)
+
+            chatgpt.sign_in(on_authorization=ready)
+            chatgpt_login.clear()
+            chatgpt_login.update(status="completed")
+        except Exception:
+            chatgpt_login.clear()
+            chatgpt_login.update(
+                status="failed", message="Autorisation échouée ou expirée. Réessaye."
+            )
+        finally:
+            chat_lock.release()
+
+    thread = threading.Thread(target=worker, daemon=True)
+    try:
+        thread.start()
+    except Exception:
+        chat_lock.release()
+        raise HTTPException(503, "Connexion indisponible.") from None
+    return {"status": "starting"}
+
+
+@app.get("/api/chatgpt/login", dependencies=[Depends(require_session)])
+def chatgpt_login_status():
+    if settings.production:
+        return {"status": "unavailable"}
+    return dict(chatgpt_login)
+
+
 @app.get("/api/models", dependencies=[Depends(require_session)])
 def list_models():
     try:
         with chat_lock:
             return chatgpt.models()
     except Exception:
-        raise HTTPException(503, "Connecte ou reconnecte ChatGPT dans le terminal.") from None
+        raise HTTPException(503, "Connecte ou reconnecte ChatGPT dans Connexions.") from None
 
 
 def coach_context():

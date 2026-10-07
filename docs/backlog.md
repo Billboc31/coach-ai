@@ -13,8 +13,8 @@ commercialisable à terme ; conserver les interfaces remplaçables et la propri�
 | INIT-03 | Stockage local, schéma v1, profil, ownership et dates UTC | Implémenté, PostgreSQL différé |
 | INIT-04 | Lint, tests et build dans CI | Implémenté |
 | INIT-05 | UI responsive, accès privé, API réelle | Local et configuration Railway livrés ; utilisateur signale déploiement réussi |
-| GARMIN-01 | Auth/MFA, session et lectures | Utilisateur confirme connexion locale et sync 100 activités/7 jours ; login Railway refusé 403. Transfert privé de session implémenté, test Railway requis |
-| AI-01 | Connexion officielle ChatGPT locale et première inférence | Code et mocks livrés ; validation réelle requise |
+| GARMIN-01 | Auth/MFA, session et lectures | Utilisateur confirme connexion locale et sync 100 activités/7 jours ; login Railway refusé 403. Transfert privé confirmé par l’utilisateur sur Railway ; import de session dans l’interface livré |
+| AI-01 | Connexion officielle ChatGPT locale et première inférence | Utilisateur confirme autorisation locale, 4 modèles et inférence Astra ; transfert Railway et contrôles UI livrés, validation réelle Railway requise |
 
 ## Prochain lot : valider et accéder depuis l’iPhone
 
@@ -108,3 +108,10 @@ BIZ-01 : vérifier accès/licences Garmin et voie ChatGPT pour service commercia
 classique configurable. BIZ-02 : identité multi-utilisateur, isolation systématique et migrations.
 BIZ-03 : consentements, politique de conservation, hébergement adapté aux données et revue juridique.
 Paiement, abonnement, modèle local, fine-tuning et GraphRAG : seulement après besoin mesuré.
+
+### CONNECT-02 — Connexions depuis l’interface (P1)
+Livré : import privé de sessions Garmin/ChatGPT, état/erreurs, autorisation ChatGPT depuis
+l’interface locale, test d’inférence sans données santé, déconnexion ChatGPT et transfert CLI.
+Restent : première authentification Garmin avec MFA depuis une interface locale, parcours
+mobile sans fichier via assistant local, et voie commerciale cloud. Le callback officiel
+ChatGPT reste loopback ; ne pas présenter un bouton Railway comme un OAuth cloud complet.

@@ -11,6 +11,7 @@ def main():
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("init")
     sub.add_parser("garmin-transfer")
+    sub.add_parser("chatgpt-transfer")
     garmin = sub.add_parser("garmin-login")
     garmin.add_argument("--reauth", action="store_true")
     sync = sub.add_parser("garmin-sync")
@@ -34,6 +35,10 @@ def main():
             from coach.transfer import transfer
 
             transfer()
+        elif args.command == "chatgpt-transfer":
+            from coach.transfer import transfer_chatgpt
+
+            transfer_chatgpt()
         elif args.command == "garmin-login":
             from coach.garmin import authenticate
 
@@ -50,7 +55,9 @@ def main():
 
             sign_in(args.port)
         elif args.command == "chatgpt-logout":
-            (data_dir() / "chatgpt.json").unlink(missing_ok=True)
+            from coach.chatgpt import disconnect
+
+            disconnect()
             print("Jetons locaux supprimés. Révoque aussi la connexion dans les réglages ChatGPT.")
         elif args.command == "chatgpt-test":
             from coach.chatgpt import models, respond
