@@ -73,3 +73,16 @@ peut utiliser un autre modèle disponible. Le renouvellement OAuth est sérialis
 PostgreSQL + pgvector, recherche hybride, contexte des extraits, reranking, mémoire datée et
 provenance. Évaluer sur des conversations validées avant d’ajouter GraphRAG ou du fine-tuning.
 L’IA locale et les paiements sont hors du premier MVP.
+
+## Activités et planification Garmin
+
+Le scheduler démarre et s’arrête avec le lifespan FastAPI. Un tick toutes les 15 secondes
+vérifie l’échéance UTC persistée dans records/settings/garmin_schedule. L’import partage les
+verrous thread/fichier existants ; un job manuel non terminé n’est jamais remplacé par le
+scheduler. Les jobs portent une origine manual/automatic. Une erreur automatique désactive
+le planning et conserve le message assaini ; réactiver acquitte ce job et programme une
+nouvelle tentative. L’import actif récupère ses checkpoints après restart.
+Les fiches utilisent records/activity et un cache séparé records/activity_detail pour les
+mesures autorisées du summaryDTO et des lapDTOs. Les tours sont plafonnés ; aucune récupération
+massive de détails pendant le backfill. La recherche et les totaux s’effectuent en SQL avec
+paramètres et ownership. Les valeurs manquantes restent null. Aucun nouveau schéma ni appel IA.

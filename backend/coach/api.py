@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field, field_validator
 from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from coach import chatgpt, db, garmin_jobs, memory
+from coach import activities, chatgpt, db, garmin_jobs, garmin_schedule, memory
 from coach.config import data_dir, web_settings
 from coach.secrets import read_secret
 
@@ -26,7 +26,12 @@ settings = web_settings()
 async def lifespan(app):
     garmin_jobs.recover(sync_lock)
     memory.recover()
-    yield
+    stopping, scheduler = garmin_schedule.start(sync_lock)
+    try:
+        yield
+    finally:
+        stopping.set()
+        scheduler.join(timeout=2)
 
 
 app = FastAPI(title="Coach AI", docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan)
@@ -172,11 +177,73 @@ def dashboard():
     }
 
 
+class ScheduleSettings(BaseModel):
+    enabled: bool
+    minutes: int = 60
+
+
+@app.get("/api/garmin/schedule", dependencies=[Depends(require_session)])
+def schedule_status():
+    job = garmin_jobs.status()
+    value = garmin_schedule.state()
+    value["deferred"] = bool(
+        job and job.get("origin", "manual") == "manual" and job["status"] != "completed"
+    )
+    return value
+
+
+@app.put("/api/garmin/schedule", dependencies=[Depends(require_session)])
+def schedule_settings(body: ScheduleSettings):
+    try:
+        return garmin_schedule.configure(body.enabled, body.minutes)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
 @app.get("/api/activities", dependencies=[Depends(require_session)])
-def activities_page(offset: int = 0):
-    if offset < 0:
-        raise HTTPException(422, "Pagination invalide.")
-    return {"items": db.activity_page(offset, 50), "total": db.coverage("activity")["count"]}
+def activities_page(
+    offset: int = 0,
+    sport: str = "",
+    query: str = "",
+    start: date | None = None,
+    end: date | None = None,
+):
+    if offset < 0 or len(query) > 200 or (start and end and start > end):
+        raise HTTPException(422, "Filtres invalides.")
+    try:
+        return activities.browse(offset, sport, query, start, end)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.get("/api/activities/{key}", dependencies=[Depends(require_session)])
+def activity_detail(key: str):
+    value = activities.details(key)
+    if value is None:
+        raise HTTPException(404, "Activité introuvable.")
+    return value
+
+
+@app.post("/api/activities/{key}/refresh", dependencies=[Depends(require_session)])
+def refresh_activity(key: str):
+    if not activities.details(key):
+        raise HTTPException(404, "Activité introuvable.")
+    if not key.isascii() or not key.isdecimal() or not 0 < int(key) < 10**20:
+        raise HTTPException(422, "Identifiant Garmin invalide.")
+    if not sync_lock.acquire(blocking=False):
+        raise HTTPException(
+            409,
+            "Import Garmin en cours : les mesures importées restent consultables. Réessaie après sa fin.",
+        )
+    try:
+        return activities.refresh(key)
+    except Exception as exc:
+        from coach.garmin import safe_failure
+
+        message = str(exc) if isinstance(exc, activities.DetailUnavailable) else safe_failure(exc)
+        raise HTTPException(502, message) from None
+    finally:
+        sync_lock.release()
 
 
 @app.get("/api/garmin/jobs", dependencies=[Depends(require_session)])

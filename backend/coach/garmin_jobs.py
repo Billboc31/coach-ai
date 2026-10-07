@@ -31,9 +31,16 @@ def save(job):
     db.upsert_record("sync_job", "garmin", job)
 
 
-def launch(lock, *, mode="range", start=None, end=None, resume=False):
+def launch(lock, *, mode="range", start=None, end=None, resume=False, origin="manual"):
     with control:
         previous = status()
+        if (
+            origin == "automatic"
+            and previous
+            and previous.get("origin", "manual") == "manual"
+            and previous["status"] != "completed"
+        ):
+            raise ValueError("Un import manuel reste à reprendre.")
         if not lock.acquire(blocking=False):
             raise ValueError("Une synchronisation Garmin est déjà en cours.")
         try:
@@ -59,6 +66,7 @@ def launch(lock, *, mode="range", start=None, end=None, resume=False):
                     raise ValueError("Période invalide.")
                 job = {
                     "id": uuid.uuid4().hex,
+                    "origin": origin,
                     "status": "running",
                     "phase": "activities",
                     "mode": mode,

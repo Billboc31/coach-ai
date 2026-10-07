@@ -5,11 +5,11 @@ et les informations que tu lui racontes. Première version personnelle, utilisab
 
 ## Premier lot
 
-- Interface responsive : vue d’ensemble, activités, profil, notes, chat et connexions.
+- Interface responsive : vue d’ensemble, tableau d’activités par sport, fiches, profil, notes, chat et connexions.
 - Base SQLite persistante avec propriétaire utilisateur et schéma initial versionné.
 - Accès par clé et cookie HttpOnly (Secure en production). Les données ne sont pas publiques.
 - Connexion Garmin dans le terminal, MFA et session persistante ; synchronisation manuelle
-  des 100 activités récentes et de 1 à 30 jours de santé (7 jours depuis l’interface).
+  par période ou historique complet, reprise et mise à jour automatique configurable.
 - Parcours officiel Sign in with ChatGPT pour applications locales : PKCE, state, nonce,
   vérification JWT, autorisation du forfait, catalogue de modèles, renouvellement et inférence.
 - Historique du chat conservé, mémoire durable éditable, résumés datés et recherche lexicale.
@@ -200,3 +200,29 @@ Les recommandations IA demandent une évaluation sur de vrais cas multisport.
 
 Voir [le backlog](docs/backlog.md), [l’architecture](docs/architecture.md) et
 [les contrats d’intégration](docs/integrations.md).
+
+### Activités et synchronisation automatique
+
+Dans **Connexions → Garmin**, la mise à jour en arrière-plan est activée par défaut,
+toutes les heures. Fréquences disponibles : 30 minutes, 1, 3, 6 heures ou chaque jour.
+Elle fonctionne côté serveur même lorsque l’interface est fermée, tant que Railway tourne.
+La montre doit d’abord transférer sa séance à Garmin Connect ; il s’agit d’une interrogation
+périodique, pas d’une notification instantanée. Aucun appel IA pour synchroniser.
+Les activités et la santé des trois derniers jours sont actualisées ; après une interruption
+prolongée, la période repart du dernier succès avec deux jours de recouvrement.
+Les paramètres et le prochain passage persistent après redéploiement.
+Un import manuel actif ou interrompu garde la priorité et son checkpoint : reprendre ou
+terminer cet import pour laisser fonctionner la planification. Une erreur d’import automatique
+suspend la planification ; vérifier la connexion puis réactiver l’option. Les limites 429
+conservent le backoff borné de l’import. Une seule réplique/un seul worker est requis.
+
+**Mes activités** affiche des cartes par sport, recherche par nom, filtres sport/dates,
+totaux de la sélection et pagination de 24 séances. Cliquer ouvre la fiche : durée,
+distance, fréquence cardiaque, calories et mesures spécifiques disponibles (allure,
+vitesse, puissance, dénivelé, effets d’entraînement). Une donnée absente reste « — ».
+**Récupérer les détails** lit le résumé détaillé et les tours Garmin et les conserve localement.
+Pendant un import Garmin, la fiche déjà importée reste accessible, mais la récupération
+supplémentaire attend sa fin. Un échec conserve les détails précédents. Le volume des tours
+est limité à 500 par séance. Courbes, tracé GPS, FIT et séries de musculation restent à développer.
+L’interface ouverte vérifie les nouvelles données toutes les 30 secondes, sans recharger la page.
+Les tests de ce lot sont simulés ; vérifier mesures et tours sur les vraies séances Garmin.

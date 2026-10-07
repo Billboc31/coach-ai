@@ -33,8 +33,11 @@ session, déconnexion, démarrage documenté, aucune fuite de jeton. Pas de dép
 
 ### GARMIN-02 — Synchronisation planifiée et backfill (P1)
 Livré : périodes et historique d’activités paginé, dix sources santé, progression persistante,
-reprise/arrêt, verrou CLI/API, backoff borné, provenance et pagination UI. Import complet réel
-à valider sur Railway. Restent : planification récurrente et détails/FIT d’activités.
+reprise/arrêt, verrou CLI/API, backoff borné, provenance, planification persistante configurable,
+tableau par sport filtrable et fiches avec récupération/cache de résumé détaillé et tours.
+Les erreurs automatiques suspendent la planification ; les checkpoints manuels gardent la priorité.
+Import complet, planification et détails réels à valider sur Railway. Restent : courbes, GPS/FIT
+et séries/exercices détaillés.
 Dépendances : VALID-01. Import historique paginé et reprise incrémentale, planning configurable,
 backoff sur limite, verrou partagé CLI/API. Critères : pas de doublon après reprise ; source
 manquante signalée, dernier succès/échec, déconnexion propre, tests de panne.
