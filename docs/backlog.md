@@ -119,8 +119,11 @@ Livré : références de charge du même exercice entre programmes, performances
 et unités confirmables, historique par exercice, séries validées dans le contexte coach, liens
 média Excel, neuf familles de dessins locaux et lecteur YouTube configurable. Tutoriels
 sélectionnables pour quelques variantes courantes et recherche précise modifiable.
-Restent : comparaison/progression approfondie,
-suggestions chiffrées évaluées, synonymes/matériel, fusion calendrier/Garmin et catalogue vidéos.
+Catalogue livré : 918 identités wger, aliases précis, suggestions/confirmation de variantes,
+conventions de poids et repères machines, historique compatible entre noms, crédits/licences
+et démonstrations GIF/vidéo/photos disponibles. Exercices libres et anciens logs conservés.
+Restent : comparaison/progression approfondie, suggestions chiffrées évaluées, extension des
+aliases et animations, fusion calendrier/Garmin.
 Dépendances : GYM-02, COACH-02. Progression par exercice, proposition prochaine séance sans
 écraser programme source ; associer Garmin et saisie si même séance. Critères : gestion charges,
 réps, RPE et déduplication de la charge multisport.

@@ -1,0 +1,1441 @@
+[
+ {
+  "id": "wger:1920",
+  "source_id": 1920,
+  "name": "Extreme Shoulder Stretch",
+  "name_en": "Extreme Shoulder Stretch",
+  "aliases": [
+   "Extreme Shoulder Stretch"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Deep loaded stretch for deltoids, performed after pressing movements.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1920/",
+  "media": []
+ },
+ {
+  "id": "wger:1921",
+  "source_id": 1921,
+  "name": "Extreme Lat Stretch",
+  "name_en": "Extreme Lat Stretch",
+  "aliases": [
+   "Extreme Lat Stretch"
+  ],
+  "category": "Back",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Deep loaded stretch for latissimus dorsi, performed after pulling movements.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1921/",
+  "media": []
+ },
+ {
+  "id": "wger:1922",
+  "source_id": 1922,
+  "name": "Écarté à la poulie assis (pectoraux)",
+  "name_en": "Seated Cable chest fly",
+  "aliases": [
+   "Seated Cable chest fly",
+   "Écarté à la poulie assis (pectoraux)"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": null,
+  "description": "Placez un banc entre deux poulies et réglez les poulies de sorte qu'elles se trouvent à hauteur de poitrine ou d'épaules une fois que vous êtes assis. \n Saisissez les poignées en prise neutre et appuyez-vous contre le dossier vertical. \n Rapprochez vos bras devant la poitrine dans un mouvement contrôlé, en vous concentrant sur la contraction des pectoraux. Gardez les coudes légèrement fléchis tout au long du mouvement. \n Marquez une brève pause en position haute. \n Ramenez lentement vos bras à la position de départ en gardant le contrôle du mouvement. \n Répétez pour le nombre de répétitions souhaité.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "shushu"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1922/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/1922/eb750ee5-3220-4128-aef1-5e2f1ccff40a.webp",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "shushu"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:1924",
+  "source_id": 1924,
+  "name": "3008 Abdominal Crunch",
+  "name_en": "3008 Abdominal Crunch",
+  "aliases": [
+   "3008 Abdominal Crunch",
+   "3008 Klappsitz"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "This is especially for the gym80 device 3008 Abdominal Crunch.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1924/",
+  "media": []
+ },
+ {
+  "id": "wger:1925",
+  "source_id": 1925,
+  "name": "Haussement d'épaules Silverback à la barre",
+  "name_en": "Barbell Silverback Shrug",
+  "aliases": [
+   "Barbell Silverback Shrug",
+   "Haussement d'épaules Silverback à la barre"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Barbell"
+  ],
+  "muscles": [
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Tenez-vous debout, les pieds écartés à la largeur des épaules, en tenant la barre à deux mains devant vous, un peu au-delà de la largeur des épaules. \n Penchez-vous vers l'avant au niveau des hanches en fléchissant légèrement les genoux, tout en gardant le dos droit. \n Engagez vos omoplates, comme si vous cherchiez à les rapprocher l'une de l'autre. \n Relâchez le haussement d'épaules.\nDescription tirée de MuscleWiki",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1925/",
+  "media": []
+ },
+ {
+  "id": "wger:1927",
+  "source_id": 1927,
+  "name": "Tirage vertical en prise inversée",
+  "name_en": "Inverted Lat Pull Down",
+  "aliases": [
+   "Inverted Lat Pull Down",
+   "Tirage vertical en prise inversée"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Pull-up bar"
+  ],
+  "muscles": [
+   "Lats",
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Le  tirage vertical en prise inversée  (plus connu sous le nom de  tirage vertical en supination ) est une variante de l'exercice classique qui utilise une prise en supination, mains écartées à la largeur des épaules. Cette position met davantage l'accent sur le  bas du grand dorsal  et sollicite davantage les  biceps , permettant souvent une plus grande amplitude de mouvement et une contraction plus profonde en bas du mouvement.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "amaesc"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1927/",
+  "media": []
+ },
+ {
+  "id": "wger:1928",
+  "source_id": 1928,
+  "name": "Tirage assis à poignée en V",
+  "name_en": "Seated V-Grip Row",
+  "aliases": [
+   "Seated V-Grip Row",
+   "Tirage assis à poignée en V"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Lats",
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Le  tirage assis à poignée en V  est un exercice de tirage polyarticulaire réalisé sur une machine à poulie avec une poignée en V à prise serrée. Assis, les pieds calés, vous tirez la poignée vers le milieu de votre ventre, en vous concentrant sur l' épaisseur du dos  et le développement du milieu du dos.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "amaesc"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1928/",
+  "media": []
+ },
+ {
+  "id": "wger:1929",
+  "source_id": 1929,
+  "name": "Traction assistée",
+  "name_en": "Assisted Pull-Up",
+  "aliases": [
+   "Assisted Pull-Up",
+   "Traction assistée"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Resistance band"
+  ],
+  "muscles": [
+   "Lats",
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "La  traction assistée  est un exercice de tirage vertical polyarticulaire réalisé sur une machine avec un contrepoids ou à l'aide d'élastiques. Elle reproduit la mécanique d'une traction classique mais réduit le poids total à soulever, ce qui en fait un excellent outil pour développer une force fonctionnelle et perfectionner votre technique.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "amaesc"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1929/",
+  "media": []
+ },
+ {
+  "id": "wger:1931",
+  "source_id": 1931,
+  "name": "Curl avec haltères",
+  "name_en": "Dumbbell Curl",
+  "aliases": [
+   "Curl avec haltères",
+   "Dumbbell Curl"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Biceps",
+   "Brachialis"
+  ],
+  "variation_group": null,
+  "description": "Le  curl avec haltères  est un exercice d'isolation classique pour les bras. Contrairement au curl marteau, il implique une rotation des poignets (supination) au moment de soulever les charges, ce qui permet une contraction complète des biceps.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "amaesc"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1931/",
+  "media": []
+ },
+ {
+  "id": "wger:1933",
+  "source_id": 1933,
+  "name": "Crunch abdominal",
+  "name_en": "Abdominal Crunch",
+  "aliases": [
+   "Abdominal Crunch",
+   "Crunch abdominal",
+   "Crunch"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "Gym mat"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "Le  crunch abdominal  est un exercice d'isolation classique pour la sangle abdominale, réalisé au sol ou sur un tapis. Contrairement au redressement assis complet, il implique une amplitude de mouvement plus réduite où vous ne soulevez que les épaules et le haut du dos du sol, en gardant le bas du dos fermement plaqué contre le sol.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "amaesc"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1933/",
+  "media": []
+ },
+ {
+  "id": "wger:1935",
+  "source_id": 1935,
+  "name": "Squat à la ceinture",
+  "name_en": "Belt Squat",
+  "aliases": [
+   "Belt Squat",
+   "Squat à la ceinture"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [
+   "Glutes",
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Squat à la ceinture : une variante du squat réalisée avec une ceinture fixée à une machine à charge ou à une plateforme, de sorte que le poids soit supporté au niveau des hanches plutôt que sur la colonne vertébrale. Il sollicite principalement les quadriceps et les fessiers, avec beaucoup moins de fatigue pour le bas du dos qu'un squat à la barre. Utilisez une amplitude de mouvement complète, gardez le tronc droit et poussez à travers le milieu du pied.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1935/",
+  "media": []
+ },
+ {
+  "id": "wger:1936",
+  "source_id": 1936,
+  "name": "Oiseau à la poulie (un bras)",
+  "name_en": "Cable Rear-Delt Fly (single arm)",
+  "aliases": [
+   "Cable Rear-Delt Fly (single arm)",
+   "Oiseau à la poulie (un bras)"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [],
+  "variation_group": "19808be8-e98c-4b65-b8c7-f559aba5f2f8",
+  "description": "Oiseau à la poulie (un bras) : \nTenez-vous de profil par rapport à une machine à poulie, la poignée réglée à environ hauteur d'épaule. Le coude légèrement fléchi, tirez la poignée vers l'extérieur et l'arrière en un large arc de cercle, de sorte que le bras s'éloigne du corps. Gardez le buste immobile et concentrez-vous sur le travail du deltoïde postérieur. Utilisez une charge  légère à modérée  et des répétitions contrôlées.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Dulive"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1936/",
+  "media": []
+ },
+ {
+  "id": "wger:1938",
+  "source_id": 1938,
+  "name": "Cat-Cow",
+  "name_en": "Cat-Cow",
+  "aliases": [
+   "Cat-Cow"
+  ],
+  "category": "Back",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "On all fours. Arch spine up (cat) then drop it down (cow). Breathe with movement.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1938/",
+  "media": []
+ },
+ {
+  "id": "wger:1939",
+  "source_id": 1939,
+  "name": "Neck CARs",
+  "name_en": "Neck CARs",
+  "aliases": [
+   "Neck CARs"
+  ],
+  "category": "Shoulders",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Controlled Articular Rotations. Slow full circles 3 each way. Cervical mobility.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1939/",
+  "media": []
+ },
+ {
+  "id": "wger:1940",
+  "source_id": 1940,
+  "name": "Diaphragmatic Breathing",
+  "name_en": "Diaphragmatic Breathing",
+  "aliases": [
+   "Diaphragmatic Breathing"
+  ],
+  "category": "Cardio",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Belly breathing. Hand on chest stays still, hand on belly rises. 8-10 slow breaths.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1940/",
+  "media": []
+ },
+ {
+  "id": "wger:1947",
+  "source_id": 1947,
+  "name": "dumbbell snatch",
+  "name_en": "dumbbell snatch",
+  "aliases": [
+   "dumbbell snatch"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Hamstrings",
+   "Glutes",
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Pour l'exécuter correctement, il faut suivre ces étapes clés : \n Mise en place : Placez l'haltère entre vos pieds, les épaules au-dessus des hanches, la poitrine haute et le dos plat. \n Le tirage : Étendez violemment les hanches, les genoux et les chevilles (extension tri-joint) pour projeter l'haltère vers le haut, en gardant le coude haut et l'haltère près du corps. \n La réception : Fléchissez rapidement les hanches et les genoux pour passer sous l'haltère et le recevoir au-dessus de la tête avec le bras verrouillé, en atterrissant en position de demi-squat. \n Les erreurs courantes incluent l'utilisation excessive des bras pour soulever le poids au lieu des jambes, un coude bas pendant la phase de tirage, et un mauvais alignement de l'épaule, du coude et du poignet en position finale. Pour les débutants, il est recommandé de commencer avec des charges légères et de se concentrer sur la technique, en réalisant par exemple 3 à 5 séries de 3 à 5 répétitions par bras.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Aleid"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Aleid"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1947/",
+  "media": []
+ },
+ {
+  "id": "wger:1948",
+  "source_id": 1948,
+  "name": "Squat sur boîte à une jambe",
+  "name_en": "1 Leg Box Squat",
+  "aliases": [
+   "1 Leg Box Squat",
+   "Squat sur boîte à une jambe"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings",
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Cet exercice nécessite une boîte solide ou une chaise. Tenez-vous simplement à environ 15 cm devant elle et tenez-vous en équilibre sur une jambe. À partir de là, commencez à descendre en squat par un mouvement fluide et contrôlé, tout en gardant l'autre jambe tendue devant vous pour l'équilibre. Asseyez-vous lentement sur la boîte, marquez une pause d'une seconde, puis remontez en poussant avec la jambe active, sans jamais laisser l'autre jambe toucher le sol.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "jesusd"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1948/",
+  "media": []
+ },
+ {
+  "id": "wger:1949",
+  "source_id": 1949,
+  "name": "Limber 11",
+  "name_en": "Limber 11",
+  "aliases": [
+   "Limber 11"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Limber 11\nSource : Joe DeFranco \n \n Rouleau de massage sur le tractus iliotibial [tissus mous] - 10 à 15 passages \n Rouleau de massage sur les adducteurs [tissus mous] - 10 à 15 passages \n Automassage des fessiers (balle de massage) [tissus mous] - 30 s à 2 min \n Iron cross genou fléchi [dynamique] - 5 à 10 répétitions de chaque côté \n Roulades vers des V-sits [dynamique] - 10 répétitions \n Étirement de la grenouille en balancement [dynamique] - 10 répétitions \n Cercles de la bouche d'incendie [dynamique] - 10 vers l'avant / 10 vers l'arrière \n Mountain climbers [dynamique] - 10 répétitions par jambe \n Squats cosaques [dynamique] - 5 à 10 répétitions de chaque côté \n Étirement du piriforme assis [isométrique] - 20 à 30 s de chaque côté \n Étirement des fléchisseurs de la hanche pied arrière surélevé [dynamique + maintien de 3 s] - 5 à 10 répétitions de chaque côté",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation probe"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1949/",
+  "media": []
+ },
+ {
+  "id": "wger:1950",
+  "source_id": 1950,
+  "name": "Foam Roll IT Band",
+  "name_en": "Foam Roll IT Band",
+  "aliases": [
+   "Foam Roll IT Band"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Foam Roll IT Band\nPart of: Limber 11\nSource: Joe DeFranco\nPrescription: 10-15 passes\nType: soft_tissue",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1950/",
+  "media": []
+ },
+ {
+  "id": "wger:1952",
+  "source_id": 1952,
+  "name": "SMR Glutes (lax ball)",
+  "name_en": "SMR Glutes (lax ball)",
+  "aliases": [
+   "SMR Glutes (lax ball)"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "SMR Glutes (lax ball)\nPart of: Limber 11\nSource: Joe DeFranco\nPrescription: 30 sec-2 min\nType: soft_tissue",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1952/",
+  "media": []
+ },
+ {
+  "id": "wger:1953",
+  "source_id": 1953,
+  "name": "Bent-knee Iron Cross",
+  "name_en": "Bent-knee Iron Cross",
+  "aliases": [
+   "Bent-knee Iron Cross"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Bent-knee Iron Cross\nPart of: Limber 11\nSource: Joe DeFranco\nPrescription: 5-10 reps each side\nType: dynamic",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1953/",
+  "media": []
+ },
+ {
+  "id": "wger:1954",
+  "source_id": 1954,
+  "name": "Roll-overs into V-sits",
+  "name_en": "Roll-overs into V-sits",
+  "aliases": [
+   "Roll-overs into V-sits"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Roll-overs into V-sits\nPart of: Limber 11\nSource: Joe DeFranco\nPrescription: 10 reps\nType: dynamic",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1954/",
+  "media": []
+ },
+ {
+  "id": "wger:1956",
+  "source_id": 1956,
+  "name": "Fire Hydrant Circles",
+  "name_en": "Fire Hydrant Circles",
+  "aliases": [
+   "Fire Hydrant Circles"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Fire Hydrant Circles\nPart of: Limber 11\nSource: Joe DeFranco\nPrescription: 10 forward / 10 backward\nType: dynamic",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1956/",
+  "media": []
+ },
+ {
+  "id": "wger:1959",
+  "source_id": 1959,
+  "name": "Étirement du piriforme assis",
+  "name_en": "Seated Piriformis Stretch",
+  "aliases": [
+   "Seated Piriformis Stretch",
+   "Étirement du piriforme assis"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Étirement du piriforme assis\nFait partie de : Limber 11\nSource : Joe DeFranco\nPrescription : 20 à 30 s de chaque côté\nType : statique\nComprend un maintien isométrique.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1959/",
+  "media": []
+ },
+ {
+  "id": "wger:1960",
+  "source_id": 1960,
+  "name": "Étirement des fléchisseurs de la hanche, pied arrière surélevé",
+  "name_en": "Rear-foot-elevated Hip Flexor Stretch",
+  "aliases": [
+   "Rear-foot-elevated Hip Flexor Stretch",
+   "Étirement des fléchisseurs de la hanche, pied arrière surélevé"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Étirement des fléchisseurs de la hanche, pied arrière surélevé\nFait partie de : Limber 11\nSource : Joe DeFranco\nPrescription : 5 à 10 répétitions de chaque côté\nType : dynamique\nComprend un mouvement dynamique ainsi qu'un maintien de 3 s.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Pete-E automation"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1960/",
+  "media": []
+ },
+ {
+  "id": "wger:1962",
+  "source_id": 1962,
+  "name": "Step Jack",
+  "name_en": "Step Jack",
+  "aliases": [
+   "Step Jack",
+   "Side Step Jack",
+   "Low Impact Jumping Jack"
+  ],
+  "category": "Cardio",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Le Step Jack est un mouvement pliométrique à faible impact qui apporte des bénéfices cardiovasculaires sans le stress articulaire des sauts. Il sollicite l'ensemble du corps, en ciblant plus particulièrement les jambes, la sangle abdominale et les épaules. Ce mouvement est idéal pour les débutants, les personnes ayant des sensibilités articulaires, ou comme échauffement dynamique pour élever progressivement la fréquence cardiaque.\nNotes (Instructions) : \n \n Tenez-vous droit, les pieds joints et les bras le long du corps. \n Faites un pas sur le côté avec le pied droit tout en balançant simultanément les deux bras au-dessus de la tête. \n Ramenez le pied droit au centre et abaissez les bras. \n Répétez immédiatement le mouvement en faisant un pas sur le côté avec le pied gauche. \n Continuez en alternant les côtés à un rythme régulier et soutenu.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anon#2"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1962/",
+  "media": []
+ },
+ {
+  "id": "wger:1963",
+  "source_id": 1963,
+  "name": "Squat lent",
+  "name_en": "Slow Squat",
+  "aliases": [
+   "Slow Squat",
+   "Squat lent",
+   "Tempo Squat",
+   "​3-1-1 Squat"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Un squat basé sur le tempo qui utilise un mouvement contrôlé pour augmenter la tension musculaire et améliorer la stabilité du bas du corps. \n \n Descente : Descendez lentement pendant 3 secondes. \n Pause : Maintenez la position basse pendant 1 seconde. \n Remontée : Revenez à la position de départ à un rythme normal. \n Technique : Gardez la poitrine ouverte et le poids dans les talons.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anon#2"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1963/",
+  "media": []
+ },
+ {
+  "id": "wger:1964",
+  "source_id": 1964,
+  "name": "Pompe prise large",
+  "name_en": "Wide Push-Up",
+  "aliases": [
+   "Pompe prise large",
+   "Wide Push-Up",
+   "Pompe écartée",
+   "Wide Grip Push-Up"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": null,
+  "description": "Une variante de la pompe avec une position des mains plus large pour accentuer le travail des pectoraux externes et des épaules. \n \n Installation : Placez les mains au sol, plus écartées que la largeur des épaules. \n Descente : Descendez jusqu'à ce que la poitrine effleure presque le sol, en gardant la sangle abdominale gainée. \n Poussée : Poussez à travers les paumes pour revenir à la position de départ. \n Technique : Ne laissez pas le bas du dos s'affaisser ; conservez une ligne droite de la tête aux talons.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anon#2"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1964/",
+  "media": []
+ },
+ {
+  "id": "wger:1965",
+  "source_id": 1965,
+  "name": "Montées de genoux sur place",
+  "name_en": "Marching High Knees",
+  "aliases": [
+   "Marching High Knees",
+   "Montées de genoux sur place",
+   "High Knee March",
+   "​Standing Knee Drives"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Un exercice de cardio et de mobilité à faible impact qui renforce les fléchisseurs de la hanche et améliore l'équilibre. \n \n Mouvement : Tenez-vous bien droit et levez un genou vers la poitrine, aussi haut que possible et confortablement. \n Bras : Balancez le bras opposé vers l'avant à mesure que vous levez le genou, comme lors de la marche. \n Gainage : Gardez les abdominaux engagés pour maintenir une posture droite. \n Rythme : Effectuez le mouvement avec contrôle, en alternant les jambes de façon rythmée.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anon#2"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1965/",
+  "media": []
+ },
+ {
+  "id": "wger:1966",
+  "source_id": 1966,
+  "name": "Rotation thoracique à demi-genou",
+  "name_en": "1/2 Kneeling Thoracic Rotation",
+  "aliases": [
+   "1/2 Kneeling Thoracic Rotation",
+   "Rotation thoracique à demi-genou"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [],
+  "variation_group": "05873ad4-6c13-4be9-b326-bb0c99599ba0",
+  "description": "Commencez en position de demi-genou, la jambe éloignée du mur étant stabilisée contre le mur à l'aide d'un ballon. \n Les deux mains tendues directement devant vous, ouvrez un bras en rotation en cherchant à atteindre le mur derrière vous. \n Expirez pendant la rotation, inspirez en revenant à la position neutre, puis répétez.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "amwang4"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1966/",
+  "media": []
+ },
+ {
+  "id": "wger:1967",
+  "source_id": 1967,
+  "name": "lento avanti seduto",
+  "name_en": "lento avanti seduto",
+  "aliases": [
+   "lento avanti seduto"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": null,
+  "description": "slow controlled seated forward exercise with dumbbells",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Cf"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Cf"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1967/",
+  "media": []
+ },
+ {
+  "id": "wger:1968",
+  "source_id": 1968,
+  "name": "Développé épaules unilatéral à l'haltère",
+  "name_en": "Single-arm dumbbell shoulder press",
+  "aliases": [
+   "Développé épaules unilatéral à l'haltère",
+   "Single-arm dumbbell shoulder press"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": "e3388987-305b-43b8-9e90-c3bce376b203",
+  "description": "Poussez l'haltère verticalement au-dessus de la tête dans un mouvement contrôlé jusqu'à ce que le bras soit complètement tendu, sans verrouiller le coude. Abaissez lentement l'haltère vers la position de départ, à hauteur d'épaule.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "evtimovgeorg"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1968/",
+  "media": []
+ },
+ {
+  "id": "wger:1969",
+  "source_id": 1969,
+  "name": "Extension triceps unilatérale à la poulie",
+  "name_en": "Single-arm cable pushdown",
+  "aliases": [
+   "Extension triceps unilatérale à la poulie",
+   "Single-arm cable pushdown"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Triceps"
+  ],
+  "variation_group": null,
+  "description": "L'extension triceps unilatérale à la poulie est un exercice d'isolation unilatéral qui cible le triceps brachial. En travaillant un bras à la fois, il aide à corriger les déséquilibres de force entre les côtés tout en sollicitant la sangle abdominale pour la stabilité.\nPosition de départ :\nTenez-vous face à la machine à poulie, les pieds écartés à la largeur des épaules. Fixez une poignée individuelle à la poulie haute. Saisissez la poignée d'une main en prise pronation, le coude fléchi à environ 90° et collé contre le corps. Gardez la sangle abdominale gainée et le dos droit.\nExécution :\nPoussez la poignée vers le bas dans un mouvement contrôlé en tendant le coude jusqu'à ce que le bras soit complètement tendu. Maintenez la contraction pendant 1 seconde en position basse, puis revenez lentement à la position de départ.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "evtimovgeorg"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1969/",
+  "media": []
+ },
+ {
+  "id": "wger:1970",
+  "source_id": 1970,
+  "name": "Tirage haut sumo à la kettlebell",
+  "name_en": "Kettlebell sumo high pull",
+  "aliases": [
+   "Kettlebell sumo high pull",
+   "Tirage haut sumo à la kettlebell"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Kettlebell"
+  ],
+  "muscles": [
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Un exercice polyarticulaire combinant des éléments du soulevé de terre sumo et du tirage haut. Il cible la chaîne postérieure, en particulier les fessiers, les ischio-jambiers et le haut du dos. La position sumo augmente l'engagement des hanches, tandis que le tirage haut ajoute une composante explosive qui favorise le développement de la puissance. \n \n Tenez-vous droit au-dessus d'une kettlebell, les pieds plus écartés que la largeur des épaules et légèrement orientés vers l'extérieur. \n Maintenez la sangle abdominale gainée et la colonne neutre tout au long de l'exercice. \n Faites une charnière des hanches vers l'arrière et tendez les bras pour saisir la kettlebell en double prise pronation. \n Les jambes presque verticales par rapport au sol, étendez les hanches pour soulever la kettlebell coudes hauts, en la gardant proche du corps. \n Une fois la kettlebell à hauteur d'épaule, revenez à la position de départ.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wgerpott"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1970/",
+  "media": []
+ },
+ {
+  "id": "wger:1971",
+  "source_id": 1971,
+  "name": "Tirage Mentzer",
+  "name_en": "Mentzer Pulldown",
+  "aliases": [
+   "Mentzer Pulldown",
+   "Tirage Mentzer"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Cable machine",
+   "Incline bench"
+  ],
+  "muscles": [
+   "Biceps"
+  ],
+  "variation_group": "7bad4b8b-a95f-4a40-b512-7429d3333f66",
+  "description": "Tirage vertical face à la machine en prise serrée, en mettant l'accent sur les biceps. Augmente l'activation des biceps sur toute l'amplitude. Évitez de solliciter le grand dorsal.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Mike Mentzer"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1971/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/1971/729af526-19a0-4d3d-a258-196c7575d139.jpg",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Athlean-X"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:1972",
+  "source_id": 1972,
+  "name": "Tirage vertical à un bras",
+  "name_en": "Single-Arm Lat Pulldown",
+  "aliases": [
+   "Single-Arm Lat Pulldown",
+   "Tirage vertical à un bras",
+   "Tirage vertical unilatéral"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Lats",
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Asseyez-vous à la machine de tirage vertical et saisissez la poignée individuelle en prise neutre. Gardez le torse stable, la poitrine ouverte et les omoplates légèrement rétractées. Commencez bras complètement tendu au-dessus de la tête, puis tirez la poignée vers le haut de la poitrine en suivant une trajectoire contrôlée et légèrement diagonale. Concentrez-vous sur l'engagement du grand dorsal tout en gardant l'épaule basse et en évitant toute rotation du torse. Revenez lentement à la position de départ, en gardant le contrôle tout au long du mouvement.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "evtimovgeorg"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1972/",
+  "media": []
+ },
+ {
+  "id": "wger:2447",
+  "source_id": 2447,
+  "name": "Hip Airplane",
+  "name_en": "Hip Airplane",
+  "aliases": [
+   "Hip Airplane"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Kettlebell"
+  ],
+  "muscles": [
+   "Glutes"
+  ],
+  "variation_group": null,
+  "description": "Tenez-vous sur une jambe et inclinez légèrement le haut du corps vers l'avant tout en gardant le dos droit. Tendez la jambe libre derrière vous de sorte que le torse et la jambe forment à peu près une seule ligne. Ouvrez lentement la hanche sur le côté en faisant pivoter le bassin et le haut du corps de manière contrôlée. Refermez ensuite la hanche et revenez à la position de départ. \n Le mouvement doit provenir principalement de la hanche. Gardez le pied d'appui stable et évitez de laisser le genou s'affaisser vers l'intérieur.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "TobiasFalk"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2447/",
+  "media": []
+ }
+]

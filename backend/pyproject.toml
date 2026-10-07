@@ -12,6 +12,8 @@ dev = ["pytest==9.1.1", "ruff==0.16.10"]
 coach = "coach.cli:main"
 [tool.setuptools.packages.find]
 include = ["coach*"]
+[tool.setuptools.package-data]
+coach = ["data/exercise_catalog/*.json", "data/exercise_catalog/*.md"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 [tool.ruff]

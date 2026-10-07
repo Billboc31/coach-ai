@@ -15,7 +15,17 @@ from pydantic import BaseModel, Field, field_validator
 from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from coach import activities, chatgpt, db, garmin_jobs, garmin_schedule, gym, memory, planning
+from coach import (
+    activities,
+    chatgpt,
+    db,
+    exercise_catalog,
+    garmin_jobs,
+    garmin_schedule,
+    gym,
+    memory,
+    planning,
+)
 from coach.config import data_dir, web_settings
 from coach.secrets import read_secret
 
@@ -400,6 +410,39 @@ def gym_workout_update(key: str, body: gym.WorkoutUpdate):
             raise HTTPException(404, "Séance introuvable.")
         return value
     except gym.Conflict as exc:
+        raise HTTPException(409, str(exc)) from None
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.get("/api/gym/catalogue", dependencies=[Depends(require_session)])
+def gym_catalogue(
+    q: str = "", limit: int = 12, offset: int = 0, category: str = "", equipment: str = ""
+):
+    if len(q) > 200 or not 1 <= limit <= 30 or not 0 <= offset <= 10000:
+        raise HTTPException(422, "Recherche de 200 caractères maximum, 1 à 30 résultats.")
+    return exercise_catalog.search(
+        q, limit=limit, offset=offset, category=category, equipment=equipment
+    )
+
+
+@app.get("/api/gym/exercises/{key}/catalogue", dependencies=[Depends(require_session)])
+def gym_exercise_catalogue(key: str, name: str = ""):
+    if not db.record("gym_exercise", key):
+        raise HTTPException(404, "Exercice introuvable.")
+    if len(name) > 200:
+        raise HTTPException(422, "Nom trop long.")
+    return exercise_catalog.resolution(key, name=name or None)
+
+
+@app.put("/api/gym/exercises/{key}/catalogue", dependencies=[Depends(require_session)])
+def gym_exercise_catalogue_update(key: str, body: exercise_catalog.BindingUpdate):
+    try:
+        value = exercise_catalog.set_binding(key, body)
+        if value is None:
+            raise HTTPException(404, "Exercice introuvable.")
+        return value
+    except exercise_catalog.BindingConflict as exc:
         raise HTTPException(409, str(exc)) from None
     except ValueError as exc:
         raise HTTPException(422, str(exc)) from None

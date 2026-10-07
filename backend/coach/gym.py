@@ -15,7 +15,7 @@ from openpyxl import load_workbook
 from pydantic import BaseModel, Field
 from sqlalchemy import text
 
-from coach import db
+from coach import db, exercise_catalog
 from coach.config import user_id
 
 lock = threading.RLock()
@@ -141,7 +141,7 @@ def repair_program(program):
     return program
 
 
-def workout_view(value):
+def workout_view(value, snapshot=None):
     if not value:
         return value
     program = repair_program(db.record("gym_program", value["program_id"]))
@@ -158,10 +158,15 @@ def workout_view(value):
             {
                 **exercise,
                 **labels,
-                "excel_history": [performance_view(h) for h in exercise.get("excel_history", [])],
+                "excel_history": imported_history(exercise["exercise_id"])
+                or [performance_view(h) for h in exercise.get("excel_history", [])],
+                "reference": next(
+                    (h for h in history(exercise["exercise_id"]) if h["workout_id"] != value["id"]),
+                    None,
+                ),
             }
         )
-    return {**value, "exercises": exercises}
+    return {**value, "exercises": [exercise_catalog.decorate(e, snapshot) for e in exercises]}
 
 
 def preview(filename, encoded, *, refresh=False):
@@ -535,17 +540,25 @@ def confirm(key, selection, *, rebuild=False):
 
 
 def history(exercise_id):
+    ids = exercise_catalog.compatible_ids(exercise_id)
+    binding = exercise_catalog.binding(exercise_id)
     with db.connection() as conn:
         rows = conn.execute(
             text(
                 "SELECT w.data,e.value FROM records w, json_each(w.data,'$.exercises') e "
-                "WHERE w.user_id=:u AND w.kind='gym_workout' AND json_extract(e.value,'$.exercise_id')=:id "
-                "AND EXISTS (SELECT 1 FROM json_each(e.value,'$.logged_sets') s "
+                "WHERE w.user_id=:u AND w.kind='gym_workout' AND json_extract(e.value,'$.exercise_id') IN (SELECT value FROM json_each(:ids)) "
+                "AND (json_extract(e.value,'$.weight_convention') IS NULL OR json_extract(e.value,'$.weight_convention')='unspecified' OR json_extract(e.value,'$.weight_convention')=:convention) AND (json_extract(e.value,'$.weight_context') IS NULL OR json_extract(e.value,'$.weight_context')=:context) AND (json_extract(e.value,'$.catalog_id') IS NULL OR json_extract(e.value,'$.catalog_id')=:catalog) AND EXISTS (SELECT 1 FROM json_each(e.value,'$.logged_sets') s "
                 "WHERE json_extract(s.value,'$.done')=1 AND (json_extract(s.value,'$.reps') IS NOT NULL "
                 "OR json_extract(s.value,'$.seconds') IS NOT NULL)) "
                 "ORDER BY json_extract(w.data,'$.started_at') DESC LIMIT 20"
             ),
-            {"u": user_id(), "id": exercise_id},
+            {
+                "u": user_id(),
+                "ids": json.dumps(ids),
+                "convention": binding["weight_convention"],
+                "catalog": binding["catalog_id"],
+                "context": binding.get("weight_context", ""),
+            },
         ).all()
     result = []
     for raw, exercise_raw in rows:
@@ -558,6 +571,11 @@ def history(exercise_id):
         result.append(
             {
                 "workout_id": workout["id"],
+                "source_exercise_id": exercise["exercise_id"],
+                "source_name": exercise["name"],
+                "weight_convention": exercise.get("weight_convention")
+                if exercise.get("weight_convention") not in {None, "unspecified"}
+                else binding["weight_convention"],
                 "date": workout["started_at"],
                 "sets": performed,
                 "finished": bool(workout.get("finished_at")),
@@ -579,17 +597,24 @@ def recent_workouts(limit=50):
 
 
 def overview():
+    snapshot = exercise_catalog.decisions()
+    programs = []
+    for record in db.records("gym_program", 30):
+        program = {
+            k: v
+            for k, v in repair_program(record["data"]).items()
+            if k not in {"source_sheets", "selection"}
+        }
+        program["days"] = [
+            {**day, "exercises": [exercise_catalog.decorate(e, snapshot) for e in day["exercises"]]}
+            for day in program["days"]
+        ]
+        programs.append(program)
     return {
-        "programs": [
-            {
-                k: v
-                for k, v in repair_program(r["data"]).items()
-                if k not in {"source_sheets", "selection"}
-            }
-            for r in db.records("gym_program", 30)
-        ],
+        "programs": programs,
         "exercises": [r["data"] for r in db.records("gym_exercise", 1000)],
-        "workouts": [workout_view(w) for w in recent_workouts()],
+        "workouts": [workout_view(w, snapshot) for w in recent_workouts()],
+        "exercise_catalogue": exercise_catalog.manifest(),
     }
 
 
@@ -616,7 +641,7 @@ def start(program_id, day_id):
             ]
             rows.append(
                 {
-                    **item,
+                    **exercise_catalog.decorate(item),
                     "logged_sets": logs,
                     "reference": reference,
                     "excel_history": imported_history(item["exercise_id"]),
@@ -635,7 +660,7 @@ def start(program_id, day_id):
             "exercises": rows,
         }
         db.upsert_record("gym_workout", value["id"], value)
-        return value
+        return workout_view(value)
 
 
 class LoggedSet(BaseModel):
@@ -675,13 +700,20 @@ def update_workout(key, body):
                     "Renseigne les répétitions des séries validées (30 séries maximum)."
                 )
             exercise["logged_sets"] = [s.model_dump() for s in sets]
+            binding = exercise_catalog.resolution(exercise["exercise_id"])
+            if exercise.get("catalog_id") is None and binding["catalog_id"]:
+                exercise["catalog_id"] = binding["catalog_id"]
+                exercise["canonical_name"] = binding["entry"]["name"]
+            if exercise.get("weight_convention") in {None, "unspecified"}:
+                exercise["weight_convention"] = binding["weight_convention"]
+                exercise["weight_context"] = binding.get("weight_context", "")
         value.update(revision=value["revision"] + 1, updated_at=db.now())
         if body.finish:
             if not any(s["done"] for e in value["exercises"] for s in e["logged_sets"]):
                 raise ValueError("Valide au moins une série avant de terminer.")
             value["finished_at"] = db.now()
         db.upsert_record("gym_workout", key, value)
-        return value
+        return workout_view(value)
 
 
 def set_video(key, url):
@@ -748,14 +780,15 @@ def workout_rows(sheet, chosen):
 
 
 def imported_history(exercise_id):
+    ids = exercise_catalog.compatible_ids(exercise_id)
     with db.connection() as conn:
         rows = conn.execute(
             text(
                 "SELECT data FROM records WHERE user_id=:u AND kind='gym_excel_history' "
-                "AND json_extract(data,'$.exercise_id')=:e ORDER BY updated_at DESC, "
+                "AND json_extract(data,'$.exercise_id') IN (SELECT value FROM json_each(:ids)) ORDER BY updated_at DESC, "
                 "json_extract(data,'$.row') DESC LIMIT 30"
             ),
-            {"u": user_id(), "e": exercise_id},
+            {"u": user_id(), "ids": json.dumps(ids)},
         ).all()
     return [performance_view(json.loads(r[0])) for r in rows]
 
@@ -768,7 +801,18 @@ def context():
             "title": w["title"],
             "units": {"weight": "kg", "reps": "count", "seconds": "seconds"},
             "exercises": [
-                {"name": e["name"], "sets": [s for s in e["logged_sets"] if s["done"]]}
+                {
+                    "name": e.get("canonical_name")
+                    or exercise_catalog.decorate(e)["canonical_name"]
+                    or e["name"],
+                    "source_name": e["name"],
+                    "catalog_id": e.get("catalog_id")
+                    or exercise_catalog.binding(e["exercise_id"])["catalog_id"],
+                    "weight_convention": e.get("weight_convention")
+                    if e.get("weight_convention") not in {None, "unspecified"}
+                    else exercise_catalog.binding(e["exercise_id"])["weight_convention"],
+                    "sets": [s for s in e["logged_sets"] if s["done"]],
+                }
                 for e in w["exercises"][:25]
             ],
         }

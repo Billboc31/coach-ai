@@ -299,13 +299,23 @@ séances ; le brouillon d’onglet ne constitue pas un mode hors ligne complet n
 Terminer conserve la séance et son historique ; la correction d’une séance terminée reste
 à développer. Les logs sont distincts des activités Garmin et ne sont pas fusionnés dans le calendrier.
 
-La fiche propose les précédentes charges du même nom d’exercice normalisé, sans augmentation
-automatique. Un exercice inédit sans référence garde ses charges vides. Conserver la même
-convention de saisie (par haltère/charge totale et même matériel). Les noms différents ne sont
-pas fusionnés arbitrairement. Le panneau montre jusqu’à 20 séances récentes de cet exercice et
+La fiche propose les précédentes charges du même exercice, sans augmentation automatique.
+Le catalogue local wger contient 918 exercices (584 avec un texte français), avec 217 fiches
+ayant un média documenté, dont 49 une animation GIF/vidéo. **Fiche exercice / Identifier**
+affiche la variante, le matériel, les consignes et la provenance. Les noms précis et synonymes
+connus sont reconnus ; les noms ambigus proposent une recherche et demandent un choix.
+La correspondance est mémorisée avec un nom canonique stable, en conservant le nom Excel. Un exercice inédit sans référence garde ses charges vides. Conserver la même
+convention de saisie (par haltère/charge totale et même matériel). Les noms différents partagent leurs références uniquement après confirmation du même
+exercice, de la même convention de poids et du même repère matériel (obligatoire pour une
+machine). Aucune conversion de charge ni réécriture des séries réalisées. Une ancienne
+séance conserve sa variante et ses unités déjà précisées. Un exercice libre reste utilisable. Le panneau montre jusqu’à 20 séances récentes de cet exercice et
 30 entrées Excel ; toutes les séries restent en base. La liste générale montre les 50 dernières
 séances et jusqu’à 30 programmes. Le coach reçoit les séries validées des cinq séances récentes,
 avec unités et distinction séance en cours/terminée, au maximum 25 exercices par séance.
+
+Les animations du catalogue se chargent après clic ; leur disponibilité dépend de wger.
+Les autres fiches utilisent des photos ou un dessin général et la recherche YouTube.
+Les crédits et licences de chaque texte/média sont affichés ; voir [provenance du catalogue](docs/exercise-catalogue.md).
 
 Neuf familles de mouvements disposent de dessins SVG locaux dans les cartes et fiches.
 Le dessin est un schéma général, ajustable depuis **Corriger**, avec un pictogramme pour les

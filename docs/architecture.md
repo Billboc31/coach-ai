@@ -107,7 +107,13 @@ Records séparés : gym_import (aperçu, mapping, déduplication par empreinte),
 original privé), gym_program (séances et sources), gym_exercise (nom normalisé, vidéo),
 gym_excel_history (performances d’origine), gym_workout (séries saisies, révision, dates).
 Aucune nouvelle table ; le volume SQLite existant garde l’ensemble. Les identifiants d’exercice
-sont dérivés du nom normalisé, sans résolution automatique des synonymes ou du matériel.
+privés restent dérivés du nom normalisé. Un catalogue public JSON embarqué fournit des
+identités wger stables ; les aliases précis sont reconnus, les ambiguïtés restent à choisir.
+Records/gym_binding stocke les décisions privées, révisions, convention de poids et repère
+matériel. Le rapprochement entre IDs privés exige une identité canonique et des conventions
+confirmées compatibles ; une machine exige un repère non vide. Les séries portent un instantané
+de variante/unités, sans conversion ni réécriture lors du changement de correspondance.
+Le catalogue public est en cache ; les décisions et historiques restent propriétaire-scopés.
 Les requêtes sont propriétaire-scopées. Les écritures de séance sont sérialisées, exigent la
 révision actuelle et refusent les séances terminées. Les séries réalisées ne sont pas
 préremplies ni marquées faites à partir d’un import. Requêtes SQL par exercice pour les

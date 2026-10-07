@@ -1,0 +1,1651 @@
+[
+ {
+  "id": "wger:1314",
+  "source_id": 1314,
+  "name": "Jumping jack HD",
+  "name_en": "Jumping Jack HD",
+  "aliases": [
+   "Jumping Jack HD",
+   "Jumping jack HD"
+  ],
+  "category": "Cardio",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Le jumping jack est un exercice pliométrique. La pliométrie regroupe des mouvements aérobiques explosifs qui augmentent la vitesse, la rapidité et la puissance, et qui sollicitent l'ensemble du corps.\nLe jumping jack cible les bras, les épaules, les abdominaux, les muscles des hanches et les fléchisseurs de hanche, et fait aussi travailler les cuisses, les tendons du genou et les quadriceps.\nLes sauts sont bénéfiques pour la santé car ils associent travail cardiovasculaire et renforcement musculaire. Comme les sauts font monter le rythme cardiaque, ils peuvent aussi améliorer votre condition cardiovasculaire.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "hektkaso"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1314/",
+  "media": []
+ },
+ {
+  "id": "wger:1318",
+  "source_id": 1318,
+  "name": "Montées de genoux sautées HD",
+  "name_en": "High Knee Skips HD",
+  "aliases": [
+   "High Knee Skips HD",
+   "Montées de genoux sautées HD"
+  ],
+  "category": "Cardio",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Obliquus externus abdominis",
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "Vous pouvez utiliser cet exercice aussi bien comme échauffement dynamique avant l'entraînement que l'ajouter à votre routine de cardio pour brûler des graisses.\nLes montées de genoux sautées sont un exercice pliométrique. La pliométrie regroupe des mouvements aérobiques explosifs qui augmentent la vitesse, la rapidité et la puissance, et qui sollicitent l'ensemble du corps.\nLes montées de genoux sautées ciblent les obliques, les muscles des jambes, les muscles des hanches et les fléchisseurs de hanche, et font aussi travailler les cuisses, les tendons du genou, les quadriceps et les épaules.\nLes sauts sont bénéfiques pour la santé car ils associent travail cardiovasculaire et renforcement musculaire. Comme les sauts font monter le rythme cardiaque, ils peuvent aussi améliorer votre condition cardiovasculaire.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "hektkaso"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1318/",
+  "media": []
+ },
+ {
+  "id": "wger:1320",
+  "source_id": 1320,
+  "name": "Dips sur banc au sol HD",
+  "name_en": "Bench Dips On Floor HD",
+  "aliases": [
+   "Bench Dips On Floor HD",
+   "Dips sur banc au sol HD"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Biceps",
+   "Brachialis",
+   "Triceps"
+  ],
+  "variation_group": null,
+  "description": "Les dips triceps au sol sont un exercice polyarticulaire car ils sollicitent plusieurs groupes musculaires simultanément. Bien que cet exercice au poids du corps cible principalement les triceps, il fait aussi travailler vos pectoraux et l'avant de vos épaules.\nLes dips triceps au sol sont l'un des exercices les plus efficaces pour augmenter la force des bras et développer une musculature sèche au niveau des bras.\nLes dips triceps au sol sont un exercice en chaîne cinétique fermée, ce qui signifie que vous effectuez les mouvements autour d'un point fixe. Cela augmente la force de compression sur vos articulations et améliore ainsi la stabilité.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "hektkaso"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1320/",
+  "media": []
+ },
+ {
+  "id": "wger:1324",
+  "source_id": 1324,
+  "name": "Fente au poids du corps HD",
+  "name_en": "Bodyweight lunge HD",
+  "aliases": [
+   "Bodyweight lunge HD",
+   "Fente au poids du corps HD"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Les fentes au poids du corps sont un exercice de callisthénie efficace pour renforcer le bas du corps, améliorer l'équilibre et la stabilité, et développer une force fonctionnelle. Elles constituent un choix populaire pour les séances au poids du corps, les entraînements à la maison, et peuvent aussi s'intégrer à un programme de renforcement musculaire plus complet.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "hektkaso"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1324/",
+  "media": []
+ },
+ {
+  "id": "wger:1325",
+  "source_id": 1325,
+  "name": "Lateral Push Off",
+  "name_en": "Lateral Push Off",
+  "aliases": [
+   "Lateral Push Off"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Calves"
+  ],
+  "variation_group": null,
+  "description": "Push off the ground and land on one leg and regain balance before jumping to the other leg",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "cleen"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "cleen"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1325/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/1325/d8372291-6725-452a-9711-6321c061e354.jpg",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "cleen"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:1333",
+  "source_id": 1333,
+  "name": "Forearm Curls (underhand grip)",
+  "name_en": "Forearm Curls (underhand grip)",
+  "aliases": [
+   "Forearm Curls (underhand grip)"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Engage the muscles \n Don't use momentum \n Controlled movement \n Slow movement",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1333/",
+  "media": []
+ },
+ {
+  "id": "wger:1336",
+  "source_id": 1336,
+  "name": "Extension des triceps au-dessus de la tête (haltère)",
+  "name_en": "Triceps Overhead (Dumbbell)",
+  "aliases": [
+   "Extension des triceps au-dessus de la tête (haltère)",
+   "Triceps Overhead (Dumbbell)"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Triceps"
+  ],
+  "variation_group": null,
+  "description": "Gardez les coudes fixes \n Engagez les muscles \n N'utilisez pas d'élan \n Mouvement contrôlé \n Mouvement lent \n Ne tendez pas à l'excès",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1336/",
+  "media": []
+ },
+ {
+  "id": "wger:1338",
+  "source_id": 1338,
+  "name": "Élévation des épaules (haltère)",
+  "name_en": "Shoulder Raise (Dumbbell)",
+  "aliases": [
+   "Shoulder Raise (Dumbbell)",
+   "Élévation des épaules (haltère)"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": null,
+  "description": "Engagez les muscles \n N'utilisez pas d'élan \n Mouvement contrôlé \n Mouvement lent \n Gardez toujours les bras fléchis \n Ne tendez pas à l'excès",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1338/",
+  "media": []
+ },
+ {
+  "id": "wger:1348",
+  "source_id": 1348,
+  "name": "Extensions du bas du dos",
+  "name_en": "Lower Back Extensions",
+  "aliases": [
+   "Extensions du bas du dos",
+   "Lower Back Extensions"
+  ],
+  "category": "Back",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Engagez les muscles \n Soulevez légèrement le bassin \n Mouvement contrôlé \n Mouvement lent \n N'utilisez pas d'élan \n Gardez le haut du corps droit",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1348/",
+  "media": []
+ },
+ {
+  "id": "wger:1353",
+  "source_id": 1353,
+  "name": "Développé serré aux haltères (hex press)",
+  "name_en": "Dumbbell Hex Press",
+  "aliases": [
+   "Dumbbell Hex Press",
+   "Développé serré aux haltères (hex press)"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Chest",
+   "Triceps"
+  ],
+  "variation_group": null,
+  "description": "Engagez les muscles \n Placez vos pieds bien écartés \n Mouvement contrôlé \n Mouvement lent \n Ramenez les charges vers le bas de votre poitrine / votre ventre",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1353/",
+  "media": []
+ },
+ {
+  "id": "wger:1360",
+  "source_id": 1360,
+  "name": "Épaulé-développé avec deux kettlebells",
+  "name_en": "Double Kettlebell Clean and Press",
+  "aliases": [
+   "Double Kettlebell Clean and Press",
+   "Épaulé-développé avec deux kettlebells"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Kettlebell"
+  ],
+  "muscles": [
+   "Shoulders",
+   "Biceps",
+   "Brachialis",
+   "Quads",
+   "Trapezius",
+   "Triceps"
+  ],
+  "variation_group": null,
+  "description": "Exercice de musculation pour tout le corps. Cet exercice offre un large éventail de bénéfices en termes de force et de volume musculaire, et il est extrêmement fonctionnel.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "m4k3r"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1360/",
+  "media": []
+ },
+ {
+  "id": "wger:1361",
+  "source_id": 1361,
+  "name": "Double Kettlebell Front Squat",
+  "name_en": "Double Kettlebell Front Squat",
+  "aliases": [
+   "Double Kettlebell Front Squat"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Kettlebell"
+  ],
+  "muscles": [
+   "Glutes",
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "The kettlebell front squat is a compound, multi-joint exercise that works several muscle groups.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "m4k3r"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "m4k3r"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1361/",
+  "media": []
+ },
+ {
+  "id": "wger:1363",
+  "source_id": 1363,
+  "name": "Blackroll",
+  "name_en": "Blackroll",
+  "aliases": [
+   "Blackroll"
+  ],
+  "category": "Back",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Controlled movements \n Slow movements \n Don't use momentum",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1363/",
+  "media": []
+ },
+ {
+  "id": "wger:1366",
+  "source_id": 1366,
+  "name": "Dumbbell Split Squat",
+  "name_en": "Dumbbell Split Squat",
+  "aliases": [
+   "Dumbbell Split Squat"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Glutes",
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Controlled execution \n No momentum \n Execute slowly",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1366/",
+  "media": []
+ },
+ {
+  "id": "wger:1370",
+  "source_id": 1370,
+  "name": "Dumbbell Deadlift",
+  "name_en": "Dumbbell Deadlift",
+  "aliases": [
+   "Dumbbell Deadlift"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Hamstrings",
+   "Glutes"
+  ],
+  "variation_group": null,
+  "description": "Controlled execution \n Don't use momentum \n Slow execution",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Anastasious"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1370/",
+  "media": []
+ },
+ {
+  "id": "wger:1372",
+  "source_id": 1372,
+  "name": "Triceps Dips (Assisted)",
+  "name_en": "Triceps Dips (Assisted)",
+  "aliases": [
+   "Triceps Dips (Assisted)"
+  ],
+  "category": "Arms",
+  "equipment": [],
+  "muscles": [
+   "Triceps"
+  ],
+  "variation_group": "9b38378a-8039-4c9b-98dc-c65513ef7106",
+  "description": "Assisted triceps dips  is a gym work out exercise that targets triceps and also involves chest.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "matpn"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "matpn"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1372/",
+  "media": []
+ },
+ {
+  "id": "wger:1373",
+  "source_id": 1373,
+  "name": "box jumps",
+  "name_en": "box jumps",
+  "aliases": [
+   "box jumps"
+  ],
+  "category": "Cardio",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Glutes"
+  ],
+  "variation_group": null,
+  "description": "Jump from a standing position onto the box, stretch your body, then step down again (do not jump)",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "tekknokrat@gmx.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "tekknokrat@gmx.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1373/",
+  "media": []
+ },
+ {
+  "id": "wger:1374",
+  "source_id": 1374,
+  "name": "Rotary Torso Machine",
+  "name_en": "Rotary Torso Machine",
+  "aliases": [
+   "Rotary Torso Machine"
+  ],
+  "category": "Abs",
+  "equipment": [],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "Slow and Steady \n Not too much weight",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "6LXBO"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "6LXBO"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1374/",
+  "media": []
+ },
+ {
+  "id": "wger:1376",
+  "source_id": 1376,
+  "name": "Recumbent Bike",
+  "name_en": "Recumbent Bike",
+  "aliases": [
+   "Recumbent Bike"
+  ],
+  "category": "Cardio",
+  "equipment": [],
+  "muscles": [
+   "Hamstrings",
+   "Calves",
+   "Glutes",
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "For this exercise Recumbent Bike is needed. You just sit on it, set level and time and start the workout",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "pera_perkan"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "pera_perkan"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1376/",
+  "media": []
+ },
+ {
+  "id": "wger:1377",
+  "source_id": 1377,
+  "name": "Rotation du torse",
+  "name_en": "Torso Twist",
+  "aliases": [
+   "Rotation du torse",
+   "Torso Twist"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "Exercice de rotation du torse debout. Ciblez vos abdominaux et améliorez votre souplesse avec cet exercice dynamique debout ! L'exercice de rotation du torse debout consiste à faire pivoter votre torse tout en gardant les pieds et les hanches stables, en sollicitant vos obliques et en étirant l'ensemble du haut de votre corps. Ce mouvement permet de : renforcer la sangle abdominale ; augmenter la souplesse de la colonne vertébrale et du torse ; améliorer la posture et l'équilibre ; améliorer les performances athlétiques globales. Réalisez 3 séries de 10 à 15 répétitions, en pivotant de chaque côté, pour ressentir les bienfaits de cet exercice efficace et complet !",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "brucem"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1377/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/1377/12e7a231-d36a-4992-bf57-ff7bfe0f3ae4.jpg",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "brucem"
+     ],
+     "original": "https://workoutguru.fit/exercises/standing-torso-twist-female-video-exercise-guide-tips-735512/",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:1378",
+  "source_id": 1378,
+  "name": "Élévations latérales à la poulie (un bras)",
+  "name_en": "Cable Lateral Raises (Single Arm)",
+  "aliases": [
+   "Cable Lateral Raises (Single Arm)",
+   "Élévations latérales à la poulie (un bras)"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": "fa7f14c4-f65a-4324-925c-bd30db99119d",
+  "description": "L'élévation latérale à la poulie à un bras est une variante de l'élévation latérale et un exercice utilisé pour développer les muscles des épaules. \n \n Réglez une poulie à la position la plus basse possible et fixez-y une poignée. \n Passez le bras devant votre corps et saisissez la poignée en prise neutre. \n Gardez le coude légèrement fléchi, tirez la poignée à travers votre corps et soulevez latéralement. \n Abaissez lentement la poignée pour revenir à la position de départ, de façon contrôlée.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "carlos3c"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1378/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/1378/7c1fcf34-fb7e-45e7-a0c1-51f296235315.jpg",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "carlos3c"
+     ],
+     "original": "https://commons.wikimedia.org/wiki/File:Girl_doing_one_arm_shoulder_raise.jpg",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:1380",
+  "source_id": 1380,
+  "name": "Pull-apart avec élastique",
+  "name_en": "Band pull-aparts",
+  "aliases": [
+   "Band pull-aparts",
+   "Pull-apart avec élastique"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Resistance band"
+  ],
+  "muscles": [],
+  "variation_group": "6a8f9718-0447-47be-a2eb-6d052cf608af",
+  "description": "Tiens l'élastique avec les bras tendus devant toi, à hauteur des épaules. \n Garde les coudes légèrement fléchis, mais fixes. \n Tire l'élastique vers l'extérieur en écartant les bras jusqu'à ce qu'il touche ou approche ta poitrine. \n Ramène lentement les bras à la position initiale en contrôlant la tension.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "schwolfar"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "schwolfar"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1380/",
+  "media": []
+ },
+ {
+  "id": "wger:1381",
+  "source_id": 1381,
+  "name": "Haut du dos",
+  "name_en": "Upper Back",
+  "aliases": [
+   "Haut du dos",
+   "Upper Back"
+  ],
+  "category": "Back",
+  "equipment": [],
+  "muscles": [
+   "Shoulders",
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "L'exercice Haut du dos convient pour renforcer les muscles profonds, avec une attention particulière portée aux deltoïdes, aux rhomboïdes et aux muscles du haut du dos.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "phpi"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1381/",
+  "media": []
+ },
+ {
+  "id": "wger:1384",
+  "source_id": 1384,
+  "name": "Pullover Machine",
+  "name_en": "Pullover Machine",
+  "aliases": [
+   "Pullover Machine"
+  ],
+  "category": "Back",
+  "equipment": [],
+  "muscles": [
+   "Lats"
+  ],
+  "variation_group": null,
+  "description": "Pullover machine, sitting, elbows on pads",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Paul@Chemistry"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Paul@Chemistry"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1384/",
+  "media": []
+ },
+ {
+  "id": "wger:1387",
+  "source_id": 1387,
+  "name": "Battements de jambe tendue",
+  "name_en": "Hamstring Kicks",
+  "aliases": [
+   "Battements de jambe tendue",
+   "Hamstring Kicks"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Tenez-vous debout, les pieds écartés de la largeur des hanches, et tendez un bras devant vous. Balancez cette jambe vers le haut devant vous puis ramenez-la vers le bas en la gardant aussi tendue que possible et les orteils pointés vers le haut. Répétez avec l'autre jambe.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1387/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/1387/a2cf7eda-5540-4105-b30e-1c2f2679a6c7.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "captive0592"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:1388",
+  "source_id": 1388,
+  "name": "Soulevé de terre roumain sur une jambe",
+  "name_en": "Single Leg RDL",
+  "aliases": [
+   "Single Leg RDL",
+   "Soulevé de terre roumain sur une jambe",
+   "Single Leg Romanian Deadlift"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Tenez-vous droit et tenez des charges dans les deux mains si vous utilisez du poids. \n Gainez vos abdominaux et décollez une jambe du sol. \n Gardez le dos droit, basculez au niveau des hanches en abaissant votre torse vers l'avant, en veillant à ne pas faire pivoter vos hanches. \n Descendez jusqu'à sentir un étirement dans l'ischio-jambier de votre jambe d'appui, puis revenez en position debout. Répétez des deux côtés.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "admin",
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1388/",
+  "media": []
+ },
+ {
+  "id": "wger:1390",
+  "source_id": 1390,
+  "name": "Toucher des orteils",
+  "name_en": "Toe Touch",
+  "aliases": [
+   "Toe Touch",
+   "Toucher des orteils",
+   "Standing Forward Bend"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings",
+   "Glutes"
+  ],
+  "variation_group": null,
+  "description": "Tenez-vous debout, les pieds rapprochés. Fléchissez au niveau des hanches et abaissez le haut du corps vers vos orteils. Tendez les mains vers vos pieds et essayez de toucher vos orteils, le sol, ou de descendre aussi bas que possible le long de vos jambes sans forcer.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1390/",
+  "media": []
+ },
+ {
+  "id": "wger:1391",
+  "source_id": 1391,
+  "name": "Marche de l'éléphant",
+  "name_en": "Elephant Walks",
+  "aliases": [
+   "Elephant Walks",
+   "Marche de l'éléphant",
+   "Walking Hamstring Stretch"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Fléchissez au niveau des hanches jusqu'à ressentir un étirement à l'arrière des genoux. Pliez une jambe pendant que l'autre reste tendue, puis pliez l'autre genou de manière fluide tout en tendant le premier.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1391/",
+  "media": []
+ },
+ {
+  "id": "wger:1392",
+  "source_id": 1392,
+  "name": "Good morning",
+  "name_en": "Good Morning",
+  "aliases": [
+   "Good Morning",
+   "Good morning",
+   "Hip Hinge"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Tenez-vous debout, les pieds écartés au-delà de la largeur des épaules (position large), et placez vos mains sur vos hanches. Fléchissez au niveau des hanches et abaissez le haut du corps vers le sol en gardant le dos droit, puis redressez-vous.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1392/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/1392/a02c9c7d-f42d-43e0-9946-1b99b014daee.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/1392/af848376-3db3-4b16-a056-4aa936d49da4.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:1393",
+  "source_id": 1393,
+  "name": "Étirement des ischio-jambiers sur une jambe",
+  "name_en": "Single Leg Hamstring Stretch",
+  "aliases": [
+   "Single Leg Hamstring Stretch",
+   "Étirement des ischio-jambiers sur une jambe",
+   "Seated Single Leg Stretch"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Asseyez-vous au sol, une jambe tendue devant vous et l'autre repliée vers vous. Tendez les deux mains vers l'avant en essayant de toucher les orteils de votre jambe tendue.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1393/",
+  "media": []
+ },
+ {
+  "id": "wger:1394",
+  "source_id": 1394,
+  "name": "Flexion assise (sit & reach)",
+  "name_en": "Sit & Reach",
+  "aliases": [
+   "Flexion assise (sit & reach)",
+   "Sit & Reach",
+   "Seated Forward Bend",
+   "Seated Toe Touches"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Gym mat"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Asseyez-vous au sol, les jambes tendues devant vous. Tendez les deux mains vers l'avant en essayant de dépasser vos orteils ou d'aller aussi loin que possible. Revenez à la position de départ et répétez.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1394/",
+  "media": []
+ },
+ {
+  "id": "wger:1395",
+  "source_id": 1395,
+  "name": "Balancements de jambe croisés",
+  "name_en": "Crossbody Leg Swings",
+  "aliases": [
+   "Balancements de jambe croisés",
+   "Crossbody Leg Swings",
+   "Lateral Leg Swings"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Tenez-vous à un mur ou à un appui à proximité pour vous stabiliser. Balancez une jambe devant votre corps en la croisant, puis ramenez-la vers l'arrière et sur le côté. Répétez en augmentant progressivement votre amplitude de mouvement.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1395/",
+  "media": []
+ },
+ {
+  "id": "wger:1396",
+  "source_id": 1396,
+  "name": "Pancake debout",
+  "name_en": "Standing Pancake",
+  "aliases": [
+   "Pancake debout",
+   "Standing Pancake"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Tenez-vous debout et écartez les jambes le plus possible en position de grand écart facial. Fléchissez ensuite au niveau des hanches en les poussant vers l'arrière tout en gardant le dos droit.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1396/",
+  "media": []
+ },
+ {
+  "id": "wger:1397",
+  "source_id": 1397,
+  "name": "Good morning jambes écartées debout",
+  "name_en": "Standing Pancake Good Morning",
+  "aliases": [
+   "Good morning jambes écartées debout",
+   "Standing Pancake Good Morning",
+   "Wide-Stance Good Morning"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": "5eca8c6e-64cd-4023-bcc8-d2edefe58a00",
+  "description": "Tenez-vous debout, les pieds écartés au-delà de la largeur des épaules et les orteils légèrement tournés vers l'extérieur. Placez vos mains derrière la tête. Effectuez une bascule à partir des hanches et abaissez le haut du corps vers le sol, en gardant le dos droit et la poitrine ouverte.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1397/",
+  "media": []
+ },
+ {
+  "id": "wger:1398",
+  "source_id": 1398,
+  "name": "Étirement de l'ischio-jambier vers la poitrine",
+  "name_en": "Hamstring Chokes",
+  "aliases": [
+   "Hamstring Chokes",
+   "Étirement de l'ischio-jambier vers la poitrine",
+   "Dynamic Hamstring Stretch"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Asseyez-vous au sol et pliez une jambe en ramenant le genou vers vous. Placez votre main derrière l'ischio-jambier et tirez doucement votre jambe vers la poitrine, en ressentant un étirement à l'arrière de la cuisse. Tendez ensuite votre jambe en la dépliant vers le plafond.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1398/",
+  "media": []
+ },
+ {
+  "id": "wger:1399",
+  "source_id": 1399,
+  "name": "Déroulé du buste (roll down)",
+  "name_en": "Roll Down",
+  "aliases": [
+   "Déroulé du buste (roll down)",
+   "Roll Down"
+  ],
+  "category": "Back",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Tenez-vous debout, les pieds écartés de la largeur des hanches, et déroulez lentement le haut du corps vers l'avant, une vertèbre à la fois, jusqu'à ce que vos mains touchent le sol ou aussi bas que vous le pouvez sans forcer. Remontez à la position de départ avec le même contrôle.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1399/",
+  "media": []
+ },
+ {
+  "id": "wger:1400",
+  "source_id": 1400,
+  "name": "Étirement des ischio-jambiers jambes croisées",
+  "name_en": "Crossbody Hamstring Stretch",
+  "aliases": [
+   "Crossbody Hamstring Stretch",
+   "Étirement des ischio-jambiers jambes croisées",
+   "Standing Cross-Leg Hamstring Stretch"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "Debout, croisez une jambe derrière l'autre (gardez cette jambe tendue). Penchez-vous vers le bas et essayez de toucher les orteils de cette jambe. Fléchissez légèrement l'autre jambe afin de pouvoir vous pencher.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "captive0592"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1400/",
+  "media": []
+ },
+ {
+  "id": "wger:1406",
+  "source_id": 1406,
+  "name": "Plank-to-Elbow Extension",
+  "name_en": "Plank-to-Elbow Extension",
+  "aliases": [
+   "Plank-to-Elbow Extension"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Shoulders",
+   "Abs",
+   "Triceps"
+  ],
+  "variation_group": null,
+  "description": "The Plank-to-Elbow Extension is a dynamic exercise that combines the plank with an elbow extension movement",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "clafal"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "clafal"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1406/",
+  "media": []
+ },
+ {
+  "id": "wger:1407",
+  "source_id": 1407,
+  "name": "Squat cosaque",
+  "name_en": "Cossack squat",
+  "aliases": [
+   "Cossack squat",
+   "Squat cosaque"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [
+   "Glutes",
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Le squat cosaque est un exercice pluri-articulaire qui sollicite principalement les jambes et les fessiers, mais qui fait aussi intervenir les muscles stabilisateurs. C'est un excellent exercice pour améliorer la force, la mobilité et la stabilité de manière fonctionnelle.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "clafal"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/1407/",
+  "media": []
+ }
+]

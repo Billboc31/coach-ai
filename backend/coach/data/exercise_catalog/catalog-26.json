@@ -1,0 +1,894 @@
+[
+ {
+  "id": "wger:2655",
+  "source_id": 2655,
+  "name": "Gentle Reverse Kegels",
+  "name_en": "Gentle Reverse Kegels",
+  "aliases": [
+   "Gentle Reverse Kegels"
+  ],
+  "category": "Abs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Custom description created by the Integrated Conditioning routine importer for wger.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2655/",
+  "media": []
+ },
+ {
+  "id": "wger:2656",
+  "source_id": 2656,
+  "name": "Happy Baby",
+  "name_en": "Happy Baby",
+  "aliases": [
+   "Happy Baby"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Custom description created by the Integrated Conditioning routine importer for wger.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2656/",
+  "media": []
+ },
+ {
+  "id": "wger:2657",
+  "source_id": 2657,
+  "name": "Relaxed Diaphragmatic Breathing",
+  "name_en": "Relaxed Diaphragmatic Breathing",
+  "aliases": [
+   "Relaxed Diaphragmatic Breathing"
+  ],
+  "category": "Abs",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Custom description created by the Integrated Conditioning routine importer for wger.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2657/",
+  "media": []
+ },
+ {
+  "id": "wger:2658",
+  "source_id": 2658,
+  "name": "Dumbbell Lateral Raise",
+  "name_en": "Dumbbell Lateral Raise",
+  "aliases": [
+   "Dumbbell Lateral Raise"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": null,
+  "description": "Custom description created by the Integrated Conditioning routine importer for wger.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2658/",
+  "media": []
+ },
+ {
+  "id": "wger:2659",
+  "source_id": 2659,
+  "name": "Alternating Dumbbell Curl",
+  "name_en": "Alternating Dumbbell Curl",
+  "aliases": [
+   "Alternating Dumbbell Curl"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Biceps"
+  ],
+  "variation_group": null,
+  "description": "Custom description created by the Integrated Conditioning routine importer for wger.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2659/",
+  "media": []
+ },
+ {
+  "id": "wger:2660",
+  "source_id": 2660,
+  "name": "Bent-Over Dumbbell Triceps Extension",
+  "name_en": "Bent-Over Dumbbell Triceps Extension",
+  "aliases": [
+   "Bent-Over Dumbbell Triceps Extension"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Triceps"
+  ],
+  "variation_group": null,
+  "description": "Custom description created by the Integrated Conditioning routine importer for wger.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2660/",
+  "media": []
+ },
+ {
+  "id": "wger:2661",
+  "source_id": 2661,
+  "name": "Dumbbell Calf Raise",
+  "name_en": "Dumbbell Calf Raise",
+  "aliases": [
+   "Dumbbell Calf Raise"
+  ],
+  "category": "Calves",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Calves"
+  ],
+  "variation_group": null,
+  "description": "Custom description created by the Integrated Conditioning routine importer for wger.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2661/",
+  "media": []
+ },
+ {
+  "id": "wger:2662",
+  "source_id": 2662,
+  "name": "Paused Squats",
+  "name_en": "Paused Squats",
+  "aliases": [
+   "Paused Squats"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Barbell"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": "d219c31d-97fb-452e-8547-be92090d774e",
+  "description": "Use the same technic as your normal squat. Except that you make a pause at the bottom of the squat for about 1-2 seconds, in other words a bit longer than your normal squat.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "bbk"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "bbk"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2662/",
+  "media": []
+ },
+ {
+  "id": "wger:2663",
+  "source_id": 2663,
+  "name": "Single-Arm Cable Row /w Rotation (floor)",
+  "name_en": "Single-Arm Cable Row /w Rotation (floor)",
+  "aliases": [
+   "Single-Arm Cable Row /w Rotation (floor)"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Lats"
+  ],
+  "variation_group": "bf93e7a9-c81c-4af4-892d-d40d6913c896",
+  "description": "Go into a one-legged kneeling position and grab the cable from the lowest position. \n Rotate the upper torso to get into the starting position and bend the upper torso a little bit sidewise. \n Place the unused hand on the knee. \n Pull the cable while rotating the upper torso.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "bbk"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "bbk"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2663/",
+  "media": []
+ },
+ {
+  "id": "wger:2664",
+  "source_id": 2664,
+  "name": "Seated Knee Extension with Overpressure",
+  "name_en": "Seated Knee Extension with Overpressure",
+  "aliases": [
+   "Seated Knee Extension with Overpressure",
+   "Seated Knee Extension Stretch",
+   "Heel Prop Knee Extension"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Hamstrings"
+  ],
+  "variation_group": null,
+  "description": "A gentle stretch to restore full knee extension. Sit with one leg stretched out in front of you and the heel propped on the floor or a low surface, so the knee is unsupported. Place both hands on the thigh just above the kneecap. Keeping the leg relaxed, gently press down through the hands toward the floor until you feel a stretch behind the knee, and hold for about three seconds before releasing. The pressure should produce a stretch, never sharp pain. Repeat for the prescribed number of repetitions, then switch legs.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2664/",
+  "media": []
+ },
+ {
+  "id": "wger:2665",
+  "source_id": 2665,
+  "name": "Banded Monster Walk",
+  "name_en": "Banded Monster Walk",
+  "aliases": [
+   "Banded Monster Walk",
+   "Monster Walk",
+   "Thigh Resisted Monster Walk"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Resistance band"
+  ],
+  "muscles": [
+   "Glutes"
+  ],
+  "variation_group": "544fef63-bc00-44a3-aeb7-aedbba526ba5",
+  "description": "A banded walking drill for the glutes and hip stabilisers. Place a mini band around both thighs just above the knees, or around the ankles for a harder version. Stand with feet hip-width apart so the band is under tension, then sink into a quarter-squat with the chest up. Walk forward with small diagonal steps, pushing each leg out against the band and keeping the knees tracking over the toes rather than letting them fall inward. Walk forward for the prescribed number of steps, then walk backward to return, keeping the band under tension throughout.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2665/",
+  "media": []
+ },
+ {
+  "id": "wger:2666",
+  "source_id": 2666,
+  "name": "Step Calf Stretch",
+  "name_en": "Step Calf Stretch",
+  "aliases": [
+   "Step Calf Stretch",
+   "Heel Drop Calf Stretch",
+   "Calf Stretch off a Step"
+  ],
+  "category": "Calves",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Calves"
+  ],
+  "variation_group": "0def44de-f872-4fd3-9c69-56d41df33d19",
+  "description": "Stand on a step or a sturdy raised surface with the balls of both feet on the edge and the heels hanging off, holding a rail or wall for balance. Let one or both heels drop below the level of the step until you feel a stretch through the calf, and hold. Keep the knee straight to stretch the gastrocnemius, or bend the knee slightly to bias the soleus lower down. Hold for the prescribed time, typically 30 seconds, without bouncing, then switch sides if stretching one leg at a time.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2666/",
+  "media": []
+ },
+ {
+  "id": "wger:2667",
+  "source_id": 2667,
+  "name": "Single-Leg Balance with Eyes Closed",
+  "name_en": "Single-Leg Balance with Eyes Closed",
+  "aliases": [
+   "Single-Leg Balance with Eyes Closed",
+   "Eyes Closed Single Leg Stand",
+   "Blind Single-Leg Balance"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [],
+  "variation_group": "d509070f-bc9d-4ab6-9355-533d2f169c5a",
+  "description": "A balance and proprioception drill. Stand on one leg with the knee slightly bent and the other foot lifted clear of the floor, then close your eyes and hold the position. Without visual feedback the ankle and hip stabilisers have to do the work, so expect noticeable wobble. Stand within reach of a wall, counter or chair so you can steady yourself if needed. Hold for the prescribed time, then switch legs. Commonly prescribed in rehabilitation after ankle or knee injury.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2667/",
+  "media": []
+ },
+ {
+  "id": "wger:2668",
+  "source_id": 2668,
+  "name": "Single-Leg Balance with Kettlebell Circles",
+  "name_en": "Single-Leg Balance with Kettlebell Circles",
+  "aliases": [
+   "Single-Leg Balance with Kettlebell Circles",
+   "Single Leg Balance Kettlebell Circle",
+   "Kettlebell Body Circle on One Leg"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Kettlebell"
+  ],
+  "muscles": [
+   "Glutes"
+  ],
+  "variation_group": null,
+  "description": "A balance drill that adds a moving load. Stand on one leg with the knee slightly bent, holding a kettlebell in one hand. Pass the kettlebell around your body in a circle, handing it from one hand to the other in front and behind you, while keeping your balance on the standing leg. Keep the hips level and the torso upright; the shifting weight of the bell constantly changes your centre of mass, which is what trains the hip and ankle stabilisers. Complete the prescribed number of circles, reverse direction, then switch legs. Use a light bell to start.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "trs1800"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2668/",
+  "media": []
+ },
+ {
+  "id": "wger:2669",
+  "source_id": 2669,
+  "name": "Bent Over Dumbbell Rows (Two Arms)",
+  "name_en": "Bent Over Dumbbell Rows (Two Arms)",
+  "aliases": [
+   "Bent Over Dumbbell Rows (Two Arms)"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Lats",
+   "Trapezius"
+  ],
+  "variation_group": "e87bd3db-75b1-44ec-8962-df2f97274109",
+  "description": "How to Perform It  \n \n Hold a dumbbell in each hand with a neutral or overhand grip. \n Hinge at the hips, pushing your glutes back, until your torso is roughly 45–75 degrees to the floor. Keep a slight bend in your knees. \n Let the dumbbells hang directly below your shoulders with arms fully extended. \n Keep your back flat, chest up, and core braced — avoid rounding your spine. \n Pull the dumbbells up toward your ribcage/hips, driving your elbows back and squeezing your shoulder blades together at the top. \n Pause briefly at the top of the movement. \n Lower the dumbbells back down under control to the starting position. \n Repeat for the desired number of repetitions. \n \n  Key Coaching Cues  \n \n Hinge from the hips, not the lower back \n Keep the spine neutral throughout — no rounding \n Lead with the elbows, not the hands \n Avoid using momentum or jerking the weight up \n Control the eccentric (lowering) phase rather than letting the weights drop",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "karthikrrk"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "karthikrrk"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2669/",
+  "media": []
+ },
+ {
+  "id": "wger:2670",
+  "source_id": 2670,
+  "name": "Marche alternée",
+  "name_en": "Alternate Walking",
+  "aliases": [
+   "Alternate Walking",
+   "Marche alternée"
+  ],
+  "category": "Cardio",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Calves",
+   "Quads"
+  ],
+  "variation_group": "d47fc5dd-7d8f-4e95-a0d0-101dfd38ad99",
+  "description": "1 min 30 s marche (4.5 km/h) / 30 s course (7 km/h)",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Mamo2604"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Mamo2604"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2670/",
+  "media": []
+ },
+ {
+  "id": "wger:2671",
+  "source_id": 2671,
+  "name": "Radio Taiso",
+  "name_en": "Radio Taiso",
+  "aliases": [
+   "Radio Taiso",
+   "Japanese Warmup"
+  ],
+  "category": "Cardio",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Shoulders",
+   "Lats",
+   "Quads",
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "Video can be found here : https://www.youtube.com/watch?v=SGPBSqxKGAc \n Full-body mobility and dynamic warm-up routine (3–5 minutes) to prepare joints, muscles, and the cardiovascular system for workout. \n Movement Flow: \n Deep Breathing & Arm Raises: Inhale while raising arms laterally overhead, exhale as you lower them. \n Knee Bends: Soft, rhythmic knee flexions synchronized with arm swings. \n Arm Circles: Large full-range arm rotations forward, then backward to open up the chest and shoulder girdle. \n Chest Expansion: Cross arms in front of the chest and open wide to the sides. \n Side Bends: Reach overhead to stretch the lateral torso left and right with a smooth side flexion. \n Forward & Back Bends: Gently hinge at the hips to reach forward, then return upright with a mild spinal extension. \n Torso Twists: Swing arms side-to-side to rotate the spine and loosen the core. \n Ankle Mobility / Light Bounces: Soft heel lifts or light bouncing on toes to warm up lower leg joints and tendons.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Mamo2604"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Mamo2604"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2671/",
+  "media": []
+ },
+ {
+  "id": "wger:2672",
+  "source_id": 2672,
+  "name": "kelso shrugs",
+  "name_en": "kelso shrugs",
+  "aliases": [
+   "kelso shrugs"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Barbell",
+   "Bench"
+  ],
+  "muscles": [
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Kelso shrugs are a variation of scapular shrugs designed primarily to train  scapular retraction , with particular emphasis on the  middle trapezius, rhomboids, and, secondarily, the lower trapezius . Unlike conventional shrugs, the goal is not to elevate the shoulders toward the ears, but rather to  pull the shoulder blades backward . \n They are typically performed with the chest supported on an incline bench, using either dumbbells or a barbell: \n \n Lie face down on an incline bench, with your arms extended toward the floor. \n Keep your  elbows almost completely locked  throughout the movement. \n Starting with the shoulder blades slightly protracted,  retract them , trying to bring them closer together. \n Keep your chest firmly supported on the bench; avoid turning the movement into a row by extending your torso. \n Briefly hold the fully retracted position, then return in a controlled manner, allowing the shoulder blades to separate.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Friend7857"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Friend7857"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2672/",
+  "media": []
+ },
+ {
+  "id": "wger:2673",
+  "source_id": 2673,
+  "name": "Stomach Vacuum",
+  "name_en": "Stomach Vacuum",
+  "aliases": [
+   "Stomach Vacuum",
+   "Siphon Diaphragmatique",
+   "Vacuum Abdominal"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "Position de départ  : Allongez-vous sur le dos, genoux fléchis, pieds à plat au sol (ou mettez-vous debout/assis bien droit). \n  Expiration  : Expirez totalement l'air de vos poumons par la bouche. \n  Contraction  : Aspirez votre nombril vers la colonne vertébrale au maximum, en ramenant le ventre sous les côtes. \n  Maintien  : Maintenez cette contraction isométrique en apnée pendant 10 à 20 secondes. \n  Relâchement  : Inspirez lentement par le nez pour relâcher la tension et détendre la sangle abdominale. \n  Répétition  : Prenez un court repos puis effectuez le nombre de séries souhaité.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "TimoteoG"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "TimoteoG"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2673/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/2673/71e1dd6a-c407-45bd-a082-e0e6f5226eb6.jpg",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Khp412"
+     ],
+     "original": "https://commons.wikimedia.org/wiki/File:Abdominal_Vacuum_Exercise.jpg",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:2674",
+  "source_id": 2674,
+  "name": "Knieheben Beinhebemaschine",
+  "name_en": "Knieheben Beinhebemaschine",
+  "aliases": [
+   "Knieheben Beinhebemaschine"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": "dfca3142-0dc9-4be2-a4b8-f4cfa370df0e",
+  "description": "i cannot change the language in add exercise",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "fen"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "fen"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2674/",
+  "media": []
+ },
+ {
+  "id": "wger:2675",
+  "source_id": 2675,
+  "name": "Knieheben Beinhebemaschine seitlich",
+  "name_en": "Knieheben Beinhebemaschine seitlich",
+  "aliases": [
+   "Knieheben Beinhebemaschine seitlich"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Obliquus externus abdominis"
+  ],
+  "variation_group": "dfca3142-0dc9-4be2-a4b8-f4cfa370df0e",
+  "description": "i cannot change the language in add exercise",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "fen"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "fen"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2675/",
+  "media": []
+ },
+ {
+  "id": "wger:2676",
+  "source_id": 2676,
+  "name": "Weighted neck flexion",
+  "name_en": "Weighted neck flexion",
+  "aliases": [
+   "Weighted neck flexion"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Bench"
+  ],
+  "muscles": [
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Weighted neck flexion is an  isolation exercise  designed to strengthen the  anterior (front) neck flexor muscles  by bringing your chin toward your chest against external resistance (most commonly a light weight plate, resistance band, or neck harness).",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "qoxivi"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "qoxivi"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2676/",
+  "media": []
+ },
+ {
+  "id": "wger:2677",
+  "source_id": 2677,
+  "name": "Single leg press",
+  "name_en": "Single leg press",
+  "aliases": [
+   "Single leg press"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [
+   "Hamstrings",
+   "Calves",
+   "Glutes",
+   "Quads"
+  ],
+  "variation_group": null,
+  "description": "Strength training exercise where you push a weight away from your body using one leg at a time on a leg press machine. It helps to improve leg strength, balance, and muscular symmetry by isolating each leg individually. This exercise is particularly useful for identifying and correcting muscle imbalances between your legs.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "qoxivi"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "qoxivi"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/2677/",
+  "media": []
+ }
+]

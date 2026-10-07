@@ -1,0 +1,1536 @@
+[
+ {
+  "id": "wger:206",
+  "source_id": 206,
+  "name": "Fentes marchées avec haltères",
+  "name_en": "Dumbbell Lunges Walking",
+  "aliases": [
+   "Dumbbell Lunges Walking",
+   "Fentes marchées avec haltères",
+   "Walking Lunges"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
+  "description": "Position de départ :  Tenez-vous debout, les pieds écartés de la largeur des hanches, les mains sur les hanches ou tenant des haltères le long du corps. \n  Le pas :  Faites un grand pas en avant avec la jambe droite. \n  La descente :  Abaissez vos hanches jusqu'à ce que les deux genoux soient pliés à environ  90 degrés . \n  La transition :  Poussez à travers le talon avant pour vous redresser, en ramenant le pied arrière vers l'avant pour enchaîner directement sur la fente suivante.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/206/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/206/47a65c45-6fd1-4181-b71a-3a6c882e516b.MOV",
+    "codec": "hevc",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/113/Walking-lunges-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/206/6ec66efd-e74f-4142-bed1-0a0ac74e3294.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "nishant0712"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:208",
+  "source_id": 208,
+  "name": "Dumbbells on Scott Machine",
+  "name_en": "Dumbbells on Scott Machine",
+  "aliases": [
+   "Dumbbells on Scott Machine"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Biceps"
+  ],
+  "variation_group": null,
+  "description": "",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/208/",
+  "media": []
+ },
+ {
+  "id": "wger:211",
+  "source_id": 211,
+  "name": "Extension des triceps à l'haltère",
+  "name_en": "Dumbbell Triceps Extension",
+  "aliases": [
+   "Dumbbell Triceps Extension",
+   "Extension des triceps à l'haltère"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Triceps"
+  ],
+  "variation_group": "290582f2-d94c-4eb6-a994-99e38d7251f7",
+  "description": "Placez un haltère au-dessus de la tête, les deux mains sous le disque intérieur (prise en cœur). \n Les coudes au-dessus de la tête, abaissez l'avant-bras derrière le bras en fléchissant les coudes. Fléchissez les poignets en bas du mouvement pour éviter de heurter votre nuque avec l'haltère. Relevez l'haltère au-dessus de la tête en étendant les coudes tout en plaçant les poignets en hyperextension. Revenez et répétez.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "tuninx"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/211/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/211/85f6eb25-a76c-409e-9af9-497794ac0dfb.MOV",
+    "codec": "h264",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:222",
+  "source_id": 222,
+  "name": "Tirage à la face (Face pull)",
+  "name_en": "Facepull",
+  "aliases": [
+   "Facepull",
+   "Tirage à la face (Face pull)",
+   "Face pull"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Fixez une corde à une poulie réglée environ à hauteur de poitrine. \n Reculez de manière à soutenir la charge bras complètement tendus, et adoptez une position décalée (un pied en avant). Fléchissez légèrement les genoux pour une base stable. \n Rétractez les omoplates (serrez-les comme pour pincer un doigt entre elles) et tirez le centre de la corde légèrement vers le haut, en direction du visage. Un bon repère consiste à penser à écarter les extrémités de la corde, et non simplement à tirer vers l'arrière. \n À l'approche de votre visage, effectuez une rotation externe de manière à ce que vos articulations des doigts soient tournées vers le plafond. \n Maintenez la position haute pendant une seconde, puis abaissez lentement.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "abeworld"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/222/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/222/245a824b-cd39-45f2-b251-2c0b7efead0d.MOV",
+    "codec": "hevc",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:235",
+  "source_id": 235,
+  "name": "Battements de jambes",
+  "name_en": "Flutter Kicks",
+  "aliases": [
+   "Battements de jambes",
+   "Flutter Kicks"
+  ],
+  "category": "Abs",
+  "equipment": [],
+  "muscles": [
+   "Obliquus externus abdominis",
+   "Abs"
+  ],
+  "variation_group": "8cab688b-4277-46a6-9bf5-73af4a647aae",
+  "description": "-Allongé sur le dos, décollez vos jambes tendues du sol selon un angle de 45 degrés. \n -Lorsque votre pied gauche descend et frôle presque le sol, votre pied droit doit chercher à atteindre un angle de 90 degrés, ou s'en approcher le plus possible. \n -Abaissez votre pied droit jusqu'à ce qu'il frôle presque le sol, puis relevez votre pied gauche. Maintenez les jambes rigides pendant tout l'exercice. Votre tête doit rester décollée du sol, soutenue par le haut des abdominaux contracté. \n -(gauche en haut droit en bas, gauche en bas droit en haut, x2)  ^v, v^, ^v, v^ = 1 répétition \n -Sollicite principalement le grand droit de l'abdomen, les fléchisseurs de la hanche et le bas du dos. Sollicite secondairement les obliques. L'accent est mis sur la partie inférieure des abdominaux.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "nate303303"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/235/",
+  "media": []
+ },
+ {
+  "id": "wger:237",
+  "source_id": 237,
+  "name": "Fly With Cable",
+  "name_en": "Fly With Cable",
+  "aliases": [
+   "Fly With Cable"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": "3fc23914-7252-44fd-bb70-a3b8de727914",
+  "description": "cable machine, two steps forward, straight back",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/237/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/122/Incline-cable-flyes-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/122/Incline-cable-flyes-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:238",
+  "source_id": 238,
+  "name": "Écarté aux haltères",
+  "name_en": "Fly With Dumbbells",
+  "aliases": [
+   "Fly With Dumbbells",
+   "Écarté aux haltères"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": "3fc23914-7252-44fd-bb70-a3b8de727914",
+  "description": "Prenez deux haltères et allongez-vous sur un banc, veillez à ce que les pieds soient fermement posés au sol et à ce que votre dos ne soit pas cambré, mais bien en contact avec le banc. Les bras sont tendus devant vous, à environ la largeur des épaules. Fléchissez maintenant légèrement les bras et écartez-les sur le côté par un mouvement en demi-cercle. Sans modifier l'angle du coude, ramenez-les vers le haut d'un mouvement fluide.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/238/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/238/2fc242d3-5bdd-4f97-99bd-678adb8c96fc.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "cshep442"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/238/c6464fb3-1924-4ff1-adfa-fd36da9b5d13.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "cshep442"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:239",
+  "source_id": 239,
+  "name": "Écarté aux haltères sur banc décliné",
+  "name_en": "Fly With Dumbbells, Decline Bench",
+  "aliases": [
+   "Fly With Dumbbells, Decline Bench",
+   "Écarté aux haltères sur banc décliné"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "Bench",
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": "3fc23914-7252-44fd-bb70-a3b8de727914",
+  "description": "L'exercice est le même que sur un banc classique : \n Prenez deux haltères et allongez-vous sur un banc, veillez à ce que les pieds soient fermement posés au sol et à ce que votre dos ne soit pas cambré, mais bien en contact avec le banc. Les bras sont tendus devant vous, à environ la largeur des épaules. Fléchissez maintenant légèrement les bras et écartez-les sur le côté par un mouvement en demi-cercle. Sans modifier l'angle du coude, ramenez-les vers le haut d'un mouvement fluide.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/239/",
+  "media": []
+ },
+ {
+  "id": "wger:245",
+  "source_id": 245,
+  "name": "Barre au front aux haltères",
+  "name_en": "Skullcrusher Dumbbells",
+  "aliases": [
+   "Barre au front aux haltères",
+   "Skullcrusher Dumbbells",
+   "French Press Dumbbells"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Bench",
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Triceps"
+  ],
+  "variation_group": "46d83fa5-cddc-4cb5-9b16-dcd4c62ae861",
+  "description": "Tenez les haltères et allongez-vous sur un banc plat de manière à ce qu'environ un quart de votre tête dépasse du bord. Tendez les bras à la verticale, puis inclinez les haltères en direction opposée à vos orteils, selon un angle de 10 à 20 degrés. Conservez le bras à cet angle pendant tout l'exercice. L'haltère ne doit pas être dirigé vers votre tête, mais au-delà, derrière votre tête. Cela maximise le bénéfice de l'exercice en gardant la charge sur les triceps en permanence. \n Prêtez attention à vos coudes et à vos bras : seuls les triceps travaillent, le reste des bras ne doit pas bouger.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/245/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/245/c253303e-9160-4f1f-b4fe-daf1e6c8661d.MOV",
+    "codec": "h264",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:246",
+  "source_id": 246,
+  "name": "Barre au front à la barre EZ",
+  "name_en": "Skullcrusher SZ-bar",
+  "aliases": [
+   "Barre au front à la barre EZ",
+   "Skullcrusher SZ-bar",
+   "French Press SZ-bar"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Bench",
+   "SZ-Bar"
+  ],
+  "muscles": [
+   "Triceps"
+  ],
+  "variation_group": "46d83fa5-cddc-4cb5-9b16-dcd4c62ae861",
+  "description": "Tenez la barre EZ et allongez-vous sur un banc plat de manière à ce qu'environ un quart de votre tête dépasse du bord. Tendez les bras avec la barre, puis fléchissez-les pour abaisser la barre. Juste avant qu'elle ne touche votre front, repoussez-la vers le haut. \n Prêtez attention à vos coudes et à vos bras : seuls les triceps travaillent, le reste des bras ne doit pas bouger.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/246/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/246/75eb8c88-922e-45c5-8be3-ac073f62b63f.MP4",
+    "codec": "h264",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/84/Lying-close-grip-triceps-press-to-chin-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/84/Lying-close-grip-triceps-press-to-chin-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:254",
+  "source_id": 254,
+  "name": "Élévation frontale au disque",
+  "name_en": "Front Raises with Plates",
+  "aliases": [
+   "Front Raises with Plates",
+   "Élévation frontale au disque"
+  ],
+  "category": "Shoulders",
+  "equipment": [],
+  "muscles": [
+   "Shoulders",
+   "Trapezius"
+  ],
+  "variation_group": "b40d438a-c545-4507-8447-10bbb5e30bdd",
+  "description": "L'élévation frontale au disque est une variante de l'élévation frontale aux haltères dans laquelle le pratiquant tient un disque de fonte entre ses deux mains, plutôt qu'un haltère, une barre ou un autre poids. Elle peut apporter de la variété à une séance de renforcement axée sur les épaules, ou s'intégrer à un circuit pour le haut du corps ou pour tout le corps. \n \n En position debout bien droite, tenez un disque de barre à deux mains aux positions 3 heures et 9 heures. Vos paumes doivent se faire face et vos bras doivent être tendus et verrouillés, avec une légère flexion des coudes ; le disque doit se trouver en bas, près de votre taille, devant vous, le plus loin possible.  Astuce  : les bras resteront dans cette position pendant tout l'exercice. Ce sera votre position de départ. \n Levez lentement le disque en expirant, jusqu'à ce qu'il soit un peu au-dessus du niveau des épaules. Maintenez la contraction pendant une seconde. En inspirant, abaissez lentement le disque jusqu'à la position de départ. \n Répétez le nombre de répétitions recommandé.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "Marius"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/254/",
+  "media": []
+ },
+ {
+  "id": "wger:256",
+  "source_id": 256,
+  "name": "Élévations frontales",
+  "name_en": "Front Raises",
+  "aliases": [
+   "Front Raises",
+   "Élévations frontales",
+   "dumbbell front raises",
+   "DB Front Raises"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Barbell",
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": "b40d438a-c545-4507-8447-10bbb5e30bdd",
+  "description": "Pour exécuter l'exercice, le pratiquant se tient debout, les pieds à la largeur des épaules, des poids ou des poignées élastiques tenus le long du corps avec une prise en pronation. \n Le mouvement consiste à monter les bras devant le corps jusqu'à la hauteur des yeux, en ne conservant qu'une légère flexion du coude. Cela isole le deltoïde antérieur (avant de l'épaule) et utilise le deltoïde antérieur pour soulever la charge. \n Lors du mouvement, il est important de garder le corps immobile afin que le deltoïde antérieur soit pleinement sollicité ; si la charge ne peut être soulevée en restant immobile, c'est qu'elle est trop lourde et qu'un poids plus léger est nécessaire. Il est important de conserver une légère flexion du coude pendant le mouvement, car garder le coude verrouillé ajoute une contrainte sur l'articulation et pourrait causer une blessure. \n Une prise neutre, semblable à celle utilisée pour le curl marteau, peut également être employée. Dans cette variante, la charge est de nouveau montée à hauteur des yeux, mais selon un angle de 45 degrés par rapport à l'avant du corps. Cela peut être bénéfique pour les personnes souffrant de blessures à l'épaule, en particulier celles liées à la coiffe des rotateurs.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "Manu, wikipedia"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/256/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/256/b7def5bc-2352-499b-b9e5-fff741003831.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "philip"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:257",
+  "source_id": 257,
+  "name": "Front Squats",
+  "name_en": "Front Squats",
+  "aliases": [
+   "Front Squats"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Barbell"
+  ],
+  "muscles": [
+   "Glutes"
+  ],
+  "variation_group": "ba010720-728a-4baf-ba8c-e1a37370625b",
+  "description": "This variation of the squat trains the hamstrings and gluteus maximus. It also works the back extensors and abductors.",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "sistab2"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "sistab2"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/257/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/257/ad8ac7d9-b04d-415f-ae0e-837942ce2840.MOV",
+    "codec": "hevc",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/191/Front-squat-1-857x1024.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/191/Front-squat-2-857x1024.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:258",
+  "source_id": 258,
+  "name": "Front pull wide",
+  "name_en": "Front pull wide",
+  "aliases": [
+   "Front pull wide"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Barbell",
+   "SZ-Bar"
+  ],
+  "muscles": [
+   "Lats"
+  ],
+  "variation_group": "b9bcc1fc-712b-454c-bcc3-ce11a9490b25",
+  "description": "",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/258/",
+  "media": []
+ },
+ {
+  "id": "wger:259",
+  "source_id": 259,
+  "name": "Front Pull narrow",
+  "name_en": "Front Pull narrow",
+  "aliases": [
+   "Front Pull narrow"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Barbell",
+   "SZ-Bar"
+  ],
+  "muscles": [
+   "Lats"
+  ],
+  "variation_group": "b9bcc1fc-712b-454c-bcc3-ce11a9490b25",
+  "description": "",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/259/",
+  "media": []
+ },
+ {
+  "id": "wger:260",
+  "source_id": 260,
+  "name": "Sit-outs complets",
+  "name_en": "Full Sit Outs",
+  "aliases": [
+   "Full Sit Outs",
+   "Sit-outs complets"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Glutes",
+   "Obliquus externus abdominis",
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "(A) Mettez-vous en position de planche haute, sur les mains et la pointe des pieds.(B) Reportez votre poids sur votre main gauche en tournant votre corps vers la droite ; fléchissez votre jambe droite derrière vous et tendez votre bras droit vers le haut. Revenez au centre et répétez de l'autre côté. Continuez en alternant les côtés. Pour faciliter :  ne levez pas le bras après avoir fléchi la jambe derrière vous. Pour intensifier :  tenez en équilibre, bras et jambe tendus, pendant deux temps.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "http://www.realsimple.com/health/fitness-exercise/"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/260/",
+  "media": []
+ },
+ {
+  "id": "wger:265",
+  "source_id": 265,
+  "name": "Pont fessier",
+  "name_en": "Glute Bridge",
+  "aliases": [
+   "Glute Bridge",
+   "Pont fessier"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [
+   "Glutes"
+  ],
+  "variation_group": "df253492-1fa4-407a-aa2c-1a19a5b30925",
+  "description": "Allongez-vous sur le dos, les hanches et les genoux fléchis, les pieds au sol. À partir de cette position, soulevez les fessiers du sol jusqu'à ce que votre corps forme une ligne droite des genoux aux épaules. Pour rendre l'exercice plus intense, vous pouvez ajouter du poids en laissant reposer une barre sur vos hanches pendant que vous effectuez le mouvement, ou vous pouvez poser vos pieds sur une surface légèrement plus haute, comme une marche ou un banc.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "tdprice12"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/265/",
+  "media": []
+ },
+ {
+  "id": "wger:272",
+  "source_id": 272,
+  "name": "Curls marteau",
+  "name_en": "Hammer Curls",
+  "aliases": [
+   "Curls marteau",
+   "Hammer Curls"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Biceps"
+  ],
+  "variation_group": "674f258e-60c5-4c94-8495-cd918aabea77",
+  "description": "Départ :  Tenez les haltères le long du corps, les paumes tournées vers le torse. \n  Curl :  Montez les poids vers vos épaules en conservant la prise neutre (comme si vous teniez un marteau). \n  Contraction :  Contractez les biceps en haut sans avancer les coudes. \n  Descente :  Revenez lentement à la position de départ en gardant un contrôle total.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/272/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/272/df069052-2173-4f24-855f-a0eebe729f24.MOV",
+    "codec": "hevc",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/86/Bicep-hammer-curl-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/86/Bicep-hammer-curl-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:275",
+  "source_id": 275,
+  "name": "Curl marteau à la poulie",
+  "name_en": "Hammercurls on Cable",
+  "aliases": [
+   "Curl marteau à la poulie",
+   "Hammercurls on Cable"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Biceps"
+  ],
+  "variation_group": "674f258e-60c5-4c94-8495-cd918aabea77",
+  "description": "Saisissez une poignée de poulie dans les mains (paumes parallèles, l'une face à l'autre), le corps droit. Fléchissez les bras et montez la charge d'un mouvement rapide. Sans aucune pause, redescendez-la d'un mouvement lent et contrôlé, mais sans tendre complètement les bras. \n Ne balancez pas votre corps pendant l'exercice, les biceps doivent effectuer tout le travail ici. Les coudes restent le long du corps et ne bougent pas.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/275/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/275/af1fff93-eb58-4ba7-97a4-b38ee67853b4.MOV",
+    "codec": "hevc",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/138/Hammer-curls-with-rope-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/138/Hammer-curls-with-rope-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:279",
+  "source_id": 279,
+  "name": "Hand Grip",
+  "name_en": "Hand Grip",
+  "aliases": [
+   "Hand Grip"
+  ],
+  "category": "Arms",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "chrome Hand Flex Grip to build up forearms muscles",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "vince63"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "vince63"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/279/",
+  "media": []
+ },
+ {
+  "id": "wger:282",
+  "source_id": 282,
+  "name": "Pompe en équilibre sur les mains",
+  "name_en": "Handstand Pushup",
+  "aliases": [
+   "Handstand Pushup",
+   "Pompe en équilibre sur les mains"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Shoulders",
+   "Triceps"
+  ],
+  "variation_group": "fbc0f8e4-3eee-4ff5-8b56-aed1d32209f4",
+  "description": "La pompe en équilibre sur les mains, également appelée pompe verticale ou pompe inversée, est un type d'exercice de pompe où le corps est positionné en équilibre sur les mains. Pour un véritable équilibre, l'exercice est réalisé en autonomie, en suspension dans l'air. Afin de développer la force jusqu'à acquérir un équilibre suffisant, les pieds sont souvent placés contre un mur, tenus par un partenaire ou maintenus d'une autre façon pour éviter la chute. Les pompes en équilibre sur les mains exigent une force considérable, ainsi que de l'équilibre et du contrôle si elles sont exécutées en autonomie.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC0",
+   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "authors": [
+    "BFad07"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/282/",
+  "media": []
+ },
+ {
+  "id": "wger:283",
+  "source_id": 283,
+  "name": "Hanging Leg Raises",
+  "name_en": "Hanging Leg Raises",
+  "aliases": [
+   "Hanging Leg Raises"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "Pull-up bar"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": "8cab688b-4277-46a6-9bf5-73af4a647aae",
+  "description": "Hanging from bar or straps, bring legs up with knees extended or flexed",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "robhoyt"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "robhoyt"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/283/",
+  "media": []
+ },
+ {
+  "id": "wger:284",
+  "source_id": 284,
+  "name": "Hercules Pillars",
+  "name_en": "Hercules Pillars",
+  "aliases": [
+   "Hercules Pillars"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Biceps",
+   "Brachialis",
+   "Triceps"
+  ],
+  "variation_group": null,
+  "description": "Grab two cables stand in the middle so both have tension and hold",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "GrosseHund"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "GrosseHund"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/284/",
+  "media": []
+ },
+ {
+  "id": "wger:285",
+  "source_id": 285,
+  "name": "Sauts genoux hauts",
+  "name_en": "High Knee Jumps",
+  "aliases": [
+   "High Knee Jumps",
+   "Sauts genoux hauts"
+  ],
+  "category": "Cardio",
+  "equipment": [],
+  "muscles": [
+   "Hamstrings",
+   "Calves",
+   "Quads",
+   "Soleus"
+  ],
+  "variation_group": null,
+  "description": "Commencez avec les jambes légèrement plus écartées que la largeur des épaules \n Descendez en squat au poids du corps \n Arrivé au point bas du squat, propulsez-vous explosivement vers le haut en sautant tout en ramenant simultanément les genoux vers la poitrine en plein vol. Gardez les genoux ramenés jusqu'au sommet de votre saut. \n Réceptionnez-vous sur les deux pieds, en veillant à ne pas verrouiller les genoux afin d'éviter une tension excessive sur vos articulations. Enchaînez sur la répétition suivante aussi rapidement que possible, mais toujours avec contrôle.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "nate303303"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/285/",
+  "media": []
+ },
+ {
+  "id": "wger:289",
+  "source_id": 289,
+  "name": "Tirage haut (High pull)",
+  "name_en": "High Pull",
+  "aliases": [
+   "High Pull",
+   "Tirage haut (High pull)"
+  ],
+  "category": "Shoulders",
+  "equipment": [],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": null,
+  "description": "Utilisez une barre légère et effectuez une tirée explosive en partant d'un niveau situé sous les rotules. Soulevez la barre de façon explosive en utilisant les hanches, jusqu'au niveau des épaules. Tempo : 2111",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "Mahoney"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/289/",
+  "media": []
+ },
+ {
+  "id": "wger:291",
+  "source_id": 291,
+  "name": "Squats hindous",
+  "name_en": "Hindu Squats",
+  "aliases": [
+   "Hindu Squats",
+   "Squats hindous"
+  ],
+  "category": "Legs",
+  "equipment": [],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": "ba010720-728a-4baf-ba8c-e1a37370625b",
+  "description": "Commencez les pieds à la largeur des épaules et les bras légèrement derrière le dos. \n À mesure que vous descendez vers le sol, décollez vos talons du sol tout en gardant le dos aussi vertical que possible. \n Une fois la position basse atteinte, touchez vos talons avec vos mains. \n Relevez-vous ensuite en terminant les talons au sol, les bras tendus devant la poitrine, puis ramenez-les en tirant vers la position de départ.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Vilhelmo"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/291/",
+  "media": []
+ },
+ {
+  "id": "wger:292",
+  "source_id": 292,
+  "name": "Pont fessier au sol",
+  "name_en": "Hip Raise, Lying",
+  "aliases": [
+   "Hip Raise, Lying",
+   "Pont fessier au sol",
+   "Relevé de bassin"
+  ],
+  "category": "Back",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Glutes"
+  ],
+  "variation_group": null,
+  "description": "Allongé sur le dos, les pieds bien à plat sur le sol. Soulevez les hanches de façon régulière aussi haut que possible et maintenez la position aussi longtemps que vous le pouvez.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "James Mackay"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/292/",
+  "media": []
+ },
+ {
+  "id": "wger:294",
+  "source_id": 294,
+  "name": "Hip thrust",
+  "name_en": "Hip Thrust",
+  "aliases": [
+   "Hip Thrust",
+   "Hip thrust",
+   "Poussée de hanches"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Barbell",
+   "Bench"
+  ],
+  "muscles": [
+   "Glutes"
+  ],
+  "variation_group": null,
+  "description": "La barre doit reposer directement sur le haut de vos cuisses, juste en dessous de l'aine. Vos pieds doivent se trouver directement sous vos genoux. Poussez vos hanches vers le haut de manière à former une ligne droite de vos genoux jusqu'à vos épaules. Utilisez un coussin pour plus de confort.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Bret Contreras"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/294/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/294/45bacf4b-1bb6-4d47-8bd1-9f00eddd4019.MOV",
+    "codec": "hevc",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:297",
+  "source_id": 297,
+  "name": "Hollow hold",
+  "name_en": "Hollow Hold",
+  "aliases": [
+   "Hollow Hold",
+   "Hollow hold"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "Gym mat"
+  ],
+  "muscles": [
+   "Obliquus externus abdominis",
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "Installez-vous sur un tapis et allongez-vous sur le dos. Contractez les abdominaux, tendez les bras et les jambes et levez-les (votre tête et vos épaules sont également relevées). Veillez à ce que le bas de votre dos reste en contact avec le tapis.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC0",
+   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "authors": [
+    "Behrooz"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/297/",
+  "media": []
+ }
+]

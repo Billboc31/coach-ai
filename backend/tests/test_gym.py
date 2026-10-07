@@ -352,6 +352,7 @@ def test_program_removal_restore_keeps_sessions_and_original(workspace):
     day = p["days"][0]
     item = day["exercises"][0]
     w = gym.start(p["id"], day["id"])
+    stored_workout = db.record("gym_workout", w["id"])
     original = db.record("gym_source", p["id"])
     p = action(p, "hide_exercise", day_id=day["id"], exercise_id=item["id"])
     assert len(gym.start(p["id"], day["id"])["exercises"]) == 1
@@ -365,7 +366,7 @@ def test_program_removal_restore_keeps_sessions_and_original(workspace):
         p = action(p, hide, **extra)
         with pytest.raises(ValueError):
             gym.start(p["id"], day["id"])
-        assert db.record("gym_workout", w["id"]) == w
+        assert db.record("gym_workout", w["id"]) == stored_workout
         p = action(p, restore, **extra)
         assert gym.start(p["id"], day["id"])["exercises"][0]["id"] == item["id"]
     assert db.record("gym_source", p["id"]) == original
@@ -376,6 +377,7 @@ def test_reanalysis_retains_edits_ids_removals_and_history(workspace):
     day = p["days"][0]
     item = day["exercises"][0]
     w = gym.start(p["id"], day["id"])
+    stored_workout = db.record("gym_workout", w["id"])
     body = gym.ExerciseEdit(
         revision=p["revision"],
         name="Exercice corrigé",
@@ -401,7 +403,7 @@ def test_reanalysis_retains_edits_ids_removals_and_history(workspace):
         assert rebuilt["sets"] == 4 and rebuilt["weight"] == 0 and rebuilt["illustration"] == "row"
         assert p["hidden_sheets"] == [day["sheet"]]
         assert len(db.records("gym_excel_history", 100)) == count
-        assert db.record("gym_workout", w["id"]) == w
+        assert db.record("gym_workout", w["id"]) == stored_workout
         assert gym.workout_view(w)["exercises"][0]["reps"] == item["reps"]
         assert db.record("gym_source", p["id"]) == source
 

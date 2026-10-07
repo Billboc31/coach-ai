@@ -1,0 +1,1464 @@
+[
+ {
+  "id": "wger:135",
+  "source_id": 135,
+  "name": "Butterfly",
+  "name_en": "Butterfly",
+  "aliases": [
+   "Butterfly"
+  ],
+  "category": "Chest",
+  "equipment": [],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": "2ebedf75-1dab-4a7d-ae06-6e1f2d3c4f8c",
+  "description": "Asseyez-vous sur la machine à butterfly, les pieds bien en contact avec le sol, les bras en position parallèle au sol. Rapprochez vos bras jusqu'à ce que les poignées soient pratiquement jointes (mais sans qu'elles se touchent !). Revenez lentement. Les poids doivent rester en permanence en suspension.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/135/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/98/Butterfly-machine-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/98/Butterfly-machine-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:137",
+  "source_id": 137,
+  "name": "Butterfly à prise serrée",
+  "name_en": "Butterfly Narrow Grip",
+  "aliases": [
+   "Butterfly Narrow Grip",
+   "Butterfly à prise serrée"
+  ],
+  "category": "Chest",
+  "equipment": [],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": "2ebedf75-1dab-4a7d-ae06-6e1f2d3c4f8c",
+  "description": "Le mouvement est identique à celui du butterfly classique, à ceci près que la prise est serrée : \n Asseyez-vous sur la machine à butterfly, les pieds bien en contact avec le sol, les bras en position parallèle au sol. Rapprochez vos bras jusqu'à ce que les poignées soient pratiquement jointes (mais sans qu'elles se touchent !). Revenez lentement. Les poids doivent rester en permanence en suspension.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/137/",
+  "media": []
+ },
+ {
+  "id": "wger:139",
+  "source_id": 139,
+  "name": "Butterfly Reverse",
+  "name_en": "Butterfly Reverse",
+  "aliases": [
+   "Butterfly Reverse"
+  ],
+  "category": "Shoulders",
+  "equipment": [],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": "2ebedf75-1dab-4a7d-ae06-6e1f2d3c4f8c",
+  "description": "",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/139/",
+  "media": []
+ },
+ {
+  "id": "wger:142",
+  "source_id": 142,
+  "name": "Rotation externe à la poulie",
+  "name_en": "Cable External Rotation",
+  "aliases": [
+   "Cable External Rotation",
+   "Rotation externe à la poulie"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Shoulders"
+  ],
+  "variation_group": null,
+  "description": "Étapes : \n \n Commencez par fixer un élastique autour d'un poteau ou dans un endroit sûr où il ne se détachera pas, à hauteur du coude. \n Placez-vous sur le côté de l'élastique et, avec la main opposée à l'élastique, tendez le bras et saisissez la poignée. \n Ramenez l'élastique vers votre poitrine en gardant le coude plié à un angle de 90 degrés, puis tournez lentement votre bras vers l'arrière de manière à effectuer une rotation externe. \n Continuez vers l'extérieur aussi loin que possible afin de ressentir un étirement dans vos épaules, maintenez la position le temps d'un décompte, puis revenez à la position de départ. \n Répétez pour autant de répétitions et de séries que vous le souhaitez.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "lauroernesto"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/142/",
+  "media": []
+ },
+ {
+  "id": "wger:145",
+  "source_id": 145,
+  "name": "Rotations du tronc à la poulie",
+  "name_en": "Cable Woodchoppers",
+  "aliases": [
+   "Cable Woodchoppers",
+   "Rotations du tronc à la poulie"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Obliquus externus abdominis"
+  ],
+  "variation_group": null,
+  "description": "Réglez la poulie à câble légèrement en dessous de la hauteur de la poitrine. Gardez le corps tourné vers l'avant et les hanches stables. Saisissez la poignée de la poulie, tendez complètement les bras et amenez-les vers l'avant en traversant votre corps. Maintenez la position pendant 1 seconde à la fin du mouvement, puis revenez lentement à la position de départ.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "robhoyt"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/145/",
+  "media": []
+ },
+ {
+  "id": "wger:146",
+  "source_id": 146,
+  "name": "Extension des mollets à la presse à cuisses",
+  "name_en": "Calf Press Using Leg Press Machine",
+  "aliases": [
+   "Calf Press Using Leg Press Machine",
+   "Extension des mollets à la presse à cuisses"
+  ],
+  "category": "Calves",
+  "equipment": [],
+  "muscles": [
+   "Calves",
+   "Soleus"
+  ],
+  "variation_group": "4b54f372-2aef-4741-b76d-85e3f376f1d7",
+  "description": "Placez la pointe de vos pieds sur le plateau d'une presse à cuisses en extension. Utilisez vos mollets pour pousser la charge en tendant les pieds et les orteils en pointe, puis revenez à une position détendue. \n Cet exercice développe la masse et la force des muscles gastrocnémien et soléaire aussi bien, sinon mieux, que n'importe quel exercice pour les mollets.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "nate303303"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/146/",
+  "media": []
+ },
+ {
+  "id": "wger:148",
+  "source_id": 148,
+  "name": "Extension des mollets à la machine Hackenschmidt",
+  "name_en": "Calf Raises on Hackenschmitt Machine",
+  "aliases": [
+   "Calf Raises on Hackenschmitt Machine",
+   "Extension des mollets à la machine Hackenschmidt"
+  ],
+  "category": "Calves",
+  "equipment": [],
+  "muscles": [
+   "Calves"
+  ],
+  "variation_group": "4b54f372-2aef-4741-b76d-85e3f376f1d7",
+  "description": "Installez-vous sur la machine, le dos fermement appuyé contre le dossier, les pieds posés sur la plateforme pour les extensions de mollets. Vérifiez que les pieds dépassent à moitié et que vous pouvez étirer complètement les muscles des mollets vers le bas. \n Les genoux tendus, soulevez votre charge aussi haut que possible. Redescendez d'un mouvement fluide jusqu'à ce que les mollets soient complètement étirés. Répétez.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/148/",
+  "media": []
+ },
+ {
+  "id": "wger:152",
+  "source_id": 152,
+  "name": "Traction en supination",
+  "name_en": "Chin Up",
+  "aliases": [
+   "Chin Up",
+   "Traction en supination"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Pull-up bar"
+  ],
+  "muscles": [
+   "Biceps",
+   "Lats"
+  ],
+  "variation_group": null,
+  "description": "La traction en supination est un exercice de musculation. On le pratique fréquemment dans le but de renforcer des muscles comme le grand dorsal et les biceps, qui assurent respectivement l'extension de l'épaule et la flexion du coude. Dans ce mouvement, les paumes sont tournées vers le corps. Il s'agit d'une forme de traction dont l'amplitude de mouvement est définie par rapport au menton de la personne.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC0",
+   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "authors": [
+    "BFad07"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/152/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/152/6c1a7459-266d-491a-bd50-7cbaea2bc771.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/152/b2c5a9f9-8beb-41f7-841c-9664d22a427e.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:158",
+  "source_id": 158,
+  "name": "Tirage vertical prise serrée",
+  "name_en": "Close-grip Lat Pull Down",
+  "aliases": [
+   "Close-grip Lat Pull Down",
+   "Tirage vertical prise serrée"
+  ],
+  "category": "Back",
+  "equipment": [],
+  "muscles": [
+   "Lats"
+  ],
+  "variation_group": "7bad4b8b-a95f-4a40-b512-7429d3333f66",
+  "description": "Saisissez la barre de tirage, les mains plus rapprochées que la largeur des épaules, les paumes tournées vers l'extérieur. Penchez-vous légèrement en arrière. Tirez la barre vers votre poitrine en gardant les coudes près des flancs pendant la descente. Rapprochez vos épaules en arrière à la fin du mouvement.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "tuckerm"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/158/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/158/0d51a0f2-622f-434b-beb8-1a003c54712a.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Franpol"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:161",
+  "source_id": 161,
+  "name": "Pullover avec haltère en travers du banc",
+  "name_en": "Cross-Bench Dumbbell Pullovers",
+  "aliases": [
+   "Cross-Bench Dumbbell Pullovers",
+   "Pullover avec haltère en travers du banc"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Lats",
+   "Chest",
+   "Serratus anterior"
+  ],
+  "variation_group": null,
+  "description": "Saisissez un haltère de poids modéré de manière à ce que vos paumes soient à plat contre la face inférieure des disques supérieurs et que vos pouces entourent la barre. Allongez-vous sur le dos en travers d'un banc plat, de sorte que seuls le haut de votre dos et vos épaules soient en contact avec le banc. Vos pieds doivent être écartés d'environ la largeur des épaules et votre tête doit pendre légèrement vers le bas. L'haltère étant tenu à bout de bras directement au-dessus de votre poitrine, fléchissez les bras d'environ 15 degrés et gardez-les fléchis pendant tout le mouvement. Abaissez lentement l'haltère vers l'arrière et vers le bas en décrivant un arc de cercle, jusqu'à la position la plus basse confortablement possible. Relevez-le lentement le long du même arc jusqu'au point de départ, puis répétez le nombre de répétitions requis.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "powerade69"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/161/",
+  "media": []
+ },
+ {
+  "id": "wger:165",
+  "source_id": 165,
+  "name": "Ball crunches",
+  "name_en": "Ball crunches",
+  "aliases": [
+   "Ball crunches"
+  ],
+  "category": "Abs",
+  "equipment": [],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": "8f8b5cfb-7f26-45c5-bba5-aae58b3e039f",
+  "description": "",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Konsumopfer"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Konsumopfer"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/165/",
+  "media": []
+ },
+ {
+  "id": "wger:167",
+  "source_id": 167,
+  "name": "Abdominaux",
+  "name_en": "Crunches",
+  "aliases": [
+   "Abdominaux",
+   "Crunches"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "Gym mat"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": "8f8b5cfb-7f26-45c5-bba5-aae58b3e039f",
+  "description": "Allongez-vous sur le sol, face contre terre, genoux pliés. \n Courbez les épaules vers le bassin. Les mains peuvent être derrière ou à côté du cou ou croisées sur la poitrine. \n Répétez",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de",
+    "Clément Mondon (imported from Feeel)",
+    "Miroslav Mazel (imported from Feeel)",
+    "J. Lavoie (imported from Feeel)",
+    "mondstern (imported from Feeel)",
+    "Maxime Leroy (imported from Feeel)",
+    "Jonathan D. (imported from Feeel)"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/167/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/91/Crunches-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:171",
+  "source_id": 171,
+  "name": "Crunchs sur banc incliné",
+  "name_en": "Incline Crunches",
+  "aliases": [
+   "Crunchs sur banc incliné",
+   "Incline Crunches"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "Incline bench"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": "8f8b5cfb-7f26-45c5-bba5-aae58b3e039f",
+  "description": "Allongez-vous sur le dos sur un banc incliné, les pieds à une extrémité du banc. Demandez à un partenaire ou utilisez un autre moyen (une barre, etc.) pour les maintenir en place, vos mains derrière la tête. À partir de cette position, relevez le haut du corps jusqu'à ce que votre tête ou vos coudes touchent vos genoux. Effectuez ce mouvement en enroulant le dos.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/171/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/56/Decline-crunch-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/56/Decline-crunch-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:172",
+  "source_id": 172,
+  "name": "Crunchs à la machine",
+  "name_en": "Crunches on Machine",
+  "aliases": [
+   "Crunches on Machine",
+   "Crunchs à la machine"
+  ],
+  "category": "Abs",
+  "equipment": [],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": "8f8b5cfb-7f26-45c5-bba5-aae58b3e039f",
+  "description": "La procédure est très semblable à celle des crunchs classiques, avec en plus la charge de la machine. Asseyez-vous sur la machine et posez fermement les deux pieds au sol. Saisissez les poids, les câbles, etc., et effectuez un mouvement d'enroulement vers l'avant (la colonne vertébrale doit idéalement se dérouler vertèbre par vertèbre). Revenez lentement à la position de départ.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/172/",
+  "media": []
+ },
+ {
+  "id": "wger:173",
+  "source_id": 173,
+  "name": "Crunchs à la poulie",
+  "name_en": "Crunches With Cable",
+  "aliases": [
+   "Crunches With Cable",
+   "Crunchs à la poulie"
+  ],
+  "category": "Abs",
+  "equipment": [
+   "Cable machine"
+  ],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": "8f8b5cfb-7f26-45c5-bba5-aae58b3e039f",
+  "description": "Prenez le câble dans vos mains et tenez-le près de vos tempes. Mettez-vous à genoux, gardez le haut du corps droit et penchez-vous vers l'avant. Descendez d'un mouvement rapide en enroulant le dos (vos coudes pointent vers vos genoux). Une fois en bas, revenez lentement à la position initiale.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/173/",
+  "media": []
+ },
+ {
+  "id": "wger:174",
+  "source_id": 174,
+  "name": "Crunchs jambes en l'air",
+  "name_en": "Crunches With Legs Up",
+  "aliases": [
+   "Crunches With Legs Up",
+   "Crunchs jambes en l'air"
+  ],
+  "category": "Abs",
+  "equipment": [],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": "8f8b5cfb-7f26-45c5-bba5-aae58b3e039f",
+  "description": "Allongé sur le dos, les jambes tendues à la verticale, tendez les mains vers vos orteils et décollez les omoplates du sol avant de les reposer.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "krisbbb"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/174/",
+  "media": []
+ },
+ {
+  "id": "wger:177",
+  "source_id": 177,
+  "name": "Cyclisme",
+  "name_en": "Cycling",
+  "aliases": [
+   "Cycling",
+   "Cyclisme",
+   "Vélo"
+  ],
+  "category": "Cardio",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Obliquus externus abdominis",
+   "Trapezius"
+  ],
+  "variation_group": null,
+  "description": "Le cyclisme, aussi appelé vélo, désigne l'utilisation de la bicyclette pour le transport, les loisirs, l'exercice ou le sport. Les personnes qui pratiquent le cyclisme sont appelées cyclistes. Outre les bicyclettes à deux roues, le cyclisme inclut également la pratique du monocycle, du tricycle, du quadricycle, du vélo couché et d'autres véhicules à propulsion humaine similaires.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC0",
+   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "authors": [
+    "BFad07"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/177/",
+  "media": []
+ },
+ {
+  "id": "wger:178",
+  "source_id": 178,
+  "name": "Deadbug",
+  "name_en": "Deadbug",
+  "aliases": [
+   "Deadbug"
+  ],
+  "category": "Abs",
+  "equipment": [],
+  "muscles": [
+   "Abs"
+  ],
+  "variation_group": null,
+  "description": "Allongez-vous sur le dos, les hanches et les genoux fléchis à 90°. Levez les deux bras vers le plafond. Plaquez le bas de votre dos contre le sol pour supprimer tout espace. Commencez en tendant une jambe et en touchant le sol avec le talon. À mesure que vous tendez une jambe, expirez autant que possible en gardant le bas du dos collé au sol. Lorsque vous ne pouvez plus expirer, ramenez votre genou vers la position de départ. Rendez l'exercice plus difficile en tenant un poids dans les mains, ou en abaissant simultanément le bras et la jambe opposés.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "Metin"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/178/",
+  "media": []
+ },
+ {
+  "id": "wger:182",
+  "source_id": 182,
+  "name": "Deadhang",
+  "name_en": "Deadhang",
+  "aliases": [
+   "Deadhang"
+  ],
+  "category": "Arms",
+  "equipment": [],
+  "muscles": [],
+  "variation_group": null,
+  "description": "Deadhang performed on an edge either with or without added weight (adujst edge or weight to adjust difficulty)",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "2dPREtEZP221u68Akf0JImv5L48"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "2dPREtEZP221u68Akf0JImv5L48"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/182/",
+  "media": []
+ },
+ {
+  "id": "wger:184",
+  "source_id": 184,
+  "name": "Soulevés de terre",
+  "name_en": "Deadlifts",
+  "aliases": [
+   "Deadlifts",
+   "Soulevés de terre"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Barbell"
+  ],
+  "muscles": [
+   "Lats"
+  ],
+  "variation_group": "100586dc-3923-44b3-a987-5f6c0ea17d1b",
+  "description": "Tenez-vous fermement debout, les pieds un peu plus écartés que la largeur des épaules. Placez-vous directement derrière la barre, qui doit à peine toucher votre tibia, les pieds légèrement orientés vers l'extérieur. Penchez-vous en gardant le dos droit, les genoux eux aussi légèrement vers l'extérieur. Saisissez la barre avec une prise à largeur d'épaules, une main en pronation, l'autre en supination. \n Tirez la charge vers le haut. Au point le plus haut, creusez légèrement le dos et tirez la barre vers l'arrière. Tenez cette position 1 ou 2 secondes. Redescendez en veillant à ne pas arrondir le dos. Une fois en bas, vous pouvez soit repartir dès que les poids touchent le sol, soit marquer une pause, selon la charge.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/184/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/184/1709c405-620a-4d07-9658-fade2b66a2df.jpeg",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "philip"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:185",
+  "source_id": 185,
+  "name": "Développé couché décliné à la barre",
+  "name_en": "Decline Bench Press Barbell",
+  "aliases": [
+   "Decline Bench Press Barbell",
+   "Développé couché décliné à la barre"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "Barbell",
+   "Bench"
+  ],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": "f45f135e-4cd3-4023-a82a-83fca2078656",
+  "description": "Allongez-vous sur un banc décliné, la barre doit se trouver directement au-dessus de vos yeux, les genoux légèrement fléchis et les pieds fermement posés au sol. Concentrez-vous, respirez profondément et saisissez la barre un peu plus large que la largeur des épaules. Abaissez-la lentement jusqu'à ce qu'elle effleure brièvement votre poitrine à la hauteur des mamelons. Poussez la barre vers le haut.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/185/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/100/Decline-bench-press-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/100/Decline-bench-press-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:186",
+  "source_id": 186,
+  "name": "Développé couché décliné aux haltères",
+  "name_en": "Decline Bench Press Dumbbell",
+  "aliases": [
+   "Decline Bench Press Dumbbell",
+   "Développé couché décliné aux haltères"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "Bench",
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Chest"
+  ],
+  "variation_group": "f45f135e-4cd3-4023-a82a-83fca2078656",
+  "description": "Prenez deux haltères et asseyez-vous sur un banc décliné, les pieds fermement posés au sol, la tête reposant sur le banc. Tenez les poids près de la poitrine, à la hauteur des mamelons, et poussez-les vers le haut jusqu'à ce que les bras soient tendus. Redescendez la charge lentement et de façon contrôlée.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/186/",
+  "media": []
+ },
+ {
+  "id": "wger:189",
+  "source_id": 189,
+  "name": "Soulevé de terre en déficit",
+  "name_en": "Deficit Deadlift",
+  "aliases": [
+   "Deficit Deadlift",
+   "Soulevé de terre en déficit"
+  ],
+  "category": "Back",
+  "equipment": [
+   "Barbell"
+  ],
+  "muscles": [],
+  "variation_group": "100586dc-3923-44b3-a987-5f6c0ea17d1b",
+  "description": "Préparation \n Tenez-vous debout sur un disque, un disque amortisseur ou une plateforme légèrement surélevée, la barre chargée au-dessus des pieds. Accroupissez-vous et saisissez la barre avec une prise en pronation ou mixte, à largeur d'épaules ou légèrement plus large. \n Exécution \n Soulevez la barre en étendant complètement les hanches et les genoux. Tirez les épaules vers l'arrière en haut du mouvement si elles sont arrondies. Reposez les poids au sol en repoussant les hanches vers l'arrière tout en laissant les genoux se fléchir vers l'avant, en gardant le dos droit et les genoux orientés dans la même direction que les pieds. Répétez. \n Remarques \n Tout au long du mouvement, gardez les hanches basses, les épaules hautes, les bras et le dos droits. Les genoux doivent rester orientés dans la même direction que les pieds pendant tout le mouvement. Gardez la barre proche du corps pour améliorer le levier mécanique. La force de préhension et l'endurance de force limitent souvent la capacité à enchaîner plusieurs répétitions avec des charges lourdes. La magnésie, les sangles de poignet, le travail spécifique de la prise et la prise mixte peuvent être utilisés pour renforcer la prise. La prise mixte signifie qu'une main tient la barre en pronation et l'autre en supination. Un cric à barre peut servir à soulever la barre du sol pour faciliter le chargement et le déchargement des disques. \n Le soulevé de terre en déficit à la barre met l'accent sur le développement de la force dans la portion la plus basse du soulevé de terre. Le muscle ciblé travaille de manière isométrique. Le",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "bobbyprince89"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/189/",
+  "media": []
+ },
+ {
+  "id": "wger:193",
+  "source_id": 193,
+  "name": "Développé épaules en diagonale",
+  "name_en": "Diagonal Shoulder Press",
+  "aliases": [
+   "Diagonal Shoulder Press",
+   "Développé épaules en diagonale"
+  ],
+  "category": "Shoulders",
+  "equipment": [
+   "Bench"
+  ],
+  "muscles": [],
+  "variation_group": "e3388987-305b-43b8-9e90-c3bce376b203",
+  "description": "Vous êtes assis sur l'appareil à développé couché, le dos légèrement incliné vers l'arrière. La barre doit se trouver à environ 20 cm devant vous. Vous poussez ensuite la barre puis la ramenez, comme vous le feriez au développé couché. \n Dans cette position, vous sollicitez beaucoup moins les pectoraux, ce qui est appréciable si vous voulez vous entraîner alors que votre poitrine n'est pas encore récupérée.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "oboema"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/193/",
+  "media": []
+ },
+ {
+  "id": "wger:194",
+  "source_id": 194,
+  "name": "Dips",
+  "name_en": "Dips",
+  "aliases": [
+   "Dips",
+   "Weighted Dips"
+  ],
+  "category": "Chest",
+  "equipment": [
+   "none (bodyweight exercise)"
+  ],
+  "muscles": [
+   "Chest",
+   "Triceps"
+  ],
+  "variation_group": "f195b345-b4d2-42fb-8edb-3d39da7c9066",
+  "description": "Le dip est un exercice de musculation pour le haut du corps. Les dips à prise serrée, à largeur d'épaules, sollicitent principalement les triceps, les principaux muscles synergistes étant le deltoïde antérieur, les muscles pectoraux (sternal, claviculaire et petit pectoral) et les rhomboïdes du dos (dans cet ordre).[1] Un entraînement bras écartés met davantage l'accent sur les pectoraux, de la même manière qu'un développé couché à prise large sollicite davantage les pectoraux et moins les triceps.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC0",
+   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "authors": [
+    "BFad07"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/194/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/194/d039ec90-474d-47a9-a3ad-bf0b00828c82.MP4",
+    "codec": "h264",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/194/34600351-8b0b-4cb0-8daa-583537be15b0.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "cshep442"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   }
+  ]
+ },
+ {
+  "id": "wger:197",
+  "source_id": 197,
+  "name": "Dips entre deux bancs",
+  "name_en": "Dips Between Two Benches",
+  "aliases": [
+   "Dips Between Two Benches",
+   "Dips entre deux bancs"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Bench"
+  ],
+  "muscles": [
+   "Triceps"
+  ],
+  "variation_group": "f195b345-b4d2-42fb-8edb-3d39da7c9066",
+  "description": "Disposez deux bancs suffisamment éloignés l'un de l'autre pour que vous puissiez vous appuyer sur l'un avec les mains tout en parvenant tout juste à atteindre l'autre avec les pieds. Les jambes restent complètement tendues pendant l'exercice. Les coudes orientés vers l'arrière, fléchissez-les autant que possible. Repoussez-vous vers le haut, mais sans tendre complètement les bras.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/197/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/83/Bench-dips-1.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/83/Bench-dips-2.png",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 3",
+     "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+     "authors": [
+      "Everkinetic"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:202",
+  "source_id": 202,
+  "name": "Curl biceps avec haltère",
+  "name_en": "Dumbbell Concentration Curl",
+  "aliases": [
+   "Curl biceps avec haltère",
+   "Dumbbell Concentration Curl"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Brachialis"
+  ],
+  "variation_group": "674f258e-60c5-4c94-8495-cd918aabea77",
+  "description": "Cet exercice consiste à tenir un haltère dans une main et à le lever (ou le \"curler\") vers l'épaule tout en gardant le haut du bras immobile. Il cible principalement le muscle biceps.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "http://www.exrx.net/WeightExercises/Brachialis/DBC"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "admin"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/202/",
+  "media": []
+ },
+ {
+  "id": "wger:203",
+  "source_id": 203,
+  "name": "Squat goblet avec haltère",
+  "name_en": "Dumbbell Goblet Squat",
+  "aliases": [
+   "Dumbbell Goblet Squat",
+   "Squat goblet avec haltère"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": "ba010720-728a-4baf-ba8c-e1a37370625b",
+  "description": "Saisissez l'haltère des deux mains, au niveau des bords des disques supérieurs. Tenez l'haltère devant la poitrine, près du torse. Placez les pieds à environ la largeur des épaules, en gardant les genoux légèrement fléchis. \n Descendez en squat jusqu'à ce que les cuisses soient parallèles au sol. Gardez le dos droit, fléchissez et reculez les hanches pour que les genoux restent au-dessus des pieds. Remontez en gardant les genoux légèrement fléchis. Répétez. \n Gardez le poids du corps sur les talons et regardez devant vous ou légèrement vers le haut afin de garder le dos droit.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "ataraxie67"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/203/",
+  "media": [
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/203/1c052351-2af0-4227-aeb0-244008e4b0a8.jpeg",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "philip"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": true
+   },
+   {
+    "kind": "image",
+    "url": "https://wger.de/media/exercise-images/203/2ab30113-4e08-4d39-9d23-d901ce2c0971.jpeg",
+    "codec": null,
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "philip"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ },
+ {
+  "id": "wger:204",
+  "source_id": 204,
+  "name": "Curl incliné aux haltères",
+  "name_en": "Dumbbell Incline Curl",
+  "aliases": [
+   "Curl incliné aux haltères",
+   "Dumbbell Incline Curl"
+  ],
+  "category": "Arms",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Biceps"
+  ],
+  "variation_group": "674f258e-60c5-4c94-8495-cd918aabea77",
+  "description": "Installation :  Réglez un banc ajustable sur une inclinaison d'environ  45 à 60 degrés . \n  Position de départ :  Asseyez-vous en appui contre le banc, un haltère dans chaque main. Laissez vos bras pendre à la verticale vers le sol, les paumes tournées vers l'avant (prise en supination). \n  Le curl :  En gardant les bras immobiles et les épaules plaquées contre le banc, expirez et enroulez les poids vers vos épaules. \n  Contraction maximale :  Contractez fortement vos biceps en haut du mouvement, en veillant à ce que vos coudes ne basculent pas vers l'avant. \n  La descente :  Inspirez et abaissez lentement les haltères jusqu'à la position de départ, en gardant un contrôle total et en ressentant l'étirement dans les biceps.",
+  "description_language": "fr",
+  "credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "ExRx"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 4",
+   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/204/",
+  "media": []
+ },
+ {
+  "id": "wger:205",
+  "source_id": 205,
+  "name": "Dumbbell Lunges Standing",
+  "name_en": "Dumbbell Lunges Standing",
+  "aliases": [
+   "Dumbbell Lunges Standing"
+  ],
+  "category": "Legs",
+  "equipment": [
+   "Dumbbell"
+  ],
+  "muscles": [
+   "Quads"
+  ],
+  "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
+  "description": ".",
+  "description_language": "en",
+  "credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "text_credit": {
+   "name": "CC-BY-SA 3",
+   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+   "authors": [
+    "wger.de"
+   ],
+   "original": "",
+   "derivative_source": ""
+  },
+  "source_url": "https://wger.de/api/v2/exerciseinfo/205/",
+  "media": [
+   {
+    "kind": "video",
+    "url": "https://wger.de/media/exercise-video/205/c167ac34-ddbc-4e1b-8edf-1192e9d00e22.MOV",
+    "codec": "hevc",
+    "credit": {
+     "name": "CC-BY-SA 4",
+     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+     "authors": [
+      "Goulart"
+     ],
+     "original": "",
+     "derivative_source": ""
+    },
+    "main": false
+   }
+  ]
+ }
+]
