@@ -32,6 +32,8 @@ def connection():
             for statement in SCHEMA:
                 conn.execute(text(statement))
             conn.execute(text("INSERT OR IGNORE INTO schema_version VALUES (1)"))
+            if not conn.execute(text("SELECT 1 FROM schema_version WHERE version=2")).first():
+                migrate_search(conn)
             yield conn
     finally:
         engine.dispose()
@@ -171,3 +173,130 @@ def history(table: str, limit: int = 40) -> list[dict]:
             {"u": user_id(), "l": limit},
         ).mappings()
         return list(reversed([dict(r) for r in rows]))
+
+
+def migrate_search(conn):
+    conn.execute(
+        text(
+            "CREATE VIRTUAL TABLE IF NOT EXISTS message_search USING "
+            "fts5(content, user_id UNINDEXED, message_id UNINDEXED, "
+            "tokenize='unicode61 remove_diacritics 2')"
+        )
+    )
+    conn.execute(
+        text(
+            "INSERT INTO message_search(content,user_id,message_id) "
+            "SELECT content,user_id,id FROM messages"
+        )
+    )
+    conn.execute(
+        text(
+            "CREATE TRIGGER IF NOT EXISTS message_search_insert AFTER INSERT ON messages "
+            "BEGIN INSERT INTO message_search(content,user_id,message_id) "
+            "VALUES (new.content,new.user_id,new.id); END"
+        )
+    )
+    conn.execute(
+        text(
+            "CREATE TRIGGER IF NOT EXISTS message_search_delete AFTER DELETE ON messages "
+            "BEGIN DELETE FROM message_search WHERE message_id=old.id; END"
+        )
+    )
+    conn.execute(
+        text(
+            "CREATE TRIGGER IF NOT EXISTS message_search_update AFTER UPDATE ON messages "
+            "BEGIN DELETE FROM message_search WHERE message_id=old.id; "
+            "INSERT INTO message_search(content,user_id,message_id) "
+            "VALUES (new.content,new.user_id,new.id); END"
+        )
+    )
+    conn.execute(text("INSERT INTO schema_version VALUES (2)"))
+
+
+def messages_after(after: int, limit=30) -> list[dict]:
+    with connection() as conn:
+        rows = (
+            conn.execute(
+                text("SELECT * FROM messages WHERE user_id=:u AND id>:a ORDER BY id LIMIT :l"),
+                {"u": user_id(), "a": after, "l": limit},
+            )
+            .mappings()
+            .all()
+        )
+    return [dict(r) for r in rows]
+
+
+def search_messages(query: str, excluded: set[int], limit=6) -> list[dict]:
+    with connection() as conn:
+        rows = (
+            conn.execute(
+                text(
+                    "SELECT m.*, snippet(message_search,0,'','','…',120) AS excerpt "
+                    "FROM message_search s JOIN messages m "
+                    "ON m.id=s.message_id WHERE message_search MATCH :q "
+                    "AND m.user_id=:u ORDER BY bm25(message_search) LIMIT 80"
+                ),
+                {"u": user_id(), "q": query},
+            )
+            .mappings()
+            .all()
+        )
+    return [dict(r) for r in rows if r["id"] not in excluded][:limit]
+
+
+def delete_record(kind: str, key: str):
+    with connection() as conn:
+        conn.execute(
+            text("DELETE FROM records WHERE user_id=:u AND kind=:k AND record_key=:r"),
+            {"u": user_id(), "k": kind, "r": key},
+        )
+
+
+def period_activities(start: str | None, end: str | None, sports: list[str]) -> dict:
+    clauses = ["user_id=:u", "kind='activity'"]
+    params = {"u": user_id()}
+    day = "substr(COALESCE(json_extract(data,'$.startTimeLocal'),json_extract(data,'$.startTimeGMT')),1,10)"
+    if start:
+        clauses.append(day + ">=:start")
+        params["start"] = start
+    if end:
+        clauses.append(day + "<=:end")
+        params["end"] = end
+    if sports:
+        parts = []
+        for i, sport in enumerate(sports):
+            parts.append(f"json_extract(data,'$.activityType.typeKey') LIKE :s{i}")
+            params[f"s{i}"] = "%" + sport + "%"
+        clauses.append("(" + " OR ".join(parts) + ")")
+    where = " AND ".join(clauses)
+    with connection() as conn:
+        total = (
+            conn.execute(
+                text(
+                    "SELECT COUNT(*) AS count, "
+                    "SUM(json_extract(data,'$.duration')) AS duration_seconds, "
+                    "SUM(json_extract(data,'$.distance')) AS distance_meters "
+                    "FROM records WHERE " + where
+                ),
+                params,
+            )
+            .mappings()
+            .first()
+        )
+        rows = conn.execute(
+            text(
+                "SELECT record_key,data,updated_at FROM records WHERE "
+                + where
+                + " ORDER BY "
+                + day
+                + " DESC, record_key DESC LIMIT 30"
+            ),
+            params,
+        ).all()
+    return {
+        "start": start,
+        "end": end,
+        "sports": sports,
+        "totals": dict(total),
+        "items": [{"key": r[0], "data": json.loads(r[1]), "updated_at": r[2]} for r in rows],
+    }

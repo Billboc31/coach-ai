@@ -12,12 +12,13 @@ et les informations que tu lui racontes. Première version personnelle, utilisab
   des 100 activités récentes et de 1 à 30 jours de santé (7 jours depuis l’interface).
 - Parcours officiel Sign in with ChatGPT pour applications locales : PKCE, state, nonce,
   vérification JWT, autorisation du forfait, catalogue de modèles, renouvellement et inférence.
-- Historique du chat conservé ; contexte limité au profil, notes et données récentes pertinentes.
+- Historique du chat conservé, mémoire durable éditable, résumés datés et recherche lexicale.
+- Contexte : 20 activités récentes, agrégats mensuels et sélection par sport/période.
 - Tests hors réseau et CI. Aucun appel payant automatique.
 
 **À valider avec de vrais comptes** : accès Garmin et autorisation/inférence ChatGPT.
 Un fichier de jetons indique une configuration enregistrée ; il ne prouve pas un accès actif.
-La mémoire RAG, l’import de conversations, l’import Excel et le suivi muscu ne sont pas encore développés.
+La recherche vectorielle, l’import de conversations, l’import Excel et le suivi muscu ne sont pas encore développés.
 
 ## Railway
 
@@ -120,6 +121,41 @@ sans saisir la commande de login : suivre le lien OpenAI dans le navigateur de c
 Sur Railway ce bouton est remplacé par l’import ; son callback loopback ne peut pas être
 redirigé vers le serveur. Garmin propose l’import de `.local/garmin/garmin_tokens.json` ;
 la première authentification Garmin/MFA reste locale dans ce lot.
+
+### Mémoire durable
+
+L’onglet **Mémoire** permet d’ajouter, confirmer, corriger, archiver et supprimer les
+informations utiles au coach. Catégories : objectif, contrainte, préférence, décision et
+contexte santé. Une date de fin facultative empêche un souvenir périmé d’être considéré
+comme actuel. Les faits proposés automatiquement restent à confirmer ; leur citation et
+l’identifiant/date du message source sont visibles.
+
+Le résumé est généré en arrière-plan après 10 nouveaux messages (5 échanges réussis),
+avec le modèle de la discussion. L’actualisation manuelle permet de traiter les échanges
+existants immédiatement. Chaque appel traite au maximum 30 messages, avance un checkpoint
+seulement après validation et consomme le forfait/crédits ChatGPT. L’option automatique est
+activée par défaut pour ce projet personnel et désactivable dans Mémoire. Aucun fallback payant.
+Un échec conserve les souvenirs et le résumé précédents ; le chat terminé reste enregistré.
+Le bouton manuel sert également à reprendre une mise à jour interrompue par un redéploiement.
+
+Le contexte comprend jusqu’à 40 souvenirs actifs (pertinence lexicale puis récence), un
+résumé historique limité à 4000 caractères, jusqu’à 6 extraits d’anciens messages recherchés
+avec SQLite FTS5, les 20 derniers messages non masqués, le profil/notes et Garmin. Ce premier
+moteur ne comporte pas d’embeddings : recherche sémantique/reranking restent au backlog.
+Un résumé peut omettre des détails ou se tromper ; les corrections du propriétaire et le
+message actuel priment. Un résumé n’est pas un ensemble de faits confirmés.
+
+Corriger/refuser/archiver/supprimer un souvenir invalide le résumé potentiellement obsolète
+et masque ses messages sources dans le contexte automatique. Les discussions originales
+restent conservées : retirer un souvenir n’efface pas l’historique ni toutes ses autres
+mentions. Une correction pendant la génération empêche le résultat concurrent de l’écraser.
+
+Le coach reçoit 20 activités récentes sélectionnées par leur date, jamais par leur ID Garmin.
+Les questions contenant une date ISO, une année, un mois français + année, « semaine dernière »
+ou un sport reconnu peuvent ajouter une sélection : totaux de toutes les activités correspondantes,
+et détails des 30 plus récentes. L’interprétation est limitée à ces formats, pas un outil SQL libre.
+Les détails envoyés n’incluent ni coordonnées GPS ni courbes/FIT. Le contexte de récupération
+reste les 7 dernières journées synchronisées ; il ne constitue pas une analyse santé historique.
 
 ## Vérifier
 

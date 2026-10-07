@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field, field_validator
 from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from coach import chatgpt, db, garmin_jobs
+from coach import chatgpt, db, garmin_jobs, memory
 from coach.config import data_dir, web_settings
 from coach.secrets import read_secret
 
@@ -25,6 +25,7 @@ settings = web_settings()
 @asynccontextmanager
 async def lifespan(app):
     garmin_jobs.recover(sync_lock)
+    memory.recover()
     yield
 
 
@@ -383,10 +384,112 @@ def list_models():
         raise HTTPException(503, "Connecte ou reconnecte ChatGPT dans Connexions.") from None
 
 
-def coach_context():
+class MemoryFact(BaseModel):
+    content: str = Field(min_length=1, max_length=500)
+    category: str = "preference"
+    status: str = "active"
+    expires_on: date | None = None
+
+    @field_validator("content")
+    @classmethod
+    def not_blank(cls, value):
+        if not value.strip():
+            raise ValueError("Souvenir vide")
+        return value.strip()
+
+    @field_validator("category")
+    @classmethod
+    def category_known(cls, value):
+        if value not in memory.CATEGORIES:
+            raise ValueError("Catégorie inconnue")
+        return value
+
+    @field_validator("status")
+    @classmethod
+    def status_known(cls, value):
+        if value not in {"active", "proposed", "archived", "rejected"}:
+            raise ValueError("Statut inconnu")
+        return value
+
+
+class MemoryRefresh(BaseModel):
+    model: str = Field(min_length=1, max_length=100)
+
+
+class MemorySettings(BaseModel):
+    automatic: bool
+
+
+@app.get("/api/memory", dependencies=[Depends(require_session)])
+def memory_view():
+    return memory.view()
+
+
+@app.post("/api/memory/facts", dependencies=[Depends(require_session)])
+def add_memory_fact(body: MemoryFact):
+    try:
+        return memory.edit_fact(
+            None,
+            body.content,
+            body.category,
+            body.expires_on.isoformat() if body.expires_on else None,
+            body.status,
+        )
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+
+
+@app.put("/api/memory/facts/{key}", dependencies=[Depends(require_session)])
+def edit_memory_fact(key: str, body: MemoryFact):
+    try:
+        return memory.edit_fact(
+            key,
+            body.content,
+            body.category,
+            body.expires_on.isoformat() if body.expires_on else None,
+            body.status,
+        )
+    except ValueError as exc:
+        raise HTTPException(404, str(exc)) from None
+
+
+@app.delete("/api/memory/facts/{key}", dependencies=[Depends(require_session)])
+def remove_memory_fact(key: str):
+    try:
+        memory.remove_fact(key)
+        return {"ok": True}
+    except ValueError as exc:
+        raise HTTPException(404, str(exc)) from None
+
+
+@app.put("/api/memory/settings", dependencies=[Depends(require_session)])
+def update_memory_settings(body: MemorySettings):
+    memory.settings(body.automatic)
+    return {"ok": True}
+
+
+@app.post("/api/memory/refresh", status_code=202, dependencies=[Depends(require_session)])
+def refresh_memory(body: MemoryRefresh):
+    try:
+        started = memory.launch(body.model, force=True)
+        return {"started": started}
+    except ValueError as exc:
+        raise HTTPException(409, str(exc)) from None
+
+
+@app.delete("/api/memory/summary", dependencies=[Depends(require_session)])
+def clear_memory_summary():
+    with memory.mutation_lock:
+        value = memory.state()
+        value["summary"] = ""
+        memory.save(value)
+    return {"ok": True}
+
+
+def coach_context(question="", recent_ids=()):
     # Small curated context, not a vector RAG yet. Avoid sending GPS tracks and raw device data.
     activities = []
-    for record in db.records("activity", 100):
+    for record in db.activity_page(0, 20):
         a = record["data"]
         activities.append(
             {
@@ -395,6 +498,7 @@ def coach_context():
                     "activityName",
                     "activityType",
                     "startTimeGMT",
+                    "startTimeLocal",
                     "distance",
                     "duration",
                     "averageHR",
@@ -424,10 +528,34 @@ def coach_context():
                 "sources": h.get("_sources", {}),
             }
         )
+    selection = memory.activity_selection(question)
+    if selection:
+        selection["items"] = [
+            {
+                "activity_id": r["key"],
+                **{
+                    k: r["data"].get(k)
+                    for k in (
+                        "activityName",
+                        "activityType",
+                        "startTimeLocal",
+                        "startTimeGMT",
+                        "distance",
+                        "duration",
+                        "averageHR",
+                        "maxHR",
+                    )
+                },
+            }
+            for r in selection["items"]
+        ]
+        selection["details_limited_to"] = 30
     return {
+        "selected_activity_period": selection,
         "as_of": db.now(),
         "profile": db.profile(),
-        "recent_activities": activities[:10],
+        "recent_activities": activities,
+        "memory": memory.context(question, recent_ids),
         "history_months": db.activity_months(),
         "activity_units": {"distance": "meters", "duration": "seconds", "heart_rate": "bpm"},
         "recovery": recovery,
@@ -444,13 +572,21 @@ def chat(body: Chat):
     if not chat_lock.acquire(blocking=False):
         raise HTTPException(409, "Le coach répond déjà à un message.")
     try:
-        messages = db.history("messages", 20) + [{"role": "user", "content": body.content}]
-        answer, usage = chatgpt.respond(body.model, coach_context(), messages)
+        suppressed = set(memory.state()["suppressed_ids"])
+        recent = [m for m in db.history("messages", 20) if m["id"] not in suppressed]
+        messages = recent + [{"role": "user", "content": body.content}]
+        answer, usage = chatgpt.respond(
+            body.model, coach_context(body.content, [m["id"] for m in recent]), messages
+        )
         if not answer.strip():
             raise ValueError("Réponse vide.")
         db.append("messages", body.content, "user")
         db.append("messages", answer, "assistant")
         db.upsert_record("integration", "chatgpt", {"last_response_at": db.now(), "usage": usage})
+        try:
+            memory.launch(body.model)
+        except Exception:
+            pass  # A derived-memory failure must never discard a completed chat.
         return {"content": answer, "usage": usage}
     except ValueError as exc:
         raise HTTPException(503, str(exc)) from None

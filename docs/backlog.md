@@ -14,7 +14,7 @@ commercialisable à terme ; conserver les interfaces remplaçables et la propri�
 | INIT-04 | Lint, tests et build dans CI | Implémenté |
 | INIT-05 | UI responsive, accès privé, API réelle | Local et configuration Railway livrés ; utilisateur signale déploiement réussi |
 | GARMIN-01 | Auth/MFA, session et lectures | Utilisateur confirme connexion locale et sync 100 activités/7 jours ; login Railway refusé 403. Transfert privé confirmé par l’utilisateur sur Railway ; import de session dans l’interface livré |
-| AI-01 | Connexion officielle ChatGPT locale et première inférence | Utilisateur confirme autorisation locale, 4 modèles et inférence Astra ; transfert Railway et contrôles UI livrés, validation réelle Railway requise |
+| AI-01 | Connexion officielle ChatGPT locale et première inférence | Utilisateur confirme autorisation locale, 4 modèles et inférence Astra ; utilisateur confirme également transfert, test et réponse du coach sur Railway ; renouvellement à valider dans la durée |
 
 ## Prochain lot : valider et accéder depuis l’iPhone
 
@@ -55,16 +55,25 @@ prévisualisation avant validation ; conserver originaux, dates, roles, provenan
 déduplication, correction, suppression/export ; aucun fichier personnel dans le dépôt.
 
 ### MEM-02 — Profil et mémoire temporelle (P1)
+Livré pour les conversations de l’app : souvenirs manuels et propositions sourcées, validation,
+correction, suppression/archive/refus, expiration, résumé daté avec checkpoint, contrôle des
+révisions concurrentes, option automatique et UI. Les anciens objectifs ne sont pas automatiquement
+confirmés. Validation réelle et qualité des résumés à évaluer ; import ChatGPT reste MEM-01.
 Dépendances : MEM-01. Extraire objectifs, contraintes et décisions proposés au propriétaire ;
 statuts actif/remplacé/terminé et dates de validité. Critères : ancienne course terminée ne reste
 pas objectif actif, contradiction visible, mémoire corrigeable et chaque fait sourcé.
 
 ### RAG-01 — PostgreSQL et recherche hybride (P1)
+Première recherche lexicale livrée : SQLite FTS5 sur les messages avec filtrage propriétaire,
+extraits pertinents et plafonds de contexte. Pas d’embeddings, de PostgreSQL ni de reranking.
 Dépendances : MEM-01. Migration préservant les données ; pgvector + recherche lexicale,
 filtrage utilisateur/sport/date et extraits avec contexte de conversation. Critères : résultats
 corrects sur un jeu d’évaluation, aucune fuite inter-utilisateurs, index reconstruisible.
 
 ### RAG-02 — Reranking et outils du coach (P1)
+Première sélection déterministe d’activités par sport/période et totaux SQL, avec 20 activités
+récentes par date et 30 détails maximum pour une période. Interprétation de dates limitée ;
+pas encore de boucle d’outils choisie par le modèle ni de détails FIT.
 Dépendances : RAG-01, HEALTH-02. Reranker interchangeable, choix des outils de recherche/SQL,
 budget de contexte, références vers mesures et messages. Calculs réalisés en code. Critères :
 répondre à une question datée, signaler données absentes, aucune mesure inventée, coût/latence mesurés.

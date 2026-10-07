@@ -13,9 +13,11 @@ et ChatGPT sont des fichiers locaux distincts, jamais des champs du profil ni de
 - React/TypeScript : interface mobile avec actions de saisie et navigation simple.
 - SQLite pour démarrer immédiatement sans infrastructure. Chaque enregistrement porte user_id.
   Le propriétaire `local` est fixe dans ce lot ; il ne constitue pas un système multi-utilisateur.
-- Schéma initial versionné à 1. Les migrations suivantes doivent être explicites et préserver les données.
+- Schéma versionné : v1 tables initiales ; v2 index FTS5 des messages existants et triggers
+  insert/update/delete. La migration garde les profils, messages, notes et mesures.
 - SQLAlchemy comme couche d’accès. Le SQL initial reste spécifique SQLite ; migration PostgreSQL prévue.
-- Historique et notes conservés en texte. Les embeddings seront un index dérivé reconstruisible.
+- Historique et notes conservés en texte. FTS5 indexe les messages avec contrôle propriétaire.
+  Les embeddings seront un index dérivé reconstruisible.
 - Le coach reçoit un contexte limité, avec dates et unités ; pas de traces GPS ou données de compte.
 - Les indicateurs manquants sont null, et non zéro. Pas de calcul de charge improvisé.
 - La source de vérité reste le stockage ; le modèle ne mémorise pas les mesures dans ses poids.
@@ -32,6 +34,23 @@ SQLite et les jetons résident dans le volume /data. La clé locale s’affiche 
 
 Secrets écrits atomiquement avec permissions 0600 sur Unix, dossier privé. Sur Windows,
 les permissions dépendent du compte et des ACL locales. Ne pas synchroniser `.local` vers git.
+
+## Mémoire personnelle
+
+L’état durable utilise les records SQLite existants, kind `memory`, clés `state` et `job`.
+Il contient les faits confirmés/proposés/archivés/refusés, dates, citations et sources, un
+résumé dérivé, une révision et le checkpoint du dernier message traité. Les corrections
+incrémentent la révision : une réponse IA commencée avant une correction ne peut pas l’écraser.
+Un seul worker de résumé par process, en arrière-plan ; échec sans perte, statut interrompu
+après restart, reprise manuelle ou lors d’un prochain échange éligible. Une seule réplique.
+L’extraction exige des citations exactes d’un message utilisateur du lot ; aucune proposition
+n’est automatiquement confirmée. Le résumé demeure une synthèse historique non vérifiée.
+
+Le contexte assemble mémoire structurée, résumé, recherche FTS5 sur la question, échanges
+récents, profil/notes et Garmin. Les plafonds figurent dans README. Les outils sémantiques,
+l’import d’exports et la navigation complète de l’historique restent des évolutions distinctes.
+Le modèle choisi pour le chat assure aussi les résumés automatiques ; la mise à jour manuelle
+peut utiliser un autre modèle disponible. Le renouvellement OAuth est sérialisé entre threads.
 
 ## Suite
 
