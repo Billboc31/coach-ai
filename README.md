@@ -77,6 +77,10 @@ lors d’une évolution Garmin. Les mesures accessibles dépendent de la montre 
 coach chatgpt-login
 ```
 
+Pour tester une vraie réponse dans le terminal : `coach chatgpt-test`.
+Le test choisit le premier modèle du catalogue ; aucun profil, historique ni donnée Garmin
+n’est envoyé. Il utilise uniquement l’autorisation ChatGPT déjà enregistrée.
+
 Un navigateur s’ouvre sur OpenAI. Autoriser explicitement l’identité et l’utilisation du
 forfait. Le callback doit revenir sur **le même ordinateur**, à `127.0.0.1:1455/auth/callback`.
 Si le port est occupé : `coach chatgpt-login --port 1456`.

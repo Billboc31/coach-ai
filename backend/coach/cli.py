@@ -18,6 +18,7 @@ def main():
     chatgpt = sub.add_parser("chatgpt-login")
     chatgpt.add_argument("--port", type=int, default=1455)
     sub.add_parser("chatgpt-logout")
+    sub.add_parser("chatgpt-test", help="Tester une réponse sans envoyer de données personnelles")
     args = parser.parse_args()
     logging.disable(logging.CRITICAL)
     try:
@@ -51,6 +52,22 @@ def main():
         elif args.command == "chatgpt-logout":
             (data_dir() / "chatgpt.json").unlink(missing_ok=True)
             print("Jetons locaux supprimés. Révoque aussi la connexion dans les réglages ChatGPT.")
+        elif args.command == "chatgpt-test":
+            from coach.chatgpt import models, respond
+
+            choices = models()
+            if not choices:
+                raise ValueError("Aucun modèle disponible pour ce compte.")
+            choice = choices[0]
+            print("Test avec " + choice["name"] + "…", flush=True)
+            answer, _ = respond(
+                choice["id"],
+                {},
+                [{"role": "user", "content": "Réponds simplement : connexion réussie."}],
+            )
+            if not answer.strip():
+                raise ValueError("Réponse vide ; test non validé.")
+            print(answer)
     except (KeyboardInterrupt, EOFError):
         print("Interrompu.")
         raise SystemExit(130) from None
