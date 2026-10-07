@@ -450,6 +450,8 @@ def edit_memory_fact(key: str, body: MemoryFact):
             body.expires_on.isoformat() if body.expires_on else None,
             body.status,
         )
+    except memory.ConflictError as exc:
+        raise HTTPException(409, str(exc)) from None
     except ValueError as exc:
         raise HTTPException(404, str(exc)) from None
 

@@ -52,6 +52,16 @@ valide. Une sortie JSON mal formée n’est pas enregistrée comme conseil. Les 
 l’enveloppe peuvent toujours fournir une réponse texte, sans suggestion. Les cartes possèdent
 l’ID du message assistant correspondant et leurs états sont conservés dans la mémoire durable.
 
+Les propositions portent une action add/replace/archive. Un remplacement ou une clôture
+référence l’ID et l’empreinte de la version du souvenir d’origine. Ces références sont vérifiées
+à la création puis à la confirmation. La confirmation archive l’ancien état et enregistre les
+liens et dates dans une seule écriture d’état ; le remplacement devient actif, la clôture prend
+le statut applied (événement historique). Une version périmée renvoie 409 sans modification.
+Les candidats appartiennent au propriétaire courant et restent bornés à 80, par pertinence
+lexicale puis récence. Les changements confirmés sont fournis comme contexte daté ; les
+anciens souvenirs archivés ne sont plus des faits actuels. Les propositions restent soumises
+à confirmation explicite, y compris celles produites par le résumé périodique.
+
 Le contexte assemble mémoire structurée, résumé, recherche FTS5 sur la question, échanges
 récents, profil/notes et Garmin. Les plafonds figurent dans README. Les outils sémantiques,
 l’import d’exports et la navigation complète de l’historique restent des évolutions distinctes.

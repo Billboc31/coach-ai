@@ -136,6 +136,16 @@ Une sortie non sourcée est ignorée. Une proposition ne devient active qu’apr
 L’onglet Mémoire reste disponible pour gérer l’ensemble et voir les sources. Le résumé périodique
 peut également proposer des souvenirs provenant des échanges plus anciens.
 
+Quand un message annonce qu’une situation a changé, le coach peut proposer de **remplacer**
+un souvenir ou de le **marquer comme terminé**. La carte montre l’ancien souvenir et le nouvel
+état. Rien n’est modifié avant confirmation : confirmer archive l’ancien état avec sa date,
+et active la nouvelle version en cas de remplacement. Une fin de situation est un événement
+daté, pas un nouvel état de santé permanent ni un diagnostic. Ignorer garde l’ancien souvenir.
+L’historique et les liens entre versions sont conservés. Une proposition basée sur un souvenir
+corrigé/supprimé entre-temps est refusée ; demander une nouvelle proposition au coach.
+L’identification du changement dépend du modèle : si la situation est ambiguë, le coach doit
+poser une question. Les mises à jour ne concernent que les souvenirs, pas le profil ni les notes.
+
 Le résumé est généré en arrière-plan après 10 nouveaux messages (5 échanges réussis),
 avec le modèle de la discussion. L’actualisation manuelle permet de traiter les échanges
 existants immédiatement. Chaque appel traite au maximum 30 messages, avance un checkpoint

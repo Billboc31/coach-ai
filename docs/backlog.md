@@ -58,7 +58,9 @@ déduplication, correction, suppression/export ; aucun fichier personnel dans le
 Livré pour les conversations de l’app : souvenirs manuels et propositions sourcées, validation,
 correction, suppression/archive/refus, expiration, cartes Confirmer/Corriger/Ignorer dans le chat
 dès la réponse (sans appel IA supplémentaire), résumé daté avec checkpoint, contrôle des
-révisions concurrentes, option automatique et UI. Les anciens objectifs ne sont pas automatiquement
+révisions concurrentes, option automatique et UI. Propositions de remplacement/clôture avec
+ancien/nouveau état, archive datée et liens entre versions, confirmation atomique et rejet des
+propositions périmées (409) livrés. La qualité de détection reste à évaluer. Les anciens objectifs ne sont pas automatiquement
 confirmés. Validation réelle et qualité des résumés à évaluer ; import ChatGPT reste MEM-01.
 Dépendances : MEM-01. Extraire objectifs, contraintes et décisions proposés au propriétaire ;
 statuts actif/remplacé/terminé et dates de validité. Critères : ancienne course terminée ne reste

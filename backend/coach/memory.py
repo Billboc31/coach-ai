@@ -32,7 +32,73 @@ uniquement explicitement déclarés dans les nouveaux messages de rôle user, av
 N'invente aucune date d'expiration : expires_on doit être null sauf date ISO explicite dans la citation.
 Un ressenti temporaire doit rester daté dans le résumé, pas devenir une caractéristique permanente.
 N'extrais aucun mot de passe, jeton ou clé d'accès. Ne recopie pas les données Garmin.
+Pour changer un souvenir fourni dans change_candidates, ajoute action="replace" ou "archive",
+target_id et target_version exacts du candidat. "archive" termine une situation (ex. contrainte
+levée) ; "replace" remplace un objectif ou une préférence. Sinon action="add". Ne crée pas un
+fait contradictoire indépendant si un souvenir correspondant existe. Cite l'annonce explicite
+du changement par l'utilisateur ; en cas d'ambiguïté, ne propose aucun changement.
+Une douleur déclarée disparue est un ressenti rapporté, pas un diagnostic de guérison.
 """
+
+
+class ConflictError(ValueError):
+    pass
+
+
+def fingerprint(fact):
+    fields = {
+        k: fact.get(k) for k in ("id", "content", "category", "status", "expires_on", "updated_at")
+    }
+    return hashlib.sha256(json.dumps(fields, sort_keys=True).encode()).hexdigest()
+
+
+def change_candidates(value, question=""):
+    facts = [
+        f
+        for f in value["facts"]
+        if (f["status"] in {"active", "proposed"} and f.get("action", "add") == "add")
+        or (f["status"] == "active" and f.get("action") == "replace")
+    ]
+    terms = [
+        t for t in re.findall(r"[^\W_]+", question.casefold()) if len(t) >= 3 and t not in STOP
+    ][:16]
+    facts.sort(
+        key=lambda f: (
+            sum(t in f["content"].casefold() for t in terms),
+            f.get("updated_at") or f["created_at"],
+        ),
+        reverse=True,
+    )
+    return [
+        {
+            "id": f["id"],
+            "content": f["content"],
+            "category": f["category"],
+            "status": f["status"],
+            "target_version": fingerprint(f),
+        }
+        for f in facts[:80]
+    ]
+
+
+def attach_target(fact, value):
+    if fact.get("action", "add") == "add":
+        return True
+    target = next((f for f in value["facts"] if f["id"] == fact.get("target_id")), None)
+    if not target or target["status"] not in {"active", "proposed"}:
+        return False
+    if target.get("action", "add") not in {"add", "replace"}:
+        return False
+    if fact["category"] != target["category"] or fact.get("target_version") != fingerprint(target):
+        return False
+    fact["target_content"] = target["content"]
+    return True
+
+
+def same_operation(a, b):
+    return a.get("action", "add") == b.get("action", "add") and a.get("target_id") == b.get(
+        "target_id"
+    )
 
 
 def state():
@@ -86,6 +152,31 @@ def edit_fact(key, content, category, expires_on, status):
         elif content != fact["content"] or status in {"archived", "rejected"}:
             value["suppressed_ids"] = sorted(set(value["suppressed_ids"] + fact["source_ids"]))
             value["summary"] = ""  # A correction must not be contradicted by a stale summary.
+        if status == "active" and fact.get("action") in {"replace", "archive"}:
+            if fact["status"] in {"proposed", "rejected"}:
+                target = next((f for f in value["facts"] if f["id"] == fact["target_id"]), None)
+                if (
+                    not target
+                    or target["status"] not in {"active", "proposed"}
+                    or fingerprint(target) != fact["target_version"]
+                ):
+                    raise ConflictError(
+                        "Le souvenir d’origine a changé. Demande une nouvelle proposition au coach."
+                    )
+                target.update(
+                    status="archived",
+                    archived_at=db.now(),
+                    ended_at=fact["source_date"],
+                    replaced_by=fact["id"],
+                    updated_at=db.now(),
+                )
+                value["suppressed_ids"] = sorted(
+                    set(value["suppressed_ids"] + target["source_ids"])
+                )
+                value["summary"] = ""
+                fact["applied_at"] = db.now()
+            if fact["action"] == "archive":
+                status = "applied"  # A closure event is not a new active medical condition.
         fact.update(
             content=content.strip(),
             category=category,
@@ -166,8 +257,19 @@ def validated_result(answer, batch):
             date.fromisoformat(expiry)
             if expiry not in quote:
                 raise ValueError("Expiration non sourcée.")
+        action = f.get("action", "add")
+        if action not in {"add", "replace", "archive"}:
+            raise ValueError("Opération de mémoire incompatible.")
+        operation = {"action": action}
+        if action != "add":
+            if not isinstance(f.get("target_id"), str) or not isinstance(
+                f.get("target_version"), str
+            ):
+                raise ValueError("Souvenir à modifier manquant.")
+            operation.update(target_id=f["target_id"], target_version=f["target_version"])
         checked.append(
             {
+                **operation,
                 "category": f["category"],
                 "content": content.strip(),
                 "source_ids": [source["id"]],
@@ -199,6 +301,7 @@ def update(model):
                     "content": json.dumps(
                         {
                             "previous_summary": original["summary"],
+                            "change_candidates": change_candidates(original),
                             "owner_memories": [
                                 f for f in original["facts"] if f["status"] == "active"
                             ],
@@ -228,23 +331,24 @@ def update(model):
         value = state()
         if value["revision"] != original["revision"]:
             raise ValueError("La mémoire a été corrigée pendant la mise à jour ; relance-la.")
-        signatures = {
-            hashlib.sha256((f["category"] + f["content"].casefold()).encode()).hexdigest()
-            for f in value["facts"]
-        }
         for fact in facts:
-            signature = hashlib.sha256(
-                (fact["category"] + fact["content"].casefold()).encode()
-            ).hexdigest()
+            if not attach_target(fact, value):
+                continue
             duplicate_source = any(
-                f["category"] == fact["category"]
+                same_operation(f, fact)
+                and f["category"] == fact["category"]
                 and f["source_ids"] == fact["source_ids"]
                 and f.get("quote") == fact.get("quote")
                 for f in value["facts"]
             )
-            if signature not in signatures and not duplicate_source and len(value["facts"]) < 200:
+            matching_content = any(
+                same_operation(f, fact)
+                and f["category"] == fact["category"]
+                and f["content"].casefold() == fact["content"].casefold()
+                for f in value["facts"]
+            )
+            if not matching_content and not duplicate_source and len(value["facts"]) < 200:
                 value["facts"].append({**fact, "id": str(uuid.uuid4())})
-                signatures.add(signature)
         value.update(
             summary=summary,
             through_id=batch[-1]["id"],
@@ -320,6 +424,17 @@ def context(question, recent_ids):
         db.search_messages(" OR ".join('"' + t + '"' for t in terms), excluded) if terms else []
     )
     return {
+        "memory_change_candidates": change_candidates(value, question),
+        "recent_memory_changes": [
+            {
+                "action": f["action"],
+                "before": f.get("target_content"),
+                "after": f["content"],
+                "source_date": f["source_date"],
+            }
+            for f in reversed(value["facts"])
+            if f.get("applied_at")
+        ][:10],
         "confirmed_facts_total": len(active),
         "confirmed_facts_limit": 40,
         "confirmed_facts": [
@@ -417,11 +532,14 @@ def propose_from_reply(proposals, source, assistant_id):
         value = state()
         added = []
         for fact in checked:
+            if not attach_target(fact, value):
+                continue
             if len(value["facts"]) >= 200:
                 break
             if any(
                 (
-                    f["category"] == fact["category"]
+                    same_operation(f, fact)
+                    and f["category"] == fact["category"]
                     and (
                         f["content"].casefold() == fact["content"].casefold()
                         or (
