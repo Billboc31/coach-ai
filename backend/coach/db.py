@@ -1,0 +1,118 @@
+import json
+from contextlib import contextmanager
+from datetime import datetime, timezone
+
+from sqlalchemy import create_engine, text
+
+from coach.config import data_dir, user_id
+
+# Versioned initial schema. Future changes belong in an explicit migration.
+SCHEMA = [
+    "CREATE TABLE IF NOT EXISTS schema_version (version INTEGER PRIMARY KEY)",
+    "CREATE TABLE IF NOT EXISTS profiles (user_id TEXT PRIMARY KEY, data TEXT NOT NULL)",
+    "CREATE TABLE IF NOT EXISTS records (user_id TEXT NOT NULL, kind TEXT NOT NULL, "
+    "record_key TEXT NOT NULL, data TEXT NOT NULL, updated_at TEXT NOT NULL, "
+    "PRIMARY KEY (user_id, kind, record_key))",
+    "CREATE TABLE IF NOT EXISTS messages (id INTEGER PRIMARY KEY AUTOINCREMENT, "
+    "user_id TEXT NOT NULL, role TEXT NOT NULL, content TEXT NOT NULL, created_at TEXT NOT NULL)",
+    "CREATE TABLE IF NOT EXISTS notes (id INTEGER PRIMARY KEY AUTOINCREMENT, "
+    "user_id TEXT NOT NULL, content TEXT NOT NULL, created_at TEXT NOT NULL)",
+]
+
+
+def now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+@contextmanager
+def connection():
+    engine = create_engine(f"sqlite:///{data_dir() / 'coach.db'}", connect_args={"timeout": 20})
+    try:
+        with engine.begin() as conn:
+            for statement in SCHEMA:
+                conn.execute(text(statement))
+            conn.execute(text("INSERT OR IGNORE INTO schema_version VALUES (1)"))
+            yield conn
+    finally:
+        engine.dispose()
+
+
+def profile() -> dict:
+    with connection() as conn:
+        row = conn.execute(
+            text("SELECT data FROM profiles WHERE user_id=:u"), {"u": user_id()}
+        ).first()
+    return (
+        json.loads(row[0])
+        if row
+        else {
+            "name": "",
+            "timezone": "Europe/Paris",
+            "goals": "",
+            "constraints": "",
+            "sports": ["Course", "Tennis", "Musculation", "Vélo"],
+        }
+    )
+
+
+def save_profile(value: dict):
+    with connection() as conn:
+        conn.execute(
+            text(
+                "INSERT INTO profiles VALUES (:u,:d) ON CONFLICT(user_id) "
+                "DO UPDATE SET data=excluded.data"
+            ),
+            {"u": user_id(), "d": json.dumps(value, ensure_ascii=False)},
+        )
+
+
+def upsert_record(kind: str, key: str, value: dict):
+    with connection() as conn:
+        conn.execute(
+            text(
+                "INSERT INTO records VALUES (:u,:k,:r,:d,:t) "
+                "ON CONFLICT(user_id,kind,record_key) DO UPDATE SET "
+                "data=excluded.data, updated_at=excluded.updated_at"
+            ),
+            {"u": user_id(), "k": kind, "r": key, "d": json.dumps(value), "t": now()},
+        )
+
+
+def records(kind: str, limit: int = 30) -> list[dict]:
+    with connection() as conn:
+        rows = conn.execute(
+            text(
+                "SELECT record_key,data,updated_at FROM records "
+                "WHERE user_id=:u AND kind=:k ORDER BY record_key DESC LIMIT :l"
+            ),
+            {"u": user_id(), "k": kind, "l": limit},
+        ).all()
+    return [{"key": r[0], "data": json.loads(r[1]), "updated_at": r[2]} for r in rows]
+
+
+def append(table: str, content: str, role: str | None = None):
+    if table not in {"messages", "notes"}:
+        raise ValueError("Unknown table")
+    params = {"u": user_id(), "c": content, "t": now()}
+    with connection() as conn:
+        if table == "messages":
+            params["r"] = role
+            conn.execute(
+                text("INSERT INTO messages(user_id,role,content,created_at) VALUES (:u,:r,:c,:t)"),
+                params,
+            )
+        else:
+            conn.execute(
+                text("INSERT INTO notes(user_id,content,created_at) VALUES (:u,:c,:t)"), params
+            )
+
+
+def history(table: str, limit: int = 40) -> list[dict]:
+    if table not in {"messages", "notes"}:
+        raise ValueError("Unknown table")
+    with connection() as conn:
+        rows = conn.execute(
+            text(f"SELECT * FROM {table} WHERE user_id=:u ORDER BY id DESC LIMIT :l"),
+            {"u": user_id(), "l": limit},
+        ).mappings()
+        return list(reversed([dict(r) for r in rows]))
