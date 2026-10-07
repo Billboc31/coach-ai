@@ -222,3 +222,83 @@ def test_machine_aliases_require_the_same_explicit_machine_context(workspace):
         ),
     )
     assert catalogue.compatible_ids("a") == ["a", "b"]
+
+
+def test_automatic_equivalent_wording_keeps_all_variant_constraints():
+    cases = {
+        "Haltères développé couché incliné": "wger:537",
+        "DC avec haltère": "wger:75",
+        "Rowing unilatéral avec haltère": "wger:81",
+        "Curl avec barre EZ": "wger:94",
+        "Barre rowing supi": "wger:84",
+        "SDT roumain avec barre": "wger:507",
+    }
+    for name, expected in cases.items():
+        assert catalogue.automatic(name) == (expected, "automatic")
+    for name in [
+        "DC",
+        "Squat",
+        "Curl biceps",
+        "Gainage",
+        "Rowing",
+        "DC avec haltères sans banc",
+        "Rowing haltère deux bras",
+        "DC barre incliné supination",
+        "SDT roumain avec machine",
+        "Curl barre EZ inversé",
+        "Invented exercise 999",
+    ]:
+        assert catalogue.automatic(name) == (None, "unresolved")
+
+
+def test_automatic_resolution_respects_manual_choices_and_does_not_classify_weights(workspace):
+    private_exercise("alias", "Rowing unilatéral avec haltère")
+    saved = workout("old", "alias", weight=15)
+    result = catalogue.resolution("alias")
+    assert result["method"] == "automatic" and result["catalog_id"] == "wger:81"
+    assert result["weight_convention"] == "unspecified"
+    assert db.records("gym_binding") == []
+    assert catalogue.compatible_ids("alias") == ["alias"]
+    bind("alias", "wger:75")
+    assert catalogue.resolution("alias")["catalog_id"] == "wger:75"
+    bind("alias", None, revision=1)
+    assert catalogue.resolution("alias")["catalog_id"] is None
+    assert (
+        catalogue.decorate(
+            {"exercise_id": "alias", "name": "Rowing unilatéral haltère"}, catalogue.decisions()
+        )["catalog_id"]
+        is None
+    )
+    assert db.record("gym_workout", "old") == saved
+
+
+def test_existing_programs_are_automatically_resolved_across_all_days(workspace):
+    exercises = [
+        {"id": "first", "exercise_id": "alias", "name": "Rowing unilatéral haltère"},
+        {"id": "second", "exercise_id": "incline", "name": "Haltères développé couché incliné"},
+        {"id": "third", "exercise_id": "unknown", "name": "DC"},
+    ]
+    for item in exercises:
+        private_exercise(item["exercise_id"], item["name"])
+    program = {
+        "id": "program",
+        "title": "Synthetic",
+        "display_version": 2,
+        "days": [{"id": str(i), "exercises": [item]} for i, item in enumerate(exercises)],
+    }
+    db.upsert_record("gym_program", "program", program)
+    actual = gym.overview()["programs"][0]
+    assert [d["exercises"][0]["catalog_id"] for d in actual["days"]] == [
+        "wger:81",
+        "wger:537",
+        None,
+    ]
+    assert db.record("gym_program", "program") == program
+    assert db.records("gym_binding") == []
+
+
+def test_documented_primary_and_secondary_muscles_are_kept_separate():
+    bench = catalogue.catalogue()["wger:73"]
+    assert bench["muscles"] == ["Chest"]
+    assert set(bench["muscles_secondary"]) == {"Shoulders", "Triceps"}
+    assert catalogue.catalogue()["wger:81"]["muscles_secondary"] == []

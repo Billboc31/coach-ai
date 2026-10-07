@@ -42,7 +42,7 @@ def test_schedule_persists_and_does_not_replace_manual_checkpoint(workspace):
         garmin_schedule.configure(True, 1)
 
 
-def test_automatic_launch_gap_catchup_and_failure_reactivation(workspace):
+def test_automatic_launch_gap_catchup_and_failure_reactivation(workspace, monkeypatch):
     instant = due(workspace)
     lock = threading.Lock()
     db.upsert_record("integration", "garmin", {"synced_at": "2026-10-01T10:00:00+00:00"})
@@ -60,6 +60,14 @@ def test_automatic_launch_gap_catchup_and_failure_reactivation(workspace):
     garmin_jobs.save(job)
     garmin_schedule.tick(lock, instant + timedelta(minutes=1))
     assert not garmin_schedule.state()["enabled"]
+
+    # Keep reactivation on the same simulated date, including when run near midnight.
+    class Clock(datetime):
+        @classmethod
+        def now(cls, tz=None):
+            return (instant + timedelta(minutes=1)).astimezone(tz)
+
+    monkeypatch.setattr(garmin_schedule, "datetime", Clock)
     garmin_schedule.configure(True, 30)
     later = datetime.fromisoformat(garmin_schedule.state()["next_run"])
     garmin_schedule.tick(lock, later)

@@ -303,7 +303,12 @@ La fiche propose les précédentes charges du même exercice, sans augmentation 
 Le catalogue local wger contient 918 exercices (584 avec un texte français), avec 217 fiches
 ayant un média documenté, dont 49 une animation GIF/vidéo. **Fiche exercice / Identifier**
 affiche la variante, le matériel, les consignes et la provenance. Les noms précis et synonymes
-connus sont reconnus ; les noms ambigus proposent une recherche et demandent un choix.
+connus sont reconnus ; la reconnaissance automatique accepte aussi les mots réordonnés,
+pluriels, prépositions et abréviations usuelles sans supprimer les détails de variante.
+Elle s’applique à tous les exercices, y compris des imports existants, sans réimport ni
+validation fiche par fiche. Le bilan **Reconnaissance automatique** compte les noms uniques
+du programme actif, toutes ses feuilles/semaines visibles, et liste uniquement les noms
+restant à préciser. Les noms ambigus proposent une recherche et demandent un choix.
 La correspondance est mémorisée avec un nom canonique stable, en conservant le nom Excel. Un exercice inédit sans référence garde ses charges vides. Conserver la même
 convention de saisie (par haltère/charge totale et même matériel). Les noms différents partagent leurs références uniquement après confirmation du même
 exercice, de la même convention de poids et du même repère matériel (obligatoire pour une
@@ -313,6 +318,9 @@ séance conserve sa variante et ses unités déjà précisées. Un exercice libr
 séances et jusqu’à 30 programmes. Le coach reçoit les séries validées des cinq séances récentes,
 avec unités et distinction séance en cours/terminée, au maximum 25 exercices par séance.
 
+Chaque fiche reconnue affiche une silhouette schématique face/dos avec les groupes
+musculaires principaux et secondaires documentés par wger, deux couleurs et une légende
+en français. Les groupes absents restent non renseignés, sans intensité inventée.
 Les animations du catalogue se chargent après clic ; leur disponibilité dépend de wger.
 Les autres fiches utilisent des photos ou un dessin général et la recherche YouTube.
 Les crédits et licences de chaque texte/média sont affichés ; voir [provenance du catalogue](docs/exercise-catalogue.md).

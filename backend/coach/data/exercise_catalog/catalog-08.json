@@ -1,1508 +1,1577 @@
 [
- {
-  "id": "wger:979",
-  "source_id": 979,
-  "name": "Leg raises pull up bar",
-  "name_en": "Leg raises pull up bar",
-  "aliases": [
-   "Leg raises pull up bar"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "Pull-up bar"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "with a firm grip with both hands on the bar, raise your outstretched legs, until you reach a 90° angle with your torso.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/979/",
-  "media": []
- },
- {
-  "id": "wger:980",
-  "source_id": 980,
-  "name": "Tractions commando",
-  "name_en": "commando pull-ups",
-  "aliases": [
-   "Tractions commando",
-   "commando pull-ups"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Pull-up bar"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Biceps",
-   "Lats",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Variante de la traction, elle s'exécute avec une main en supination et une main en pronation. Ne tordez pas le torse pour revenir de face : la tête passe une fois d'un côté, une fois de l'autre.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/980/",
-  "media": []
- },
- {
-  "id": "wger:981",
-  "source_id": 981,
-  "name": "Marches",
-  "name_en": "Step-ups",
-  "aliases": [
-   "Marches",
-   "Step-ups",
-   "Chair steps"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Bench"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Tenez-vous debout face à une chaise \n Montez sur la chaise \n Descendez de la chaise \n Répétez",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/981/",
-  "media": []
- },
- {
-  "id": "wger:983",
-  "source_id": 983,
-  "name": "Genoux hauts",
-  "name_en": "High knees",
-  "aliases": [
-   "Genoux hauts",
-   "High knees",
-   "Running in place"
-  ],
-  "category": "Cardio",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Courez sur place, en plaçant les genoux aussi haut que possible et en changeant de jambe à un rythme rapide",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/983/",
-  "media": []
- },
- {
-  "id": "wger:984",
-  "source_id": 984,
-  "name": "Fentes",
-  "name_en": "Lunges",
-  "aliases": [
-   "Fentes",
-   "Lunges"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
-  "description": "Tenez-vous debout, le dos droit \n Faites un grand pas en avant avec votre jambe gauche \n Descendez votre bassin jusqu'à ce que votre genou droit touche presque le sol. \n Remontez votre bassin \n Revenez à la position debout en faisant un pas en arrière \n Répétez l'opération en changeant de jambe à chaque fois",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/984/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/984/5c7ffe68-e7b2-47f3-a22a-f9cc28640432.png",
-    "codec": null,
+  {
+    "id": "wger:979",
+    "source_id": 979,
+    "name": "Leg raises pull up bar",
+    "name_en": "Leg raises pull up bar",
+    "aliases": [
+      "Leg raises pull up bar"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "Pull-up bar"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "with a firm grip with both hands on the bar, raise your outstretched legs, until you reach a 90° angle with your torso.",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Franpol"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:985",
-  "source_id": 985,
-  "name": "Pompes avec rotation",
-  "name_en": "Push-up rotations",
-  "aliases": [
-   "Pompes avec rotation",
-   "Push-up rotations",
-   "Push up rotations",
-   "Pushup rotations"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Chest",
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "Faites une pompe standard : \n \n 1.a Allongez-vous sur le ventre1.b Placez vos mains près de vos oreilles1.c Utilisez vos bras pour soulever votre ventre jusqu'à ce que les bras soient droits, en gardant le dos droit1.d Pliez les bras jusqu'à ce que la poitrine touche presque le sol, en vous assurant que le dos est droit1.e Soulevez à nouveau votre ventre et revenez à l'étape 1.c \n \n Faites pivoter votre corps sur le côté pour que le dos soit droit, que la main inférieure soutenant le corps soit complètement étendue et que seuls la main et le pied inférieurs touchent le sol \n Répétez, en changeant de côté à chaque fois",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/979/",
+    "media": [],
+    "muscles_secondary": [
+      "Obliquus externus abdominis",
+      "Quads"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/985/",
-  "media": []
- },
- {
-  "id": "wger:986",
-  "source_id": 986,
-  "name": "Fentes latérales gauches",
-  "name_en": "Side split squats left",
-  "aliases": [
-   "Fentes latérales gauches",
-   "Side split squats left"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
-  "description": "Tenez-vous droit et faites une large foulée latérale, juste supérieure à la largeur des épaules \n Pliez un genou jusqu'à ce que votre cuisse soit parallèle au sol. Le genou plié doit être aligné avec le pied \n Revenez à la position de départ et répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/986/",
-  "media": []
- },
- {
-  "id": "wger:987",
-  "source_id": 987,
-  "name": "Fentes latérales droites",
-  "name_en": "Side split squats right",
-  "aliases": [
-   "Fentes latérales droites",
-   "Side split squats right"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
-  "description": "Tenez-vous droit et faites une large foulée latérale, juste supérieure à la largeur des épaules \n Pliez un genou jusqu'à ce que votre cuisse soit parallèle au sol. Le genou plié doit être aligné avec le pied \n Revenez à la position de départ et répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/987/",
-  "media": []
- },
- {
-  "id": "wger:988",
-  "source_id": 988,
-  "name": "Squats bulgares gauches",
-  "name_en": "Bulgarian split squats left",
-  "aliases": [
-   "Bulgarian split squats left",
-   "Squats bulgares gauches"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
-  "description": "Tenez-vous droit devant une chaise et faites un grand pas. Placez la partie supérieure de l'un de vos pieds sur la chaise \n Pliez le genou avant, en équilibre avec les bras jusqu'à ce que le genou arrière touche presque le sol \n Revenez à la position de départ et répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/988/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/988/6283b258-a4d7-4833-84f7-a38987022d3d.png",
-    "codec": null,
+  {
+    "id": "wger:980",
+    "source_id": 980,
+    "name": "Tractions commando",
+    "name_en": "commando pull-ups",
+    "aliases": [
+      "Tractions commando",
+      "commando pull-ups"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Pull-up bar"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Biceps",
+      "Lats",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Variante de la traction, elle s'exécute avec une main en supination et une main en pronation. Ne tordez pas le torse pour revenir de face : la tête passe une fois d'un côté, une fois de l'autre.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Franpol"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:989",
-  "source_id": 989,
-  "name": "Squats bulgares droites",
-  "name_en": "Bulgarian split squats right",
-  "aliases": [
-   "Bulgarian split squats right",
-   "Squats bulgares droites"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
-  "description": "Tenez-vous droit devant une chaise et faites un grand pas. Placez la partie supérieure de l'un de vos pieds sur la chaise \n Pliez le genou avant, en équilibre avec les bras jusqu'à ce que le genou arrière touche presque le sol \n Revenez à la position de départ et répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/980/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/989/",
-  "media": []
- },
- {
-  "id": "wger:990",
-  "source_id": 990,
-  "name": "Extensions de la hanche",
-  "name_en": "Kneeling kickbacks",
-  "aliases": [
-   "Extensions de la hanche",
-   "Kneeling kickbacks"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Mettez-vous à quatre pattes \n Poussez un pied en arrière jusqu'à ce qu'il soit complètement étendu, en vous concentrant sur les muscles fessiers \n Restez une seconde, puis revenez à la position initiale \n Répétez, en alternant les pieds",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/990/",
-  "media": []
- },
- {
-  "id": "wger:991",
-  "source_id": 991,
-  "name": "Fentes avant gauches",
-  "name_en": "Split squats left",
-  "aliases": [
-   "Fentes avant gauches",
-   "Split squats left"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
-  "description": "Tenez-vous debout avec le dos droit \n Faites un grand pas en avant avec votre jambe gauche \n Abaissez votre bassin jusqu'à ce que vous touchiez presque le sol avec votre genou droit \n Ramenez votre bassin vers le haut \n Répétez à partir de l'étape 3.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/991/",
-  "media": []
- },
- {
-  "id": "wger:992",
-  "source_id": 992,
-  "name": "Fentes avant droites",
-  "name_en": "Split squats right",
-  "aliases": [
-   "Fentes avant droites",
-   "Split squats right"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
-  "description": "Tenez-vous debout avec le dos droit \n Faites un grand pas en avant avec votre jambe droite \n Abaissez votre bassin jusqu'à ce que vous touchiez presque le sol avec votre genou gauche \n Ramenez votre bassin vers le haut \n Répétez à partir de l'étape 3.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/992/",
-  "media": []
- },
- {
-  "id": "wger:993",
-  "source_id": 993,
-  "name": "Corde à sauter : sauts de base",
-  "name_en": "Jump rope: basic jumps",
-  "aliases": [
-   "Corde à sauter : sauts de base",
-   "Jump rope: basic jumps"
-  ],
-  "category": "Cardio",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Cet exercice nécessite une corde à sauter. Assurez-vous que la longueur de la corde est adaptée à votre taille. Une mamière de vérifier est de saisir les deux poignées d'une main et de se tenir au milieu de la corde suspendue au sol avec un pied. Si la corde (sans les poignées) arrive juste sous votre poitrine, sa longueur est correcte. Une corde plus courte serait dangereuse, car vous risqueriez de vous cogner, et une corde plus longue serait mauvaise pour la forme. \n \n Rapprochez vos pieds, pliez un peu les genoux, gardez la tête et le corps droits, gardez les coudes rentrés, ouvrez les bras. \n Faites tourner uniquement vos poignets avec suffisamment de force pour faire tourner la corde. \n Sautez juste assez haut pour faire passer la corde sous vos pieds. \n Répétez à partir de l'étape 2.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/993/",
-  "media": []
- },
- {
-  "id": "wger:994",
-  "source_id": 994,
-  "name": "Cercles avant des bras",
-  "name_en": "Forward arm circles",
-  "aliases": [
-   "Cercles avant des bras",
-   "Forward arm circles"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "7810504a-8137-4101-931e-17ceedc9c006",
-  "description": "Tenez-vous debout, le dos bien droit. \n Gardez vos bras droits, amenez les devant vous, puis vers le bas, puis derrière votre dos, puis au dessus de votre tête, puis ramenez les en position initiale, devant vous. \n Continuez à faire des cercles avec vos bras comme décrit à l'étape 2.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/994/",
-  "media": []
- },
- {
-  "id": "wger:995",
-  "source_id": 995,
-  "name": "Cercle arrière des bras",
-  "name_en": "Backward arm circles",
-  "aliases": [
-   "Backward arm circles",
-   "Cercle arrière des bras"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "7810504a-8137-4101-931e-17ceedc9c006",
-  "description": "Tenez-vous debout, le dos droit. \n Gardez vos bras tendus, amenez-les devant vous, levez-les au-dessus de votre tête, puis continuez le mouvement derrière votre dos jusqu'à revenir en position initiale. \n Continuez à faire des cercles comme décrit à l'étape 2.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/995/",
-  "media": []
- },
- {
-  "id": "wger:996",
-  "source_id": 996,
-  "name": "Escaladeurs de montagne",
-  "name_en": "Mountain climbers",
-  "aliases": [
-   "Escaladeurs de montagne",
-   "Mountain climbers"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \n Commencez par la position debout des pompes ou de la planche haute.Les mains doivent se trouver directement sous vos épaules.Gardez la tête dans le prolongement du dos, face au sol.Les pieds doivent être écartés d'environ la largeur des hanches. \n Étapes : \n \n Déplacez un genou vers le centre de votre corps, vers vos coudes, en gardant l'autre jambe tendue. \n Dans un mouvement de saut rapide, redressez la jambe pliée et tirez l'autre genou vers votre corps. \n Répétez l'étape 2 en alternant les jambes. \n \n Remarques : \n Tout au long de l'exercice, votre dos doit rester aussi droit que possible – évitez d'avoir une bosse ou un dos affaissé.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/996/",
-  "media": []
- },
- {
-  "id": "wger:997",
-  "source_id": 997,
-  "name": "Burpees (4 phases)",
-  "name_en": "4-count burpees",
-  "aliases": [
-   "4-count burpees",
-   "Burpees (4 phases)"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \n Tenez-vous droit, les pieds écartés de la largeur des hanches. \n Étapes : \n \n Accroupissez-vous et prenez appui sur le sol avec les mains entre les genoux et devant les pieds, le dos droit. \n En gardant les mains sur le sol, sautez vos jambes vers l'arrière en position de planche haute. \n Sautez vers l'avant pour revenir à la position de squat. \n Répétez l'exercice.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/997/",
-  "media": []
- },
- {
-  "id": "wger:998",
-  "source_id": 998,
-  "name": "Burpees sans saut",
-  "name_en": "No push-up burpees",
-  "aliases": [
-   "Burpees sans saut",
-   "No push-up burpees",
-   "No push up burpees",
-   "No pushup burpees"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \n Se tenir droit, les pieds écartés de la largeur des hanches. \n Étapes: \n \n Accroupissez-vous et appuyez-vous sur le sol avec vos mains entre les genoux et devant vos pieds, le dos droit. \n En gardant les mains au sol, donnez une impulsion pour envoyer vos jambes vers l'arrière en position de planche haute. \n Donnez une nouvelle impulsion pour revenir à la position accroupie. \n Sautez. \n Répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/998/",
-  "media": []
- },
- {
-  "id": "wger:999",
-  "source_id": 999,
-  "name": "Fentes arrière",
-  "name_en": "Reverse lunges",
-  "aliases": [
-   "Fentes arrière",
-   "Reverse lunges"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
-  "description": "Position de départ : \n Tenez-vous droit, les pieds écartés à la largeur des hanches. \n Étapes : \n \n Faites un pas en arrière avec une jambe afin qu'elle puisse se fléchir confortablement à un angle de 90 degrés. \n Fléchissez lentement les deux genoux pour former des angles de 90 degrés. \n Revenez à la position de départ. \n Répétez en alternant les jambes.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/999/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/999/d0931eb3-8db0-4049-bb08-aa4036072056.jfif",
-    "codec": null,
+  {
+    "id": "wger:981",
+    "source_id": 981,
+    "name": "Marches",
+    "name_en": "Step-ups",
+    "aliases": [
+      "Marches",
+      "Step-ups",
+      "Chair steps"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Bench"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Tenez-vous debout face à une chaise \n Montez sur la chaise \n Descendez de la chaise \n Répétez",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "philip"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   },
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/999/8548b2d2-004d-48b4-95fd-b1b25f4e53d0.jfif",
-    "codec": null,
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/981/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings",
+      "Calves"
+    ]
+  },
+  {
+    "id": "wger:983",
+    "source_id": 983,
+    "name": "Genoux hauts",
+    "name_en": "High knees",
+    "aliases": [
+      "Genoux hauts",
+      "High knees",
+      "Running in place"
+    ],
+    "category": "Cardio",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Courez sur place, en plaçant les genoux aussi haut que possible et en changeant de jambe à un rythme rapide",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "philip"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": false
-   }
-  ]
- },
- {
-  "id": "wger:1000",
-  "source_id": 1000,
-  "name": "Dips au sol",
-  "name_en": "Floor dips",
-  "aliases": [
-   "Dips au sol",
-   "Floor dips"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "Position de départ : \n Asseyez-vous, les bras derrière vous pour soutenir le dos. Vos doigts doivent pointer vers l'avant. Vos genoux doivent être fléchis, les pieds joints. \n Étapes : \n \n Soulevez les hanches du sol en tendant les bras. \n Fléchissez les coudes en abaissant les hanches. \n Tendez les bras pour revenir à la position précédente. \n Répétez les étapes 2 et 3. \n \n Notes : \n La difficulté de l'exercice dépend de la hauteur à laquelle vous montez les hanches.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/983/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1000/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1000/553266a8-a972-48c5-a014-b12afac66f65.png",
-    "codec": null,
+  {
+    "id": "wger:984",
+    "source_id": 984,
+    "name": "Fentes",
+    "name_en": "Lunges",
+    "aliases": [
+      "Fentes",
+      "Lunges"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
+    "description": "Tenez-vous debout, le dos droit \n Faites un grand pas en avant avec votre jambe gauche \n Descendez votre bassin jusqu'à ce que votre genou droit touche presque le sol. \n Remontez votre bassin \n Revenez à la position debout en faisant un pas en arrière \n Répétez l'opération en changeant de jambe à chaque fois",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Franpol"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1001",
-  "source_id": 1001,
-  "name": "Planche haute",
-  "name_en": "High plank",
-  "aliases": [
-   "High plank",
-   "Planche haute"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": "35343f78-00cf-4b34-9f50-7f45d37555ca",
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/984/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/984/5c7ffe68-e7b2-47f3-a22a-f9cc28640432.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Franpol"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Hamstrings"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1001/",
-  "media": []
- },
- {
-  "id": "wger:1002",
-  "source_id": 1002,
-  "name": "Position de l'enfant",
-  "name_en": "Child's pose",
-  "aliases": [
-   "Child's pose",
-   "Position de l'enfant",
-   "Prayer pose"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1002/",
-  "media": []
- },
- {
-  "id": "wger:1003",
-  "source_id": 1003,
-  "name": "Haltères de kettlebell",
-  "name_en": "Kettlebell deadlifts",
-  "aliases": [
-   "Haltères de kettlebell",
-   "Kettlebell deadlifts"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Kettlebell"
-  ],
-  "muscles": [
-   "Hamstrings",
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1003/",
-  "media": []
- },
- {
-  "id": "wger:1004",
-  "source_id": 1004,
-  "name": "Rotation de l'épaule vers l'avant",
-  "name_en": "Forward shoulder rotation",
-  "aliases": [
-   "Forward shoulder rotation",
-   "Rotation de l'épaule vers l'avant"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "61ce3ada-b0ca-40d9-9686-af83497251b7",
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1004/",
-  "media": []
- },
- {
-  "id": "wger:1005",
-  "source_id": 1005,
-  "name": "Rotation de l'épaule vers l'arrière",
-  "name_en": "Backward shoulder rotation",
-  "aliases": [
-   "Backward shoulder rotation",
-   "Rotation de l'épaule vers l'arrière"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "61ce3ada-b0ca-40d9-9686-af83497251b7",
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1005/",
-  "media": []
- },
- {
-  "id": "wger:1006",
-  "source_id": 1006,
-  "name": "Rentré de menton",
-  "name_en": "Chin tuck",
-  "aliases": [
-   "Chin tuck",
-   "Rentré de menton"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \n Asseyez-vous ou tenez-vous debout, le dos droit. \n Étapes : \n \n À l'aide des doigts posés sur le menton, rentrez lentement le menton en ramenant la tête vers l'arrière pour l'aligner avec la colonne vertébrale. \n Maintenez pendant 5 secondes. \n Revenez à la position normale de la tête et répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1006/",
-  "media": []
- },
- {
-  "id": "wger:1007",
-  "source_id": 1007,
-  "name": "Tour de tête",
-  "name_en": "Head turns",
-  "aliases": [
-   "Head turns",
-   "Tour de tête"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \n Asseyez-vous ou tenez-vous debout, le dos droit et les épaules basses. \n Étapes : \n \n Asseyez-vous ou tenez-vous debout, le dos droit. Épaules baissées. \n Tournez la tête vers la gauche aussi loin que possible. Arrêtez-vous lorsque vous rencontrez un obstacle et maintenez cette position pendant 5 secondes. \n Revenez à la position centrale. \n Répétez en changeant de côté.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1007/",
-  "media": []
- },
- {
-  "id": "wger:1008",
-  "source_id": 1008,
-  "name": "Étirement du cou à gauche",
-  "name_en": "Left neck stretch",
-  "aliases": [
-   "Left neck stretch",
-   "Étirement du cou à gauche"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "f3b26e21-9855-4409-ac26-bf1d070554bd",
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1008/",
-  "media": []
- },
- {
-  "id": "wger:1009",
-  "source_id": 1009,
-  "name": "Étirement du cou à droite",
-  "name_en": "Right neck stretch",
-  "aliases": [
-   "Right neck stretch",
-   "Étirement du cou à droite"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "f3b26e21-9855-4409-ac26-bf1d070554bd",
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1009/",
-  "media": []
- },
- {
-  "id": "wger:1010",
-  "source_id": 1010,
-  "name": "Flexion du cou",
-  "name_en": "Back neck stretch",
-  "aliases": [
-   "Back neck stretch",
-   "Flexion du cou"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1010/",
-  "media": []
- },
- {
-  "id": "wger:1011",
-  "source_id": 1011,
-  "name": "Étirement du cou en avant",
-  "name_en": "Front neck stretch",
-  "aliases": [
-   "Front neck stretch",
-   "Étirement du cou en avant"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1011/",
-  "media": []
- },
- {
-  "id": "wger:1012",
-  "source_id": 1012,
-  "name": "Curls biceps alternés",
-  "name_en": "Alternating bicep curls",
-  "aliases": [
-   "Alternating bicep curls",
-   "Curls biceps alternés"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "Position de départ : \n Commencez debout, un haltère dans chaque main, le dos droit et les pieds écartés à la largeur des hanches. Vos bras doivent être détendus et pointer vers le bas. Vos genoux doivent être légèrement fléchis, les abdominaux contractés et les épaules basses. \n Étapes : \n \n Fléchissez un bras au niveau du coude en ramenant l'haltère vers l'épaule. Le haut de votre bras doit rester immobile pendant ce mouvement. \n Abaissez l'haltère jusqu'à ce que le bras retrouve sa position détendue de départ. \n Répétez en changeant de bras.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1012/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1012/8270fdb8-28f1-4eff-b410-af8642085b3f.png",
-    "codec": null,
+  {
+    "id": "wger:985",
+    "source_id": 985,
+    "name": "Pompes avec rotation",
+    "name_en": "Push-up rotations",
+    "aliases": [
+      "Pompes avec rotation",
+      "Push-up rotations",
+      "Push up rotations",
+      "Pushup rotations"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Chest",
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "Faites une pompe standard : \n \n 1.a Allongez-vous sur le ventre1.b Placez vos mains près de vos oreilles1.c Utilisez vos bras pour soulever votre ventre jusqu'à ce que les bras soient droits, en gardant le dos droit1.d Pliez les bras jusqu'à ce que la poitrine touche presque le sol, en vous assurant que le dos est droit1.e Soulevez à nouveau votre ventre et revenez à l'étape 1.c \n \n Faites pivoter votre corps sur le côté pour que le dos soit droit, que la main inférieure soutenant le corps soit complètement étendue et que seuls la main et le pied inférieurs touchent le sol \n Répétez, en changeant de côté à chaque fois",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Franpol"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1013",
-  "source_id": 1013,
-  "name": "Étirement de l'angulaire de l'omoplate gauche",
-  "name_en": "Left levator scapulae stretch",
-  "aliases": [
-   "Left levator scapulae stretch",
-   "Étirement de l'angulaire de l'omoplate gauche"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "9588b37d-e19b-42e8-8e82-be71ec1c25ba",
-  "description": "Position de départ : \n Commencez debout ou assis. Tournez la tête vers la gauche, d'environ 45 degrés ou juste au-dessus du mamelon. Placez la main droite dans le dos ou asseyez-vous dessus. Avec la main gauche, tenez l'arrière de votre tête. Penchez légèrement la tête vers le bas. \n Étapes : \n \n Une fois la position de départ adoptée, appuyez la tête contre la main gauche avec une légère force. Votre main doit résister avec une force égale, de sorte que la tête ne bouge pas. Maintenez cette position.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/985/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Obliquus externus abdominis"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:986",
+    "source_id": 986,
+    "name": "Fentes latérales gauches",
+    "name_en": "Side split squats left",
+    "aliases": [
+      "Fentes latérales gauches",
+      "Side split squats left"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
+    "description": "Tenez-vous droit et faites une large foulée latérale, juste supérieure à la largeur des épaules \n Pliez un genou jusqu'à ce que votre cuisse soit parallèle au sol. Le genou plié doit être aligné avec le pied \n Revenez à la position de départ et répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/986/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1013/",
-  "media": []
- }
+  {
+    "id": "wger:987",
+    "source_id": 987,
+    "name": "Fentes latérales droites",
+    "name_en": "Side split squats right",
+    "aliases": [
+      "Fentes latérales droites",
+      "Side split squats right"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
+    "description": "Tenez-vous droit et faites une large foulée latérale, juste supérieure à la largeur des épaules \n Pliez un genou jusqu'à ce que votre cuisse soit parallèle au sol. Le genou plié doit être aligné avec le pied \n Revenez à la position de départ et répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/987/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:988",
+    "source_id": 988,
+    "name": "Squats bulgares gauches",
+    "name_en": "Bulgarian split squats left",
+    "aliases": [
+      "Bulgarian split squats left",
+      "Squats bulgares gauches"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
+    "description": "Tenez-vous droit devant une chaise et faites un grand pas. Placez la partie supérieure de l'un de vos pieds sur la chaise \n Pliez le genou avant, en équilibre avec les bras jusqu'à ce que le genou arrière touche presque le sol \n Revenez à la position de départ et répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/988/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/988/6283b258-a4d7-4833-84f7-a38987022d3d.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Franpol"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Hamstrings"
+    ]
+  },
+  {
+    "id": "wger:989",
+    "source_id": 989,
+    "name": "Squats bulgares droites",
+    "name_en": "Bulgarian split squats right",
+    "aliases": [
+      "Bulgarian split squats right",
+      "Squats bulgares droites"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
+    "description": "Tenez-vous droit devant une chaise et faites un grand pas. Placez la partie supérieure de l'un de vos pieds sur la chaise \n Pliez le genou avant, en équilibre avec les bras jusqu'à ce que le genou arrière touche presque le sol \n Revenez à la position de départ et répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/989/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings"
+    ]
+  },
+  {
+    "id": "wger:990",
+    "source_id": 990,
+    "name": "Extensions de la hanche",
+    "name_en": "Kneeling kickbacks",
+    "aliases": [
+      "Extensions de la hanche",
+      "Kneeling kickbacks"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Mettez-vous à quatre pattes \n Poussez un pied en arrière jusqu'à ce qu'il soit complètement étendu, en vous concentrant sur les muscles fessiers \n Restez une seconde, puis revenez à la position initiale \n Répétez, en alternant les pieds",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/990/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings"
+    ]
+  },
+  {
+    "id": "wger:991",
+    "source_id": 991,
+    "name": "Fentes avant gauches",
+    "name_en": "Split squats left",
+    "aliases": [
+      "Fentes avant gauches",
+      "Split squats left"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
+    "description": "Tenez-vous debout avec le dos droit \n Faites un grand pas en avant avec votre jambe gauche \n Abaissez votre bassin jusqu'à ce que vous touchiez presque le sol avec votre genou droit \n Ramenez votre bassin vers le haut \n Répétez à partir de l'étape 3.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/991/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings"
+    ]
+  },
+  {
+    "id": "wger:992",
+    "source_id": 992,
+    "name": "Fentes avant droites",
+    "name_en": "Split squats right",
+    "aliases": [
+      "Fentes avant droites",
+      "Split squats right"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": "02cd56f5-11d3-4c0e-86a1-773c8fc3cd66",
+    "description": "Tenez-vous debout avec le dos droit \n Faites un grand pas en avant avec votre jambe droite \n Abaissez votre bassin jusqu'à ce que vous touchiez presque le sol avec votre genou gauche \n Ramenez votre bassin vers le haut \n Répétez à partir de l'étape 3.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/992/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings"
+    ]
+  },
+  {
+    "id": "wger:993",
+    "source_id": 993,
+    "name": "Corde à sauter : sauts de base",
+    "name_en": "Jump rope: basic jumps",
+    "aliases": [
+      "Corde à sauter : sauts de base",
+      "Jump rope: basic jumps"
+    ],
+    "category": "Cardio",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Cet exercice nécessite une corde à sauter. Assurez-vous que la longueur de la corde est adaptée à votre taille. Une mamière de vérifier est de saisir les deux poignées d'une main et de se tenir au milieu de la corde suspendue au sol avec un pied. Si la corde (sans les poignées) arrive juste sous votre poitrine, sa longueur est correcte. Une corde plus courte serait dangereuse, car vous risqueriez de vous cogner, et une corde plus longue serait mauvaise pour la forme. \n \n Rapprochez vos pieds, pliez un peu les genoux, gardez la tête et le corps droits, gardez les coudes rentrés, ouvrez les bras. \n Faites tourner uniquement vos poignets avec suffisamment de force pour faire tourner la corde. \n Sautez juste assez haut pour faire passer la corde sous vos pieds. \n Répétez à partir de l'étape 2.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/993/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:994",
+    "source_id": 994,
+    "name": "Cercles avant des bras",
+    "name_en": "Forward arm circles",
+    "aliases": [
+      "Cercles avant des bras",
+      "Forward arm circles"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "7810504a-8137-4101-931e-17ceedc9c006",
+    "description": "Tenez-vous debout, le dos bien droit. \n Gardez vos bras droits, amenez les devant vous, puis vers le bas, puis derrière votre dos, puis au dessus de votre tête, puis ramenez les en position initiale, devant vous. \n Continuez à faire des cercles avec vos bras comme décrit à l'étape 2.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/994/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:995",
+    "source_id": 995,
+    "name": "Cercle arrière des bras",
+    "name_en": "Backward arm circles",
+    "aliases": [
+      "Backward arm circles",
+      "Cercle arrière des bras"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "7810504a-8137-4101-931e-17ceedc9c006",
+    "description": "Tenez-vous debout, le dos droit. \n Gardez vos bras tendus, amenez-les devant vous, levez-les au-dessus de votre tête, puis continuez le mouvement derrière votre dos jusqu'à revenir en position initiale. \n Continuez à faire des cercles comme décrit à l'étape 2.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/995/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:996",
+    "source_id": 996,
+    "name": "Escaladeurs de montagne",
+    "name_en": "Mountain climbers",
+    "aliases": [
+      "Escaladeurs de montagne",
+      "Mountain climbers"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \n Commencez par la position debout des pompes ou de la planche haute.Les mains doivent se trouver directement sous vos épaules.Gardez la tête dans le prolongement du dos, face au sol.Les pieds doivent être écartés d'environ la largeur des hanches. \n Étapes : \n \n Déplacez un genou vers le centre de votre corps, vers vos coudes, en gardant l'autre jambe tendue. \n Dans un mouvement de saut rapide, redressez la jambe pliée et tirez l'autre genou vers votre corps. \n Répétez l'étape 2 en alternant les jambes. \n \n Remarques : \n Tout au long de l'exercice, votre dos doit rester aussi droit que possible – évitez d'avoir une bosse ou un dos affaissé.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/996/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:997",
+    "source_id": 997,
+    "name": "Burpees (4 phases)",
+    "name_en": "4-count burpees",
+    "aliases": [
+      "4-count burpees",
+      "Burpees (4 phases)"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \n Tenez-vous droit, les pieds écartés de la largeur des hanches. \n Étapes : \n \n Accroupissez-vous et prenez appui sur le sol avec les mains entre les genoux et devant les pieds, le dos droit. \n En gardant les mains sur le sol, sautez vos jambes vers l'arrière en position de planche haute. \n Sautez vers l'avant pour revenir à la position de squat. \n Répétez l'exercice.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/997/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:998",
+    "source_id": 998,
+    "name": "Burpees sans saut",
+    "name_en": "No push-up burpees",
+    "aliases": [
+      "Burpees sans saut",
+      "No push-up burpees",
+      "No push up burpees",
+      "No pushup burpees"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \n Se tenir droit, les pieds écartés de la largeur des hanches. \n Étapes: \n \n Accroupissez-vous et appuyez-vous sur le sol avec vos mains entre les genoux et devant vos pieds, le dos droit. \n En gardant les mains au sol, donnez une impulsion pour envoyer vos jambes vers l'arrière en position de planche haute. \n Donnez une nouvelle impulsion pour revenir à la position accroupie. \n Sautez. \n Répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/998/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:999",
+    "source_id": 999,
+    "name": "Fentes arrière",
+    "name_en": "Reverse lunges",
+    "aliases": [
+      "Fentes arrière",
+      "Reverse lunges"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
+    "description": "Position de départ : \n Tenez-vous droit, les pieds écartés à la largeur des hanches. \n Étapes : \n \n Faites un pas en arrière avec une jambe afin qu'elle puisse se fléchir confortablement à un angle de 90 degrés. \n Fléchissez lentement les deux genoux pour former des angles de 90 degrés. \n Revenez à la position de départ. \n Répétez en alternant les jambes.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/999/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/999/d0931eb3-8db0-4049-bb08-aa4036072056.jfif",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "philip"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      },
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/999/8548b2d2-004d-48b4-95fd-b1b25f4e53d0.jfif",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "philip"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": false
+      }
+    ],
+    "muscles_secondary": [
+      "Hamstrings"
+    ]
+  },
+  {
+    "id": "wger:1000",
+    "source_id": 1000,
+    "name": "Dips au sol",
+    "name_en": "Floor dips",
+    "aliases": [
+      "Dips au sol",
+      "Floor dips"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "Position de départ : \n Asseyez-vous, les bras derrière vous pour soutenir le dos. Vos doigts doivent pointer vers l'avant. Vos genoux doivent être fléchis, les pieds joints. \n Étapes : \n \n Soulevez les hanches du sol en tendant les bras. \n Fléchissez les coudes en abaissant les hanches. \n Tendez les bras pour revenir à la position précédente. \n Répétez les étapes 2 et 3. \n \n Notes : \n La difficulté de l'exercice dépend de la hauteur à laquelle vous montez les hanches.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1000/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1000/553266a8-a972-48c5-a014-b12afac66f65.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Franpol"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Shoulders",
+      "Chest"
+    ]
+  },
+  {
+    "id": "wger:1001",
+    "source_id": 1001,
+    "name": "Planche haute",
+    "name_en": "High plank",
+    "aliases": [
+      "High plank",
+      "Planche haute"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": "35343f78-00cf-4b34-9f50-7f45d37555ca",
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1001/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Obliquus externus abdominis",
+      "Triceps"
+    ]
+  },
+  {
+    "id": "wger:1002",
+    "source_id": 1002,
+    "name": "Position de l'enfant",
+    "name_en": "Child's pose",
+    "aliases": [
+      "Child's pose",
+      "Position de l'enfant",
+      "Prayer pose"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1002/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1003",
+    "source_id": 1003,
+    "name": "Haltères de kettlebell",
+    "name_en": "Kettlebell deadlifts",
+    "aliases": [
+      "Haltères de kettlebell",
+      "Kettlebell deadlifts"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Kettlebell"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1003/",
+    "media": [],
+    "muscles_secondary": [
+      "Quads",
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:1004",
+    "source_id": 1004,
+    "name": "Rotation de l'épaule vers l'avant",
+    "name_en": "Forward shoulder rotation",
+    "aliases": [
+      "Forward shoulder rotation",
+      "Rotation de l'épaule vers l'avant"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "61ce3ada-b0ca-40d9-9686-af83497251b7",
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1004/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1005",
+    "source_id": 1005,
+    "name": "Rotation de l'épaule vers l'arrière",
+    "name_en": "Backward shoulder rotation",
+    "aliases": [
+      "Backward shoulder rotation",
+      "Rotation de l'épaule vers l'arrière"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "61ce3ada-b0ca-40d9-9686-af83497251b7",
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1005/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1006",
+    "source_id": 1006,
+    "name": "Rentré de menton",
+    "name_en": "Chin tuck",
+    "aliases": [
+      "Chin tuck",
+      "Rentré de menton"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \n Asseyez-vous ou tenez-vous debout, le dos droit. \n Étapes : \n \n À l'aide des doigts posés sur le menton, rentrez lentement le menton en ramenant la tête vers l'arrière pour l'aligner avec la colonne vertébrale. \n Maintenez pendant 5 secondes. \n Revenez à la position normale de la tête et répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1006/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1007",
+    "source_id": 1007,
+    "name": "Tour de tête",
+    "name_en": "Head turns",
+    "aliases": [
+      "Head turns",
+      "Tour de tête"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \n Asseyez-vous ou tenez-vous debout, le dos droit et les épaules basses. \n Étapes : \n \n Asseyez-vous ou tenez-vous debout, le dos droit. Épaules baissées. \n Tournez la tête vers la gauche aussi loin que possible. Arrêtez-vous lorsque vous rencontrez un obstacle et maintenez cette position pendant 5 secondes. \n Revenez à la position centrale. \n Répétez en changeant de côté.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1007/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1008",
+    "source_id": 1008,
+    "name": "Étirement du cou à gauche",
+    "name_en": "Left neck stretch",
+    "aliases": [
+      "Left neck stretch",
+      "Étirement du cou à gauche"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "f3b26e21-9855-4409-ac26-bf1d070554bd",
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1008/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1009",
+    "source_id": 1009,
+    "name": "Étirement du cou à droite",
+    "name_en": "Right neck stretch",
+    "aliases": [
+      "Right neck stretch",
+      "Étirement du cou à droite"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "f3b26e21-9855-4409-ac26-bf1d070554bd",
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1009/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1010",
+    "source_id": 1010,
+    "name": "Flexion du cou",
+    "name_en": "Back neck stretch",
+    "aliases": [
+      "Back neck stretch",
+      "Flexion du cou"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1010/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1011",
+    "source_id": 1011,
+    "name": "Étirement du cou en avant",
+    "name_en": "Front neck stretch",
+    "aliases": [
+      "Front neck stretch",
+      "Étirement du cou en avant"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1011/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1012",
+    "source_id": 1012,
+    "name": "Curls biceps alternés",
+    "name_en": "Alternating bicep curls",
+    "aliases": [
+      "Alternating bicep curls",
+      "Curls biceps alternés"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "Position de départ : \n Commencez debout, un haltère dans chaque main, le dos droit et les pieds écartés à la largeur des hanches. Vos bras doivent être détendus et pointer vers le bas. Vos genoux doivent être légèrement fléchis, les abdominaux contractés et les épaules basses. \n Étapes : \n \n Fléchissez un bras au niveau du coude en ramenant l'haltère vers l'épaule. Le haut de votre bras doit rester immobile pendant ce mouvement. \n Abaissez l'haltère jusqu'à ce que le bras retrouve sa position détendue de départ. \n Répétez en changeant de bras.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1012/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1012/8270fdb8-28f1-4eff-b410-af8642085b3f.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Franpol"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Brachialis"
+    ]
+  },
+  {
+    "id": "wger:1013",
+    "source_id": 1013,
+    "name": "Étirement de l'angulaire de l'omoplate gauche",
+    "name_en": "Left levator scapulae stretch",
+    "aliases": [
+      "Left levator scapulae stretch",
+      "Étirement de l'angulaire de l'omoplate gauche"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "9588b37d-e19b-42e8-8e82-be71ec1c25ba",
+    "description": "Position de départ : \n Commencez debout ou assis. Tournez la tête vers la gauche, d'environ 45 degrés ou juste au-dessus du mamelon. Placez la main droite dans le dos ou asseyez-vous dessus. Avec la main gauche, tenez l'arrière de votre tête. Penchez légèrement la tête vers le bas. \n Étapes : \n \n Une fois la position de départ adoptée, appuyez la tête contre la main gauche avec une légère force. Votre main doit résister avec une force égale, de sorte que la tête ne bouge pas. Maintenez cette position.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1013/",
+    "media": [],
+    "muscles_secondary": []
+  }
 ]

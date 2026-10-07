@@ -1,1608 +1,1665 @@
 [
- {
-  "id": "wger:1826",
-  "source_id": 1826,
-  "name": "Écarté à l'élastique avec rotation externe",
-  "name_en": "Band pull-apart with external rotation",
-  "aliases": [
-   "Band pull-apart with external rotation",
-   "Écarté à l'élastique avec rotation externe"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Resistance band"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Tenez-vous bien droit, les pieds écartés de la largeur des épaules, la poitrine sortie et les épaules en arrière. \n Tenez l'élastique des deux mains, les paumes vers le haut ou se faisant face selon le type d'élastique. \n Fléchissez les coudes à un angle de 90 degrés et collez la partie supérieure des bras contre vos côtés. \n L'élastique doit présenter une certaine tension en position de départ, vos mains plus rapprochées devant votre ventre. \n Rotation vers l'extérieur : Tout en gardant les coudes serrés contre vos côtés, éloignez lentement vos mains l'une de l'autre en étirant l'élastique. \n Contraction : Rapprochez vos omoplates et abaissez-les pendant que vous tournez les mains vers l'extérieur. \n Amplitude de mouvement : Tournez vos mains aussi loin vers l'extérieur que vous le pouvez confortablement, sans laisser vos coudes quitter vos côtés. \n Maintien : Maintenez la position finale pendant 1 à 2 secondes pour maximiser la sollicitation musculaire. \n Retour : Ramenez lentement et avec contrôle vos mains à la position de départ.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "beagle"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1826/",
-  "media": []
- },
- {
-  "id": "wger:1827",
-  "source_id": 1827,
-  "name": "Pression abdominale à deux jambes",
-  "name_en": "Double-Leg Abdominal Press",
-  "aliases": [
-   "Double-Leg Abdominal Press",
-   "Pression abdominale à deux jambes"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "Gym mat"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Allongez-vous sur le dos, les genoux et les hanches fléchis à 90 degrés (position de la table). \n Placez vos mains sur vos cuisses, juste au-dessus des genoux. Poussez vos mains contre vos genoux aussi fort que possible tout en utilisant vos abdominaux pour tirer vos genoux vers vos mains. \n Maintenez pendant 10 secondes à effort maximal. Vos abdominaux devraient trembler.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "beagle"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1827/",
-  "media": []
- },
- {
-  "id": "wger:1828",
-  "source_id": 1828,
-  "name": "Rentrée du ventre",
-  "name_en": "Abdominal Draw-In",
-  "aliases": [
-   "Abdominal Draw-In",
-   "Rentrée du ventre"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Allongez-vous sur le dos, les genoux fléchis. Rentrez doucement votre nombril vers votre colonne, sans bouger vos hanches ni retenir votre respiration.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "beagle"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1828/",
-  "media": []
- },
- {
-  "id": "wger:1829",
-  "source_id": 1829,
-  "name": "Squat-développé au landmine",
-  "name_en": "Landmine Squat to Press",
-  "aliases": [
-   "Landmine Squat to Press",
-   "Squat-développé au landmine"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Barbell"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Position de la barre : Ancrez une extrémité d'une barre dans un support landmine ou un coin sûr.\nPosture : Tenez-vous face à la barre, les pieds un peu plus écartés que la largeur des épaules. Orientez les orteils vers l'extérieur de 10 à 35 degrés pour permettre un meilleur mouvement du bassin et plus de profondeur.\nPrise : Enveloppez l'extrémité libre de la barre des deux mains (doigts entrelacés ou superposés) et tenez-la au milieu de la poitrine, juste sous la clavicule. \n Descente : Gainez la sangle abdominale et asseyez-vous vers l'arrière en squat, en gardant la poitrine haute et le poids sur les talons.\nProfondeur : Descendez jusqu'à ce que vos cuisses soient au moins parallèles au sol. Un bon repère est lorsque vos coudes touchent le haut de vos cuisses ou juste à l'intérieur de vos genoux.\nPosture : Veillez à garder le dos plat et la colonne neutre tout au long du mouvement. \n Poussée : Poussez puissamment à travers vos talons pour vous relever. Utilisez l'élan de vos jambes pour « propulser » la charge vers le haut.\nExtension : En un mouvement fluide, poussez la barre au-dessus de la tête jusqu'à l'extension complète des bras. En haut, vos biceps doivent être près de vos oreilles.\nL'inclinaison : Lorsque vous atteignez le haut de la poussée, penchez-vous légèrement vers l'avant dans la barre pour favoriser une bonne rotation des omoplates vers le haut et éviter de cambrer le bas du dos. \n Abaissez lentement la barre à hauteur de la poitrine de façon contrôlée avant d'enchaîner immédiatement la répétition suivante.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "beagle"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1829/",
-  "media": []
- },
- {
-  "id": "wger:1830",
-  "source_id": 1830,
-  "name": "Fente arrière à la barre",
-  "name_en": "Barbell Step Back Lunge",
-  "aliases": [
-   "Barbell Step Back Lunge",
-   "Fente arrière à la barre",
-   "Barbell Reverse Lunge"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Barbell"
-  ],
-  "muscles": [
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Étape 1 : Tenez-vous debout, les pieds écartés de la largeur des hanches, en maintenant une barre sur le haut du dos.\nÉtape 2 : Gardez le dos droit, la poitrine ouverte et la sangle abdominale engagée.\nÉtape 3 : Faites un pas en arrière avec une jambe et abaissez votre corps en pliant les deux genoux. Assurez-vous que le genou arrière touche presque le sol.\nÉtape 4 : Poussez sur le pied arrière pour revenir à la position de départ.\nÉtape 5 : Répétez le mouvement avec l'autre jambe.\nContinuez à alterner les jambes pour le nombre de répétitions souhaité.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1830/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1830/3b6c547c-ab3d-4472-93cf-561710279eab.jpg",
-    "codec": null,
+  {
+    "id": "wger:1826",
+    "source_id": 1826,
+    "name": "Écarté à l'élastique avec rotation externe",
+    "name_en": "Band pull-apart with external rotation",
+    "aliases": [
+      "Band pull-apart with external rotation",
+      "Écarté à l'élastique avec rotation externe"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Resistance band"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Tenez-vous bien droit, les pieds écartés de la largeur des épaules, la poitrine sortie et les épaules en arrière. \n Tenez l'élastique des deux mains, les paumes vers le haut ou se faisant face selon le type d'élastique. \n Fléchissez les coudes à un angle de 90 degrés et collez la partie supérieure des bras contre vos côtés. \n L'élastique doit présenter une certaine tension en position de départ, vos mains plus rapprochées devant votre ventre. \n Rotation vers l'extérieur : Tout en gardant les coudes serrés contre vos côtés, éloignez lentement vos mains l'une de l'autre en étirant l'élastique. \n Contraction : Rapprochez vos omoplates et abaissez-les pendant que vous tournez les mains vers l'extérieur. \n Amplitude de mouvement : Tournez vos mains aussi loin vers l'extérieur que vous le pouvez confortablement, sans laisser vos coudes quitter vos côtés. \n Maintien : Maintenez la position finale pendant 1 à 2 secondes pour maximiser la sollicitation musculaire. \n Retour : Ramenez lentement et avec contrôle vos mains à la position de départ.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "hans"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "beagle"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1831",
-  "source_id": 1831,
-  "name": "Développé décliné sur machine Hammer Strength",
-  "name_en": "Hammerstrength Decline Chest Press",
-  "aliases": [
-   "Développé décliné sur machine Hammer Strength",
-   "Hammerstrength Decline Chest Press",
-   "Hammerstrength Decline Press"
-  ],
-  "category": "Chest",
-  "equipment": [],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Asseyez-vous bien droit sur une machine Hammer Strength de développé décliné en rapprochant vos omoplates et en posant fermement les talons au sol, sous les genoux. \n Le dossier doit rester en contact avec votre tête, vos épaules et vos fessiers à tout moment. \n Saisissez les poignées en prise pronation, juste un peu plus large que la largeur des épaules, légèrement sous la poitrine. \n En gardant la sangle abdominale gainée par une respiration ventrale et une contraction des abdominaux, poussez à travers les paumes pour tendre les coudes tout en les maintenant à un angle de 45 degrés par rapport au torse. \n Une fois les bras complètement tendus, revenez à la position de départ.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1826/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1831/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1831/2d9d509f-707b-4132-961e-91a2459ca198.jpg",
-    "codec": null,
+  {
+    "id": "wger:1827",
+    "source_id": 1827,
+    "name": "Pression abdominale à deux jambes",
+    "name_en": "Double-Leg Abdominal Press",
+    "aliases": [
+      "Double-Leg Abdominal Press",
+      "Pression abdominale à deux jambes"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "Gym mat"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Allongez-vous sur le dos, les genoux et les hanches fléchis à 90 degrés (position de la table). \n Placez vos mains sur vos cuisses, juste au-dessus des genoux. Poussez vos mains contre vos genoux aussi fort que possible tout en utilisant vos abdominaux pour tirer vos genoux vers vos mains. \n Maintenez pendant 10 secondes à effort maximal. Vos abdominaux devraient trembler.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "hans"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "beagle"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1832",
-  "source_id": 1832,
-  "name": "Maintien en appui aux anneaux",
-  "name_en": "Ring Support Hold",
-  "aliases": [
-   "Maintien en appui aux anneaux",
-   "Ring Support Hold"
-  ],
-  "category": "Chest",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Maintenez-vous en position d'appui sur des anneaux de gymnastique, les bras tendus le long du corps. Veillez à garder les anneaux légèrement tournés vers l'extérieur et à conserver une position de corps creux. Il s'agit d'un maintien isométrique pour les pectoraux, les épaules et les triceps.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1827/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1832/",
-  "media": []
- },
- {
-  "id": "wger:1833",
-  "source_id": 1833,
-  "name": "Curl des ischio-jambiers avec sliders au sol",
-  "name_en": "Floor Glider Hamstring Curls",
-  "aliases": [
-   "Curl des ischio-jambiers avec sliders au sol",
-   "Floor Glider Hamstring Curls"
-  ],
-  "category": "Shoulders",
-  "equipment": [],
-  "muscles": [
-   "Hamstrings"
-  ],
-  "variation_group": null,
-  "description": "Allongez-vous sur le dos, les talons posés sur des sliders ou des serviettes. Soulevez les hanches en position de pont, puis faites glisser les talons vers les fessiers tout en gardant les hanches relevées. Revenez lentement à la position de départ en maintenant le pont de hanches.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1833/",
-  "media": []
- },
- {
-  "id": "wger:1834",
-  "source_id": 1834,
-  "name": "Élévation trapèze inférieur (Trap-3)",
-  "name_en": "Trap-3 Raise",
-  "aliases": [
-   "Trap-3 Raise",
-   "Élévation trapèze inférieur (Trap-3)"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Penchez-vous vers l'avant et fléchissez légèrement les genoux. Abaissez et rétractez l'épaule que vous allez utiliser. Posez l'autre main sur votre genou. \n Levez la main d'environ 15 degrés au-dessus de la tête, en maintenant la position de votre épaule.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1834/",
-  "media": []
- },
- {
-  "id": "wger:1835",
-  "source_id": 1835,
-  "name": "Étirement en rotation externe",
-  "name_en": "External Rotation Stretch",
-  "aliases": [
-   "External Rotation Stretch",
-   "Étirement en rotation externe"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Barbell"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Asseyez-vous avec les pieds pressés l'un contre l'autre et un genou relevé complètement sur le côté du corps. \n Placez votre coude sur le genou relevé, pliez-le à 90 degrés et pointez la main droit devant vous, en tenant votre barre ou votre haltère. \n Gardez l'épaule abaissée et rétractée, puis levez la main jusqu'à ce que l'avant-bras soit vertical, comme si vous alliez saluer quelqu'un à la manière d'un robot. \n Abaissez la main jusqu'à la position initiale et répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1835/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1835/ca4a0b7e-9fdd-4173-843a-f0392824abe1.jpg",
-    "codec": null,
+  {
+    "id": "wger:1828",
+    "source_id": 1828,
+    "name": "Rentrée du ventre",
+    "name_en": "Abdominal Draw-In",
+    "aliases": [
+      "Abdominal Draw-In",
+      "Rentrée du ventre"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Allongez-vous sur le dos, les genoux fléchis. Rentrez doucement votre nombril vers votre colonne, sans bouger vos hanches ni retenir votre respiration.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Nick E"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "beagle"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1838",
-  "source_id": 1838,
-  "name": "Exercices d'épaules à l'élastique",
-  "name_en": "Banded Shoulder Drills",
-  "aliases": [
-   "Banded Shoulder Drills",
-   "Exercices d'épaules à l'élastique"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Resistance band"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Chest",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Fixez un élastique à un support solide derrière vous. Tenez-vous à distance en le maintenant dans la main de façon à ce qu'il soit tendu. \n Consultez la vidéo YouTube jointe : https://www.youtube.com/watch?v=zdwEWchSjrI .",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1828/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1838/",
-  "media": []
- },
- {
-  "id": "wger:1839",
-  "source_id": 1839,
-  "name": "Solo Hip Flexor Stretch",
-  "name_en": "Solo Hip Flexor Stretch",
-  "aliases": [
-   "Solo Hip Flexor Stretch"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "See this instructive video: https://www.youtube.com/watch?v=qHwyBHS6MQs .",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1839/",
-  "media": []
- },
- {
-  "id": "wger:1840",
-  "source_id": 1840,
-  "name": "Bent-Leg Hamstring Stretch",
-  "name_en": "Bent-Leg Hamstring Stretch",
-  "aliases": [
-   "Bent-Leg Hamstring Stretch"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "See this instructional video from Stretch Therapy: https://www.youtube.com/watch?v=CrF2iMnn09w .",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1840/",
-  "media": []
- },
- {
-  "id": "wger:1841",
-  "source_id": 1841,
-  "name": "Étirement des épaules en extension assis",
-  "name_en": "Seated Shoulder Extension Stretch",
-  "aliases": [
-   "Seated Shoulder Extension Stretch",
-   "Étirement des épaules en extension assis"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Lats",
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Asseyez-vous avec les mains derrière vous, écartées de la largeur des épaules. \n Verrouillez les coudes. \n Avancez vos pieds et vos hanches vers l'avant, en abaissant vos épaules vers le sol. \n Allez aussi loin que possible pour obtenir un bon étirement. \n \n Consultez la vidéo : https://www.youtube.com/watch?v=ihUAbG0e8zw",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1841/",
-  "media": []
- },
- {
-  "id": "wger:1842",
-  "source_id": 1842,
-  "name": "Coquille à l'élastique",
-  "name_en": "Banded Clamshell",
-  "aliases": [
-   "Banded Clamshell",
-   "Coquille à l'élastique"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Resistance band"
-  ],
-  "muscles": [
-   "Glutes",
-   "Abs"
-  ],
-  "variation_group": "b471b989-15df-47a7-808b-837187506c7a",
-  "description": "Position \nPlanche latérale avec le coude et l'avant-bras au sol et les jambes légèrement fléchies. Tendez un élastique replié en deux entre vos cuisses, juste au-dessus du genou. \n  Exécution \nLevez le genou supérieur tout en gardant les pieds rapprochés, comme une « coquille qui s'ouvre », puis revenez lentement à la position de départ. Gardez la sangle abdominale stable et les hanches alignées.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1842/",
-  "media": []
- },
- {
-  "id": "wger:1843",
-  "source_id": 1843,
-  "name": "Étirement du papillon",
-  "name_en": "Butterfly Stretch",
-  "aliases": [
-   "Butterfly Stretch",
-   "Étirement du papillon"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Asseyez-vous en position de prière, les plantes des pieds doucement collées l'une contre l'autre. \n À l'aide de vos mains, tirez lentement vos pieds vers l'intérieur, en direction de l'aine. Maintenez aussi longtemps que nécessaire.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1843/",
-  "media": []
- },
- {
-  "id": "wger:1844",
-  "source_id": 1844,
-  "name": "Étirement de la grenouille",
-  "name_en": "Frog Stretch",
-  "aliases": [
-   "Frog Stretch",
-   "Étirement de la grenouille"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Mettez-vous à quatre pattes. \n Écartez les genoux vers l'extérieur et descendez sur les coudes. \n Sans bouger les coudes ni les genoux, commencez à vous balancer d'avant en arrière, en cherchant à rapprocher vos fessiers de vos pieds.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1844/",
-  "media": []
- },
- {
-  "id": "wger:1845",
-  "source_id": 1845,
-  "name": "Good morning jambes écartées assis",
-  "name_en": "Seated Pancake Good Morning",
-  "aliases": [
-   "Good morning jambes écartées assis",
-   "Seated Pancake Good Morning"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": "5eca8c6e-64cd-4023-bcc8-d2edefe58a00",
-  "description": "Asseyez-vous avec les jambes complètement tendues (genoux verrouillés), largement écartées en position d'écart facial. \n Placez vos mains derrière la nuque. \n Basculez le torse et la tête vers le sol.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1845/",
-  "media": []
- },
- {
-  "id": "wger:1846",
-  "source_id": 1846,
-  "name": "Posture du cavalier (grand écart latéral)",
-  "name_en": "Horse Stance (Side Splits)",
-  "aliases": [
-   "Horse Stance (Side Splits)",
-   "Posture du cavalier (grand écart latéral)"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Placez-vous comme pour un squat, les pieds largement écartés et les orteils légèrement tournés vers l'extérieur. \n Descendez doucement dans un squat profond et large : vos hanches doivent passer sous le niveau de vos genoux. \n Maintenez la position pendant 3 à 5 secondes. \n Remontez de façon contrôlée et répétez autant de fois que nécessaire.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1846/",
-  "media": []
- },
- {
-  "id": "wger:1847",
-  "source_id": 1847,
-  "name": "L-sit jambes écartées",
-  "name_en": "Straddle L-Sit",
-  "aliases": [
-   "L-sit jambes écartées",
-   "Straddle L-Sit"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": "7cba5090-9bb9-4b12-a1cb-fa1c818fcc93",
-  "description": "Les jambes en position de selle assise, poussez votre corps vers le haut pour décoller du sol. Vos jambes doivent être horizontales et pointer droit vers l'extérieur. Vos bras doivent se trouver entre vos jambes. \n Maintenez la position de manière isométrique aussi longtemps que nécessaire.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1847/",
-  "media": []
- },
- {
-  "id": "wger:1852",
-  "source_id": 1852,
-  "name": "L-sit",
-  "name_en": "L-sit",
-  "aliases": [
-   "L-sit",
-   "Équerre"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Lats",
-   "Chest",
-   "Abs"
-  ],
-  "variation_group": "7cba5090-9bb9-4b12-a1cb-fa1c818fcc93",
-  "description": "Asseyez-vous au sol, les jambes serrées et les bras le long du corps. Poussez sur vos mains pour décoller votre corps du sol, en conservant la même position assise de sorte que vos jambes soient tendues et que vos pieds ne touchent pas le sol. \n Maintenez la position aussi longtemps que nécessaire.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1852/",
-  "media": []
- },
- {
-  "id": "wger:1853",
-  "source_id": 1853,
-  "name": "L-Sit (Foot Supported)",
-  "name_en": "L-Sit (Foot Supported)",
-  "aliases": [
-   "L-Sit (Foot Supported)"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Lats",
-   "Chest",
-   "Abs",
-   "Serratus anterior"
-  ],
-  "variation_group": "7cba5090-9bb9-4b12-a1cb-fa1c818fcc93",
-  "description": "As with an L-sit, but allow your feet to touch the floor to support the some of the weight of your legs.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1853/",
-  "media": []
- },
- {
-  "id": "wger:1854",
-  "source_id": 1854,
-  "name": "Calves foam roller",
-  "name_en": "Calves foam roller",
-  "aliases": [
-   "Calves foam roller"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Calves"
-  ],
-  "variation_group": null,
-  "description": "Move your calves slowly over the foam roller",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1854/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1854/ccd3c18e-c864-426f-8176-15dce14305e3.webp",
-    "codec": null,
+  {
+    "id": "wger:1829",
+    "source_id": 1829,
+    "name": "Squat-développé au landmine",
+    "name_en": "Landmine Squat to Press",
+    "aliases": [
+      "Landmine Squat to Press",
+      "Squat-développé au landmine"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Barbell"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Position de la barre : Ancrez une extrémité d'une barre dans un support landmine ou un coin sûr.\nPosture : Tenez-vous face à la barre, les pieds un peu plus écartés que la largeur des épaules. Orientez les orteils vers l'extérieur de 10 à 35 degrés pour permettre un meilleur mouvement du bassin et plus de profondeur.\nPrise : Enveloppez l'extrémité libre de la barre des deux mains (doigts entrelacés ou superposés) et tenez-la au milieu de la poitrine, juste sous la clavicule. \n Descente : Gainez la sangle abdominale et asseyez-vous vers l'arrière en squat, en gardant la poitrine haute et le poids sur les talons.\nProfondeur : Descendez jusqu'à ce que vos cuisses soient au moins parallèles au sol. Un bon repère est lorsque vos coudes touchent le haut de vos cuisses ou juste à l'intérieur de vos genoux.\nPosture : Veillez à garder le dos plat et la colonne neutre tout au long du mouvement. \n Poussée : Poussez puissamment à travers vos talons pour vous relever. Utilisez l'élan de vos jambes pour « propulser » la charge vers le haut.\nExtension : En un mouvement fluide, poussez la barre au-dessus de la tête jusqu'à l'extension complète des bras. En haut, vos biceps doivent être près de vos oreilles.\nL'inclinaison : Lorsque vous atteignez le haut de la poussée, penchez-vous légèrement vers l'avant dans la barre pour favoriser une bonne rotation des omoplates vers le haut et éviter de cambrer le bas du dos. \n Abaissez lentement la barre à hauteur de la poitrine de façon contrôlée avant d'enchaîner immédiatement la répétition suivante.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "beagle"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1855",
-  "source_id": 1855,
-  "name": "Hamstring Foam roller",
-  "name_en": "Hamstring Foam roller",
-  "aliases": [
-   "Hamstring Foam roller"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Move your hamstrings slowly over the foam roller",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1829/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings",
+      "Abs"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1855/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1855/a6597ed8-1613-4458-ba56-4b63bc946a35.webp",
-    "codec": null,
+  {
+    "id": "wger:1830",
+    "source_id": 1830,
+    "name": "Fente arrière à la barre",
+    "name_en": "Barbell Step Back Lunge",
+    "aliases": [
+      "Barbell Step Back Lunge",
+      "Fente arrière à la barre",
+      "Barbell Reverse Lunge"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Barbell"
+    ],
+    "muscles": [
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Étape 1 : Tenez-vous debout, les pieds écartés de la largeur des hanches, en maintenant une barre sur le haut du dos.\nÉtape 2 : Gardez le dos droit, la poitrine ouverte et la sangle abdominale engagée.\nÉtape 3 : Faites un pas en arrière avec une jambe et abaissez votre corps en pliant les deux genoux. Assurez-vous que le genou arrière touche presque le sol.\nÉtape 4 : Poussez sur le pied arrière pour revenir à la position de départ.\nÉtape 5 : Répétez le mouvement avec l'autre jambe.\nContinuez à alterner les jambes pour le nombre de répétitions souhaité.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1856",
-  "source_id": 1856,
-  "name": "Foam Roller Anterior tibialis",
-  "name_en": "Foam Roller Anterior tibialis",
-  "aliases": [
-   "Foam Roller Anterior tibialis"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Use the foam roller slowly in the tibial anterioris. This is english, please",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1830/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1830/3b6c547c-ab3d-4472-93cf-561710279eab.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "hans"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1856/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1856/19c31c63-4968-4887-b8e6-4127be27fdde.jpg",
-    "codec": null,
+  {
+    "id": "wger:1831",
+    "source_id": 1831,
+    "name": "Développé décliné sur machine Hammer Strength",
+    "name_en": "Hammerstrength Decline Chest Press",
+    "aliases": [
+      "Développé décliné sur machine Hammer Strength",
+      "Hammerstrength Decline Chest Press",
+      "Hammerstrength Decline Press"
+    ],
+    "category": "Chest",
+    "equipment": [],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Asseyez-vous bien droit sur une machine Hammer Strength de développé décliné en rapprochant vos omoplates et en posant fermement les talons au sol, sous les genoux. \n Le dossier doit rester en contact avec votre tête, vos épaules et vos fessiers à tout moment. \n Saisissez les poignées en prise pronation, juste un peu plus large que la largeur des épaules, légèrement sous la poitrine. \n En gardant la sangle abdominale gainée par une respiration ventrale et une contraction des abdominaux, poussez à travers les paumes pour tendre les coudes tout en les maintenant à un angle de 45 degrés par rapport au torse. \n Une fois les bras complètement tendus, revenez à la position de départ.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1857",
-  "source_id": 1857,
-  "name": "Foam Roller Iliotibial band",
-  "name_en": "Foam Roller Iliotibial band",
-  "aliases": [
-   "Foam Roller Iliotibial band"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Slide on the Foam Roller over your iliotibial band. Is english terrible checker",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1831/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1831/2d9d509f-707b-4132-961e-91a2459ca198.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "hans"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Shoulders",
+      "Triceps"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1857/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1857/92291128-cc7e-4f70-9663-80840c516fc9.jpg",
-    "codec": null,
+  {
+    "id": "wger:1832",
+    "source_id": 1832,
+    "name": "Maintien en appui aux anneaux",
+    "name_en": "Ring Support Hold",
+    "aliases": [
+      "Maintien en appui aux anneaux",
+      "Ring Support Hold"
+    ],
+    "category": "Chest",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Maintenez-vous en position d'appui sur des anneaux de gymnastique, les bras tendus le long du corps. Veillez à garder les anneaux légèrement tournés vers l'extérieur et à conserver une position de corps creux. Il s'agit d'un maintien isométrique pour les pectoraux, les épaules et les triceps.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1858",
-  "source_id": 1858,
-  "name": "Foam Roller quadriceps",
-  "name_en": "Foam Roller quadriceps",
-  "aliases": [
-   "Foam Roller quadriceps"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Slide the Foam Roller over your quadriceps. Is english, please",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1832/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1858/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1858/058b6fdb-8093-4b6d-a504-cbf869f3e3d3.jpg",
-    "codec": null,
+  {
+    "id": "wger:1833",
+    "source_id": 1833,
+    "name": "Curl des ischio-jambiers avec sliders au sol",
+    "name_en": "Floor Glider Hamstring Curls",
+    "aliases": [
+      "Curl des ischio-jambiers avec sliders au sol",
+      "Floor Glider Hamstring Curls"
+    ],
+    "category": "Shoulders",
+    "equipment": [],
+    "muscles": [
+      "Hamstrings"
+    ],
+    "variation_group": null,
+    "description": "Allongez-vous sur le dos, les talons posés sur des sliders ou des serviettes. Soulevez les hanches en position de pont, puis faites glisser les talons vers les fessiers tout en gardant les hanches relevées. Revenez lentement à la position de départ en maintenant le pont de hanches.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1859",
-  "source_id": 1859,
-  "name": "Foam Roller Gluteus",
-  "name_en": "Foam Roller Gluteus",
-  "aliases": [
-   "Foam Roller Gluteus"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Slide on the Foam Roller over your gluteus. Is english please",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1833/",
+    "media": [],
+    "muscles_secondary": [
+      "Calves",
+      "Glutes"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1859/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1859/2465d5eb-c249-454d-93eb-58aa13bdc080.webp",
-    "codec": null,
+  {
+    "id": "wger:1834",
+    "source_id": 1834,
+    "name": "Élévation trapèze inférieur (Trap-3)",
+    "name_en": "Trap-3 Raise",
+    "aliases": [
+      "Trap-3 Raise",
+      "Élévation trapèze inférieur (Trap-3)"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Penchez-vous vers l'avant et fléchissez légèrement les genoux. Abaissez et rétractez l'épaule que vous allez utiliser. Posez l'autre main sur votre genou. \n Levez la main d'environ 15 degrés au-dessus de la tête, en maintenant la position de votre épaule.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1860",
-  "source_id": 1860,
-  "name": "Foam Roller Adductors",
-  "name_en": "Foam Roller Adductors",
-  "aliases": [
-   "Foam Roller Adductors"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Slide the Foam Roller over your Adductors. Is english please",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1834/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1860/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1860/f0410e66-28d5-455f-90f3-d078e0988460.avif",
-    "codec": null,
+  {
+    "id": "wger:1835",
+    "source_id": 1835,
+    "name": "Étirement en rotation externe",
+    "name_en": "External Rotation Stretch",
+    "aliases": [
+      "External Rotation Stretch",
+      "Étirement en rotation externe"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Barbell"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Asseyez-vous avec les pieds pressés l'un contre l'autre et un genou relevé complètement sur le côté du corps. \n Placez votre coude sur le genou relevé, pliez-le à 90 degrés et pointez la main droit devant vous, en tenant votre barre ou votre haltère. \n Gardez l'épaule abaissée et rétractée, puis levez la main jusqu'à ce que l'avant-bras soit vertical, comme si vous alliez saluer quelqu'un à la manière d'un robot. \n Abaissez la main jusqu'à la position initiale et répétez.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1861",
-  "source_id": 1861,
-  "name": "Side stretch",
-  "name_en": "Side stretch",
-  "aliases": [
-   "Side stretch"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "View the video to undestand the exercise",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1835/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1835/ca4a0b7e-9fdd-4173-843a-f0392824abe1.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Nick E"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1861/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1861/0ffe4e99-71ad-47fb-b98c-1f243faa0499.png",
-    "codec": null,
+  {
+    "id": "wger:1838",
+    "source_id": 1838,
+    "name": "Exercices d'épaules à l'élastique",
+    "name_en": "Banded Shoulder Drills",
+    "aliases": [
+      "Banded Shoulder Drills",
+      "Exercices d'épaules à l'élastique"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Resistance band"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Chest",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Fixez un élastique à un support solide derrière vous. Tenez-vous à distance en le maintenant dans la main de façon à ce qu'il soit tendu. \n Consultez la vidéo YouTube jointe : https://www.youtube.com/watch?v=zdwEWchSjrI .",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1862",
-  "source_id": 1862,
-  "name": "Hip Circles",
-  "name_en": "Hip Circles",
-  "aliases": [
-   "Hip Circles"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "View the video to undestand the exercise",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1838/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1862/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1862/93d993f8-1d8c-4e21-99c6-08b2fe424a17.png",
-    "codec": null,
+  {
+    "id": "wger:1839",
+    "source_id": 1839,
+    "name": "Solo Hip Flexor Stretch",
+    "name_en": "Solo Hip Flexor Stretch",
+    "aliases": [
+      "Solo Hip Flexor Stretch"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "See this instructive video: https://www.youtube.com/watch?v=qHwyBHS6MQs .",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1863",
-  "source_id": 1863,
-  "name": "Hip Crossover",
-  "name_en": "Hip Crossover",
-  "aliases": [
-   "Hip Crossover"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "View the video to undestand the exercise",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1839/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1863/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1863/5f29959d-0fd1-46d2-98b7-0c2cb5d9ee13.png",
-    "codec": null,
+  {
+    "id": "wger:1840",
+    "source_id": 1840,
+    "name": "Bent-Leg Hamstring Stretch",
+    "name_en": "Bent-Leg Hamstring Stretch",
+    "aliases": [
+      "Bent-Leg Hamstring Stretch"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "See this instructional video from Stretch Therapy: https://www.youtube.com/watch?v=CrF2iMnn09w .",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1864",
-  "source_id": 1864,
-  "name": "Ankle Roll",
-  "name_en": "Ankle Roll",
-  "aliases": [
-   "Ankle Roll"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "View the video to undestand the exercise",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1840/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1864/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1864/5970cdd8-0123-4eba-a921-2157fb6adacf.png",
-    "codec": null,
+  {
+    "id": "wger:1841",
+    "source_id": 1841,
+    "name": "Étirement des épaules en extension assis",
+    "name_en": "Seated Shoulder Extension Stretch",
+    "aliases": [
+      "Seated Shoulder Extension Stretch",
+      "Étirement des épaules en extension assis"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Lats",
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Asseyez-vous avec les mains derrière vous, écartées de la largeur des épaules. \n Verrouillez les coudes. \n Avancez vos pieds et vos hanches vers l'avant, en abaissant vos épaules vers le sol. \n Allez aussi loin que possible pour obtenir un bon étirement. \n \n Consultez la vidéo : https://www.youtube.com/watch?v=ihUAbG0e8zw",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1865",
-  "source_id": 1865,
-  "name": "Banded Ankle Mobility",
-  "name_en": "Banded Ankle Mobility",
-  "aliases": [
-   "Banded Ankle Mobility"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "View the video to undestand the exercise",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1841/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1865/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1865/c2c9848e-5094-4ed9-bd81-0831b6551483.png",
-    "codec": null,
+  {
+    "id": "wger:1842",
+    "source_id": 1842,
+    "name": "Coquille à l'élastique",
+    "name_en": "Banded Clamshell",
+    "aliases": [
+      "Banded Clamshell",
+      "Coquille à l'élastique"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Resistance band"
+    ],
+    "muscles": [
+      "Glutes",
+      "Abs"
+    ],
+    "variation_group": "b471b989-15df-47a7-808b-837187506c7a",
+    "description": "Position \nPlanche latérale avec le coude et l'avant-bras au sol et les jambes légèrement fléchies. Tendez un élastique replié en deux entre vos cuisses, juste au-dessus du genou. \n  Exécution \nLevez le genou supérieur tout en gardant les pieds rapprochés, comme une « coquille qui s'ouvre », puis revenez lentement à la position de départ. Gardez la sangle abdominale stable et les hanches alignées.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1867",
-  "source_id": 1867,
-  "name": "Hip Flexor Stretch",
-  "name_en": "Hip Flexor Stretch",
-  "aliases": [
-   "Hip Flexor Stretch"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "View the video to undestand the exercise",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1842/",
+    "media": [],
+    "muscles_secondary": [
+      "Quads"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Davidgj32"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1867/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1867/767631e5-10d2-46b8-b03f-cc298f96963b.png",
-    "codec": null,
+  {
+    "id": "wger:1843",
+    "source_id": 1843,
+    "name": "Étirement du papillon",
+    "name_en": "Butterfly Stretch",
+    "aliases": [
+      "Butterfly Stretch",
+      "Étirement du papillon"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Asseyez-vous en position de prière, les plantes des pieds doucement collées l'une contre l'autre. \n À l'aide de vos mains, tirez lentement vos pieds vers l'intérieur, en direction de l'aine. Maintenez aussi longtemps que nécessaire.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Davidgj32"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- }
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1843/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1844",
+    "source_id": 1844,
+    "name": "Étirement de la grenouille",
+    "name_en": "Frog Stretch",
+    "aliases": [
+      "Frog Stretch",
+      "Étirement de la grenouille"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Mettez-vous à quatre pattes. \n Écartez les genoux vers l'extérieur et descendez sur les coudes. \n Sans bouger les coudes ni les genoux, commencez à vous balancer d'avant en arrière, en cherchant à rapprocher vos fessiers de vos pieds.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1844/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1845",
+    "source_id": 1845,
+    "name": "Good morning jambes écartées assis",
+    "name_en": "Seated Pancake Good Morning",
+    "aliases": [
+      "Good morning jambes écartées assis",
+      "Seated Pancake Good Morning"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": "5eca8c6e-64cd-4023-bcc8-d2edefe58a00",
+    "description": "Asseyez-vous avec les jambes complètement tendues (genoux verrouillés), largement écartées en position d'écart facial. \n Placez vos mains derrière la nuque. \n Basculez le torse et la tête vers le sol.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1845/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1846",
+    "source_id": 1846,
+    "name": "Posture du cavalier (grand écart latéral)",
+    "name_en": "Horse Stance (Side Splits)",
+    "aliases": [
+      "Horse Stance (Side Splits)",
+      "Posture du cavalier (grand écart latéral)"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Placez-vous comme pour un squat, les pieds largement écartés et les orteils légèrement tournés vers l'extérieur. \n Descendez doucement dans un squat profond et large : vos hanches doivent passer sous le niveau de vos genoux. \n Maintenez la position pendant 3 à 5 secondes. \n Remontez de façon contrôlée et répétez autant de fois que nécessaire.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1846/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1847",
+    "source_id": 1847,
+    "name": "L-sit jambes écartées",
+    "name_en": "Straddle L-Sit",
+    "aliases": [
+      "L-sit jambes écartées",
+      "Straddle L-Sit"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": "7cba5090-9bb9-4b12-a1cb-fa1c818fcc93",
+    "description": "Les jambes en position de selle assise, poussez votre corps vers le haut pour décoller du sol. Vos jambes doivent être horizontales et pointer droit vers l'extérieur. Vos bras doivent se trouver entre vos jambes. \n Maintenez la position de manière isométrique aussi longtemps que nécessaire.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1847/",
+    "media": [],
+    "muscles_secondary": [
+      "Lats",
+      "Chest",
+      "Quads",
+      "Serratus anterior"
+    ]
+  },
+  {
+    "id": "wger:1852",
+    "source_id": 1852,
+    "name": "L-sit",
+    "name_en": "L-sit",
+    "aliases": [
+      "L-sit",
+      "Équerre"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Lats",
+      "Chest",
+      "Abs"
+    ],
+    "variation_group": "7cba5090-9bb9-4b12-a1cb-fa1c818fcc93",
+    "description": "Asseyez-vous au sol, les jambes serrées et les bras le long du corps. Poussez sur vos mains pour décoller votre corps du sol, en conservant la même position assise de sorte que vos jambes soient tendues et que vos pieds ne touchent pas le sol. \n Maintenez la position aussi longtemps que nécessaire.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1852/",
+    "media": [],
+    "muscles_secondary": [
+      "Quads",
+      "Triceps"
+    ]
+  },
+  {
+    "id": "wger:1853",
+    "source_id": 1853,
+    "name": "L-Sit (Foot Supported)",
+    "name_en": "L-Sit (Foot Supported)",
+    "aliases": [
+      "L-Sit (Foot Supported)"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Lats",
+      "Chest",
+      "Abs",
+      "Serratus anterior"
+    ],
+    "variation_group": "7cba5090-9bb9-4b12-a1cb-fa1c818fcc93",
+    "description": "As with an L-sit, but allow your feet to touch the floor to support the some of the weight of your legs.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1853/",
+    "media": [],
+    "muscles_secondary": [
+      "Quads",
+      "Triceps"
+    ]
+  },
+  {
+    "id": "wger:1854",
+    "source_id": 1854,
+    "name": "Calves foam roller",
+    "name_en": "Calves foam roller",
+    "aliases": [
+      "Calves foam roller"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "variation_group": null,
+    "description": "Move your calves slowly over the foam roller",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1854/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1854/ccd3c18e-c864-426f-8176-15dce14305e3.webp",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1855",
+    "source_id": 1855,
+    "name": "Hamstring Foam roller",
+    "name_en": "Hamstring Foam roller",
+    "aliases": [
+      "Hamstring Foam roller"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Move your hamstrings slowly over the foam roller",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1855/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1855/a6597ed8-1613-4458-ba56-4b63bc946a35.webp",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1856",
+    "source_id": 1856,
+    "name": "Foam Roller Anterior tibialis",
+    "name_en": "Foam Roller Anterior tibialis",
+    "aliases": [
+      "Foam Roller Anterior tibialis"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Use the foam roller slowly in the tibial anterioris. This is english, please",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1856/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1856/19c31c63-4968-4887-b8e6-4127be27fdde.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1857",
+    "source_id": 1857,
+    "name": "Foam Roller Iliotibial band",
+    "name_en": "Foam Roller Iliotibial band",
+    "aliases": [
+      "Foam Roller Iliotibial band"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Slide on the Foam Roller over your iliotibial band. Is english terrible checker",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1857/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1857/92291128-cc7e-4f70-9663-80840c516fc9.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1858",
+    "source_id": 1858,
+    "name": "Foam Roller quadriceps",
+    "name_en": "Foam Roller quadriceps",
+    "aliases": [
+      "Foam Roller quadriceps"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Slide the Foam Roller over your quadriceps. Is english, please",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1858/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1858/058b6fdb-8093-4b6d-a504-cbf869f3e3d3.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1859",
+    "source_id": 1859,
+    "name": "Foam Roller Gluteus",
+    "name_en": "Foam Roller Gluteus",
+    "aliases": [
+      "Foam Roller Gluteus"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Slide on the Foam Roller over your gluteus. Is english please",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1859/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1859/2465d5eb-c249-454d-93eb-58aa13bdc080.webp",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1860",
+    "source_id": 1860,
+    "name": "Foam Roller Adductors",
+    "name_en": "Foam Roller Adductors",
+    "aliases": [
+      "Foam Roller Adductors"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Slide the Foam Roller over your Adductors. Is english please",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1860/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1860/f0410e66-28d5-455f-90f3-d078e0988460.avif",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1861",
+    "source_id": 1861,
+    "name": "Side stretch",
+    "name_en": "Side stretch",
+    "aliases": [
+      "Side stretch"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "View the video to undestand the exercise",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1861/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1861/0ffe4e99-71ad-47fb-b98c-1f243faa0499.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1862",
+    "source_id": 1862,
+    "name": "Hip Circles",
+    "name_en": "Hip Circles",
+    "aliases": [
+      "Hip Circles"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "View the video to undestand the exercise",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1862/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1862/93d993f8-1d8c-4e21-99c6-08b2fe424a17.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1863",
+    "source_id": 1863,
+    "name": "Hip Crossover",
+    "name_en": "Hip Crossover",
+    "aliases": [
+      "Hip Crossover"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "View the video to undestand the exercise",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1863/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1863/5f29959d-0fd1-46d2-98b7-0c2cb5d9ee13.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1864",
+    "source_id": 1864,
+    "name": "Ankle Roll",
+    "name_en": "Ankle Roll",
+    "aliases": [
+      "Ankle Roll"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "View the video to undestand the exercise",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1864/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1864/5970cdd8-0123-4eba-a921-2157fb6adacf.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1865",
+    "source_id": 1865,
+    "name": "Banded Ankle Mobility",
+    "name_en": "Banded Ankle Mobility",
+    "aliases": [
+      "Banded Ankle Mobility"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "View the video to undestand the exercise",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1865/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1865/c2c9848e-5094-4ed9-bd81-0831b6551483.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1867",
+    "source_id": 1867,
+    "name": "Hip Flexor Stretch",
+    "name_en": "Hip Flexor Stretch",
+    "aliases": [
+      "Hip Flexor Stretch"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "View the video to undestand the exercise",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Davidgj32"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1867/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1867/767631e5-10d2-46b8-b03f-cc298f96963b.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Davidgj32"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  }
 ]

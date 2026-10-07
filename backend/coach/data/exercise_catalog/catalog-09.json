@@ -1,1486 +1,1569 @@
 [
- {
-  "id": "wger:1014",
-  "source_id": 1014,
-  "name": "Étirement de l'angulaire de l'omoplate droit",
-  "name_en": "Right levator scapulae stretch",
-  "aliases": [
-   "Right levator scapulae stretch",
-   "Étirement de l'angulaire de l'omoplate droit"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "9588b37d-e19b-42e8-8e82-be71ec1c25ba",
-  "description": "Position de départ : \n Commencez debout ou assis. Tournez la tête vers la droite, d'environ 45 degrés ou juste au-dessus du mamelon. Placez la main gauche dans le dos ou asseyez-vous dessus. Avec la main droite, tenez l'arrière de votre tête. Penchez légèrement la tête vers le bas. \n Étapes : \n \n Une fois la position de départ adoptée, appuyez la tête contre la main droite avec une légère force. Votre main doit résister avec une force égale, de sorte que la tête ne bouge pas. Maintenez cette position.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1014/",
-  "media": []
- },
- {
-  "id": "wger:1015",
-  "source_id": 1015,
-  "name": "Cercles du cou dans le sens horaire",
-  "name_en": "Clockwise neck circles",
-  "aliases": [
-   "Cercles du cou dans le sens horaire",
-   "Clockwise neck circles"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "b6c0e9f1-13ba-4cbf-bbd5-898456350466",
-  "description": "Position de départ : \n Commencez assis ou debout. Laissez tomber votre tête vers le bas en amenant le menton vers la poitrine, mais sans forcer. \n Étapes : \n Dans un mouvement lent et fluide, la tête détendue et sans pousser dans aucune direction : \n \n inclinez la tête vers votre épaule droite. \n puis ramenez la tête en arrière, le visage vers le haut. \n puis inclinez la tête vers votre épaule gauche. \n et revenez vers la position de départ. \n \n Continuez à répéter ce mouvement dans un même geste lent et fluide.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1015/",
-  "media": []
- },
- {
-  "id": "wger:1016",
-  "source_id": 1016,
-  "name": "Cercles du cou dans le sens antihoraire",
-  "name_en": "Counterclockwise neck circles",
-  "aliases": [
-   "Cercles du cou dans le sens antihoraire",
-   "Counterclockwise neck circles"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "b6c0e9f1-13ba-4cbf-bbd5-898456350466",
-  "description": "Position de départ : \n Commencez assis ou debout. Laissez tomber votre tête vers le bas en amenant le menton vers la poitrine, mais sans forcer. \n Étapes : \n Dans un mouvement lent et fluide, la tête détendue et sans pousser dans aucune direction : \n \n inclinez la tête vers votre épaule gauche. \n puis ramenez la tête en arrière, le visage vers le haut. \n puis inclinez la tête vers votre épaule droite. \n et revenez vers la position de départ. \n \n Continuez à répéter ce mouvement dans un même geste lent et fluide.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1016/",
-  "media": []
- },
- {
-  "id": "wger:1017",
-  "source_id": 1017,
-  "name": "Demi-cercles du cou",
-  "name_en": "Neck half circles",
-  "aliases": [
-   "Demi-cercles du cou",
-   "Neck half circles"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "b6c0e9f1-13ba-4cbf-bbd5-898456350466",
-  "description": "Position de départ : \n Commencez assis ou debout. Inclinez la tête contre l'une de vos épaules, mais sans forcer. \n Étapes : \n Dans un même mouvement lent et fluide, la tête détendue et sans pousser dans aucune direction : \n \n amenez la tête vers le bas, en direction de la poitrine. \n puis inclinez-la en arrière contre votre autre épaule. \n puis revenez à nouveau vers la poitrine. \n et enfin vers la position de départ. \n \n Continuez à répéter ce mouvement.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1017/",
-  "media": []
- },
- {
-  "id": "wger:1018",
-  "source_id": 1018,
-  "name": "Inclinaisons de la tête",
-  "name_en": "Head tilts",
-  "aliases": [
-   "Head tilts",
-   "Inclinaisons de la tête"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \n Asseyez-vous ou tenez-vous debout, le dos droit. \n Étapes : \n \n Inclinez la tête d'un côté et maintenez un instant. \n Ramenez la tête en position neutre et maintenez un instant. \n Inclinez la tête de l'autre côté et maintenez un instant. \n Ramenez à nouveau la tête en position neutre et maintenez un instant. \n Répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1018/",
-  "media": []
- },
- {
-  "id": "wger:1019",
-  "source_id": 1019,
-  "name": "Planche latérale droite",
-  "name_en": "Side plank right",
-  "aliases": [
-   "Planche latérale droite",
-   "Side plank right"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": "35343f78-00cf-4b34-9f50-7f45d37555ca",
-  "description": "Allongez-vous sur le côté, le coude inférieur à angle droit, le bras dépassant \n Soulevez votre bassin du sol en soulevant votre épaule inférieure, en gardant l'avant-bras sur le sol ; votre tête, votre bassin et vos pieds doivent être en ligne droite \n Maintenez cette position",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1019/",
-  "media": []
- },
- {
-  "id": "wger:1020",
-  "source_id": 1020,
-  "name": "Pistol squats droites",
-  "name_en": "Pistol squats right",
-  "aliases": [
-   "Pistol squats droites",
-   "Pistol squats right"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": "ba010720-728a-4baf-ba8c-e1a37370625b",
-  "description": "Tenez-vous debout sur une jambe, l'autre jambe droite et légèrement en avant \n Pliez lentement un genou, descendez en position accroupie et gardez votre dos et votre autre jambe droits \n Soulevez-vous lentement du squat, en redressant le genou plié et en gardant l'autre jambe droite \n Répéter",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1020/",
-  "media": []
- },
- {
-  "id": "wger:1021",
-  "source_id": 1021,
-  "name": "Lever du mollet droit",
-  "name_en": "Calf raises, right leg",
-  "aliases": [
-   "Calf raises, right leg",
-   "Lever du mollet droit"
-  ],
-  "category": "Calves",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Calves"
-  ],
-  "variation_group": "4b54f372-2aef-4741-b76d-85e3f376f1d7",
-  "description": "Tenez-vous debout sur le sol ou sur le bord d'une marche pour augmenter l'amplitude des mouvements. Levez un pied en plaçant la partie supérieure sur votre mollet \n Soulevez vos talons jusqu'à ce que vous soyez debout sur les orteils \n Restez dans cette position pendant trois secondes, puis abaissez votre pied sans toucher le sol avec votre talon.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1021/",
-  "media": []
- },
- {
-  "id": "wger:1022",
-  "source_id": 1022,
-  "name": "Single Arm Plank to Row",
-  "name_en": "Single Arm Plank to Row",
-  "aliases": [
-   "Single Arm Plank to Row"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Kettlebell"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Biceps",
-   "Brachialis",
-   "Lats",
-   "Obliquus externus abdominis",
-   "Abs",
-   "Serratus anterior"
-  ],
-  "variation_group": null,
-  "description": "Start position as row, extend to plank and back. Finish with row and repeat",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1022/",
-  "media": []
- },
- {
-  "id": "wger:1027",
-  "source_id": 1027,
-  "name": "Étirement de la prière surélevé",
-  "name_en": "Elevated prayer stretch",
-  "aliases": [
-   "Elevated prayer stretch",
-   "Étirement de la prière surélevé"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Bench"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Position de départ : \nAgenouillez-vous devant un banc, suffisamment loin pour que votre buste puisse se loger entre vos genoux et le banc. Le dos droit, posez vos coudes sur le banc, les paumes jointes, les mains pointées vers le haut.\n Étapes :  \n \n À l'expiration, étirez votre poitrine vers le sol sans bouger le bas du dos. En même temps, rapprochez vos mains de vos épaules, en gardant les paumes jointes et les coudes sur le banc. \n Maintenez la position quelques secondes. \n À l'inspiration, relâchez le dos pour revenir à la position de départ. \n Répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "tinman"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1027/",
-  "media": []
- },
- {
-  "id": "wger:1028",
-  "source_id": 1028,
-  "name": "Rotation thoracique à quatre pattes à gauche",
-  "name_en": "Quadruped thoracic rotation left",
-  "aliases": [
-   "Quadruped thoracic rotation left",
-   "Rotation thoracique à quatre pattes à gauche"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \nPlacez-vous à quatre pattes, les genoux écartés à la largeur des épaules. Posez votre main gauche derrière votre tête tout en gardant votre main droite tendue et en contact avec le sol.\n Étapes :  \n \n À l'inspiration, déplacez votre coude gauche vers votre main droite, en gardant votre main gauche derrière la tête. \n À l'expiration, déplacez votre coude gauche de manière à le pointer vers le plafond. \n Répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "tinman"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1028/",
-  "media": []
- },
- {
-  "id": "wger:1029",
-  "source_id": 1029,
-  "name": "Rotation thoracique à quatre pattes, côté droit",
-  "name_en": "Quadruped thoracic rotation right",
-  "aliases": [
-   "Quadruped thoracic rotation right",
-   "Rotation thoracique à quatre pattes, côté droit"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": "05873ad4-6c13-4be9-b326-bb0c99599ba0",
-  "description": "Position de départ :  \n Commencez à quatre pattes, les genoux écartés de la largeur des épaules. Placez votre main droite derrière votre tête tout en gardant votre main gauche tendue et posée au sol. \n  Étapes :  \n \n À l'inspiration, amenez votre coude droit vers votre main gauche, en gardant la main droite derrière la tête. \n À l'expiration, faites pivoter votre coude droit de manière à le pointer vers le plafond. \n Répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "tinman"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1029/",
-  "media": []
- },
- {
-  "id": "wger:1080",
-  "source_id": 1080,
-  "name": "Pompes hindoues",
-  "name_en": "Hindu Pushups",
-  "aliases": [
-   "Hindu Pushups",
-   "Pompes hindoues"
-  ],
-  "category": "Shoulders",
-  "equipment": [],
-  "muscles": [
-   "Shoulders",
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Exercice destiné à renforcer les épaules et les pectoraux. Son nom vient du fait qu'il débute dans la posture de yoga « chien tête en bas », passe à la posture du « cobra » mais sans poser les jambes ni le buste au sol, pour finir enfin par une pompe classique. L'exercice peut aussi être exécuté en sens inverse (retour à la position de départ). Comme variante, après avoir réalisé la pompe, on peut lever les hanches pour revenir à la posture du chien tête en bas.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imobard"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1080/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1080/c4bf7ba1-6058-4d14-928f-7187885d5d57.webp",
-    "codec": null,
+  {
+    "id": "wger:1014",
+    "source_id": 1014,
+    "name": "Étirement de l'angulaire de l'omoplate droit",
+    "name_en": "Right levator scapulae stretch",
+    "aliases": [
+      "Right levator scapulae stretch",
+      "Étirement de l'angulaire de l'omoplate droit"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "9588b37d-e19b-42e8-8e82-be71ec1c25ba",
+    "description": "Position de départ : \n Commencez debout ou assis. Tournez la tête vers la droite, d'environ 45 degrés ou juste au-dessus du mamelon. Placez la main gauche dans le dos ou asseyez-vous dessus. Avec la main droite, tenez l'arrière de votre tête. Penchez légèrement la tête vers le bas. \n Étapes : \n \n Une fois la position de départ adoptée, appuyez la tête contre la main droite avec une légère force. Votre main doit résister avec une force égale, de sorte que la tête ne bouge pas. Maintenez cette position.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Imobard"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1081",
-  "source_id": 1081,
-  "name": "Dislocations d'épaules",
-  "name_en": "Shoulder dislocates",
-  "aliases": [
-   "Dislocations d'épaules",
-   "Shoulder dislocates"
-  ],
-  "category": "Shoulders",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \nTenez-vous debout, le dos droit, un élastique, une serviette ou un manche à balai dans les mains. Les mains tendues devant le corps et l'élastique tendu entre elles, écartez les mains pour les placer toutes deux à environ 45 degrés du corps, les pouces vers le bas. Si vous utilisez plutôt une serviette ou un manche à balai, saisissez-le en prise pronation.\n Étapes :  \n \n En gardant les bras tendus, effectuez une rotation au niveau des épaules pour amener vos bras au-dessus de la tête, puis vers le bas en direction des fessiers. \n Effectuez une rotation des épaules dans le sens inverse : au-dessus de la tête, puis vers l'aine. \n Répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "tinman"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1014/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1081/",
-  "media": []
- },
- {
-  "id": "wger:1082",
-  "source_id": 1082,
-  "name": "Rowing penché vers rotation externe",
-  "name_en": "Bent over row to external rotation",
-  "aliases": [
-   "Bent over row to external rotation",
-   "Rowing penché vers rotation externe"
-  ],
-  "category": "Back",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \nTenez-vous derrière une chaise ou devant une table. Penchez-vous au niveau de la taille pour poser votre front sur le dossier de la chaise ou sur la table, en gardant le dos droit. Vos bras doivent pendre droit vers le bas, dirigés vers le sol.\n Étapes :  \n \n Montez vos coudes à hauteur d'épaules. Vos avant-bras doivent pointer vers le bas, perpendiculaires à vos bras. Vos bras doivent être à la même hauteur que votre dos et perpendiculaires à votre colonne vertébrale. \n Maintenez un instant. \n Effectuez une rotation au niveau des coudes pour amener vos mains le plus haut possible. \n Maintenez un instant. \n Effectuez une rotation au niveau des coudes pour revenir à la position précédente. \n Abaissez vos bras jusqu'à la position initiale. \n Répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "tinman"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1082/",
-  "media": []
- },
- {
-  "id": "wger:1083",
-  "source_id": 1083,
-  "name": "YWT",
-  "name_en": "YWTs",
-  "aliases": [
-   "YWT",
-   "YWTs"
-  ],
-  "category": "Back",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Position de départ : \nAllongez-vous, de préférence sur un tapis. Tendez vos bras au-dessus de la tête en position « Y » (les bras pointant vers le haut en diagonale, à environ 45 degrés). Vos pouces doivent être dirigés vers le haut.\n Étapes :  \n \n Les bras en position Y, décollez légèrement votre poitrine du sol, en créant une tension de traction dans vos bras vers le haut. \n Maintenez cette position pendant plusieurs secondes (15 à 30 secondes idéalement). \n En gardant la poitrine relevée, pliez les coudes pour passer de la position Y à une position « W », les bras fléchis au niveau des coudes et en conservant la tension vers le haut. \n Maintenez à peu près aussi longtemps que pour la position Y. \n Toujours la poitrine relevée, passez à une position « T » en tendant les bras sur les côtés, perpendiculairement à votre corps. \n Maintenez à peu près aussi longtemps que pour la position W. \n Passez de la position T à la position W, puis de la position W à la position Y. \n Répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "tinman"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1083/",
-  "media": []
- },
- {
-  "id": "wger:1084",
-  "source_id": 1084,
-  "name": "Développé au sol avec haltères",
-  "name_en": "Dumbbell Floor Press",
-  "aliases": [
-   "Dumbbell Floor Press",
-   "Développé au sol avec haltères"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Prenez vos haltères et allongez-vous à plat sur le dos, les genoux fléchis et les pieds bien à plat au sol (utilisez un banc si vous en avez un). Poussez les poids vers le haut en verrouillant les coudes (A). Abaissez-les lentement jusqu'à ce que le haut de vos bras repose au sol (B), près du corps. Marquez une pause ici avant de pousser à nouveau vers le haut de manière explosive. Contractez fortement les pectoraux et répétez.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "admin"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1084/",
-  "media": []
- },
- {
-  "id": "wger:1086",
-  "source_id": 1086,
-  "name": "Pompes prise serrée",
-  "name_en": "Close-grip Press-ups",
-  "aliases": [
-   "Close-grip Press-ups",
-   "Pompes prise serrée"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Brachialis",
-   "Lats",
-   "Chest",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Placez-vous dans une position de planche solide, en rapprochant les mains jusqu'à ce qu'elles se touchent presque (image 1). Pliez les coudes pour amener lentement votre poitrine vers le sol (image 2). Gardez les coudes près du corps tout en poussant de manière explosive pour remonter. Répétez. Veillez à prendre votre temps à la descente de chaque répétition, en gardant une exécution irréprochable.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "philip"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1086/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1086/b2ee8d9b-0480-4992-8494-c223b37c2696.jpg",
-    "codec": null,
+  {
+    "id": "wger:1015",
+    "source_id": 1015,
+    "name": "Cercles du cou dans le sens horaire",
+    "name_en": "Clockwise neck circles",
+    "aliases": [
+      "Cercles du cou dans le sens horaire",
+      "Clockwise neck circles"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "b6c0e9f1-13ba-4cbf-bbd5-898456350466",
+    "description": "Position de départ : \n Commencez assis ou debout. Laissez tomber votre tête vers le bas en amenant le menton vers la poitrine, mais sans forcer. \n Étapes : \n Dans un mouvement lent et fluide, la tête détendue et sans pousser dans aucune direction : \n \n inclinez la tête vers votre épaule droite. \n puis ramenez la tête en arrière, le visage vers le haut. \n puis inclinez la tête vers votre épaule gauche. \n et revenez vers la position de départ. \n \n Continuez à répéter ce mouvement dans un même geste lent et fluide.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "philip"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1087",
-  "source_id": 1087,
-  "name": "Épaulés-jetés en puissance avec haltères depuis la suspension",
-  "name_en": "Dumbbell Hang Power Cleans",
-  "aliases": [
-   "Dumbbell Hang Power Cleans",
-   "Épaulés-jetés en puissance avec haltères depuis la suspension"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Hamstrings",
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Debout, tenez-vous bien droit avec vos haltères, en les maintenant le long du corps. Effectuez une charnière au niveau des hanches pour les abaisser jusqu'aux genoux (image 1). Redressez-vous avec un léger saut, en utilisant l'élan pour tirer les haltères jusqu'à vos épaules (image 2). Tenez-vous bien droit, puis redescendez les haltères le long du corps de façon contrôlée et répétez. Gardez le mouvement rapide et explosif ; si votre fréquence cardiaque ne grimpe pas en flèche, c'est que vous les exécutez mal.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "philip"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1015/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1087/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1087/d85f4e02-b20c-457c-bdfb-0b00e2d14150.jpg",
-    "codec": null,
+  {
+    "id": "wger:1016",
+    "source_id": 1016,
+    "name": "Cercles du cou dans le sens antihoraire",
+    "name_en": "Counterclockwise neck circles",
+    "aliases": [
+      "Cercles du cou dans le sens antihoraire",
+      "Counterclockwise neck circles"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "b6c0e9f1-13ba-4cbf-bbd5-898456350466",
+    "description": "Position de départ : \n Commencez assis ou debout. Laissez tomber votre tête vers le bas en amenant le menton vers la poitrine, mais sans forcer. \n Étapes : \n Dans un mouvement lent et fluide, la tête détendue et sans pousser dans aucune direction : \n \n inclinez la tête vers votre épaule gauche. \n puis ramenez la tête en arrière, le visage vers le haut. \n puis inclinez la tête vers votre épaule droite. \n et revenez vers la position de départ. \n \n Continuez à répéter ce mouvement dans un même geste lent et fluide.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "philip"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1088",
-  "source_id": 1088,
-  "name": "Soulevé de terre sumo avec haltère",
-  "name_en": "Dumbbell sumo deadlift",
-  "aliases": [
-   "Dumbbell sumo deadlift",
-   "Soulevé de terre sumo avec haltère"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Hamstrings",
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Abaissez votre haltère au sol entre vos jambes. Adoptez une position large et, le dos droit, accroupissez-vous. L'haltère posé à la verticale, saisissez-le par le haut de la « tête » (image 1). En gardant la poitrine relevée et la sangle abdominale gainée, repoussez le sol pour vous redresser jusqu'à la position debout (image 2). Répétez. Si vous atteignez facilement 20 à 30 répétitions, utilisez deux haltères.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "philip"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1016/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1088/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1088/9f66b288-ce8f-4154-ba80-78fee267263c.jpg",
-    "codec": null,
+  {
+    "id": "wger:1017",
+    "source_id": 1017,
+    "name": "Demi-cercles du cou",
+    "name_en": "Neck half circles",
+    "aliases": [
+      "Demi-cercles du cou",
+      "Neck half circles"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "b6c0e9f1-13ba-4cbf-bbd5-898456350466",
+    "description": "Position de départ : \n Commencez assis ou debout. Inclinez la tête contre l'une de vos épaules, mais sans forcer. \n Étapes : \n Dans un même mouvement lent et fluide, la tête détendue et sans pousser dans aucune direction : \n \n amenez la tête vers le bas, en direction de la poitrine. \n puis inclinez-la en arrière contre votre autre épaule. \n puis revenez à nouveau vers la poitrine. \n et enfin vers la position de départ. \n \n Continuez à répéter ce mouvement.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "philip"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1089",
-  "source_id": 1089,
-  "name": "Rotation avec ballon médicinal",
-  "name_en": "Medicine ball twist",
-  "aliases": [
-   "Medicine ball twist",
-   "Rotation avec ballon médicinal"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "Swiss Ball"
-  ],
-  "muscles": [
-   "Obliquus externus abdominis",
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "En position assise, le buste pivote d'un côté à l'autre sans forcer, en s'approchant des genoux et en faisant toucher le sol au ballon de temps en temps.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1017/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1089/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1089/49f51716-535d-41dd-aeb5-cff5bb906bc1.jpeg",
-    "codec": null,
+  {
+    "id": "wger:1018",
+    "source_id": 1018,
+    "name": "Inclinaisons de la tête",
+    "name_en": "Head tilts",
+    "aliases": [
+      "Head tilts",
+      "Inclinaisons de la tête"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \n Asseyez-vous ou tenez-vous debout, le dos droit. \n Étapes : \n \n Inclinez la tête d'un côté et maintenez un instant. \n Ramenez la tête en position neutre et maintenez un instant. \n Inclinez la tête de l'autre côté et maintenez un instant. \n Ramenez à nouveau la tête en position neutre et maintenez un instant. \n Répétez.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "clafal"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1090",
-  "source_id": 1090,
-  "name": "Vpushup",
-  "name_en": "Vpushup",
-  "aliases": [
-   "Vpushup"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Chest",
-   "Quads",
-   "Abs",
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "Lift your body off the ground by pushing your arms upwards",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1018/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1090/",
-  "media": []
- },
- {
-  "id": "wger:1091",
-  "source_id": 1091,
-  "name": "Touchers d'épaules en planche",
-  "name_en": "Plank Shoulder Taps",
-  "aliases": [
-   "Plank Shoulder Taps",
-   "Touchers d'épaules en planche"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "Gym mat"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Glutes",
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Dans la position correcte de la planche, placez vos pieds légèrement plus écartés que la largeur des épaules. Levez alternativement une main pour toucher l'épaule opposée.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1091/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1091/50c8912d-54ef-46c9-99d1-633b6196aa1e.jpg",
-    "codec": null,
+  {
+    "id": "wger:1019",
+    "source_id": 1019,
+    "name": "Planche latérale droite",
+    "name_en": "Side plank right",
+    "aliases": [
+      "Planche latérale droite",
+      "Side plank right"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": "35343f78-00cf-4b34-9f50-7f45d37555ca",
+    "description": "Allongez-vous sur le côté, le coude inférieur à angle droit, le bras dépassant \n Soulevez votre bassin du sol en soulevant votre épaule inférieure, en gardant l'avant-bras sur le sol ; votre tête, votre bassin et vos pieds doivent être en ligne droite \n Maintenez cette position",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "clafal"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1092",
-  "source_id": 1092,
-  "name": "Entraînement au sac de frappe",
-  "name_en": "Bag training",
-  "aliases": [
-   "Bag training",
-   "Entraînement au sac de frappe"
-  ],
-  "category": "Cardio",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Chest",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "L'entraînement au sac de frappe améliore la définition musculaire des deltoïdes, des deltoïdes postérieurs, des triceps et des biceps, tout en constituant un excellent exercice cardio.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1019/",
+    "media": [],
+    "muscles_secondary": [
+      "Obliquus externus abdominis"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1092/",
-  "media": []
- },
- {
-  "id": "wger:1093",
-  "source_id": 1093,
-  "name": "Rowing Machine",
-  "name_en": "Rowing Machine",
-  "aliases": [
-   "Rowing Machine"
-  ],
-  "category": "Cardio",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Biceps",
-   "Hamstrings",
-   "Brachialis",
-   "Calves",
-   "Glutes",
-   "Lats",
-   "Obliquus externus abdominis",
-   "Quads",
-   "Abs",
-   "Serratus anterior",
-   "Soleus",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Sit on a rowing machine with your back straight.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Boertie"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Boertie"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1093/",
-  "media": []
- },
- {
-  "id": "wger:1094",
-  "source_id": 1094,
-  "name": "Développé couché assis",
-  "name_en": "Seated Bench Press",
-  "aliases": [
-   "Développé couché assis",
-   "Seated Bench Press"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "Bench"
-  ],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Réglez la machine de développé pectoral de sorte que les poignées soient alignées avec le bas de votre poitrine lorsque vous êtes assis. Veillez à être assis le dos bien plaqué contre le dossier. Saisissez une poignée dans chaque main, sortez la poitrine et gardez la tête appuyée contre l'appui-tête. Respirez profondément et poussez lentement les poignées vers l'avant jusqu'à ce que vos bras soient presque complètement tendus. Marquez une pause juste avant le verrouillage des coudes, puis ramenez lentement les poignées à la position de départ. Marquez une pause juste avant que les poignées ne s'immobilisent complètement, puis effectuez une autre répétition.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "colundrum"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1094/",
-  "media": []
- },
- {
-  "id": "wger:1096",
-  "source_id": 1096,
-  "name": "Abduction debout",
-  "name_en": "Abduction while standing",
-  "aliases": [
-   "Abduction debout",
-   "Abduction while standing"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Travailler une posture stable, principalement sur une seule jambe, est essentiel pour les deux côtés. D'une part, cela prévient les inconforts et, d'autre part, cela établit une base solide. Le pratiquant adopte la position debout habituelle et, le haut du corps stable, tente de lever à plusieurs reprises la jambe non chargée, de la fléchir au niveau de la hanche et du genou, puis de la rabaisser. Le mouvement est également répété de l'autre côté. L'exercice travaille la stabilité des muscles entourant la hanche.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "tregga"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1096/",
-  "media": []
- },
- {
-  "id": "wger:1098",
-  "source_id": 1098,
-  "name": "Seated rear delt rise",
-  "name_en": "Seated rear delt rise",
-  "aliases": [
-   "Seated rear delt rise"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Seated, bent 45 deg forward. Arms fully stretched out, raise arms up to shoulder height and back down",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "philip"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "philip"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1098/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1098/fa5328a2-64cb-4afb-a283-b3d948ddaf3f.jpg",
-    "codec": null,
+  {
+    "id": "wger:1020",
+    "source_id": 1020,
+    "name": "Pistol squats droites",
+    "name_en": "Pistol squats right",
+    "aliases": [
+      "Pistol squats droites",
+      "Pistol squats right"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": "ba010720-728a-4baf-ba8c-e1a37370625b",
+    "description": "Tenez-vous debout sur une jambe, l'autre jambe droite et légèrement en avant \n Pliez lentement un genou, descendez en position accroupie et gardez votre dos et votre autre jambe droits \n Soulevez-vous lentement du squat, en redressant le genou plié et en gardant l'autre jambe droite \n Répéter",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "philip"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1099",
-  "source_id": 1099,
-  "name": "Maintien latéral dynamique",
-  "name_en": "Dynamic side hold",
-  "aliases": [
-   "Dynamic side hold",
-   "Maintien latéral dynamique"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "Kettlebell"
-  ],
-  "muscles": [
-   "Obliquus externus abdominis"
-  ],
-  "variation_group": null,
-  "description": "Passez un élastique autour d'une kettlebell et soulevez la kettlebell par l'élastique. Laissez-la pendre le long de votre flanc et tenez-vous en équilibre sur une jambe, puis changez de jambe tout en maintenant la position. Répétez avec l'autre main.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "philip"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1020/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings",
+      "Calves",
+      "Abs"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1099/",
-  "media": []
- },
- {
-  "id": "wger:1100",
-  "source_id": 1100,
-  "name": "Wall balls",
-  "name_en": "Wall balls",
-  "aliases": [
-   "Wall balls"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Swiss Ball"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Get a medicine ball, shoulder width stance, squat, thrust the ball as high as possible against the wall and catch",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "philip"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "philip"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1100/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1100/ab203e0c-8220-4537-987c-871eb259d687.jpg",
-    "codec": null,
+  {
+    "id": "wger:1021",
+    "source_id": 1021,
+    "name": "Lever du mollet droit",
+    "name_en": "Calf raises, right leg",
+    "aliases": [
+      "Calf raises, right leg",
+      "Lever du mollet droit"
+    ],
+    "category": "Calves",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "variation_group": "4b54f372-2aef-4741-b76d-85e3f376f1d7",
+    "description": "Tenez-vous debout sur le sol ou sur le bord d'une marche pour augmenter l'amplitude des mouvements. Levez un pied en plaçant la partie supérieure sur votre mollet \n Soulevez vos talons jusqu'à ce que vous soyez debout sur les orteils \n Restez dans cette position pendant trois secondes, puis abaissez votre pied sans toucher le sol avec votre talon.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "philip"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1101",
-  "source_id": 1101,
-  "name": "Horizontal traction isometry",
-  "name_en": "Horizontal traction isometry",
-  "aliases": [
-   "Horizontal traction isometry"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Pull-up bar"
-  ],
-  "muscles": [
-   "Lats",
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Perform a timed isometric pull-up on the bar",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1021/",
+    "media": [],
+    "muscles_secondary": [
+      "Soleus"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1022",
+    "source_id": 1022,
+    "name": "Single Arm Plank to Row",
+    "name_en": "Single Arm Plank to Row",
+    "aliases": [
+      "Single Arm Plank to Row"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Kettlebell"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Biceps",
+      "Brachialis",
+      "Lats",
+      "Obliquus externus abdominis",
+      "Abs",
+      "Serratus anterior"
+    ],
+    "variation_group": null,
+    "description": "Start position as row, extend to plank and back. Finish with row and repeat",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1022/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1101/",
-  "media": []
- },
- {
-  "id": "wger:1102",
-  "source_id": 1102,
-  "name": "Alternate back lunges",
-  "name_en": "Alternate back lunges",
-  "aliases": [
-   "Alternate back lunges"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "The posterior muscles of the buttocks, hamstrings, soleus and gastrocnemius are trained more",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1027",
+    "source_id": 1027,
+    "name": "Étirement de la prière surélevé",
+    "name_en": "Elevated prayer stretch",
+    "aliases": [
+      "Elevated prayer stretch",
+      "Étirement de la prière surélevé"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Bench"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Position de départ : \nAgenouillez-vous devant un banc, suffisamment loin pour que votre buste puisse se loger entre vos genoux et le banc. Le dos droit, posez vos coudes sur le banc, les paumes jointes, les mains pointées vers le haut.\n Étapes :  \n \n À l'expiration, étirez votre poitrine vers le sol sans bouger le bas du dos. En même temps, rapprochez vos mains de vos épaules, en gardant les paumes jointes et les coudes sur le banc. \n Maintenez la position quelques secondes. \n À l'inspiration, relâchez le dos pour revenir à la position de départ. \n Répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "tinman"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1027/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1028",
+    "source_id": 1028,
+    "name": "Rotation thoracique à quatre pattes à gauche",
+    "name_en": "Quadruped thoracic rotation left",
+    "aliases": [
+      "Quadruped thoracic rotation left",
+      "Rotation thoracique à quatre pattes à gauche"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \nPlacez-vous à quatre pattes, les genoux écartés à la largeur des épaules. Posez votre main gauche derrière votre tête tout en gardant votre main droite tendue et en contact avec le sol.\n Étapes :  \n \n À l'inspiration, déplacez votre coude gauche vers votre main droite, en gardant votre main gauche derrière la tête. \n À l'expiration, déplacez votre coude gauche de manière à le pointer vers le plafond. \n Répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "tinman"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1028/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1102/",
-  "media": []
- },
- {
-  "id": "wger:1103",
-  "source_id": 1103,
-  "name": "Pont en marche",
-  "name_en": "walking bridge",
-  "aliases": [
-   "Pont en marche",
-   "walking bridge"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Partez d'une position debout, les genoux légèrement fléchis et les mains posées au sol. À partir de là, avancez avec les mains en gardant les fessiers contractés et sans perdre le contrôle du bas du dos.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1029",
+    "source_id": 1029,
+    "name": "Rotation thoracique à quatre pattes, côté droit",
+    "name_en": "Quadruped thoracic rotation right",
+    "aliases": [
+      "Quadruped thoracic rotation right",
+      "Rotation thoracique à quatre pattes, côté droit"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": "05873ad4-6c13-4be9-b326-bb0c99599ba0",
+    "description": "Position de départ :  \n Commencez à quatre pattes, les genoux écartés de la largeur des épaules. Placez votre main droite derrière votre tête tout en gardant votre main gauche tendue et posée au sol. \n  Étapes :  \n \n À l'inspiration, amenez votre coude droit vers votre main gauche, en gardant la main droite derrière la tête. \n À l'expiration, faites pivoter votre coude droit de manière à le pointer vers le plafond. \n Répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "tinman"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1029/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1080",
+    "source_id": 1080,
+    "name": "Pompes hindoues",
+    "name_en": "Hindu Pushups",
+    "aliases": [
+      "Hindu Pushups",
+      "Pompes hindoues"
+    ],
+    "category": "Shoulders",
+    "equipment": [],
+    "muscles": [
+      "Shoulders",
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Exercice destiné à renforcer les épaules et les pectoraux. Son nom vient du fait qu'il débute dans la posture de yoga « chien tête en bas », passe à la posture du « cobra » mais sans poser les jambes ni le buste au sol, pour finir enfin par une pompe classique. L'exercice peut aussi être exécuté en sens inverse (retour à la position de départ). Comme variante, après avoir réalisé la pompe, on peut lever les hanches pour revenir à la posture du chien tête en bas.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imobard"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1080/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1080/c4bf7ba1-6058-4d14-928f-7187885d5d57.webp",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Imobard"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Triceps"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1103/",
-  "media": []
- },
- {
-  "id": "wger:1104",
-  "source_id": 1104,
-  "name": "Walking",
-  "name_en": "Walking",
-  "aliases": [
-   "Walking"
-  ],
-  "category": "Cardio",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Hamstrings",
-   "Calves",
-   "Glutes",
-   "Lats",
-   "Obliquus externus abdominis",
-   "Quads",
-   "Abs"
-  ],
-  "variation_group": "d47fc5dd-7d8f-4e95-a0d0-101dfd38ad99",
-  "description": "Walking outdoor or indoor, try keeping a pace of at list 100 steps per minute.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1081",
+    "source_id": 1081,
+    "name": "Dislocations d'épaules",
+    "name_en": "Shoulder dislocates",
+    "aliases": [
+      "Dislocations d'épaules",
+      "Shoulder dislocates"
+    ],
+    "category": "Shoulders",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \nTenez-vous debout, le dos droit, un élastique, une serviette ou un manche à balai dans les mains. Les mains tendues devant le corps et l'élastique tendu entre elles, écartez les mains pour les placer toutes deux à environ 45 degrés du corps, les pouces vers le bas. Si vous utilisez plutôt une serviette ou un manche à balai, saisissez-le en prise pronation.\n Étapes :  \n \n En gardant les bras tendus, effectuez une rotation au niveau des épaules pour amener vos bras au-dessus de la tête, puis vers le bas en direction des fessiers. \n Effectuez une rotation des épaules dans le sens inverse : au-dessus de la tête, puis vers l'aine. \n Répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "tinman"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1081/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1082",
+    "source_id": 1082,
+    "name": "Rowing penché vers rotation externe",
+    "name_en": "Bent over row to external rotation",
+    "aliases": [
+      "Bent over row to external rotation",
+      "Rowing penché vers rotation externe"
+    ],
+    "category": "Back",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \nTenez-vous derrière une chaise ou devant une table. Penchez-vous au niveau de la taille pour poser votre front sur le dossier de la chaise ou sur la table, en gardant le dos droit. Vos bras doivent pendre droit vers le bas, dirigés vers le sol.\n Étapes :  \n \n Montez vos coudes à hauteur d'épaules. Vos avant-bras doivent pointer vers le bas, perpendiculaires à vos bras. Vos bras doivent être à la même hauteur que votre dos et perpendiculaires à votre colonne vertébrale. \n Maintenez un instant. \n Effectuez une rotation au niveau des coudes pour amener vos mains le plus haut possible. \n Maintenez un instant. \n Effectuez une rotation au niveau des coudes pour revenir à la position précédente. \n Abaissez vos bras jusqu'à la position initiale. \n Répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "tinman"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1082/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1104/",
-  "media": []
- }
+  {
+    "id": "wger:1083",
+    "source_id": 1083,
+    "name": "YWT",
+    "name_en": "YWTs",
+    "aliases": [
+      "YWT",
+      "YWTs"
+    ],
+    "category": "Back",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Position de départ : \nAllongez-vous, de préférence sur un tapis. Tendez vos bras au-dessus de la tête en position « Y » (les bras pointant vers le haut en diagonale, à environ 45 degrés). Vos pouces doivent être dirigés vers le haut.\n Étapes :  \n \n Les bras en position Y, décollez légèrement votre poitrine du sol, en créant une tension de traction dans vos bras vers le haut. \n Maintenez cette position pendant plusieurs secondes (15 à 30 secondes idéalement). \n En gardant la poitrine relevée, pliez les coudes pour passer de la position Y à une position « W », les bras fléchis au niveau des coudes et en conservant la tension vers le haut. \n Maintenez à peu près aussi longtemps que pour la position Y. \n Toujours la poitrine relevée, passez à une position « T » en tendant les bras sur les côtés, perpendiculairement à votre corps. \n Maintenez à peu près aussi longtemps que pour la position W. \n Passez de la position T à la position W, puis de la position W à la position Y. \n Répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "tinman"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1083/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1084",
+    "source_id": 1084,
+    "name": "Développé au sol avec haltères",
+    "name_en": "Dumbbell Floor Press",
+    "aliases": [
+      "Dumbbell Floor Press",
+      "Développé au sol avec haltères"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Prenez vos haltères et allongez-vous à plat sur le dos, les genoux fléchis et les pieds bien à plat au sol (utilisez un banc si vous en avez un). Poussez les poids vers le haut en verrouillant les coudes (A). Abaissez-les lentement jusqu'à ce que le haut de vos bras repose au sol (B), près du corps. Marquez une pause ici avant de pousser à nouveau vers le haut de manière explosive. Contractez fortement les pectoraux et répétez.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "admin"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1084/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Biceps",
+      "Triceps"
+    ]
+  },
+  {
+    "id": "wger:1086",
+    "source_id": 1086,
+    "name": "Pompes prise serrée",
+    "name_en": "Close-grip Press-ups",
+    "aliases": [
+      "Close-grip Press-ups",
+      "Pompes prise serrée"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Brachialis",
+      "Lats",
+      "Chest",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Placez-vous dans une position de planche solide, en rapprochant les mains jusqu'à ce qu'elles se touchent presque (image 1). Pliez les coudes pour amener lentement votre poitrine vers le sol (image 2). Gardez les coudes près du corps tout en poussant de manière explosive pour remonter. Répétez. Veillez à prendre votre temps à la descente de chaque répétition, en gardant une exécution irréprochable.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "philip"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1086/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1086/b2ee8d9b-0480-4992-8494-c223b37c2696.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "philip"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Shoulders",
+      "Biceps",
+      "Triceps"
+    ]
+  },
+  {
+    "id": "wger:1087",
+    "source_id": 1087,
+    "name": "Épaulés-jetés en puissance avec haltères depuis la suspension",
+    "name_en": "Dumbbell Hang Power Cleans",
+    "aliases": [
+      "Dumbbell Hang Power Cleans",
+      "Épaulés-jetés en puissance avec haltères depuis la suspension"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Debout, tenez-vous bien droit avec vos haltères, en les maintenant le long du corps. Effectuez une charnière au niveau des hanches pour les abaisser jusqu'aux genoux (image 1). Redressez-vous avec un léger saut, en utilisant l'élan pour tirer les haltères jusqu'à vos épaules (image 2). Tenez-vous bien droit, puis redescendez les haltères le long du corps de façon contrôlée et répétez. Gardez le mouvement rapide et explosif ; si votre fréquence cardiaque ne grimpe pas en flèche, c'est que vous les exécutez mal.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "philip"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1087/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1087/d85f4e02-b20c-457c-bdfb-0b00e2d14150.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "philip"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Calves",
+      "Quads",
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:1088",
+    "source_id": 1088,
+    "name": "Soulevé de terre sumo avec haltère",
+    "name_en": "Dumbbell sumo deadlift",
+    "aliases": [
+      "Dumbbell sumo deadlift",
+      "Soulevé de terre sumo avec haltère"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Abaissez votre haltère au sol entre vos jambes. Adoptez une position large et, le dos droit, accroupissez-vous. L'haltère posé à la verticale, saisissez-le par le haut de la « tête » (image 1). En gardant la poitrine relevée et la sangle abdominale gainée, repoussez le sol pour vous redresser jusqu'à la position debout (image 2). Répétez. Si vous atteignez facilement 20 à 30 répétitions, utilisez deux haltères.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "philip"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1088/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1088/9f66b288-ce8f-4154-ba80-78fee267263c.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "philip"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Quads",
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:1089",
+    "source_id": 1089,
+    "name": "Rotation avec ballon médicinal",
+    "name_en": "Medicine ball twist",
+    "aliases": [
+      "Medicine ball twist",
+      "Rotation avec ballon médicinal"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "Swiss Ball"
+    ],
+    "muscles": [
+      "Obliquus externus abdominis",
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "En position assise, le buste pivote d'un côté à l'autre sans forcer, en s'approchant des genoux et en faisant toucher le sol au ballon de temps en temps.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1089/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1089/49f51716-535d-41dd-aeb5-cff5bb906bc1.jpeg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "clafal"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1090",
+    "source_id": 1090,
+    "name": "Vpushup",
+    "name_en": "Vpushup",
+    "aliases": [
+      "Vpushup"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Chest",
+      "Quads",
+      "Abs",
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "Lift your body off the ground by pushing your arms upwards",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1090/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1091",
+    "source_id": 1091,
+    "name": "Touchers d'épaules en planche",
+    "name_en": "Plank Shoulder Taps",
+    "aliases": [
+      "Plank Shoulder Taps",
+      "Touchers d'épaules en planche"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "Gym mat"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Glutes",
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Dans la position correcte de la planche, placez vos pieds légèrement plus écartés que la largeur des épaules. Levez alternativement une main pour toucher l'épaule opposée.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1091/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1091/50c8912d-54ef-46c9-99d1-633b6196aa1e.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "clafal"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Lats"
+    ]
+  },
+  {
+    "id": "wger:1092",
+    "source_id": 1092,
+    "name": "Entraînement au sac de frappe",
+    "name_en": "Bag training",
+    "aliases": [
+      "Bag training",
+      "Entraînement au sac de frappe"
+    ],
+    "category": "Cardio",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Chest",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "L'entraînement au sac de frappe améliore la définition musculaire des deltoïdes, des deltoïdes postérieurs, des triceps et des biceps, tout en constituant un excellent exercice cardio.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1092/",
+    "media": [],
+    "muscles_secondary": [
+      "Biceps",
+      "Hamstrings",
+      "Calves",
+      "Lats",
+      "Obliquus externus abdominis",
+      "Abs"
+    ]
+  },
+  {
+    "id": "wger:1093",
+    "source_id": 1093,
+    "name": "Rowing Machine",
+    "name_en": "Rowing Machine",
+    "aliases": [
+      "Rowing Machine"
+    ],
+    "category": "Cardio",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Biceps",
+      "Hamstrings",
+      "Brachialis",
+      "Calves",
+      "Glutes",
+      "Lats",
+      "Obliquus externus abdominis",
+      "Quads",
+      "Abs",
+      "Serratus anterior",
+      "Soleus",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Sit on a rowing machine with your back straight.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Boertie"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Boertie"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1093/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1094",
+    "source_id": 1094,
+    "name": "Développé couché assis",
+    "name_en": "Seated Bench Press",
+    "aliases": [
+      "Développé couché assis",
+      "Seated Bench Press"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "Bench"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Réglez la machine de développé pectoral de sorte que les poignées soient alignées avec le bas de votre poitrine lorsque vous êtes assis. Veillez à être assis le dos bien plaqué contre le dossier. Saisissez une poignée dans chaque main, sortez la poitrine et gardez la tête appuyée contre l'appui-tête. Respirez profondément et poussez lentement les poignées vers l'avant jusqu'à ce que vos bras soient presque complètement tendus. Marquez une pause juste avant le verrouillage des coudes, puis ramenez lentement les poignées à la position de départ. Marquez une pause juste avant que les poignées ne s'immobilisent complètement, puis effectuez une autre répétition.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "colundrum"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1094/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1096",
+    "source_id": 1096,
+    "name": "Abduction debout",
+    "name_en": "Abduction while standing",
+    "aliases": [
+      "Abduction debout",
+      "Abduction while standing"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Travailler une posture stable, principalement sur une seule jambe, est essentiel pour les deux côtés. D'une part, cela prévient les inconforts et, d'autre part, cela établit une base solide. Le pratiquant adopte la position debout habituelle et, le haut du corps stable, tente de lever à plusieurs reprises la jambe non chargée, de la fléchir au niveau de la hanche et du genou, puis de la rabaisser. Le mouvement est également répété de l'autre côté. L'exercice travaille la stabilité des muscles entourant la hanche.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "tregga"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1096/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1098",
+    "source_id": 1098,
+    "name": "Seated rear delt rise",
+    "name_en": "Seated rear delt rise",
+    "aliases": [
+      "Seated rear delt rise"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Seated, bent 45 deg forward. Arms fully stretched out, raise arms up to shoulder height and back down",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "philip"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "philip"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1098/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1098/fa5328a2-64cb-4afb-a283-b3d948ddaf3f.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "philip"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1099",
+    "source_id": 1099,
+    "name": "Maintien latéral dynamique",
+    "name_en": "Dynamic side hold",
+    "aliases": [
+      "Dynamic side hold",
+      "Maintien latéral dynamique"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "Kettlebell"
+    ],
+    "muscles": [
+      "Obliquus externus abdominis"
+    ],
+    "variation_group": null,
+    "description": "Passez un élastique autour d'une kettlebell et soulevez la kettlebell par l'élastique. Laissez-la pendre le long de votre flanc et tenez-vous en équilibre sur une jambe, puis changez de jambe tout en maintenant la position. Répétez avec l'autre main.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "philip"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1099/",
+    "media": [],
+    "muscles_secondary": [
+      "Abs"
+    ]
+  },
+  {
+    "id": "wger:1100",
+    "source_id": 1100,
+    "name": "Wall balls",
+    "name_en": "Wall balls",
+    "aliases": [
+      "Wall balls"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Swiss Ball"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Get a medicine ball, shoulder width stance, squat, thrust the ball as high as possible against the wall and catch",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "philip"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "philip"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1100/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1100/ab203e0c-8220-4537-987c-871eb259d687.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "philip"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Biceps",
+      "Chest",
+      "Abs",
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:1101",
+    "source_id": 1101,
+    "name": "Horizontal traction isometry",
+    "name_en": "Horizontal traction isometry",
+    "aliases": [
+      "Horizontal traction isometry"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Pull-up bar"
+    ],
+    "muscles": [
+      "Lats",
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Perform a timed isometric pull-up on the bar",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1101/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Biceps"
+    ]
+  },
+  {
+    "id": "wger:1102",
+    "source_id": 1102,
+    "name": "Alternate back lunges",
+    "name_en": "Alternate back lunges",
+    "aliases": [
+      "Alternate back lunges"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "The posterior muscles of the buttocks, hamstrings, soleus and gastrocnemius are trained more",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1102/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1103",
+    "source_id": 1103,
+    "name": "Pont en marche",
+    "name_en": "walking bridge",
+    "aliases": [
+      "Pont en marche",
+      "walking bridge"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Partez d'une position debout, les genoux légèrement fléchis et les mains posées au sol. À partir de là, avancez avec les mains en gardant les fessiers contractés et sans perdre le contrôle du bas du dos.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1103/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Biceps",
+      "Glutes",
+      "Lats"
+    ]
+  },
+  {
+    "id": "wger:1104",
+    "source_id": 1104,
+    "name": "Walking",
+    "name_en": "Walking",
+    "aliases": [
+      "Walking"
+    ],
+    "category": "Cardio",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Calves",
+      "Glutes",
+      "Lats",
+      "Obliquus externus abdominis",
+      "Quads",
+      "Abs"
+    ],
+    "variation_group": "d47fc5dd-7d8f-4e95-a0d0-101dfd38ad99",
+    "description": "Walking outdoor or indoor, try keeping a pace of at list 100 steps per minute.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1104/",
+    "media": [],
+    "muscles_secondary": []
+  }
 ]

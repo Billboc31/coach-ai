@@ -1,1723 +1,1801 @@
 [
- {
-  "id": "wger:718",
-  "source_id": 718,
-  "name": "Assis dos au mur",
-  "name_en": "Wall Squat",
-  "aliases": [
-   "Assis dos au mur",
-   "Wall Squat"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Hamstrings",
-   "Quads"
-  ],
-  "variation_group": "ba010720-728a-4baf-ba8c-e1a37370625b",
-  "description": "Appuyez-vous contre le mur, en regardant vers l'avant, les pieds fermement plantés au sol, écartés de la largeur des épaules et à une distance d'environ 60 cm du mur. \n Glissez le long du mur, en gardant le dos appuyé contre lui, jusqu'à ce que les jambes forment un angle droit. Les genoux doivent être directement au-dessus des chevilles.La douleur au quadriceps est normale, arrêtez si vous ressentez une douleur au genou ou à la rotule",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC0",
-   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "authors": [
-    "Blablabla"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC0",
-   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "authors": [
-    "Blablabla",
-    "Clément Mondon (imported from Feeel)",
-    "Miroslav Mazel (imported from Feeel)",
-    "J. Lavoie (imported from Feeel)",
-    "mondstern (imported from Feeel)",
-    "Maxime Leroy (imported from Feeel)",
-    "Jonathan D. (imported from Feeel)"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/718/",
-  "media": []
- },
- {
-  "id": "wger:722",
-  "source_id": 722,
-  "name": "Weighted Step-ups",
-  "name_en": "Weighted Step-ups",
-  "aliases": [
-   "Weighted Step-ups"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "box step ups w/ barbell and 45's on each side",
-  "description_language": "en",
-  "credit": {
-   "name": "CC0",
-   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "authors": [
-    "jigglychipmunk"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC0",
-   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "authors": [
-    "jigglychipmunk"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/722/",
-  "media": []
- },
- {
-  "id": "wger:723",
-  "source_id": 723,
-  "name": "Tirage vertical en prise large",
-  "name_en": "Wide-grip Pulldown",
-  "aliases": [
-   "Tirage vertical en prise large",
-   "Wide-grip Pulldown",
-   "Lat Pulldown (Wide Grip)"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": "7bad4b8b-a95f-4a40-b512-7429d3333f66",
-  "description": "Position de départ :  \n \n Les bras tendus au-dessus de la tête, en ressentant un étirement dans le grand dorsal. \n Gardez les épaules basses (ne haussez pas les épaules vers le haut). \n \n \n \n  Phase de tirage (concentrique) :  \n \n Tirez la barre vers le haut de la poitrine ou la zone des clavicules en poussant les coudes vers le bas et l'arrière. \n Gardez la poitrine relevée et rapprochez vos omoplates en bas du mouvement.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 3",
-   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
-   "authors": [
-    "tuckerm"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/723/",
-  "media": []
- },
- {
-  "id": "wger:801",
-  "source_id": 801,
-  "name": "Dumbbell Push-Up",
-  "name_en": "Dumbbell Push-Up",
-  "aliases": [
-   "Dumbbell Push-Up"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": "07c5447d-9d49-4b29-a2e2-0f9169f749c5",
-  "description": "Normal Push-ups on Dumbbells, this brings a further range of movement",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "M123"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/801/",
-  "media": []
- },
- {
-  "id": "wger:802",
-  "source_id": 802,
-  "name": "Barbell Lunges Walking",
-  "name_en": "Barbell Lunges Walking",
-  "aliases": [
-   "Barbell Lunges Walking"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Barbell"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
-  "description": "",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/802/",
-  "media": [
-   {
-    "kind": "video",
-    "url": "https://wger.de/media/exercise-video/802/85d1d7f8-c3c5-47e8-9b26-56896919e6e7.MOV",
-    "codec": "hevc",
+  {
+    "id": "wger:718",
+    "source_id": 718,
+    "name": "Assis dos au mur",
+    "name_en": "Wall Squat",
+    "aliases": [
+      "Assis dos au mur",
+      "Wall Squat"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Quads"
+    ],
+    "variation_group": "ba010720-728a-4baf-ba8c-e1a37370625b",
+    "description": "Appuyez-vous contre le mur, en regardant vers l'avant, les pieds fermement plantés au sol, écartés de la largeur des épaules et à une distance d'environ 60 cm du mur. \n Glissez le long du mur, en gardant le dos appuyé contre lui, jusqu'à ce que les jambes forment un angle droit. Les genoux doivent être directement au-dessus des chevilles.La douleur au quadriceps est normale, arrêtez si vous ressentez une douleur au genou ou à la rotule",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Goulart"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "authors": [
+        "Blablabla"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": false
-   }
-  ]
- },
- {
-  "id": "wger:803",
-  "source_id": 803,
-  "name": "One Arm Triceps Extensions on Cable",
-  "name_en": "One Arm Triceps Extensions on Cable",
-  "aliases": [
-   "One Arm Triceps Extensions on Cable"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Triceps"
-  ],
-  "variation_group": "290582f2-d94c-4eb6-a994-99e38d7251f7",
-  "description": "",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "authors": [
+        "Blablabla",
+        "Clément Mondon (imported from Feeel)",
+        "Miroslav Mazel (imported from Feeel)",
+        "J. Lavoie (imported from Feeel)",
+        "mondstern (imported from Feeel)",
+        "Maxime Leroy (imported from Feeel)",
+        "Jonathan D. (imported from Feeel)"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/718/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/803/",
-  "media": [
-   {
-    "kind": "video",
-    "url": "https://wger.de/media/exercise-video/803/99e0001f-217a-4b11-823c-014d24a5415e.MOV",
-    "codec": "h264",
+  {
+    "id": "wger:722",
+    "source_id": 722,
+    "name": "Weighted Step-ups",
+    "name_en": "Weighted Step-ups",
+    "aliases": [
+      "Weighted Step-ups"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "box step ups w/ barbell and 45's on each side",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Goulart"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "authors": [
+        "jigglychipmunk"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": false
-   }
-  ]
- },
- {
-  "id": "wger:804",
-  "source_id": 804,
-  "name": "Sloper hanging",
-  "name_en": "Sloper hanging",
-  "aliases": [
-   "Sloper hanging"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Hanging on sloper holds of a fingerboard for a amount of seconds",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "marcelbader"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "authors": [
+        "jigglychipmunk"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/722/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings",
+      "Calves"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "marcelbader"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/804/",
-  "media": []
- },
- {
-  "id": "wger:805",
-  "source_id": 805,
-  "name": "Extension triceps à la poulie",
-  "name_en": "Tricep Pushdown on Cable",
-  "aliases": [
-   "Extension triceps à la poulie",
-   "Tricep Pushdown on Cable"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "L'extension triceps à la corde à la poulie est un exercice populaire qui cible les triceps. Il est facile à apprendre et à exécuter, ce qui en fait un favori aussi bien des débutants que des pratiquants confirmés. Il se réalise généralement sur un nombre modéré à élevé de répétitions, par exemple 8 à 12 répétitions ou plus par série, dans le cadre d'un entraînement du haut du corps ou axé sur les bras.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "cshep442"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/805/",
-  "media": []
- },
- {
-  "id": "wger:820",
-  "source_id": 820,
-  "name": "Fingerboard 20 mm edge",
-  "name_en": "Fingerboard 20 mm edge",
-  "aliases": [
-   "Fingerboard 20 mm edge"
-  ],
-  "category": "Arms",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Hang for 10 seconds on a fingerboard with a 20 mm edge",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "marcelbader"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "marcelbader"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/820/",
-  "media": []
- },
- {
-  "id": "wger:821",
-  "source_id": 821,
-  "name": "Pullup on fingerboard",
-  "name_en": "Pullup on fingerboard",
-  "aliases": [
-   "Pullup on fingerboard"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Biceps",
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Pullup on a choosen edge of a fingerboard / hangboard",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "marcelbader"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "marcelbader"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/821/",
-  "media": []
- },
- {
-  "id": "wger:822",
-  "source_id": 822,
-  "name": "Oiseau à la poulie",
-  "name_en": "Cable Rear Delt Fly",
-  "aliases": [
-   "Cable Rear Delt Fly",
-   "Oiseau à la poulie",
-   "Oiseau"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Trapezius"
-  ],
-  "variation_group": "19808be8-e98c-4b65-b8c7-f559aba5f2f8",
-  "description": "L'oiseau à la poulie, également appelé écarté inversé à la poulie, est un exercice de renforcement et de définition des deltoïdes. C'est l'un des meilleurs exercices d'isolation pour votre dos et votre deltoïde postérieur. Cet exercice cible vos deltoïdes postérieurs (arrière) tout en sollicitant un ensemble de muscles du haut du corps. \n \n Réglez la charge et les poulies à la bonne hauteur. Vous devez pouvoir voir les poulies, car elles doivent se trouver au-dessus de votre tête. \n De la main droite, saisissez la poulie de gauche, et de la main gauche, saisissez la poulie de droite, en les croisant devant vous. C'est ici que commence votre mouvement. \n Amorcez le mouvement en écartant et rapprochant les bras, tout en gardant les bras tendus. \n Marquez une brève pause à la fin du mouvement avant de ramener les poignées à leur position de départ.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "cshep442"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/822/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/822/74affc0d-03b6-4f33-b5f4-a822a2615f68.png",
-    "codec": null,
+  {
+    "id": "wger:723",
+    "source_id": 723,
+    "name": "Tirage vertical en prise large",
+    "name_en": "Wide-grip Pulldown",
+    "aliases": [
+      "Tirage vertical en prise large",
+      "Wide-grip Pulldown",
+      "Lat Pulldown (Wide Grip)"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": "7bad4b8b-a95f-4a40-b512-7429d3333f66",
+    "description": "Position de départ :  \n \n Les bras tendus au-dessus de la tête, en ressentant un étirement dans le grand dorsal. \n Gardez les épaules basses (ne haussez pas les épaules vers le haut). \n \n \n \n  Phase de tirage (concentrique) :  \n \n Tirez la barre vers le haut de la poitrine ou la zone des clavicules en poussant les coudes vers le bas et l'arrière. \n Gardez la poitrine relevée et rapprochez vos omoplates en bas du mouvement.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "cshep442"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 3",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "authors": [
+        "tuckerm"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   },
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/822/6a770e5d-cd62-4754-a18c-eebe2103d7c5.png",
-    "codec": null,
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/723/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Brachialis",
+      "Serratus anterior",
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:801",
+    "source_id": 801,
+    "name": "Dumbbell Push-Up",
+    "name_en": "Dumbbell Push-Up",
+    "aliases": [
+      "Dumbbell Push-Up"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": "07c5447d-9d49-4b29-a2e2-0f9169f749c5",
+    "description": "Normal Push-ups on Dumbbells, this brings a further range of movement",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "cshep442"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": false
-   }
-  ]
- },
- {
-  "id": "wger:828",
-  "source_id": 828,
-  "name": "Oiseau sur banc incliné",
-  "name_en": "Incline Bench Reverse Fly",
-  "aliases": [
-   "Incline Bench Reverse Fly",
-   "Oiseau sur banc incliné"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Dumbbell",
-   "Incline bench"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "L'oiseau à l'haltère sur banc incliné est un exercice du haut du corps qui cible les deltoïdes postérieurs (arrière de l'épaule), ainsi que les muscles posturaux du haut du dos. Comme il cible de si petits muscles, cet exercice se réalise généralement avec une charge légère et un nombre élevé de répétitions, par exemple 10 à 15 répétitions par série ou plus.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "cshep442"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "M123"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/801/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Triceps"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/828/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/828/2e959dab-f39b-4c7c-9063-eb43064ab5eb.png",
-    "codec": null,
+  {
+    "id": "wger:802",
+    "source_id": 802,
+    "name": "Barbell Lunges Walking",
+    "name_en": "Barbell Lunges Walking",
+    "aliases": [
+      "Barbell Lunges Walking"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Barbell"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
+    "description": "",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "cshep442"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   },
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/828/abfc7700-fadf-4f2d-ac84-e045e590a2fe.png",
-    "codec": null,
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/802/",
+    "media": [
+      {
+        "kind": "video",
+        "url": "https://wger.de/media/exercise-video/802/85d1d7f8-c3c5-47e8-9b26-56896919e6e7.MOV",
+        "codec": "hevc",
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Goulart"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": false
+      }
+    ],
+    "muscles_secondary": [
+      "Hamstrings",
+      "Calves"
+    ]
+  },
+  {
+    "id": "wger:803",
+    "source_id": 803,
+    "name": "One Arm Triceps Extensions on Cable",
+    "name_en": "One Arm Triceps Extensions on Cable",
+    "aliases": [
+      "One Arm Triceps Extensions on Cable"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "variation_group": "290582f2-d94c-4eb6-a994-99e38d7251f7",
+    "description": "",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "cshep442"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": false
-   }
-  ]
- },
- {
-  "id": "wger:908",
-  "source_id": 908,
-  "name": "Zone 2 Running",
-  "name_en": "Zone 2 Running",
-  "aliases": [
-   "Zone 2 Running"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Zone two Cardio for endurance, you should be able to speak while running",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "karly"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/803/",
+    "media": [
+      {
+        "kind": "video",
+        "url": "https://wger.de/media/exercise-video/803/99e0001f-217a-4b11-823c-014d24a5415e.MOV",
+        "codec": "h264",
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Goulart"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": false
+      }
+    ],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "karly"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/908/",
-  "media": []
- },
- {
-  "id": "wger:909",
-  "source_id": 909,
-  "name": "Reverse Nordic Curl",
-  "name_en": "Reverse Nordic Curl",
-  "aliases": [
-   "Reverse Nordic Curl"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Natural Leg Extension is alternative to Leg Extension machine with no equipment.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "karly"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "karly"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/909/",
-  "media": []
- },
- {
-  "id": "wger:910",
-  "source_id": 910,
-  "name": "Nordic Curl",
-  "name_en": "Nordic Curl",
-  "aliases": [
-   "Nordic Curl"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [
-   "Hamstrings"
-  ],
-  "variation_group": null,
-  "description": "Le Nordic curl (leg curl nordique) est l'un des meilleurs exercices pour le bas du corps afin de développer la force de la chaîne postérieure des jambes, d'améliorer la santé des genoux et de prévenir les blessures.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "karly"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/910/",
-  "media": []
- },
- {
-  "id": "wger:911",
-  "source_id": 911,
-  "name": "Incline Skull Crush",
-  "name_en": "Incline Skull Crush",
-  "aliases": [
-   "Incline Skull Crush"
-  ],
-  "category": "Arms",
-  "equipment": [],
-  "muscles": [
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "Siting in a 45 Degree Angle, using DB to do Incline Skull Crush",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/911/",
-  "media": []
- },
- {
-  "id": "wger:912",
-  "source_id": 912,
-  "name": "Straight Bar Cable Curls",
-  "name_en": "Straight Bar Cable Curls",
-  "aliases": [
-   "Straight Bar Cable Curls"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "Standing upright in front of Cable Tower using a straight bar",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/912/",
-  "media": []
- },
- {
-  "id": "wger:913",
-  "source_id": 913,
-  "name": "Reverse Preacher Curl (Close Grip)",
-  "name_en": "Reverse Preacher Curl (Close Grip)",
-  "aliases": [
-   "Reverse Preacher Curl (Close Grip)"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "SZ-Bar"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "Sitting reverse on a Biceps Bench with a close grip",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/913/",
-  "media": []
- },
- {
-  "id": "wger:914",
-  "source_id": 914,
-  "name": "Reverse EZ Bar Cable Curls",
-  "name_en": "Reverse EZ Bar Cable Curls",
-  "aliases": [
-   "Reverse EZ Bar Cable Curls"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Cable machine",
-   "SZ-Bar"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "Standing in front of cable tower using a SZ Bar",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/914/",
-  "media": []
- },
- {
-  "id": "wger:915",
-  "source_id": 915,
-  "name": "Bus Drivers",
-  "name_en": "Bus Drivers",
-  "aliases": [
-   "Bus Drivers"
-  ],
-  "category": "Shoulders",
-  "equipment": [],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Sitting with a Weight Plate, used as wheel, in both hands; raised slightly below eye level",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/915/",
-  "media": []
- },
- {
-  "id": "wger:916",
-  "source_id": 916,
-  "name": "Smith Press",
-  "name_en": "Smith Press",
-  "aliases": [
-   "Smith Press"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Incline bench"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Sitting almost 90 degree angle, smith machine",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/916/",
-  "media": []
- },
- {
-  "id": "wger:917",
-  "source_id": 917,
-  "name": "Straight Bar Cable Front Raise",
-  "name_en": "Straight Bar Cable Front Raise",
-  "aliases": [
-   "Straight Bar Cable Front Raise"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Cable machine",
-   "SZ-Bar"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Back to cable tower, cable between legs, SZ Bar",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/917/",
-  "media": []
- },
- {
-  "id": "wger:918",
-  "source_id": 918,
-  "name": "Seated Dumbbell Side Lateral",
-  "name_en": "Seated Dumbbell Side Lateral",
-  "aliases": [
-   "Seated Dumbbell Side Lateral"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "seated slightly leaned forward at beginning of exercise",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/918/",
-  "media": []
- },
- {
-  "id": "wger:919",
-  "source_id": 919,
-  "name": "T-Bar row",
-  "name_en": "T-Bar row",
-  "aliases": [
-   "T-Bar row"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Barbell"
-  ],
-  "muscles": [
-   "Lats",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "bent over with triangle grip, slightly bent knees",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/919/",
-  "media": []
- },
- {
-  "id": "wger:922",
-  "source_id": 922,
-  "name": "Seated Cable Mid Trap Shrug",
-  "name_en": "Seated Cable Mid Trap Shrug",
-  "aliases": [
-   "Seated Cable Mid Trap Shrug"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "seated straight back, slight hold at top",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/922/",
-  "media": []
- },
- {
-  "id": "wger:923",
-  "source_id": 923,
-  "name": "Lying Dumbbell Row SS Seated Shrug",
-  "name_en": "Lying Dumbbell Row SS Seated Shrug",
-  "aliases": [
-   "Lying Dumbbell Row SS Seated Shrug"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Lats",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "laying on the stomach on a bench with slight angle",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/923/",
-  "media": []
- },
- {
-  "id": "wger:925",
-  "source_id": 925,
-  "name": "Développé incliné à la Smith machine",
-  "name_en": "Smith Machine Slight Incline Press",
-  "aliases": [
-   "Développé incliné à la Smith machine",
-   "Smith Machine Slight Incline Press"
-  ],
-  "category": "Chest",
-  "equipment": [],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "*  Exécution  *  Position de départ : \n \n Déverrouillez la barre et tenez-la au-dessus du haut de votre poitrine, bras complètement tendus. \n Gardez vos omoplates  rétractées et plaquées contre le banc . \n  Phase de descente (excentrique) :  \n Abaissez lentement la barre jusqu'à juste en dessous de votre clavicule ou du haut de votre poitrine. \n Gardez le contrôle, ne faites pas rebondir la barre. \n  Phase de poussée (concentrique) :  \n Poussez la barre vers le haut en ligne droite jusqu'à l'extension complète des bras. \n Concentrez-vous sur la  contraction du haut de vos pectoraux  en haut du mouvement. \n  Verrouillez et répétez :  \n Terminez vos répétitions, puis reposez la barre en toute sécurité sur les crochets.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/925/",
-  "media": []
- },
- {
-  "id": "wger:926",
-  "source_id": 926,
-  "name": "Machine chest fly",
-  "name_en": "Machine chest fly",
-  "aliases": [
-   "Machine chest fly"
-  ],
-  "category": "Chest",
-  "equipment": [],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "seated machine, straight back, slow exercise",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "novadani"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/926/",
-  "media": []
- },
- {
-  "id": "wger:927",
-  "source_id": 927,
-  "name": "Suspended crossess",
-  "name_en": "Suspended crossess",
-  "aliases": [
-   "Suspended crossess",
-   "croci",
-   "sospensione",
-   "trx"
-  ],
-  "category": "Cardio",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Suspension exercise with trx for chest training",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/927/",
-  "media": []
- },
- {
-  "id": "wger:957",
-  "source_id": 957,
-  "name": "Élévation bras et jambe à quatre pattes",
-  "name_en": "Quadriped Arm and Leg Raise",
-  "aliases": [
-   "Quadriped Arm and Leg Raise",
-   "Élévation bras et jambe à quatre pattes"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Glutes",
-   "Serratus anterior",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Dans cet exercice, les muscles du dos ainsi que les muscles de l'arrière de la jambe et de l'arrière du bras sont activés en levant simultanément le bras et la jambe opposés en position à quatre pattes. Il améliore aussi l'équilibre et la proprioception. Le mouvement s'effectue de façon symétrique. \n \n Mettez-vous en position à quatre pattes. \n Rentrez le ventre, puis levez votre jambe droite et votre bras gauche. \n Vous devez garder le ventre rentré pendant 8 secondes. \n Au bout de 8 secondes, abaissez lentement votre bras et votre jambe. \n Puis relâchez vos muscles.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "utkb"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/957/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/957/0fd94587-6021-4763-856e-7227f5fcba2a.png",
-    "codec": null,
+  {
+    "id": "wger:804",
+    "source_id": 804,
+    "name": "Sloper hanging",
+    "name_en": "Sloper hanging",
+    "aliases": [
+      "Sloper hanging"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Hanging on sloper holds of a fingerboard for a amount of seconds",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "utkb"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "marcelbader"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:958",
-  "source_id": 958,
-  "name": "Biceps au TRX",
-  "name_en": "Biceps with TRX",
-  "aliases": [
-   "Biceps au TRX",
-   "Biceps with TRX"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "Saisissez les poignées des sangles TRX, inclinez le corps vers l'arrière, bras et jambes tendus, le corps aligné sur une seule ligne droite. (Il s'agit d'un exercice pour les bras, et non pour les abdominaux.)",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "marcelbader"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/804/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/958/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/958/947ac249-475d-44ed-bed3-8dc433374f59.png",
-    "codec": null,
+  {
+    "id": "wger:805",
+    "source_id": 805,
+    "name": "Extension triceps à la poulie",
+    "name_en": "Tricep Pushdown on Cable",
+    "aliases": [
+      "Extension triceps à la poulie",
+      "Tricep Pushdown on Cable"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "L'extension triceps à la corde à la poulie est un exercice populaire qui cible les triceps. Il est facile à apprendre et à exécuter, ce qui en fait un favori aussi bien des débutants que des pratiquants confirmés. Il se réalise généralement sur un nombre modéré à élevé de répétitions, par exemple 8 à 12 répétitions ou plus par série, dans le cadre d'un entraînement du haut du corps ou axé sur les bras.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "cynomops"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "cshep442"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   },
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/958/95f2bbc4-2f95-476d-a9b8-81b333fe2ef5.png",
-    "codec": null,
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/805/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:820",
+    "source_id": 820,
+    "name": "Fingerboard 20 mm edge",
+    "name_en": "Fingerboard 20 mm edge",
+    "aliases": [
+      "Fingerboard 20 mm edge"
+    ],
+    "category": "Arms",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Hang for 10 seconds on a fingerboard with a 20 mm edge",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "cynomops"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "marcelbader"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": false
-   }
-  ]
- },
- {
-  "id": "wger:959",
-  "source_id": 959,
-  "name": "TRX Rows",
-  "name_en": "TRX Rows",
-  "aliases": [
-   "TRX Rows"
-  ],
-  "category": "Back",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Biceps",
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "This exercise serves as a lead-up to Pull Ups.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "marcelbader"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/820/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/959/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/959/53a5e008-bc31-4ee0-9463-69a858c2ec18.png",
-    "codec": null,
+  {
+    "id": "wger:821",
+    "source_id": 821,
+    "name": "Pullup on fingerboard",
+    "name_en": "Pullup on fingerboard",
+    "aliases": [
+      "Pullup on fingerboard"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Pullup on a choosen edge of a fingerboard / hangboard",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "clafal"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "marcelbader"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:960",
-  "source_id": 960,
-  "name": "Kettlebell Swing",
-  "name_en": "Kettlebell Swing",
-  "aliases": [
-   "Kettlebell Swing"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Kettlebell"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Bien que le kettlebell swing soit un exercice pour tout le corps, il cible principalement les muscles de la chaîne postérieure (l'arrière du corps). Les principaux muscles sollicités sont les fessiers, les ischio-jambiers, les érecteurs du rachis et les muscles du haut du dos.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "marcelbader"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/821/",
+    "media": [],
+    "muscles_secondary": [
+      "Brachialis",
+      "Trapezius"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:822",
+    "source_id": 822,
+    "name": "Oiseau à la poulie",
+    "name_en": "Cable Rear Delt Fly",
+    "aliases": [
+      "Cable Rear Delt Fly",
+      "Oiseau à la poulie",
+      "Oiseau"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Trapezius"
+    ],
+    "variation_group": "19808be8-e98c-4b65-b8c7-f559aba5f2f8",
+    "description": "L'oiseau à la poulie, également appelé écarté inversé à la poulie, est un exercice de renforcement et de définition des deltoïdes. C'est l'un des meilleurs exercices d'isolation pour votre dos et votre deltoïde postérieur. Cet exercice cible vos deltoïdes postérieurs (arrière) tout en sollicitant un ensemble de muscles du haut du corps. \n \n Réglez la charge et les poulies à la bonne hauteur. Vous devez pouvoir voir les poulies, car elles doivent se trouver au-dessus de votre tête. \n De la main droite, saisissez la poulie de gauche, et de la main gauche, saisissez la poulie de droite, en les croisant devant vous. C'est ici que commence votre mouvement. \n Amorcez le mouvement en écartant et rapprochant les bras, tout en gardant les bras tendus. \n Marquez une brève pause à la fin du mouvement avant de ramener les poignées à leur position de départ.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "cshep442"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/822/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/822/74affc0d-03b6-4f33-b5f4-a822a2615f68.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "cshep442"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      },
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/822/6a770e5d-cd62-4754-a18c-eebe2103d7c5.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "cshep442"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": false
+      }
+    ],
+    "muscles_secondary": [
+      "Triceps"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/960/",
-  "media": []
- },
- {
-  "id": "wger:961",
-  "source_id": 961,
-  "name": "Swimming 50m sprints",
-  "name_en": "Swimming 50m sprints",
-  "aliases": [
-   "Swimming 50m sprints"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "50m swimming sprints at 1min",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "abuono"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:828",
+    "source_id": 828,
+    "name": "Oiseau sur banc incliné",
+    "name_en": "Incline Bench Reverse Fly",
+    "aliases": [
+      "Incline Bench Reverse Fly",
+      "Oiseau sur banc incliné"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Dumbbell",
+      "Incline bench"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "L'oiseau à l'haltère sur banc incliné est un exercice du haut du corps qui cible les deltoïdes postérieurs (arrière de l'épaule), ainsi que les muscles posturaux du haut du dos. Comme il cible de si petits muscles, cet exercice se réalise généralement avec une charge légère et un nombre élevé de répétitions, par exemple 10 à 15 répétitions par série ou plus.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "cshep442"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/828/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/828/2e959dab-f39b-4c7c-9063-eb43064ab5eb.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "cshep442"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      },
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/828/abfc7700-fadf-4f2d-ac84-e045e590a2fe.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "cshep442"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": false
+      }
+    ],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "abuono"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:908",
+    "source_id": 908,
+    "name": "Zone 2 Running",
+    "name_en": "Zone 2 Running",
+    "aliases": [
+      "Zone 2 Running"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Zone two Cardio for endurance, you should be able to speak while running",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "karly"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "karly"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/908/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/961/",
-  "media": []
- },
- {
-  "id": "wger:962",
-  "source_id": 962,
-  "name": "Vélo elliptique",
-  "name_en": "Elliptical",
-  "aliases": [
-   "Elliptical",
-   "Vélo elliptique",
-   "Elliptique"
-  ],
-  "category": "Cardio",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Il améliore la tonification musculaire, renforce les muscles des jambes (quadriceps, fessiers, mollets), favorise la vascularisation et augmente l'endurance. Le vélo elliptique est également très utile si vous cherchez à perdre du poids.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:909",
+    "source_id": 909,
+    "name": "Reverse Nordic Curl",
+    "name_en": "Reverse Nordic Curl",
+    "aliases": [
+      "Reverse Nordic Curl"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Natural Leg Extension is alternative to Leg Extension machine with no equipment.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "karly"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "karly"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/909/",
+    "media": [],
+    "muscles_secondary": [
+      "Glutes",
+      "Abs"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:910",
+    "source_id": 910,
+    "name": "Nordic Curl",
+    "name_en": "Nordic Curl",
+    "aliases": [
+      "Nordic Curl"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [
+      "Hamstrings"
+    ],
+    "variation_group": null,
+    "description": "Le Nordic curl (leg curl nordique) est l'un des meilleurs exercices pour le bas du corps afin de développer la force de la chaîne postérieure des jambes, d'améliorer la santé des genoux et de prévenir les blessures.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "karly"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/910/",
+    "media": [],
+    "muscles_secondary": [
+      "Glutes"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/962/",
-  "media": []
- },
- {
-  "id": "wger:974",
-  "source_id": 974,
-  "name": "Curl à la kettlebell à deux mains",
-  "name_en": "Curl with kettlebell two hands",
-  "aliases": [
-   "Curl with kettlebell two hands",
-   "Curl à la kettlebell à deux mains"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Kettlebell"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "Tenez-vous debout bien droit et saisissez la kettlebell à deux mains. Effectuez le mouvement de flexion du coude, en partant d'une position complètement tendue jusqu'à ce que votre main atteigne la hauteur des épaules. Écartez un peu les jambes pour la stabilité et, pour réaliser l'exercice correctement, essayez de ne pas pousser avec le dos ni avec le corps en général. Changez le poids de la kettlebell pour ajuster la difficulté.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:911",
+    "source_id": 911,
+    "name": "Incline Skull Crush",
+    "name_en": "Incline Skull Crush",
+    "aliases": [
+      "Incline Skull Crush"
+    ],
+    "category": "Arms",
+    "equipment": [],
+    "muscles": [
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "Siting in a 45 Degree Angle, using DB to do Incline Skull Crush",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/911/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:912",
+    "source_id": 912,
+    "name": "Straight Bar Cable Curls",
+    "name_en": "Straight Bar Cable Curls",
+    "aliases": [
+      "Straight Bar Cable Curls"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "Standing upright in front of Cable Tower using a straight bar",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/912/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/974/",
-  "media": []
- },
- {
-  "id": "wger:975",
-  "source_id": 975,
-  "name": "Curls à une main à la kettlebell",
-  "name_en": "one-handed kettlebell curls",
-  "aliases": [
-   "Curls à une main à la kettlebell",
-   "one-handed kettlebell curls"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Kettlebell"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "Debout, la kettlebell dans une main et le coude fléchi, partez d'une position complètement tendue jusqu'à ce que la main atteigne la hauteur de l'épaule. Pour exécuter le mouvement correctement, essayez de ne pas pousser avec le dos ni avec le corps.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:913",
+    "source_id": 913,
+    "name": "Reverse Preacher Curl (Close Grip)",
+    "name_en": "Reverse Preacher Curl (Close Grip)",
+    "aliases": [
+      "Reverse Preacher Curl (Close Grip)"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "SZ-Bar"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "Sitting reverse on a Biceps Bench with a close grip",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/913/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:914",
+    "source_id": 914,
+    "name": "Reverse EZ Bar Cable Curls",
+    "name_en": "Reverse EZ Bar Cable Curls",
+    "aliases": [
+      "Reverse EZ Bar Cable Curls"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Cable machine",
+      "SZ-Bar"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "Standing in front of cable tower using a SZ Bar",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/914/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/975/",
-  "media": []
- },
- {
-  "id": "wger:976",
-  "source_id": 976,
-  "name": "Medicine ball booklet crunch",
-  "name_en": "Medicine ball booklet crunch",
-  "aliases": [
-   "Medicine ball booklet crunch"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Using a medicine ball as an overload will make the exercise heavier.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:915",
+    "source_id": 915,
+    "name": "Bus Drivers",
+    "name_en": "Bus Drivers",
+    "aliases": [
+      "Bus Drivers"
+    ],
+    "category": "Shoulders",
+    "equipment": [],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Sitting with a Weight Plate, used as wheel, in both hands; raised slightly below eye level",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/915/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:916",
+    "source_id": 916,
+    "name": "Smith Press",
+    "name_en": "Smith Press",
+    "aliases": [
+      "Smith Press"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Incline bench"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Sitting almost 90 degree angle, smith machine",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/916/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/976/",
-  "media": []
- },
- {
-  "id": "wger:977",
-  "source_id": 977,
-  "name": "Box squat",
-  "name_en": "Box squat",
-  "aliases": [
-   "Box squat"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads",
-   "Soleus"
-  ],
-  "variation_group": null,
-  "description": "Installez la box :  Placez la box derrière vous, à environ un mètre d'un rack à squat si vous utilisez une barre. Choisissez une hauteur qui vous permette de descendre en squat et d'effleurer doucement la box avec les fessiers, le dos droit. \n  Adoptez une bonne posture :  Tenez-vous debout, les pieds écartés à la largeur des épaules, les pointes de pieds légèrement vers l'extérieur. Engagez la sangle abdominale et gardez le dos neutre. Si vous utilisez une barre, placez-la à hauteur d'épaule. \n  Descendez :  Asseyez-vous vers l'arrière comme pour vous installer sur une chaise, en fléchissant les genoux et en abaissant les hanches vers la box. Gardez la sangle abdominale gainée et le dos droit tout au long du mouvement. \n  Descente contrôlée :  Descendez de manière contrôlée jusqu'à ce que les fessiers touchent doucement la box. Ne vous laissez pas tomber. \n  Pause et poussée :  Marquez brièvement une pause en position basse, le dos droit et la sangle abdominale gainée. Poussez ensuite à travers les talons pour vous propulser de nouveau à la position de départ. \n \n Amélioration de la coordination, de l'équilibre et de l'endurance, tonification des muscles des jambes et des fessiers, et augmentation globale de la densité osseuse réduisant le risque d'ostéoporose.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:917",
+    "source_id": 917,
+    "name": "Straight Bar Cable Front Raise",
+    "name_en": "Straight Bar Cable Front Raise",
+    "aliases": [
+      "Straight Bar Cable Front Raise"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Cable machine",
+      "SZ-Bar"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Back to cable tower, cable between legs, SZ Bar",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/917/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:918",
+    "source_id": 918,
+    "name": "Seated Dumbbell Side Lateral",
+    "name_en": "Seated Dumbbell Side Lateral",
+    "aliases": [
+      "Seated Dumbbell Side Lateral"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "seated slightly leaned forward at beginning of exercise",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/918/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/977/",
-  "media": []
- },
- {
-  "id": "wger:978",
-  "source_id": 978,
-  "name": "Knee Raises",
-  "name_en": "Knee Raises",
-  "aliases": [
-   "Knee Raises"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "Pull-up bar"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "The 90° leg raise on the bar is a very intense exercise that involves all the abdominal muscles.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:919",
+    "source_id": 919,
+    "name": "T-Bar row",
+    "name_en": "T-Bar row",
+    "aliases": [
+      "T-Bar row"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Barbell"
+    ],
+    "muscles": [
+      "Lats",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "bent over with triangle grip, slightly bent knees",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/919/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:922",
+    "source_id": 922,
+    "name": "Seated Cable Mid Trap Shrug",
+    "name_en": "Seated Cable Mid Trap Shrug",
+    "aliases": [
+      "Seated Cable Mid Trap Shrug"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "seated straight back, slight hold at top",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/922/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/978/",
-  "media": []
- }
+  {
+    "id": "wger:923",
+    "source_id": 923,
+    "name": "Lying Dumbbell Row SS Seated Shrug",
+    "name_en": "Lying Dumbbell Row SS Seated Shrug",
+    "aliases": [
+      "Lying Dumbbell Row SS Seated Shrug"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Lats",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "laying on the stomach on a bench with slight angle",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/923/",
+    "media": [],
+    "muscles_secondary": [
+      "Biceps"
+    ]
+  },
+  {
+    "id": "wger:925",
+    "source_id": 925,
+    "name": "Développé incliné à la Smith machine",
+    "name_en": "Smith Machine Slight Incline Press",
+    "aliases": [
+      "Développé incliné à la Smith machine",
+      "Smith Machine Slight Incline Press"
+    ],
+    "category": "Chest",
+    "equipment": [],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "*  Exécution  *  Position de départ : \n \n Déverrouillez la barre et tenez-la au-dessus du haut de votre poitrine, bras complètement tendus. \n Gardez vos omoplates  rétractées et plaquées contre le banc . \n  Phase de descente (excentrique) :  \n Abaissez lentement la barre jusqu'à juste en dessous de votre clavicule ou du haut de votre poitrine. \n Gardez le contrôle, ne faites pas rebondir la barre. \n  Phase de poussée (concentrique) :  \n Poussez la barre vers le haut en ligne droite jusqu'à l'extension complète des bras. \n Concentrez-vous sur la  contraction du haut de vos pectoraux  en haut du mouvement. \n  Verrouillez et répétez :  \n Terminez vos répétitions, puis reposez la barre en toute sécurité sur les crochets.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/925/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:926",
+    "source_id": 926,
+    "name": "Machine chest fly",
+    "name_en": "Machine chest fly",
+    "aliases": [
+      "Machine chest fly"
+    ],
+    "category": "Chest",
+    "equipment": [],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "seated machine, straight back, slow exercise",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "novadani"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/926/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:927",
+    "source_id": 927,
+    "name": "Suspended crossess",
+    "name_en": "Suspended crossess",
+    "aliases": [
+      "Suspended crossess",
+      "croci",
+      "sospensione",
+      "trx"
+    ],
+    "category": "Cardio",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Suspension exercise with trx for chest training",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/927/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:957",
+    "source_id": 957,
+    "name": "Élévation bras et jambe à quatre pattes",
+    "name_en": "Quadriped Arm and Leg Raise",
+    "aliases": [
+      "Quadriped Arm and Leg Raise",
+      "Élévation bras et jambe à quatre pattes"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Glutes",
+      "Serratus anterior",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Dans cet exercice, les muscles du dos ainsi que les muscles de l'arrière de la jambe et de l'arrière du bras sont activés en levant simultanément le bras et la jambe opposés en position à quatre pattes. Il améliore aussi l'équilibre et la proprioception. Le mouvement s'effectue de façon symétrique. \n \n Mettez-vous en position à quatre pattes. \n Rentrez le ventre, puis levez votre jambe droite et votre bras gauche. \n Vous devez garder le ventre rentré pendant 8 secondes. \n Au bout de 8 secondes, abaissez lentement votre bras et votre jambe. \n Puis relâchez vos muscles.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "utkb"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/957/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/957/0fd94587-6021-4763-856e-7227f5fcba2a.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "utkb"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Lats"
+    ]
+  },
+  {
+    "id": "wger:958",
+    "source_id": 958,
+    "name": "Biceps au TRX",
+    "name_en": "Biceps with TRX",
+    "aliases": [
+      "Biceps au TRX",
+      "Biceps with TRX"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "Saisissez les poignées des sangles TRX, inclinez le corps vers l'arrière, bras et jambes tendus, le corps aligné sur une seule ligne droite. (Il s'agit d'un exercice pour les bras, et non pour les abdominaux.)",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/958/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/958/947ac249-475d-44ed-bed3-8dc433374f59.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "cynomops"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      },
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/958/95f2bbc4-2f95-476d-a9b8-81b333fe2ef5.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "cynomops"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": false
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:959",
+    "source_id": 959,
+    "name": "TRX Rows",
+    "name_en": "TRX Rows",
+    "aliases": [
+      "TRX Rows"
+    ],
+    "category": "Back",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Biceps",
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "This exercise serves as a lead-up to Pull Ups.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/959/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/959/53a5e008-bc31-4ee0-9463-69a858c2ec18.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "clafal"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:960",
+    "source_id": 960,
+    "name": "Kettlebell Swing",
+    "name_en": "Kettlebell Swing",
+    "aliases": [
+      "Kettlebell Swing"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Kettlebell"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Bien que le kettlebell swing soit un exercice pour tout le corps, il cible principalement les muscles de la chaîne postérieure (l'arrière du corps). Les principaux muscles sollicités sont les fessiers, les ischio-jambiers, les érecteurs du rachis et les muscles du haut du dos.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/960/",
+    "media": [],
+    "muscles_secondary": [
+      "Quads",
+      "Abs",
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:961",
+    "source_id": 961,
+    "name": "Swimming 50m sprints",
+    "name_en": "Swimming 50m sprints",
+    "aliases": [
+      "Swimming 50m sprints"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "50m swimming sprints at 1min",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "abuono"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "abuono"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/961/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:962",
+    "source_id": 962,
+    "name": "Vélo elliptique",
+    "name_en": "Elliptical",
+    "aliases": [
+      "Elliptical",
+      "Vélo elliptique",
+      "Elliptique"
+    ],
+    "category": "Cardio",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Il améliore la tonification musculaire, renforce les muscles des jambes (quadriceps, fessiers, mollets), favorise la vascularisation et augmente l'endurance. Le vélo elliptique est également très utile si vous cherchez à perdre du poids.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/962/",
+    "media": [],
+    "muscles_secondary": [
+      "Biceps",
+      "Abs",
+      "Triceps"
+    ]
+  },
+  {
+    "id": "wger:974",
+    "source_id": 974,
+    "name": "Curl à la kettlebell à deux mains",
+    "name_en": "Curl with kettlebell two hands",
+    "aliases": [
+      "Curl with kettlebell two hands",
+      "Curl à la kettlebell à deux mains"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Kettlebell"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "Tenez-vous debout bien droit et saisissez la kettlebell à deux mains. Effectuez le mouvement de flexion du coude, en partant d'une position complètement tendue jusqu'à ce que votre main atteigne la hauteur des épaules. Écartez un peu les jambes pour la stabilité et, pour réaliser l'exercice correctement, essayez de ne pas pousser avec le dos ni avec le corps en général. Changez le poids de la kettlebell pour ajuster la difficulté.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/974/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:975",
+    "source_id": 975,
+    "name": "Curls à une main à la kettlebell",
+    "name_en": "one-handed kettlebell curls",
+    "aliases": [
+      "Curls à une main à la kettlebell",
+      "one-handed kettlebell curls"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Kettlebell"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "Debout, la kettlebell dans une main et le coude fléchi, partez d'une position complètement tendue jusqu'à ce que la main atteigne la hauteur de l'épaule. Pour exécuter le mouvement correctement, essayez de ne pas pousser avec le dos ni avec le corps.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/975/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:976",
+    "source_id": 976,
+    "name": "Medicine ball booklet crunch",
+    "name_en": "Medicine ball booklet crunch",
+    "aliases": [
+      "Medicine ball booklet crunch"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Using a medicine ball as an overload will make the exercise heavier.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/976/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:977",
+    "source_id": 977,
+    "name": "Box squat",
+    "name_en": "Box squat",
+    "aliases": [
+      "Box squat"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads",
+      "Soleus"
+    ],
+    "variation_group": null,
+    "description": "Installez la box :  Placez la box derrière vous, à environ un mètre d'un rack à squat si vous utilisez une barre. Choisissez une hauteur qui vous permette de descendre en squat et d'effleurer doucement la box avec les fessiers, le dos droit. \n  Adoptez une bonne posture :  Tenez-vous debout, les pieds écartés à la largeur des épaules, les pointes de pieds légèrement vers l'extérieur. Engagez la sangle abdominale et gardez le dos neutre. Si vous utilisez une barre, placez-la à hauteur d'épaule. \n  Descendez :  Asseyez-vous vers l'arrière comme pour vous installer sur une chaise, en fléchissant les genoux et en abaissant les hanches vers la box. Gardez la sangle abdominale gainée et le dos droit tout au long du mouvement. \n  Descente contrôlée :  Descendez de manière contrôlée jusqu'à ce que les fessiers touchent doucement la box. Ne vous laissez pas tomber. \n  Pause et poussée :  Marquez brièvement une pause en position basse, le dos droit et la sangle abdominale gainée. Poussez ensuite à travers les talons pour vous propulser de nouveau à la position de départ. \n \n Amélioration de la coordination, de l'équilibre et de l'endurance, tonification des muscles des jambes et des fessiers, et augmentation globale de la densité osseuse réduisant le risque d'ostéoporose.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/977/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:978",
+    "source_id": 978,
+    "name": "Knee Raises",
+    "name_en": "Knee Raises",
+    "aliases": [
+      "Knee Raises"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "Pull-up bar"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "The 90° leg raise on the bar is a very intense exercise that involves all the abdominal muscles.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/978/",
+    "media": [],
+    "muscles_secondary": [
+      "Obliquus externus abdominis"
+    ]
+  }
 ]

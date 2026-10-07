@@ -171,6 +171,82 @@ def exact(name):
     return next(iter(candidates)) if key not in AMBIGUOUS and len(candidates) == 1 else None
 
 
+# Only neutral spelling changes: never drop angle, grip, side or equipment tokens.
+TOKEN_FORMS = {
+    "halteres": "haltere",
+    "dumbbells": "haltere",
+    "dumbbell": "haltere",
+    "halt": "haltere",
+    "db": "haltere",
+    "barbell": "barre",
+    "bb": "barre",
+    "tractions": "traction",
+    "fentes": "fente",
+    "ecartes": "ecarte",
+    "elevations": "elevation",
+    "laterales": "laterale",
+    "bras": "bras",
+    "inclines": "incline",
+    "inclinee": "incline",
+    "declinee": "decline",
+    "couchee": "couche",
+    "couchez": "couche",
+    "prono": "pronation",
+    "supi": "supination",
+    "1": "un",
+    "une": "un",
+}
+NEUTRAL_WORDS = {"a", "au", "aux", "avec", "de", "des", "du", "la", "le", "les", "the", "with"}
+EXPANSIONS = {
+    "dc": "developpe couche",
+    "sdt": "souleve terre",
+    "pdc": "poids corps",
+    "unilateral": "un bras",
+    "unilaterale": "un bras",
+}
+
+
+def signature(name):
+    tokens = []
+    for word in normalized(name).split():
+        for token in EXPANSIONS.get(word, word).split():
+            if token not in NEUTRAL_WORDS:
+                tokens.append(TOKEN_FORMS.get(token, token))
+    return tuple(sorted(tokens))
+
+
+@lru_cache(maxsize=1)
+def signature_index():
+    result = {}
+    for alias, ids in exact_index().items():
+        result.setdefault(signature(alias), set()).update(ids)
+    # The curated preferred variant also applies to reordered equivalent wording.
+    for source_id, (name, aliases) in ALIASES.items():
+        key = f"wger:{source_id}"
+        if key in catalogue():
+            for alias in [name, *aliases]:
+                result[signature(alias)] = {key}
+    return result
+
+
+@lru_cache(maxsize=1)
+def ambiguous_signatures():
+    return {signature(name) for name in AMBIGUOUS}
+
+
+def automatic(name):
+    key = exact(name)
+    if key:
+        return key, "exact"
+    fingerprint = signature(name)
+    if not fingerprint or fingerprint in ambiguous_signatures():
+        return None, "unresolved"
+    candidates = signature_index().get(fingerprint, set())
+    if len(candidates) == 1:
+        return next(iter(candidates)), "automatic"
+    return None, "unresolved"
+
+
 def search(query="", *, limit=12, offset=0, category="", equipment=""):
     query = normalized(query)
     tokens = set(query.split())
@@ -211,14 +287,14 @@ def binding(exercise_id, *, name=None):
         return record
     exercise = db.record("gym_exercise", exercise_id)
     name = name or exercise.get("name", "")
-    key = exact(name) if name else None
+    key, method = automatic(name) if name else (None, "unresolved")
     return {
         "exercise_id": exercise_id,
         "catalog_id": key,
         "weight_convention": "unspecified",
         "weight_context": "",
         "revision": 0,
-        "method": "exact" if key else "unresolved",
+        "method": method,
     }
 
 
@@ -240,13 +316,13 @@ def decorate(item, snapshot=None):
     if snapshot is None:
         resolved = resolution(item["exercise_id"], name=item["name"])
     else:
-        key = exact(item["name"])
+        key, method = automatic(item["name"])
         resolved = snapshot.get(
             item["exercise_id"],
             {
                 "catalog_id": key,
                 "weight_convention": "unspecified",
-                "method": "exact" if key else "unresolved",
+                "method": method,
             },
         )
     entry = catalogue().get(resolved["catalog_id"])

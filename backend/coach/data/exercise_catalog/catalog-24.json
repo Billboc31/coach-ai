@@ -1,1524 +1,1618 @@
 [
- {
-  "id": "wger:2448",
-  "source_id": 2448,
-  "name": "Clamshell inversé",
-  "name_en": "Reverse Clamshell",
-  "aliases": [
-   "Clamshell inversé",
-   "Reverse Clamshell"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Allongez-vous sur le côté, les hanches et les genoux fléchis, en gardant les genoux superposés l'un sur l'autre. Gardez d'abord les pieds joints, puis, tout en gardant les genoux en contact, levez le pied supérieur vers le haut. Abaissez lentement le pied en gardant le contrôle. \n Le mouvement doit se faire uniquement au niveau de la hanche ; évitez de basculer le bassin vers l'arrière. Le mouvement doit rester petit, contrôlé et centré sur la rotation de la hanche.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "TobiasFalk"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2448/",
-  "media": []
- },
- {
-  "id": "wger:2449",
-  "source_id": 2449,
-  "name": "Clamshell vers clamshell inversé",
-  "name_en": "Clamshell to Reverse Clamshell",
-  "aliases": [
-   "Clamshell to Reverse Clamshell",
-   "Clamshell vers clamshell inversé"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Allongez-vous sur le côté, les hanches et les genoux fléchis, en gardant les jambes superposées. Levez le genou supérieur en position de clamshell et maintenez la jambe relevée pendant tout le mouvement. À partir de là, alternez entre l'ouverture du genou vers le haut et l'élévation du pied vers le haut, en passant par la rotation externe puis interne de la hanche. \n Gardez le mouvement lent et contrôlé. Ne laissez pas la jambe supérieure reposer sur la jambe inférieure entre les répétitions.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "TobiasFalk"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2449/",
-  "media": []
- },
- {
-  "id": "wger:2452",
-  "source_id": 2452,
-  "name": "Curl De Muñeca Con Barra",
-  "name_en": "Curl De Muñeca Con Barra",
-  "aliases": [
-   "Curl De Muñeca Con Barra"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Barbell",
-   "Bench"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "This is a variation of the flat bench press designed to emphasize the clavicular head of the pectoralis major (the upper portion). By tilting the torso, the angle of the push changes, shifting more tension to the upper chest and shoulders, which helps achieve a more aesthetic, balanced, and three-dimensional development of the torso. \n \n \n Starting Position: Grip a bar with an overhand grip (palms facing up) at a width similar to your shoulders. \n \n \n Position on the Bench: Kneel in front of a flat bench and rest the backs of your forearms on it. Your wrists and hands should extend slightly beyond the edge of the bench to allow for a full range of motion. \n \n \n Eccentric Phase (Lowering): Lower the bar in a controlled manner by extending your wrists toward the floor. At the bottom of the movement, slightly spread your fingers to let the bar roll down a bit, maximizing the stretch. \n \n \n Concentric Phase (Lift): First, close your fingers to secure the bar, then flex your wrists upward explosively but in a controlled manner, bringing the bar as high as possible. Strongly contract your forearms at the top position for one second. \n \n \n Form: Keep your forearms firmly pressed against the bench throughout the exercise; only your wrists and fingers should move.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "xWan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "xWan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2452/",
-  "media": []
- },
- {
-  "id": "wger:2454",
-  "source_id": 2454,
-  "name": "YTW Raises",
-  "name_en": "YTW Raises",
-  "aliases": [
-   "YTW Raises"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "The YTW exercise for scapular retraction is designed to strengthen the inter-scapular muscles between your shoulder blades, to help retract or pull your shoulders back, helping to maintain proper upright posture.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "probablyforging"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "probablyforging"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2454/",
-  "media": []
- },
- {
-  "id": "wger:2478",
-  "source_id": 2478,
-  "name": "Glute-Ham Raise",
-  "name_en": "Glute-Ham Raise",
-  "aliases": [
-   "Glute-Ham Raise"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Bench"
-  ],
-  "muscles": [
-   "Hamstrings"
-  ],
-  "variation_group": null,
-  "description": "Kneel on a glute-ham developer or have a partner hold your ankles. Keeping hips straight, lower your torso toward the floor under control, then curl back up by contracting the hamstrings and glutes.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC0",
-   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "authors": [
-    "personal use"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2478/",
-  "media": []
- },
- {
-  "id": "wger:2480",
-  "source_id": 2480,
-  "name": "Easy Continuous Swim (Freestyle)",
-  "name_en": "Easy Continuous Swim (Freestyle)",
-  "aliases": [
-   "Easy Continuous Swim (Freestyle)"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Shoulders",
-   "Lats",
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Swim freestyle at a relaxed, steady pace without stopping — think conversation pace, not racing. Focus on smooth, even strokes rather than speed or breathing technique; this is just to get your body moving and your heart rate up.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imported from swim plan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2480/",
-  "media": []
- },
- {
-  "id": "wger:2481",
-  "source_id": 2481,
-  "name": "Kick with Board",
-  "name_en": "Kick with Board",
-  "aliases": [
-   "Kick with Board"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Hold a kickboard with both hands, arms extended in front of you, face in the water (lift head forward to breathe when needed). Kick from your hips, not your knees, keeping your legs mostly straight with a slight bend and a steady, compact flutter kick. This builds leg endurance and keeps your body horizontal without needing to worry about your arms.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imported from swim plan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2481/",
-  "media": []
- },
- {
-  "id": "wger:2482",
-  "source_id": 2482,
-  "name": "Bobbing Exhale Drill",
-  "name_en": "Bobbing Exhale Drill",
-  "aliases": [
-   "Bobbing Exhale Drill"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Stand in chest-deep water. Take a breath, submerge your face fully, and exhale slowly and completely through your nose and/or mouth the whole time you're underwater — a gentle humming sound can help keep the exhale steady and controlled. Once you're empty of air, lift your head, take a fresh breath, and go back under. Repeat continuously. The goal is training your body that all your exhaling happens underwater, so all you need to do at the surface is inhale.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imported from swim plan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2482/",
-  "media": []
- },
- {
-  "id": "wger:2483",
-  "source_id": 2483,
-  "name": "Wall-Hold Rotation",
-  "name_en": "Wall-Hold Rotation",
-  "aliases": [
-   "Wall-Hold Rotation"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Obliquus externus abdominis"
-  ],
-  "variation_group": null,
-  "description": "Hold the pool wall or edge with one hand, body horizontal at the surface, legs kicking gently behind you. Keep your face in the water, exhaling continuously, then rotate your head to the side — not lifting it up — so one goggle stays in the water while the other clears the surface. Take a quick breath, then rotate your face back down to neutral. This isolates the head-rotation motion without any arm strokes to think about.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imported from swim plan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2483/",
-  "media": []
- },
- {
-  "id": "wger:2484",
-  "source_id": 2484,
-  "name": "Side-Kick Breathing (Kickboard)",
-  "name_en": "Side-Kick Breathing (Kickboard)",
-  "aliases": [
-   "Side-Kick Breathing (Kickboard)"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Push off the wall on your side (not flat on your stomach), one arm extended forward holding the board or just extended, kicking continuously. Keep your head in a neutral position looking at the bottom of the pool, and when you need air, rotate your head sideways (one ear stays in the water, other faces up) to breathe, then rotate back to neutral. Swim a length like this, then repeat on the other side. This teaches the exact head position and rotation you'll use once full stroke breathing comes in.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imported from swim plan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2484/",
-  "media": []
- },
- {
-  "id": "wger:2485",
-  "source_id": 2485,
-  "name": "Stroke-and-Roll Drill",
-  "name_en": "Stroke-and-Roll Drill",
-  "aliases": [
-   "Stroke-and-Roll Drill"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Shoulders",
-   "Obliquus externus abdominis"
-  ],
-  "variation_group": null,
-  "description": "Push off, swim a few strokes, and every breath roll fully onto your back for 2-3 breaths, then roll back into freestyle. This teaches you to rotate your body as a unit rather than just turning your head, and helps remove the fear of not having your face in the water.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imported from swim plan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2485/",
-  "media": []
- },
- {
-  "id": "wger:2486",
-  "source_id": 2486,
-  "name": "Recovery Bobbing",
-  "name_en": "Recovery Bobbing",
-  "aliases": [
-   "Recovery Bobbing"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Same motion as the Bobbing Exhale Drill, but done in slightly deeper water (so you're not touching the bottom) and at a slower, more relaxed pace — think of it as a recovery/reset exercise rather than a hard drill. Use it between harder drills to reset your breathing rhythm and calm down if you're feeling rushed or out of sync.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imported from swim plan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2486/",
-  "media": []
- },
- {
-  "id": "wger:2487",
-  "source_id": 2487,
-  "name": "Cool-Down Swim",
-  "name_en": "Cool-Down Swim",
-  "aliases": [
-   "Cool-Down Swim"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Shoulders",
-   "Lats",
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Swim at an easy, unhurried pace — freestyle, backstroke, or just floating/gliding — with zero focus on technique or drills. The only goal here is to let your heart rate come down gradually and your muscles relax before you get out of the pool.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Imported from swim plan"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2487/",
-  "media": []
- },
- {
-  "id": "wger:2488",
-  "source_id": 2488,
-  "name": "Posterior Pelvic Tilt",
-  "name_en": "Posterior Pelvic Tilt",
-  "aliases": [
-   "Posterior Pelvic Tilt",
-   "Pelvic Tilt Drill / Supine Pelvic Tilt"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Lie on your back with knees bent, feet flat on the floor. Flatten your lower back against the floor by tilting your pelvis posteriorly, engaging your abs and glutes. Hold 5 seconds, release. This retrains pelvic positioning to counter anterior pelvic tilt.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Raj"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Raj"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2488/",
-  "media": []
- },
- {
-  "id": "wger:2494",
-  "source_id": 2494,
-  "name": "Band Terminal Knee extension",
-  "name_en": "Band Terminal Knee extension",
-  "aliases": [
-   "Band Terminal Knee extension"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Resistance band"
-  ],
-  "muscles": [
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "This is an end range strengthening exercise for the knee extensors. Start by looping a band around the back of one knee and anchoring the other end to a stable surface in front of you. Stand in a split stance with the banded knee bent and placed as the front leg. Straighten the knee to pull against the bands resistance and maintain a contraction in your quadriceps for up to 5 seconds before releasing.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Rehab Hero"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Rehab Hero"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2494/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/2494/02f1ae86-d374-4b5a-b314-a76c487ea1e9.png",
-    "codec": null,
+  {
+    "id": "wger:2448",
+    "source_id": 2448,
+    "name": "Clamshell inversé",
+    "name_en": "Reverse Clamshell",
+    "aliases": [
+      "Clamshell inversé",
+      "Reverse Clamshell"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Allongez-vous sur le côté, les hanches et les genoux fléchis, en gardant les genoux superposés l'un sur l'autre. Gardez d'abord les pieds joints, puis, tout en gardant les genoux en contact, levez le pied supérieur vers le haut. Abaissez lentement le pied en gardant le contrôle. \n Le mouvement doit se faire uniquement au niveau de la hanche ; évitez de basculer le bassin vers l'arrière. Le mouvement doit rester petit, contrôlé et centré sur la rotation de la hanche.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Knickers1833"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "TobiasFalk"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   },
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/2494/2213ff47-94e8-4884-919f-5af8a2fe9c0f.png",
-    "codec": null,
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2448/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:2449",
+    "source_id": 2449,
+    "name": "Clamshell vers clamshell inversé",
+    "name_en": "Clamshell to Reverse Clamshell",
+    "aliases": [
+      "Clamshell to Reverse Clamshell",
+      "Clamshell vers clamshell inversé"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Allongez-vous sur le côté, les hanches et les genoux fléchis, en gardant les jambes superposées. Levez le genou supérieur en position de clamshell et maintenez la jambe relevée pendant tout le mouvement. À partir de là, alternez entre l'ouverture du genou vers le haut et l'élévation du pied vers le haut, en passant par la rotation externe puis interne de la hanche. \n Gardez le mouvement lent et contrôlé. Ne laissez pas la jambe supérieure reposer sur la jambe inférieure entre les répétitions.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Knickers1833"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "TobiasFalk"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": false
-   }
-  ]
- },
- {
-  "id": "wger:2523",
-  "source_id": 2523,
-  "name": "Serratus Wall Slide Stretch",
-  "name_en": "Serratus Wall Slide Stretch",
-  "aliases": [
-   "Serratus Wall Slide Stretch"
-  ],
-  "category": "Shoulders",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Stand facing a wall. Place your forearms vertically against the wall so your elbows and wrists are both touching it. \n Point your arms slightly outwards from \"straight up\". \n Protract your shoulders had, then slide your forearms up the wall until your elbows are about level with your chin. \n Slide your forearms back down the wall. Repeat as necessary.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2449/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2523/",
-  "media": []
- },
- {
-  "id": "wger:2525",
-  "source_id": 2525,
-  "name": "Couch Stretch",
-  "name_en": "Couch Stretch",
-  "aliases": [
-   "Couch Stretch"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Bench"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Stand facing away from a bench, couch or similar-height object. \n Extend one leg backwards, resting your foot \"laces-down\" on the edge of the bench. \n Lower yourself until your rear knee is on the floor and you are in a lunge position, with your torso hanging forwards slightly. \n Brace your core, tense your rear glute, and straighten up your torso to vertical, under control. Relax and repeat. \n \n Repeat for the other leg, too.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2525/",
-  "media": []
- },
- {
-  "id": "wger:2526",
-  "source_id": 2526,
-  "name": "Long Lunge Pulse Stretch",
-  "name_en": "Long Lunge Pulse Stretch",
-  "aliases": [
-   "Long Lunge Pulse Stretch"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Resistance band"
-  ],
-  "muscles": [],
-  "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
-  "description": "Hold the resistance band (or any other rope-like object, the elasticity is not necessary) above your head, between your hands, with your arms straight. Pull it taught to engage your lats. \n Step forwards into a lunge, dropping until your knee is almost touching the floor. \n Slowly and controlledly pulse your body up and down by about an inch. Repeat for required reps. \n Repeat for other leg.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2526/",
-  "media": []
- },
- {
-  "id": "wger:2527",
-  "source_id": 2527,
-  "name": "Front Split Stretch",
-  "name_en": "Front Split Stretch",
-  "aliases": [
-   "Front Split Stretch"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Gym mat"
-  ],
-  "muscles": [
-   "Hamstrings",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Start kneeling. \n Extend one leg out forwards, fully straightened. Follow with your hips so your back leg begins to unfold. \n Carefully lower yourself into the stretch. Do not go beyond your limit. \n Hold for the required time.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2527/",
-  "media": []
- },
- {
-  "id": "wger:2528",
-  "source_id": 2528,
-  "name": "Squat Sky Reach Stretch",
-  "name_en": "Squat Sky Reach Stretch",
-  "aliases": [
-   "Squat Sky Reach Stretch"
-  ],
-  "category": "Chest",
-  "equipment": [],
-  "muscles": [
-   "Lats",
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Drop into a squat. \n Hold one ankle with the opposite hand. \n Fold your other arm to your chest. \n Staying in the squat and keeping hold of your ankle, twist to turn your chest-hand back/outwards until your elbow is pointing at the sky. \n Return to the neutral squatting position with your hand on your chest. Repeat movement as required. \n \n Repeat on both sides.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2528/",
-  "media": []
- },
- {
-  "id": "wger:2529",
-  "source_id": 2529,
-  "name": "explosive push ups",
-  "name_en": "explosive push ups",
-  "aliases": [
-   "explosive push ups"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": "07c5447d-9d49-4b29-a2e2-0f9169f749c5",
-  "description": "Explosive Push-Ups \n Start in a standard push-up position, lower your chest, then explosively push off the ground so your hands leave the floor. Land softly and immediately repeat.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "ege"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "ege"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2529/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/2529/e97b7a36-3414-4c4f-9d66-fe37182e829b.png",
-    "codec": null,
+  {
+    "id": "wger:2452",
+    "source_id": 2452,
+    "name": "Curl De Muñeca Con Barra",
+    "name_en": "Curl De Muñeca Con Barra",
+    "aliases": [
+      "Curl De Muñeca Con Barra"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Barbell",
+      "Bench"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "This is a variation of the flat bench press designed to emphasize the clavicular head of the pectoralis major (the upper portion). By tilting the torso, the angle of the push changes, shifting more tension to the upper chest and shoulders, which helps achieve a more aesthetic, balanced, and three-dimensional development of the torso. \n \n \n Starting Position: Grip a bar with an overhand grip (palms facing up) at a width similar to your shoulders. \n \n \n Position on the Bench: Kneel in front of a flat bench and rest the backs of your forearms on it. Your wrists and hands should extend slightly beyond the edge of the bench to allow for a full range of motion. \n \n \n Eccentric Phase (Lowering): Lower the bar in a controlled manner by extending your wrists toward the floor. At the bottom of the movement, slightly spread your fingers to let the bar roll down a bit, maximizing the stretch. \n \n \n Concentric Phase (Lift): First, close your fingers to secure the bar, then flex your wrists upward explosively but in a controlled manner, bringing the bar as high as possible. Strongly contract your forearms at the top position for one second. \n \n \n Form: Keep your forearms firmly pressed against the bench throughout the exercise; only your wrists and fingers should move.",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "ege"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "xWan"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:2530",
-  "source_id": 2530,
-  "name": "Russian Push Ups",
-  "name_en": "Russian Push Ups",
-  "aliases": [
-   "Russian Push Ups"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Russian Push-Ups \n Start in a standard push-up position with your hands slightly wider than shoulder-width apart. Lower your chest toward the floor, then shift your body forward while keeping your chest close to the ground. Extend your arms to return to the starting position, then reverse the movement smoothly. Keep your core tight and maintain controlled movement throughout the exercise.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "ege"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "xWan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2452/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "ege"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2530/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/2530/c39eccd5-c7a5-47cd-85c2-76cac547ad7c.png",
-    "codec": null,
+  {
+    "id": "wger:2454",
+    "source_id": 2454,
+    "name": "YTW Raises",
+    "name_en": "YTW Raises",
+    "aliases": [
+      "YTW Raises"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "The YTW exercise for scapular retraction is designed to strengthen the inter-scapular muscles between your shoulder blades, to help retract or pull your shoulders back, helping to maintain proper upright posture.",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "ege"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "probablyforging"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:2531",
-  "source_id": 2531,
-  "name": "elbow lever",
-  "name_en": "elbow lever",
-  "aliases": [
-   "elbow lever"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "​A calisthenics static balance skill where the entire body is held straight and parallel to the ground, supported by tucking the elbows firmly into the abdomen or pelvic bones.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "ege"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "probablyforging"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2454/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "ege"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2478",
+    "source_id": 2478,
+    "name": "Glute-Ham Raise",
+    "name_en": "Glute-Ham Raise",
+    "aliases": [
+      "Glute-Ham Raise"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Bench"
+    ],
+    "muscles": [
+      "Hamstrings"
+    ],
+    "variation_group": null,
+    "description": "Kneel on a glute-ham developer or have a partner hold your ankles. Keeping hips straight, lower your torso toward the floor under control, then curl back up by contracting the hamstrings and glutes.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "authors": [
+        "personal use"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2478/",
+    "media": [],
+    "muscles_secondary": [
+      "Glutes"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2531/",
-  "media": []
- },
- {
-  "id": "wger:2532",
-  "source_id": 2532,
-  "name": "Planche Lean Hold",
-  "name_en": "Planche Lean Hold",
-  "aliases": [
-   "Planche Lean Hold"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Serratus anterior"
-  ],
-  "variation_group": null,
-  "description": "A straight-arm calisthenics static hold where you assume a plank position and lean the shoulders as far forward as possible past the wrists with protracted scapulae and a hollow body.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "ege"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2480",
+    "source_id": 2480,
+    "name": "Easy Continuous Swim (Freestyle)",
+    "name_en": "Easy Continuous Swim (Freestyle)",
+    "aliases": [
+      "Easy Continuous Swim (Freestyle)"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Shoulders",
+      "Lats",
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Swim freestyle at a relaxed, steady pace without stopping — think conversation pace, not racing. Focus on smooth, even strokes rather than speed or breathing technique; this is just to get your body moving and your heart rate up.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imported from swim plan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2480/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings",
+      "Calves",
+      "Glutes",
+      "Quads",
+      "Abs",
+      "Triceps"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "ege"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2481",
+    "source_id": 2481,
+    "name": "Kick with Board",
+    "name_en": "Kick with Board",
+    "aliases": [
+      "Kick with Board"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Hold a kickboard with both hands, arms extended in front of you, face in the water (lift head forward to breathe when needed). Kick from your hips, not your knees, keeping your legs mostly straight with a slight bend and a steady, compact flutter kick. This builds leg endurance and keeps your body horizontal without needing to worry about your arms.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imported from swim plan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2481/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings",
+      "Calves",
+      "Abs"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2532/",
-  "media": []
- },
- {
-  "id": "wger:2533",
-  "source_id": 2533,
-  "name": "Arch Hang",
-  "name_en": "Arch Hang",
-  "aliases": [
-   "Arch Hang"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Pull-up bar"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "https://www.youtube.com/watch?v=C995b3KLXS4&t=7s \n \n Elbows should stay straight \n Hold it for time/reps \n Start at an active hang: https://www.youtube.com/watch?v=HoE-C85ZlCE \n Progress towards a 90 degree in your shoulder",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wintercyan"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2482",
+    "source_id": 2482,
+    "name": "Bobbing Exhale Drill",
+    "name_en": "Bobbing Exhale Drill",
+    "aliases": [
+      "Bobbing Exhale Drill"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Stand in chest-deep water. Take a breath, submerge your face fully, and exhale slowly and completely through your nose and/or mouth the whole time you're underwater — a gentle humming sound can help keep the exhale steady and controlled. Once you're empty of air, lift your head, take a fresh breath, and go back under. Repeat continuously. The goal is training your body that all your exhaling happens underwater, so all you need to do at the surface is inhale.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imported from swim plan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2482/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wintercyan"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2483",
+    "source_id": 2483,
+    "name": "Wall-Hold Rotation",
+    "name_en": "Wall-Hold Rotation",
+    "aliases": [
+      "Wall-Hold Rotation"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Obliquus externus abdominis"
+    ],
+    "variation_group": null,
+    "description": "Hold the pool wall or edge with one hand, body horizontal at the surface, legs kicking gently behind you. Keep your face in the water, exhaling continuously, then rotate your head to the side — not lifting it up — so one goggle stays in the water while the other clears the surface. Take a quick breath, then rotate your face back down to neutral. This isolates the head-rotation motion without any arm strokes to think about.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imported from swim plan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2483/",
+    "media": [],
+    "muscles_secondary": [
+      "Abs"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2533/",
-  "media": []
- },
- {
-  "id": "wger:2535",
-  "source_id": 2535,
-  "name": "Leg Extension Isometric",
-  "name_en": "Leg Extension Isometric",
-  "aliases": [
-   "Leg Extension Isometric"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "An isometric leg extension is a strengthening exercise where you contract your quadriceps muscles against an immovable resistance without changing the length of the muscle or moving your knee joint.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2484",
+    "source_id": 2484,
+    "name": "Side-Kick Breathing (Kickboard)",
+    "name_en": "Side-Kick Breathing (Kickboard)",
+    "aliases": [
+      "Side-Kick Breathing (Kickboard)"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Push off the wall on your side (not flat on your stomach), one arm extended forward holding the board or just extended, kicking continuously. Keep your head in a neutral position looking at the bottom of the pool, and when you need air, rotate your head sideways (one ear stays in the water, other faces up) to breathe, then rotate back to neutral. Swim a length like this, then repeat on the other side. This teaches the exact head position and rotation you'll use once full stroke breathing comes in.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imported from swim plan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2484/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Hamstrings",
+      "Obliquus externus abdominis",
+      "Quads"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2485",
+    "source_id": 2485,
+    "name": "Stroke-and-Roll Drill",
+    "name_en": "Stroke-and-Roll Drill",
+    "aliases": [
+      "Stroke-and-Roll Drill"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Shoulders",
+      "Obliquus externus abdominis"
+    ],
+    "variation_group": null,
+    "description": "Push off, swim a few strokes, and every breath roll fully onto your back for 2-3 breaths, then roll back into freestyle. This teaches you to rotate your body as a unit rather than just turning your head, and helps remove the fear of not having your face in the water.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imported from swim plan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2485/",
+    "media": [],
+    "muscles_secondary": [
+      "Lats",
+      "Abs"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2535/",
-  "media": []
- },
- {
-  "id": "wger:2536",
-  "source_id": 2536,
-  "name": "Bench Press Isometric",
-  "name_en": "Bench Press Isometric",
-  "aliases": [
-   "Bench Press Isometric"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "Barbell",
-   "Bench"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Chest",
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "A bench press isometric hold is a static strength exercise where you pause and hold a barbell or dumbbells either at your chest, mid-press, or at lockout without moving for a set time",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2486",
+    "source_id": 2486,
+    "name": "Recovery Bobbing",
+    "name_en": "Recovery Bobbing",
+    "aliases": [
+      "Recovery Bobbing"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Same motion as the Bobbing Exhale Drill, but done in slightly deeper water (so you're not touching the bottom) and at a slower, more relaxed pace — think of it as a recovery/reset exercise rather than a hard drill. Use it between harder drills to reset your breathing rhythm and calm down if you're feeling rushed or out of sync.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imported from swim plan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2486/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2487",
+    "source_id": 2487,
+    "name": "Cool-Down Swim",
+    "name_en": "Cool-Down Swim",
+    "aliases": [
+      "Cool-Down Swim"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Shoulders",
+      "Lats",
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Swim at an easy, unhurried pace — freestyle, backstroke, or just floating/gliding — with zero focus on technique or drills. The only goal here is to let your heart rate come down gradually and your muscles relax before you get out of the pool.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Imported from swim plan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2487/",
+    "media": [],
+    "muscles_secondary": [
+      "Glutes",
+      "Abs",
+      "Triceps"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2536/",
-  "media": []
- },
- {
-  "id": "wger:2537",
-  "source_id": 2537,
-  "name": "Overhead Press Isometric",
-  "name_en": "Overhead Press Isometric",
-  "aliases": [
-   "Overhead Press Isometric"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Barbell"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "An isometric overhead press involves holding a weight statically overhead or pushing against an immovable object at a specific point in the press without moving the joint.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2488",
+    "source_id": 2488,
+    "name": "Posterior Pelvic Tilt",
+    "name_en": "Posterior Pelvic Tilt",
+    "aliases": [
+      "Posterior Pelvic Tilt",
+      "Pelvic Tilt Drill / Supine Pelvic Tilt"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Lie on your back with knees bent, feet flat on the floor. Flatten your lower back against the floor by tilting your pelvis posteriorly, engaging your abs and glutes. Hold 5 seconds, release. This retrains pelvic positioning to counter anterior pelvic tilt.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Raj"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Raj"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2488/",
+    "media": [],
+    "muscles_secondary": [
+      "Glutes",
+      "Obliquus externus abdominis"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2494",
+    "source_id": 2494,
+    "name": "Band Terminal Knee extension",
+    "name_en": "Band Terminal Knee extension",
+    "aliases": [
+      "Band Terminal Knee extension"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Resistance band"
+    ],
+    "muscles": [
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "This is an end range strengthening exercise for the knee extensors. Start by looping a band around the back of one knee and anchoring the other end to a stable surface in front of you. Stand in a split stance with the banded knee bent and placed as the front leg. Straighten the knee to pull against the bands resistance and maintain a contraction in your quadriceps for up to 5 seconds before releasing.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Rehab Hero"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Rehab Hero"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2494/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/2494/02f1ae86-d374-4b5a-b314-a76c487ea1e9.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Knickers1833"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      },
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/2494/2213ff47-94e8-4884-919f-5af8a2fe9c0f.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Knickers1833"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": false
+      }
+    ],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2537/",
-  "media": []
- },
- {
-  "id": "wger:2538",
-  "source_id": 2538,
-  "name": "Lateral Raise Isometric",
-  "name_en": "Lateral Raise Isometric",
-  "aliases": [
-   "Lateral Raise Isometric"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "An isometric lateral raise is a shoulder exercise where you hold your arms out to the sides at waist height for a set amount of time instead of moving up and down",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2523",
+    "source_id": 2523,
+    "name": "Serratus Wall Slide Stretch",
+    "name_en": "Serratus Wall Slide Stretch",
+    "aliases": [
+      "Serratus Wall Slide Stretch"
+    ],
+    "category": "Shoulders",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Stand facing a wall. Place your forearms vertically against the wall so your elbows and wrists are both touching it. \n Point your arms slightly outwards from \"straight up\". \n Protract your shoulders had, then slide your forearms up the wall until your elbows are about level with your chin. \n Slide your forearms back down the wall. Repeat as necessary.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2523/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2525",
+    "source_id": 2525,
+    "name": "Couch Stretch",
+    "name_en": "Couch Stretch",
+    "aliases": [
+      "Couch Stretch"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Bench"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Stand facing away from a bench, couch or similar-height object. \n Extend one leg backwards, resting your foot \"laces-down\" on the edge of the bench. \n Lower yourself until your rear knee is on the floor and you are in a lunge position, with your torso hanging forwards slightly. \n Brace your core, tense your rear glute, and straighten up your torso to vertical, under control. Relax and repeat. \n \n Repeat for the other leg, too.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2525/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2538/",
-  "media": []
- },
- {
-  "id": "wger:2539",
-  "source_id": 2539,
-  "name": "Preacher Curl Isometric",
-  "name_en": "Preacher Curl Isometric",
-  "aliases": [
-   "Preacher Curl Isometric"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Dumbbell",
-   "SZ-Bar"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "An isometric preacher curl is a static strength exercise where you hold a fixed position on a preacher pad or and inclined bench under tension without moving the joint.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2526",
+    "source_id": 2526,
+    "name": "Long Lunge Pulse Stretch",
+    "name_en": "Long Lunge Pulse Stretch",
+    "aliases": [
+      "Long Lunge Pulse Stretch"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Resistance band"
+    ],
+    "muscles": [],
+    "variation_group": "c8727770-8ec1-4fe3-ae70-238a9fc46570",
+    "description": "Hold the resistance band (or any other rope-like object, the elasticity is not necessary) above your head, between your hands, with your arms straight. Pull it taught to engage your lats. \n Step forwards into a lunge, dropping until your knee is almost touching the floor. \n Slowly and controlledly pulse your body up and down by about an inch. Repeat for required reps. \n Repeat for other leg.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2526/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2527",
+    "source_id": 2527,
+    "name": "Front Split Stretch",
+    "name_en": "Front Split Stretch",
+    "aliases": [
+      "Front Split Stretch"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Gym mat"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Start kneeling. \n Extend one leg out forwards, fully straightened. Follow with your hips so your back leg begins to unfold. \n Carefully lower yourself into the stretch. Do not go beyond your limit. \n Hold for the required time.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2527/",
+    "media": [],
+    "muscles_secondary": [
+      "Calves"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2539/",
-  "media": []
- },
- {
-  "id": "wger:2540",
-  "source_id": 2540,
-  "name": "Lat Pulldown Isometric",
-  "name_en": "Lat Pulldown Isometric",
-  "aliases": [
-   "Lat Pulldown Isometric"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "An isometric Lat pulldown is a strength-building exercise where you pull the bar down to your chest and hold the contracted position at the bottom without moving your limbs for a set number of seconds",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2528",
+    "source_id": 2528,
+    "name": "Squat Sky Reach Stretch",
+    "name_en": "Squat Sky Reach Stretch",
+    "aliases": [
+      "Squat Sky Reach Stretch"
+    ],
+    "category": "Chest",
+    "equipment": [],
+    "muscles": [
+      "Lats",
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Drop into a squat. \n Hold one ankle with the opposite hand. \n Fold your other arm to your chest. \n Staying in the squat and keeping hold of your ankle, twist to turn your chest-hand back/outwards until your elbow is pointing at the sky. \n Return to the neutral squatting position with your hand on your chest. Repeat movement as required. \n \n Repeat on both sides.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2528/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2529",
+    "source_id": 2529,
+    "name": "explosive push ups",
+    "name_en": "explosive push ups",
+    "aliases": [
+      "explosive push ups"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": "07c5447d-9d49-4b29-a2e2-0f9169f749c5",
+    "description": "Explosive Push-Ups \n Start in a standard push-up position, lower your chest, then explosively push off the ground so your hands leave the floor. Land softly and immediately repeat.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "ege"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "ege"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2529/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/2529/e97b7a36-3414-4c4f-9d66-fe37182e829b.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "ege"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Shoulders",
+      "Triceps"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2540/",
-  "media": []
- },
- {
-  "id": "wger:2541",
-  "source_id": 2541,
-  "name": "Triceps Pushdown Isometric",
-  "name_en": "Triceps Pushdown Isometric",
-  "aliases": [
-   "Triceps Pushdown Isometric"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "A single-arm isometric or isolated triceps pushdown is an isolation cable exercise where you pin your upper arm against your torso, hinge at the hips, and extend the elbow to achieve a peak contraction in the triceps muscle.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2530",
+    "source_id": 2530,
+    "name": "Russian Push Ups",
+    "name_en": "Russian Push Ups",
+    "aliases": [
+      "Russian Push Ups"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Russian Push-Ups \n Start in a standard push-up position with your hands slightly wider than shoulder-width apart. Lower your chest toward the floor, then shift your body forward while keeping your chest close to the ground. Extend your arms to return to the starting position, then reverse the movement smoothly. Keep your core tight and maintain controlled movement throughout the exercise.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "ege"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "ege"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2530/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/2530/c39eccd5-c7a5-47cd-85c2-76cac547ad7c.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "ege"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Shoulders",
+      "Abs",
+      "Triceps"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "HexoctusEngineering"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2531",
+    "source_id": 2531,
+    "name": "elbow lever",
+    "name_en": "elbow lever",
+    "aliases": [
+      "elbow lever"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "​A calisthenics static balance skill where the entire body is held straight and parallel to the ground, supported by tucking the elbows firmly into the abdomen or pelvic bones.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "ege"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "ege"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2531/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders",
+      "Triceps"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2541/",
-  "media": []
- },
- {
-  "id": "wger:2542",
-  "source_id": 2542,
-  "name": "Boxing",
-  "name_en": "Boxing",
-  "aliases": [
-   "Boxing",
-   "Nah workout"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [
-   "Shoulders",
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "Bag workout for boxing skill development and cardio improvement",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "SAH"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2532",
+    "source_id": 2532,
+    "name": "Planche Lean Hold",
+    "name_en": "Planche Lean Hold",
+    "aliases": [
+      "Planche Lean Hold"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Serratus anterior"
+    ],
+    "variation_group": null,
+    "description": "A straight-arm calisthenics static hold where you assume a plank position and lean the shoulders as far forward as possible past the wrists with protracted scapulae and a hollow body.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "ege"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "ege"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2532/",
+    "media": [],
+    "muscles_secondary": [
+      "Biceps",
+      "Chest",
+      "Abs"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "SAH"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2533",
+    "source_id": 2533,
+    "name": "Arch Hang",
+    "name_en": "Arch Hang",
+    "aliases": [
+      "Arch Hang"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Pull-up bar"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "https://www.youtube.com/watch?v=C995b3KLXS4&t=7s \n \n Elbows should stay straight \n Hold it for time/reps \n Start at an active hang: https://www.youtube.com/watch?v=HoE-C85ZlCE \n Progress towards a 90 degree in your shoulder",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wintercyan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wintercyan"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2533/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2542/",
-  "media": []
- },
- {
-  "id": "wger:2543",
-  "source_id": 2543,
-  "name": "Wrist circles",
-  "name_en": "Wrist circles",
-  "aliases": [
-   "Wrist circles"
-  ],
-  "category": "Arms",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Wrist circles is warm-up exercise, where you rotate your wrists in a circular motion. They improve mobility and are recommended before exercises such as pull ups, hand stands and other exercises that put pressure on your wrists.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Awlex"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2535",
+    "source_id": 2535,
+    "name": "Leg Extension Isometric",
+    "name_en": "Leg Extension Isometric",
+    "aliases": [
+      "Leg Extension Isometric"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "An isometric leg extension is a strengthening exercise where you contract your quadriceps muscles against an immovable resistance without changing the length of the muscle or moving your knee joint.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2535/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Awlex"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2536",
+    "source_id": 2536,
+    "name": "Bench Press Isometric",
+    "name_en": "Bench Press Isometric",
+    "aliases": [
+      "Bench Press Isometric"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "Barbell",
+      "Bench"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Chest",
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "A bench press isometric hold is a static strength exercise where you pause and hold a barbell or dumbbells either at your chest, mid-press, or at lockout without moving for a set time",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2536/",
+    "media": [],
+    "muscles_secondary": [
+      "Obliquus externus abdominis",
+      "Abs",
+      "Serratus anterior"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2543/",
-  "media": []
- },
- {
-  "id": "wger:2549",
-  "source_id": 2549,
-  "name": "Retro Treadmill Walking",
-  "name_en": "Retro Treadmill Walking",
-  "aliases": [
-   "Retro Treadmill Walking"
-  ],
-  "category": "Cardio",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Controlled treadmill walking performed backward. Begin around 30 minutes at a controlled speed and approximately 2 to 3 percent incline if tolerated. Progress duration gradually as knee, hip, and back tolerance improves.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 3",
-   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
-   "authors": [
-    "Personal routine"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2537",
+    "source_id": 2537,
+    "name": "Overhead Press Isometric",
+    "name_en": "Overhead Press Isometric",
+    "aliases": [
+      "Overhead Press Isometric"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Barbell"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "An isometric overhead press involves holding a weight statically overhead or pushing against an immovable object at a specific point in the press without moving the joint.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2537/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Personal routine"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2538",
+    "source_id": 2538,
+    "name": "Lateral Raise Isometric",
+    "name_en": "Lateral Raise Isometric",
+    "aliases": [
+      "Lateral Raise Isometric"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "An isometric lateral raise is a shoulder exercise where you hold your arms out to the sides at waist height for a set amount of time instead of moving up and down",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2538/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2549/",
-  "media": []
- },
- {
-  "id": "wger:2555",
-  "source_id": 2555,
-  "name": "Kegel Exercise",
-  "name_en": "Kegel Exercise",
-  "aliases": [
-   "Kegel Exercise",
-   "Pelvic Floor Exercise",
-   "Kegels",
-   "Pelvic Floor Contraction"
-  ],
-  "category": "Abs",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Lie on your back with your knees bent, or sit upright in a chair. Locate the pelvic floor muscles: they are the muscles you would use to stop the flow of urine or to hold back gas. Keep your abdomen, glutes and thighs relaxed and breathe normally throughout. \n Tighten the pelvic floor muscles and lift them gently upwards and inwards. Hold the contraction for a few seconds, then release completely and rest for at least as long as you held. Repeat for the desired number of repetitions. \n The exercise can be varied by holding longer with a light contraction (endurance) or by performing quick, short contractions with a full relaxation in between.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 3",
-   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2539",
+    "source_id": 2539,
+    "name": "Preacher Curl Isometric",
+    "name_en": "Preacher Curl Isometric",
+    "aliases": [
+      "Preacher Curl Isometric"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Dumbbell",
+      "SZ-Bar"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "An isometric preacher curl is a static strength exercise where you hold a fixed position on a preacher pad or and inclined bench under tension without moving the joint.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2539/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2540",
+    "source_id": 2540,
+    "name": "Lat Pulldown Isometric",
+    "name_en": "Lat Pulldown Isometric",
+    "aliases": [
+      "Lat Pulldown Isometric"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "An isometric Lat pulldown is a strength-building exercise where you pull the bar down to your chest and hold the contracted position at the bottom without moving your limbs for a set number of seconds",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2540/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2555/",
-  "media": []
- },
- {
-  "id": "wger:2557",
-  "source_id": 2557,
-  "name": "Supported Split Squat",
-  "name_en": "Supported Split Squat",
-  "aliases": [
-   "Supported Split Squat"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Supported split squat performed with stable balance support and controlled depth.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 3",
-   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2541",
+    "source_id": 2541,
+    "name": "Triceps Pushdown Isometric",
+    "name_en": "Triceps Pushdown Isometric",
+    "aliases": [
+      "Triceps Pushdown Isometric"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "A single-arm isometric or isolated triceps pushdown is an isolation cable exercise where you pin your upper arm against your torso, hinge at the hips, and extend the elbow to achieve a peak contraction in the triceps muscle.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "HexoctusEngineering"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2541/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2542",
+    "source_id": 2542,
+    "name": "Boxing",
+    "name_en": "Boxing",
+    "aliases": [
+      "Boxing",
+      "Nah workout"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "Bag workout for boxing skill development and cardio improvement",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "SAH"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "SAH"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2542/",
+    "media": [],
+    "muscles_secondary": [
+      "Biceps",
+      "Lats"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2557/",
-  "media": []
- },
- {
-  "id": "wger:2564",
-  "source_id": 2564,
-  "name": "90/90 Breathing",
-  "name_en": "90/90 Breathing",
-  "aliases": [
-   "90/90 Breathing"
-  ],
-  "category": "Abs",
-  "equipment": [],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Controlled breathing drill performed in a 90/90 position to encourage rib, abdominal, and pelvic coordination.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 3",
-   "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2543",
+    "source_id": 2543,
+    "name": "Wrist circles",
+    "name_en": "Wrist circles",
+    "aliases": [
+      "Wrist circles"
+    ],
+    "category": "Arms",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Wrist circles is warm-up exercise, where you rotate your wrists in a circular motion. They improve mobility and are recommended before exercises such as pull ups, hand stands and other exercises that put pressure on your wrists.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Awlex"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Awlex"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2543/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2549",
+    "source_id": 2549,
+    "name": "Retro Treadmill Walking",
+    "name_en": "Retro Treadmill Walking",
+    "aliases": [
+      "Retro Treadmill Walking"
+    ],
+    "category": "Cardio",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Controlled treadmill walking performed backward. Begin around 30 minutes at a controlled speed and approximately 2 to 3 percent incline if tolerated. Progress duration gradually as knee, hip, and back tolerance improves.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 3",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "authors": [
+        "Personal routine"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Personal routine"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2549/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2564/",
-  "media": []
- },
- {
-  "id": "wger:2613",
-  "source_id": 2613,
-  "name": "90/90 Hip Switches",
-  "name_en": "90/90 Hip Switches",
-  "aliases": [
-   "90/90 Hip Switches",
-   "90/90 Hip Rotations"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Sit on the floor with one leg bent at 90 degrees in front of you and the other leg bent at 90 degrees out to the side, so that the rear shin is parallel to the front shin. Keep your torso upright and, if possible, your hands off the floor. \n Rotate both knees over to the other side so that the legs swap positions and you arrive in the same 90/90 position facing the opposite way. Move slowly and under control, keeping the feet in contact with the floor, and alternate sides for the desired number of repetitions. \n Mobility drill for internal and external rotation of the hips.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2555",
+    "source_id": 2555,
+    "name": "Kegel Exercise",
+    "name_en": "Kegel Exercise",
+    "aliases": [
+      "Kegel Exercise",
+      "Pelvic Floor Exercise",
+      "Kegels",
+      "Pelvic Floor Contraction"
+    ],
+    "category": "Abs",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Lie on your back with your knees bent, or sit upright in a chair. Locate the pelvic floor muscles: they are the muscles you would use to stop the flow of urine or to hold back gas. Keep your abdomen, glutes and thighs relaxed and breathe normally throughout. \n Tighten the pelvic floor muscles and lift them gently upwards and inwards. Hold the contraction for a few seconds, then release completely and rest for at least as long as you held. Repeat for the desired number of repetitions. \n The exercise can be varied by holding longer with a light contraction (endurance) or by performing quick, short contractions with a full relaxation in between.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 3",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2555/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:2557",
+    "source_id": 2557,
+    "name": "Supported Split Squat",
+    "name_en": "Supported Split Squat",
+    "aliases": [
+      "Supported Split Squat"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Supported split squat performed with stable balance support and controlled depth.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 3",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2557/",
+    "media": [],
+    "muscles_secondary": [
+      "Glutes"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/2613/",
-  "media": []
- }
+  {
+    "id": "wger:2564",
+    "source_id": 2564,
+    "name": "90/90 Breathing",
+    "name_en": "90/90 Breathing",
+    "aliases": [
+      "90/90 Breathing"
+    ],
+    "category": "Abs",
+    "equipment": [],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Controlled breathing drill performed in a 90/90 position to encourage rib, abdominal, and pelvic coordination.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 3",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2564/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:2613",
+    "source_id": 2613,
+    "name": "90/90 Hip Switches",
+    "name_en": "90/90 Hip Switches",
+    "aliases": [
+      "90/90 Hip Switches",
+      "90/90 Hip Rotations"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Sit on the floor with one leg bent at 90 degrees in front of you and the other leg bent at 90 degrees out to the side, so that the rear shin is parallel to the front shin. Keep your torso upright and, if possible, your hands off the floor. \n Rotate both knees over to the other side so that the legs swap positions and you arrive in the same 90/90 position facing the opposite way. Move slowly and under control, keeping the feet in contact with the floor, and alternate sides for the desired number of repetitions. \n Mobility drill for internal and external rotation of the hips.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/2613/",
+    "media": [],
+    "muscles_secondary": []
+  }
 ]

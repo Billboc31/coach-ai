@@ -108,7 +108,12 @@ original privé), gym_program (séances et sources), gym_exercise (nom normalis�
 gym_excel_history (performances d’origine), gym_workout (séries saisies, révision, dates).
 Aucune nouvelle table ; le volume SQLite existant garde l’ensemble. Les identifiants d’exercice
 privés restent dérivés du nom normalisé. Un catalogue public JSON embarqué fournit des
-identités wger stables ; les aliases précis sont reconnus, les ambiguïtés restent à choisir.
+identités wger stables ; les aliases précis et signatures lexicales équivalentes sont reconnus, les ambiguïtés
+restent à choisir. La signature garde les détails de variante (angle, prise, matériel,
+unilatéral), ignore seulement les prépositions et normalise des formes explicites. Elle
+exige une identité unique ; aucune similarité approximative n’est auto-appliquée. Les
+vues d’imports existants et nouveaux sont décorées automatiquement sans mutation des
+programmes ni des séries. Une décision manuelle, même sans correspondance, reste prioritaire.
 Records/gym_binding stocke les décisions privées, révisions, convention de poids et repère
 matériel. Le rapprochement entre IDs privés exige une identité canonique et des conventions
 confirmées compatibles ; une machine exige un repère non vide. Les séries portent un instantané
@@ -143,3 +148,7 @@ figée lors d’éditions ultérieures du programme. Le parser ne touche jamais 
 Les illustrations SVG sont locales ; les tutoriels publics sélectionnables sont définis
 dans gym-visuals avec liens de provenance et règles de variantes. Pas de clé YouTube, pas
 d’envoi de programme privé à un service de recherche, lecteur chargé après clic.
+
+Les groupes muscles/muscles_secondary proviennent du snapshot, sans inférence depuis le
+nom. La silhouette SVG est un dessin original schématique local ; couleur et légende
+textuelle distinguent les groupes principaux/secondaires, sans score d’activation.

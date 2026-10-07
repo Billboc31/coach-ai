@@ -1,1586 +1,1654 @@
 [
- {
-  "id": "wger:1700",
-  "source_id": 1700,
-  "name": "Soulevé de terre roumain à la barre (RDL)",
-  "name_en": "Barbell Romanian Deadlift (RDL)",
-  "aliases": [
-   "Barbell Romanian Deadlift (RDL)",
-   "Soulevé de terre roumain à la barre (RDL)"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Barbell"
-  ],
-  "muscles": [
-   "Hamstrings",
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Exécution \n \n \n  Charnière au niveau des hanches :  \n \n Poussez vos  hanches vers l'arrière , en gardant une légère flexion des genoux (genoux souples). \n Abaissez la barre  le long de l'avant de vos cuisses et de vos tibias  tout en maintenant une  colonne neutre . \n Gardez la barre  près de votre corps .",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "daiben"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1700/",
-  "media": []
- },
- {
-  "id": "wger:1701",
-  "source_id": 1701,
-  "name": "Rowing lourd à un bras",
-  "name_en": "One-Arm Heavy Row",
-  "aliases": [
-   "One-Arm Heavy Row",
-   "Rowing lourd à un bras"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Exécution \n \n \n  Phase de tirage (concentrique) :  \n \n Tirez l'haltère  vers le bas de votre poitrine ou votre taille , en menant le mouvement avec le  coude . \n Gardez votre torse  stable , évitez de tourner ou de pivoter les épaules. \n Marquez une pause en haut et  contractez votre grand dorsal .",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "daiben"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1701/",
-  "media": []
- },
- {
-  "id": "wger:1702",
-  "source_id": 1702,
-  "name": "Tirage vertical à la poulie en prise large",
-  "name_en": "Jalón al pecho con agarre ancho",
-  "aliases": [
-   "Jalón al pecho con agarre ancho",
-   "Tirage vertical à la poulie en prise large"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Lats",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Le tirage vertical à la poulie est un exercice de tirage qui cible principalement le grand dorsal (souvent appelé « dorsaux ») dans le dos. Il consiste à tirer une barre ou une poignée fixée à un câble vers la poitrine, assis sur une machine spécialement conçue à cet effet. Le tirage vertical se réalise généralement en prise large, mais peut aussi se faire en prise serrée ou en supination pour cibler différents groupes musculaires du dos et des bras. C'est un exercice populaire pour développer la force du haut du corps et améliorer la posture.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Mariano_O"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1702/",
-  "media": []
- },
- {
-  "id": "wger:1703",
-  "source_id": 1703,
-  "name": "Extensions des triceps en kickback",
-  "name_en": "Patadas traseras",
-  "aliases": [
-   "Extensions des triceps en kickback",
-   "Patadas traseras"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Bench",
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "Le kickback avec haltère est un exercice de musculation populaire qui cible les triceps, à l'arrière du haut des bras. Il aide à renforcer et à tonifier les triceps, contribuant à la force et à l'esthétique générales des bras. \n Parmi les exercices qui sollicitent les muscles des bras, le kickback et ses variantes sont très efficaces. Vous pouvez facilement réaliser ces exercices avec des haltères, des câbles ou des élastiques de résistance.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Mariano_O"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1703/",
-  "media": []
- },
- {
-  "id": "wger:1704",
-  "source_id": 1704,
-  "name": "L-sit groupé (tuck L-sit)",
-  "name_en": "Tuck L-sit",
-  "aliases": [
-   "L-sit groupé (tuck L-sit)",
-   "Tuck L-sit"
-  ],
-  "category": "Abs",
-  "equipment": [
-   "Bench"
-  ],
-  "muscles": [
-   "Abs"
-  ],
-  "variation_group": null,
-  "description": "Le tuck L-sit est un maintien au poids du corps où vous vous soutenez sur des barres parallèles, des parallettes ou le sol avec les bras tendus, tout en ramenant vos genoux vers votre poitrine. Vos hanches restent levées, votre colonne reste droite et vos pieds flottent au-dessus du sol. L'objectif est de garder la sangle abdominale gainée, les épaules abaissées et les bras verrouillés tout en maintenant la position groupée. C'est un maintien statique très exigeant pour les abdominaux et stabilisateur pour les épaules, souvent utilisé comme progression vers le L-sit complet.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "clafal"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1704/",
-  "media": []
- },
- {
-  "id": "wger:1706",
-  "source_id": 1706,
-  "name": "Squats bulgares haltères",
-  "name_en": "Bulgarian Squat with Dumbbells",
-  "aliases": [
-   "Bulgarian Squat with Dumbbells",
-   "Squats bulgares haltères"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Le squat bulgare consiste à faire un squat sur une jambe avec le pied arrière en appui sur une plateforme surélevée. Le fait de surélever votre jambe sur un banc crée une instabilité et augmente l'amplitude de mouvement de l'exercice.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "AlucardEvil40"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "AlucardEvil40"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1706/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1706/0c5243cc-2539-4005-aee0-d3a8c5d3a32c.jfif",
-    "codec": null,
+  {
+    "id": "wger:1700",
+    "source_id": 1700,
+    "name": "Soulevé de terre roumain à la barre (RDL)",
+    "name_en": "Barbell Romanian Deadlift (RDL)",
+    "aliases": [
+      "Barbell Romanian Deadlift (RDL)",
+      "Soulevé de terre roumain à la barre (RDL)"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Barbell"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Exécution \n \n \n  Charnière au niveau des hanches :  \n \n Poussez vos  hanches vers l'arrière , en gardant une légère flexion des genoux (genoux souples). \n Abaissez la barre  le long de l'avant de vos cuisses et de vos tibias  tout en maintenant une  colonne neutre . \n Gardez la barre  près de votre corps .",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "AlucardEvil40"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "daiben"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1707",
-  "source_id": 1707,
-  "name": "Elevación lateral polea",
-  "name_en": "Elevación lateral polea",
-  "aliases": [
-   "Elevación lateral polea"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Incline bench"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Lateral elevation unilateral using a polea",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "polloperro"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1700/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "polloperro"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1707/",
-  "media": []
- },
- {
-  "id": "wger:1709",
-  "source_id": 1709,
-  "name": "Oiseau debout",
-  "name_en": "Reverse Fly Standing",
-  "aliases": [
-   "Oiseau debout",
-   "Reverse Fly Standing"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Tenez-vous debout avec une bonne posture, une poignée de poulie dans chaque main, face à la machine \n En partant les mains devant la poitrine, écartez les bras sur les côtés pour former un T, les coudes presque tendus \n Ramenez lentement les bras vers l'avant jusqu'à la position de départ \n Répétez en amenant les bras en forme de Y \n Répétez en amenant les bras en forme de W \n Répétez en amenant les bras en forme de L le long du corps",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1709/",
-  "media": []
- },
- {
-  "id": "wger:1710",
-  "source_id": 1710,
-  "name": "Étirement du billot de boucher (butcher's block)",
-  "name_en": "Butchers Block Stretch",
-  "aliases": [
-   "Butchers Block Stretch",
-   "Étirement du billot de boucher (butcher's block)"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Bench"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Agenouillez-vous, les mains jointes \n Posez les coudes sur un banc devant vous et abaissez la poitrine vers le bas \n Gardez les coudes fléchis avec une bonne posture et maintenez la position",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1710/",
-  "media": []
- },
- {
-  "id": "wger:1711",
-  "source_id": 1711,
-  "name": "Étirement du dormeur (sleeper stretch)",
-  "name_en": "Sleeper Stretch",
-  "aliases": [
-   "Sleeper Stretch",
-   "Étirement du dormeur (sleeper stretch)"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Allongez-vous sur le côté de façon à reposer un peu de poids sur votre omoplate pour la maintenir immobile \n Tendez votre bras à 90 degrés devant vous, reposant sur le sol ou le tapis \n Levez votre main avec votre coude de sorte que vos doigts pointent vers le plafond et votre paume vers vos pieds \n En gardant votre coude immobile, abaissez doucement votre paume vers le sol",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1711/",
-  "media": []
- },
- {
-  "id": "wger:1712",
-  "source_id": 1712,
-  "name": "Étirement en flexion horizontale de l'épaule",
-  "name_en": "Horizontal Shoulder Flexion Stretch",
-  "aliases": [
-   "Horizontal Shoulder Flexion Stretch",
-   "Étirement en flexion horizontale de l'épaule"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Levez le bras sur le côté en posant la main sur un mur ou un encadrement de porte à côté de vous, à hauteur d'épaule \n Tournez le corps à l'opposé du bras pour étirer les pectoraux, aussi loin que possible sans inconfort",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1712/",
-  "media": []
- },
- {
-  "id": "wger:1713",
-  "source_id": 1713,
-  "name": "Étirement des pectoraux dans l'encadrement de porte",
-  "name_en": "Doorway Pectoral Stretch",
-  "aliases": [
-   "Doorway Pectoral Stretch",
-   "Étirement des pectoraux dans l'encadrement de porte"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Placez l'avant-bras à la verticale contre un encadrement de porte ou un objet fixe, à hauteur de la tête \n Avancez d'un pas au-delà du bras, en le maintenant immobile contre l'objet, afin d'étirer les pectoraux",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1713/",
-  "media": []
- },
- {
-  "id": "wger:1714",
-  "source_id": 1714,
-  "name": "Exercice pendulaire de l'épaule avec haltère",
-  "name_en": "Shoulder Dumbbell Pendular Exercise",
-  "aliases": [
-   "Exercice pendulaire de l'épaule avec haltère",
-   "Shoulder Dumbbell Pendular Exercise"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Lats",
-   "Chest",
-   "Trapezius"
-  ],
-  "variation_group": null,
-  "description": "Penchez-vous vers l'avant pour poser votre main sur une chaise ou un autre objet, en tenant un haltère dans l'autre main \n Balancez doucement l'haltère selon un mouvement circulaire",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1714/",
-  "media": []
- },
- {
-  "id": "wger:1715",
-  "source_id": 1715,
-  "name": "Rotation externe de l'épaule avec haltère",
-  "name_en": "Shoulder External Rotation with Dumbbell",
-  "aliases": [
-   "Rotation externe de l'épaule avec haltère",
-   "Shoulder External Rotation with Dumbbell"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Brachialis"
-  ],
-  "variation_group": null,
-  "description": "Allongez-vous sur le côté en tenant un haltère dans votre main supérieure \n Calez votre coude contre votre flanc et posez la main devant vous \n Faites pivoter l'épaule de sorte que la main se relève \n Redescendez la main",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1715/",
-  "media": []
- },
- {
-  "id": "wger:1716",
-  "source_id": 1716,
-  "name": "Pompe inclinée pour les épaules",
-  "name_en": "Incline Shoulder Press Up",
-  "aliases": [
-   "Incline Shoulder Press Up",
-   "Pompe inclinée pour les épaules"
-  ],
-  "category": "Chest",
-  "equipment": [
-   "Bench"
-  ],
-  "muscles": [
-   "Shoulders",
-   "Chest"
-  ],
-  "variation_group": null,
-  "description": "Placez vos mains sur le banc en position de pompe \n Éloignez votre poitrine du banc pour écarter vos omoplates \n  En gardant les coudes tendus , abaissez votre poitrine vers le banc de sorte que vos omoplates se rapprochent \n Éloignez de nouveau votre poitrine du banc",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Croak6728"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1716/",
-  "media": []
- },
- {
-  "id": "wger:1717",
-  "source_id": 1717,
-  "name": "Neck extension",
-  "name_en": "Neck extension",
-  "aliases": [
-   "Neck extension"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Cable machine",
-   "SZ-Bar"
-  ],
-  "muscles": [
-   "Biceps"
-  ],
-  "variation_group": null,
-  "description": "Unilateral triceps exercise with your back to the pulley, with the pulley at the top",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "polloperro"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "polloperro"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1717/",
-  "media": []
- },
- {
-  "id": "wger:1718",
-  "source_id": 1718,
-  "name": "Remo alto polea alta",
-  "name_en": "Remo alto polea alta",
-  "aliases": [
-   "Remo alto polea alta"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Obliquus externus abdominis",
-   "Serratus anterior",
-   "Triceps"
-  ],
-  "variation_group": null,
-  "description": "High pulley row with support using a single grip",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "polloperro"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "polloperro"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1718/",
-  "media": []
- },
- {
-  "id": "wger:1719",
-  "source_id": 1719,
-  "name": "Jalon caballero unialteral",
-  "name_en": "Jalon caballero unialteral",
-  "aliases": [
-   "Jalon caballero unialteral"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Brachialis",
-   "Obliquus externus abdominis"
-  ],
-  "variation_group": null,
-  "description": "Pull performed in knight's stance",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "polloperro"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "polloperro"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1719/",
-  "media": []
- },
- {
-  "id": "wger:1723",
-  "source_id": 1723,
-  "name": "Glute Kickback (Machine)",
-  "name_en": "Glute Kickback (Machine)",
-  "aliases": [
-   "Glute Kickback (Machine)"
-  ],
-  "category": "Legs",
-  "equipment": [],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": null,
-  "description": "Drive through your heel, not your toes, to hit the glute. \n Don’t hyperextend your lower back at the top.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1723/",
-  "media": []
- },
- {
-  "id": "wger:1724",
-  "source_id": 1724,
-  "name": "Adduction debout (poulie)",
-  "name_en": "Standing Adduction (Cable)",
-  "aliases": [
-   "Adduction debout (poulie)",
-   "Standing Adduction (Cable)"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [],
-  "variation_group": null,
-  "description": "Gardez les hanches bien parallèles et immobiles, en tirant le câble en travers de votre jambe opposée en utilisant uniquement l'intérieur de la cuisse. \n Ne laissez pas votre buste s'incliner ou pivoter : pas d'inclinaison latérale pour vous aider dans la répétition.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1724/",
-  "media": []
- },
- {
-  "id": "wger:1725",
-  "source_id": 1725,
-  "name": "Rowing assis (machine)",
-  "name_en": "Seated Row (Machine)",
-  "aliases": [
-   "Rowing assis (machine)",
-   "Seated Row (Machine)"
-  ],
-  "category": "Back",
-  "equipment": [],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Gardez la poitrine relevée et resserrez les omoplates en fin de mouvement. \n N'arrondissez pas le dos et ne vous penchez pas vers l'avant pendant le tirage.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1725/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1725/f0ebd44e-b8e1-400c-b598-ca371f3a07af.png",
-    "codec": null,
+  {
+    "id": "wger:1701",
+    "source_id": 1701,
+    "name": "Rowing lourd à un bras",
+    "name_en": "One-Arm Heavy Row",
+    "aliases": [
+      "One-Arm Heavy Row",
+      "Rowing lourd à un bras"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Exécution \n \n \n  Phase de tirage (concentrique) :  \n \n Tirez l'haltère  vers le bas de votre poitrine ou votre taille , en menant le mouvement avec le  coude . \n Gardez votre torse  stable , évitez de tourner ou de pivoter les épaules. \n Marquez une pause en haut et  contractez votre grand dorsal .",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "barry"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "daiben"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1726",
-  "source_id": 1726,
-  "name": "Tirage bras tendus (poulie)",
-  "name_en": "Straight-Arm Pulldown (Cable)",
-  "aliases": [
-   "Straight-Arm Pulldown (Cable)",
-   "Tirage bras tendus (poulie)"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Gardez les bras tendus mais sans les verrouiller, en tirant avec le grand dorsal et non avec les épaules. \n Ne laissez pas vos épaules se hausser pendant le mouvement.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1701/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1726/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1726/2e7e541b-5f55-405a-ae78-3e71b3f42db4.png",
-    "codec": null,
+  {
+    "id": "wger:1702",
+    "source_id": 1702,
+    "name": "Tirage vertical à la poulie en prise large",
+    "name_en": "Jalón al pecho con agarre ancho",
+    "aliases": [
+      "Jalón al pecho con agarre ancho",
+      "Tirage vertical à la poulie en prise large"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Lats",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Le tirage vertical à la poulie est un exercice de tirage qui cible principalement le grand dorsal (souvent appelé « dorsaux ») dans le dos. Il consiste à tirer une barre ou une poignée fixée à un câble vers la poitrine, assis sur une machine spécialement conçue à cet effet. Le tirage vertical se réalise généralement en prise large, mais peut aussi se faire en prise serrée ou en supination pour cibler différents groupes musculaires du dos et des bras. C'est un exercice populaire pour développer la force du haut du corps et améliorer la posture.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "barry"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Mariano_O"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1727",
-  "source_id": 1727,
-  "name": "Tirage latéral bras tendu (poulie)",
-  "name_en": "Side Straight-Arm Pulldown (Cable)",
-  "aliases": [
-   "Side Straight-Arm Pulldown (Cable)",
-   "Tirage latéral bras tendu (poulie)"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Gardez le buste immobile, en tirant la poignée vers le bas le long de votre côté en utilisant la partie externe du grand dorsal. \n Ne tournez pas le corps et ne faites pas pivoter le buste pour tricher dans la répétition.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1702/",
+    "media": [],
+    "muscles_secondary": [
+      "Biceps",
+      "Brachialis"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1727/",
-  "media": []
- },
- {
-  "id": "wger:1728",
-  "source_id": 1728,
-  "name": "Rotation interne de l'épaule (poulie)",
-  "name_en": "Shoulder Internal Rotation (Cable)",
-  "aliases": [
-   "Rotation interne de l'épaule (poulie)",
-   "Shoulder Internal Rotation (Cable)"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Gardez le coude collé à votre côté comme s'il y était fixé à la colle forte. \n Ne faites pas pivoter le buste : seul l'avant-bras doit bouger.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1728/",
-  "media": []
- },
- {
-  "id": "wger:1729",
-  "source_id": 1729,
-  "name": "Rotation externe de l'épaule (poulie)",
-  "name_en": "Shoulder External Rotation (Cable)",
-  "aliases": [
-   "Rotation externe de l'épaule (poulie)",
-   "Shoulder External Rotation (Cable)"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Gardez le coude fixe le long de votre côté et faites pivoter l'avant-bras vers l'extérieur en douceur. \n Ne laissez pas votre poignet ou votre coude dériver vers le haut : restez dans un seul plan.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1729/",
-  "media": []
- },
- {
-  "id": "wger:1730",
-  "source_id": 1730,
-  "name": "Side Lateral Raise (Cable)",
-  "name_en": "Side Lateral Raise (Cable)",
-  "aliases": [
-   "Side Lateral Raise (Cable)"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Lift with your elbows leading, not your hands. \n Don’t shrug your shoulders; keep traps quiet.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1730/",
-  "media": []
- },
- {
-  "id": "wger:1731",
-  "source_id": 1731,
-  "name": "Front Raise (Cable)",
-  "name_en": "Front Raise (Cable)",
-  "aliases": [
-   "Front Raise (Cable)"
-  ],
-  "category": "Shoulders",
-  "equipment": [
-   "Cable machine"
-  ],
-  "muscles": [
-   "Shoulders"
-  ],
-  "variation_group": null,
-  "description": "Raise the handle in a slight arc with controlled movement. \n Don’t swing your torso to start the rep.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "barry"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1731/",
-  "media": []
- },
- {
-  "id": "wger:1732",
-  "source_id": 1732,
-  "name": "Face pulls avec élastique jaune/vert",
-  "name_en": "Face pulls with yellow/green band",
-  "aliases": [
-   "Face pulls avec élastique jaune/vert",
-   "Face pulls with yellow/green band"
-  ],
-  "category": "Back",
-  "equipment": [
-   "Resistance band"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Face pulls à l'élastique – tirage horizontal debout. Saisissez l'élastique à hauteur du visage, tirez les coudes haut et large vers votre visage tout en resserrant les omoplates. Sollicite le haut du dos et l'arrière des épaules, et améliore la posture.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "54str"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1732/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1732/d13b9adb-968e-4f73-95e6-b16690bcf616.jpg",
-    "codec": null,
+  {
+    "id": "wger:1703",
+    "source_id": 1703,
+    "name": "Extensions des triceps en kickback",
+    "name_en": "Patadas traseras",
+    "aliases": [
+      "Extensions des triceps en kickback",
+      "Patadas traseras"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Bench",
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "Le kickback avec haltère est un exercice de musculation populaire qui cible les triceps, à l'arrière du haut des bras. Il aide à renforcer et à tonifier les triceps, contribuant à la force et à l'esthétique générales des bras. \n Parmi les exercices qui sollicitent les muscles des bras, le kickback et ses variantes sont très efficaces. Vous pouvez facilement réaliser ces exercices avec des haltères, des câbles ou des élastiques de résistance.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "54str"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Mariano_O"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1733",
-  "source_id": 1733,
-  "name": "Squat isométrique jusqu'à l'échec",
-  "name_en": "Isometric Squat to Failure",
-  "aliases": [
-   "Isometric Squat to Failure",
-   "Squat isométrique jusqu'à l'échec"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Squat isométrique jusqu'à l'échec : une technique d'entraînement en force \n Définition \n Le squat isométrique jusqu'à l'échec est une variante de l'exercice du squat dans laquelle vous maintenez une position de squat statique à un angle précis, en conservant la position jusqu'à ce que vos muscles ne puissent plus soutenir la contraction.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Tierrasverdes"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1703/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1733/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1733/4ef77069-beb2-4504-a4f3-b181d5f35212.png",
-    "codec": null,
+  {
+    "id": "wger:1704",
+    "source_id": 1704,
+    "name": "L-sit groupé (tuck L-sit)",
+    "name_en": "Tuck L-sit",
+    "aliases": [
+      "L-sit groupé (tuck L-sit)",
+      "Tuck L-sit"
+    ],
+    "category": "Abs",
+    "equipment": [
+      "Bench"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "variation_group": null,
+    "description": "Le tuck L-sit est un maintien au poids du corps où vous vous soutenez sur des barres parallèles, des parallettes ou le sol avec les bras tendus, tout en ramenant vos genoux vers votre poitrine. Vos hanches restent levées, votre colonne reste droite et vos pieds flottent au-dessus du sol. L'objectif est de garder la sangle abdominale gainée, les épaules abaissées et les bras verrouillés tout en maintenant la position groupée. C'est un maintien statique très exigeant pour les abdominaux et stabilisateur pour les épaules, souvent utilisé comme progression vers le L-sit complet.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Tierrasverdes"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "clafal"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1734",
-  "source_id": 1734,
-  "name": "Fente sur une jambe avec kettlebell",
-  "name_en": "Single-Leg Lunge with Kettlebell:",
-  "aliases": [
-   "Fente sur une jambe avec kettlebell",
-   "Single-Leg Lunge with Kettlebell:"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Kettlebell"
-  ],
-  "muscles": [
-   "Calves",
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Comment réaliser une fente sur une jambe avec kettlebell \n Préparation : Tenez-vous debout, pieds joints. Saisissez le kettlebell des deux mains par la poignée en le gardant près de votre poitrine, ou tenez-le d'une seule main (du même côté que la jambe qui travaille). \n Pas et descente : Faites un grand pas vers l'avant (ou vers l'arrière, ce qui est plus sûr pour vos genoux) avec une jambe, en abaissant les hanches jusqu'à ce que les deux genoux forment un angle de 90 degrés. \n Focalisation : Reportez votre poids sur la jambe avant (ou fléchie), en gardant le dos droit et le buste bien vertical. \n Retour : Poussez sur votre jambe avant pour revenir à la position de départ.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Tierrasverdes"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1704/",
+    "media": [],
+    "muscles_secondary": [
+      "Brachialis",
+      "Chest",
+      "Quads",
+      "Trapezius",
+      "Triceps"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1734/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1734/782e2fbb-1267-476d-a817-14f3b83e0564.png",
-    "codec": null,
+  {
+    "id": "wger:1706",
+    "source_id": 1706,
+    "name": "Squats bulgares haltères",
+    "name_en": "Bulgarian Squat with Dumbbells",
+    "aliases": [
+      "Bulgarian Squat with Dumbbells",
+      "Squats bulgares haltères"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Le squat bulgare consiste à faire un squat sur une jambe avec le pied arrière en appui sur une plateforme surélevée. Le fait de surélever votre jambe sur un banc crée une instabilité et augmente l'amplitude de mouvement de l'exercice.",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Tierrasverdes"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "AlucardEvil40"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1735",
-  "source_id": 1735,
-  "name": "Presse à fessiers latérale sur une jambe",
-  "name_en": "Single-leg side glute press",
-  "aliases": [
-   "Presse à fessiers latérale sur une jambe",
-   "Single-leg side glute press"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Incline bench"
-  ],
-  "muscles": [
-   "Calves",
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "La presse à fessiers latérale sur une jambe est une variante de la presse à cuisses où vous placez votre corps de côté sur l'appui, un pied posé haut et légèrement incliné pour pousser la charge, ce qui sollicite puissamment le fessier externe (moyen et petit fessier) et les ischio-jambiers pour un développement équilibré des jambes et de la stabilité. L'exercice demande de bien pousser à travers le talon et de garder le contrôle sans verrouiller complètement la jambe. \n Comment l'exécuter : \n Mise en place : Asseyez-vous dans la presse à cuisses, pivotez le corps sur une hanche et placez un pied en haut de la plateforme, à environ 45 degrés, les orteils légèrement orientés vers l'extérieur et l'avant. \n Positionnement : Gardez la hanche, le genou et la cheville alignés, et veillez à ce que votre bas du dos reste plaqué contre l'appui. \n Descente : Abaissez lentement la charge en laissant votre genou fléchir profondément (près de 90 degrés), jusqu'à ressentir un étirement dans le fessier et l'ischio-jambier. \n Poussée : Poussez à travers le talon (et non les orteils) pour remonter la charge, en contractant les fessiers et les ischio-jambiers, et arrêtez-vous juste avant l'extension complète de la jambe. \n Contrôle : Évitez tout rebond et ne laissez pas votre bas du dos se décoller de l'appui ; maintenez la tension tout au long du mouvement.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Tierrasverdes"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "AlucardEvil40"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1706/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1706/0c5243cc-2539-4005-aee0-d3a8c5d3a32c.jfif",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "AlucardEvil40"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Hamstrings"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1735/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1735/43bca7d9-2333-43f3-8554-2d0b39fa2a07.png",
-    "codec": null,
+  {
+    "id": "wger:1707",
+    "source_id": 1707,
+    "name": "Elevación lateral polea",
+    "name_en": "Elevación lateral polea",
+    "aliases": [
+      "Elevación lateral polea"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Incline bench"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Lateral elevation unilateral using a polea",
+    "description_language": "en",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Tierrasverdes"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "polloperro"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1736",
-  "source_id": 1736,
-  "name": "Soulevé de terre sur une jambe avec haltère",
-  "name_en": "Single-Leg Deadlift with Dumbbell",
-  "aliases": [
-   "Single-Leg Deadlift with Dumbbell",
-   "Soulevé de terre sur une jambe avec haltère"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "Dumbbell"
-  ],
-  "muscles": [
-   "Hamstrings",
-   "Glutes"
-  ],
-  "variation_group": "6d2a7dcd-2d34-440e-b9e6-decb5f840a74",
-  "description": "Position de départ : Tenez-vous debout, les genoux légèrement fléchis, en tenant un haltère dans une main ou dans les deux. Reportez votre poids sur votre jambe d'appui (par exemple la jambe droite) et décollez légèrement du sol le pied de l'autre jambe. \n La charnière : En gardant le dos plat et la sangle abdominale gainée, basculez au niveau des hanches en poussant vos fessiers vers l'arrière. À mesure que votre buste descend, tendez la jambe libre droit derrière vous pour l'équilibre, en gardant les hanches bien parallèles au sol. Le ou les haltères doivent descendre vers le sol le long de votre jambe d'appui. \n Amplitude de mouvement : Continuez d'abaisser votre buste jusqu'à ce qu'il soit presque parallèle au sol, ou jusqu'à ressentir un étirement intense dans l'ischio-jambier de votre jambe d'appui, en veillant à garder le dos neutre tout au long du mouvement. \n Retour au départ : Marquez une pause en bas, puis contractez vos fessiers et vos ischio-jambiers pour remonter lentement le buste jusqu'à la position de départ. Votre jambe libre doit revenir dans l'alignement de la jambe d'appui. \n Changement de côté : Après avoir effectué le nombre de répétitions souhaité d'un côté, reportez votre poids et répétez le mouvement sur l'autre jambe.",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Tierrasverdes"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "polloperro"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1707/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1736/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1736/aa724cc5-c485-4f3e-9d2a-0c6ae4baefbe.png",
-    "codec": null,
+  {
+    "id": "wger:1709",
+    "source_id": 1709,
+    "name": "Oiseau debout",
+    "name_en": "Reverse Fly Standing",
+    "aliases": [
+      "Oiseau debout",
+      "Reverse Fly Standing"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Tenez-vous debout avec une bonne posture, une poignée de poulie dans chaque main, face à la machine \n En partant les mains devant la poitrine, écartez les bras sur les côtés pour former un T, les coudes presque tendus \n Ramenez lentement les bras vers l'avant jusqu'à la position de départ \n Répétez en amenant les bras en forme de Y \n Répétez en amenant les bras en forme de W \n Répétez en amenant les bras en forme de L le long du corps",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "Tierrasverdes"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1737",
-  "source_id": 1737,
-  "name": "Assisted chin-ups",
-  "name_en": "Assisted chin-ups",
-  "aliases": [
-   "Assisted chin-ups"
-  ],
-  "category": "Back",
-  "equipment": [],
-  "muscles": [
-   "Biceps",
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Chin-ups with machine assistance (counterweights)",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1709/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1737/",
-  "media": []
- },
- {
-  "id": "wger:1738",
-  "source_id": 1738,
-  "name": "Tractions en prise neutre ou rowings TRX",
-  "name_en": "Neutral-grip pull-ups or TRX rows",
-  "aliases": [
-   "Neutral-grip pull-ups or TRX rows",
-   "Tractions en prise neutre ou rowings TRX"
-  ],
-  "category": "Arms",
-  "equipment": [
-   "Pull-up bar"
-  ],
-  "muscles": [
-   "Lats"
-  ],
-  "variation_group": null,
-  "description": "Traction : tirage vertical — sollicite davantage le grand dorsal (largeur du dos).  \n  Rowing TRX : tirage horizontal — sollicite davantage les rhomboïdes et les trapèzes (épaisseur du milieu du dos et posture).",
-  "description_language": "fr",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "54str"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "wger.de"
-   ],
-   "original": "",
-   "derivative_source": ""
-  },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1738/",
-  "media": [
-   {
-    "kind": "image",
-    "url": "https://wger.de/media/exercise-images/1738/0529acdf-ede8-42a2-a3e5-8d0c57b7a0e1.jpg",
-    "codec": null,
+  {
+    "id": "wger:1710",
+    "source_id": 1710,
+    "name": "Étirement du billot de boucher (butcher's block)",
+    "name_en": "Butchers Block Stretch",
+    "aliases": [
+      "Butchers Block Stretch",
+      "Étirement du billot de boucher (butcher's block)"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Bench"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Agenouillez-vous, les mains jointes \n Posez les coudes sur un banc devant vous et abaissez la poitrine vers le bas \n Gardez les coudes fléchis avec une bonne posture et maintenez la position",
+    "description_language": "fr",
     "credit": {
-     "name": "CC-BY-SA 4",
-     "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-     "authors": [
-      "54str"
-     ],
-     "original": "",
-     "derivative_source": ""
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
     },
-    "main": true
-   }
-  ]
- },
- {
-  "id": "wger:1739",
-  "source_id": 1739,
-  "name": "Shrimp Squad",
-  "name_en": "Shrimp Squad",
-  "aliases": [
-   "Shrimp Squad"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes",
-   "Quads"
-  ],
-  "variation_group": null,
-  "description": "Single leg squad where one leg is behind you.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Happy"
-   ],
-   "original": "",
-   "derivative_source": ""
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1710/",
+    "media": [],
+    "muscles_secondary": [
+      "Trapezius"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Happy"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1711",
+    "source_id": 1711,
+    "name": "Étirement du dormeur (sleeper stretch)",
+    "name_en": "Sleeper Stretch",
+    "aliases": [
+      "Sleeper Stretch",
+      "Étirement du dormeur (sleeper stretch)"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Allongez-vous sur le côté de façon à reposer un peu de poids sur votre omoplate pour la maintenir immobile \n Tendez votre bras à 90 degrés devant vous, reposant sur le sol ou le tapis \n Levez votre main avec votre coude de sorte que vos doigts pointent vers le plafond et votre paume vers vos pieds \n En gardant votre coude immobile, abaissez doucement votre paume vers le sol",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1711/",
+    "media": [],
+    "muscles_secondary": [
+      "Trapezius"
+    ]
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1739/",
-  "media": []
- },
- {
-  "id": "wger:1740",
-  "source_id": 1740,
-  "name": "Single Leg Glute Bridge",
-  "name_en": "Single Leg Glute Bridge",
-  "aliases": [
-   "Single Leg Glute Bridge"
-  ],
-  "category": "Legs",
-  "equipment": [
-   "none (bodyweight exercise)"
-  ],
-  "muscles": [
-   "Glutes"
-  ],
-  "variation_group": "df253492-1fa4-407a-aa2c-1a19a5b30925",
-  "description": "A glute bridge, where you use just one leg at a time.",
-  "description_language": "en",
-  "credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Happy"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1712",
+    "source_id": 1712,
+    "name": "Étirement en flexion horizontale de l'épaule",
+    "name_en": "Horizontal Shoulder Flexion Stretch",
+    "aliases": [
+      "Horizontal Shoulder Flexion Stretch",
+      "Étirement en flexion horizontale de l'épaule"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Levez le bras sur le côté en posant la main sur un mur ou un encadrement de porte à côté de vous, à hauteur d'épaule \n Tournez le corps à l'opposé du bras pour étirer les pectoraux, aussi loin que possible sans inconfort",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1712/",
+    "media": [],
+    "muscles_secondary": [
+      "Shoulders"
+    ]
   },
-  "text_credit": {
-   "name": "CC-BY-SA 4",
-   "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-   "authors": [
-    "Happy"
-   ],
-   "original": "",
-   "derivative_source": ""
+  {
+    "id": "wger:1713",
+    "source_id": 1713,
+    "name": "Étirement des pectoraux dans l'encadrement de porte",
+    "name_en": "Doorway Pectoral Stretch",
+    "aliases": [
+      "Doorway Pectoral Stretch",
+      "Étirement des pectoraux dans l'encadrement de porte"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Placez l'avant-bras à la verticale contre un encadrement de porte ou un objet fixe, à hauteur de la tête \n Avancez d'un pas au-delà du bras, en le maintenant immobile contre l'objet, afin d'étirer les pectoraux",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1713/",
+    "media": [],
+    "muscles_secondary": []
   },
-  "source_url": "https://wger.de/api/v2/exerciseinfo/1740/",
-  "media": []
- }
+  {
+    "id": "wger:1714",
+    "source_id": 1714,
+    "name": "Exercice pendulaire de l'épaule avec haltère",
+    "name_en": "Shoulder Dumbbell Pendular Exercise",
+    "aliases": [
+      "Exercice pendulaire de l'épaule avec haltère",
+      "Shoulder Dumbbell Pendular Exercise"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Lats",
+      "Chest",
+      "Trapezius"
+    ],
+    "variation_group": null,
+    "description": "Penchez-vous vers l'avant pour poser votre main sur une chaise ou un autre objet, en tenant un haltère dans l'autre main \n Balancez doucement l'haltère selon un mouvement circulaire",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1714/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1715",
+    "source_id": 1715,
+    "name": "Rotation externe de l'épaule avec haltère",
+    "name_en": "Shoulder External Rotation with Dumbbell",
+    "aliases": [
+      "Rotation externe de l'épaule avec haltère",
+      "Shoulder External Rotation with Dumbbell"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Brachialis"
+    ],
+    "variation_group": null,
+    "description": "Allongez-vous sur le côté en tenant un haltère dans votre main supérieure \n Calez votre coude contre votre flanc et posez la main devant vous \n Faites pivoter l'épaule de sorte que la main se relève \n Redescendez la main",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1715/",
+    "media": [],
+    "muscles_secondary": [
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:1716",
+    "source_id": 1716,
+    "name": "Pompe inclinée pour les épaules",
+    "name_en": "Incline Shoulder Press Up",
+    "aliases": [
+      "Incline Shoulder Press Up",
+      "Pompe inclinée pour les épaules"
+    ],
+    "category": "Chest",
+    "equipment": [
+      "Bench"
+    ],
+    "muscles": [
+      "Shoulders",
+      "Chest"
+    ],
+    "variation_group": null,
+    "description": "Placez vos mains sur le banc en position de pompe \n Éloignez votre poitrine du banc pour écarter vos omoplates \n  En gardant les coudes tendus , abaissez votre poitrine vers le banc de sorte que vos omoplates se rapprochent \n Éloignez de nouveau votre poitrine du banc",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Croak6728"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1716/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1717",
+    "source_id": 1717,
+    "name": "Neck extension",
+    "name_en": "Neck extension",
+    "aliases": [
+      "Neck extension"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Cable machine",
+      "SZ-Bar"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "variation_group": null,
+    "description": "Unilateral triceps exercise with your back to the pulley, with the pulley at the top",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "polloperro"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "polloperro"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1717/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1718",
+    "source_id": 1718,
+    "name": "Remo alto polea alta",
+    "name_en": "Remo alto polea alta",
+    "aliases": [
+      "Remo alto polea alta"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Obliquus externus abdominis",
+      "Serratus anterior",
+      "Triceps"
+    ],
+    "variation_group": null,
+    "description": "High pulley row with support using a single grip",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "polloperro"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "polloperro"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1718/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1719",
+    "source_id": 1719,
+    "name": "Jalon caballero unialteral",
+    "name_en": "Jalon caballero unialteral",
+    "aliases": [
+      "Jalon caballero unialteral"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Brachialis",
+      "Obliquus externus abdominis"
+    ],
+    "variation_group": null,
+    "description": "Pull performed in knight's stance",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "polloperro"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "polloperro"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1719/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1723",
+    "source_id": 1723,
+    "name": "Glute Kickback (Machine)",
+    "name_en": "Glute Kickback (Machine)",
+    "aliases": [
+      "Glute Kickback (Machine)"
+    ],
+    "category": "Legs",
+    "equipment": [],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": null,
+    "description": "Drive through your heel, not your toes, to hit the glute. \n Don’t hyperextend your lower back at the top.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1723/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1724",
+    "source_id": 1724,
+    "name": "Adduction debout (poulie)",
+    "name_en": "Standing Adduction (Cable)",
+    "aliases": [
+      "Adduction debout (poulie)",
+      "Standing Adduction (Cable)"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [],
+    "variation_group": null,
+    "description": "Gardez les hanches bien parallèles et immobiles, en tirant le câble en travers de votre jambe opposée en utilisant uniquement l'intérieur de la cuisse. \n Ne laissez pas votre buste s'incliner ou pivoter : pas d'inclinaison latérale pour vous aider dans la répétition.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1724/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1725",
+    "source_id": 1725,
+    "name": "Rowing assis (machine)",
+    "name_en": "Seated Row (Machine)",
+    "aliases": [
+      "Rowing assis (machine)",
+      "Seated Row (Machine)"
+    ],
+    "category": "Back",
+    "equipment": [],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Gardez la poitrine relevée et resserrez les omoplates en fin de mouvement. \n N'arrondissez pas le dos et ne vous penchez pas vers l'avant pendant le tirage.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1725/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1725/f0ebd44e-b8e1-400c-b598-ca371f3a07af.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "barry"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Shoulders",
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:1726",
+    "source_id": 1726,
+    "name": "Tirage bras tendus (poulie)",
+    "name_en": "Straight-Arm Pulldown (Cable)",
+    "aliases": [
+      "Straight-Arm Pulldown (Cable)",
+      "Tirage bras tendus (poulie)"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Gardez les bras tendus mais sans les verrouiller, en tirant avec le grand dorsal et non avec les épaules. \n Ne laissez pas vos épaules se hausser pendant le mouvement.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1726/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1726/2e7e541b-5f55-405a-ae78-3e71b3f42db4.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "barry"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1727",
+    "source_id": 1727,
+    "name": "Tirage latéral bras tendu (poulie)",
+    "name_en": "Side Straight-Arm Pulldown (Cable)",
+    "aliases": [
+      "Side Straight-Arm Pulldown (Cable)",
+      "Tirage latéral bras tendu (poulie)"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Gardez le buste immobile, en tirant la poignée vers le bas le long de votre côté en utilisant la partie externe du grand dorsal. \n Ne tournez pas le corps et ne faites pas pivoter le buste pour tricher dans la répétition.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1727/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1728",
+    "source_id": 1728,
+    "name": "Rotation interne de l'épaule (poulie)",
+    "name_en": "Shoulder Internal Rotation (Cable)",
+    "aliases": [
+      "Rotation interne de l'épaule (poulie)",
+      "Shoulder Internal Rotation (Cable)"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Gardez le coude collé à votre côté comme s'il y était fixé à la colle forte. \n Ne faites pas pivoter le buste : seul l'avant-bras doit bouger.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1728/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1729",
+    "source_id": 1729,
+    "name": "Rotation externe de l'épaule (poulie)",
+    "name_en": "Shoulder External Rotation (Cable)",
+    "aliases": [
+      "Rotation externe de l'épaule (poulie)",
+      "Shoulder External Rotation (Cable)"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Gardez le coude fixe le long de votre côté et faites pivoter l'avant-bras vers l'extérieur en douceur. \n Ne laissez pas votre poignet ou votre coude dériver vers le haut : restez dans un seul plan.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1729/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1730",
+    "source_id": 1730,
+    "name": "Side Lateral Raise (Cable)",
+    "name_en": "Side Lateral Raise (Cable)",
+    "aliases": [
+      "Side Lateral Raise (Cable)"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Lift with your elbows leading, not your hands. \n Don’t shrug your shoulders; keep traps quiet.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1730/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1731",
+    "source_id": 1731,
+    "name": "Front Raise (Cable)",
+    "name_en": "Front Raise (Cable)",
+    "aliases": [
+      "Front Raise (Cable)"
+    ],
+    "category": "Shoulders",
+    "equipment": [
+      "Cable machine"
+    ],
+    "muscles": [
+      "Shoulders"
+    ],
+    "variation_group": null,
+    "description": "Raise the handle in a slight arc with controlled movement. \n Don’t swing your torso to start the rep.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "barry"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1731/",
+    "media": [],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1732",
+    "source_id": 1732,
+    "name": "Face pulls avec élastique jaune/vert",
+    "name_en": "Face pulls with yellow/green band",
+    "aliases": [
+      "Face pulls avec élastique jaune/vert",
+      "Face pulls with yellow/green band"
+    ],
+    "category": "Back",
+    "equipment": [
+      "Resistance band"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Face pulls à l'élastique – tirage horizontal debout. Saisissez l'élastique à hauteur du visage, tirez les coudes haut et large vers votre visage tout en resserrant les omoplates. Sollicite le haut du dos et l'arrière des épaules, et améliore la posture.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "54str"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1732/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1732/d13b9adb-968e-4f73-95e6-b16690bcf616.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "54str"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:1733",
+    "source_id": 1733,
+    "name": "Squat isométrique jusqu'à l'échec",
+    "name_en": "Isometric Squat to Failure",
+    "aliases": [
+      "Isometric Squat to Failure",
+      "Squat isométrique jusqu'à l'échec"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Squat isométrique jusqu'à l'échec : une technique d'entraînement en force \n Définition \n Le squat isométrique jusqu'à l'échec est une variante de l'exercice du squat dans laquelle vous maintenez une position de squat statique à un angle précis, en conservant la position jusqu'à ce que vos muscles ne puissent plus soutenir la contraction.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Tierrasverdes"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1733/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1733/4ef77069-beb2-4504-a4f3-b181d5f35212.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Tierrasverdes"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1734",
+    "source_id": 1734,
+    "name": "Fente sur une jambe avec kettlebell",
+    "name_en": "Single-Leg Lunge with Kettlebell:",
+    "aliases": [
+      "Fente sur une jambe avec kettlebell",
+      "Single-Leg Lunge with Kettlebell:"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Kettlebell"
+    ],
+    "muscles": [
+      "Calves",
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Comment réaliser une fente sur une jambe avec kettlebell \n Préparation : Tenez-vous debout, pieds joints. Saisissez le kettlebell des deux mains par la poignée en le gardant près de votre poitrine, ou tenez-le d'une seule main (du même côté que la jambe qui travaille). \n Pas et descente : Faites un grand pas vers l'avant (ou vers l'arrière, ce qui est plus sûr pour vos genoux) avec une jambe, en abaissant les hanches jusqu'à ce que les deux genoux forment un angle de 90 degrés. \n Focalisation : Reportez votre poids sur la jambe avant (ou fléchie), en gardant le dos droit et le buste bien vertical. \n Retour : Poussez sur votre jambe avant pour revenir à la position de départ.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Tierrasverdes"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1734/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1734/782e2fbb-1267-476d-a817-14f3b83e0564.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Tierrasverdes"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1735",
+    "source_id": 1735,
+    "name": "Presse à fessiers latérale sur une jambe",
+    "name_en": "Single-leg side glute press",
+    "aliases": [
+      "Presse à fessiers latérale sur une jambe",
+      "Single-leg side glute press"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Incline bench"
+    ],
+    "muscles": [
+      "Calves",
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "La presse à fessiers latérale sur une jambe est une variante de la presse à cuisses où vous placez votre corps de côté sur l'appui, un pied posé haut et légèrement incliné pour pousser la charge, ce qui sollicite puissamment le fessier externe (moyen et petit fessier) et les ischio-jambiers pour un développement équilibré des jambes et de la stabilité. L'exercice demande de bien pousser à travers le talon et de garder le contrôle sans verrouiller complètement la jambe. \n Comment l'exécuter : \n Mise en place : Asseyez-vous dans la presse à cuisses, pivotez le corps sur une hanche et placez un pied en haut de la plateforme, à environ 45 degrés, les orteils légèrement orientés vers l'extérieur et l'avant. \n Positionnement : Gardez la hanche, le genou et la cheville alignés, et veillez à ce que votre bas du dos reste plaqué contre l'appui. \n Descente : Abaissez lentement la charge en laissant votre genou fléchir profondément (près de 90 degrés), jusqu'à ressentir un étirement dans le fessier et l'ischio-jambier. \n Poussée : Poussez à travers le talon (et non les orteils) pour remonter la charge, en contractant les fessiers et les ischio-jambiers, et arrêtez-vous juste avant l'extension complète de la jambe. \n Contrôle : Évitez tout rebond et ne laissez pas votre bas du dos se décoller de l'appui ; maintenez la tension tout au long du mouvement.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Tierrasverdes"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1735/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1735/43bca7d9-2333-43f3-8554-2d0b39fa2a07.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Tierrasverdes"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1736",
+    "source_id": 1736,
+    "name": "Soulevé de terre sur une jambe avec haltère",
+    "name_en": "Single-Leg Deadlift with Dumbbell",
+    "aliases": [
+      "Single-Leg Deadlift with Dumbbell",
+      "Soulevé de terre sur une jambe avec haltère"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "Dumbbell"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Glutes"
+    ],
+    "variation_group": "6d2a7dcd-2d34-440e-b9e6-decb5f840a74",
+    "description": "Position de départ : Tenez-vous debout, les genoux légèrement fléchis, en tenant un haltère dans une main ou dans les deux. Reportez votre poids sur votre jambe d'appui (par exemple la jambe droite) et décollez légèrement du sol le pied de l'autre jambe. \n La charnière : En gardant le dos plat et la sangle abdominale gainée, basculez au niveau des hanches en poussant vos fessiers vers l'arrière. À mesure que votre buste descend, tendez la jambe libre droit derrière vous pour l'équilibre, en gardant les hanches bien parallèles au sol. Le ou les haltères doivent descendre vers le sol le long de votre jambe d'appui. \n Amplitude de mouvement : Continuez d'abaisser votre buste jusqu'à ce qu'il soit presque parallèle au sol, ou jusqu'à ressentir un étirement intense dans l'ischio-jambier de votre jambe d'appui, en veillant à garder le dos neutre tout au long du mouvement. \n Retour au départ : Marquez une pause en bas, puis contractez vos fessiers et vos ischio-jambiers pour remonter lentement le buste jusqu'à la position de départ. Votre jambe libre doit revenir dans l'alignement de la jambe d'appui. \n Changement de côté : Après avoir effectué le nombre de répétitions souhaité d'un côté, reportez votre poids et répétez le mouvement sur l'autre jambe.",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Tierrasverdes"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1736/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1736/aa724cc5-c485-4f3e-9d2a-0c6ae4baefbe.png",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "Tierrasverdes"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": []
+  },
+  {
+    "id": "wger:1737",
+    "source_id": 1737,
+    "name": "Assisted chin-ups",
+    "name_en": "Assisted chin-ups",
+    "aliases": [
+      "Assisted chin-ups"
+    ],
+    "category": "Back",
+    "equipment": [],
+    "muscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Chin-ups with machine assistance (counterweights)",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1737/",
+    "media": [],
+    "muscles_secondary": [
+      "Brachialis",
+      "Trapezius"
+    ]
+  },
+  {
+    "id": "wger:1738",
+    "source_id": 1738,
+    "name": "Tractions en prise neutre ou rowings TRX",
+    "name_en": "Neutral-grip pull-ups or TRX rows",
+    "aliases": [
+      "Neutral-grip pull-ups or TRX rows",
+      "Tractions en prise neutre ou rowings TRX"
+    ],
+    "category": "Arms",
+    "equipment": [
+      "Pull-up bar"
+    ],
+    "muscles": [
+      "Lats"
+    ],
+    "variation_group": null,
+    "description": "Traction : tirage vertical — sollicite davantage le grand dorsal (largeur du dos).  \n  Rowing TRX : tirage horizontal — sollicite davantage les rhomboïdes et les trapèzes (épaisseur du milieu du dos et posture).",
+    "description_language": "fr",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "54str"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "wger.de"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1738/",
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://wger.de/media/exercise-images/1738/0529acdf-ede8-42a2-a3e5-8d0c57b7a0e1.jpg",
+        "codec": null,
+        "credit": {
+          "name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "authors": [
+            "54str"
+          ],
+          "original": "",
+          "derivative_source": ""
+        },
+        "main": true
+      }
+    ],
+    "muscles_secondary": [
+      "Biceps"
+    ]
+  },
+  {
+    "id": "wger:1739",
+    "source_id": 1739,
+    "name": "Shrimp Squad",
+    "name_en": "Shrimp Squad",
+    "aliases": [
+      "Shrimp Squad"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quads"
+    ],
+    "variation_group": null,
+    "description": "Single leg squad where one leg is behind you.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Happy"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Happy"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1739/",
+    "media": [],
+    "muscles_secondary": [
+      "Hamstrings",
+      "Calves"
+    ]
+  },
+  {
+    "id": "wger:1740",
+    "source_id": 1740,
+    "name": "Single Leg Glute Bridge",
+    "name_en": "Single Leg Glute Bridge",
+    "aliases": [
+      "Single Leg Glute Bridge"
+    ],
+    "category": "Legs",
+    "equipment": [
+      "none (bodyweight exercise)"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "variation_group": "df253492-1fa4-407a-aa2c-1a19a5b30925",
+    "description": "A glute bridge, where you use just one leg at a time.",
+    "description_language": "en",
+    "credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Happy"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "text_credit": {
+      "name": "CC-BY-SA 4",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "authors": [
+        "Happy"
+      ],
+      "original": "",
+      "derivative_source": ""
+    },
+    "source_url": "https://wger.de/api/v2/exerciseinfo/1740/",
+    "media": [],
+    "muscles_secondary": []
+  }
 ]

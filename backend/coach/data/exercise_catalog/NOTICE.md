@@ -38,7 +38,12 @@ lors d’une redistribution ou adaptation, y compris commerciale.
 
 L’ID canonique est `wger:<id>`. Les IDs privés issus de l’import et les noms d’origine
 restent inchangés. Une correspondance exacte non ambiguë peut être affichée directement ;
-un rapprochement approximatif reste une suggestion. L’utilisateur peut confirmer,
+les formulations équivalentes (ordre, prépositions, pluriels et abréviations usuelles)
+sont associées automatiquement si une seule variante correspond. Les détails d’angle,
+prise et matériel ne sont pas supprimés. Le bilan du programme liste les noms encore
+ambigus, sans revalidation des fiches reconnues. Aucun réimport nécessaire. Une décision
+manuelle ou un retrait de correspondance reste prioritaire. Un rapprochement approximatif
+reste une suggestion. L’utilisateur peut confirmer,
 changer ou retirer une correspondance, avec contrôle de révision.
 
 Le partage des références entre noms exige le même exercice et la même convention
@@ -47,3 +52,20 @@ matériel fait aussi partie de la compatibilité ; une machine exige un repère 
 vide. Aucun calcul de conversion entre ces conventions. Les anciennes séries avec
 variante/unités connues restent figées ; les séries anciennes sans classification
 peuvent être rattachées par la décision explicite de l’utilisateur.
+
+## Carte musculaire et bibliothèques d’animations
+
+Les champs muscles et muscles_secondary sont conservés depuis le même snapshot public.
+Une silhouette SVG originale, locale et schématique représente les groupes documentés
+face/dos : principaux en corail, secondaires en jaune, légende textuelle française.
+Le dessin ne copie pas les SVG wger et ne représente pas un degré d’activation.
+Un muscle absent reste non renseigné ; les cibles ne sont pas déduites du nom.
+
+ExerciseDB annonce plus de 5000 GIF dans son offre complète :
+https://github.com/ExerciseDB/exercisedb-api . Ses conditions d’API exigent un
+abonnement actif et interdisent le stockage persistant des données/médias :
+https://exercisedb.notion.site/ExerciseDB-API-Terms-of-Use-226983b728ca8090bf7be79564e4b356 .
+Sa version gratuite annonce 1500 exercices avec GIF et un usage non commercial
+avec attribution : https://oss.exercisedb.dev/docs . Aucun dataset ni média
+ExerciseDB n’est importé dans ce lot. Une intégration future doit rester distincte
+du snapshot wger et respecter l’offre/licence retenue.
