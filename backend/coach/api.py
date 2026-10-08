@@ -4,6 +4,7 @@ import secrets
 import threading
 import time
 from contextlib import asynccontextmanager
+from contextvars import copy_context
 from datetime import date
 from pathlib import Path
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
@@ -16,6 +17,7 @@ from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from coach import (
+    accounts,
     activities,
     chatgpt,
     db,
@@ -26,7 +28,8 @@ from coach import (
     memory,
     planning,
 )
-from coach.config import data_dir, web_settings
+from coach.config import data_dir, user_id, user_scope, web_settings
+from coach.owner_resources import OwnerLock
 from coach.secrets import read_secret
 
 settings = web_settings()
@@ -34,8 +37,10 @@ settings = web_settings()
 
 @asynccontextmanager
 async def lifespan(app):
-    garmin_jobs.recover(sync_lock)
-    memory.recover()
+    for owner in accounts.users():
+        with user_scope(owner):
+            garmin_jobs.recover(sync_lock)
+            memory.recover()
     stopping, scheduler = garmin_schedule.start(sync_lock)
     try:
         yield
@@ -47,10 +52,17 @@ async def lifespan(app):
 app = FastAPI(title="Coach AI", docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan)
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=settings.hosts)
 sessions: dict[str, float] = {}
+session_owners: dict[str, str] = {}
 login_attempts: dict[str, list[float]] = {}
-chat_lock = threading.Lock()
-sync_lock = threading.Lock()
-chatgpt_login = {"status": "idle"}
+chat_lock = OwnerLock()
+sync_lock = OwnerLock()
+chatgpt_logins = {}
+
+
+def chatgpt_login_state():
+    return chatgpt_logins.setdefault((str(data_dir()), user_id()), {"status": "idle"})
+
+
 ALLOWED_ORIGINS = settings.origins
 
 
@@ -59,7 +71,12 @@ async def local_guard(request: Request, call_next):
     if request.method not in {"GET", "HEAD", "OPTIONS"}:
         if request.headers.get("origin") not in ALLOWED_ORIGINS:
             return Response(status_code=403)
-    response = await call_next(request)
+    cookie = request.cookies.get("coach_session", "")
+    owner = (
+        session_owners.get(cookie, "local") if sessions.get(cookie, 0) > time.time() else "local"
+    )
+    with user_scope(owner):
+        response = await call_next(request)
     response.headers["Cache-Control"] = "no-store"
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Referrer-Policy"] = "no-referrer"
@@ -69,8 +86,9 @@ async def local_guard(request: Request, call_next):
 
 def require_session(request: Request):
     value = request.cookies.get("coach_session", "")
-    if sessions.get(value, 0) < time.time():
+    if sessions.get(value, 0) < time.time() or value not in session_owners:
         sessions.pop(value, None)
+        session_owners.pop(value, None)
         raise HTTPException(401, "Saisis ta clé d’accès.")
 
 
@@ -130,17 +148,17 @@ def login(body: Login, request: Request, response: Response):
     if len(attempts) >= 5:
         raise HTTPException(429, "Trop d’essais ; attends une minute.")
     attempts.append(stamp)
-    key = os.environ.get("COACH_ACCESS_KEY") or read_secret(data_dir() / "app.json").get(
-        "access_key", ""
-    )
-    if not key or not secrets.compare_digest(key, body.access_key):
+    owner = accounts.authenticate(body.access_key)
+    if not owner:
         raise HTTPException(401, "Clé incorrecte.")
     login_attempts.pop(remote, None)
     for token, expires in list(sessions.items()):
         if expires < stamp:
             sessions.pop(token)
+            session_owners.pop(token, None)
     token = secrets.token_urlsafe(32)
     sessions[token] = stamp + 8 * 3600
+    session_owners[token] = owner
     response.set_cookie(
         "coach_session",
         token,
@@ -152,9 +170,81 @@ def login(body: Login, request: Request, response: Response):
     return {"ok": True}
 
 
+def require_admin(request: Request):
+    require_session(request)
+    if user_id() != "local":
+        raise HTTPException(403, "Réservé à l’administrateur.")
+
+
+class InvitationRequest(BaseModel):
+    label: str = Field(default="", max_length=100)
+
+
+@app.get("/api/invitations", dependencies=[Depends(require_admin)])
+def list_invitations():
+    return {"invitations": accounts.invitations()}
+
+
+@app.post("/api/invitations", status_code=201, dependencies=[Depends(require_admin)])
+def create_invitation(body: InvitationRequest):
+    try:
+        return accounts.invite(body.label.strip())
+    except ValueError as exc:
+        raise HTTPException(409, str(exc)) from None
+
+
+@app.delete("/api/invitations/{key}", dependencies=[Depends(require_admin)])
+def revoke_invitation(key: str):
+    if not accounts.revoke(key):
+        raise HTTPException(404, "Invitation introuvable.")
+    return {"ok": True}
+
+
+@app.post("/api/register", status_code=201)
+async def register_account(request: Request, response: Response):
+    remote = "register:" + (request.client.host if request.client else "unknown")
+    stamp = time.time()
+    attempts = [t for t in login_attempts.get(remote, []) if t > stamp - 60]
+    login_attempts[remote] = attempts
+    if len(attempts) >= 5:
+        raise HTTPException(429, "Trop d’essais ; attends une minute.")
+    attempts.append(stamp)
+    payload = bytearray()
+    async for chunk in request.stream():
+        payload.extend(chunk)
+        if len(payload) > 4096:
+            raise HTTPException(413, "Inscription trop volumineuse.")
+    try:
+        body = json.loads(payload)
+        name, key = body["name"].strip(), body["invite_key"]
+        if not isinstance(key, str) or not 32 <= len(key) <= 200 or not 1 <= len(name) <= 100:
+            raise ValueError()
+    except (ValueError, KeyError, TypeError, AttributeError):
+        raise HTTPException(422, "Prénom et clé d’invitation valides requis.") from None
+    try:
+        value = await run_in_threadpool(accounts.register, key, name)
+    except ValueError as exc:
+        raise HTTPException(400, str(exc)) from None
+    token = secrets.token_urlsafe(32)
+    sessions[token] = stamp + 8 * 3600
+    session_owners[token] = value["id"]
+    response.set_cookie(
+        "coach_session",
+        token,
+        httponly=True,
+        samesite="strict",
+        max_age=8 * 3600,
+        secure=settings.production,
+    )
+    login_attempts.pop(remote, None)
+    return value
+
+
 @app.post("/api/logout", dependencies=[Depends(require_session)])
 def logout(request: Request, response: Response):
-    sessions.pop(request.cookies.get("coach_session", ""), None)
+    token = request.cookies.get("coach_session", "")
+    sessions.pop(token, None)
+    session_owners.pop(token, None)
     response.delete_cookie(
         "coach_session", secure=settings.production, httponly=True, samesite="strict"
     )
@@ -167,6 +257,7 @@ def dashboard():
     account = read_secret(chatgpt.credential_path())
     activities = db.activity_page(0, 20)
     return {
+        "account": accounts.identity(),
         "local_connections": not settings.production,
         "garmin_configured": (data_dir() / "garmin" / "garmin_tokens.json").exists(),
         "profile": db.profile(),
@@ -637,6 +728,7 @@ def test_chatgpt():
 
 @app.post("/api/chatgpt/login", status_code=202, dependencies=[Depends(require_session)])
 def start_chatgpt_login():
+    chatgpt_login = chatgpt_login_state()
     if settings.production:
         raise HTTPException(409, "Autorise ChatGPT sur ton poste puis importe la session ici.")
     if not chat_lock.acquire(blocking=False):
@@ -661,7 +753,8 @@ def start_chatgpt_login():
         finally:
             chat_lock.release()
 
-    thread = threading.Thread(target=worker, daemon=True)
+    context = copy_context()
+    thread = threading.Thread(target=lambda: context.run(worker), daemon=True)
     try:
         thread.start()
     except Exception:
@@ -674,7 +767,7 @@ def start_chatgpt_login():
 def chatgpt_login_status():
     if settings.production:
         return {"status": "unavailable"}
-    return dict(chatgpt_login)
+    return dict(chatgpt_login_state())
 
 
 @app.get("/api/models", dependencies=[Depends(require_session)])

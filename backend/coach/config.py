@@ -1,4 +1,7 @@
 import os
+import re
+from contextlib import contextmanager
+from contextvars import ContextVar
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -48,7 +51,7 @@ def web_settings() -> WebSettings:
     )
 
 
-def data_dir() -> Path:
+def root_data_dir() -> Path:
     path = Path(os.environ.get("COACH_DATA_DIR", ".local")).expanduser().absolute()
     path.mkdir(parents=True, exist_ok=True, mode=0o700)
     if os.name == "posix":
@@ -56,5 +59,30 @@ def data_dir() -> Path:
     return path
 
 
+_owner = ContextVar("coach_owner", default="local")
+
+
 def user_id() -> str:
-    return "local"
+    return _owner.get()
+
+
+@contextmanager
+def user_scope(owner: str):
+    if not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", owner):
+        raise ValueError("Compte invalide")
+    token = _owner.set(owner)
+    try:
+        yield
+    finally:
+        _owner.reset(token)
+
+
+def data_dir() -> Path:
+    root = root_data_dir()
+    if user_id() == "local":
+        return root  # Preserve the original owner's DB and sessions in place.
+    folder = root / "users" / user_id()
+    folder.mkdir(parents=True, exist_ok=True, mode=0o700)
+    if os.name == "posix":
+        folder.chmod(0o700)
+    return folder

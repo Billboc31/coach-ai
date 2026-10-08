@@ -5,8 +5,8 @@ from datetime import datetime, timedelta, timezone
 from threading import Thread
 from zoneinfo import ZoneInfo
 
-from coach import db, garmin_jobs
-from coach.config import data_dir
+from coach import accounts, db, garmin_jobs
+from coach.config import data_dir, user_scope
 
 control = threading.Lock()
 INTERVALS = {30, 60, 180, 360, 1440}
@@ -94,7 +94,14 @@ def start(lock):
     def loop():
         while not stopping.is_set():
             try:
-                tick(lock)
+                for owner in accounts.users():
+                    if stopping.is_set():
+                        break
+                    with user_scope(owner):
+                        try:
+                            tick(lock)
+                        except Exception:
+                            pass
             except Exception:
                 # Storage/transient failures must not kill future scheduler ticks.
                 pass

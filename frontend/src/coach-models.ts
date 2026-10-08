@@ -11,15 +11,16 @@ export function preferredModel(choices: CoachModel[], previous = "") {
     ""
   );
 }
-function savedPreference() {
+function savedPreference(key: string) {
   try {
-    return localStorage.getItem(preferenceKey) || "";
+    return localStorage.getItem(key) || "";
   } catch {
     return "";
   }
 }
 
-export function useCoachModels(active: boolean, connectionRevision: number) {
+export function useCoachModels(active: boolean, connectionRevision: number, owner = "local") {
+  const scopedKey = owner === "local" ? preferenceKey : preferenceKey + ":" + owner;
   const [models, setModels] = useState<CoachModel[]>([]),
     [model, setSelected] = useState("");
   const [loading, setLoading] = useState(false),
@@ -55,7 +56,7 @@ export function useCoachModels(active: boolean, connectionRevision: number) {
       setModels(choices);
       const chosen = preferredModel(
         choices,
-        selected.current || savedPreference(),
+        savedPreference(scopedKey) || selected.current,
       );
       selected.current = chosen;
       setSelected(chosen);
@@ -66,7 +67,8 @@ export function useCoachModels(active: boolean, connectionRevision: number) {
     } finally {
       if (!controller.signal.aborted) setLoading(false);
     }
-  }, [active, connectionRevision]);
+  }, [active, connectionRevision, owner]);
+  useEffect(()=>{selected.current="";setSelected("");},[owner]);
   useEffect(() => {
     if (active) void refresh();
     else {
@@ -84,7 +86,7 @@ export function useCoachModels(active: boolean, connectionRevision: number) {
     selected.current = id;
     setSelected(id);
     try {
-      localStorage.setItem(preferenceKey, id);
+      localStorage.setItem(scopedKey, id);
     } catch {
       /* A blocked storage must not stop the chat. */
     }

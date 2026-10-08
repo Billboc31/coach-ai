@@ -7,13 +7,16 @@ import re
 import threading
 import unicodedata
 import uuid
+from contextvars import copy_context
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from coach import chatgpt, db
+from coach.owner_resources import OwnerLock
 
 mutation_lock = threading.RLock()
-generation_lock = threading.Lock()
+
+generation_lock = OwnerLock()
 CATEGORIES = {"goal", "constraint", "preference", "decision", "health_context"}
 STOP = set(
     "avec dans pour une des les est que qui quoi comment peux peut faire mon mes ma ton tes sur pas plus suis nous cette cela quel quelle analyse bilan activités activites dernier dernières dernieres derniere derniers".split()
@@ -393,7 +396,8 @@ def launch(model, force=False):
 
     try:
         db.upsert_record("memory", "job", {"status": "running", "updated_at": db.now()})
-        threading.Thread(target=worker, daemon=True).start()
+        context = copy_context()
+        threading.Thread(target=lambda: context.run(worker), daemon=True).start()
     except Exception:
         generation_lock.release()
         db.upsert_record("memory", "job", {"status": "failed", "updated_at": db.now()})

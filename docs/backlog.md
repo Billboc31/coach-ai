@@ -167,7 +167,8 @@ vérifiée, quotas affichés sans les inventer, arrêt propre et contrôle du pr
 ## Commercialisation : après MVP personnel
 
 BIZ-01 : vérifier accès/licences Garmin et voie ChatGPT pour service commercial ; prévoir API
-classique configurable. BIZ-02 : identité multi-utilisateur, isolation systématique et migrations.
+classique configurable. BIZ-02 : comptes privés sur invitation livrés (ACCOUNT-01) ; cycle de vie des comptes,
+isolation en infrastructure mutualisée et migrations commerciales restent à développer.
 BIZ-03 : consentements, politique de conservation, hébergement adapté aux données et revue juridique.
 Paiement, abonnement, modèle local, fine-tuning et GraphRAG : seulement après besoin mesuré.
 
@@ -188,3 +189,14 @@ des synonymes précis et éventuelle licence d'animations après choix du propri
 
 GYM-04 : migration RepDB uniquement, retrait du catalogue wger, associations anciennes
 archivées/migrées sans effacer les séances ; noms français et variantes bilingues.
+
+### ACCOUNT-01 — Comptes privés sur invitation
+Livré : invitations administrateur à durée limitée, usage unique et annulation ; inscription
+avec prénom, clé personnelle aléatoire affichée une fois, hash salé, reconnexion et cookie privé.
+Compte historique conservé, dossiers/bases/credentials séparés, contexte des workers, locks,
+annulations et scheduler propres à chaque compte. Brouillons et modèle préférés isolés.
+Critères vérifiés : tentative d'invitation par un membre refusée, inscription concurrente
+unique, expiration/annulation/Origin, aucune lecture des données du propriétaire, imports de
+sessions dans le bon compte via adapters simulés, workers Garmin/mémoire et requêtes parallèles.
+Restent : réinitialisation des clés, administration du cycle de vie des comptes, suppression
+complète/export utilisateur, OAuth cloud commercial et infrastructure PostgreSQL.

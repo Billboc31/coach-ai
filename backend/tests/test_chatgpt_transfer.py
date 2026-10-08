@@ -179,6 +179,7 @@ def test_hosted_app_refuses_loopback_login(credentials, monkeypatch):
     with TestClient(api.app, headers={"Origin": "http://localhost:8000"}) as client:
         client.cookies.set("coach_session", "test-session")
         api.sessions["test-session"] = time.time() + 60
+        api.session_owners["test-session"] = "local"
         assert client.post("/api/chatgpt/login").status_code == 409
         assert client.get("/api/chatgpt/login").json() == {"status": "unavailable"}
 

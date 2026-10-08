@@ -1,7 +1,7 @@
 # Coach AI
 
 Un coach conversationnel qui croise tous tes sports, tes activités Garmin, tes objectifs
-et les informations que tu lui racontes. Première version personnelle, utilisable localement ou déployable sur Railway.
+et les informations que tu lui racontes. Version privée sur invitation, utilisable localement ou déployable sur Railway.
 
 ## Premier lot
 
@@ -34,6 +34,31 @@ attacher un volume `/data`, définir une clé privée et générer le domaine HT
 Les étapes et vérifications sont dans [docs/railway.md](docs/railway.md).
 Les sessions locales Garmin et ChatGPT peuvent être importées dans Connexions.
 Pour ChatGPT : autorisation locale, puis transfert privé vers le serveur personnel.
+
+## Inviter une personne
+
+Après déploiement, ouvrir **Plus → Connexions → Inviter une personne** sur mobile
+(ou **Connexions** sur ordinateur), puis **Créer un lien d’inscription**. Copier le lien et
+l'envoyer soi-même. Valable 7 jours et une seule inscription, il peut être annulé avant usage.
+La clé d’invitation est dans le fragment du lien, jamais dans une query string de requête serveur.
+
+La personne indique son prénom, reçoit une **clé personnelle générée** et la conserve avant
+d’ouvrir son espace. Elle utilise cette clé pour se reconnecter et pour les transferts CLI,
+jamais la clé administrateur COACH_ACCESS_KEY. La clé personnelle n'est pas récupérable en clair
+après cette étape ; la récupération/réinitialisation des clés est un lot ultérieur.
+
+Chaque compte a son profil, activités, mémoire, conversations, planning, programmes et logs
+musculation, ainsi que ses fichiers Garmin/ChatGPT. Le compte d'origine garde le dossier et la
+base existants, sans réimport. Les membres ont leur propre dossier et base dans le même volume.
+Les brouillons de séance et préférences de modèle sont également séparés dans le navigateur.
+L'administrateur gère les invitations ; ces commandes ne donnent pas accès aux données des membres.
+
+Sur Railway, chaque personne autorise ses connexions sur **son ordinateur**, puis utilise
+**Importer la session** ou `coach garmin-transfer` / `coach chatgpt-transfer`, en saisissant le
+même domaine et **sa propre clé personnelle**. Les règles d'autorisation et vérifications
+Garmin/ChatGPT sont conservées. L'inscription ne déclenche aucun appel IA ni import Garmin.
+Le fonctionnement avec un nouveau compte fournisseur doit être vérifié par la personne,
+les tests du projet n'utilisant aucun compte Garmin/ChatGPT réel.
 
 ## Démarrer (Mac, Linux ou WSL)
 
@@ -214,7 +239,8 @@ avec les mêmes paramètres ; ouvrir http://127.0.0.1:8000.
 
 Le démarrage local reste sur loopback. Pour un accès iPhone par HTTPS, suivre
 [le déploiement Railway](docs/railway.md). Le conteneur sert l’interface et l’API ensemble.
-L’authentification est personnelle ; elle ne constitue pas un accès multi-utilisateur.
+Les comptes sont privés et créés sur invitation ; le compte historique reste administrateur.
+Cela ne remplace pas une intégration OAuth cloud/commerciale avec les fournisseurs.
 
 La base actuelle utilise SQLite et des migrations SQL locales ; PostgreSQL/pgvector est
 une évolution prévue, pas une compatibilité déjà validée. Pas de diagnostic médical.

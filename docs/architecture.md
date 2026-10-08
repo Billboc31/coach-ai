@@ -12,7 +12,9 @@ et ChatGPT sont des fichiers locaux distincts, jamais des champs du profil ni de
 - Backend Python : intégration native du connecteur Garmin, API typée et tests isolés.
 - React/TypeScript : interface mobile avec actions de saisie et navigation simple.
 - SQLite pour démarrer immédiatement sans infrastructure. Chaque enregistrement porte user_id.
-  Le propriétaire `local` est fixe dans ce lot ; il ne constitue pas un système multi-utilisateur.
+  Le propriétaire `local` conserve le compte administrateur et son stockage existant.
+  Chaque membre invité reçoit une identité opaque, son dossier privé et sa base SQLite distincte,
+  tout en conservant les contrôles user_id dans chaque requête.
 - Schéma versionné : v1 tables initiales ; v2 index FTS5 des messages existants et triggers
   insert/update/delete. La migration garde les profils, messages, notes et mesures.
 - SQLAlchemy comme couche d’accès. Le SQL initial reste spécifique SQLite ; migration PostgreSQL prévue.
@@ -34,6 +36,38 @@ SQLite et les jetons résident dans le volume /data. La clé locale s’affiche 
 
 Secrets écrits atomiquement avec permissions 0600 sur Unix, dossier privé. Sur Windows,
 les permissions dépendent du compte et des ACL locales. Ne pas synchroniser `.local` vers git.
+
+## Comptes privés sur invitation
+
+accounts.json dans la racine du volume conserve les membres et invitations avec écritures
+atomiques 0600 et verrou process. Les clés personnelles générées ont 32 octets aléatoires ;
+seules une empreinte de recherche et une dérivation PBKDF2-HMAC-SHA256 salée à 600000 tours
+sont conservées. La clé historique COACH_ACCESS_KEY/app.json continue d'authentifier `local`.
+Les invitations sont également aléatoires et stockées par empreinte : TTL 7 jours, usage unique,
+consommation sérialisée, annulation réservée à l'administrateur. Pas d'inscription ouverte,
+d'email envoyé automatiquement ou de récupération de clé en clair. Les clés sont présentées
+une fois ; une procédure de réinitialisation reste à développer.
+
+POST /api/register reçoit prénom et invitation, crée profil et compte isolés, puis un cookie
+HttpOnly/SameSite Strict/Secure en production. Login reconnaît chaque clé, sans identifiant
+à deviner. Les requêtes utilisent une identité issue uniquement du cookie, jamais d'un paramètre
+user_id. Le middleware définit un ContextVar avant le routage et le réinitialise après ; une
+simple dépendance synchrone ne suffirait pas à propager ce contexte aux autres handlers.
+Les sessions restent en mémoire, expirent après 8 heures et disparaissent au redémarrage.
+Origin et Host sont toujours contrôlés ; inscriptions et connexions sont limitées en fréquence.
+GET/POST/DELETE /api/invitations exigent le rôle administrateur. Seul le POST retourne le lien secret.
+
+root_data_dir reste la racine du volume. data_dir renvoie la racine pour `local`, et
+users/<identité> pour un membre. Bases, sources Excel, credentials Garmin/ChatGPT et host.json
+sont privés à ce dossier. Aucune migration des données du propriétaire historique. L'ensemble
+des dossiers et accounts.json doit faire partie de la sauvegarde du volume.
+Les trois workers (Garmin, résumé mémoire, login ChatGPT local) capturent copy_context() avant
+création du thread. Locks d'intégration, événement d'annulation Garmin et état de login ChatGPT
+sont indexés par volume/compte. La reprise au démarrage et le scheduler parcourent les comptes
+autorisés sous leur contexte propre ; aucun worker ne bascule sur le propriétaire par défaut.
+Les locks courts de mutation existants peuvent rester partagés sans partager de données.
+L'isolation technique ne modifie pas les autorisations officielles des fournisseurs ni le
+parcours local puis transfert sur Railway. Une seule réplique/un seul worker reste exigé.
 
 ## Mémoire personnelle
 

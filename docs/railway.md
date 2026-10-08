@@ -49,7 +49,7 @@ valider. `railway run` exécute localement : ce n’est pas le stockage du conte
 Si la connexion directe échoue sur Railway alors qu’elle fonctionne localement, tester la
 reprise de cette autorisation avec `coach garmin-transfer`, depuis la racine du dépôt sur
 l’ordinateur, environnement Python activé et code à jour (`git pull`). La commande demande
-le domaine HTTPS exact de l’app, puis la clé COACH_ACCESS_KEY avec saisie masquée.
+le domaine HTTPS exact de l’app, puis ta clé personnelle avec saisie masquée (COACH_ACCESS_KEY uniquement pour le propriétaire historique).
 
 Elle envoie uniquement les trois champs DI de `.local/garmin/garmin_tokens.json` directement
 à l’app protégée. Aucun mot de passe Garmin n’est transmis à Railway. Ne pas envoyer ce
@@ -133,3 +133,14 @@ API payant. Le transfert et l’inférence réels sur Railway restent à valider
 
 Le build Docker et les vérifications sur un service Railway réel doivent être exécutés
 sur l’hébergeur ; un build React et des tests Python seuls ne prouvent pas le déploiement.
+
+## Comptes sur invitation
+
+Aucune nouvelle variable ni service requis. Conserver COACH_ACCESS_KEY comme clé de
+l'administrateur et le volume /data. Après déploiement, créer un lien dans Connexions →
+Inviter une personne. Ne pas partager la clé administrateur : chaque inscrit reçoit sa propre clé.
+Les bases et sessions des membres résident sous /data/users/<identité>, et accounts.json à
+la racine. Sauvegarder tout le volume, pas seulement coach.db.
+Chaque personne autorise Garmin/ChatGPT localement puis transfère ses sessions avec sa clé
+personnelle vers le même domaine. Les autorisations fournisseurs restent à valider pour ce
+compte ; ces invitations ne constituent pas un nouveau parcours OAuth cloud.

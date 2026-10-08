@@ -25,7 +25,7 @@ def transfer():
     ):
         raise ValueError("Saisir uniquement le domaine HTTPS de ton app.")
     print(f"Destination de la session Garmin : {parsed.netloc}", flush=True)
-    key = getpass("Clé privée COACH_ACCESS_KEY de cette app : ")
+    key = getpass("Ta clé personnelle d’accès à cette app : ")
     # No redirects: neither the app key nor provider credentials may change destination.
     with httpx.Client(
         base_url=url, headers={"Origin": url}, timeout=180, follow_redirects=False
@@ -93,7 +93,7 @@ def transfer_chatgpt():
         ):
             raise ValueError("Saisir uniquement le domaine HTTPS de ton app.")
         print(f"Destination de la session ChatGPT : {parsed.netloc}", flush=True)
-        key = getpass("Clé privée COACH_ACCESS_KEY de cette app : ")
+        key = getpass("Ta clé personnelle d’accès à cette app : ")
         with httpx.Client(
             base_url=url, headers={"Origin": url}, timeout=90, follow_redirects=False
         ) as client:

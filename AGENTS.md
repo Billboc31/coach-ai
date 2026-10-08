@@ -6,7 +6,7 @@ React/TypeScript frontend. Run commands from the repository root.
 - Read README.md, docs/architecture.md and docs/backlog.md before implementation.
 - Keep real user data, credentials, tokens and exports out of git. No personal medical
   history in fixtures, example profiles or prompts checked into this public repository.
-- Single-user only. Production requires HTTPS ingress, an exact public origin, a strong
+- Invite-only accounts. Preserve the original local administrator and strict account isolation. Production requires HTTPS ingress, an exact public origin, a strong
   environment access key and persistent storage. Use coach.server for Railway; one replica
   and one worker. Do not assume local ChatGPT OAuth is supported on the hosted app.
 - Preserve user ownership in queries and records. Never treat missing health data as zero.

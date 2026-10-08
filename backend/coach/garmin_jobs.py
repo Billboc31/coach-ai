@@ -1,9 +1,10 @@
-"""Persistent, single-user Garmin imports with bounded progress and resumable checkpoints."""
+"""Persistent, owner-scoped Garmin imports with bounded progress and resumable checkpoints."""
 
 import hashlib
 import logging
 import threading
 import uuid
+from contextvars import copy_context
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -16,9 +17,10 @@ from garminconnect import (
 from coach import db
 from coach.garmin import safe_failure, session_path
 from coach.garmin_lock import storage_lock
+from coach.owner_resources import OwnerEvent
 
 control = threading.Lock()
-stop = threading.Event()
+stop = OwnerEvent()
 ACTIVE = {"running", "waiting", "cancelling"}
 
 
@@ -95,7 +97,10 @@ def launch(lock, *, mode="range", start=None, end=None, resume=False, origin="ma
 
 
 def spawn(job, lock):
-    threading.Thread(target=worker, args=(job, lock), daemon=True, name="garmin-import").start()
+    context = copy_context()
+    threading.Thread(
+        target=lambda: context.run(worker, job, lock), daemon=True, name="garmin-import"
+    ).start()
 
 
 def cancel():
