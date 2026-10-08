@@ -108,7 +108,7 @@ original privé), gym_program (séances et sources), gym_exercise (nom normalis�
 gym_excel_history (performances d’origine), gym_workout (séries saisies, révision, dates).
 Aucune nouvelle table ; le volume SQLite existant garde l’ensemble. Les identifiants d’exercice
 privés restent dérivés du nom normalisé. Un catalogue public JSON embarqué fournit des
-identités wger stables ; les aliases précis et signatures lexicales équivalentes sont reconnus, les ambiguïtés
+identités RepDB stables ; les aliases précis et signatures lexicales équivalentes sont reconnus, les ambiguïtés
 restent à choisir. La signature garde les détails de variante (angle, prise, matériel,
 unilatéral), ignore seulement les prépositions et normalise des formes explicites. Elle
 exige une identité unique ; aucune similarité approximative n’est auto-appliquée. Les
@@ -178,13 +178,15 @@ que paragraphes et gras simple avec React ; aucun HTML brut, média ou script in
 ## Bibliothèque RepDB et fiches Excel
 
 Le module coach.repdb télécharge un snapshot public épinglé au build Docker, le convertit
-pour utilisation dans l'application et écrit repdb-generated.json, exclu du dépôt. Aucune
-clé ni souscription ; licence gratuite avec attribution visible. Le snapshot ajoute des
-identités repdb distinctes. Un nom anglais exact et unique peut enrichir le média d'une
-fiche wger, sans changer son identité ni les faits musculaires. Pas de correspondance floue
-automatique. Les miniatures utilisent les crédits du média ; aucun dessin de mouvement
-n'est inventé en cas de média manquant. La fiche presse oblique correspond à la presse
-illustrée par RepDB ; la presse horizontale garde une identité séparée.
+pour utilisation dans l'application et écrit repdb-generated.json, exclu du dépôt.
+Le catalogue ne contient que ces 609 identités RepDB. Les anciens fichiers wger sont retirés.
+exercise_aliases et le vocabulaire de coaching contiennent des labels et synonymes français,
+sans modifier les consignes anglaises du fournisseur. La migration owner-scoped des
+associations conserve leur version précédente, incrémente leur révision et ne touche pas
+les programmes, logs ou noms sources. Une équivalence précise reprend le choix ; sinon
+le mouvement redevient libre et les poids ne sont pas regroupés. Les anciens IDs canoniques
+des séries restent stockés : seules les équivalences précises sont acceptées pour lire une
+référence de charge. La migration est idempotente et respecte les refus explicites.
 
 La projection de lecture sépare movement_name/training_instruction du nom source intact.
 Les blocs fiche récupèrent les liens HTTPS autorisés sur leur ligne dans source_sheets ;
@@ -196,4 +198,5 @@ Les miniatures et photos de position utilisent uniquement le style RepDB. Une li
 de correspondances média vérifiées complète les noms anglais équivalents (squat poids
 du corps, tractions pronation/supination, etc.) sans modifier les identités. Si la variante
 n'a pas de visuel compatible, une icône sur le même fond bleu remplace les anciens dessins.
-Les médias wger restent documentés et accessibles via leur source.
+Les anciennes références wger restent uniquement dans les instantanés historiques et
+les versions archivées des associations, sans figurer dans le catalogue actif.

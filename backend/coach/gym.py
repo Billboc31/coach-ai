@@ -578,12 +578,13 @@ def confirm(key, selection, *, rebuild=False):
 def history(exercise_id):
     ids = exercise_catalog.compatible_ids(exercise_id)
     binding = exercise_catalog.binding(exercise_id)
+    catalogs = exercise_catalog.history_catalog_ids(exercise_id)
     with db.connection() as conn:
         rows = conn.execute(
             text(
                 "SELECT w.data,e.value FROM records w, json_each(w.data,'$.exercises') e "
                 "WHERE w.user_id=:u AND w.kind='gym_workout' AND json_extract(e.value,'$.exercise_id') IN (SELECT value FROM json_each(:ids)) "
-                "AND (json_extract(e.value,'$.weight_convention') IS NULL OR json_extract(e.value,'$.weight_convention')='unspecified' OR json_extract(e.value,'$.weight_convention')=:convention) AND (json_extract(e.value,'$.weight_context') IS NULL OR json_extract(e.value,'$.weight_context')=:context) AND (json_extract(e.value,'$.catalog_id') IS NULL OR json_extract(e.value,'$.catalog_id')=:catalog) AND EXISTS (SELECT 1 FROM json_each(e.value,'$.logged_sets') s "
+                "AND (json_extract(e.value,'$.weight_convention') IS NULL OR json_extract(e.value,'$.weight_convention')='unspecified' OR json_extract(e.value,'$.weight_convention')=:convention) AND (json_extract(e.value,'$.weight_context') IS NULL OR json_extract(e.value,'$.weight_context')=:context) AND (json_extract(e.value,'$.catalog_id') IS NULL OR json_extract(e.value,'$.catalog_id') IN (SELECT value FROM json_each(:catalog))) AND EXISTS (SELECT 1 FROM json_each(e.value,'$.logged_sets') s "
                 "WHERE json_extract(s.value,'$.done')=1 AND (json_extract(s.value,'$.reps') IS NOT NULL "
                 "OR json_extract(s.value,'$.seconds') IS NOT NULL)) "
                 "ORDER BY json_extract(w.data,'$.started_at') DESC LIMIT 20"
@@ -592,7 +593,7 @@ def history(exercise_id):
                 "u": user_id(),
                 "ids": json.dumps(ids),
                 "convention": binding["weight_convention"],
-                "catalog": binding["catalog_id"],
+                "catalog": json.dumps(catalogs),
                 "context": binding.get("weight_context", ""),
             },
         ).all()

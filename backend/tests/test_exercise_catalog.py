@@ -54,37 +54,32 @@ def workout(key, exercise_id, *, weight=0, convention=None, catalog_id=None):
 
 def test_public_catalogue_integrity_and_media_provenance():
     entries = catalogue.catalogue()
-    assert len(entries) == catalogue.manifest()["count"] and len(entries) >= 800
+    assert len(entries) == catalogue.manifest()["count"] == 609
+    assert catalogue.manifest()["providers"] == ["RepDB"]
     for key, entry in entries.items():
-        assert key == ("repdb:" if key.startswith("repdb:") else "wger:") + str(entry["source_id"])
-        assert entry["name"] and entry["source_url"].startswith("https://")
-        assert entry["credit"]["name"] in {
-            "CC-BY-SA 3",
-            "CC-BY-SA 4",
-            "CC-BY 4",
-            "CC0",
-            "RepDB Free Tier v1.0",
-        }
+        assert key == "repdb:" + entry["source_id"]
+        assert entry["credit"]["name"] == "RepDB Free Tier v1.0"
+        assert entry["thumbnail"]
         for media in entry["media"]:
-            assert urlparse(media["url"]).hostname in {"wger.de", "raw.githubusercontent.com"}
-            assert media["credit"]["authors"]
-            assert media["kind"] in {"gif", "video", "image"}
-    assert any(m["kind"] == "gif" for e in entries.values() for m in e["media"])
-    assert any(m["kind"] == "video" for e in entries.values() for m in e["media"])
+            assert urlparse(media["url"]).hostname == "raw.githubusercontent.com"
+            assert media["credit"]["authors"] and media["kind"] == "image"
 
 
 def test_exact_names_separate_equipment_grip_and_ambiguous_names():
-    assert catalogue.exact("DC barre") == "wger:73"
-    assert catalogue.exact("DC haltères") == "wger:75"
-    assert catalogue.exact("DC incliné haltères") == "wger:537"
-    assert catalogue.exact("tractions pronation") == "wger:475"
-    assert catalogue.exact("tractions supination") == "wger:152"
-    assert catalogue.exact("ROWING HALTÈRE 1 BRAS") == "wger:81"
+    assert catalogue.exact("DC barre") == "repdb:bench-press"
+    assert catalogue.exact("DC haltères") == "repdb:db-bench-press"
+    assert catalogue.exact("DC incliné haltères") == "repdb:incline-db-press"
+    assert catalogue.exact("tractions pronation") == "repdb:pull-up"
+    assert catalogue.exact("tractions supination") == "repdb:chin-ups"
+    assert catalogue.exact("ROWING HALTÈRE 1 BRAS") == "repdb:single-arm-db-row"
     assert catalogue.exact("leg curl assis") != catalogue.exact("leg curl allongé")
     for name in ["DC", "squat", "rowing", "gainage", "Exercice inventé 999"]:
         assert catalogue.exact(name) is None
-    assert catalogue.search("DC", limit=3)["items"][0]["id"] == "wger:73"
-    assert catalogue.search("DC incliné haltères", limit=3)["items"][0]["id"] == "wger:537"
+    assert catalogue.search("DC", limit=3)["items"][0]["id"] == "repdb:bench-press"
+    assert (
+        catalogue.search("DC incliné haltères", limit=3)["items"][0]["id"]
+        == "repdb:incline-db-press"
+    )
 
 
 def test_search_pagination_filters_and_no_alias_write(workspace):
@@ -92,26 +87,26 @@ def test_search_pagination_filters_and_no_alias_write(workspace):
     second = catalogue.search("", limit=6, offset=6)
     assert len(first["items"]) == len(second["items"]) == 6
     assert {e["id"] for e in first["items"]}.isdisjoint(e["id"] for e in second["items"])
-    filtered = catalogue.search("", equipment="Dumbbell", category="Chest")
-    assert all("Dumbbell" in e["equipment"] and e["category"] == "Chest" for e in filtered["items"])
+    filtered = catalogue.search("", equipment="dumbbell", category="Chest")
+    assert all("dumbbell" in e["equipment"] and e["category"] == "Chest" for e in filtered["items"])
     assert db.records("gym_binding") == []
 
 
 def test_binding_revision_clear_and_owner_scope(workspace, monkeypatch):
     private_exercise("alias", "DC")
     assert catalogue.resolution("alias")["entry"] is None
-    bound = bind("alias", "wger:73")
+    bound = bind("alias", "repdb:bench-press")
     assert bound["entry"]["name"] == "Développé couché à la barre"
     assert catalogue.resolution("alias")["revision"] == 1
     with pytest.raises(catalogue.BindingConflict):
-        bind("alias", "wger:75")
+        bind("alias", "repdb:db-bench-press")
     with pytest.raises(ValueError):
         bind("alias", "not-in-catalogue", revision=1)
     assert bind("alias", None, revision=1)["entry"] is None
     monkeypatch.setattr(db, "user_id", lambda: "other")
     monkeypatch.setattr(catalogue, "user_id", lambda: "other")
     assert catalogue.resolution("alias")["entry"] is None
-    assert bind("alias", "wger:73", revision=2) is None
+    assert bind("alias", "repdb:bench-press", revision=2) is None
 
 
 def test_synonyms_pool_only_confirmed_compatible_weights_without_mutation(workspace):
@@ -121,18 +116,18 @@ def test_synonyms_pool_only_confirmed_compatible_weights_without_mutation(worksp
     first = workout("one", "first", weight=0)
     second = workout("two", "second", weight=30)
     third = workout("three", "different", weight=10)
-    bind("first", "wger:73", "total")
-    bind("second", "wger:73", "per_dumbbell")
-    bind("different", "wger:75", "total")
+    bind("first", "repdb:bench-press", "total")
+    bind("second", "repdb:bench-press", "per_dumbbell")
+    bind("different", "repdb:db-bench-press", "total")
     assert catalogue.compatible_ids("first") == ["first"]
     assert [h["workout_id"] for h in gym.history("first")] == ["one"]
-    bind("second", "wger:73", "total", revision=1)
+    bind("second", "repdb:bench-press", "total", revision=1)
     assert catalogue.compatible_ids("first") == ["first", "second"]
     assert {h["workout_id"] for h in gym.history("first")} == {"one", "two"}
     assert any(h["sets"][0]["weight"] == 0 for h in gym.history("first"))
     for saved in (first, second, third):
         assert db.record("gym_workout", saved["id"]) == saved
-    bind("second", "wger:75", "total", revision=2)
+    bind("second", "repdb:db-bench-press", "total", revision=2)
     assert [h["workout_id"] for h in gym.history("first")] == ["one"]
 
 
@@ -141,13 +136,23 @@ def test_unknown_conventions_and_recorded_different_variants_never_pool(workspac
     private_exercise("second", "Barbell bench press")
     workout("unknown", "first")
     workout("other-unknown", "second")
-    bind("first", "wger:73", "unspecified")
-    bind("second", "wger:73", "unspecified")
+    bind("first", "repdb:bench-press", "unspecified")
+    bind("second", "repdb:bench-press", "unspecified")
     assert catalogue.compatible_ids("first") == ["first"]
-    bind("first", "wger:73", "total", revision=1)
-    bind("second", "wger:73", "total", revision=1)
-    workout("recorded-as-per-dumbbell", "second", convention="per_dumbbell", catalog_id="wger:73")
-    workout("recorded-as-different-variant", "second", convention="total", catalog_id="wger:75")
+    bind("first", "repdb:bench-press", "total", revision=1)
+    bind("second", "repdb:bench-press", "total", revision=1)
+    workout(
+        "recorded-as-per-dumbbell",
+        "second",
+        convention="per_dumbbell",
+        catalog_id="repdb:bench-press",
+    )
+    workout(
+        "recorded-as-different-variant",
+        "second",
+        convention="total",
+        catalog_id="repdb:db-bench-press",
+    )
     assert {h["workout_id"] for h in gym.history("first")} == {"unknown", "other-unknown"}
 
 
@@ -165,7 +170,7 @@ def test_imported_history_pools_compatible_aliases_and_keeps_raw_weights(workspa
                 "imported_at": db.now(),
             },
         )
-        bind(key, "wger:75", "per_dumbbell")
+        bind(key, "repdb:db-bench-press", "per_dumbbell")
     rows = gym.imported_history("a")
     assert len(rows) == 2
     assert all(r["weights_kg"] == [5, 5] and r["performance_sets"][0]["reps"] is None for r in rows)
@@ -184,35 +189,38 @@ def test_catalogue_api_auth_csrf_limits_and_confirm(workspace):
         assert client.get("/api/gym/catalogue?offset=-1").status_code == 422
         assert client.get("/api/gym/catalogue?q=" + "a" * 201).status_code == 422
         result = client.get("/api/gym/catalogue?q=DC&limit=3").json()
-        assert len(result["items"]) == 3 and result["catalogue"]["count"] >= 800
+        assert len(result["items"]) == 3 and result["catalogue"]["count"] == 609
         assert client.get("/api/gym/exercises/alias/catalogue").json()["method"] == "unresolved"
         path = "/api/gym/exercises/alias/catalogue"
-        payload = {"revision": 0, "catalog_id": "wger:73", "weight_convention": "total"}
+        payload = {"revision": 0, "catalog_id": "repdb:bench-press", "weight_convention": "total"}
         assert (
             client.put(path, json=payload, headers={"Origin": "https://bad.example"}).status_code
             == 403
         )
-        assert client.put(path, json=payload).json()["entry"]["id"] == "wger:73"
+        assert client.put(path, json=payload).json()["entry"]["id"] == "repdb:bench-press"
         assert client.put(path, json=payload).status_code == 409
         assert client.get("/api/gym/exercises/unknown/catalogue").status_code == 404
         assert client.put("/api/gym/exercises/unknown/catalogue", json=payload).status_code == 404
         assert client.get("/api/gym/exercises/alias/history").json()["sessions"] == []
         assert (
-            json.dumps(client.get("/api/gym/exercises/alias/catalogue").json()).find("wger:73") >= 0
+            json.dumps(client.get("/api/gym/exercises/alias/catalogue").json()).find(
+                "repdb:bench-press"
+            )
+            >= 0
         )
 
 
 def test_machine_aliases_require_the_same_explicit_machine_context(workspace):
     for key in ("a", "b"):
         private_exercise(key, "Synthetic machine")
-        bind(key, "wger:371", "machine")
+        bind(key, "repdb:leg-press", "machine")
     assert catalogue.compatible_ids("a") == ["a"]
     for key, context in [("a", "machine A"), ("b", "machine B")]:
         catalogue.set_binding(
             key,
             catalogue.BindingUpdate(
                 revision=1,
-                catalog_id="wger:371",
+                catalog_id="repdb:leg-press",
                 weight_convention="machine",
                 weight_context=context,
             ),
@@ -222,7 +230,7 @@ def test_machine_aliases_require_the_same_explicit_machine_context(workspace):
         "b",
         catalogue.BindingUpdate(
             revision=2,
-            catalog_id="wger:371",
+            catalog_id="repdb:leg-press",
             weight_convention="machine",
             weight_context="machine A",
         ),
@@ -232,12 +240,12 @@ def test_machine_aliases_require_the_same_explicit_machine_context(workspace):
 
 def test_automatic_equivalent_wording_keeps_all_variant_constraints():
     cases = {
-        "Haltères développé couché incliné": "wger:537",
-        "DC avec haltère": "wger:75",
-        "Rowing unilatéral avec haltère": "wger:81",
-        "Curl avec barre EZ": "wger:94",
-        "Barre rowing supi": "wger:84",
-        "SDT roumain avec barre": "wger:507",
+        "Haltères développé couché incliné": "repdb:incline-db-press",
+        "DC avec haltère": "repdb:db-bench-press",
+        "Rowing unilatéral avec haltère": "repdb:single-arm-db-row",
+        "Curl avec barre EZ": "repdb:ez-bar-curl",
+        "Barre rowing supi": "repdb:reverse-grip-bent-over-row",
+        "SDT roumain avec barre": "repdb:romanian-deadlift",
     }
     for name, expected in cases.items():
         assert catalogue.automatic(name) == (expected, "automatic")
@@ -261,12 +269,12 @@ def test_automatic_resolution_respects_manual_choices_and_does_not_classify_weig
     private_exercise("alias", "Rowing unilatéral avec haltère")
     saved = workout("old", "alias", weight=15)
     result = catalogue.resolution("alias")
-    assert result["method"] == "automatic" and result["catalog_id"] == "wger:81"
+    assert result["method"] == "automatic" and result["catalog_id"] == "repdb:single-arm-db-row"
     assert result["weight_convention"] == "unspecified"
     assert db.records("gym_binding") == []
     assert catalogue.compatible_ids("alias") == ["alias"]
-    bind("alias", "wger:75")
-    assert catalogue.resolution("alias")["catalog_id"] == "wger:75"
+    bind("alias", "repdb:db-bench-press")
+    assert catalogue.resolution("alias")["catalog_id"] == "repdb:db-bench-press"
     bind("alias", None, revision=1)
     assert catalogue.resolution("alias")["catalog_id"] is None
     assert (
@@ -295,8 +303,8 @@ def test_existing_programs_are_automatically_resolved_across_all_days(workspace)
     db.upsert_record("gym_program", "program", program)
     actual = gym.overview()["programs"][0]
     assert [d["exercises"][0]["catalog_id"] for d in actual["days"]] == [
-        "wger:81",
-        "wger:537",
+        "repdb:single-arm-db-row",
+        "repdb:incline-db-press",
         None,
     ]
     assert db.record("gym_program", "program") == program
@@ -304,27 +312,27 @@ def test_existing_programs_are_automatically_resolved_across_all_days(workspace)
 
 
 def test_documented_primary_and_secondary_muscles_are_kept_separate():
-    bench = catalogue.catalogue()["wger:73"]
+    bench = catalogue.catalogue()["repdb:bench-press"]
     assert bench["muscles"] == ["Chest"]
     assert set(bench["muscles_secondary"]) == {"Shoulders", "Triceps"}
-    assert catalogue.catalogue()["wger:81"]["muscles_secondary"] == []
+    assert "Biceps" in catalogue.catalogue()["repdb:single-arm-db-row"]["muscles_secondary"]
 
 
 def test_coaching_vocabulary_preserves_machine_bar_and_rope_variants():
     examples = {
-        "DVP épaule avec barre": "wger:566",
-        "DVP épaules haltères assis": "wger:567",
-        "Développé épaule cadre guidé": "wger:569",
-        "Curl Larry Scott barre EZ": "wger:465",
-        "Ischio leg curl machine assis": "wger:366",
-        "Leg curl machine allongé": "wger:365",
-        "Triceps poulie barre": "wger:660",
-        "Triceps poulie corde": "wger:805",
-        "Gamme montante DVP épaules haltères assis tension continue": "wger:567",
+        "DVP épaule avec barre": "repdb:ohp",
+        "DVP épaules haltères assis": "repdb:seated-db-press",
+        "Développé épaule cadre guidé": "repdb:smith-machine-shoulder-press",
+        "Curl Larry Scott barre EZ": "repdb:preacher-curl",
+        "Ischio leg curl machine assis": "repdb:seated-leg-curl",
+        "Leg curl machine allongé": "repdb:leg-curl",
+        "Triceps poulie barre": "repdb:tricep-pushdown",
+        "Gamme montante DVP épaules haltères assis tension continue": "repdb:seated-db-press",
     }
     for name, expected in examples.items():
         assert catalogue.automatic(name)[0] == expected
     for name in [
+        "Triceps poulie corde",
         "DVP couché",
         "Triceps poulie",
         "Abdos conf fiche",
@@ -349,8 +357,89 @@ def test_uniform_thumbnail_never_substitutes_old_art_or_changes_identity():
     }
     assert catalogue.blue_thumbnail({"media": [*old["media"], blue]}) == blue
     if "repdb:bodyweight-squat" in catalogue.catalogue():
-        for key in ["wger:1312", "wger:475"]:
+        for key in ["repdb:bodyweight-squat", "repdb:pull-up"]:
             entry = catalogue.catalogue()[key]
             assert entry["id"] == key
             assert entry["thumbnail"]["credit"]["name"] == "RepDB Free Tier v1.0"
-        assert catalogue.exact("air squat") == "wger:1312"
+        assert catalogue.exact("air squat") == "repdb:bodyweight-squat"
+
+
+def test_legacy_migration_preserves_real_sets_and_compatible_history(workspace):
+    private_exercise("legacy", "DC barre")
+    old = {
+        "exercise_id": "legacy",
+        "catalog_id": "wger:73",
+        "revision": 4,
+        "method": "confirmed",
+        "weight_convention": "total",
+        "weight_context": "",
+    }
+    db.upsert_record("gym_binding", "legacy", old)
+    saved = workout("legacy-workout", "legacy", weight=42, convention="total", catalog_id="wger:73")
+    actual = catalogue.decisions()["legacy"]
+    assert actual["catalog_id"] == "repdb:bench-press" and actual["revision"] == 5
+    assert actual["legacy_binding"] == old
+    assert catalogue.decisions()["legacy"] == actual
+    assert catalogue.resolution("legacy")["entry"]["id"] == "repdb:bench-press"
+    assert gym.history("legacy")[0]["sets"][0]["weight"] == 42
+    assert db.record("gym_workout", "legacy-workout") == saved
+    with pytest.raises(catalogue.BindingConflict):
+        bind("legacy", "repdb:db-bench-press", revision=4)
+
+
+def test_uncertain_legacy_migration_does_not_guess_a_variant_or_erase_data(workspace):
+    private_exercise("rope", "Triceps poulie corde")
+    old = {
+        "exercise_id": "rope",
+        "catalog_id": "wger:805",
+        "revision": 1,
+        "method": "confirmed",
+        "weight_convention": "machine",
+        "weight_context": "machine A",
+    }
+    db.upsert_record("gym_binding", "rope", old)
+    saved = workout("rope-workout", "rope", weight=10, convention="machine", catalog_id="wger:805")
+    value = catalogue.resolution("rope")
+    assert value["entry"] is None and value["method"] == "unresolved"
+    assert value["weight_convention"] == "unspecified"
+    assert value["legacy_binding"] == old
+    assert catalogue.compatible_ids("rope") == ["rope"]
+    assert db.record("gym_workout", "rope-workout") == saved
+
+
+def test_migration_is_owner_scoped_and_preserves_explicit_declines(workspace, monkeypatch):
+    private_exercise("declined", "Air squat")
+    bind("declined", None)
+    declined = db.record("gym_binding", "declined")
+    old = {
+        "exercise_id": "old",
+        "catalog_id": "wger:75",
+        "revision": 1,
+        "weight_convention": "per_dumbbell",
+        "method": "confirmed",
+    }
+    db.upsert_record("gym_binding", "old", old)
+    monkeypatch.setattr(db, "user_id", lambda: "other")
+    monkeypatch.setattr(catalogue, "user_id", lambda: "other")
+    assert catalogue.decisions() == {}
+    monkeypatch.setattr(db, "user_id", lambda: "local")
+    monkeypatch.setattr(catalogue, "user_id", lambda: "local")
+    actual = catalogue.decisions()
+    assert actual["declined"] == declined
+    assert actual["old"]["catalog_id"] == "repdb:db-bench-press"
+
+
+def test_french_and_english_share_ids_without_merging_variant_details():
+    for fr, en in [
+        ("DC haltères", "Dumbbell Bench Press"),
+        ("DC barre", "Barbell Bench Press"),
+        ("Leg curl allongé", "Lying Leg Curl"),
+        ("Tirage vertical supination", "Reverse Grip Lat Pulldown"),
+        ("Squat poids du corps", "Bodyweight Squat"),
+    ]:
+        assert catalogue.automatic(fr)[0] == catalogue.automatic(en)[0] is not None
+    assert catalogue.automatic("DC incliné haltères")[0] != catalogue.automatic("DC haltères")[0]
+    assert (
+        catalogue.automatic("Tirage vertical supination")[0]
+        != catalogue.automatic("Tirage vertical pronation")[0]
+    )

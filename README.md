@@ -315,8 +315,8 @@ Terminer conserve la séance et son historique ; la correction d’une séance t
 à développer. Les logs sont distincts des activités Garmin et ne sont pas fusionnés dans le calendrier.
 
 La fiche propose les précédentes charges du même exercice, sans augmentation automatique.
-Le catalogue local wger contient 918 exercices (584 avec un texte français), avec 217 fiches
-ayant un média documenté, dont 49 une animation GIF/vidéo. **Fiche exercice / Identifier**
+Le catalogue utilise uniquement les 609 exercices RepDB, chacun avec une illustration
+en couleur. Les noms français, synonymes et abréviations sont associés aux identités anglaises. **Fiche exercice / Identifier**
 affiche la variante, le matériel, les consignes et la provenance. Les noms précis et synonymes
 connus sont reconnus ; la reconnaissance automatique accepte aussi les mots réordonnés,
 pluriels, prépositions et abréviations usuelles sans supprimer les détails de variante.
@@ -334,14 +334,14 @@ séances et jusqu’à 30 programmes. Le coach reçoit les séries validées des
 avec unités et distinction séance en cours/terminée, au maximum 25 exercices par séance.
 
 Chaque fiche reconnue affiche une silhouette schématique face/dos avec les groupes
-musculaires principaux et secondaires documentés par wger, deux couleurs et une légende
+musculaires principaux et secondaires documentés par RepDB, deux couleurs et une légende
 en français. Les groupes absents restent non renseignés, sans intensité inventée.
-Les animations du catalogue se chargent après clic ; leur disponibilité dépend de wger.
-Les autres fiches utilisent des photos ou un dessin général et la recherche YouTube.
+Les positions de départ/fin proviennent de RepDB ; cette édition gratuite ne contient pas
+d’animations. Une image indisponible garde une icône sur le même fond bleu.
 Les crédits et licences de chaque texte/média sont affichés ; voir [provenance du catalogue](docs/exercise-catalogue.md).
 
-Neuf familles de mouvements disposent de dessins SVG locaux dans les cartes et fiches.
-Le dessin est un schéma général, ajustable depuis **Corriger**, avec un pictogramme pour les
+Les miniatures des cartes et fiches utilisent le style RepDB. Les anciens dessins locaux
+restent seulement disponibles dans l’éditeur de correction, avec un pictogramme pour les
 mouvements inconnus ; la variante exacte reste indiquée par le nom et la vidéo.
 Les liens vidéo/images OneDrive présents dans Excel restent ouvrables. Un lien YouTube importé
 ou enregistré dans la fiche permet d’afficher le lecteur sur place. Sans lien YouTube, la fiche
@@ -364,7 +364,9 @@ Installation locale : `PYTHONPATH=backend python -m coach.repdb`, puis redémarr
 Les médias restent chez le fournisseur ; aucune donnée personnelle ne lui est transmise.
 Licence : [RepDB Free Tier v1.0](https://github.com/RepDB/exercise-dataset/blob/main/LICENSE-DATA.md).
 Pas de redistribution en dataset/API ni de réutilisation des images dans des modèles génératifs.
-Les identités wger et historiques existants sont conservés. Les correspondances incertaines
+Les IDs privés et historiques existants sont conservés. Les anciennes associations wger
+sont migrées vers RepDB lorsqu’une équivalence précise est documentée ; sinon elles
+restent libres, sans reprise de poids entre variantes incertaines. Les correspondances incertaines
 restent à préciser ; les variantes sont distinctes. « Gamme montante » est affiché comme
 une consigne de progression, sans charge inventée. Les blocs « fiche » ouvrent les liens
 de la ligne source et ne sont plus comptés comme des exercices manquant au catalogue.

@@ -1,73 +1,37 @@
-# Catalogue documentaire des exercices
+# Catalogue RepDB uniquement
 
-Snapshot public wger du 7 octobre 2026 : 918 exercices, 584 avec une traduction
-française ; 217 fiches avec média admissible, dont 49 avec GIF ou vidéo. Ce n’est
-pas une bibliothèque d’animations pour chaque exercice. Les fichiers JSON sont
-embarqués dans le paquet backend : recherche et correspondances ne nécessitent
-ni abonnement, ni appel IA, ni accès à wger à l’exécution. Les médias restent
-hébergés chez wger et ne sont chargés qu’à l’ouverture de la fiche (animations
-après clic). Une indisponibilité conserve les alternatives image/dessin/YouTube.
+609 exercices du snapshot RepDB gratuit épinglé dans coach.repdb. Chaque fiche dispose
+d’illustrations en couleur (positions de départ/fin ou une position pour les maintiens).
+Aucune animation payante ni ancienne fiche wger n'est proposée dans le catalogue actif.
 
-Source : https://wger.de/api/v2/exerciseinfo/ ; provenance, date, empreinte du
-snapshot et nombres figurent dans `backend/coach/data/exercise_catalog/manifest.json`.
-Les données proviennent de l’API publique, sans import du code de l’application
-wger (qui a sa propre licence AGPL).
+Exercise data by [RepDB (repdb.co)](https://repdb.co).
+[Licence Free Tier v1.0](https://github.com/RepDB/exercise-dataset/blob/main/LICENSE-DATA.md) :
+utilisation personnelle/commerciale dans l'app avec attribution. Pas de redistribution
+comme dataset/API, ni d'utilisation des images comme référence/entrée de modèles génératifs.
+Les illustrations du fournisseur ont été créées avec des outils IA. Elles restent chez lui.
 
-## Licences et attribution
+Le build Docker télécharge le snapshot pour l'application. Les fichiers générés ne sont
+jamais republiés dans git. En local : `PYTHONPATH=backend python -m coach.repdb` avant démarrage.
+La CI installe le même snapshot avant les tests ; aucune donnée utilisateur n'est envoyée.
 
-Les licences sont individuelles : `credit`, `text_credit` et `media[].credit`
-contiennent la licence, son URL, les auteurs disponibles et les informations de
-provenance. La sélection des médias accepte uniquement CC0, CC BY 4.0 et CC BY-SA
-3.0/4.0, avec auteur documenté, HTTPS sur wger et chemin média d’exercice. Les
-images signalées comme générées par IA sont exclues. Les crédits sont affichés
-sur les fiches ; une licence manquante n’est pas remplacée par une licence supposée.
+## Français et anglais
 
-- CC0 : https://creativecommons.org/publicdomain/zero/1.0/
-- CC BY 4.0 : https://creativecommons.org/licenses/by/4.0/
-- CC BY-SA 3.0 : https://creativecommons.org/licenses/by-sa/3.0/
-- CC BY-SA 4.0 : https://creativecommons.org/licenses/by-sa/4.0/
+L'identité est `repdb:<slug>`, indépendante de la langue. Les noms français, synonymes,
+abréviations (DC, DVP, SDT, DB) et pluriels enrichissent les noms anglais. Les 90 labels
+français sont curatés ; le reste conserve son nom anglais et reste recherchable. Les
+consignes du fournisseur restent en anglais dans la version gratuite. Les précisions
+barre/haltères, angle, prise et machine sont conservées. Une proposition approximative
+n'est jamais associée automatiquement. Une fiche liée n'est pas un exercice individuel.
 
-Le snapshot transforme le HTML en texte, limite la description à 1600 caractères,
-préfère le français puis l’anglais, conserve les aliases et sélectionne les médias
-admissibles. Les aliases français supplémentaires et noms de variantes sont
-curatés dans `exercise_catalog.py`. Les données et leurs crédits restent publiés
-avec leurs licences individuelles ; les conditions BY/SA doivent être conservées
-lors d’une redistribution ou adaptation, y compris commerciale.
+## Migration et conservation
 
-## Identités et poids
+Seules les associations actives wger sont nettoyées. Une correspondance documentée est
+migrée vers RepDB ; sa version originale est archivée dans la même donnée propriétaire.
+Sans correspondance précise, l'association devient libre et sa convention est à repréciser.
+Les refus explicites et associations RepDB existantes sont conservés. La migration est
+idempotente ; la révision empêche un ancien formulaire d'écraser la nouvelle décision.
 
-L’ID canonique est `wger:<id>`. Les IDs privés issus de l’import et les noms d’origine
-restent inchangés. Une correspondance exacte non ambiguë peut être affichée directement ;
-les formulations équivalentes (ordre, prépositions, pluriels et abréviations usuelles)
-sont associées automatiquement si une seule variante correspond. Les abréviations usuelles de coaching (DVP, DB, barre Z) sont normalisées, ainsi que
-quelques annotations d’organisation/tempo (gamme montante, tension continue), sans
-modifier le texte original. Les détails d’angle, prise et matériel ne sont pas supprimés.
-Les renvois à une autre fiche, mobilité et variantes absentes restent non identifiés. Le bilan du programme liste les noms encore
-ambigus, sans revalidation des fiches reconnues. Aucun réimport nécessaire. Une décision
-manuelle ou un retrait de correspondance reste prioritaire. Un rapprochement approximatif
-reste une suggestion. L’utilisateur peut confirmer,
-changer ou retirer une correspondance, avec contrôle de révision.
-
-Le partage des références entre noms exige le même exercice et la même convention
-confirmée : charge totale, par haltère, lest, machine ou poids du corps. Le repère
-matériel fait aussi partie de la compatibilité ; une machine exige un repère non
-vide. Aucun calcul de conversion entre ces conventions. Les anciennes séries avec
-variante/unités connues restent figées ; les séries anciennes sans classification
-peuvent être rattachées par la décision explicite de l’utilisateur.
-
-## Carte musculaire et bibliothèques d’animations
-
-Les champs muscles et muscles_secondary sont conservés depuis le même snapshot public.
-Une silhouette SVG originale, locale et schématique représente les groupes documentés
-face/dos : principaux en corail, secondaires en jaune, légende textuelle française.
-Le dessin ne copie pas les SVG wger et ne représente pas un degré d’activation.
-Un muscle absent reste non renseigné ; les cibles ne sont pas déduites du nom.
-
-ExerciseDB annonce plus de 5000 GIF dans son offre complète :
-https://github.com/ExerciseDB/exercisedb-api . Ses conditions d’API exigent un
-abonnement actif et interdisent le stockage persistant des données/médias :
-https://exercisedb.notion.site/ExerciseDB-API-Terms-of-Use-226983b728ca8090bf7be79564e4b356 .
-Sa version gratuite annonce 1500 exercices avec GIF et un usage non commercial
-avec attribution : https://oss.exercisedb.dev/docs . Aucun dataset ni média
-ExerciseDB n’est importé dans ce lot. Une intégration future doit rester distincte
-du snapshot wger et respecter l’offre/licence retenue.
+Les IDs privés, programmes, noms Excel, séries et performances originales ne changent pas.
+Les références historiques acceptent les anciens IDs uniquement pour les équivalences
+précises et des conventions/repères compatibles. La carte musculaire reprend les groupes
+principaux/secondaires de RepDB, sans déduire des cibles depuis le nom.

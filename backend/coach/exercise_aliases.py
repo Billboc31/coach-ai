@@ -1,0 +1,151 @@
+"""Reviewed bilingual names and legacy equivalents; no exercise dataset redistributed."""
+
+# IDs are retained solely to migrate previous user choices, never as an active provider.
+LEGACY_EQUIVALENTS = {
+    73: "bench-press",
+    75: "db-bench-press",
+    76: "close-grip-bench-press",
+    81: "single-arm-db-row",
+    83: "barbell-row",
+    84: "reverse-grip-bent-over-row",
+    91: "barbell-curl",
+    92: "bicep-curl",
+    94: "ez-bar-curl",
+    95: "cable-curl",
+    152: "chin-ups",
+    184: "deadlift",
+    185: "decline-bench-press-barbell",
+    204: "incline-db-curl",
+    222: "face-pull",
+    237: "cable-fly",
+    238: "db-fly",
+    257: "front-squat",
+    272: "hammer-curl",
+    294: "hip-thrust",
+    348: "lateral-raise",
+    365: "leg-curl",
+    366: "seated-leg-curl",
+    369: "leg-extension",
+    458: "plank",
+    475: "pull-up",
+    507: "romanian-deadlift",
+    537: "incline-db-press",
+    538: "incline-bench-press",
+    567: "seated-db-press",
+    566: "ohp",
+    569: "smith-machine-shoulder-press",
+    580: "side-plank",
+    615: "squat",
+    660: "tricep-pushdown",
+    1117: "seated-cable-row",
+    1312: "bodyweight-squat",
+    1706: "bulgarian-split-squat",
+    386: "diamond-push-ups",
+    465: "preacher-curl",
+    614: "jump-squat",
+    628: "straight-arm-pulldown",
+    530: "treadmill-running",
+    1093: "rowing-machine",
+}
+
+# Free RepDB has English descriptions. These labels/synonyms are our French vocabulary.
+FRENCH = {
+    "leg-press": ("Presse oblique", ["presse à cuisses oblique", "presse inclinée"]),
+    "horizontal-leg-press": ("Presse horizontale", ["presse à cuisses horizontale"]),
+    "single-leg-press": ("Presse à cuisses unilatérale", ["presse une jambe", "presse 1 jambe"]),
+    "close-stance-leg-press": ("Presse à cuisses pieds serrés", []),
+    "wide-stance-leg-press": ("Presse à cuisses pieds écartés", []),
+    "high-foot-leg-press": ("Presse à cuisses pieds hauts", []),
+    "dumbbell-shoulder-press": ("Développé épaules aux haltères", []),
+    "seated-db-press": ("Développé épaules aux haltères assis", ["DVP épaules haltères assis"]),
+    "seated-barbell-overhead-press": ("Développé épaules à la barre assis", []),
+    "lat-pulldown": (
+        "Tirage vertical en pronation",
+        [
+            "tirage vertical pronation",
+            "tirage poitrine pronation",
+            "tirage vertical barre pronation",
+        ],
+    ),
+    "reverse-grip-lat-pulldown": (
+        "Tirage vertical en supination",
+        ["tirage vertical supination", "tirage poitrine supination"],
+    ),
+    "v-bar-lat-pulldown": (
+        "Tirage vertical prise neutre avec poignée V",
+        ["tirage vertical prise neutre poignée V"],
+    ),
+    "neutral-grip-pull-ups": ("Tractions prise neutre", ["traction neutre", "tractions neutres"]),
+    "assisted-pull-ups": ("Tractions assistées", ["traction assistée"]),
+    "weighted-pull-up": ("Tractions lestées", ["traction lestée"]),
+    "pec-deck": ("Écartés à la machine pec deck", ["pec deck", "butterfly", "écartés machine"]),
+    "rear-delt-fly": ("Oiseau aux haltères", ["oiseau haltères"]),
+    "cable-lateral-raise": ("Élévations latérales à la poulie", ["élévation latérale poulie"]),
+    "dumbbell-front-raise": ("Élévations frontales aux haltères", ["élévation frontale haltères"]),
+    "barbell-front-raise": ("Élévations frontales à la barre", ["élévation frontale barre"]),
+    "cable-crunch": ("Crunch à la poulie", ["crunch poulie", "abdos poulie"]),
+    "crunches": ("Crunch au sol", ["crunch", "crunch sol"]),
+    "bicycle-crunch": ("Crunch bicyclette", ["abdos bicyclette"]),
+    "ab-wheel-rollout": ("Roue abdominale", ["ab wheel", "roulette abdos"]),
+    "hanging-leg-raise": ("Relevé de jambes suspendu", ["relevés de jambes suspendu"]),
+    "hanging-knee-raise": ("Relevé de genoux suspendu", ["relevés de genoux suspendu"]),
+    "cable-pallof-press": ("Pallof press à la poulie", ["pallof press poulie"]),
+    "bird-dog": ("Bird dog", []),
+    "box-jump": ("Saut sur box", ["box jump"]),
+    "db-lunge": ("Fentes aux haltères", ["fentes haltères"]),
+    "barbell-lunge": ("Fentes à la barre", ["fentes barre"]),
+    "walking-lunge": ("Fentes marchées au poids du corps", ["fentes marchées poids du corps"]),
+    "goblet-squat": ("Squat goblet avec kettlebell", ["goblet squat kettlebell"]),
+    "dumbbell-deadlift": ("Soulevé de terre aux haltères", ["SDT haltères"]),
+    "dumbbell-romanian-deadlift": (
+        "Soulevé de terre roumain aux haltères",
+        ["SDT roumain haltères", "RDL haltères"],
+    ),
+    "sumo-deadlift": ("Soulevé de terre sumo à la barre", ["SDT sumo barre"]),
+    "dumbbell-hip-thrust": ("Hip thrust aux haltères", ["hip thrust haltères"]),
+    "smith-machine-hip-thrust": ("Hip thrust au cadre guidé", ["hip thrust smith"]),
+    "db-pullover": ("Pull over aux haltères", ["pullover haltères"]),
+    "barbell-pullover": ("Pull over à la barre", ["pullover barre"]),
+    "standing-calf-raise": ("Mollets debout à la machine", ["mollets machine debout"]),
+    "seated-calf-raise": ("Mollets assis", ["mollets assis machine"]),
+    "bodyweight-calf-raise": ("Mollets au poids du corps", []),
+    "step-ups": ("Montée sur banc au poids du corps", ["step up poids du corps"]),
+    "smith-machine-squat": ("Squat au cadre guidé", ["squat guidé", "squat smith"]),
+    "hack-squat": ("Hack squat", ["hack squat machine"]),
+    "back-extension": ("Extension du dos", ["extension dos"]),
+}
+
+# Literal phrase translations for matching/search. Angle, side and equipment remain tokens.
+BILINGUAL_PHRASES = {
+    "bench press": "developpe couche",
+    "shoulder press": "developpe epaule",
+    "lateral raise": "elevation laterale",
+    "front raise": "elevation frontale",
+    "leg raise": "releve jambes",
+    "knee raise": "releve genoux",
+    "bent over": "buste penche",
+    "close grip": "prise serree",
+    "wide grip": "prise large",
+    "neutral grip": "prise neutre",
+    "reverse grip": "supination",
+    "smith machine": "cadre guide",
+    "push ups": "pompes",
+    "push up": "pompe",
+    "hip abduction": "abduction hanche",
+    "hip adduction": "adduction hanche",
+    "single arm": "un bras",
+    "one arm": "un bras",
+    "single leg": "un jambe",
+    "one leg": "un jambe",
+}
+
+
+def current_id(old):
+    if not old or not old.startswith("wger:"):
+        return old
+    slug = (
+        LEGACY_EQUIVALENTS.get(int(old.split(":", 1)[1]))
+        if old.split(":", 1)[1].isdigit()
+        else None
+    )
+    return "repdb:" + slug if slug else None

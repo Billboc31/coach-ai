@@ -1,6 +1,6 @@
 """Versioned public exercise catalogue and owner-scoped alias decisions.
 
-Catalogue facts and licence provenance are bundled; private names never leave the app.
+RepDB facts are installed at build time; private names never leave the app.
 User exercise IDs and recorded sets are never rewritten when changing a correspondence.
 """
 
@@ -17,31 +17,9 @@ from sqlalchemy import text
 
 from coach import db
 from coach.config import user_id
+from coach.exercise_aliases import BILINGUAL_PHRASES, FRENCH, LEGACY_EQUIVALENTS, current_id
 
 lock = threading.RLock()
-# Reviewed media equivalents only. These never change bindings or recorded units.
-BLUE_EQUIVALENTS = {
-    73: "bench-press",
-    75: "db-bench-press",
-    76: "close-grip-bench-press",
-    81: "single-arm-db-row",
-    83: "barbell-row",
-    84: "reverse-grip-bent-over-row",
-    91: "barbell-curl",
-    95: "cable-curl",
-    152: "chin-ups",
-    237: "cable-fly",
-    238: "db-fly",
-    257: "front-squat",
-    365: "lying-leg-curl",
-    366: "seated-leg-curl",
-    369: "leg-extension",
-    475: "pull-up",
-    580: "side-plank",
-    615: "squat",
-    1093: "rowing-machine",
-    1312: "bodyweight-squat",
-}
 
 
 def blue_thumbnail(entry):
@@ -140,7 +118,7 @@ ALIASES = {
         ["squat bulgare haltères", "fente bulgare haltères", "bulgarian split squat dumbbells"],
     ),
 }
-# Additional public coaching vocabulary, with equipment-specific records verified in wger.
+# Retained French coaching vocabulary; only reviewed RepDB equivalents are active.
 ALIASES.update(
     {
         256: ("Élévations frontales", ["élévation frontale", "front raise"]),
@@ -219,50 +197,36 @@ def normalized(value):
 
 @lru_cache(maxsize=1)
 def catalogue():
-    directory = files("coach").joinpath("data/exercise_catalog")
-    result = {}
-    for path in sorted(directory.iterdir(), key=lambda p: p.name):
-        if not path.name.startswith("catalog-"):
-            continue
-        for entry in json.loads(path.read_text()):
-            label, aliases = ALIASES.get(entry["source_id"], (entry["name"], []))
-            result[entry["id"]] = {
-                **entry,
-                "name": label,
-                "aliases": list(dict.fromkeys([entry["name"], *entry["aliases"], label, *aliases])),
-            }
-    repdb = directory.joinpath("repdb-generated.json")
-    if repdb.is_file():
-        additions = json.loads(repdb.read_text())
-        # Add illustrated variants without changing any existing wger identity.
-        for entry in additions:
-            result[entry["id"]] = entry
-        by_name = {}
-        for entry in additions:
-            by_name.setdefault(normalized(entry["name_en"]), []).append(entry)
-        for entry in list(result.values()):
-            if entry["id"].startswith("wger:"):
-                candidates = by_name.get(normalized(entry["name_en"]), [])
-                equivalent = result.get("repdb:" + BLUE_EQUIVALENTS.get(entry["source_id"], ""))
-                if equivalent:
-                    candidates = [equivalent]
-                if len(candidates) == 1:
-                    entry["media"] = [*candidates[0]["media"], *entry["media"]]
+    path = files("coach").joinpath("data/exercise_catalog/repdb-generated.json")
+    if not path.is_file():
+        raise ValueError("Installer RepDB : PYTHONPATH=backend python -m coach.repdb")
+    result = {entry["id"]: entry for entry in json.loads(path.read_text())}
+    for source_id, (label, aliases) in ALIASES.items():
+        key = current_id(f"wger:{source_id}")
+        if key in result:
+            entry = result[key]
+            entry["name"] = label
+            entry["aliases"] = list(dict.fromkeys([*entry["aliases"], label, *aliases]))
+    for slug, (label, aliases) in FRENCH.items():
+        entry = result.get("repdb:" + slug)
+        if entry:
+            entry["name"] = label
+            entry["aliases"] = list(dict.fromkeys([*entry["aliases"], label, *aliases]))
     for entry in result.values():
         entry["thumbnail"] = blue_thumbnail(entry)
     return result
 
 
 def manifest():
-    value = json.loads(files("coach").joinpath("data/exercise_catalog/manifest.json").read_text())
     entries = catalogue().values()
     return {
-        **value,
+        "provider": "RepDB",
+        "providers": ["RepDB"],
         "count": len(catalogue()),
+        "snapshot_date": "2026-10-08",
         "with_media": sum(bool(e["media"]) for e in entries),
-        "providers": ["wger", "RepDB"]
-        if any(e["id"].startswith("repdb:") for e in entries)
-        else ["wger"],
+        "with_animation": 0,
+        "french_labels": sum(e["name"] != e["name_en"] for e in entries),
     }
 
 
@@ -274,7 +238,7 @@ def exact_index():
             result.setdefault(normalized(alias), set()).add(entry["id"])
     # Explicit curated synonyms establish one preferred public record for equivalent wording.
     for source_id, (name, aliases) in ALIASES.items():
-        key = f"wger:{source_id}"
+        key = current_id(f"wger:{source_id}")
         if key in catalogue():
             for alias in [name, *aliases]:
                 result[normalized(alias)] = {key}
@@ -289,6 +253,19 @@ def exact(name):
 
 # Only neutral spelling changes: never drop angle, grip, side or equipment tokens.
 TOKEN_FORMS = {
+    "seated": "assis",
+    "lying": "couche",
+    "standing": "debout",
+    "cable": "poulie",
+    "row": "rowing",
+    "rows": "rowing",
+    "fly": "ecarte",
+    "horizontale": "horizontal",
+    "serree": "serre",
+    "serrees": "serre",
+    "larges": "large",
+    "neutres": "neutre",
+    "jambes": "jambe",
     "halteres": "haltere",
     "dumbbells": "haltere",
     "dumbbell": "haltere",
@@ -320,6 +297,8 @@ TOKEN_FORMS = {
 }
 NEUTRAL_WORDS = {"a", "au", "aux", "avec", "de", "des", "du", "la", "le", "les", "the", "with"}
 EXPANSIONS = {
+    "deadlift": "souleve terre",
+    "bodyweight": "poids corps",
     "dc": "developpe couche",
     "dvp": "developpe",
     "dev": "developpe",
@@ -347,6 +326,8 @@ def signature(name):
     wording = re.sub(r"^gamme montante\s+", "", wording)
     wording = re.sub(r"\s+(?:tension continue|a toi a moi)$", "", wording)
     wording = re.sub(r"\bz bar\b|\bbarre z\b", "barre ez", wording)
+    for phrase, translated in BILINGUAL_PHRASES.items():
+        wording = re.sub(r"\b" + re.escape(phrase) + r"\b", translated, wording)
     tokens = []
     for word in wording.split():
         for token in EXPANSIONS.get(word, word).split():
@@ -362,7 +343,7 @@ def signature_index():
         result.setdefault(signature(alias), set()).update(ids)
     # The curated preferred variant also applies to reordered equivalent wording.
     for source_id, (name, aliases) in ALIASES.items():
-        key = f"wger:{source_id}"
+        key = current_id(f"wger:{source_id}")
         if key in catalogue():
             for alias in [name, *aliases]:
                 result[signature(alias)] = {key}
@@ -390,6 +371,7 @@ def automatic(name):
 def search(query="", *, limit=12, offset=0, category="", equipment=""):
     query = normalized(query)
     tokens = set(query.split())
+    bilingual_tokens = set(signature(query))
     scored = []
     for entry in catalogue().values():
         if category and entry["category"] != category:
@@ -408,6 +390,13 @@ def search(query="", *, limit=12, offset=0, category="", equipment=""):
                 for a in aliases
             )
             score = max(score, max(SequenceMatcher(None, query, a).ratio() * 0.6 for a in aliases))
+            score = max(
+                score,
+                max(
+                    0.7 * len(bilingual_tokens & set(signature(a))) / max(len(bilingual_tokens), 1)
+                    for a in aliases
+                ),
+            )
         if query and score < 0.28:
             continue
         scored.append((score, entry))
@@ -421,10 +410,47 @@ def search(query="", *, limit=12, offset=0, category="", equipment=""):
     }
 
 
+def migrate_binding(record):
+    old = record.get("catalog_id")
+    if not old or not old.startswith("wger:"):
+        return record
+    with lock:
+        record = db.record("gym_binding", record["exercise_id"]) or record
+        if record.get("catalog_id") != old:
+            return record
+        key = current_id(old)
+        if key not in catalogue():
+            key = None
+        value = {
+            **record,
+            "catalog_id": key,
+            "legacy_binding": record,
+            "revision": record["revision"] + 1,
+            "method": "confirmed" if key else "unresolved",
+            "updated_at": db.now(),
+            "catalogue_migration": "repdb-only-v1",
+        }
+        # An uncertain equivalence never pools weights with a different movement.
+        if not key:
+            value.update(weight_convention="unspecified", weight_context="")
+        db.upsert_record("gym_binding", record["exercise_id"], value)
+        return value
+
+
+def history_catalog_ids(exercise_id):
+    value = binding(exercise_id)
+    key = value["catalog_id"]
+    ids = [key]
+    ids.extend(f"wger:{old}" for old, slug in LEGACY_EQUIVALENTS.items() if key == "repdb:" + slug)
+    if not key and value.get("legacy_binding", {}).get("catalog_id"):
+        ids.append(value["legacy_binding"]["catalog_id"])
+    return ids
+
+
 def binding(exercise_id, *, name=None):
     record = db.record("gym_binding", exercise_id)
     if record:
-        return record
+        return migrate_binding(record)
     exercise = db.record("gym_exercise", exercise_id)
     name = name or exercise.get("name", "")
     key, method = automatic(name) if name else (None, "unresolved")
@@ -449,7 +475,7 @@ def resolution(exercise_id, *, name=None):
 
 
 def decisions():
-    return {r["key"]: r["data"] for r in db.records("gym_binding", 10000)}
+    return {r["key"]: migrate_binding(r["data"]) for r in db.records("gym_binding", 10000)}
 
 
 def decorate(item, snapshot=None):
@@ -475,7 +501,8 @@ def decorate(item, snapshot=None):
         "thumbnail": thumbnail,
         "recorded_weight_convention": item.get("weight_convention"),
         "recorded_weight_context": item.get("weight_context"),
-        "recorded_catalog_id": item.get("catalog_id"),
+        "legacy_recorded_catalog_id": item.get("catalog_id"),
+        "recorded_catalog_id": current_id(item.get("catalog_id")),
         "recorded_canonical_name": item.get("canonical_name"),
         "canonical_name": entry["name"] if entry else None,
         "catalog_id": resolved["catalog_id"],
@@ -529,14 +556,15 @@ def compatible_ids(exercise_id):
         or (current["weight_convention"] == "machine" and not current.get("weight_context"))
     ):
         return [exercise_id]
+    catalogs = history_catalog_ids(exercise_id)
     with db.connection() as conn:
         rows = conn.execute(
             text(
-                "SELECT record_key FROM records WHERE user_id=:u AND kind='gym_binding' AND json_extract(data,'$.catalog_id')=:c AND json_extract(data,'$.weight_convention')=:w AND COALESCE(json_extract(data,'$.weight_context'),'')=:context"
+                "SELECT record_key FROM records WHERE user_id=:u AND kind='gym_binding' AND json_extract(data,'$.catalog_id') IN (SELECT value FROM json_each(:c)) AND json_extract(data,'$.weight_convention')=:w AND COALESCE(json_extract(data,'$.weight_context'),'')=:context"
             ),
             {
                 "u": user_id(),
-                "c": current["catalog_id"],
+                "c": json.dumps(catalogs),
                 "w": current["weight_convention"],
                 "context": current.get("weight_context", ""),
             },
