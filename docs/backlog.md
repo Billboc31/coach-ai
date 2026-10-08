@@ -167,3 +167,11 @@ l’interface locale, test d’inférence sans données santé, déconnexion Cha
 Restent : première authentification Garmin avec MFA depuis une interface locale, parcours
 mobile sans fichier via assistant local, et voie commerciale cloud. Le callback officiel
 ChatGPT reste loopback ; ne pas présenter un bouton Railway comme un OAuth cloud complet.
+
+### GYM-04 — Bibliothèque illustrée et consignes de coaching
+Livré : RepDB gratuit (609 variantes illustrées) installé au build, crédits/licence visibles,
+miniatures dans programmes et recherche, départ/fin dans les fiches. Consigne gamme montante
+séparée du mouvement ; presse oblique identifiable ; liens fiches abdos/mobilité utilisables
+sans les assimiler à des exercices individuels manquants. Historique et source conservés.
+Restent : traduction complète française, extraction consentie des fiches privées, extension
+des synonymes précis et éventuelle licence d'animations après choix du propriétaire.

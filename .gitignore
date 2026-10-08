@@ -17,3 +17,6 @@ dist/
 .DS_Store
 
 *.tsbuildinfo
+
+# Licensed RepDB data generated only for in-app deployment; never redistribute.
+backend/coach/data/exercise_catalog/repdb-generated.json

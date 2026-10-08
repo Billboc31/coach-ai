@@ -195,11 +195,34 @@ def catalogue():
                 "name": label,
                 "aliases": list(dict.fromkeys([entry["name"], *entry["aliases"], label, *aliases])),
             }
+    repdb = directory.joinpath("repdb-generated.json")
+    if repdb.is_file():
+        additions = json.loads(repdb.read_text())
+        # Add illustrated variants without changing any existing wger identity.
+        for entry in additions:
+            result[entry["id"]] = entry
+        by_name = {}
+        for entry in additions:
+            by_name.setdefault(normalized(entry["name_en"]), []).append(entry)
+        for entry in list(result.values()):
+            if entry["id"].startswith("wger:"):
+                candidates = by_name.get(normalized(entry["name_en"]), [])
+                if len(candidates) == 1:
+                    entry["media"] = [*candidates[0]["media"], *entry["media"]]
     return result
 
 
 def manifest():
-    return json.loads(files("coach").joinpath("data/exercise_catalog/manifest.json").read_text())
+    value = json.loads(files("coach").joinpath("data/exercise_catalog/manifest.json").read_text())
+    entries = catalogue().values()
+    return {
+        **value,
+        "count": len(catalogue()),
+        "with_media": sum(bool(e["media"]) for e in entries),
+        "providers": ["wger", "RepDB"]
+        if any(e["id"].startswith("repdb:") for e in entries)
+        else ["wger"],
+    }
 
 
 @lru_cache(maxsize=1)
@@ -266,6 +289,15 @@ EXPANSIONS = {
     "unilateral": "un bras",
     "unilaterale": "un bras",
 }
+
+
+def coaching(name):
+    movement = name.strip()
+    instruction = ""
+    if re.match(r"^gamme montante\s+", normalized(movement)):
+        movement = re.sub(r"^gamme\s+montante\s+", "", movement, flags=re.IGNORECASE).strip()
+        instruction = "Montée progressive des charges : augmente le poids au fil des séries selon ta consigne."
+    return movement, instruction
 
 
 def signature(name):
@@ -393,8 +425,13 @@ def decorate(item, snapshot=None):
             },
         )
     entry = catalogue().get(resolved["catalog_id"])
+    movement, instruction = coaching(item["name"])
+    thumbnail = next((m for m in (entry or {}).get("media", []) if m["kind"] == "image"), None)
     return {
         **item,
+        "movement_name": movement,
+        "training_instruction": instruction,
+        "thumbnail": thumbnail,
         "recorded_weight_convention": item.get("weight_convention"),
         "recorded_weight_context": item.get("weight_context"),
         "recorded_catalog_id": item.get("catalog_id"),

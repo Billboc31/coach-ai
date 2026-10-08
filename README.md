@@ -353,3 +353,18 @@ Les liens ont été vérifiés par recherche le 7 octobre 2026 ; lecture/embeddi
 vérifier chez le fournisseur. Aucun appel de recherche payant ni scraping YouTube à l’exécution. La vidéo ne charge qu’après clic ; sa disponibilité dépend du fournisseur.
 Le parser a été essayé localement sur le fichier fourni par l’utilisateur. Tests API simulés,
 lint et build vérifiés ; interaction mobile et vidéos à vérifier dans l’app Railway.
+
+### Bibliothèque illustrée RepDB
+
+Exercise data by [RepDB (repdb.co)](https://repdb.co). Le build Railway installe le
+snapshot gratuit de 609 exercices : illustrations IA en couleur, positions de départ/fin,
+consignes anglaises et muscles documentés. Les animations payantes ne sont pas incluses.
+Les données sous licence sont téléchargées pendant le build, jamais republiées dans ce dépôt.
+Installation locale : `PYTHONPATH=backend python -m coach.repdb`, puis redémarrer le serveur.
+Les médias restent chez le fournisseur ; aucune donnée personnelle ne lui est transmise.
+Licence : [RepDB Free Tier v1.0](https://github.com/RepDB/exercise-dataset/blob/main/LICENSE-DATA.md).
+Pas de redistribution en dataset/API ni de réutilisation des images dans des modèles génératifs.
+Les identités wger et historiques existants sont conservés. Les correspondances incertaines
+restent à préciser ; les variantes sont distinctes. « Gamme montante » est affiché comme
+une consigne de progression, sans charge inventée. Les blocs « fiche » ouvrent les liens
+de la ligne source et ne sont plus comptés comme des exercices manquant au catalogue.

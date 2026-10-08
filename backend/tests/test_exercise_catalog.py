@@ -56,11 +56,17 @@ def test_public_catalogue_integrity_and_media_provenance():
     entries = catalogue.catalogue()
     assert len(entries) == catalogue.manifest()["count"] and len(entries) >= 800
     for key, entry in entries.items():
-        assert key == "wger:" + str(entry["source_id"])
-        assert entry["name"] and entry["source_url"].startswith("https://wger.de/api/")
-        assert entry["credit"]["name"] in {"CC-BY-SA 3", "CC-BY-SA 4", "CC-BY 4", "CC0"}
+        assert key == ("repdb:" if key.startswith("repdb:") else "wger:") + str(entry["source_id"])
+        assert entry["name"] and entry["source_url"].startswith("https://")
+        assert entry["credit"]["name"] in {
+            "CC-BY-SA 3",
+            "CC-BY-SA 4",
+            "CC-BY 4",
+            "CC0",
+            "RepDB Free Tier v1.0",
+        }
         for media in entry["media"]:
-            assert urlparse(media["url"]).hostname == "wger.de"
+            assert urlparse(media["url"]).hostname in {"wger.de", "raw.githubusercontent.com"}
             assert media["credit"]["authors"]
             assert media["kind"] in {"gif", "video", "image"}
     assert any(m["kind"] == "gif" for e in entries.values() for m in e["media"])

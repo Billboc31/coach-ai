@@ -141,6 +141,37 @@ def repair_program(program):
     return program
 
 
+def document_view(item, program):
+    """Read linked routine sheets without guessing their individual exercises."""
+    if not re.search(r"\bfiche[s]?\b", normalized(item["name"])):
+        return item
+    sheet = next(
+        (s for s in (program or {}).get("source_sheets", []) if s["name"] == item.get("sheet")), {}
+    )
+    row = item.get("source_row")
+    links = list(
+        dict.fromkeys(
+            url
+            for key, value in sheet.get("links", {}).items()
+            if key.split(":")[0] == str(row) and (url := safe_media(value))
+        )
+    )
+    links.extend(
+        url
+        for value in item.get("document_links", [])
+        if (url := safe_media(value)) and url not in links
+    )
+    existing = safe_media(item.get("media_url"))
+    if existing and existing not in links:
+        links.append(existing)
+    return {
+        **item,
+        "is_document": True,
+        "document_links": links,
+        "training_instruction": "Suis les exercices et consignes de la fiche liée dans ton Excel.",
+    }
+
+
 def workout_view(value, snapshot=None):
     if not value:
         return value
@@ -166,7 +197,12 @@ def workout_view(value, snapshot=None):
                 ),
             }
         )
-    return {**value, "exercises": [exercise_catalog.decorate(e, snapshot) for e in exercises]}
+    return {
+        **value,
+        "exercises": [
+            document_view(exercise_catalog.decorate(e, snapshot), program) for e in exercises
+        ],
+    }
 
 
 def preview(filename, encoded, *, refresh=False):
@@ -600,13 +636,16 @@ def overview():
     snapshot = exercise_catalog.decisions()
     programs = []
     for record in db.records("gym_program", 30):
-        program = {
-            k: v
-            for k, v in repair_program(record["data"]).items()
-            if k not in {"source_sheets", "selection"}
-        }
+        original = repair_program(record["data"])
+        program = {k: v for k, v in original.items() if k not in {"source_sheets", "selection"}}
         program["days"] = [
-            {**day, "exercises": [exercise_catalog.decorate(e, snapshot) for e in day["exercises"]]}
+            {
+                **day,
+                "exercises": [
+                    document_view(exercise_catalog.decorate(e, snapshot), original)
+                    for e in day["exercises"]
+                ],
+            }
             for day in program["days"]
         ]
         programs.append(program)
@@ -641,7 +680,7 @@ def start(program_id, day_id):
             ]
             rows.append(
                 {
-                    **exercise_catalog.decorate(item),
+                    **document_view(exercise_catalog.decorate(item), program),
                     "logged_sets": logs,
                     "reference": reference,
                     "excel_history": imported_history(item["exercise_id"]),

@@ -10,6 +10,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 \
     COACH_ENV=production COACH_DATA_DIR=/data COACH_FRONTEND_DIR=/app/frontend/dist
 WORKDIR /app
 COPY backend/ ./backend/
+RUN PYTHONPATH=backend python -m coach.repdb
 RUN pip install --no-cache-dir ./backend tzdata
 COPY --from=frontend /build/frontend/dist ./frontend/dist
 EXPOSE 8000

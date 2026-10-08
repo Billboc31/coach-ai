@@ -174,3 +174,20 @@ stockage. `visible_messages` est une projection de lecture des messages assistan
 le dashboard et le contexte récent/retrouvé. Elle conserve IDs, dates et messages user,
 sans réécriture des originaux ni recréation de cartes historiques. Le frontend ne rend
 que paragraphes et gras simple avec React ; aucun HTML brut, média ou script interprété.
+
+## Bibliothèque RepDB et fiches Excel
+
+Le module coach.repdb télécharge un snapshot public épinglé au build Docker, le convertit
+pour utilisation dans l'application et écrit repdb-generated.json, exclu du dépôt. Aucune
+clé ni souscription ; licence gratuite avec attribution visible. Le snapshot ajoute des
+identités repdb distinctes. Un nom anglais exact et unique peut enrichir le média d'une
+fiche wger, sans changer son identité ni les faits musculaires. Pas de correspondance floue
+automatique. Les miniatures utilisent les crédits du média ; aucun dessin de mouvement
+n'est inventé en cas de média manquant. La fiche presse oblique correspond à la presse
+illustrée par RepDB ; la presse horizontale garde une identité séparée.
+
+La projection de lecture sépare movement_name/training_instruction du nom source intact.
+Les blocs fiche récupèrent les liens HTTPS autorisés sur leur ligne dans source_sheets ;
+aucun téléchargement des documents privés ni extraction supposée de leurs exercices.
+Ces liens sont conservés au démarrage d'une séance. Les logs, IDs et révisions ne changent
+pas lors de l'affichage ; aucun poids n'est calculé à partir de « gamme montante ».

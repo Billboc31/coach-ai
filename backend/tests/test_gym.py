@@ -559,3 +559,47 @@ def test_rename_titles_survive_refresh_and_keep_source_names(workspace):
     assert p["days"][0]["sheet"] == day["sheet"]
     assert p["days"][0]["name"] == day["name"]
     assert gym.start(key, day["id"])["title"] == "Ma séance"
+
+
+def test_linked_routine_is_read_projection_with_original_ids_and_logs(workspace):
+    _, program, _ = imported()
+    day = program["days"][0]
+    item = day["exercises"][0]
+    item["name"] = "Fiche mobilité"
+    sheet = next(s for s in program["source_sheets"] if s["name"] == item["sheet"])
+    sheet["links"] = {
+        f"{item['source_row']}:21": "https://1drv.ms/i/synthetic-routine",
+        f"{item['source_row']}:4": "javascript:alert(1)",
+        "999:21": "https://1drv.ms/i/another-row",
+    }
+    db.upsert_record("gym_program", program["id"], program)
+    before = db.record("gym_program", program["id"])
+    view = gym.overview()["programs"][0]["days"][0]["exercises"][0]
+    assert view["is_document"] and "https://1drv.ms/i/synthetic-routine" in view["document_links"]
+    assert all(link.startswith("https://") for link in view["document_links"])
+    assert view["id"] == item["id"] and view["exercise_id"] == item["exercise_id"]
+    assert db.record("gym_program", program["id"]) == before
+    started = gym.start(program["id"], day["id"])
+    exercise = started["exercises"][0]
+    assert exercise["document_links"] == view["document_links"]
+    assert all(s["weight"] is None and s["reps"] is None for s in exercise["logged_sets"])
+    # The document reference survives even if its programme source is later absent.
+    preserved = gym.document_view(exercise, {})
+    assert preserved["document_links"] == view["document_links"]
+
+
+def test_progressive_weight_instruction_does_not_invent_weights(workspace):
+    from coach import exercise_catalog
+
+    item = {
+        "exercise_id": "synthetic-progression",
+        "name": "gamme montante presse oblique",
+        "weight": None,
+        "reps": "10",
+        "performance": ["X", "X"],
+    }
+    result = exercise_catalog.decorate(item)
+    assert result["movement_name"] == "presse oblique"
+    assert "progressive" in result["training_instruction"]
+    assert result["name"] == item["name"] and result["weight"] is None
+    assert result["performance"] == item["performance"]
