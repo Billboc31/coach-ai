@@ -12,7 +12,7 @@ commercialisable à terme ; conserver les interfaces remplaçables et la propri�
 | INIT-02 | Environnement reproductible, configuration et secrets locaux | Implémenté |
 | INIT-03 | Stockage local, schéma v1, profil, ownership et dates UTC | Implémenté, PostgreSQL différé |
 | INIT-04 | Lint, tests et build dans CI | Implémenté |
-| INIT-05 | UI responsive, accès privé, API réelle | Local et configuration Railway livrés ; utilisateur signale déploiement réussi |
+| INIT-05 | UI responsive, accès privé, API réelle | Local et configuration Railway livrés ; refonte mobile globale et interactions vérifiées à 320/375/390/430/768/1440 px avec données simulées ; Safari iPhone réel à vérifier |
 | GARMIN-01 | Auth/MFA, session et lectures | Utilisateur confirme connexion locale et sync 100 activités/7 jours ; login Railway refusé 403. Transfert privé confirmé par l’utilisateur sur Railway ; import de session dans l’interface livré |
 | AI-01 | Connexion officielle ChatGPT locale et première inférence | Utilisateur confirme autorisation locale, 4 modèles et inférence Astra ; utilisateur confirme également transfert, test et réponse du coach sur Railway ; renouvellement à valider dans la durée |
 

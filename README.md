@@ -6,6 +6,9 @@ et les informations que tu lui racontes. Première version personnelle, utilisab
 ## Premier lot
 
 - Interface responsive : vue d’ensemble, tableau d’activités par sport, fiches, profil, notes, chat et connexions.
+- Mobile : quatre raccourcis et menu « Plus », zones tactiles agrandies, marges pour les
+  zones de sécurité de l’iPhone, champs de saisie à 16 px, calendrier compact et formulaires
+  en colonne. En séance de musculation, la fiche muscles/technique se déplie à la demande.
 - Base SQLite persistante avec propriétaire utilisateur et schéma initial versionné.
 - Accès par clé et cookie HttpOnly (Secure en production). Les données ne sont pas publiques.
 - Connexion Garmin dans le terminal, MFA et session persistante ; synchronisation manuelle

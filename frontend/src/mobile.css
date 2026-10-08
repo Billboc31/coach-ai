@@ -1,0 +1,769 @@
+/* Shared responsive rules load after feature styles. */
+:root {
+  --mobile-nav-height: calc(64px + env(safe-area-inset-bottom, 0px));
+}
+.mobile-nav {
+  display: none;
+}
+.app > main,
+.card,
+.two-columns > *,
+.connection-grid > *,
+.page-heading > div,
+.activity-row > div,
+.gym-workout-layout > *,
+.agenda-session > div {
+  min-width: 0;
+}
+.app h1,
+.app h2,
+.app h3,
+.app p,
+.message,
+.note,
+.memory-fact,
+.gym-reference,
+.gym-document,
+.agenda-session,
+.actual-session {
+  overflow-wrap: anywhere;
+}
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  min-width: 0;
+}
+.desktop-nav svg,
+button > svg {
+  flex-shrink: 0;
+}
+.mobile-menu {
+  inset: auto 0 0;
+  margin: 0 auto;
+  width: min(100%, 540px);
+  max-height: 85dvh;
+  overflow: auto;
+  border: 1px solid #e2e7dc;
+  border-radius: 24px 24px 0 0;
+  padding: 24px max(20px, env(safe-area-inset-right))
+    calc(24px + env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  color: #24322b;
+  background: #fff;
+  box-shadow: 0 -12px 60px #17342620;
+}
+.mobile-menu::backdrop {
+  background: #172a1c80;
+}
+.gym-guide {
+  margin: 16px 0;
+}
+.gym-guide > summary {
+  cursor: pointer;
+  color: #56794b;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 12px 0;
+}
+.mobile-menu-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.mobile-menu-links {
+  display: grid;
+  gap: 8px;
+}
+.mobile-menu-links button {
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 16px;
+  border: 0;
+  border-radius: 12px;
+  background: #f5f7f1;
+  color: #53634e;
+  text-align: left;
+  font-size: 16px;
+}
+.mobile-menu-links button.active {
+  background: #e7efdc;
+  color: #354c2f;
+}
+
+@media (max-width: 900px) {
+  .app {
+    min-height: 100dvh;
+  }
+  .app input:not([type="checkbox"]):not([type="range"]),
+  .app select,
+  .app textarea {
+    font-size: 16px;
+    min-height: 48px;
+  }
+  .app-sidebar {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: var(--mobile-nav-height);
+    padding: 0 max(6px, env(safe-area-inset-right)) env(safe-area-inset-bottom)
+      max(6px, env(safe-area-inset-left));
+    border: 0;
+    border-top: 1px solid #e2e7dc;
+    z-index: 50;
+    background: #fff;
+  }
+  .app-sidebar > .brand,
+  .app-sidebar > .workspace,
+  .app-sidebar > .side-bottom,
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    height: 64px;
+    gap: 2px;
+  }
+  .mobile-nav button {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    min-width: 0;
+    min-height: 56px;
+    padding: 7px 2px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: #75816e;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .mobile-nav button.active {
+    background: #edf3e6;
+    color: #354c2f;
+  }
+  .mobile-nav button span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .app > main {
+    width: 100%;
+    margin-left: 0;
+    padding: env(safe-area-inset-top) max(20px, env(safe-area-inset-right))
+      calc(var(--mobile-nav-height) + 24px) max(20px, env(safe-area-inset-left));
+  }
+  .two-columns,
+  .connection-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .gym-workout-footer {
+    bottom: calc(var(--mobile-nav-height) + 8px);
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 15px;
+  }
+  html {
+    scroll-padding-bottom: calc(var(--mobile-nav-height) + 24px);
+  }
+  .app > main {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+  .app header {
+    height: 60px;
+    margin-bottom: 22px;
+  }
+  .breadcrumb {
+    gap: 6px;
+    font-size: 12px;
+    min-width: 0;
+  }
+  .avatar {
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+  h1 {
+    font-size: clamp(25px, 7vw, 30px);
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+  }
+  .page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  .page-heading > .outline {
+    font-size: 13px;
+    padding: 12px 16px;
+  }
+  .page-heading > button,
+  .page-heading > .gym-upload {
+    width: 100%;
+  }
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+  .card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+  .section-title {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .section-title span {
+    font-size: 11px;
+  }
+  .primary,
+  .outline,
+  .text-button,
+  .gym-icon-button,
+  .gym-upload,
+  .activity-filters button,
+  .curve-channels button,
+  .curve-axis button,
+  .catalogue-positions button,
+  summary {
+    min-height: 44px;
+  }
+  .primary,
+  .outline {
+    font-size: 13px;
+  }
+  .text-button {
+    padding: 8px 0;
+    font-size: 13px;
+    text-align: left;
+  }
+  .gym-icon-button {
+    min-width: 44px;
+  }
+  button {
+    touch-action: manipulation;
+  }
+  input:not([type="checkbox"]):not([type="range"]),
+  select,
+  textarea,
+  .gym-page input,
+  .gym-page select,
+  .gym-modal input,
+  .gym-modal select,
+  .gym-modal textarea,
+  .exercise-catalogue input,
+  .exercise-catalogue select,
+  .plan-editor input,
+  .plan-editor select,
+  .session-file input,
+  .sync-controls input,
+  .sync-controls select,
+  .garmin-schedule select {
+    font-size: 16px;
+    min-height: 48px;
+    width: 100%;
+    max-width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  input[type="checkbox"] {
+    flex-shrink: 0;
+  }
+  label {
+    line-height: 1.5;
+  }
+  .hero {
+    padding: 24px;
+    min-height: 250px;
+  }
+  .hero h2 {
+    font-size: 26px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+  .hero button {
+    min-height: 44px;
+    font-size: 13px;
+  }
+  .metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .metric {
+    padding: 14px 10px;
+  }
+  .metric strong {
+    font-size: 22px;
+    margin-top: 14px;
+  }
+  .metric small {
+    display: block;
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  .metric p {
+    font-size: 10px;
+  }
+  .activity-row {
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .activity-row strong {
+    font-size: 13px;
+  }
+  .activity-row small {
+    font-size: 11px;
+  }
+  .note {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+  }
+  .notes form button {
+    width: 100%;
+  }
+  .connection-actions,
+  .sync-actions,
+  .gym-program-toolbar,
+  .gym-item-actions {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .connection-actions > .primary,
+  .connection-actions > .outline {
+    flex: 1 1 140px;
+  }
+  .sync-actions > button {
+    flex: 1 1 100px;
+  }
+  .error {
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+  }
+  .error > button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .connection p,
+  .connection li,
+  .memory-settings > p,
+  .memory-fact p {
+    font-size: 14px;
+  }
+  .memory-toggle,
+  .garmin-schedule > label {
+    min-height: 44px;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+  .memory-toggle input,
+  .garmin-schedule input {
+    margin-top: 5px;
+  }
+  .model-bar {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .model-bar > button {
+    width: 100%;
+  }
+  .chat-card {
+    padding: 8px;
+    min-height: 200px;
+    max-height: none;
+    overflow: visible;
+  }
+  .message {
+    max-width: 100%;
+    padding: 16px 12px;
+    margin: 10px 0;
+  }
+  .message.user {
+    max-width: 94%;
+  }
+  .message p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .chat-memory-card {
+    padding: 12px;
+  }
+  .chat-memory-card .connection-actions > button {
+    flex: 1 1 100px;
+    min-height: 44px;
+  }
+  .composer {
+    position: sticky;
+    bottom: calc(var(--mobile-nav-height) + 8px);
+    padding: 10px;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid #dce2db;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px #24322b12;
+    z-index: 4;
+  }
+  .composer textarea {
+    min-height: 56px;
+    max-height: 180px;
+    padding: 10px;
+  }
+  .composer button {
+    min-width: 48px;
+    padding: 10px;
+  }
+  .hint {
+    font-size: 12px;
+  }
+  .profile-form button {
+    width: 100%;
+  }
+  footer {
+    flex-wrap: wrap;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  .login {
+    padding: 24px max(16px, env(safe-area-inset-left));
+    min-height: 100dvh;
+  }
+  .login-card {
+    padding: 24px 20px;
+    margin: 6dvh auto;
+  }
+
+  /* Only tables and pickers scroll horizontally, never the whole page. */
+  .gym-table,
+  .laps-table,
+  .curve-table,
+  .gym-exercise-nav {
+    max-width: 100%;
+    overscroll-behavior-x: contain;
+  }
+  .activity-toolbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 12px;
+  }
+  .activity-toolbar label:first-child {
+    grid-column: 1 / -1;
+    min-width: 0;
+  }
+  .activity-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    max-width: 100%;
+  }
+  .activity-filters button {
+    flex-shrink: 0;
+    font-size: 13px;
+  }
+  .board-totals {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .board-totals > div {
+    padding: 12px 10px;
+  }
+  .board-totals small {
+    font-size: 10px;
+  }
+  .sport-card {
+    padding: 20px;
+  }
+  .sport-card h2 {
+    margin-top: 18px;
+  }
+  .detail-hero {
+    align-items: flex-start;
+    padding: 18px;
+  }
+  .detail-hero > div {
+    min-width: 0;
+  }
+  .detail-hero h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .detail-metrics {
+    gap: 10px;
+  }
+  .detail-metrics .card {
+    padding: 14px;
+  }
+  .detail-metrics strong {
+    font-size: 22px;
+  }
+  .curve-channels {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  .curve-channels button {
+    flex-shrink: 0;
+    font-size: 13px;
+  }
+  .curve-axis {
+    width: 100%;
+  }
+  .curve-axis button {
+    flex: 1;
+  }
+  .curve-plot {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .curve-range {
+    gap: 16px;
+  }
+  .curve-range strong {
+    font-size: 18px;
+  }
+  .curve-readout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 12px;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .curve-readout span {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .curve-slider input {
+    min-height: 44px;
+  }
+
+  .calendar-heading {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .calendar-heading > div {
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+  }
+  .calendar-heading h2 {
+    min-width: 0;
+    font-size: 18px;
+    flex: 1;
+  }
+  .calendar-heading .outline {
+    min-width: 44px;
+    padding: 10px;
+  }
+  .calendar-grid {
+    border-radius: 14px;
+  }
+  .calendar-day {
+    min-height: 76px;
+    padding: 8px 3px;
+    gap: 6px;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  .day-number {
+    width: 100%;
+    text-align: center;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .today .day-number {
+    margin: 0 calc((100% - 23px) / 2);
+    flex-shrink: 0;
+  }
+  .calendar-event {
+    flex: 0 0 7px;
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border-radius: 50%;
+    background: #456b94;
+    font-size: 0;
+  }
+  .calendar-event.completed {
+    background: #427853;
+  }
+  .calendar-event.proposed {
+    background: #af8b3b;
+  }
+  .calendar-day > small {
+    width: 100%;
+    font-size: 10px;
+  }
+  .day-agenda {
+    padding: 18px;
+  }
+  .day-agenda .section-title > button {
+    width: 100%;
+  }
+  .plan-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .plan-editor {
+    padding: 14px;
+  }
+  .agenda-session {
+    gap: 8px;
+  }
+  .agenda-session > div {
+    width: 100%;
+  }
+  .actual-session {
+    padding: 16px 36px 16px 14px;
+  }
+
+  .gym-selectors,
+  .gym-mapping {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .gym-exercise-nav {
+    gap: 8px;
+    padding: 4px 0 12px;
+  }
+  .gym-exercise-nav button {
+    flex: 0 0 180px;
+    min-height: 56px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .gym-exercise-card {
+    padding: 16px;
+  }
+  .gym-exercise-card h2 {
+    font-size: 23px;
+  }
+  .gym-visual-exercise {
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+  .gym-visual-exercise .exercise-thumbnail {
+    width: 64px;
+    height: 64px;
+    flex-basis: 64px;
+  }
+  .gym-program-exercises strong,
+  .gym-program-exercises small {
+    font-size: 13px;
+  }
+  .gym-item-actions button {
+    font-size: 12px;
+  }
+  .gym-set-head,
+  .gym-set {
+    grid-template-columns: 24px repeat(3, minmax(0, 1fr)) 44px;
+    gap: 6px;
+  }
+  .gym-set input:not([type="checkbox"]) {
+    font-size: 16px;
+    padding: 12px 2px;
+  }
+  .gym-set input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #d6e1cc;
+    border-radius: 10px;
+    background: #fff;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+  }
+  .gym-set input[type="checkbox"]:checked {
+    background: #426246;
+    border-color: #426246;
+  }
+  .gym-set input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: #fff;
+    font-size: 24px;
+  }
+  .gym-set input[type="checkbox"]:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .gym-set-head {
+    font-size: 11px;
+  }
+  .gym-workout-footer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+  .gym-workout-footer button {
+    min-height: 44px;
+    font-size: 12px;
+    padding: 10px 6px;
+  }
+  .gym-history-row {
+    flex-wrap: wrap;
+  }
+  .gym-modal-backdrop {
+    padding: 12px;
+    padding-top: max(12px, env(safe-area-inset-top));
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+  .gym-modal {
+    padding: 20px 16px;
+    max-height: 90dvh;
+  }
+  .gym-editor-grid,
+  .catalogue-filters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .gym-video-form input {
+    min-width: 0;
+    flex-basis: 100%;
+  }
+  .gym-video-form > button {
+    width: 100%;
+  }
+  .catalogue-result {
+    padding: 12px;
+  }
+  .catalogue-result .exercise-thumbnail {
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+  }
+  .exercise-catalogue {
+    padding: 14px;
+  }
+  .gym-reference {
+    padding: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+  }
+}

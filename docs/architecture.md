@@ -76,6 +76,16 @@ L’IA locale et les paiements sont hors du premier MVP.
 
 ## Activités et planification Garmin
 
+La navigation principale est isolée dans AppNavigation : sidebar sur ordinateur, quatre
+raccourcis et menu Plus sous 900 px. Le menu est un dialog modal natif (focus, Échap,
+retour au déclencheur), avec blocage temporaire du défilement de fond. Les sélecteurs
+de navigation ne ciblent plus les listes d'exercices. mobile.css est chargé après les
+styles de fonctionnalités ; safe-area-inset et unités dvh adaptent marges et commandes
+fixes. À moins de 600 px, les formulaires passent en colonne, le calendrier garde sept
+colonnes avec pastilles et agenda détaillé, et la discussion utilise le défilement de page.
+La fiche de référence en séance est repliable ; données et sauvegarde restent identiques.
+Voir les contrôles et limites de validation dans mobile.md.
+
 Le scheduler démarre et s’arrête avec le lifespan FastAPI. Un tick toutes les 15 secondes
 vérifie l’échéance UTC persistée dans records/settings/garmin_schedule. L’import partage les
 verrous thread/fichier existants ; un job manuel non terminé n’est jamais remplacé par le
