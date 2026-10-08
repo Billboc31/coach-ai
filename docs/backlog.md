@@ -60,7 +60,9 @@ déduplication, correction, suppression/export ; aucun fichier personnel dans le
 ### MEM-02 — Profil et mémoire temporelle (P1)
 Livré pour les conversations de l’app : souvenirs manuels et propositions sourcées, validation,
 correction, suppression/archive/refus, expiration, cartes Confirmer/Corriger/Ignorer dans le chat
-dès la réponse (sans appel IA supplémentaire), résumé daté avec checkpoint, contrôle des
+dès la réponse (sans appel IA supplémentaire), séparation des fins JSON dans les réponses
+en prose et nettoyage des anciens affichages sans changer les originaux, résumé daté
+avec checkpoint, contrôle des
 révisions concurrentes, option automatique et UI. Propositions de remplacement/clôture avec
 ancien/nouveau état, archive datée et liens entre versions, confirmation atomique et rejet des
 propositions périmées (409) livrés. La qualité de détection reste à évaluer. Les anciens objectifs ne sont pas automatiquement

@@ -166,3 +166,11 @@ Le coach privilégie la conversation et les informations pertinentes ; un bilan 
 n’est pas déclenché par la seule présence des données. Les tests vérifient la séparation
 des consignes/données, l’ordre des rôles et la conservation des nulls/zéros et des cartes.
 La qualité linguistique doit être évaluée avec le vrai modèle et les scénarios documentés.
+
+Le parseur de réponse sépare également une réponse en prose suivie d’un suffixe JSON
+réservé memory_proposals/planning_proposals valide. Les cartes passent toujours par la
+validation des citations et restent proposées ; une métadonnée mal formée échoue avant
+stockage. `visible_messages` est une projection de lecture des messages assistant pour
+le dashboard et le contexte récent/retrouvé. Elle conserve IDs, dates et messages user,
+sans réécriture des originaux ni recréation de cartes historiques. Le frontend ne rend
+que paragraphes et gras simple avec React ; aucun HTML brut, média ou script interprété.

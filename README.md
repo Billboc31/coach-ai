@@ -142,6 +142,12 @@ sur place et confirme la version corrigée. Les boutons et leur état persistent
 Ces propositions viennent du même appel IA que la réponse, sans appel d’extraction supplémentaire.
 Elles sont vérifiées contre une citation exacte du dernier message utilisateur avant enregistrement.
 Une sortie non sourcée est ignorée. Une proposition ne devient active qu’après confirmation.
+Si le modèle ajoute des champs mémoire/planning après une réponse en prose, le serveur
+sépare une fin JSON valide du texte visible et conserve les cartes sourcées. Une fin
+technique invalide est signalée au lieu d’être affichée ou stockée comme conseil. Les
+anciens messages sont nettoyés à l’affichage et dans le contexte sans changer les originaux
+ni leurs IDs ; aucun souvenir ancien n’est confirmé ou recréé par ce nettoyage. Le gras
+simple et les paragraphes sont rendus en texte sûr, sans interpréter du HTML.
 L’onglet Mémoire reste disponible pour gérer l’ensemble et voir les sources. Le résumé périodique
 peut également proposer des souvenirs provenant des échanges plus anciens.
 

@@ -173,7 +173,7 @@ def dashboard():
         "activities": activities[:20],
         "health": db.records("health", 7),
         "notes": db.history("notes", 20),
-        "messages": db.history("messages", 40),
+        "messages": chatgpt.visible_messages(db.history("messages", 40)),
         "memory_cards": [f for f in memory.state()["facts"] if f.get("chat_message_id")],
         "planning_cards": planning.cards(),
         "garmin_job": garmin_jobs.status(),

@@ -4,6 +4,7 @@ import base64
 import hashlib
 import json
 import math
+import re
 import secrets
 import threading
 import time
@@ -277,6 +278,15 @@ def respond(model: str, context: dict, messages: list[dict]) -> tuple[str, dict]
     )
     # Keep reference data outside higher-priority instructions and leave the real request last.
     reference = {k: v for k, v in context.items() if k != "request_memory_proposals"}
+    if isinstance(reference.get("memory"), dict) and isinstance(
+        reference["memory"].get("relevant_past_messages"), list
+    ):
+        reference["memory"] = {
+            **reference["memory"],
+            "relevant_past_messages": visible_messages(
+                reference["memory"].get("relevant_past_messages", [])
+            ),
+        }
     inputs = [
         {
             "role": "user",
@@ -284,14 +294,16 @@ def respond(model: str, context: dict, messages: list[dict]) -> tuple[str, dict]
             + json.dumps(reference, ensure_ascii=False)
             + "\nFIN_CONTEXTE_DOCUMENTAIRE_APPLICATION",
         },
-        *messages,
+        *visible_messages(messages),
     ]
     if context.get("request_memory_proposals"):
         instructions += (
             '\nRéponds uniquement en JSON avec {"answer":"ta réponse naturelle à l’utilisateur",'
             '"memory_proposals":[{"content":"souvenir bref","category":"preference",'
             '"quote":"citation exacte du dernier message utilisateur","expires_on":null}]}.'
-            " Propose au maximum 3 souvenirs durables explicitement déclarés dans le DERNIER "
+            " Tout le texte conversationnel est dans answer ; ne renvoie aucun texte hors de "
+            "l’objet et n’ajoute jamais les champs techniques après une réponse en prose. "
+            "Propose au maximum 3 souvenirs durables explicitement déclarés dans le DERNIER "
             "message utilisateur, catégories goal, constraint, preference, decision ou health_context. "
             "Les conseils du coach ne sont pas des décisions de l’utilisateur. "
             "Ne transforme pas un ressenti temporaire en caractéristique durable. "
@@ -327,6 +339,50 @@ def respond(model: str, context: dict, messages: list[dict]) -> tuple[str, dict]
     return complete(model, instructions, inputs)
 
 
+def mixed_reply(cleaned):
+    """Recover a prose answer followed by a valid reserved JSON metadata suffix."""
+    for match in re.finditer(r'(?:,|\n)\s*"(?:memory_proposals|planning_proposals)"\s*:', cleaned):
+        key_start = cleaned.index('"', match.start())
+        tail = cleaned[key_start:].strip()
+        if tail.endswith("}"):
+            tail = tail[:-1]
+        try:
+            metadata = json.loads("{" + tail + "}")
+        except ValueError:
+            continue
+        if not set(metadata) <= {"memory_proposals", "planning_proposals"}:
+            continue
+        answer = cleaned[: match.start()].strip()
+        if not answer:
+            raise ValueError("Réponse du coach mal formatée ; réessaye.")
+        # A missing opening object/string can leave JSON string quoting on the prose.
+        if answer.endswith('"'):
+            try:
+                decoded = json.loads(answer if answer.startswith('"') else '"' + answer)
+                if isinstance(decoded, str):
+                    answer = decoded
+            except ValueError:
+                # Keep ordinary quoted prose intact when it is not a JSON string.
+                pass
+        return {"answer": answer, **metadata}
+    return None
+
+
+def visible_messages(messages):
+    """Read-only projection: originals/IDs stay stored; user messages are never parsed."""
+    visible = []
+    for message in messages:
+        if message.get("role") != "assistant":
+            visible.append(message)
+            continue
+        try:
+            content, _ = unpack_coach_reply(message["content"], {})
+        except ValueError:
+            content = "Cette ancienne réponse est mal formatée. Demande au coach de la reformuler."
+        visible.append({**message, "content": content})
+    return visible
+
+
 def unpack_coach_reply(text: str, usage: dict) -> tuple[str, dict]:
     # If a model ignores the JSON request, preserve its ordinary completed answer.
     cleaned = text.strip()
@@ -339,7 +395,12 @@ def unpack_coach_reply(text: str, usage: dict) -> tuple[str, dict]:
     except ValueError:
         if cleaned.startswith("{"):
             raise ValueError("Réponse du coach mal formatée ; réessaye.") from None
-        return text, usage
+        value = mixed_reply(cleaned)
+        if value is None:
+            # A completed stream may still contain malformed protocol fields. Do not expose them.
+            if re.search(r'(?:,|\n)\s*"(?:memory_proposals|planning_proposals)"\s*:', cleaned):
+                raise ValueError("Réponse du coach mal formatée ; réessaye.") from None
+            return text, usage
     if not isinstance(value, dict) or not isinstance(value.get("answer"), str):
         raise ValueError("Réponse du coach mal formatée ; réessaye.")
     proposals = value.get("memory_proposals", [])
