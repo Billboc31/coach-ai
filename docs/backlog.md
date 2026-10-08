@@ -128,6 +128,9 @@ notes. Autosave et reprise après fermeture ; mode hors ligne avec synchronisati
 pas de perte/duplication, saisie mobile rapide et distinction prévu/réalisé.
 
 ### GYM-03 — Progression et contexte coach (P1)
+Livré : proposition après validation de toutes les séries via Suivant/Terminer, hausse explicite
+kg avec aperçu, maintien ou report, persistance par exercice et préremplissage compatible
+à la prochaine séance sans modifier les charges réalisées ni inventer un poids inconnu.
 Livré : références de charge du même exercice entre programmes, performances Excel conservées
 et unités confirmables, historique par exercice, séries validées dans le contexte coach, liens
 média Excel, neuf familles de dessins locaux et lecteur YouTube configurable. Tutoriels

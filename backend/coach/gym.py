@@ -9,6 +9,7 @@ import threading
 import unicodedata
 import uuid
 import zipfile
+from typing import Annotated
 from urllib.parse import parse_qs, urlparse
 
 from openpyxl import load_workbook
@@ -628,6 +629,7 @@ def history(exercise_id):
                 else binding["weight_convention"],
                 "date": workout["started_at"],
                 "sets": performed,
+                "next_load_increase_kg": exercise.get("next_load_increase_kg", 0),
                 "finished": bool(workout.get("finished_at")),
             }
         )
@@ -694,6 +696,10 @@ def planned_logs(item, reference=None, imported=None):
     result = []
     for i in range(count):
         weight = prior.get(i, {}).get("weight")
+        if weight is not None:
+            weight += (reference or {}).get("next_load_increase_kg", 0)
+            if weight > 2000:
+                weight = None
         if weight is None and i < len(excel):
             weight = excel[i]
         if weight is None:
@@ -761,6 +767,9 @@ class LoggedSet(BaseModel):
 
 class WorkoutUpdate(BaseModel):
     suggestions_applied: bool = False
+    progression: dict[str, Annotated[float, Field(ge=0, le=2000, allow_inf_nan=False)] | None] = (
+        Field(default_factory=dict, max_length=1000)
+    )
     revision: int = Field(ge=1)
     sets: dict[str, list[LoggedSet]] = Field(max_length=1000)
     finish: bool = False
@@ -798,6 +807,8 @@ def update_workout(key, body):
             raise Conflict("Séance terminée ; son historique est conservé.")
         if set(body.sets) != {e["id"] for e in value["exercises"]}:
             raise ValueError("Liste des exercices incohérente.")
+        if not set(body.progression).issubset(body.sets):
+            raise ValueError("Progression d’un exercice inconnu.")
         for exercise in value["exercises"]:
             sets = body.sets[exercise["id"]]
             if not 1 <= len(sets) <= 30 or any(
@@ -806,6 +817,20 @@ def update_workout(key, body):
                 raise ValueError(
                     "Renseigne les répétitions des séries validées (30 séries maximum)."
                 )
+            if exercise["id"] in body.progression:
+                increase = body.progression[exercise["id"]]
+                if increase is not None:
+                    if not all(s.done for s in sets) or not any(s.weight is not None for s in sets):
+                        raise ValueError(
+                            "Valide toutes les séries et renseigne une charge avant la progression."
+                        )
+                    if any(s.weight is not None and s.weight + increase > 2000 for s in sets):
+                        raise ValueError("Charge proposée supérieure à la limite de saisie.")
+                    exercise["next_load_increase_kg"] = increase
+                else:
+                    exercise.pop("next_load_increase_kg", None)
+            if not all(s.done for s in sets):
+                exercise.pop("next_load_increase_kg", None)
             exercise["logged_sets"] = [s.model_dump() for s in sets]
             binding = exercise_catalog.resolution(exercise["exercise_id"])
             if exercise.get("catalog_id") is None and binding["catalog_id"]:

@@ -339,6 +339,13 @@ champs vides et leurs séries manquantes à la reprise, sans modifier les saisie
 Aucun réimport requis. Le repos est indiqué sous chaque série ; une liste explicite de repos
 (30 secondes, 1 minute, 1 minute) est associée aux lignes et au minuteur respectifs.
 « Reprendre mes charges » complète uniquement les charges vides non validées.
+Lorsque toutes les séries d'un exercice avec charge connue sont validées, **Suivant**
+propose une augmentation en kg pour la prochaine séance, avec aperçu des charges. On peut
+conserver les charges, décider plus tard ou revenir à l'exercice. La même proposition précède
+la fin du dernier exercice. Le choix suit l'autosave ; il ne modifie pas les séries réalisées.
+À la prochaine séance compatible, l'augmentation choisie s'ajoute à chaque poids connu de
+cette référence, en conservant les écarts d'une montée progressive. Une charge inconnue reste
+inconnue. Modifier une série annule le choix associé pour permettre une nouvelle décision.
 **Quitter** sauvegarde les modifications avant retour aux programmes ; une erreur bloque la
 sortie et garde le brouillon. Les séances terminées restent consultables dans la vue complète.
 Dans **Mes séances enregistrées**, **Supprimer** est disponible pour une séance inachevée.

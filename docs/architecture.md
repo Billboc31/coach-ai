@@ -156,6 +156,14 @@ nombre correspond aux séries ; les autres consignes restent affichées sans dur
 échéance Date.now() ; un intervalle rafraîchit l'affichage, sans accumulation des retards.
 Seule une validation explicite démarre le repos, dont les durées ambiguës restent manuelles.
 Pause/reprise et changement de vue gardent l'état ; démontage/recharge le remet à zéro.
+WorkoutUpdate.progression associe les IDs de lignes à une augmentation kg explicite (0 pour
+conserver, null pour retirer). La validation impose ID appartenant à la séance, toutes les séries
+validées, au moins une charge connue et bornes finies. Le record gym_workout garde
+next_load_increase_kg par exercice sans modifier logged_sets. L'historique owner-scoped et
+filtré par variante/convention transmet cette intention à planned_logs ; elle s'ajoute seulement
+aux poids connus de cette référence. Le frontend conserve le choix dans son brouillon et
+l'autosave révisionné ; modifier/ajouter une série le retire. Le dialogue natif est déclenché
+par Suivant ou Terminer après les séries, sans appel IA. La fin attend une sauvegarde en cours.
 Aucune nouvelle table ; le volume SQLite existant garde l’ensemble. Les identifiants d’exercice
 privés restent dérivés du nom normalisé. Un catalogue public JSON embarqué fournit des
 identités RepDB stables ; les aliases précis et signatures lexicales équivalentes sont reconnus, les ambiguïtés

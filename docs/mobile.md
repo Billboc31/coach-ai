@@ -70,3 +70,10 @@ Correctif de reprise : une ancienne séance fictive avec une ligne saisie et une
 saisi est conservé et les champs vides reçoivent les suggestions. Les repos 30", 1', 1'
 sont affichés par ligne ; la première validation lance 30 secondes, la deuxième 60.
 L'horloge simulée vérifie décompte et pause ; API simulée, aucun compte réel utilisé.
+
+Progression de charge : contrôle local Chromium avec API simulée aux largeurs 320, 390,
+768 et 1440 px. Suivant sans toutes les séries validées n'ouvre pas de dialogue. Après
+validation, annulation revient à l'exercice, une valeur négative bloque la confirmation,
++2,5 kg affiche les trois poids prévus et part dans l'autosave sans changer les poids réalisés.
+Le dernier exercice propose aussi le dialogue avant Terminer ; conserver les charges envoie
+0 kg et termine la séance. Capture du dialogue examinée à 390 px ; aucun compte réel utilisé.

@@ -300,3 +300,12 @@ body.gym-session-active .app > main {
 .session-rest summary {cursor:pointer;min-height:44px;padding:12px 0;font-size:13px;}
 .session-rest-actions {margin-bottom:0;}
 .session-line-rest {display:block;color:#617655;font-size:13px;padding:8px 0 0 44px;white-space:pre-wrap;}
+.gym-progression-dialog {width:min(480px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;border:1px solid #d8e2ce;border-radius:20px;padding:24px;color:#354f29;background:#f5f6f3;}
+.gym-progression-dialog::backdrop {background:#182c2477;}
+.gym-progression-dialog h2 {font-size:23px;margin-top:0;}
+.gym-progression-dialog p {line-height:1.5;overflow-wrap:anywhere;}
+.gym-progression-dialog label {display:grid;gap:8px;}
+.gym-progression-dialog input {min-height:52px;min-width:0;width:100%;font-size:22px!important;}
+.gym-progression-dialog > div {display:grid;gap:10px;margin-top:16px;}
+.gym-progression-dialog button {min-height:48px;justify-content:center;}
+.gym-progression-preview {font-weight:600;}
