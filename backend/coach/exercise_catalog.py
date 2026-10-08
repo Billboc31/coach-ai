@@ -19,6 +19,42 @@ from coach import db
 from coach.config import user_id
 
 lock = threading.RLock()
+# Reviewed media equivalents only. These never change bindings or recorded units.
+BLUE_EQUIVALENTS = {
+    73: "bench-press",
+    75: "db-bench-press",
+    76: "close-grip-bench-press",
+    81: "single-arm-db-row",
+    83: "barbell-row",
+    84: "reverse-grip-bent-over-row",
+    91: "barbell-curl",
+    95: "cable-curl",
+    152: "chin-ups",
+    237: "cable-fly",
+    238: "db-fly",
+    257: "front-squat",
+    365: "lying-leg-curl",
+    366: "seated-leg-curl",
+    369: "leg-extension",
+    475: "pull-up",
+    580: "side-plank",
+    615: "squat",
+    1093: "rowing-machine",
+    1312: "bodyweight-squat",
+}
+
+
+def blue_thumbnail(entry):
+    return next(
+        (
+            m
+            for m in (entry or {}).get("media", [])
+            if m["kind"] == "image" and m["credit"]["name"] == "RepDB Free Tier v1.0"
+        ),
+        None,
+    )
+
+
 CONVENTIONS = {"unspecified", "total", "per_dumbbell", "added", "machine", "bodyweight"}
 # Curated public synonyms. A machine, grip, side or incline remains a separate catalogue ID.
 ALIASES = {
@@ -207,8 +243,13 @@ def catalogue():
         for entry in list(result.values()):
             if entry["id"].startswith("wger:"):
                 candidates = by_name.get(normalized(entry["name_en"]), [])
+                equivalent = result.get("repdb:" + BLUE_EQUIVALENTS.get(entry["source_id"], ""))
+                if equivalent:
+                    candidates = [equivalent]
                 if len(candidates) == 1:
                     entry["media"] = [*candidates[0]["media"], *entry["media"]]
+    for entry in result.values():
+        entry["thumbnail"] = blue_thumbnail(entry)
     return result
 
 
@@ -426,7 +467,7 @@ def decorate(item, snapshot=None):
         )
     entry = catalogue().get(resolved["catalog_id"])
     movement, instruction = coaching(item["name"])
-    thumbnail = next((m for m in (entry or {}).get("media", []) if m["kind"] == "image"), None)
+    thumbnail = blue_thumbnail(entry)
     return {
         **item,
         "movement_name": movement,

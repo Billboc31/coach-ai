@@ -333,3 +333,24 @@ def test_coaching_vocabulary_preserves_machine_bar_and_rope_variants():
         "DVP épaule cadre guidé un bras",
     ]:
         assert catalogue.automatic(name)[0] is None
+
+
+def test_uniform_thumbnail_never_substitutes_old_art_or_changes_identity():
+    old = {
+        "media": [
+            {"kind": "image", "url": "https://wger.de/example.png", "credit": {"name": "CC0"}}
+        ]
+    }
+    assert catalogue.blue_thumbnail(old) is None
+    blue = {
+        "kind": "image",
+        "url": "https://example.com/blue.webp",
+        "credit": {"name": "RepDB Free Tier v1.0"},
+    }
+    assert catalogue.blue_thumbnail({"media": [*old["media"], blue]}) == blue
+    if "repdb:bodyweight-squat" in catalogue.catalogue():
+        for key in ["wger:1312", "wger:475"]:
+            entry = catalogue.catalogue()[key]
+            assert entry["id"] == key
+            assert entry["thumbnail"]["credit"]["name"] == "RepDB Free Tier v1.0"
+        assert catalogue.exact("air squat") == "wger:1312"

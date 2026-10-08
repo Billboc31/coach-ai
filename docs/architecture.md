@@ -191,3 +191,9 @@ Les blocs fiche récupèrent les liens HTTPS autorisés sur leur ligne dans sour
 aucun téléchargement des documents privés ni extraction supposée de leurs exercices.
 Ces liens sont conservés au démarrage d'une séance. Les logs, IDs et révisions ne changent
 pas lors de l'affichage ; aucun poids n'est calculé à partir de « gamme montante ».
+
+Les miniatures et photos de position utilisent uniquement le style RepDB. Une liste
+de correspondances média vérifiées complète les noms anglais équivalents (squat poids
+du corps, tractions pronation/supination, etc.) sans modifier les identités. Si la variante
+n'a pas de visuel compatible, une icône sur le même fond bleu remplace les anciens dessins.
+Les médias wger restent documentés et accessibles via leur source.
