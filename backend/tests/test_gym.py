@@ -604,3 +604,27 @@ def test_progressive_weight_instruction_does_not_invent_weights(workspace):
     assert "progressive" in result["training_instruction"]
     assert result["name"] == item["name"] and result["weight"] is None
     assert result["performance"] == item["performance"]
+
+
+def test_old_session_suggestions_are_read_only_and_applied_once(workspace):
+    _, program, _ = imported(kg=True)
+    w = gym.start(program["id"], program["days"][0]["id"])
+    original = db.record("gym_workout", w["id"])
+    original.pop("suggestions_applied")
+    e = original["exercises"][0]
+    e["reps"] = "12\n8\n5"
+    e["sets"] = 1
+    e["logged_sets"] = [{"weight": 85, "reps": 12, "seconds": None, "done": True}]
+    db.upsert_record("gym_workout", w["id"], original)
+    view = gym.workout_view(original)
+    assert len(view["exercises"][0]["suggested_sets"]) == 3
+    assert view["exercises"][0]["logged_sets"] == e["logged_sets"]
+    assert db.record("gym_workout", w["id"]) == original
+    sets = {x["id"]: x["logged_sets"] for x in original["exercises"]}
+    saved = gym.update_workout(
+        w["id"], gym.WorkoutUpdate(revision=1, sets=sets, suggestions_applied=True)
+    )
+    assert "suggested_sets" not in saved["exercises"][0]
+    assert saved["exercises"][0]["logged_sets"] == e["logged_sets"]
+    original["finished_at"] = "2026-01-01T12:00:00Z"
+    assert "suggested_sets" not in gym.workout_view(original)["exercises"][0]

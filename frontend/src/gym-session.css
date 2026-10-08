@@ -299,3 +299,4 @@ body.gym-session-active .app > main {
 .session-extra-row {padding:8px 0;}
 .session-rest summary {cursor:pointer;min-height:44px;padding:12px 0;font-size:13px;}
 .session-rest-actions {margin-bottom:0;}
+.session-line-rest {display:block;color:#617655;font-size:13px;padding:8px 0 0 44px;white-space:pre-wrap;}

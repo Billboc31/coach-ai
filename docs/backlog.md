@@ -117,8 +117,9 @@ unités et consignes ; gérer cellules vides/fusionnées sans inventer de prescr
 Livré : écran de séance, kg/reps/secondes par série, validation, ajout de séries, autosave,
 brouillon d’onglet, reprise, historique en base, contrôle des révisions et fin de séance.
 Mode séance dédié simplifié par défaut, toutes les séries visibles, coche verte, poids connus
-et reps prévues proposés à la création sans validation automatique, liste illustrée des exercices,
-minuteur de repos avec pause/reprise et durée personnalisée, retour à la vue complète,
+et reps prévues proposés à la création et reprise des anciennes séances en cours (fusion
+des seuls champs vides, sans écraser les saisies), sans validation automatique, liste illustrée,
+repos par ligne de série, minuteur avec pause/reprise et durée personnalisée, retour à la vue complète,
 recopie explicite des charges vides, sortie avec sauvegarde, suppression confirmée
 des séances inachevées uniquement (ownership, révision et refus des séances terminées).
 Restent : vrai mode hors ligne, RPE, persistance du minuteur après fermeture, correction des séances terminées.

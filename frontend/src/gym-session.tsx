@@ -4,13 +4,14 @@ import { ExerciseThumbnail } from "./exercise-thumbnail";
 import { conventionLabels } from "./exercise-catalogue";
 import type { Exercise, SetLog } from "./gym";
 import "./gym-session.css";
+import {seriesRest} from "./gym-rest";
 
 type Props = {
   exercises: Exercise[];
   allSets: Record<string,SetLog[]>;
   onSelect: (index:number)=>void;
   restTimer: ReactNode;
-  onRest: ()=>void;
+  onRest: (index:number)=>void;
   exercise: Exercise;
   rows: SetLog[];
   index: number;
@@ -49,7 +50,7 @@ export function GymSession(p: Props) {
   }
   function validate(i:number) {
     p.onField(i,"done",!rows[i].done);
-    if(!rows[i].done)p.onRest();
+    if(!rows[i].done)p.onRest(i);
   }
   const editable = !p.locked && !p.finishing;
   const hasReference =
@@ -166,6 +167,7 @@ export function GymSession(p: Props) {
             <input type="number" inputMode="numeric" min={0} max={1000} step={1} value={row.reps??''} aria-label={`Répétitions série ${i+1}`} disabled={!editable} onChange={ev=>p.onField(i,'reps',ev.target.value===''?null:Number(ev.target.value))}/>
             <button className={'session-check '+(row.done?'validated':'')} aria-label={`Valider la série ${i+1}`} aria-pressed={row.done} disabled={!editable||(!row.done&&!valid(row))} onClick={()=>validate(i)}><Check size={24}/></button>
           </div>
+          <small className="session-line-rest">Repos après cette série : {seriesRest(e.rest||e.short_rest||"",i,rows.length)||"non précisé"}</small>
         </div>)}
         <details className="session-row-options"><summary>Durées / recopier une charge</summary>
           {rows.map((row,i)=><div className="session-extra-row" key={i}><label>Secondes · série {i+1}<input type="number" inputMode="numeric" min={0} max={7200} step={1} value={row.seconds??''} aria-label={`Secondes série ${i+1}`} disabled={!editable} onChange={ev=>p.onField(i,'seconds',ev.target.value===''?null:Number(ev.target.value))}/></label>{i>0&&rows[i-1].weight!=null&&<button className="text-button" disabled={!editable} onClick={()=>p.onField(i,'weight',rows[i-1].weight)}>Série {i+1} : même poids que la précédente · {rows[i-1].weight} kg</button>}</div>)}

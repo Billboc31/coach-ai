@@ -197,12 +197,25 @@ def workout_view(value, snapshot=None):
                 ),
             }
         )
-    return {
-        **value,
-        "exercises": [
-            document_view(exercise_catalog.decorate(e, snapshot), program) for e in exercises
-        ],
-    }
+    decorated = [document_view(exercise_catalog.decorate(e, snapshot), program) for e in exercises]
+    if not value.get("finished_at") and not value.get("suggestions_applied"):
+        for e in decorated:
+            changed = (
+                bool(e.get("recorded_catalog_id"))
+                and e["recorded_catalog_id"] != e.get("catalog_id")
+            ) or (
+                e.get("recorded_weight_convention") not in {None, "unspecified"}
+                and (
+                    e["recorded_weight_convention"] != e.get("weight_convention")
+                    or (e.get("recorded_weight_context") or "") != (e.get("weight_context") or "")
+                )
+            )
+            suggestion = planned_logs(e, e.get("reference"), e.get("excel_history"))
+            if changed:
+                for row in suggestion:
+                    row["weight"] = None
+            e["suggested_sets"] = suggestion
+    return {**value, "exercises": decorated}
 
 
 def preview(filename, encoded, *, refresh=False):
@@ -727,6 +740,7 @@ def start(program_id, day_id):
         value = {
             "id": uuid.uuid4().hex,
             "display_version": 2,
+            "suggestions_applied": True,
             "program_id": program_id,
             "title": day.get("display_name") or day["name"],
             "started_at": db.now(),
@@ -746,6 +760,7 @@ class LoggedSet(BaseModel):
 
 
 class WorkoutUpdate(BaseModel):
+    suggestions_applied: bool = False
     revision: int = Field(ge=1)
     sets: dict[str, list[LoggedSet]] = Field(max_length=1000)
     finish: bool = False
@@ -800,6 +815,8 @@ def update_workout(key, body):
                 exercise["weight_convention"] = binding["weight_convention"]
                 exercise["weight_context"] = binding.get("weight_context", "")
         value.update(revision=value["revision"] + 1, updated_at=db.now())
+        if body.suggestions_applied:
+            value["suggestions_applied"] = True
         if body.finish:
             if not any(s["done"] for e in value["exercises"] for s in e["logged_sets"]):
                 raise ValueError("Valide au moins une série avant de terminer.")

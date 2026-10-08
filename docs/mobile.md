@@ -64,3 +64,9 @@ un essai sur un iPhone réel. Dans l'app déployée, vérifier notamment :
 - Passer en paysage et utiliser les formulaires et la navigation.
 
 Le mode hors ligne complet et l'installation PWA ne sont pas inclus dans ce lot.
+
+Correctif de reprise : une ancienne séance fictive avec une ligne saisie et une prescription
+12/8/5 sur trois lignes est ouverte aux six largeurs. Trois lignes apparaissent, le poids
+saisi est conservé et les champs vides reçoivent les suggestions. Les repos 30", 1', 1'
+sont affichés par ligne ; la première validation lance 30 secondes, la deuxième 60.
+L'horloge simulée vérifie décompte et pause ; API simulée, aucun compte réel utilisé.

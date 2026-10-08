@@ -1,9 +1,13 @@
 import {useEffect, useState} from 'react';
 
+export function seriesRest(raw:string,index:number,count:number):string {
+ const parts=raw.trim().split(/\r?\n/).map(v=>v.trim()).filter(Boolean);
+ return parts.length===count?parts[index]:raw;
+}
 // Parse only a single explicit duration; ranges and free text stay manual.
 export function restSeconds(raw:string):number|null {
  const text=raw.trim().toLowerCase();
- const seconds=text.match(/^(\d+)\s*(?:s|sec|secs|secondes?|''|″)$/);
+ const seconds=text.match(/^(\d+)\s*(?:s|sec|secs|secondes?|''|"|″)$/);
  const minutes=text.match(/^(\d+)\s*(?:min|minutes?|'|′)$/);
  const mixed=text.match(/^(\d+)\s*['′:]\s*(\d{1,2})\s*(?:s|''|″)?$/);
  const value=seconds?Number(seconds[1]):minutes?Number(minutes[1])*60:mixed&&Number(mixed[2])<60?Number(mixed[1])*60+Number(mixed[2]):null;

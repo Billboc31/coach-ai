@@ -146,7 +146,13 @@ Les nouvelles séances reçoivent des suggestions non validées : reps numériqu
 liste explicite sur plusieurs lignes, poids connus de l'historique compatible ou de l'Excel
 confirmé en kg. Les historiques retournent series_index pour ne pas décaler une montée en
 charge dont certaines séries n'ont pas été validées. Les fiches documentaires restent vierges.
-Les logs existants ne sont pas réécrits. Le minuteur appartient à WorkoutScreen et utilise une
+Les lectures des anciennes séances ouvertes exposent suggested_sets sans écrire en base.
+WorkoutScreen fusionne uniquement les champs vides non validés et ajoute les lignes manquantes,
+en gardant saisies, séries supplémentaires et brouillons. Le PUT révisionné marque
+suggestions_applied afin de respecter ensuite les valeurs volontairement effacées. Les séances
+terminées ne reçoivent aucune suggestion. Les charges restent vides si la variante/convention
+a changé. Les repos explicites sur plusieurs lignes se répartissent par index lorsque leur
+nombre correspond aux séries ; les autres consignes restent affichées sans durée inventée. Le minuteur appartient à WorkoutScreen et utilise une
 échéance Date.now() ; un intervalle rafraîchit l'affichage, sans accumulation des retards.
 Seule une validation explicite démarre le repos, dont les durées ambiguës restent manuelles.
 Pause/reprise et changement de vue gardent l'état ; démontage/recharge le remet à zéro.

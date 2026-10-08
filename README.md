@@ -334,8 +334,11 @@ Le repos démarre après validation si sa durée est précise, avec durée perso
 pause/reprise et passage du repos. Le minuteur suit l'horloge et continue en changeant
 l'exercice ou la vue ; il ne survit pas à la fermeture/recharge de la page.
 **Détails** ouvre la vue complète (technique, vidéo, historique et comparaison des conflits),
-sans perdre la saisie. Les anciennes séances gardent leurs séries ; le préremplissage concerne
-les nouvelles, et « Reprendre mes charges » complète uniquement les charges vides non validées.
+sans perdre la saisie. Les séances anciennes encore ouvertes complètent une seule fois leurs
+champs vides et leurs séries manquantes à la reprise, sans modifier les saisies ni validations.
+Aucun réimport requis. Le repos est indiqué sous chaque série ; une liste explicite de repos
+(30 secondes, 1 minute, 1 minute) est associée aux lignes et au minuteur respectifs.
+« Reprendre mes charges » complète uniquement les charges vides non validées.
 **Quitter** sauvegarde les modifications avant retour aux programmes ; une erreur bloque la
 sortie et garde le brouillon. Les séances terminées restent consultables dans la vue complète.
 Dans **Mes séances enregistrées**, **Supprimer** est disponible pour une séance inachevée.
