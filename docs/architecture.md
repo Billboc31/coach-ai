@@ -131,6 +131,17 @@ libre pour le modèle ni rapprochement implicite Garmin : confirmation/liaison r
 Records séparés : gym_import (aperçu, mapping, déduplication par empreinte), gym_source (fichier
 original privé), gym_program (séances et sources), gym_exercise (nom normalisé, vidéo),
 gym_excel_history (performances d’origine), gym_workout (séries saisies, révision, dates).
+DELETE /api/gym/workouts/{id} exige session, origine autorisée et révision courante. Le verrou
+des écritures de séance sérialise lecture et suppression : les séances terminées sont refusées,
+une modification concurrente retourne 409 et un propriétaire différent voit 404. Seul le
+record gym_workout est supprimé ; l'update refuse un ID absent et ne ressuscite pas le brouillon.
+La confirmation UI avertit que les séries saisies seront effacées ; le cache d'onglet correspondant
+est retiré uniquement après succès. Les programmes et performances Excel ne sont pas modifiés.
+GymSession est une présentation du même état WorkoutScreen : série active, validation, champs
+et actions partagent autosave, génération de brouillon et révisions. La vue détaillée reste
+accessible et les composants gardent le même état. Le mode dédié masque navigation/header/footer
+avec une classe de body retirée au changement de vue ou démontage. Sortir attend la sauvegarde
+des modifications ; une erreur de réseau ou de révision conserve le brouillon et l'écran.
 Aucune nouvelle table ; le volume SQLite existant garde l’ensemble. Les identifiants d’exercice
 privés restent dérivés du nom normalisé. Un catalogue public JSON embarqué fournit des
 identités RepDB stables ; les aliases précis et signatures lexicales équivalentes sont reconnus, les ambiguïtés

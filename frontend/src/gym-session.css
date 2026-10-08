@@ -1,0 +1,268 @@
+body.gym-session-active .app-sidebar,
+body.gym-session-active #main-content > header,
+body.gym-session-active #main-content > footer {
+  display: none;
+}
+body.gym-session-active .app > main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: env(safe-area-inset-top) max(16px, env(safe-area-inset-right))
+    max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+}
+.gym-session {
+  max-width: 680px;
+  margin: auto;
+  min-height: 100dvh;
+  padding-top: 12px;
+}
+.session-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.session-topbar button {
+  min-height: 44px;
+  font-size: 13px;
+  padding: 10px 12px;
+}
+.session-save {
+  font-size: 12px;
+  color: #59784d;
+  text-align: center;
+}
+.session-program {
+  font-size: 12px;
+  margin: 16px 0;
+  overflow-wrap: anywhere;
+}
+.session-progress {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: #718366;
+}
+.gym-session > progress {
+  width: 100%;
+  height: 6px;
+  accent-color: #426246;
+  margin: 12px 0 18px;
+}
+.session-exercise {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.session-exercise h1 {
+  font-size: 24px;
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.session-exercise .exercise-thumbnail {
+  width: 72px;
+  height: 72px;
+  flex-basis: 72px;
+}
+.session-prescription {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.session-prescription span {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #eaf1e2;
+  font-size: 14px;
+  color: #516d44;
+  white-space: pre-wrap;
+}
+.session-instruction {
+  font-size: 14px;
+  color: #516d44;
+  white-space: pre-wrap;
+}
+.session-series {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 16px 0;
+  overscroll-behavior-x: contain;
+}
+.session-series button {
+  flex-shrink: 0;
+  min-height: 44px;
+  border: 1px solid #d8e2ce;
+  border-radius: 10px;
+  background: white;
+  color: #6b7e5f;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+.session-series button.selected {
+  background: #e6efd9;
+  border-color: #809967;
+  color: #354f29;
+}
+.session-series button.done {
+  border-color: #6d975c;
+}
+.session-entry {
+  padding: 20px;
+}
+.session-entry h2 {
+  font-size: 18px;
+  margin: 0 0 18px;
+}
+.session-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.session-entry label {
+  display: grid;
+  gap: 8px;
+  color: #617655;
+  font-size: 14px;
+  min-width: 0;
+}
+.session-inputs input {
+  width: 100%;
+  min-width: 0;
+  min-height: 76px !important;
+  text-align: center;
+  font-size: 30px !important;
+  font-weight: 700;
+  padding: 12px 4px;
+}
+.session-duration {
+  margin: 12px 0;
+  color: #708463;
+  font-size: 13px;
+}
+.session-duration summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.session-duration input {
+  width: 100%;
+  font-size: 20px;
+  min-height: 52px;
+}
+.session-validate {
+  width: 100%;
+  min-height: 56px;
+  font-size: 17px !important;
+  margin-top: 10px;
+}
+.session-validate.validated {
+  background: #668353;
+}
+.session-caption {
+  font-size: 12px;
+  text-align: center;
+  margin: 14px 0 0;
+}
+.session-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+.session-tools button {
+  min-height: 44px;
+  font-size: 13px;
+  flex: 1 1 140px;
+}
+.session-notes {
+  font-size: 14px;
+  color: #607653;
+  white-space: pre-wrap;
+}
+.session-notes summary {
+  padding: 12px 0;
+  min-height: 44px;
+  cursor: pointer;
+}
+.session-footer {
+  position: sticky;
+  bottom: 0;
+  background: #f5f6f3f5;
+  padding: 12px 0 max(12px, env(safe-area-inset-bottom));
+  margin-top: 20px;
+  border-top: 1px solid #dfe6d8;
+  z-index: 5;
+}
+.session-footer > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 10px;
+}
+.session-footer button {
+  min-height: 48px;
+  font-size: 13px;
+  padding: 10px 8px;
+}
+.session-footer > .text-button {
+  width: 100%;
+  justify-content: center;
+  color: #768a67;
+  margin-top: 8px;
+}
+.session-finished {
+  text-align: center;
+  color: #426246;
+  font-weight: 600;
+}
+.gym-history-item {
+  border-top: 1px solid #e0e7d9;
+  padding-bottom: 12px;
+}
+.gym-history-item .gym-history-row {
+  border: 0;
+}
+.gym-history-item > .outline {
+  min-height: 44px;
+}
+.gym-view-switch {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+@media (max-width: 360px) {
+  .session-inputs {
+    gap: 10px;
+  }
+  .session-exercise h1 {
+    font-size: 21px;
+  }
+  .session-exercise .exercise-thumbnail {
+    width: 56px;
+    height: 56px;
+    flex-basis: 56px;
+  }
+  .session-entry {
+    padding: 16px;
+  }
+  .session-save {
+    font-size: 11px;
+  }
+  .session-topbar button {
+    padding: 10px 8px;
+  }
+}
+
+.session-convention {
+  font-size: 12px;
+  color: #617655;
+  margin: 14px 0 0;
+  overflow-wrap: anywhere;
+}

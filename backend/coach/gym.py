@@ -720,6 +720,23 @@ class Conflict(ValueError):
     pass
 
 
+class WorkoutDelete(BaseModel):
+    revision: int = Field(ge=1)
+
+
+def delete_workout(key, revision):
+    with lock:
+        value = db.record("gym_workout", key)
+        if not value:
+            return None
+        if value.get("finished_at"):
+            raise Conflict("Une séance terminée ne peut pas être supprimée ici.")
+        if value["revision"] != revision:
+            raise Conflict("Séance modifiée ailleurs. Recharge avant de la supprimer.")
+        db.delete_record("gym_workout", key)
+        return {"deleted": True}
+
+
 def update_workout(key, body):
     with lock:
         value = db.record("gym_workout", key)

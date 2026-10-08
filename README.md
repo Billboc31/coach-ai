@@ -323,7 +323,19 @@ les futures séances ; la prescription des séances créées par cette version r
 Choisir programme/cycle/semaine, puis **Commencer la séance**. Saisir kg et reps, ou secondes
 pour un maintien, puis valider chaque série. Ajouter des séries libres si le programme ne
 précise pas leur nombre. Autosave après une courte pause, statut visible, reprise des séances
-en cours et brouillon dans l’onglet navigateur en cas d’échec. Un conflit exige une comparaison
+en cours dans un **mode séance simplifié** : navigation générale masquée, exercice courant,
+grands champs poids/reps, validation et passage à la prochaine série encore à faire. La durée
+est accessible pour les maintiens. « Même poids que la série précédente » recopie uniquement
+la charge sur demande ; aucune répétition ou réussite n'est inventée. **Détails** ouvre la vue
+complète (technique, vidéo, historique et comparaison des conflits), sans perdre la saisie.
+**Quitter** sauvegarde les modifications avant retour aux programmes ; une erreur bloque la
+sortie et garde le brouillon. Les séances terminées restent consultables dans la vue complète.
+Dans **Mes séances enregistrées**, **Supprimer** est disponible pour une séance inachevée.
+La confirmation efface définitivement cette séance et ses séries saisies, sans toucher aux
+programmes, à l'Excel ni aux séances terminées. Une modification concurrente impose de
+recharger avant suppression ; un brouillon supprimé ne peut pas être recréé par un autosave.
+
+Le brouillon reste dans l’onglet navigateur en cas d’échec. Un conflit exige une comparaison
 et une action explicite avant remplacement. Ce lot exige le réseau pour créer/terminer les
 séances ; le brouillon d’onglet ne constitue pas un mode hors ligne complet ni une sauvegarde.
 Terminer conserve la séance et son historique ; la correction d’une séance terminée reste

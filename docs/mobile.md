@@ -23,6 +23,12 @@ Une actualisation du dashboard avec les mêmes messages ne déplace pas la lectu
 En séance, les réglages et illustrations de référence se déplient. Les séries gardent
 leur autosave, leurs limites et leur validation. Le poids propose un clavier décimal,
 les reps/secondes un clavier numérique, et la case de validation mesure 44 px.
+Les séances en cours s'ouvrent désormais dans un écran dédié : navigation générale masquée,
+un exercice et une série à la fois, champs agrandis et bouton Valider. Validation rejoint la
+prochaine série non validée ; le poids précédent se recopie uniquement par action explicite.
+Détails permet de retrouver technique/vidéo/historique et les outils de résolution de conflit.
+Quitter attend la sauvegarde. La liste des séances permet la suppression confirmée des
+séances inachevées et de leurs séries ; les séances terminées n'offrent pas cette commande.
 
 ## Validation
 
@@ -38,6 +44,12 @@ sur téléphone, scroll du conteneur sur tablette/ordinateur, modèle Sol choisi
 envoi de la question avec ce modèle, accès à la rédaction après réponse, et conservation
 d'un choix manuel de modèle après rechargement. Sélection testée aussi avec Sol absent
 ou un ancien choix retiré du catalogue.
+
+Un lot complémentaire à ces six largeurs vérifie le mode dédié, deux séries poids/reps
+et autosave, changement d'exercice, aller-retour détails/mode simple sans perte, sortie,
+annulation puis confirmation de suppression d'une séance en cours. Tests API locaux :
+ownership, origine autorisée, révision périmée, refus d'une séance terminée et absence de
+résurrection après suppression. Ces données sont fictives.
 
 Cette vérification n'utilise ni compte Garmin ni session Railway. Le comportement
 du clavier logiciel, de la barre Safari et des zones de sécurité nécessite encore

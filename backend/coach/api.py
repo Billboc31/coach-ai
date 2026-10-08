@@ -402,6 +402,17 @@ def gym_workout_read(key: str):
     return value
 
 
+@app.delete("/api/gym/workouts/{key}", dependencies=[Depends(require_session)])
+def gym_workout_delete(key: str, body: gym.WorkoutDelete):
+    try:
+        result = gym.delete_workout(key, body.revision)
+        if result is None:
+            raise HTTPException(404, "Séance introuvable.")
+        return result
+    except gym.Conflict as exc:
+        raise HTTPException(409, str(exc)) from None
+
+
 @app.put("/api/gym/workouts/{key}", dependencies=[Depends(require_session)])
 def gym_workout_update(key: str, body: gym.WorkoutUpdate):
     try:
