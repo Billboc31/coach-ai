@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useEffect, type ReactNode} from "react";
 import { ArrowLeft, ArrowRight, Check, Plus, Save } from "lucide-react";
 import { ExerciseThumbnail } from "./exercise-thumbnail";
 import { conventionLabels } from "./exercise-catalogue";
@@ -6,6 +6,11 @@ import type { Exercise, SetLog } from "./gym";
 import "./gym-session.css";
 
 type Props = {
+  exercises: Exercise[];
+  allSets: Record<string,SetLog[]>;
+  onSelect: (index:number)=>void;
+  restTimer: ReactNode;
+  onRest: ()=>void;
   exercise: Exercise;
   rows: SetLog[];
   index: number;
@@ -33,29 +38,18 @@ type Props = {
 };
 export function GymSession(p: Props) {
   const { exercise: e, rows } = p;
-  const [selected, setSelected] = useState(() => {
-    const i = rows.findIndex((s) => !s.done);
-    return i < 0 ? Math.max(rows.length - 1, 0) : i;
-  });
-  const [duration, setDuration] = useState(false);
-  const i = Math.min(selected, rows.length - 1),
-    row = rows[i];
+  useEffect(()=>{window.scrollTo({top:0});},[e.id]);
   const completed = rows.filter((s) => s.done).length;
-  const valid =
-    (row.reps != null || row.seconds != null) &&
-    [row.weight, row.reps, row.seconds].every(
-      (v) => v == null || (Number.isFinite(v) && v >= 0),
-    ) &&
-    (row.weight == null || row.weight <= 2000) &&
-    (row.reps == null || (Number.isInteger(row.reps) && row.reps <= 1000)) &&
-    (row.seconds == null ||
-      (Number.isInteger(row.seconds) && row.seconds <= 7200));
-  function validate() {
-    p.onField(i, "done", !row.done);
-    if (!row.done) {
-      const next = rows.findIndex((s, n) => n > i && !s.done);
-      if (next >= 0) setSelected(next);
-    }
+  function valid(row:SetLog) {
+    return (row.reps != null || row.seconds != null) &&
+      [row.weight,row.reps,row.seconds].every(v=>v==null || (Number.isFinite(v)&&v>=0)) &&
+      (row.weight==null || row.weight<=2000) &&
+      (row.reps==null || (Number.isInteger(row.reps)&&row.reps<=1000)) &&
+      (row.seconds==null || (Number.isInteger(row.seconds)&&row.seconds<=7200));
+  }
+  function validate(i:number) {
+    p.onField(i,"done",!rows[i].done);
+    if(!rows[i].done)p.onRest();
   }
   const editable = !p.locked && !p.finishing;
   const hasReference =
@@ -131,7 +125,7 @@ export function GymSession(p: Props) {
       ) : (
         <>
           <div className="session-prescription">
-            <span>{e.reps || "Consigne libre"}</span>
+            <span>{e.reps?.replace(/\s*\n\s*/g," · ") || "Consigne libre"}</span>
             {e.rest && <span>Repos {e.rest}</span>}
             {e.tempo && <span>Tempo {e.tempo}</span>}
           </div>
@@ -154,112 +148,28 @@ export function GymSession(p: Props) {
           d’origine ; reprise des charges désactivée.
         </p>
       )}
-      <div className="session-series" aria-label="Choisir une série">
-        {rows.map((s, n) => (
-          <button
-            key={n}
-            className={(n === i ? "selected " : "") + (s.done ? "done" : "")}
-            aria-pressed={n === i}
-            onClick={() => setSelected(n)}
-          >
-            Série {n + 1}
-            {s.done && <Check size={16} />}
-          </button>
-        ))}
-      </div>
-      <section
-        className="session-entry card"
-        aria-label={`Saisie série ${i + 1}`}
-      >
-        <h2>Série {i + 1}</h2>
-        <div className="session-inputs">
-          <label>
-            Poids · kg
-            <input
-              type="number"
-              inputMode="decimal"
-              min={0}
-              max={2000}
-              step="0.5"
-              value={row.weight ?? ""}
-              aria-label={`Poids série ${i + 1}`}
-              disabled={!editable}
-              onChange={(ev) =>
-                p.onField(
-                  i,
-                  "weight",
-                  ev.target.value === "" ? null : Number(ev.target.value),
-                )
-              }
-            />
-          </label>
-          <label>
-            Répétitions
-            <input
-              type="number"
-              inputMode="numeric"
-              min={0}
-              max={1000}
-              step={1}
-              value={row.reps ?? ""}
-              aria-label={`Répétitions série ${i + 1}`}
-              disabled={!editable}
-              onChange={(ev) =>
-                p.onField(
-                  i,
-                  "reps",
-                  ev.target.value === "" ? null : Number(ev.target.value),
-                )
-              }
-            />
-          </label>
-        </div>
-        {i > 0 && rows[i - 1].weight != null && (
-          <button
-            className="text-button"
-            disabled={!editable}
-            onClick={() => p.onField(i, "weight", rows[i - 1].weight)}
-          >
-            Même poids que la série précédente · {rows[i - 1].weight} kg
-          </button>
-        )}
-        <details
-          open={duration || row.seconds != null}
-          onToggle={(ev) => setDuration(ev.currentTarget.open)}
-          className="session-duration"
-        >
-          <summary>Durée pour un maintien</summary>
-          <label>
-            Secondes
-            <input
-              type="number"
-              inputMode="numeric"
-              min={0}
-              max={7200}
-              step={1}
-              value={row.seconds ?? ""}
-              aria-label={`Secondes série ${i + 1}`}
-              disabled={!editable}
-              onChange={(ev) =>
-                p.onField(
-                  i,
-                  "seconds",
-                  ev.target.value === "" ? null : Number(ev.target.value),
-                )
-              }
-            />
-          </label>
+      <details className="session-exercise-list">
+        <summary>Les {p.total} exercices de la séance</summary>
+        <nav aria-label="Exercices de la séance">
+          {p.exercises.map((x,n)=><button key={x.id} className={n===p.index?'active':''} aria-current={n===p.index?'step':undefined} disabled={p.finishing} onClick={()=>p.onSelect(n)}>
+            <ExerciseThumbnail name={x.canonical_name||x.movement_name||x.name} thumbnail={x.thumbnail} document={x.is_document}/>
+            <span>{n+1}. {x.canonical_name||x.movement_name||x.name}<small>{p.allSets[x.id].filter(s=>s.done).length}/{p.allSets[x.id].length} séries</small></span>
+          </button>)}
+        </nav>
+      </details>
+      <section className="session-entry card" aria-label="Toutes les séries">
+        <div className="session-row session-row-head"><span>Série</span><span>kg</span><span>Reps</span><span>Faite</span></div>
+        {rows.map((row,i)=><div className={'session-set-block '+(row.done?'done':'')} key={i}>
+          <div className="session-row">
+            <b>{i+1}</b>
+            <input type="number" inputMode="decimal" min={0} max={2000} step="0.5" value={row.weight??''} aria-label={`Poids série ${i+1}`} disabled={!editable} onChange={ev=>p.onField(i,'weight',ev.target.value===''?null:Number(ev.target.value))}/>
+            <input type="number" inputMode="numeric" min={0} max={1000} step={1} value={row.reps??''} aria-label={`Répétitions série ${i+1}`} disabled={!editable} onChange={ev=>p.onField(i,'reps',ev.target.value===''?null:Number(ev.target.value))}/>
+            <button className={'session-check '+(row.done?'validated':'')} aria-label={`Valider la série ${i+1}`} aria-pressed={row.done} disabled={!editable||(!row.done&&!valid(row))} onClick={()=>validate(i)}><Check size={24}/></button>
+          </div>
+        </div>)}
+        <details className="session-row-options"><summary>Durées / recopier une charge</summary>
+          {rows.map((row,i)=><div className="session-extra-row" key={i}><label>Secondes · série {i+1}<input type="number" inputMode="numeric" min={0} max={7200} step={1} value={row.seconds??''} aria-label={`Secondes série ${i+1}`} disabled={!editable} onChange={ev=>p.onField(i,'seconds',ev.target.value===''?null:Number(ev.target.value))}/></label>{i>0&&rows[i-1].weight!=null&&<button className="text-button" disabled={!editable} onClick={()=>p.onField(i,'weight',rows[i-1].weight)}>Série {i+1} : même poids que la précédente · {rows[i-1].weight} kg</button>}</div>)}
         </details>
-        <button
-          className={
-            "primary session-validate " + (row.done ? "validated" : "")
-          }
-          disabled={!editable || (!row.done && !valid)}
-          onClick={validate}
-        >
-          <Check size={22} />
-          {row.done ? "Annuler la validation" : "Valider cette série"}
-        </button>
         <p className="session-convention">
           {
             conventionLabels[
@@ -274,9 +184,10 @@ export function GymSession(p: Props) {
             : ""}
         </p>
         <p className="session-caption">
-          Renseigne ce que tu viens de faire. Les champs vides restent inconnus.
+          Charges connues et reps prévues sont des suggestions : ajuste puis coche ce que tu as fait. Les champs vides restent inconnus.
         </p>
       </section>
+      {!p.locked&&p.restTimer}
       <div className="session-tools">
         {hasReference && (
           <button
@@ -292,7 +203,6 @@ export function GymSession(p: Props) {
           disabled={!editable || rows.length >= 30}
           onClick={() => {
             p.onAdd();
-            setSelected(rows.length);
           }}
         >
           <Plus size={18} />

@@ -137,11 +137,19 @@ une modification concurrente retourne 409 et un propriétaire différent voit 40
 record gym_workout est supprimé ; l'update refuse un ID absent et ne ressuscite pas le brouillon.
 La confirmation UI avertit que les séries saisies seront effacées ; le cache d'onglet correspondant
 est retiré uniquement après succès. Les programmes et performances Excel ne sont pas modifiés.
-GymSession est une présentation du même état WorkoutScreen : série active, validation, champs
+GymSession est une présentation du même état WorkoutScreen : toutes les séries, validation, champs
 et actions partagent autosave, génération de brouillon et révisions. La vue détaillée reste
 accessible et les composants gardent le même état. Le mode dédié masque navigation/header/footer
 avec une classe de body retirée au changement de vue ou démontage. Sortir attend la sauvegarde
 des modifications ; une erreur de réseau ou de révision conserve le brouillon et l'écran.
+Les nouvelles séances reçoivent des suggestions non validées : reps numériques simples ou
+liste explicite sur plusieurs lignes, poids connus de l'historique compatible ou de l'Excel
+confirmé en kg. Les historiques retournent series_index pour ne pas décaler une montée en
+charge dont certaines séries n'ont pas été validées. Les fiches documentaires restent vierges.
+Les logs existants ne sont pas réécrits. Le minuteur appartient à WorkoutScreen et utilise une
+échéance Date.now() ; un intervalle rafraîchit l'affichage, sans accumulation des retards.
+Seule une validation explicite démarre le repos, dont les durées ambiguës restent manuelles.
+Pause/reprise et changement de vue gardent l'état ; démontage/recharge le remet à zéro.
 Aucune nouvelle table ; le volume SQLite existant garde l’ensemble. Les identifiants d’exercice
 privés restent dérivés du nom normalisé. Un catalogue public JSON embarqué fournit des
 identités RepDB stables ; les aliases précis et signatures lexicales équivalentes sont reconnus, les ambiguïtés

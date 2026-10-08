@@ -601,8 +601,8 @@ def history(exercise_id):
     for raw, exercise_raw in rows:
         workout, exercise = json.loads(raw), json.loads(exercise_raw)
         performed = [
-            s
-            for s in exercise["logged_sets"]
+            {**s, "series_index": i}
+            for i, s in enumerate(exercise["logged_sets"])
             if s["done"] and (s["reps"] is not None or s.get("seconds") is not None)
         ]
         result.append(
@@ -658,6 +658,42 @@ def overview():
     }
 
 
+def planned_logs(item, reference=None, imported=None):
+    """Suggestions only: explicit prescription and compatible known loads, never success."""
+    if item.get("is_document"):
+        return [
+            {"weight": None, "reps": None, "seconds": None, "done": False}
+            for _ in range(min(item.get("sets") or 1, 30))
+        ]
+    raw = str(item.get("reps") or "").strip()
+    prescribed = []
+    if re.fullmatch(r"\d{1,3}", raw):
+        prescribed = [int(raw)]
+    elif re.fullmatch(r"\d{1,3}(?:\s*\n\s*\d{1,3})+", raw):
+        prescribed = [int(v) for v in raw.split()]
+    count = item.get("sets") or len(prescribed) or 1
+    # An explicit multiline rep prescription defines the ramp's individual sets.
+    if count == 1 and len(prescribed) > 1:
+        count = len(prescribed)
+    count = min(count, 30)
+    prior = {s.get("series_index", i): s for i, s in enumerate((reference or {}).get("sets", []))}
+    excel = next((h["weights_kg"] for h in imported or [] if h.get("weights_kg")), [])
+    result = []
+    for i in range(count):
+        weight = prior.get(i, {}).get("weight")
+        if weight is None and i < len(excel):
+            weight = excel[i]
+        if weight is None:
+            weight = item.get("weight")
+        reps = (
+            prescribed[0]
+            if len(prescribed) == 1
+            else (prescribed[i] if i < len(prescribed) else None)
+        )
+        result.append({"weight": weight, "reps": reps, "seconds": None, "done": False})
+    return result
+
+
 def start(program_id, day_id):
     with lock:
         program = repair_program(db.record("gym_program", program_id))
@@ -675,16 +711,15 @@ def start(program_id, day_id):
                 continue
             past = history(item["exercise_id"])
             reference = past[0] if past else None
-            logs = [
-                {"weight": None, "reps": None, "seconds": None, "done": False}
-                for _ in range(item["sets"] or 1)
-            ]
+            imported = imported_history(item["exercise_id"])
+            decorated = document_view(exercise_catalog.decorate(item), program)
+            logs = planned_logs(decorated, reference, imported)
             rows.append(
                 {
-                    **document_view(exercise_catalog.decorate(item), program),
+                    **decorated,
                     "logged_sets": logs,
                     "reference": reference,
-                    "excel_history": imported_history(item["exercise_id"]),
+                    "excel_history": imported,
                 }
             )
         if not rows:

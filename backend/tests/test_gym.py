@@ -121,11 +121,11 @@ def test_preview_mapping_merged_cells_history_and_repeat_import(workspace):
 def test_workout_actual_sets_revision_finish_and_reference(workspace):
     _, p, _ = imported(kg=True)
     w = gym.start(p["id"], p["days"][0]["id"])
-    assert all(
-        s["weight"] is None and not s["done"] for e in w["exercises"] for s in e["logged_sets"]
-    )
+    assert all(not s["done"] for e in w["exercises"] for s in e["logged_sets"])
     e = w["exercises"][0]
     assert e["excel_history"][0]["weights_kg"] is not None
+    assert e["logged_sets"][0]["weight"] == e["excel_history"][0]["weights_kg"][0]
+    assert e["logged_sets"][0]["reps"] == int(e["reps"])
     sets = {x["id"]: x["logged_sets"] for x in w["exercises"]}
     sets[e["id"]][0] = {"weight": 0, "reps": 8, "done": True}
     update = gym.WorkoutUpdate(revision=1, sets=sets)
@@ -148,6 +148,7 @@ def test_workout_seconds_and_invalid_series_do_not_overwrite(workspace):
     w = gym.start(p["id"], p["days"][0]["id"])
     sets = {x["id"]: x["logged_sets"] for x in w["exercises"]}
     sets[w["exercises"][0]["id"]][0]["done"] = True
+    sets[w["exercises"][0]["id"]][0]["reps"] = None
     with pytest.raises(ValueError):
         gym.update_workout(w["id"], gym.WorkoutUpdate(revision=1, sets=sets))
     assert db.record("gym_workout", w["id"])["revision"] == 1

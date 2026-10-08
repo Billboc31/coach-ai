@@ -323,11 +323,19 @@ les futures séances ; la prescription des séances créées par cette version r
 Choisir programme/cycle/semaine, puis **Commencer la séance**. Saisir kg et reps, ou secondes
 pour un maintien, puis valider chaque série. Ajouter des séries libres si le programme ne
 précise pas leur nombre. Autosave après une courte pause, statut visible, reprise des séances
-en cours dans un **mode séance simplifié** : navigation générale masquée, exercice courant,
-grands champs poids/reps, validation et passage à la prochaine série encore à faire. La durée
-est accessible pour les maintiens. « Même poids que la série précédente » recopie uniquement
-la charge sur demande ; aucune répétition ou réussite n'est inventée. **Détails** ouvre la vue
-complète (technique, vidéo, historique et comparaison des conflits), sans perdre la saisie.
+en cours dans un **mode séance simplifié** : navigation générale masquée, toutes les séries
+visibles ensemble, champs poids/reps et coche verte par série. À la création, les charges
+compatibles connues sont proposées série par série et les reps numériques prévues sont
+préremplies. Une consigne explicite sur plusieurs lignes (12, 8, 5) crée trois séries ; une
+fourchette, une consigne libre ou une charge inconnue restent à saisir. Les suggestions ne
+sont jamais validées automatiquement. La liste des exercices avec miniatures et progression
+permet de naviguer directement. Les maintiens et la recopie de charge sont dans les options.
+Le repos démarre après validation si sa durée est précise, avec durée personnalisable,
+pause/reprise et passage du repos. Le minuteur suit l'horloge et continue en changeant
+l'exercice ou la vue ; il ne survit pas à la fermeture/recharge de la page.
+**Détails** ouvre la vue complète (technique, vidéo, historique et comparaison des conflits),
+sans perdre la saisie. Les anciennes séances gardent leurs séries ; le préremplissage concerne
+les nouvelles, et « Reprendre mes charges » complète uniquement les charges vides non validées.
 **Quitter** sauvegarde les modifications avant retour aux programmes ; une erreur bloque la
 sortie et garde le brouillon. Les séances terminées restent consultables dans la vue complète.
 Dans **Mes séances enregistrées**, **Supprimer** est disponible pour une séance inachevée.

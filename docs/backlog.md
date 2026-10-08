@@ -116,10 +116,12 @@ unités et consignes ; gérer cellules vides/fusionnées sans inventer de prescr
 ### GYM-02 — Saisie pendant la séance (P1)
 Livré : écran de séance, kg/reps/secondes par série, validation, ajout de séries, autosave,
 brouillon d’onglet, reprise, historique en base, contrôle des révisions et fin de séance.
-Mode séance dédié simplifié par défaut, retour à la vue complète, grands champs/validation,
-recopie explicite de la dernière charge, sortie avec sauvegarde, suppression confirmée
+Mode séance dédié simplifié par défaut, toutes les séries visibles, coche verte, poids connus
+et reps prévues proposés à la création sans validation automatique, liste illustrée des exercices,
+minuteur de repos avec pause/reprise et durée personnalisée, retour à la vue complète,
+recopie explicite des charges vides, sortie avec sauvegarde, suppression confirmée
 des séances inachevées uniquement (ownership, révision et refus des séances terminées).
-Restent : vrai mode hors ligne, minuteur de repos/RPE, correction des séances terminées.
+Restent : vrai mode hors ligne, RPE, persistance du minuteur après fermeture, correction des séances terminées.
 Dépendances : GYM-01. Poids/réps par série, précédente performance, minuteur, difficulté et
 notes. Autosave et reprise après fermeture ; mode hors ligne avec synchronisation. Critères :
 pas de perte/duplication, saisie mobile rapide et distinction prévu/réalisé.

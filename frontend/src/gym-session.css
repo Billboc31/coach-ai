@@ -266,3 +266,36 @@ body.gym-session-active .app > main {
   margin: 14px 0 0;
   overflow-wrap: anywhere;
 }
+
+.session-row { display:grid;grid-template-columns:34px minmax(0,1fr) minmax(0,1fr) 48px;gap:10px;align-items:center; }
+.session-row-head { font-size:12px;color:#617655;text-align:center;margin-bottom:8px; }
+.session-row input { width:100%;min-width:0;min-height:52px;font-size:22px!important;text-align:center;padding:8px 2px; }
+.session-row > b {text-align:center;}
+.session-check {min-width:48px;min-height:52px;border:1px solid #a6bea7;border-radius:12px;background:#fff;color:#52725a;justify-content:center;padding:8px;}
+.session-check.validated {background:#268449;color:white;border-color:#268449;}
+.session-set-block {padding:8px 0;border-bottom:1px solid #e0e7d9;}
+.session-set-block.done {background:#eef6ed;}
+.session-row-options {font-size:12px;}
+.session-row-options summary {cursor:pointer;min-height:44px;padding:12px 0;color:#617655;}
+.session-row-options input {width:100%;font-size:16px;min-height:44px;}
+.session-exercise-list {margin:16px 0;}
+.session-exercise-list summary {min-height:44px;cursor:pointer;padding:12px 0;}
+.session-exercise-list nav {display:grid;gap:8px;}
+.session-exercise-list nav button {min-width:0;min-height:64px;background:white;border:1px solid #d8e2ce;border-radius:12px;padding:8px;gap:12px;color:#426246;text-align:left;}
+.session-exercise-list nav button.active {background:#eaf1e2;border-color:#426246;}
+.session-exercise-list nav span {min-width:0;overflow-wrap:anywhere;}
+.session-exercise-list nav small {display:block;margin-top:4px;}
+.session-exercise-list .exercise-thumbnail {width:48px;height:48px;flex-basis:48px;}
+.session-rest {background:#eaf1e2;padding:16px;border-radius:16px;margin-top:16px;}
+.session-rest > div:first-child {display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.session-rest strong {font-size:28px;}
+.session-rest label {display:grid;font-size:12px;gap:6px;margin:12px 0;}
+.session-rest input {width:100%;min-height:44px;font-size:16px;}
+.session-rest-actions {display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;}
+.session-rest-actions button {min-height:44px;}
+.session-rest small {display:block;color:#617655;}
+.session-entry {padding:14px;}
+.session-row-options {margin-top:8px;}
+.session-extra-row {padding:8px 0;}
+.session-rest summary {cursor:pointer;min-height:44px;padding:12px 0;font-size:13px;}
+.session-rest-actions {margin-bottom:0;}

@@ -45,8 +45,10 @@ envoi de la question avec ce modèle, accès à la rédaction après réponse, e
 d'un choix manuel de modèle après rechargement. Sélection testée aussi avec Sol absent
 ou un ancien choix retiré du catalogue.
 
-Un lot complémentaire à ces six largeurs vérifie le mode dédié, deux séries poids/reps
-et autosave, changement d'exercice, aller-retour détails/mode simple sans perte, sortie,
+Un lot complémentaire à ces six largeurs vérifie le mode dédié, trois séries visibles
+avec suggestions, coches et autosave, liste illustrée, repos à la validation, passage de
+cinq secondes par horloge simulée, pause/reprise, conservation du minuteur au changement
+d'exercice et aller-retour détails/mode simple sans perte, sortie,
 annulation puis confirmation de suppression d'une séance en cours. Tests API locaux :
 ownership, origine autorisée, révision périmée, refus d'une séance terminée et absence de
 résurrection après suppression. Ces données sont fictives.
