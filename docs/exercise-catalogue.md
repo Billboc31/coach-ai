@@ -39,8 +39,10 @@ lors d’une redistribution ou adaptation, y compris commerciale.
 L’ID canonique est `wger:<id>`. Les IDs privés issus de l’import et les noms d’origine
 restent inchangés. Une correspondance exacte non ambiguë peut être affichée directement ;
 les formulations équivalentes (ordre, prépositions, pluriels et abréviations usuelles)
-sont associées automatiquement si une seule variante correspond. Les détails d’angle,
-prise et matériel ne sont pas supprimés. Le bilan du programme liste les noms encore
+sont associées automatiquement si une seule variante correspond. Les abréviations usuelles de coaching (DVP, DB, barre Z) sont normalisées, ainsi que
+quelques annotations d’organisation/tempo (gamme montante, tension continue), sans
+modifier le texte original. Les détails d’angle, prise et matériel ne sont pas supprimés.
+Les renvois à une autre fiche, mobilité et variantes absentes restent non identifiés. Le bilan du programme liste les noms encore
 ambigus, sans revalidation des fiches reconnues. Aucun réimport nécessaire. Une décision
 manuelle ou un retrait de correspondance reste prioritaire. Un rapprochement approximatif
 reste une suggestion. L’utilisateur peut confirmer,

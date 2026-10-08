@@ -87,6 +87,15 @@ Un navigateur s’ouvre sur OpenAI. Autoriser explicitement l’identité et l�
 forfait. Le callback doit revenir sur **le même ordinateur**, à `127.0.0.1:1455/auth/callback`.
 Si le port est occupé : `coach chatgpt-login --port 1456`.
 
+Le coach poursuit la discussion en français avec tutoiement : réponses adaptées au dernier
+message, relances courtes, analyse détaillée sur demande ou si utile. Pas de bilan Garmin,
+titres, listes, salutations répétées ou question finale imposés à chaque tour. Le dossier
+profil/mémoire/activités reste disponible en arrière-plan dans un message documentaire
+séparé des consignes ; il ne remplace pas la demande actuelle. L’historique conserve son
+ordre et le vrai message utilisateur reste le dernier. Les propositions mémoire/planning
+restent séparées de la réponse et soumises aux confirmations existantes. La qualité de ton
+reste à évaluer avec le modèle choisi : voir [scénarios de conversation](docs/coach-conversation.md).
+
 Dans l’interface, charger les modèles et envoyer une question. Les données de contexte
 sont envoyées à OpenAI uniquement lors de cette action. L’API ne renvoie jamais les jetons au frontend. Lors d’un import manuel,
 le navigateur lit le fichier choisi et le transmet directement à l’app privée. Une réponse n’est enregistrée qu’après `response.completed` ; un quota épuisé

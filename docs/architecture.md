@@ -152,3 +152,17 @@ d’envoi de programme privé à un service de recherche, lecteur chargé après
 Les groupes muscles/muscles_secondary proviennent du snapshot, sans inférence depuis le
 nom. La silhouette SVG est un dessin original schématique local ; couleur et légende
 textuelle distinguent les groupes principaux/secondaires, sans score d’activation.
+
+## Conversation et données de référence
+
+`chatgpt.respond` conserve les consignes générales et le contrat JSON dans `instructions`.
+Le dossier applicatif JSON est placé dans un message user documentaire distinct, puis les
+vrais échanges sont ajoutés dans leur ordre, avec la question actuelle en dernier. Le dossier
+n’est pas enregistré comme message de discussion, ni traité comme demande de souvenirs ;
+les règles d’extraction restent ancrées au vrai dernier message utilisateur. Les 20 messages
+récents, la mémoire et les plafonds de données restent disponibles. Aucun appel IA de style
+supplémentaire, aucune suppression d’historique, aucun stockage distant de réponse activé.
+Le coach privilégie la conversation et les informations pertinentes ; un bilan complet
+n’est pas déclenché par la seule présence des données. Les tests vérifient la séparation
+des consignes/données, l’ordre des rôles et la conservation des nulls/zéros et des cartes.
+La qualité linguistique doit être évaluée avec le vrai modèle et les scénarios documentés.

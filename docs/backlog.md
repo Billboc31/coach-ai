@@ -85,6 +85,10 @@ budget de contexte, références vers mesures et messages. Calculs réalisés en
 répondre à une question datée, signaler données absentes, aucune mesure inventée, coût/latence mesurés.
 
 ### COACH-02 — Évaluation multisport (P0 avant diffusion)
+Livré : données documentaires séparées des consignes, dernier message prioritaire,
+conversation naturelle par défaut, analyses proportionnées à la demande, relances courtes,
+propositions mémoire/planning indépendantes du ton. Contrats d’inputs et régressions testés ;
+qualité réelle à évaluer avec les scénarios dans docs/coach-conversation.md.
 Dépendances : MEM-02, RAG-02. Scénarios validés : déplacer un footing après un match, prendre
 la muscu en compte, conserver les priorités, gérer les sensations et douleurs sans diagnostic.
 Critères : réponses évaluées par le propriétaire, références correctes, questions utiles,
@@ -120,7 +124,8 @@ et unités confirmables, historique par exercice, séries validées dans le cont
 média Excel, neuf familles de dessins locaux et lecteur YouTube configurable. Tutoriels
 sélectionnables pour quelques variantes courantes et recherche précise modifiable.
 Catalogue livré : 918 identités wger, aliases précis, reconnaissance automatique des
-formulations équivalentes sur tous les imports, bilan des noms restant à préciser,
+formulations équivalentes et vocabulaire de coaching (DVP, variantes guidées, barre/corde,
+Scott/EZ, machines assis/allongé) sur tous les imports, bilan des noms restant à préciser,
 suggestions/confirmation de variantes,
 conventions de poids et repères machines, historique compatible entre noms, crédits/licences
 et démonstrations GIF/vidéo/photos disponibles, silhouette musculaire face/dos avec

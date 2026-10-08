@@ -104,6 +104,57 @@ ALIASES = {
         ["squat bulgare haltères", "fente bulgare haltères", "bulgarian split squat dumbbells"],
     ),
 }
+# Additional public coaching vocabulary, with equipment-specific records verified in wger.
+ALIASES.update(
+    {
+        256: ("Élévations frontales", ["élévation frontale", "front raise"]),
+        386: ("Pompes diamant", ["pompe diamant", "diamond push up"]),
+        465: (
+            "Curl au pupitre à la barre EZ",
+            ["curl Larry Scott barre EZ", "Larry Scott barre EZ", "Scott curl EZ bar"],
+        ),
+        569: (
+            "Développé épaules à la barre guidée",
+            [
+                "développé épaule cadre guidé",
+                "développé épaules Smith",
+                "shoulder press smith machine",
+            ],
+        ),
+        614: ("Squat sauté", ["squat jump", "jump squat", "squat jumps"]),
+        660: (
+            "Extension triceps à la barre à la poulie",
+            ["triceps poulie barre", "pushdown barre", "cable bar pushdown"],
+        ),
+        722: ("Montée sur banc à la barre", ["step up barre", "barbell step up"]),
+        1775: ("Oiseau à la machine pec deck", ["butterfly inversé", "reverse pec deck"]),
+        1904: ("Écartés à la machine pec deck", ["butterfly pec", "pec deck fly"]),
+        2628: (
+            "Mollets assis à la machine",
+            ["machine à mollets assis", "mollets machine assis", "seated calf machine"],
+        ),
+        628: (
+            "Tirage bras tendus à la poulie avec barre",
+            ["pull over poulie barre", "pullover poulie barre"],
+        ),
+        530: ("Course sur tapis", ["run tapis", "course tapis", "treadmill run"]),
+        1093: ("Rameur", ["rameur", "rowing ergometer"]),
+    }
+)
+EXTRA_ALIASES = {
+    272: ["biceps marteau haltères"],
+    567: ["développé épaules haltères assis", "développé épaule haltère assis"],
+    615: ["back squat"],
+    365: ["leg curl machine allongé", "leg curl machine couché"],
+    366: ["leg curl machine assis", "ischio leg curl machine assis"],
+    369: ["leg extension machine"],
+    805: ["pushdown corde poulie", "triceps poulie corde", "cable rope pushdown"],
+    580: ["gainage latérale"],
+}
+for source_id, aliases in EXTRA_ALIASES.items():
+    label, existing = ALIASES[source_id]
+    ALIASES[source_id] = (label, [*existing, *aliases])
+
 AMBIGUOUS = {
     "dc",
     "squat",
@@ -117,6 +168,7 @@ AMBIGUOUS = {
     "gainage",
     "leg curl",
     "fentes",
+    "triceps poulie",
     "hip thrust",
     "souleve de terre",
     "romanian deadlift",
@@ -191,6 +243,12 @@ TOKEN_FORMS = {
     "declinee": "decline",
     "couchee": "couche",
     "couchez": "couche",
+    "epaules": "epaule",
+    "assit": "assis",
+    "frontales": "frontale",
+    "mollets": "mollet",
+    "pompes": "pompe",
+    "jumps": "jump",
     "prono": "pronation",
     "supi": "supination",
     "1": "un",
@@ -199,6 +257,10 @@ TOKEN_FORMS = {
 NEUTRAL_WORDS = {"a", "au", "aux", "avec", "de", "des", "du", "la", "le", "les", "the", "with"}
 EXPANSIONS = {
     "dc": "developpe couche",
+    "dvp": "developpe",
+    "dev": "developpe",
+    "kb": "kettlebell",
+    "barrez": "barre ez",
     "sdt": "souleve terre",
     "pdc": "poids corps",
     "unilateral": "un bras",
@@ -207,8 +269,13 @@ EXPANSIONS = {
 
 
 def signature(name):
+    # Coaching annotations alter tempo/organisation, not the documented movement.
+    wording = normalized(name)
+    wording = re.sub(r"^gamme montante\s+", "", wording)
+    wording = re.sub(r"\s+(?:tension continue|a toi a moi)$", "", wording)
+    wording = re.sub(r"\bz bar\b|\bbarre z\b", "barre ez", wording)
     tokens = []
-    for word in normalized(name).split():
+    for word in wording.split():
         for token in EXPANSIONS.get(word, word).split():
             if token not in NEUTRAL_WORDS:
                 tokens.append(TOKEN_FORMS.get(token, token))

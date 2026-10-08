@@ -302,3 +302,28 @@ def test_documented_primary_and_secondary_muscles_are_kept_separate():
     assert bench["muscles"] == ["Chest"]
     assert set(bench["muscles_secondary"]) == {"Shoulders", "Triceps"}
     assert catalogue.catalogue()["wger:81"]["muscles_secondary"] == []
+
+
+def test_coaching_vocabulary_preserves_machine_bar_and_rope_variants():
+    examples = {
+        "DVP épaule avec barre": "wger:566",
+        "DVP épaules haltères assis": "wger:567",
+        "Développé épaule cadre guidé": "wger:569",
+        "Curl Larry Scott barre EZ": "wger:465",
+        "Ischio leg curl machine assis": "wger:366",
+        "Leg curl machine allongé": "wger:365",
+        "Triceps poulie barre": "wger:660",
+        "Triceps poulie corde": "wger:805",
+        "Gamme montante DVP épaules haltères assis tension continue": "wger:567",
+    }
+    for name, expected in examples.items():
+        assert catalogue.automatic(name)[0] == expected
+    for name in [
+        "DVP couché",
+        "Triceps poulie",
+        "Abdos conf fiche",
+        "Fiche mobilité",
+        "DVP épaule haltère debout",
+        "DVP épaule cadre guidé un bras",
+    ]:
+        assert catalogue.automatic(name)[0] is None
