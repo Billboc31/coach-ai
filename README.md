@@ -16,6 +16,10 @@ et les informations que tu lui racontes. Première version personnelle, utilisab
 - Parcours officiel Sign in with ChatGPT pour applications locales : PKCE, state, nonce,
   vérification JWT, autorisation du forfait, catalogue de modèles, renouvellement et inférence.
 - Historique du chat conservé, mémoire durable éditable, résumés datés et recherche lexicale.
+- Après connexion ChatGPT, les modèles se chargent automatiquement : Sol est préféré
+  s'il figure dans le catalogue, sinon le premier modèle disponible. Un choix manuel reste
+  mémorisé dans le navigateur. La discussion s'ouvre au dernier échange et rejoint la
+  nouvelle réponse sans remonter automatiquement lors d'une simple actualisation des données.
 - Contexte : 20 activités récentes, agrégats mensuels et sélection par sport/période.
 - Tests hors réseau et CI. Aucun appel payant automatique.
 

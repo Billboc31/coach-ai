@@ -84,6 +84,13 @@ styles de fonctionnalités ; safe-area-inset et unités dvh adaptent marges et c
 fixes. À moins de 600 px, les formulaires passent en colonne, le calendrier garde sept
 colonnes avec pastilles et agenda détaillé, et la discussion utilise le défilement de page.
 La fiche de référence en séance est repliable ; données et sauvegarde restent identiques.
+useCoachModels lit le catalogue au passage de la connexion ChatGPT en état configuré,
+avec annulation des requêtes obsolètes et erreurs séparées de l'état d'inférence du chat.
+La préférence de modèle est un identifiant non secret dans localStorage, validé contre
+le catalogue courant ; Sol n'est choisi que si son nom/ID est explicitement disponible.
+Le scroll dépend de l'onglet et de la signature du dernier message, jamais de l'objet
+dashboard rafraîchi toutes les 30 secondes. Sur grand écran, le conteneur et l'ancre
+de rédaction sont repositionnés ; sur mobile, le défilement appartient à la page.
 Voir les contrôles et limites de validation dans mobile.md.
 
 Le scheduler démarre et s’arrête avec le lifespan FastAPI. Un tick toutes les 15 secondes

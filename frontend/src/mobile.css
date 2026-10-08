@@ -767,3 +767,17 @@ button > svg {
     transition-duration: 0s !important;
   }
 }
+
+.chat-bottom-anchor { height: 1px; scroll-margin-bottom: 24px; }
+@media (max-width: 900px) {
+  .chat-bottom-anchor { scroll-margin-bottom: calc(var(--mobile-nav-height) + 24px); }
+}
+@media (max-width: 600px) {
+  .activity-toolbar { grid-template-columns: minmax(0, 1fr); }
+  .activity-toolbar label:first-child { grid-column: auto; }
+  .activity-toolbar input[type=date] { display: block; appearance: none; -webkit-appearance: none; min-width: 0; width: 100%; box-sizing: border-box; min-height: 48px; text-align: left; }
+  .activity-toolbar input[type=date]::-webkit-date-and-time-value { min-height: 1.4em; text-align: left; }
+  .sport-card { display: block; width: 100%; }
+  .sport-card > * { width: 100%; }
+  .sport-card h2 { overflow-wrap: break-word; }
+}

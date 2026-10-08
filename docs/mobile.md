@@ -8,6 +8,17 @@ Les champs utilisent une taille de texte de 16 px sur petit écran. Les formulai
 titres longs et commandes se réorganisent ; seuls tableaux, filtres et listes
 d'exercices défilent horizontalement. Le calendrier montre des pastilles de statut,
 avec les noms complets dans l'agenda du jour. La discussion défile avec la page.
+Les cartes d'activité sont des blocs verticaux, sans héritage du flex des boutons.
+Les dates des filtres sont sur deux lignes distinctes avec une largeur bornée, pour
+éviter le chevauchement des contrôles natifs Safari.
+
+Le catalogue IA est chargé automatiquement depuis la session ChatGPT existante,
+sans déclencher une nouvelle autorisation ni une inférence. Sol est préféré par nom
+ou identifiant explicite dans ce catalogue ; aucun identifiant non proposé n'est inventé.
+Un choix manuel enregistré dans le navigateur prime, s'il reste disponible. Le bouton
+Actualiser les modèles permet de réessayer une erreur de catalogue. Ouvrir Coach ou
+recevoir un nouveau message rejoint la fin de discussion et le champ de rédaction.
+Une actualisation du dashboard avec les mêmes messages ne déplace pas la lecture.
 
 En séance, les réglages et illustrations de référence se déplient. Les séries gardent
 leur autosave, leurs limites et leur validation. Le poids propose un clavier décimal,
@@ -22,6 +33,11 @@ profil, mémoire et connexions. Contrôles : aucun débordement horizontal globa
 taille des champs, accès à chaque page via Plus, fermeture du menu par sélection
 ou Échap, changement temps/distance, exploration de la courbe et saisie/validation
 d'une série conservée après autosave simulé. Captures examinées à 390 px.
+Vérification complémentaire avec 30 messages fictifs : ouverture au dernier échange
+sur téléphone, scroll du conteneur sur tablette/ordinateur, modèle Sol choisi sans clic,
+envoi de la question avec ce modèle, accès à la rédaction après réponse, et conservation
+d'un choix manuel de modèle après rechargement. Sélection testée aussi avec Sol absent
+ou un ancien choix retiré du catalogue.
 
 Cette vérification n'utilise ni compte Garmin ni session Railway. Le comportement
 du clavier logiciel, de la barre Safari et des zones de sécurité nécessite encore
