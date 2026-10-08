@@ -1,10 +1,10 @@
-"""Owner-scoped activity browsing and on-demand Garmin summaries/splits."""
+"""Owner-scoped activity browsing and on-demand Garmin summaries, splits and chart samples."""
 
 import json
 
 from sqlalchemy import text
 
-from coach import db
+from coach import activity_series, db
 from coach.config import user_id
 from coach.garmin import Garmin, session_path
 from coach.garmin_lock import storage_lock
@@ -95,6 +95,7 @@ def details(key):
         "key": key,
         "data": {**activity, **cached.get("summary", {})},
         "laps": cached.get("laps", []),
+        "series": cached.get("series"),
         "fetched_at": cached.get("fetched_at"),
     }
 
@@ -109,6 +110,11 @@ def refresh(key):
         client.login(session_path())
         raw = client.get_activity(key)
         splits = client.get_activity_splits(key)
+        wire = client.get_activity_details(key, maxchart=4000, maxpoly=0)
+        try:
+            series = activity_series.decode(wire)
+        except ValueError as exc:
+            raise DetailUnavailable(str(exc)) from None
         if not isinstance(raw, dict) or not isinstance(raw.get("summaryDTO"), dict):
             raise DetailUnavailable("Détails Garmin indisponibles pour cette activité.")
         summary = {k: raw["summaryDTO"][k] for k in METRICS if k in raw["summaryDTO"]}
@@ -116,8 +122,10 @@ def refresh(key):
         for lap in (splits.get("lapDTOs", []) if isinstance(splits, dict) else [])[:500]:
             if isinstance(lap, dict):
                 laps.append({k: lap[k] for k in (*METRICS, "lapIndex") if k in lap})
-        # Save only after both reads succeed: a failed refresh preserves the previous cache.
+        # Save only after all reads succeed: a failed refresh preserves the previous cache.
         db.upsert_record(
-            "activity_detail", key, {"summary": summary, "laps": laps, "fetched_at": db.now()}
+            "activity_detail",
+            key,
+            {"summary": summary, "laps": laps, "series": series, "fetched_at": db.now()},
         )
     return details(key)

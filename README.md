@@ -235,12 +235,20 @@ conservent le backoff borné de l’import. Une seule réplique/un seul worker e
 totaux de la sélection et pagination de 24 séances. Cliquer ouvre la fiche : durée,
 distance, fréquence cardiaque, calories et mesures spécifiques disponibles (allure,
 vitesse, puissance, dénivelé, effets d’entraînement). Une donnée absente reste « — ».
-**Récupérer les détails** lit le résumé détaillé et les tours Garmin et les conserve localement.
+**Récupérer les détails** lit le résumé détaillé, les tours et les échantillons des courbes
+Garmin et les conserve localement. **Actualiser les détails** ajoute aussi les courbes aux
+anciennes fiches en cache. Selon les capteurs et le sport : fréquence cardiaque, vitesse,
+allure calculée, puissance, cadence, altitude, température, contact au sol et longueur de foulée.
+Les graphiques se consultent par temps ou distance, au survol ou avec le curseur tactile/clavier.
+Les coupures ne sont pas interpolées ; les unités non reconnues ne sont pas devinées.
 Pendant un import Garmin, la fiche déjà importée reste accessible, mais la récupération
 supplémentaire attend sa fin. Un échec conserve les détails précédents. Le volume des tours
-est limité à 500 par séance. Courbes, tracé GPS, FIT et séries de musculation restent à développer.
+est limité à 500 par séance. La requête demande au plus 4 000 points de courbe ; la résolution
+dépend de Garmin. Pas de téléchargement massif pendant l’import historique. Le tracé GPS,
+FIT et séries de musculation Garmin restent à développer. Les courbes restent dans la fiche
+et ne sont pas automatiquement envoyées au coach avec chaque message.
 L’interface ouverte vérifie les nouvelles données toutes les 30 secondes, sans recharger la page.
-Les tests de ce lot sont simulés ; vérifier mesures et tours sur les vraies séances Garmin.
+Les tests de ce lot sont simulés ; vérifier mesures, tours et courbes sur les vraies séances Garmin.
 
 ### Calendrier multisport
 

@@ -86,6 +86,14 @@ Les fiches utilisent records/activity et un cache séparé records/activity_deta
 mesures autorisées du summaryDTO et des lapDTOs. Les tours sont plafonnés ; aucune récupération
 massive de détails pendant le backfill. La recherche et les totaux s’effectuent en SQL avec
 paramètres et ownership. Les valeurs manquantes restent null. Aucun nouveau schéma ni appel IA.
+Le bouton de détails lit aussi get_activity_details(maxchart=4000, maxpoly=0). Le décodeur
+résout metricsIndex par nom et unité, sans appliquer aveuglément le factor du descripteur.
+Il ne conserve que les canaux reconnus, temps relatif et distance ; aucun timestamp absolu,
+coordonnée ou champ développeur. Un maximum de 5 000 échantillons est accepté. Une erreur
+sur une des lectures conserve l'ancien cache. Les fiches anciennes sans séries restent lisibles.
+Le SVG interactif affiche une mesure à la fois, par temps ou distance, et coupe les données
+manquantes ou longs intervalles sans mesure. Les allures dérivées d'une vitesse nulle sont null.
+Les tableaux d'échantillons ne sont pas inclus dans le contexte conversationnel du coach.
 
 ## Planning multisport
 

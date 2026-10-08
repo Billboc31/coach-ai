@@ -122,6 +122,10 @@ def test_detail_cache_safe_fields_and_preserved_on_failure(workspace, monkeypatc
         def get_activity(self, key):
             return {"summaryDTO": {"duration": 120, "averageHR": 140, "startLatitude": 12}}
 
+        def get_activity_details(self, key, **kwargs):
+            assert kwargs == {"maxchart": 4000, "maxpoly": 0}
+            return {"metricDescriptors": [], "activityDetailMetrics": []}
+
         def get_activity_splits(self, key):
             return {
                 "lapDTOs": [{"lapIndex": 1, "duration": 120, "distance": 400, "startLatitude": 12}]
