@@ -153,3 +153,23 @@ Chaque personne peut essayer Garmin dans le formulaire privé ; si nécessaire, 
 Garmin/ChatGPT localement puis transfère ses sessions avec sa clé
 personnelle vers le même domaine. Les autorisations fournisseurs restent à valider pour ce
 compte ; ces invitations ne constituent pas un nouveau parcours OAuth cloud.
+
+### Récupération ChatGPT depuis le téléphone
+
+Dans Connexions → ChatGPT, « Vérifier / renouveler » vérifie le catalogue sans
+requête d’inférence, sans données Garmin et sans utiliser de crédits d’inférence.
+L’app renouvelle automatiquement à l’utilisation lorsque le jeton arrive à échéance.
+La vérification peut aussi tenter un seul renouvellement après un refus 401, en
+respectant la date minimale de renouvellement. Les rotations restent sérialisées
+et enregistrées atomiquement dans le volume du compte concerné.
+
+Une panne réseau, un 429 ou un 5xx conserve la session. Un refus 403 est une
+restriction d’accès, pas une preuve d’expiration. Seuls les codes de renouvellement
+explicitement terminaux (notamment invalid_grant) retirent les jetons inutilisables ;
+l’identité et le client enregistrés restent disponibles pour la prochaine autorisation.
+Les diagnostics affichés sont prédéfinis, sans corps de réponse fournisseur ni secrets.
+
+Ce bouton récupère une session encore renouvelable ; il ne crée pas une nouvelle
+autorisation depuis Safari. Si OpenAI a invalidé l’accès renouvelable, le parcours
+actuel nécessite toujours une nouvelle autorisation locale puis un transfert.
+La récupération est testée avec un fournisseur simulé, pas avec un compte réel.

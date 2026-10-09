@@ -170,37 +170,149 @@ def _sign_in(port, on_authorization):
         print("Identité et autorisation du forfait validées. Le test d’inférence reste à faire.")
 
 
+class ConnectionError(ValueError):
+    """Safe provider diagnostics; never expose response bodies or credentials."""
+
+    def __init__(self, message: str, kind: str = "temporary", status: int = 503):
+        super().__init__(message)
+        self.kind = kind
+        self.status = status
+
+
+def provider_error(response, *, refreshing=False):
+    code = None
+    if refreshing:
+        try:
+            body = response.json()
+            error = body.get("error")
+            code = error.get("code") if isinstance(error, dict) else error
+        except (ValueError, AttributeError):
+            pass
+    if (
+        refreshing
+        and isinstance(code, str)
+        and code
+        in {
+            "invalid_grant",
+            "invalid_refresh_token",
+            "token_expired",
+            "refresh_token_expired",
+            "refresh_token_invalidated",
+            "refresh_token_reused",
+        }
+    ):
+        raise ConnectionError(
+            "OpenAI a invalidé la session ChatGPT. Une nouvelle autorisation est nécessaire.",
+            "reauthorize",
+        )
+    if refreshing and code == "invalid_client":
+        raise ConnectionError(
+            "OpenAI refuse la configuration de cette connexion ChatGPT. "
+            "Reconnecter le compte ne suffit pas : la configuration doit être vérifiée.",
+            "configuration",
+        )
+    if response.status_code == 429:
+        raise ConnectionError(
+            "Limite ChatGPT atteinte. Réessaye plus tard et vérifie les limites dans ChatGPT. "
+            "La session reste enregistrée.",
+            "limit",
+            429,
+        )
+    if response.status_code == 401:
+        raise ConnectionError(
+            "OpenAI refuse l’accès ChatGPT (401). Dans Connexions, utilise "
+            "« Vérifier / renouveler » pour essayer la session enregistrée.",
+            "credentials",
+        )
+    if response.status_code == 403:
+        raise ConnectionError(
+            "OpenAI refuse l’accès ChatGPT (403). Vérifie les autorisations du compte "
+            "et de l’application ; ce refus ne prouve pas que la session a expiré.",
+            "permission",
+        )
+    raise ConnectionError(
+        f"Service ChatGPT indisponible (HTTP {response.status_code}). "
+        "La session reste enregistrée ; réessaye plus tard."
+    )
+
+
 def access_token() -> str:
     with token_lock, storage_lock("chatgpt"):
         return _access_token()
 
 
-def _access_token() -> str:
+def _access_token(*, rejected_token=None) -> str:
     saved = read_secret(credential_path())
     if not saved.get("access_token"):
-        raise ValueError("Connecte ChatGPT dans le terminal : coach chatgpt-login")
+        raise ConnectionError(
+            "Aucune session ChatGPT utilisable. Autorise à nouveau le compte.", "reauthorize"
+        )
     if "chatgpt.tokens.use.direct" not in saved.get("scope", "").split():
-        raise ValueError("Autorisation du forfait manquante.")
-    if time.time() >= saved["expires_at"] - 60:
-        if time.time() < (saved.get("earliest_refresh_at") or 0):
-            raise ValueError("Renouvellement pas encore autorisé ; réessaye plus tard.")
-        with httpx.Client(timeout=30) as client:
-            response = client.post(
-                TOKEN_URL,
-                data={
-                    "grant_type": "refresh_token",
-                    "client_id": saved["client_id"],
-                    "refresh_token": saved.get("refresh_token", ""),
-                    "resource": RESOURCE,
-                },
+        raise ConnectionError("Autorisation du forfait ChatGPT manquante.", "permission")
+    now = time.time()
+    rejected = rejected_token is not None and saved["access_token"] == rejected_token
+    if now >= saved["expires_at"] - 60 or rejected:
+        if now < (saved.get("earliest_refresh_at") or 0):
+            if now < saved["expires_at"] and not rejected:
+                return saved["access_token"]
+            raise ConnectionError(
+                "Renouvellement ChatGPT pas encore autorisé ; réessaye plus tard."
             )
-            if response.status_code != 200:
-                raise ValueError("Session ChatGPT expirée ; reconnecte le compte.")
-            updated = response.json()
-        if not updated.get("access_token") or not updated.get("refresh_token"):
-            raise ValueError("Renouvellement incomplet ; reconnecte le compte.")
+        if not saved.get("refresh_token"):
+            raise ConnectionError(
+                "Session ChatGPT sans accès renouvelable. "
+                "Une nouvelle autorisation est nécessaire.",
+                "reauthorize",
+            )
+        try:
+            with httpx.Client(timeout=30) as client:
+                response = client.post(
+                    TOKEN_URL,
+                    data={
+                        "grant_type": "refresh_token",
+                        "client_id": saved["client_id"],
+                        "refresh_token": saved["refresh_token"],
+                        "resource": RESOURCE,
+                    },
+                )
+                if response.status_code != 200:
+                    try:
+                        provider_error(response, refreshing=True)
+                    except ConnectionError as exc:
+                        if exc.kind == "reauthorize":
+                            # Retain registration/host identity for the next OAuth flow.
+                            for key in ("access_token", "refresh_token", "id_token"):
+                                saved.pop(key, None)
+                            write_secret(credential_path(), saved)
+                        raise
+                updated = response.json()
+        except httpx.RequestError:
+            raise ConnectionError(
+                "Impossible de joindre OpenAI pour renouveler ChatGPT. "
+                "La session reste enregistrée ; réessaye plus tard."
+            ) from None
+        except ValueError as exc:
+            if isinstance(exc, ConnectionError):
+                raise
+            raise ConnectionError(
+                "Réponse de renouvellement ChatGPT illisible. Réessaye plus tard."
+            ) from None
+        expiry = updated.get("expires_in") if isinstance(updated, dict) else None
+        if (
+            not isinstance(updated, dict)
+            or not updated.get("access_token")
+            or not updated.get("refresh_token")
+            or isinstance(expiry, bool)
+            or not isinstance(expiry, (int, float))
+            or not math.isfinite(expiry)
+            or expiry <= 0
+        ):
+            raise ConnectionError(
+                "Renouvellement ChatGPT incomplet. "
+                "La session précédente est conservée ; réessaye plus tard."
+            )
         saved.update(updated)
-        saved["expires_at"] = time.time() + updated["expires_in"]
+        saved["expires_at"] = time.time() + expiry
         write_secret(credential_path(), saved)
     return saved["access_token"]
 
@@ -209,16 +321,38 @@ def models() -> list[dict]:
     return catalogue(access_token())
 
 
+def recover_session() -> list[dict]:
+    """Check without inference; renew once on expiry or a rejected access token."""
+    with token_lock, storage_lock("chatgpt"):
+        previous_token = read_secret(credential_path()).get("access_token")
+        token = _access_token()
+    try:
+        return catalogue(token)
+    except ConnectionError as exc:
+        if exc.kind != "credentials" or token != previous_token:
+            raise
+    with token_lock, storage_lock("chatgpt"):
+        token = _access_token(rejected_token=token)
+    return catalogue(token)
+
+
 def catalogue(token: str) -> list[dict]:
-    with httpx.Client(timeout=30) as client:
-        response = client.get(RESOURCE + "/models", headers={"Authorization": "Bearer " + token})
-        if response.status_code != 200:
-            raise ValueError("Catalogue ChatGPT inaccessible.")
-        return [
-            {"id": item["slug"], "name": item["display_name"]}
-            for item in response.json().get("models", [])
-            if item.get("visibility") == "list"
-        ]
+    try:
+        with httpx.Client(timeout=30) as client:
+            response = client.get(
+                RESOURCE + "/models", headers={"Authorization": "Bearer " + token}
+            )
+            if response.status_code != 200:
+                provider_error(response)
+            return [
+                {"id": item["slug"], "name": item["display_name"]}
+                for item in response.json().get("models", [])
+                if item.get("visibility") == "list"
+            ]
+    except httpx.RequestError:
+        raise ConnectionError(
+            "Impossible de joindre ChatGPT. La session reste enregistrée ; réessaye plus tard."
+        ) from None
 
 
 def consume_events(lines) -> tuple[str, dict]:
@@ -432,7 +566,7 @@ def complete(model: str, instructions: str, messages: list[dict]) -> tuple[str, 
             headers={"Authorization": "Bearer " + access_token()},
         ) as response:
             if response.status_code != 200:
-                raise ValueError("Requête ChatGPT refusée. Vérifie la session et le quota.")
+                provider_error(response)
             return consume_events(response.iter_lines())
 
 

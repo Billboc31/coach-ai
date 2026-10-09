@@ -773,6 +773,28 @@ def disconnect_chatgpt():
         chat_lock.release()
 
 
+@app.post("/api/chatgpt/recover", dependencies=[Depends(require_session)])
+def recover_chatgpt():
+    if not chat_lock.acquire(blocking=False):
+        raise HTTPException(409, "Une opération ChatGPT est déjà en cours.")
+    try:
+        choices = chatgpt.recover_session()
+        if not choices:
+            raise HTTPException(503, "Session vérifiée, mais aucun modèle ChatGPT disponible.")
+        return {"ok": True, "models": choices}
+    except chatgpt.ConnectionError as exc:
+        raise HTTPException(exc.status, str(exc)) from None
+    except HTTPException:
+        raise
+    except Exception:
+        raise HTTPException(
+            503,
+            "Vérification ChatGPT indisponible. La session reste enregistrée ; réessaye plus tard.",
+        ) from None
+    finally:
+        chat_lock.release()
+
+
 @app.post("/api/chatgpt/test", dependencies=[Depends(require_session)])
 def test_chatgpt():
     if not chat_lock.acquire(blocking=False):
@@ -787,6 +809,8 @@ def test_chatgpt():
         if not answer.strip():
             raise ValueError("Réponse vide.")
         return {"ok": True, "models": choices}
+    except chatgpt.ConnectionError as exc:
+        raise HTTPException(exc.status, str(exc)) from None
     except Exception:
         raise HTTPException(503, "Test ChatGPT échoué. Vérifie la session et le quota.") from None
     finally:
@@ -842,8 +866,13 @@ def list_models():
     try:
         with chat_lock:
             return chatgpt.models()
+    except chatgpt.ConnectionError as exc:
+        raise HTTPException(exc.status, str(exc)) from None
     except Exception:
-        raise HTTPException(503, "Connecte ou reconnecte ChatGPT dans Connexions.") from None
+        raise HTTPException(
+            503,
+            "Catalogue ChatGPT indisponible. Réessaye plus tard ; la session reste enregistrée.",
+        ) from None
 
 
 class MemoryFact(BaseModel):
@@ -1076,6 +1105,8 @@ def chat(body: Chat):
             "memory_proposals": cards,
             "planning_proposals": plan_cards,
         }
+    except chatgpt.ConnectionError as exc:
+        raise HTTPException(exc.status, str(exc)) from None
     except ValueError as exc:
         raise HTTPException(503, str(exc)) from None
     except Exception:

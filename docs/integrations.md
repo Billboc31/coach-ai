@@ -163,3 +163,23 @@ Le domaine Railway est commun ; la session applicative détermine le propriétai
 Ne pas transférer les fichiers de session d'une autre personne. Les contrôles PKCE, identité,
 autorisation de forfait, validation et rotation existants restent en vigueur.
 La séparation des comptes ne garantit pas l'éligibilité d'un fournisseur à une offre commerciale.
+
+### Récupération ChatGPT depuis le téléphone
+
+Dans Connexions → ChatGPT, « Vérifier / renouveler » vérifie le catalogue sans
+requête d’inférence, sans données Garmin et sans utiliser de crédits d’inférence.
+L’app renouvelle automatiquement à l’utilisation lorsque le jeton arrive à échéance.
+La vérification peut aussi tenter un seul renouvellement après un refus 401, en
+respectant la date minimale de renouvellement. Les rotations restent sérialisées
+et enregistrées atomiquement dans le volume du compte concerné.
+
+Une panne réseau, un 429 ou un 5xx conserve la session. Un refus 403 est une
+restriction d’accès, pas une preuve d’expiration. Seuls les codes de renouvellement
+explicitement terminaux (notamment invalid_grant) retirent les jetons inutilisables ;
+l’identité et le client enregistrés restent disponibles pour la prochaine autorisation.
+Les diagnostics affichés sont prédéfinis, sans corps de réponse fournisseur ni secrets.
+
+Ce bouton récupère une session encore renouvelable ; il ne crée pas une nouvelle
+autorisation depuis Safari. Si OpenAI a invalidé l’accès renouvelable, le parcours
+actuel nécessite toujours une nouvelle autorisation locale puis un transfert.
+La récupération est testée avec un fournisseur simulé, pas avec un compte réel.
