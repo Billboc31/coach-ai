@@ -23,6 +23,7 @@ from coach import (
     db,
     exercise_catalog,
     garmin_jobs,
+    garmin_login,
     garmin_schedule,
     gym,
     memory,
@@ -665,6 +666,72 @@ async def private_payload(request: Request):
         return json.loads(payload)
     except (ValueError, UnicodeError):
         raise HTTPException(422, "Format de session incompatible.") from None
+
+
+@app.post("/api/garmin/login", status_code=202, dependencies=[Depends(require_session)])
+async def start_garmin_login(request: Request):
+    value = await private_payload(request)
+    if (
+        not isinstance(value, dict)
+        or set(value) != {"email", "password"}
+        or not isinstance(value["email"], str)
+        or not 3 <= len(value["email"].strip()) <= 254
+        or "@" not in value["email"].strip()
+        or not isinstance(value["password"], str)
+        or not 1 <= len(value["password"]) <= 1024
+    ):
+        raise HTTPException(422, "Saisis un e-mail Garmin et un mot de passe valides.")
+    try:
+        return garmin_login.start(value["email"].strip(), value["password"], sync_lock)
+    except garmin_login.LoginLimited as exc:
+        raise HTTPException(429, str(exc)) from None
+    except garmin_login.LoginConflict as exc:
+        raise HTTPException(409, str(exc)) from None
+    finally:
+        value.clear()
+
+
+@app.get("/api/garmin/login", dependencies=[Depends(require_session)])
+def garmin_login_status():
+    return garmin_login.status()
+
+
+@app.post("/api/garmin/login/mfa", dependencies=[Depends(require_session)])
+async def submit_garmin_code(request: Request):
+    value = await private_payload(request)
+    if (
+        not isinstance(value, dict)
+        or set(value) != {"id", "code"}
+        or not isinstance(value["id"], str)
+        or not 1 <= len(value["id"]) <= 100
+        or not isinstance(value["code"], str)
+        or not 4 <= len(value["code"].strip()) <= 12
+        or not value["code"].strip().isascii()
+        or not value["code"].strip().isdigit()
+    ):
+        raise HTTPException(422, "Code Garmin invalide.")
+    try:
+        return garmin_login.submit_code(value["id"], value["code"].strip())
+    except garmin_login.LoginConflict as exc:
+        raise HTTPException(409, str(exc)) from None
+    finally:
+        value.clear()
+
+
+@app.post("/api/garmin/login/cancel", dependencies=[Depends(require_session)])
+async def cancel_garmin_login(request: Request):
+    value = await private_payload(request)
+    if (
+        not isinstance(value, dict)
+        or set(value) != {"id"}
+        or not isinstance(value["id"], str)
+        or not 1 <= len(value["id"]) <= 100
+    ):
+        raise HTTPException(422, "Tentative invalide.")
+    try:
+        return garmin_login.cancel(value["id"])
+    except garmin_login.LoginConflict as exc:
+        raise HTTPException(409, str(exc)) from None
 
 
 @app.post("/api/chatgpt/session", dependencies=[Depends(require_session)])

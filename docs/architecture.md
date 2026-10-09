@@ -4,7 +4,9 @@
 
 Frontend React → API FastAPI protégée → stockage SQLite.
 La CLI partage le même dossier COACH_DATA_DIR que le serveur et gère les connexions externes.
-Le mot de passe Garmin n’entre pas dans le navigateur de l’application. Les jetons Garmin
+Le formulaire Garmin permet une tentative directe par identifiants/MFA : secrets transitoires,
+jamais conservés dans le profil, les logs ou la base. Le parcours CLI/import reste disponible.
+Les jetons Garmin
 et ChatGPT sont des fichiers locaux distincts, jamais des champs du profil ni des données RAG.
 
 ## Décisions
@@ -67,7 +69,33 @@ sont indexés par volume/compte. La reprise au démarrage et le scheduler parcou
 autorisés sous leur contexte propre ; aucun worker ne bascule sur le propriétaire par défaut.
 Les locks courts de mutation existants peuvent rester partagés sans partager de données.
 L'isolation technique ne modifie pas les autorisations officielles des fournisseurs ni le
-parcours local puis transfert sur Railway. Une seule réplique/un seul worker reste exigé.
+parcours ChatGPT local puis transfert sur Railway. Une seule réplique/un seul worker reste exigé.
+
+## Tentative Garmin depuis le navigateur
+
+POST /api/garmin/login reçoit les identifiants dans un body privé borné, avec validation
+manuelle pour éviter l'écho Pydantic de secrets invalides. Cookie et Origin exigés pour
+toutes les mutations ; trois départs maximum par compte en dix minutes. Le worker capture
+copy_context et garde le verrou Garmin du compte, plus le verrou de fichier CLI/API.
+L'état temporaire est en mémoire, indexé par volume/compte, avec ID aléatoire de tentative.
+GET /api/garmin/login expose seulement statut, message assaini, ID et expiration. Aucune
+persistance du mot de passe, du code MFA, des cookies de challenge ou des réponses fournisseur.
+Le seul chemin du connecteur retenu pour cette tentative est mobile+requests ; les stratégies
+de fingerprint TLS et de fallback alternatif sont désactivées, tout comme les retries API.
+Une erreur fournisseur termine la tentative ; aucun proxy ni contournement de protection.
+
+Le callback MFA attend dans une queue privée jusqu'à l'échéance de cinq minutes.
+POST /api/garmin/login/mfa exige l'ID courant et un code numérique ; une double soumission,
+un ID obsolète ou d'un autre compte est rejeté. POST /api/garmin/login/cancel réveille la
+queue et invalide la tentative. Un appel réseau déjà engagé finit selon le timeout du
+connecteur, mais ne peut plus enregistrer ses jetons après annulation/expiration.
+Connexion, lecture de vérification et rotations utilisent un dossier de staging privé ;
+le verrou d'état sérialise le dernier contrôle d'annulation et l'écriture atomique finale.
+Seul un accès validé remplace le fichier actif. Les erreurs et annulations nettoient le
+staging et conservent l'ancienne session. Les redéploiements abandonnent la tentative en
+mémoire ; celle-ci n'est pas reprise. Aucun import Garmin ou appel IA déclenché au succès.
+Le formulaire mobile ne change pas l'IP de sortie Railway : le 403 reste possible et le
+transfert d'une session localement autorisée reste le recours disponible.
 
 ## Mémoire personnelle
 

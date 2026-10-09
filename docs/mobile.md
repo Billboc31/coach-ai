@@ -208,3 +208,12 @@ admin. Reconnexion avec sa clé et refus de réutiliser l'invitation ; identité
 propriétaire et aucun débordement horizontal. Capture du formulaire examinée à 390 px.
 Tests API supplémentaires : données/mémoire/séances distinctes, credentials/imports privés
 (adapters simulés), rôles, concurrence et propagation d'identité des workers.
+
+Connexion Garmin directe : parcours local Chromium vérifié à 320, 390 et 1440 px avec
+frontend construit et vraie API, connecteur Garmin remplacé par un adapter fictif. Saisie
+identifiants/MFA, annulation, refus 403, reprise MFA après rechargement et succès ; champs
+mot de passe/code effacés, import désactivé pendant la tentative, champs à 16 px, absence de
+débordement et d'erreur JavaScript. Capture de la carte examinée à 390 px. Tests API :
+conservation de l'ancienne session, TTL, rate limit, Origin/session, isolation entre comptes,
+annulation pendant une requête et rejet d'un ID/code périmé. Safari iPhone et vrai accès
+Garmin depuis Railway restent à vérifier ; aucun compte fournisseur utilisé en QA.

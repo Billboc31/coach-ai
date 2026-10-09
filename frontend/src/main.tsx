@@ -11,6 +11,7 @@ import type {PlannedSession} from './planning';
 import {AppNavigation} from './app-navigation';
 import './mobile.css';
 import {useCoachModels} from './coach-models';
+import {GarminLogin} from './garmin-login';
 
 type Profile = {name:string; timezone:string; goals:string; constraints:string; sports:string[]};
 type Entry = {key:string; updated_at:string; data:Record<string,any>};
@@ -105,6 +106,7 @@ function MemoryPage({models,model,setModel,loadModels}:{models:{id:string;name:s
 
 function SessionConnection({provider,local,configured,onChanged}:{provider:'garmin'|'chatgpt';local:boolean;configured:boolean;onChanged:()=>Promise<void>}){
  const [busy,setBusy]=useState(false),[message,setMessage]=useState(''),[error,setError]=useState('');
+ const [garminActive,setGarminActive]=useState(false);
  const [login,setLogin]=useState<{status:string;url?:string;message?:string}|null>(null);
  const active=login&&['starting','awaiting'].includes(login.status);
  async function run(fn:()=>Promise<void>){setBusy(true);setError('');setMessage('');try{await fn();}catch(e){setError((e as Error).message==='AUTH'?'Reconnecte ton espace.':(e as Error).message);}finally{setBusy(false);}}
@@ -113,8 +115,8 @@ function SessionConnection({provider,local,configured,onChanged}:{provider:'garm
  return <div className="session-connection">
  {provider==='chatgpt'&&local&&<><button className="primary" disabled={busy||!!active} onClick={()=>void run(async()=>{setLogin(await api('/chatgpt/login',{method:'POST'}));})}>Autoriser ChatGPT sur ce poste</button>{login?.status==='awaiting'&&login.url&&<p><a href={login.url} target="_blank" rel="noreferrer">Continuer chez OpenAI ↗</a><br/>Utilise le navigateur de cet ordinateur. Autorisation valable 5 minutes.</p>}{login?.status==='starting'&&<p>Préparation de l’autorisation…</p>}</>}
  {provider==='chatgpt'&&!local&&<p>Autorise ChatGPT sur ton ordinateur, puis importe sa session pour l’utiliser ici.</p>}
- {provider==='garmin'&&<p>Connecte Garmin sur ton ordinateur, puis importe sa session ici. Le mot de passe Garmin reste sur ton poste.</p>}
- <label className="session-file">Importer la session {provider==='chatgpt'?'ChatGPT':'Garmin'}<input type="file" accept=".json,application/json" disabled={busy||!!active} onChange={e=>{const file=e.target.files?.[0];e.target.value='';if(file)void upload(file);}}/></label>
+ {provider==='garmin'&&<GarminLogin onChanged={onChanged} onActive={setGarminActive}/>}
+ <label className="session-file">Importer la session {provider==='chatgpt'?'ChatGPT':'Garmin'}<input type="file" accept=".json,application/json" disabled={busy||!!active||garminActive} onChange={e=>{const file=e.target.files?.[0];e.target.value='';if(file)void upload(file);}}/></label>
  <small>Fichier sur ton ordinateur : <code>{provider==='chatgpt'?'.local/chatgpt.json':'.local/garmin/garmin_tokens.json'}</code>. Dans WSL, accède au dossier Linux depuis l’explorateur Windows. Ce fichier contient des accès privés : importe-le uniquement dans ton app.</small>
  {provider==='chatgpt'&&configured&&<div className="connection-actions"><button className="outline" disabled={busy||!!active} onClick={()=>void run(async()=>{await api('/chatgpt/test',{method:'POST'});setMessage('Réponse ChatGPT reçue : connexion fonctionnelle.');})}>Tester la connexion</button><button className="text-button" disabled={busy||!!active} onClick={()=>void run(async()=>{await api('/chatgpt/disconnect',{method:'POST'});setMessage('Connexion retirée. Tu peux aussi révoquer Coach AI dans les réglages ChatGPT.');await onChanged();})}>Déconnecter ChatGPT</button></div>}
  {provider==='chatgpt'&&<p className="hint">Le test utilise ton forfait ou tes crédits ChatGPT, sans données Garmin. <a href="https://chatgpt.com/#settings" target="_blank" rel="noreferrer">Gérer l’utilisation dans ChatGPT ↗</a></p>}

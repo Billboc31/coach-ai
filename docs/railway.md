@@ -40,7 +40,15 @@ Railway avant d’enregistrer des données réelles ; vérifier les coûts dans 
 L’interface est utilisable dès le déploiement pour le profil et les notes. Elle ne contient
 aucune mesure inventée ni réponse IA simulée.
 
-Garmin : dans un terminal **du conteneur déployé** (Railway SSH), exécuter
+Garmin : essayer **Plus → Connexions → Garmin → Connecter Garmin ici**. Le formulaire privé
+transmet e-mail/mot de passe au serveur pour une seule tentative ; saisir le code MFA si
+Garmin le demande. Aucun mot de passe/code enregistré. Délai cinq minutes, annulation,
+maximum trois tentatives par compte en dix minutes. La session précédente est conservée
+jusqu'à validation de la nouvelle. Un 403 depuis Railway reste possible ; le formulaire ne
+change pas le réseau d'origine et n'ajoute ni proxy ni contournement. Ce parcours réel doit
+être testé par la personne. ChatGPT conserve son parcours local/import actuel.
+
+Autre possibilité Garmin : dans un terminal **du conteneur déployé** (Railway SSH), exécuter
 `coach garmin-login`, puis `coach garmin-sync --days 7`. Le compte et le MFA restent à
 valider. `railway run` exécute localement : ce n’est pas le stockage du conteneur.
 
@@ -141,6 +149,7 @@ l'administrateur et le volume /data. Après déploiement, créer un lien dans Co
 Inviter une personne. Ne pas partager la clé administrateur : chaque inscrit reçoit sa propre clé.
 Les bases et sessions des membres résident sous /data/users/<identité>, et accounts.json à
 la racine. Sauvegarder tout le volume, pas seulement coach.db.
-Chaque personne autorise Garmin/ChatGPT localement puis transfère ses sessions avec sa clé
+Chaque personne peut essayer Garmin dans le formulaire privé ; si nécessaire, elle autorise
+Garmin/ChatGPT localement puis transfère ses sessions avec sa clé
 personnelle vers le même domaine. Les autorisations fournisseurs restent à valider pour ce
 compte ; ces invitations ne constituent pas un nouveau parcours OAuth cloud.

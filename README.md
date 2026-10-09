@@ -53,9 +53,14 @@ base existants, sans réimport. Les membres ont leur propre dossier et base dans
 Les brouillons de séance et préférences de modèle sont également séparés dans le navigateur.
 L'administrateur gère les invitations ; ces commandes ne donnent pas accès aux données des membres.
 
-Sur Railway, chaque personne autorise ses connexions sur **son ordinateur**, puis utilise
-**Importer la session** ou `coach garmin-transfer` / `coach chatgpt-transfer`, en saisissant le
-même domaine et **sa propre clé personnelle**. Les règles d'autorisation et vérifications
+Sur Railway, Garmin peut être essayé directement dans **Connexions → Garmin → Connecter
+Garmin ici**, avec e-mail, mot de passe et code MFA si demandé. Le serveur ne conserve pas
+le mot de passe ni le code ; seul un accès validé remplace la session précédente. Un refus
+403 reste possible : ce formulaire ne change pas l’origine réseau Railway.
+ChatGPT conserve l'autorisation sur **son ordinateur**, suivie de **Importer la session** ou
+`coach chatgpt-transfer`. Pour Garmin, l'import et `coach garmin-transfer` restent disponibles
+si la connexion directe échoue. Saisir le même domaine et **sa propre clé personnelle**.
+Les règles d'autorisation et vérifications
 Garmin/ChatGPT sont conservées. L'inscription ne déclenche aucun appel IA ni import Garmin.
 Le fonctionnement avec un nouveau compte fournisseur doit être vérifié par la personne,
 les tests du projet n'utilisant aucun compte Garmin/ChatGPT réel.
@@ -92,6 +97,17 @@ Ouvrir **http://127.0.0.1:5173** et saisir la clé. Sur Windows natif, activer l
 avec `.venv\Scripts\Activate.ps1` ; WSL suit les commandes Linux.
 
 ### Connecter Garmin
+
+Depuis le téléphone : **Plus → Connexions → Garmin → Connecter Garmin ici**.
+Saisir ses propres identifiants et, si Garmin le demande, le code reçu. La tentative est
+limitée à cinq minutes, annulable et récupérable en revenant à Connexions dans ce délai.
+Le mot de passe est effacé du champ dès l’envoi ; il transite vers le serveur HTTPS pour
+cette seule tentative et n'est pas écrit dans les données, logs ou profil. La double
+authentification reste obligatoire si demandée. Pas de synchronisation automatique au succès :
+choisir ensuite sa période d’import. Maximum trois tentatives par compte en dix minutes.
+Une opération Garmin en cours empêche la connexion et réciproquement. Un refus/une limite
+ne déclenche aucun contournement ni nouvelle stratégie automatique. Un échec conserve la
+session précédente. Ce parcours doit encore être vérifié avec un vrai compte sur Railway.
 
 Dans un terminal à la racine, environnement activé :
 
@@ -161,7 +177,7 @@ Dans l’interface **locale**, **Autoriser ChatGPT sur ce poste** permet de dém
 sans saisir la commande de login : suivre le lien OpenAI dans le navigateur de ce poste.
 Sur Railway ce bouton est remplacé par l’import ; son callback loopback ne peut pas être
 redirigé vers le serveur. Garmin propose l’import de `.local/garmin/garmin_tokens.json` ;
-la première authentification Garmin/MFA reste locale dans ce lot.
+ la connexion Garmin/MFA directe peut aussi être essayée dans le formulaire privé.
 
 ### Mémoire durable
 

@@ -175,7 +175,10 @@ Paiement, abonnement, modèle local, fine-tuning et GraphRAG : seulement après 
 ### CONNECT-02 — Connexions depuis l’interface (P1)
 Livré : import privé de sessions Garmin/ChatGPT, état/erreurs, autorisation ChatGPT depuis
 l’interface locale, test d’inférence sans données santé, déconnexion ChatGPT et transfert CLI.
-Restent : première authentification Garmin avec MFA depuis une interface locale, parcours
+Livré : tentative Garmin par identifiants/MFA dans l'interface privée, deadline/annulation,
+limitation par compte, staging et conservation de la session précédente, aucun fallback
+anti-refus. Tests hors réseau et contrôle mobile ; accès réel Railway à tester (403 possible).
+Restent : parcours
 mobile sans fichier via assistant local, et voie commerciale cloud. Le callback officiel
 ChatGPT reste loopback ; ne pas présenter un bouton Railway comme un OAuth cloud complet.
 
