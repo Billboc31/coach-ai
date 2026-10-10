@@ -781,3 +781,9 @@ button > svg {
   .sport-card > * { width: 100%; }
   .sport-card h2 { overflow-wrap: break-word; }
 }
+
+/* The model shortcut stays with the mobile composer, above the bottom navigation. */
+.composer { flex-wrap: wrap; }
+.coach-shortcuts { flex: 0 0 100%; display: flex; justify-content: flex-end; }
+.composer .coach-shortcuts button { min-height: 44px; padding: 8px 12px; }
+.coach-model-controls { scroll-margin-top: 20px; }
