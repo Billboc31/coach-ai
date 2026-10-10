@@ -320,3 +320,14 @@ du corps, tractions pronation/supination, etc.) sans modifier les identités. Si
 n'a pas de visuel compatible, une icône sur le même fond bleu remplace les anciens dessins.
 Les anciennes références wger restent uniquement dans les instantanés historiques et
 les versions archivées des associations, sans figurer dans le catalogue actif.
+
+### Catalogue du coach et vérification de connexion
+
+Le coach affiche le diagnostic sûr fourni par /api/models, sans le remplacer par
+une demande générique de reconnexion. Une erreur vide, HTML ou non structurée
+reçoit un message de secours ; un 401 de l’app indique que l’espace doit être déverrouillé.
+Après « Vérifier / renouveler » ou un test réussi dans Connexions, le catalogue
+validé est transmis directement au coach. Les anciennes requêtes de catalogue sont
+annulées et leur résultat ne peut pas effacer ce succès. Un échec de rafraîchissement
+retire les choix précédents pour empêcher l’envoi avec un modèle devenu indisponible.
+Ces transitions sont couvertes par `npm --prefix frontend test` avec réponses simulées.

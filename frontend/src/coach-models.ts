@@ -19,6 +19,24 @@ function savedPreference(key: string) {
   }
 }
 
+export async function modelResponseError(response: Response): Promise<string> {
+  if (response.status === 401) return "Reconnecte ton espace.";
+  try {
+    const body: unknown = await response.json();
+    if (body && typeof body === "object" && "detail" in body &&
+        typeof body.detail === "string" && body.detail.trim() && body.detail.length <= 1000)
+      return body.detail;
+  } catch { /* A proxy can return HTML instead of JSON. */ }
+  return "Catalogue ChatGPT indisponible. Réessaie ou vérifie la session dans Connexions.";
+}
+
+function validateModels(value: unknown): CoachModel[] {
+  if (!Array.isArray(value) || value.some(
+    (m) => !m || typeof m.id !== "string" || !m.id || typeof m.name !== "string",
+  )) throw new Error("Catalogue de modèles indisponible.");
+  return value;
+}
+
 export function useCoachModels(active: boolean, connectionRevision: number, owner = "local") {
   const scopedKey = owner === "local" ? preferenceKey : preferenceKey + ":" + owner;
   const [models, setModels] = useState<CoachModel[]>([]),
@@ -27,6 +45,16 @@ export function useCoachModels(active: boolean, connectionRevision: number, owne
     [error, setError] = useState("");
   const request = useRef<AbortController | null>(null);
   const selected = useRef("");
+  const applyModels = useCallback((value: unknown) => {
+    const choices = validateModels(value);
+    request.current?.abort();
+    setLoading(false);
+    setModels(choices);
+    const chosen = preferredModel(choices, savedPreference(scopedKey) || selected.current);
+    selected.current = chosen;
+    setSelected(chosen);
+    setError(chosen ? "" : "Aucun modèle disponible pour cette connexion ChatGPT.");
+  }, [scopedKey]);
   const refresh = useCallback(async () => {
     if (!active) return;
     request.current?.abort();
@@ -37,37 +65,23 @@ export function useCoachModels(active: boolean, connectionRevision: number, owne
     try {
       const response = await fetch("/api/models", {
         signal: controller.signal,
+        cache: "no-store",
       });
-      if (!response.ok)
-        throw new Error(
-          response.status === 401
-            ? "Reconnecte ton espace."
-            : "Impossible de charger les modèles. Vérifie la connexion ChatGPT puis réessaie.",
-        );
-      const choices: CoachModel[] = await response.json();
-      if (
-        !Array.isArray(choices) ||
-        choices.some(
-          (m) => !m || typeof m.id !== "string" || typeof m.name !== "string",
-        )
-      )
-        throw new Error("Catalogue de modèles indisponible.");
+      if (!response.ok) throw new Error(await modelResponseError(response));
+      const choices = validateModels(await response.json());
       if (controller.signal.aborted) return;
-      setModels(choices);
-      const chosen = preferredModel(
-        choices,
-        savedPreference(scopedKey) || selected.current,
-      );
-      selected.current = chosen;
-      setSelected(chosen);
-      if (!chosen)
-        setError("Aucun modèle disponible pour cette connexion ChatGPT.");
+      applyModels(choices);
     } catch (e) {
-      if (!controller.signal.aborted) setError((e as Error).message);
+      if (!controller.signal.aborted) {
+        setModels([]);
+        setSelected("");
+        selected.current = "";
+        setError((e as Error).message);
+      }
     } finally {
       if (!controller.signal.aborted) setLoading(false);
     }
-  }, [active, connectionRevision, owner]);
+  }, [active, connectionRevision, owner, applyModels]);
   useEffect(()=>{selected.current="";setSelected("");},[owner]);
   useEffect(() => {
     if (active) void refresh();
@@ -96,6 +110,7 @@ export function useCoachModels(active: boolean, connectionRevision: number, owne
     model,
     setModel,
     loadModels: refresh,
+    applyModels,
     modelsLoading: loading,
     modelsError: error,
   };
