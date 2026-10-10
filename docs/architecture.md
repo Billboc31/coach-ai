@@ -331,3 +331,26 @@ validé est transmis directement au coach. Les anciennes requêtes de catalogue 
 annulées et leur résultat ne peut pas effacer ce succès. Un échec de rafraîchissement
 retire les choix précédents pour empêcher l’envoi avec un modèle devenu indisponible.
 Ces transitions sont couvertes par `npm --prefix frontend test` avec réponses simulées.
+
+### Demandes de détails Garmin dans la conversation
+
+Le protocole de réponse du coach accepte `data_requests` en plus des propositions
+de mémoire et de planning. Seule l’action `activity_details` est disponible : ID
+exact d’une activité présente dans le contexte et appartenant au compte, champs
+issus d’une liste autorisée, trois propositions maximum. Aucun appel Garmin ne
+s’exécute au moment de la proposition. Les cartes sont conservées dans la base
+privée du compte et rattachées au message assistant.
+
+« Récupérer et analyser » charge les détails existants ou les lit via le connecteur
+Garmin sous verrou, puis envoie une nouvelle question au coach avec l’ID de la
+demande chargée. Un refus Garmin laisse la carte en attente ; un échec IA conserve
+les données et permet de réessayer l’analyse. Les requêtes arbitraires ou d’un autre
+compte sont refusées. Pas de modification de mémoire/planning par cette action.
+
+Le contexte inclut les métriques, au maximum 60 tours et 180 échantillons alignés
+par courbe demandée, avec unités, extrema sur tous les échantillons en cache, dates
+de lecture et limites explicites. Le cache complet reste dans l’app ; l’IA ne reçoit
+ni coordonnées GPS, ni fichier FIT, ni tous les points bruts. La carte indique que
+le clic transmet les mesures utiles à OpenAI et utilise le forfait pour l’analyse.
+Au fil suivant, les données chargées de la carte la plus récente dans l’historique
+récent restent disponibles. Tests avec Garmin/OpenAI simulés, compte réel à valider.

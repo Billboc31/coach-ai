@@ -20,6 +20,7 @@ from coach import (
     accounts,
     activities,
     chatgpt,
+    coach_data,
     db,
     exercise_catalog,
     garmin_jobs,
@@ -119,6 +120,7 @@ class Note(BaseModel):
 
 
 class Chat(Note):
+    data_request_id: str | None = Field(default=None, max_length=64)
     model: str = Field(min_length=1, max_length=100)
 
 
@@ -268,6 +270,7 @@ def dashboard():
         "messages": chatgpt.visible_messages(db.history("messages", 40)),
         "memory_cards": [f for f in memory.state()["facts"] if f.get("chat_message_id")],
         "planning_cards": planning.cards(),
+        "data_cards": coach_data.cards(),
         "garmin_job": garmin_jobs.status(),
         "coverage": {"activities": db.coverage("activity"), "health": db.coverage("health")},
         "integrations": {
@@ -340,6 +343,25 @@ def refresh_activity(key: str):
         )
     try:
         return activities.refresh(key)
+    except Exception as exc:
+        from coach.garmin import safe_failure
+
+        message = str(exc) if isinstance(exc, activities.DetailUnavailable) else safe_failure(exc)
+        raise HTTPException(502, message) from None
+    finally:
+        sync_lock.release()
+
+
+@app.post("/api/coach/data/{key}/load", dependencies=[Depends(require_session)])
+def load_coach_data(key: str):
+    if not coach_data.get(key):
+        raise HTTPException(404, "Demande de données introuvable.")
+    if not sync_lock.acquire(blocking=False):
+        raise HTTPException(409, "Une lecture Garmin est en cours. Réessaye après sa fin.")
+    try:
+        return coach_data.load(key)
+    except LookupError as exc:
+        raise HTTPException(404, str(exc)) from None
     except Exception as exc:
         from coach.garmin import safe_failure
 
@@ -979,24 +1001,27 @@ def clear_memory_summary():
     return {"ok": True}
 
 
-def coach_context(question="", recent_ids=()):
+def coach_context(question="", recent_ids=(), data_request_id=None):
     # Small curated context, not a vector RAG yet. Avoid sending GPS tracks and raw device data.
     activities = []
     for record in db.activity_page(0, 20):
         a = record["data"]
         activities.append(
             {
-                k: a.get(k)
-                for k in [
-                    "activityName",
-                    "activityType",
-                    "startTimeGMT",
-                    "startTimeLocal",
-                    "distance",
-                    "duration",
-                    "averageHR",
-                    "maxHR",
-                ]
+                "activity_id": record["key"],
+                **{
+                    k: a.get(k)
+                    for k in [
+                        "activityName",
+                        "activityType",
+                        "startTimeGMT",
+                        "startTimeLocal",
+                        "distance",
+                        "duration",
+                        "averageHR",
+                        "maxHR",
+                    ]
+                },
             }
         )
     activities.sort(key=lambda a: a.get("startTimeGMT") or "", reverse=True)
@@ -1050,6 +1075,7 @@ def coach_context(question="", recent_ids=()):
         "as_of": db.now(),
         "profile": db.profile(),
         "recent_activities": activities,
+        "loaded_activity_details": coach_data.context(recent_ids, data_request_id),
         "memory": memory.context(question, recent_ids),
         "history_months": db.activity_months(),
         "activity_units": {"distance": "meters", "duration": "seconds", "heart_rate": "bpm"},
@@ -1070,12 +1096,16 @@ def chat(body: Chat):
         suppressed = set(memory.state()["suppressed_ids"])
         recent = [m for m in db.history("messages", 20) if m["id"] not in suppressed]
         messages = recent + [{"role": "user", "content": body.content}]
-        context = coach_context(body.content, [m["id"] for m in recent])
+        try:
+            context = coach_context(body.content, [m["id"] for m in recent], body.data_request_id)
+        except LookupError as exc:
+            raise HTTPException(404, str(exc)) from None
         context["request_memory_proposals"] = True
         answer, usage = chatgpt.respond(body.model, context, messages)
         usage = dict(usage)
         proposals = usage.pop("_memory_proposals", [])
         plan_proposals = usage.pop("_planning_proposals", [])
+        data_proposals = usage.pop("_data_requests", [])
         if not answer.strip():
             raise ValueError("Réponse vide.")
         source_id = db.append("messages", body.content, "user")
@@ -1094,6 +1124,16 @@ def chat(body: Chat):
             plan_cards = planning.propose(plan_proposals, assistant_id)
         except Exception:
             pass  # Planning failures never discard the completed answer.
+        data_cards = []
+        try:
+            allowed_ids = {a["activity_id"] for a in context["recent_activities"]}
+            allowed_ids.update(
+                a["activity_id"]
+                for a in (context.get("selected_activity_period") or {}).get("items", [])
+            )
+            data_cards = coach_data.propose(data_proposals, assistant_id, allowed_ids)
+        except Exception:
+            pass  # A completed reply remains valid if action storage fails.
         db.upsert_record("integration", "chatgpt", {"last_response_at": db.now(), "usage": usage})
         try:
             memory.launch(body.model)
@@ -1104,7 +1144,10 @@ def chat(body: Chat):
             "usage": usage,
             "memory_proposals": cards,
             "planning_proposals": plan_cards,
+            "data_requests": data_cards,
         }
+    except HTTPException:
+        raise
     except chatgpt.ConnectionError as exc:
         raise HTTPException(exc.status, str(exc)) from None
     except ValueError as exc:

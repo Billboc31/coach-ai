@@ -787,3 +787,9 @@ button > svg {
 .coach-shortcuts { flex: 0 0 100%; display: flex; justify-content: flex-end; }
 .composer .coach-shortcuts button { min-height: 44px; padding: 8px 12px; }
 .coach-model-controls { scroll-margin-top: 20px; }
+
+.coach-data-card { margin-top: 14px; padding: 14px; border: 1px solid #dce4d2; border-radius: 12px; background: #fff; }
+.coach-data-card > strong { display: block; margin-top: 6px; overflow-wrap: anywhere; }
+.coach-data-card > small { display: block; color: #6a7b61; line-height: 1.5; }
+.coach-data-card > p { margin: 8px 0; }
+.coach-data-card > button { min-height: 44px; margin: 12px 0; max-width: 100%; white-space: normal; }

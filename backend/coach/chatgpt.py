@@ -468,6 +468,24 @@ def respond(model: str, context: dict, messages: list[dict]) -> tuple[str, dict]
             "le propriétaire peut les éditer dans le calendrier. Une séance liée à une activité "
             "Garmin est la même séance : ne la compte pas deux fois."
         )
+        instructions += (
+            '\nAjoute "data_requests": [{"kind":"activity_details", "activity_id":"ID", '
+            '"fields":["all"], "reason":"Ce que ces données permettront d’analyser"}]. '
+            "Maximum 3 demandes, sinon tableau vide. Utilise uniquement un activity_id EXACT "
+            "présent dans recent_activities ou selected_activity_period.items. Si l’utilisateur "
+            "demande les données détaillées d’une séance, ou si elles sont nécessaires à "
+            "l’analyse, propose ce bouton au lieu de dire que tu ne peux pas récupérer de données. "
+            "En cas d’ambiguïté sur la séance, demande laquelle sans deviner. Champs autorisés : "
+            "all, laps, heart_rate, speed, power, run_cadence, bike_cadence, elevation, "
+            "temperature, ground_contact, stride_length. all demande les détails disponibles ; "
+            "pour un besoin précis sélectionne les champs utiles. La lecture Garmin et l’envoi "
+            "à OpenAI attendent le clic du propriétaire sur Récupérer et analyser. Ne prétends "
+            "pas avoir chargé les mesures avant le clic. loaded_activity_details contient les "
+            "lectures confirmées, leurs unités et limites. Analyse-les lorsqu’elles répondent "
+            "à la question et ne redemande pas les mêmes données. Les courbes sont échantillonnées : "
+            "n’affirme pas avoir examiné chaque point brut. Certains capteurs ou champs peuvent "
+            "être absents. Aucune action arbitraire, URL, GPS ou export FIT n’est disponible."
+        )
         text, usage = complete(model, instructions, inputs)
         return unpack_coach_reply(text, usage)
     return complete(model, instructions, inputs)
@@ -475,7 +493,9 @@ def respond(model: str, context: dict, messages: list[dict]) -> tuple[str, dict]
 
 def mixed_reply(cleaned):
     """Recover a prose answer followed by a valid reserved JSON metadata suffix."""
-    for match in re.finditer(r'(?:,|\n)\s*"(?:memory_proposals|planning_proposals)"\s*:', cleaned):
+    for match in re.finditer(
+        r'(?:,|\n)\s*"(?:memory_proposals|planning_proposals|data_requests)"\s*:', cleaned
+    ):
         key_start = cleaned.index('"', match.start())
         tail = cleaned[key_start:].strip()
         if tail.endswith("}"):
@@ -484,7 +504,7 @@ def mixed_reply(cleaned):
             metadata = json.loads("{" + tail + "}")
         except ValueError:
             continue
-        if not set(metadata) <= {"memory_proposals", "planning_proposals"}:
+        if not set(metadata) <= {"memory_proposals", "planning_proposals", "data_requests"}:
             continue
         answer = cleaned[: match.start()].strip()
         if not answer:
@@ -532,7 +552,9 @@ def unpack_coach_reply(text: str, usage: dict) -> tuple[str, dict]:
         value = mixed_reply(cleaned)
         if value is None:
             # A completed stream may still contain malformed protocol fields. Do not expose them.
-            if re.search(r'(?:,|\n)\s*"(?:memory_proposals|planning_proposals)"\s*:', cleaned):
+            if re.search(
+                r'(?:,|\n)\s*"(?:memory_proposals|planning_proposals|data_requests)"\s*:', cleaned
+            ):
                 raise ValueError("Réponse du coach mal formatée ; réessaye.") from None
             return text, usage
     if not isinstance(value, dict) or not isinstance(value.get("answer"), str):
@@ -545,6 +567,15 @@ def unpack_coach_reply(text: str, usage: dict) -> tuple[str, dict]:
         **usage,
         "_memory_proposals": proposals[:3],
         "_planning_proposals": plans[:5] if isinstance(plans, list) else [],
+        **(
+            {
+                "_data_requests": value["data_requests"][:3]
+                if isinstance(value["data_requests"], list)
+                else []
+            }
+            if "data_requests" in value
+            else {}
+        ),
     }
 
 

@@ -203,3 +203,11 @@ unique, expiration/annulation/Origin, aucune lecture des données du propriétai
 sessions dans le bon compte via adapters simulés, workers Garmin/mémoire et requêtes parallèles.
 Restent : réinitialisation des clés, administration du cycle de vie des comptes, suppression
 complète/export utilisateur, OAuth cloud commercial et infrastructure PostgreSQL.
+
+### AI-DATA-01 — Demandes de données actionnables (livré)
+Le coach peut proposer des cartes « Récupérer et analyser » pour les détails d’une
+activité connue, avec sélection de courbes/tours ou tous les détails disponibles.
+Chargement explicite, cache privé, reprise de l’analyse dans la conversation,
+validation des IDs/champs et isolation des comptes. Tests de refus, données absentes,
+contexte borné et cycle complet avec fournisseurs simulés. À valider avec un compte
+réel ; récupération FIT/GPS et actions sur d’autres sources restent à développer.
