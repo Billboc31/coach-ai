@@ -885,9 +885,10 @@ def chatgpt_login_status():
 
 @app.get("/api/models", dependencies=[Depends(require_session)])
 def list_models():
+    if not chat_lock.acquire(blocking=False):
+        raise HTTPException(409, "Une opération ChatGPT est déjà en cours. Réessaye après sa fin.")
     try:
-        with chat_lock:
-            return chatgpt.models()
+        return chatgpt.models()
     except chatgpt.ConnectionError as exc:
         raise HTTPException(exc.status, str(exc)) from None
     except Exception:
@@ -895,6 +896,8 @@ def list_models():
             503,
             "Catalogue ChatGPT indisponible. Réessaye plus tard ; la session reste enregistrée.",
         ) from None
+    finally:
+        chat_lock.release()
 
 
 class MemoryFact(BaseModel):
