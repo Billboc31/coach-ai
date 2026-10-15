@@ -28,7 +28,7 @@ const fmtDate=(value:string)=>new Date(value).toLocaleDateString('fr-FR',{day:'n
 function App(){
  const [inviteKey,setInviteKey]=useState(()=>new URLSearchParams(location.hash.slice(1)).get('invite')||'');
  const [data,setData]=useState<Dashboard|null>(null),[auth,setAuth]=useState(false),[key,setKey]=useState('');
- const [tab,setTab]=useState('overview'),[error,setError]=useState(''),[busy,setBusy]=useState(false);
+ const [tab,setTab]=useState(()=>{const page=new URLSearchParams(location.search).get('page')||'';return ['overview','coach','activities','planning','gym','settings','memory','profile'].includes(page)?page:'overview';}),[error,setError]=useState(''),[busy,setBusy]=useState(false);
  const [connectionRevision,setConnectionRevision]=useState(0);
  const {models,model,setModel,loadModels,applyModels,modelsLoading,modelsError}=useCoachModels(auth&&!!data?.integrations.chatgpt.configured,connectionRevision,data?.account?.id||'local');
  const chatViewport=useRef<HTMLDivElement>(null),chatBottom=useRef<HTMLDivElement>(null),coachModels=useRef<HTMLDivElement>(null);

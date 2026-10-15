@@ -457,3 +457,8 @@ restent libres, sans reprise de poids entre variantes incertaines. Les correspon
 restent à préciser ; les variantes sont distinctes. « Gamme montante » est affiché comme
 une consigne de progression, sans charge inventée. Les blocs « fiche » ouvrent les liens
 de la ligne source et ne sont plus comptés comme des exercices manquant au catalogue.
+
+## Application iPhone
+
+Le projet SwiftUI se trouve dans [`ios/CoachAI.xcodeproj`](ios/CoachAI.xcodeproj).
+Installation et limites des connexions : [`ios/README.md`](ios/README.md).
