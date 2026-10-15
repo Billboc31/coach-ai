@@ -38,8 +38,10 @@ Apple adaptées. Aucun certificat ni compte Apple n’est fourni dans le dépôt
   Les séances nouvelles demandent un accès réseau. Ce n’est pas une synchronisation hors ligne
   complète ni un téléchargement de tous les programmes sur l’iPhone.
 - Coach, activités, planning et paramètres via les pages existantes dans une WKWebView
-  authentifiée. Ces écrans sont encore **web**, avec leurs fonctions existantes, dont import
-  de fichiers de session Garmin/ChatGPT et renouvellement ChatGPT.
+  authentifiée. Ces écrans sont encore **web**, avec leurs fonctions existantes.
+- Import **natif** de fichiers JSON de session Garmin/ChatGPT depuis Fichiers, limité à 64 Ko,
+  confirmation du compte/serveur avant transfert et validation réelle côté serveur. Le fichier
+  n’est pas copié dans le stockage de l’app. Renouvellement ChatGPT depuis les paramètres web.
 
 ## Connexions : limite à connaître
 

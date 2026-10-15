@@ -211,3 +211,17 @@ Chargement explicite, cache privé, reprise de l’analyse dans la conversation,
 validation des IDs/champs et isolation des comptes. Tests de refus, données absentes,
 contexte borné et cycle complet avec fournisseurs simulés. À valider avec un compte
 réel ; récupération FIT/GPS et actions sur d’autres sources restent à développer.
+
+
+### IOS-01 — Application iPhone (premier lot)
+Projet SwiftUI iOS 17+ dans `ios/`, signature locale via Xcode. Musculation native :
+programmes, reprise, saisie et séries, images et attribution, conventions de charge,
+repos par ligne, minuteur/notification, progression, fin/suppression confirmées.
+Session dans le trousseau ; brouillon protégé lié au compte/origine ; révision optimiste
+sans rejeu aveugle après erreur. Coach/activités/planning/paramètres encore web embarqué.
+Import natif JSON des sessions existantes Garmin/ChatGPT avec confirmation du serveur.
+Validation : workflow macOS pour build/tests ; essais physiques et intégrations réelles à suivre.
+**Reste à faire : autorisation initiale des fournisseurs 100 % iPhone, distribution signée
+TestFlight, vues coach/activités natives et synchronisation hors ligne complète.** Le formulaire
+Garmin embarqué passe toujours par Railway et ne résout pas le 403. Le callback ChatGPT local
+ne devient pas un callback mobile pris en charge par ce lot.
