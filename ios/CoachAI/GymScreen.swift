@@ -73,66 +73,7 @@ struct SessionScreen: View {
     var body: some View {
         if let workout = app.workout, let exercise = app.exercise {
             ScrollView {
-                VStack(alignment: .leading, spacing: 22) {
-                    HStack {
-                        Text("Exercice \(app.index + 1) / \(workout.exercises.count)")
-                        Spacer()
-                        Text(app.busy ? "Enregistrement…" : app.dirty ? "Brouillon sur l’iPhone" : "Enregistré")
-                    }.font(.caption).foregroundStyle(.secondary)
-                    ProgressView(value: Double((exercise.logged_sets ?? []).filter(\.done).count), total: Double(max(1, exercise.logged_sets?.count ?? 1)))
-                    HStack(alignment: .top, spacing: 16) {
-                        ExerciseImage(exercise: exercise).frame(width: 96, height: 96)
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text(exercise.title).font(.title2.bold()).fixedSize(horizontal: false, vertical: true)
-                            Text(exercise.reps?.replacingOccurrences(of: "\n", with: " · ") ?? "Consigne libre")
-                            if let tempo = exercise.tempo, !tempo.isEmpty { Text("Tempo \(tempo)").font(.caption) }
-                        }
-                    }
-                    if let instruction = exercise.training_instruction, !instruction.isEmpty {
-                        Text(instruction).font(.callout).foregroundStyle(.secondary)
-                    }
-                    if let convention = exercise.weight_convention {
-                        Text(weightLabel(convention) + (exercise.weight_context.map { $0.isEmpty ? "" : " · \($0)" } ?? ""))
-                            .font(.caption).foregroundStyle(.secondary)
-                    }
-                    if exercise.is_document == true {
-                        ForEach(exercise.document_links ?? [], id: \.self) { link in
-                            if let url = URL(string: link), url.scheme == "https" { Link("Ouvrir la fiche d’exercices", destination: url) }
-                        }
-                    }
-                    if let error = app.error { Text(error).foregroundStyle(.red).accessibilityLabel("Erreur : \(error)") }
-                    if app.conflict {
-                        Label("Brouillon conservé. Compare tes valeurs avec la version web avant de recharger.", systemImage: "exclamationmark.triangle").foregroundStyle(.orange)
-                    }
-                    VStack(spacing: 16) {
-                        ForEach(Array((exercise.logged_sets ?? []).enumerated()), id: \.offset) { i, row in
-                            SetRow(number: i + 1, row: row, rest: exercise.restText(at: i), enabled: !workout.locked && !app.busy && !app.conflict,
-                                setWeight: { value in app.edit(row: i) { $0.weight = value } },
-                                setReps: { value in app.edit(row: i) { $0.reps = value } },
-                                setSeconds: { value in app.edit(row: i) { $0.seconds = value } },
-                                toggle: {
-                                    app.edit(row: i) { $0.done.toggle() }
-                                    if !row.done {
-                                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-                                        if let seconds = CoachRules.restSeconds(exercise.restText(at: i)) { Task { await clock.start(seconds: seconds) } }
-                                    }
-                                    Task { await app.save() }
-                                })
-                        }
-                    }.id(exercise.id)
-                    if !workout.locked {
-                        Button { app.addSet() } label: { Label("Ajouter une série", systemImage: "plus.circle") }
-                            .disabled(app.busy || app.conflict || (exercise.logged_sets?.count ?? 0) >= 30)
-                        restView
-                    }
-                    Button { chooser = true } label: { Label("Voir les \(workout.exercises.count) exercices", systemImage: "list.bullet") }
-                    if !workout.locked {
-                        Button("Terminer la séance") { finish = true }.buttonStyle(.borderedProminent).controlSize(.large)
-                            .disabled(app.busy || app.conflict)
-                        Button("Supprimer cette séance commencée", role: .destructive) { deleting = true }.disabled(app.busy)
-                    }
-                    Button("Recharger la version serveur") { reload = true }.font(.footnote).disabled(app.busy)
-                }.padding()
+                exerciseContent(workout, exercise: exercise)
             }.scrollDismissesKeyboard(.interactively).background(Color(.systemGroupedBackground))
                 .navigationTitle(workout.title).navigationBarTitleDisplayMode(.inline)
                 .toolbar(.hidden, for: .tabBar)
@@ -193,6 +134,75 @@ struct SessionScreen: View {
                 .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
                 .onChange(of: workout.locked) { _, locked in UIApplication.shared.isIdleTimerDisabled = !locked }
         }
+    }
+    private func exerciseContent(_ workout: Workout, exercise: Exercise) -> some View {
+                VStack(alignment: .leading, spacing: 22) {
+                    HStack {
+                        Text("Exercice \(app.index + 1) / \(workout.exercises.count)")
+                        Spacer()
+                        Text(app.busy ? "Enregistrement…" : app.dirty ? "Brouillon sur l’iPhone" : "Enregistré")
+                    }.font(.caption).foregroundStyle(.secondary)
+                    ProgressView(value: Double((exercise.logged_sets ?? []).filter(\.done).count), total: Double(max(1, exercise.logged_sets?.count ?? 1)))
+                    HStack(alignment: .top, spacing: 16) {
+                        ExerciseImage(exercise: exercise).frame(width: 96, height: 96)
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(exercise.title).font(.title2.bold()).fixedSize(horizontal: false, vertical: true)
+                            Text(exercise.reps?.replacingOccurrences(of: "\n", with: " · ") ?? "Consigne libre")
+                            if let tempo = exercise.tempo, !tempo.isEmpty { Text("Tempo \(tempo)").font(.caption) }
+                        }
+                    }
+                    if let credit = exercise.thumbnail?.credit {
+                        Text(credit.name + " · " + credit.authors.joined(separator: ", "))
+                            .font(.caption2).foregroundStyle(.secondary)
+                    }
+                    if let instruction = exercise.training_instruction, !instruction.isEmpty {
+                        Text(instruction).font(.callout).foregroundStyle(.secondary)
+                    }
+                    if let convention = exercise.weight_convention {
+                        Text(weightLabel(convention) + (exercise.weight_context.map { $0.isEmpty ? "" : " · \($0)" } ?? ""))
+                            .font(.caption).foregroundStyle(.secondary)
+                    }
+                    if exercise.is_document == true {
+                        ForEach(exercise.document_links ?? [], id: \.self) { link in
+                            if let url = URL(string: link), url.scheme == "https" { Link("Ouvrir la fiche d’exercices", destination: url) }
+                        }
+                    }
+                    if let error = app.error { Text(error).foregroundStyle(.red).accessibilityLabel("Erreur : \(error)") }
+                    if app.conflict {
+                        Label("Brouillon conservé. Compare tes valeurs avec la version web avant de recharger.", systemImage: "exclamationmark.triangle").foregroundStyle(.orange)
+                    }
+                    seriesRows(exercise, workout: workout)
+                    if !workout.locked {
+                        Button { app.addSet() } label: { Label("Ajouter une série", systemImage: "plus.circle") }
+                            .disabled(app.busy || app.conflict || (exercise.logged_sets?.count ?? 0) >= 30)
+                        restView
+                    }
+                    Button { chooser = true } label: { Label("Voir les \(workout.exercises.count) exercices", systemImage: "list.bullet") }
+                    if !workout.locked {
+                        Button("Terminer la séance") { finish = true }.buttonStyle(.borderedProminent).controlSize(.large)
+                            .disabled(app.busy || app.conflict)
+                        Button("Supprimer cette séance commencée", role: .destructive) { deleting = true }.disabled(app.busy)
+                    }
+                    Button("Recharger la version serveur") { reload = true }.font(.footnote).disabled(app.busy)
+                }.padding()
+    }
+    private func seriesRows(_ exercise: Exercise, workout: Workout) -> some View {
+                    VStack(spacing: 16) {
+                        ForEach(Array((exercise.logged_sets ?? []).enumerated()), id: \.offset) { i, row in
+                            SetRow(number: i + 1, row: row, rest: exercise.restText(at: i), enabled: !workout.locked && !app.busy && !app.conflict,
+                                setWeight: { value in app.edit(row: i) { $0.weight = value } },
+                                setReps: { value in app.edit(row: i) { $0.reps = value } },
+                                setSeconds: { value in app.edit(row: i) { $0.seconds = value } },
+                                toggle: {
+                                    app.edit(row: i) { $0.done.toggle() }
+                                    if !row.done {
+                                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                                        if let seconds = CoachRules.restSeconds(exercise.restText(at: i)) { Task { await clock.start(seconds: seconds) } }
+                                    }
+                                    Task { await app.save() }
+                                })
+                        }
+                    }.id(exercise.id)
     }
     private var restView: some View {
         VStack(alignment: .leading, spacing: 10) {
