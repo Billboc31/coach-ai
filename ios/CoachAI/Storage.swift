@@ -1,5 +1,6 @@
 import Foundation
 import Security
+import CryptoKit
 
 // Session only, never the personal access key or provider tokens.
 enum SessionVault {
@@ -30,26 +31,28 @@ enum SessionVault {
 }
 
 enum DraftVault {
-    private static func file() throws -> URL {
-        var dir = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+    private static func file(owner: String, origin: URL, directory: URL? = nil) throws -> URL {
+        var dir = try directory ?? FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         dir.appendPathComponent("CoachAI", isDirectory: true)
         try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true, attributes: [.protectionKey: FileProtectionType.complete])
         var values = URLResourceValues()
         values.isExcludedFromBackup = true
         try dir.setResourceValues(values)
-        return dir.appendingPathComponent("workout-draft.json")
+        let scope = "\(origin.scheme ?? "https")://\(origin.host?.lowercased() ?? ""):\(origin.port ?? 443)|\(owner)"
+        let digest = SHA256.hash(data: Data(scope.utf8)).map { String(format: "%02x", $0) }.joined()
+        return dir.appendingPathComponent("draft-\(digest).json")
     }
-    static func load(owner: String, origin: URL) -> WorkoutDraft? {
-        guard let path = try? file(), let data = try? Data(contentsOf: path),
+    static func load(owner: String, origin: URL, directory: URL? = nil) -> WorkoutDraft? {
+        guard let path = try? file(owner: owner, origin: origin, directory: directory), let data = try? Data(contentsOf: path),
               let draft = try? JSONDecoder().decode(WorkoutDraft.self, from: data),
               draft.owner == owner, CoachRules.sameOrigin(draft.origin, origin) else { return nil }
         return draft
     }
-    static func save(_ draft: WorkoutDraft) throws {
-        try JSONEncoder().encode(draft).write(to: file(), options: [.atomic, .completeFileProtection])
+    static func save(_ draft: WorkoutDraft, directory: URL? = nil) throws {
+        try JSONEncoder().encode(draft).write(to: file(owner: draft.owner, origin: draft.origin, directory: directory), options: [.atomic, .completeFileProtection])
     }
-    static func clear() throws {
-        let path = try file()
+    static func clear(owner: String, origin: URL, directory: URL? = nil) throws {
+        let path = try file(owner: owner, origin: origin, directory: directory)
         if FileManager.default.fileExists(atPath: path.path) { try FileManager.default.removeItem(at: path) }
     }
 }

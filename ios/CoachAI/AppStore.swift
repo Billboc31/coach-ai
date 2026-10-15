@@ -98,6 +98,10 @@ final class AppStore: ObservableObject {
         index = n
         if dirty { persist() }
     }
+    private func clearDraft() throws {
+        guard let api, let owner else { throw CoachFailure.signedOut }
+        try DraftVault.clear(owner: owner.id, origin: api.origin)
+    }
     private func persist() {
         guard let api, let owner, let workout else { return }
         do { try DraftVault.save(WorkoutDraft(owner: owner.id, origin: api.origin, workout: workout, progression: progression, index: index)) }
@@ -111,7 +115,7 @@ final class AppStore: ObservableObject {
         do {
             self.workout = try await api.save(workout, progression: progression, finish: finish)
             dirty = false; progression = [:]
-            try DraftVault.clear()
+            try clearDraft()
             if finish { overview = try await api.get("/api/gym") }
         } catch { report(error) }
     }
@@ -121,7 +125,7 @@ final class AppStore: ObservableObject {
         do {
             self.workout = try await api.get("/api/gym/workouts/\(workout.id)")
             self.workout?.applySuggestions()
-            try DraftVault.clear(); progression = [:]; dirty = false; conflict = false; error = nil
+            try clearDraft(); progression = [:]; dirty = false; conflict = false; error = nil
         } catch { report(error) }
     }
     func delete(_ value: Workout) async {
@@ -130,7 +134,7 @@ final class AppStore: ObservableObject {
         do {
             try await api.delete(value)
             if workout?.id == value.id {
-                try DraftVault.clear(); workout = nil; dirty = false; progression = [:]; conflict = false
+                try clearDraft(); workout = nil; dirty = false; progression = [:]; conflict = false
             }
             overview = try await api.get("/api/gym"); error = nil
         } catch { report(error) }

@@ -34,7 +34,8 @@ Apple adaptées. Aucun certificat ni compte Apple n’est fourni dans le dépôt
   lancement après authentification au même compte/serveur. Aucun rejeu automatique d’une
   mutation dont la réponse a été perdue. Les conflits de révision bloquent l’écrasement ;
   comparer les valeurs dans la vue web avant de choisir « Recharger la version serveur ».
-  **Un seul brouillon actif par installation** : enregistrer avant de changer de séance/compte.
+  **Un brouillon actif par compte et serveur** : enregistrer avant de changer de séance.
+  Les brouillons des autres comptes sont conservés séparément.
   Les séances nouvelles demandent un accès réseau. Ce n’est pas une synchronisation hors ligne
   complète ni un téléchargement de tous les programmes sur l’iPhone.
 - Coach, activités, planning et paramètres via les pages existantes dans une WKWebView
@@ -72,7 +73,8 @@ Aucun mot de passe fournisseur ni client OAuth emprunté n’est ajouté à l’
 Le workflow **iPhone** construit le projet et exécute les tests unitaires dans un simulateur
 Apple sur un runner macOS. Tests : origines, absence de données ≠ zéro, prescriptions de repos,
 respect des séries déjà cochées, schéma de mise à jour/révision, en-têtes authentifiés,
-absence de rejeu après conflit et rejet de session expirée avant envoi.
+absence de rejeu après conflit, rejet de session expirée avant envoi et isolation des brouillons
+entre comptes/serveurs.
 
 Sur Mac, équivalent (adapter la destination avec `xcodebuild -showdestinations`) :
 

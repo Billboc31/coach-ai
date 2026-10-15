@@ -2,6 +2,22 @@ import XCTest
 @testable import CoachAI
 
 final class CoachAITests: XCTestCase {
+    func testDraftsStaySeparateAcrossOwnersAndServers() throws {
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let origin = URL(string: "https://example.com")!
+        let other = URL(string: "https://other.example.com")!
+        var workout = Workout(id: "synthetic", title: "Demo", started_at: "2026-01-01", finished_at: nil, revision: 1, suggestions_applied: true, exercises: [])
+        try DraftVault.save(WorkoutDraft(owner: "owner-a", origin: origin, workout: workout, progression: [:], index: 0), directory: directory)
+        workout.revision = 2
+        try DraftVault.save(WorkoutDraft(owner: "owner-b", origin: origin, workout: workout, progression: [:], index: 0), directory: directory)
+        XCTAssertEqual(DraftVault.load(owner: "owner-a", origin: origin, directory: directory)?.workout.revision, 1)
+        XCTAssertEqual(DraftVault.load(owner: "owner-b", origin: origin, directory: directory)?.workout.revision, 2)
+        XCTAssertNil(DraftVault.load(owner: "owner-a", origin: other, directory: directory))
+        try DraftVault.clear(owner: "owner-b", origin: origin, directory: directory)
+        XCTAssertNotNil(DraftVault.load(owner: "owner-a", origin: origin, directory: directory))
+        XCTAssertNil(DraftVault.load(owner: "owner-b", origin: origin, directory: directory))
+    }
     func testOriginsRejectSecretAndCallbackURLs() throws {
         for bad in ["http://example.com", "https://user:secret@example.com", "https://example.com/api", "https://example.com?token=private", "https://example.com/#callback", "file:///tmp/test"] {
             XCTAssertThrowsError(try CoachRules.origin(bad))
