@@ -20,3 +20,12 @@ dist/
 
 # Licensed RepDB data generated only for in-app deployment; never redistribute.
 backend/coach/data/exercise_catalog/repdb-generated.json
+
+# iPhone development: local IDE state, builds and signing material.
+ios/**/xcuserdata/
+ios/**/DerivedData/
+*.xcuserstate
+*.xcarchive/
+*.ipa
+*.p12
+*.mobileprovision
