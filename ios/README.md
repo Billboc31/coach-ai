@@ -4,6 +4,12 @@ Application SwiftUI pour iPhone, iOS 17 minimum. Aucun changement du stockage Ra
 les comptes, programmes, séances, Garmin et conversations utilisent le serveur existant.
 Android n’est pas inclus dans ce lot.
 
+## Installer sans Mac
+
+Voir [TESTFLIGHT.md](TESTFLIGHT.md) pour la compilation GitHub et l’installation
+sur iPhone via TestFlight. La signature avec le bon compte Apple reste nécessaire.
+Pour utiliser la version web immédiatement : Safari → Partager → Sur l’écran d’accueil.
+
 ## Installer depuis ton Mac
 
 1. Mettre à jour le dépôt et ouvrir **ios/CoachAI.xcodeproj** dans Xcode 16 ou ultérieur.

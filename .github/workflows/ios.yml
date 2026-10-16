@@ -25,3 +25,14 @@ jobs:
           -resultBundlePath /tmp/coach-ios-results.xcresult
           -parallel-testing-enabled NO
           CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=YES
+
+  archive:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate iPhone release archive without distribution credentials
+        run: >-
+          xcodebuild archive -project ios/CoachAI.xcodeproj -scheme CoachAI
+          -configuration Release -destination 'generic/platform=iOS'
+          -archivePath /tmp/CoachAI.xcarchive CODE_SIGNING_ALLOWED=NO

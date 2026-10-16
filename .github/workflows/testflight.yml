@@ -1,0 +1,30 @@
+name: TestFlight
+on:
+  workflow_dispatch:
+    inputs:
+      bundle_id:
+        description: Identifiant exact enregistré dans ton compte Apple
+        required: true
+        default: com.bpconsulting.coachai
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: coach-testflight
+  cancel-in-progress: false
+jobs:
+  upload:
+    if: github.ref == 'refs/heads/main'
+    runs-on: macos-15
+    timeout-minutes: 40
+    environment: testflight
+    env:
+      COACH_BUNDLE_ID: ${{ inputs.bundle_id }}
+      APPLE_TEAM_ID: ${{ vars.APPLE_TEAM_ID }}
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive iPhone, sign with Apple and upload
+        run: bash ios/scripts/testflight.sh
