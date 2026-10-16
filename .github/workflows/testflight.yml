@@ -15,10 +15,11 @@ concurrency:
 jobs:
   upload:
     if: github.ref == 'refs/heads/main'
-    runs-on: macos-15
+    runs-on: macos-26
     timeout-minutes: 40
     environment: testflight
     env:
+      DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
       COACH_BUNDLE_ID: ${{ inputs.bundle_id }}
       APPLE_TEAM_ID: ${{ vars.APPLE_TEAM_ID }}
       ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}

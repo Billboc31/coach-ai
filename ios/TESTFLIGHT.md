@@ -1,6 +1,7 @@
 # Installer la version native sans ton Mac
 
-Le Mac de compilation est le runner macOS GitHub. Sur l’iPhone, l’installation
+Le Mac de compilation est le runner macOS 26 GitHub avec Xcode 26.6, pour respecter
+le SDK iOS 26 minimum demandé par Apple depuis avril 2026. Sur l’iPhone, l’installation
 se fait avec l’application **TestFlight** d’Apple. Aucun IPA non signé ni build
 simulateur ne peut remplacer cet envoi signé.
 
