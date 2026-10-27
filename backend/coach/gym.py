@@ -23,6 +23,10 @@ lock = threading.RLock()
 MAX_FILE = 5 * 1024 * 1024
 MAX_UNCOMPRESSED = 30 * 1024 * 1024
 MAX_ARCHIVE_ENTRIES = 2000
+MAX_ROWS = 1000
+MAX_COLUMNS = 256
+# Preserve the former worst-case preview cell budget while allowing wider sheets.
+MAX_PREVIEW_CELLS = 1_200_000
 
 
 class ImportValidationError(ValueError):
@@ -278,16 +282,23 @@ def preview(filename, encoded, *, refresh=False):
             "Fichier Excel invalide ou illisible. Enregistre-le au format .xlsx dans Excel puis réessaie."
         ) from None
     sheets = []
+    preview_cells = 0
     try:
         if len(workbook.worksheets) > 30:
             raise ImportValidationError("Ce classeur contient plus de 30 feuilles (30 maximum).")
         for sheet in workbook.worksheets[:30]:
             rows = []
             last_row, last_column = content_bounds(sheet)
-            if last_row > 1000 or last_column > 40:
+            if last_row > MAX_ROWS or last_column > MAX_COLUMNS:
                 raise ImportValidationError(
                     f"Une feuille contient des données jusqu’à la ligne {last_row} et la colonne {last_column}. "
-                    "L’import accepte 1000 lignes et 40 colonnes par feuille."
+                    f"L’import accepte {MAX_ROWS} lignes et {MAX_COLUMNS} colonnes par feuille."
+                )
+            preview_cells += last_row * last_column
+            if preview_cells > MAX_PREVIEW_CELLS:
+                raise ImportValidationError(
+                    "Ce classeur contient trop de cellules pour l’aperçu complet. "
+                    "Réduis le nombre de feuilles ou sépare-le en plusieurs fichiers."
                 )
             links, dates, display_rows = {}, [], []
             for i, cells in enumerate(sheet.iter_rows(max_row=last_row, max_col=last_column)):
@@ -382,7 +393,7 @@ def preview(filename, encoded, *, refresh=False):
 
 class SheetMapping(BaseModel):
     name: str = Field(max_length=100)
-    header: int = Field(ge=0, le=999)
+    header: int = Field(ge=0, le=MAX_ROWS - 1)
     mapping: dict[str, int] = Field(max_length=16)
 
 
@@ -419,7 +430,10 @@ def confirm(key, selection, *, rebuild=False):
                 raise ValueError(
                     "Choisir la ligne des titres et la colonne exercice pour chaque feuille."
                 )
-            if any(k not in ALIASES or not 0 <= v < 40 for k, v in chosen.mapping.items()):
+            column_count = min(MAX_COLUMNS, max((len(row) for row in sheet["rows"]), default=0))
+            if any(
+                k not in ALIASES or not 0 <= v < column_count for k, v in chosen.mapping.items()
+            ):
                 raise ValueError("Association de colonnes invalide.")
             items = []
             for index, row, label, week, session in workout_rows(sheet, chosen):

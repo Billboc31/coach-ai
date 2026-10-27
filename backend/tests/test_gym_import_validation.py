@@ -94,3 +94,71 @@ def test_format_and_payload_errors_keep_accurate_messages(client):
     assert "5 Mo" not in broken.json()["detail"]
     malformed = client.post("/api/gym/import", json=[])
     assert malformed.status_code == 422 and "Requête" in malformed.json()["detail"]
+
+
+def wide_workbook(columns=68):
+    from openpyxl import Workbook
+
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = "Wide example"
+    sheet.cell(1, 1, "Synthetic example")
+    sheet.cell(2, columns - 2, "Séries")
+    sheet.cell(2, columns - 1, "Répétitions")
+    sheet.cell(2, columns, "Exercice")
+    sheet.cell(3, columns - 2, 3)
+    sheet.cell(3, columns - 1, 8)
+    sheet.cell(3, columns, "Exercise example")
+    binary = io.BytesIO()
+    workbook.save(binary)
+    workbook.close()
+    return binary.getvalue()
+
+
+def test_68_column_sheet_preview_and_confirmation_keep_the_last_column(client):
+    response = upload(client, wide_workbook())
+    assert response.status_code == 200
+    preview = response.json()
+    sheet = preview["sheets"][0]
+    assert len(sheet["rows"]) == 3
+    assert len(sheet["rows"][2]) == 68
+    assert sheet["rows"][2][67] == "Exercise example"
+    assert sheet["mapping"]["name"] == 67
+    confirmed = client.post(
+        f"/api/gym/import/{preview['id']}/confirm",
+        json={
+            "title": "Wide test",
+            "sheets": [
+                {"name": sheet["name"], "header": sheet["header"], "mapping": sheet["mapping"]}
+            ],
+        },
+    )
+    assert confirmed.status_code == 200
+    exercise = confirmed.json()["days"][0]["exercises"][0]
+    assert exercise["name"] == "Exercise example"
+    assert exercise["sets"] == 3
+    assert exercise["reps"] == "8"
+
+
+def test_wide_sheet_limits_remain_bounded(client, monkeypatch):
+    too_wide = upload(client, wide_workbook(257))
+    assert too_wide.status_code == 422
+    assert "256 colonnes" in too_wide.json()["detail"]
+    monkeypatch.setattr(gym, "MAX_PREVIEW_CELLS", 200)
+    too_dense = upload(client, wide_workbook())
+    assert too_dense.status_code == 422
+    assert "trop de cellules" in too_dense.json()["detail"]
+
+
+def test_mapping_cannot_reference_a_column_outside_the_actual_sheet(client):
+    preview = upload(client, wide_workbook()).json()
+    sheet = preview["sheets"][0]
+    response = client.post(
+        f"/api/gym/import/{preview['id']}/confirm",
+        json={
+            "title": "Invalid mapping",
+            "sheets": [{"name": sheet["name"], "header": 1, "mapping": {"name": 68}}],
+        },
+    )
+    assert response.status_code == 422
+    assert "Association de colonnes invalide" in response.json()["detail"]
