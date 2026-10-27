@@ -423,11 +423,14 @@ async def gym_import(request: Request):
         filename, encoded = value["filename"], value["base64"]
         if not isinstance(filename, str) or not isinstance(encoded, str):
             raise ValueError()
-        return await run_in_threadpool(gym.preview, filename, encoded)
     except (ValueError, KeyError, TypeError):
-        raise HTTPException(
-            422, "Import impossible : choisir un fichier .xlsx de 5 Mo maximum."
-        ) from None
+        raise HTTPException(422, "Requête d’import invalide. Choisis un fichier .xlsx.") from None
+    try:
+        return await run_in_threadpool(gym.preview, filename, encoded)
+    except gym.ImportTooLarge as exc:
+        raise HTTPException(413, str(exc)) from None
+    except gym.ImportValidationError as exc:
+        raise HTTPException(422, str(exc)) from None
 
 
 @app.post("/api/gym/import/{key}/confirm", dependencies=[Depends(require_session)])

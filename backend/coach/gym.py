@@ -21,6 +21,31 @@ from coach.config import user_id
 
 lock = threading.RLock()
 MAX_FILE = 5 * 1024 * 1024
+MAX_UNCOMPRESSED = 30 * 1024 * 1024
+MAX_ARCHIVE_ENTRIES = 2000
+
+
+class ImportValidationError(ValueError):
+    """Safe import diagnosis, without workbook values or provider details."""
+
+
+class ImportTooLarge(ImportValidationError):
+    pass
+
+
+def content_bounds(sheet):
+    # Public worksheet dimensions include styled empty cells. Iterating that
+    # rectangle can allocate millions of cells. Inspect only cells openpyxl has
+    # already loaded, then iterate the bounded rectangle containing real content.
+    cells = [
+        cell
+        for cell in sheet._cells.values()
+        if cell.value not in (None, "") or getattr(cell, "hyperlink", None)
+    ]
+    return (
+        max((cell.row for cell in cells), default=1),
+        max((cell.column for cell in cells), default=1),
+    )
 
 
 def normalized(value):
@@ -221,30 +246,51 @@ def workout_view(value, snapshot=None):
 
 def preview(filename, encoded, *, refresh=False):
     if not filename.lower().endswith(".xlsx"):
-        raise ValueError("Choisir un fichier .xlsx ; convertir les anciens .xls dans Excel.")
+        raise ImportValidationError(
+            "Choisir un fichier .xlsx ; convertir les anciens .xls dans Excel."
+        )
     try:
         binary = base64.b64decode(encoded, validate=True)
-        if len(binary) > MAX_FILE:
-            raise ValueError()
+    except (ValueError, TypeError):
+        raise ImportValidationError(
+            "Contenu du fichier illisible. Choisis un fichier .xlsx valide."
+        ) from None
+    if len(binary) > MAX_FILE:
+        raise ImportTooLarge("Le fichier dépasse réellement la limite de 5 Mo.")
+    try:
         with zipfile.ZipFile(io.BytesIO(binary)) as archive:
             entries = archive.infolist()
-            if len(entries) > 2000 or sum(e.file_size for e in entries) > 30 * 1024 * 1024:
-                raise ValueError()
+            if len(entries) > MAX_ARCHIVE_ENTRIES:
+                raise ImportValidationError(
+                    "Ce classeur contient trop de composants internes (2000 maximum)."
+                )
+            if sum(e.file_size for e in entries) > MAX_UNCOMPRESSED:
+                raise ImportValidationError(
+                    "Ce classeur dépasse 30 Mo une fois décompressé, même si le fichier .xlsx est plus petit."
+                )
         workbook = load_workbook(
             io.BytesIO(binary), read_only=False, data_only=False, keep_links=False
         )
+    except ImportValidationError:
+        raise
     except Exception:
-        raise ValueError("Fichier Excel invalide ou trop volumineux (5 Mo maximum).") from None
+        raise ImportValidationError(
+            "Fichier Excel invalide ou illisible. Enregistre-le au format .xlsx dans Excel puis réessaie."
+        ) from None
     sheets = []
     try:
         if len(workbook.worksheets) > 30:
-            raise ValueError("30 feuilles maximum.")
+            raise ImportValidationError("Ce classeur contient plus de 30 feuilles (30 maximum).")
         for sheet in workbook.worksheets[:30]:
             rows = []
-            if sheet.max_row > 1000 or sheet.max_column > 40:
-                raise ValueError("1000 lignes et 40 colonnes maximum par feuille.")
+            last_row, last_column = content_bounds(sheet)
+            if last_row > 1000 or last_column > 40:
+                raise ImportValidationError(
+                    f"Une feuille contient des données jusqu’à la ligne {last_row} et la colonne {last_column}. "
+                    "L’import accepte 1000 lignes et 40 colonnes par feuille."
+                )
             links, dates, display_rows = {}, [], []
-            for i, cells in enumerate(sheet.iter_rows()):
+            for i, cells in enumerate(sheet.iter_rows(max_row=last_row, max_col=last_column)):
                 row = [c.value for c in cells]
                 for c in cells:
                     if c.hyperlink:
@@ -252,7 +298,7 @@ def preview(filename, encoded, *, refresh=False):
                     if getattr(c, "is_date", False):
                         dates.append(f"{c.row}:{c.column - 1}")
                 if i == 1000:
-                    raise ValueError(
+                    raise ImportValidationError(
                         "Une feuille dépasse 1000 lignes. Réduis le fichier avant import."
                     )
                 display_rows.append([display_cell(c) for c in cells])
