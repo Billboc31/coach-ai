@@ -13,3 +13,5 @@
 .exercise-thumbnail{background:#d2effa;color:#376c85}
 
 .gym-exercise-nav button.active{background:#e7efdc;color:#354c2f}
+
+.gym-exercise-description .gym-circuit-label {display:block;background:#eaf1e2;color:#365b38;border-radius:8px;padding:7px 10px;margin:7px 0;font-weight:600;}

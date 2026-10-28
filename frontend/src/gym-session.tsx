@@ -5,6 +5,7 @@ import { conventionLabels } from "./exercise-catalogue";
 import type { Exercise, SetLog } from "./gym";
 import "./gym-session.css";
 import {seriesRest} from "./gym-rest";
+import {circuitAt} from "./gym-circuit";
 
 type Props = {
   exercises: Exercise[];
@@ -41,15 +42,8 @@ export function GymSession(p: Props) {
   const { exercise: e, rows } = p;
   useEffect(()=>{window.scrollTo({top:0});},[e.id]);
   const completed = rows.filter((s) => s.done).length;
-  // Only consecutive, explicitly numbered labels (F1, F2...) form a circuit.
-  const label = (x: Exercise) => /^([A-Za-z])\s*([1-9]\d*)$/.exec((x.order || "").trim());
-  const currentLabel = label(e);
-  let start = p.index, end = p.index;
-  if (currentLabel) {
-    while (start > 0 && label(p.exercises[start - 1])?.[1].toUpperCase() === currentLabel[1].toUpperCase()) start--;
-    while (end + 1 < p.exercises.length && label(p.exercises[end + 1])?.[1].toUpperCase() === currentLabel[1].toUpperCase()) end++;
-  }
-  const circuit = currentLabel && end > start && p.exercises.slice(start, end + 1).every((x, n) => Number(label(x)?.[2]) === n + 1);
+  const circuit = circuitAt(p.exercises, p.index);
+  const start = circuit?.start ?? p.index, end = circuit?.end ?? p.index;
   const nextCircuitIndex = p.index < end ? p.index + 1 : start;
   const partner = p.exercises[nextCircuitIndex];
   function valid(row:SetLog) {
