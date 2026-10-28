@@ -27,6 +27,7 @@ def unlock(client):
 def test_private_routes_and_cross_origin(client):
     assert client.get("/api/dashboard").status_code == 401
     assert client.get("/api/health").status_code == 200
+    assert client.get("/api/health").json()["release"] == "2026-10-28-gym-summary"
     assert (
         client.post(
             "/api/login",

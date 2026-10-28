@@ -140,7 +140,7 @@ class SyncPeriod(BaseModel):
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "version": "0.1.0"}
+    return {"status": "ok", "version": "0.1.0", "release": "2026-10-28-gym-summary"}
 
 
 @app.post("/api/login")
