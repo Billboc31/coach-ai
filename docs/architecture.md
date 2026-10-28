@@ -354,3 +354,29 @@ ni coordonnées GPS, ni fichier FIT, ni tous les points bruts. La carte indique 
 le clic transmet les mesures utiles à OpenAI et utilise le forfait pour l’analyse.
 Au fil suivant, les données chargées de la carte la plus récente dans l’historique
 récent restent disponibles. Tests avec Garmin/OpenAI simulés, compte réel à valider.
+
+
+### Weekly strength review
+
+`GET /api/gym/summary?week=YYYY-MM-DD` normalizes to Monday–Sunday in the
+owner’s profile timezone (Europe/Paris by default). It reads all recorded workouts
+and imported strength activities, independently of overview pagination. Only
+validated sets contribute to muscles, repetitions, charges and volume; unfinished
+workouts are explicitly provisional. Missing weights, muscles, cardio or durations
+remain unknown. The muscle map uses catalogue metadata for the recorded variant,
+with current resolution only for previously unidentified movements.
+
+Garmin and app sessions are associated only when mutually unique starts are within
+90 minutes. Explicit decisions in owner-scoped `gym_garmin_link` records take
+priority. `PUT /api/gym/workouts/{id}/garmin` can select an activity, keep a session
+separate with `activity_id: null`, or restore matching with `automatic: true`.
+An activity cannot be manually assigned to two sessions. A paired Garmin session
+contributes duration/cardio once; Garmin-only activities do not invent exercises.
+Weeks are attributed to the app session’s start when paired.
+
+Charge comparisons use the same recorded exercise ID, catalogue variant, weight
+convention and equipment context, at exactly the same repetition count. The
+reference is the most recent matching session before the selected week; records
+compare with all previous recorded sets. Volume is the entered kg × repetitions,
+without guessing body weight or multiplying dumbbell loads. Weekly observations
+are computed locally without a paid model call or a claim about recovery.

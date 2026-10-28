@@ -27,6 +27,7 @@ from coach import (
     garmin_login,
     garmin_schedule,
     gym,
+    gym_summary,
     memory,
     planning,
 )
@@ -409,6 +410,25 @@ class GymVideo(BaseModel):
 @app.get("/api/gym", dependencies=[Depends(require_session)])
 def gym_overview():
     return gym.overview()
+
+
+@app.get("/api/gym/summary", dependencies=[Depends(require_session)])
+def gym_weekly_summary(week: date | None = None):
+    try:
+        return gym_summary.weekly(week)
+    except (ValueError, OverflowError):
+        raise HTTPException(422, "Semaine invalide.") from None
+
+
+@app.put("/api/gym/workouts/{key}/garmin", dependencies=[Depends(require_session)])
+def gym_garmin_link(key: str, body: gym_summary.GarminLink):
+    try:
+        value = gym_summary.set_link(key, body)
+        if value is None:
+            raise HTTPException(404, "Séance introuvable.")
+        return value
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
 
 
 @app.post("/api/gym/import", dependencies=[Depends(require_session)])
