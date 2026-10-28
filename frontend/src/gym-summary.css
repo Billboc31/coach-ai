@@ -1,1 +1,38 @@
 .gym-weekly {padding-bottom:24px}.weekly-toolbar {display:flex;align-items:end;gap:10px;flex-wrap:wrap;margin:22px 0 8px}.weekly-toolbar label {display:grid;gap:6px;font-size:12px;color:#617655}.weekly-toolbar button {min-height:44px}.weekly-metrics {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}.weekly-metrics article {min-width:0;padding:20px}.weekly-metrics small {color:#617655}.weekly-metrics strong {display:block;font-size:26px;margin:12px 0;overflow-wrap:anywhere}.weekly-metrics p {font-size:12px;margin:0}.weekly-insights {background:#edf3e7;margin-bottom:20px}.weekly-insights p {color:#4b6146;font-size:13px}.weekly-muscle-grid {display:grid;grid-template-columns:1fr 1fr;gap:18px}.weekly-muscle-list {display:grid;gap:18px;margin-top:20px}.weekly-muscle-list>div {display:grid;gap:6px}.weekly-muscle-list span {font-size:12px;color:#617655}.weekly-muscle-list meter {width:100%;height:12px;accent-color:#527e53}.weekly-exercises,.weekly-sessions {margin-top:28px;display:grid;gap:14px}.weekly-exercises h3,.weekly-sessions h3 {font-size:18px;margin:0}.weekly-set-list>div {display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #e7ede2;padding:10px 0;font-size:13px}.weekly-set-list span {color:#788279}.weekly-progression {background:#f0f5e9;border-radius:10px;padding:12px;display:grid;gap:6px;color:#426246;font-size:13px}.weekly-session-heading {display:flex;justify-content:space-between;gap:14px;align-items:center}.weekly-session-heading p {margin:6px 0;font-size:13px}.weekly-source {display:inline-block;background:#edf3e7;padding:6px 9px;border-radius:8px;font-size:12px;color:#426246;margin-bottom:10px}.weekly-association {display:grid;gap:8px;font-size:13px;color:#617655;margin:10px 0}.weekly-association select {width:100%;min-width:0}.weekly-sessions details {margin-top:14px;font-size:13px}.weekly-sessions summary {cursor:pointer;min-height:44px;padding:12px 0}.weekly-garmin-only {border-style:dashed}.weekly-empty {margin-bottom:20px}.weekly-muscle-grid .muscle-map {margin-top:16px}@media(max-width:760px){.weekly-metrics {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.weekly-metrics article {padding:15px}.weekly-metrics strong {font-size:23px}.weekly-muscle-grid {grid-template-columns:1fr}.weekly-session-heading {align-items:flex-start;flex-direction:column}.weekly-set-list>div {flex-direction:column;gap:5px}.weekly-toolbar label {flex:1;min-width:150px}.weekly-toolbar input {width:100%}.weekly-toolbar>.text-button {width:100%}}
+
+.weekly-exercise-card.card {padding:0;overflow:hidden;border-radius:16px;box-shadow:0 3px 12px #213a2c04;transition:border-color .2s,box-shadow .2s;min-width:0}
+.weekly-exercise-card[open] {border-color:#b9cdb0;box-shadow:0 5px 20px #213a2c08}
+.weekly-exercise-toggle {display:flex;align-items:center;gap:14px;padding:20px;list-style:none;cursor:pointer;min-height:84px}
+.weekly-exercise-toggle::-webkit-details-marker {display:none}
+.weekly-exercise-toggle::marker {content:''}
+.weekly-exercise-icon {display:flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;border-radius:13px;background:#edf3e7;color:#52714a}
+.weekly-exercise-title {display:grid;gap:6px;flex:1;min-width:0}
+.weekly-exercise-title strong {font-family:'Manrope',sans-serif;font-size:16px;color:#294330;overflow-wrap:anywhere}
+.weekly-exercise-title small {font-size:12px;color:#788477;line-height:1.5}
+.weekly-exercise-chevron {flex-shrink:0;color:#6d8262;transition:transform .2s}
+.weekly-exercise-card[open]>.weekly-exercise-toggle .weekly-exercise-chevron {transform:rotate(180deg)}
+.weekly-exercise-card[open]>.weekly-exercise-toggle {background:#f4f7ef}
+.weekly-exercise-content {padding:0 20px 20px;border-top:1px solid #e6ecdf}
+.weekly-exercise-content h3 {font-size:15px;margin:18px 0 6px}
+.weekly-exercise-convention {font-size:12px;color:#6b7d63;margin:14px 0 0}
+.weekly-rep-table {border:1px solid #e3e9dc;border-radius:12px;overflow:hidden;margin:16px 0;max-width:100%}
+.weekly-rep-table table {width:100%;border-collapse:collapse;table-layout:fixed;text-align:left}
+.weekly-rep-table thead {background:#f3f6ee;color:#718168}
+.weekly-rep-table thead th {font-size:11px;font-weight:500;padding:12px 14px}
+.weekly-rep-table td,.weekly-rep-table tbody th {padding:16px 14px;border-top:1px solid #e7ecdf;vertical-align:middle;overflow-wrap:anywhere}
+.weekly-rep-table tbody th {font-weight:500}
+.weekly-rep-count {font-size:24px;font-weight:700;color:#48623c;margin-right:6px}
+.weekly-rep-table small {font-size:11px;font-weight:400;color:#7b8773}
+.weekly-rep-table td>strong {font-size:23px;font-family:'Manrope',sans-serif;color:#2d4835;white-space:nowrap}
+.weekly-rep-table td>strong>small {font-size:13px}
+.weekly-record {display:block;color:#577d36;font-size:10px;font-weight:600;margin-top:6px}
+.weekly-load-change {display:inline-block;font-size:13px;font-weight:600;border-radius:7px;padding:5px 8px;background:#eef1eb;color:#667360}
+.weekly-load-change.up {background:#e7f2df;color:#477032}
+.weekly-load-change.down {background:#f5efe4;color:#8d7045}
+.weekly-previous-load {display:block;margin-top:7px;line-height:1.6}
+.weekly-previous-load>span {display:block;font-size:10px}
+.weekly-new-reference {color:#7b8773;font-size:12px}
+.weekly-exercise-sets {border-top:1px solid #e5ebdf;margin-top:18px}
+.weekly-exercise-sets>summary {font-size:13px;color:#58754c;padding:14px 0;min-height:44px;cursor:pointer}
+.weekly-no-reps {font-size:13px;background:#f5f7f0;border-radius:10px;padding:14px;color:#6c7d62}
+@media(max-width:760px){.weekly-exercise-toggle {padding:16px;gap:10px}.weekly-exercise-title strong {font-size:15px}.weekly-exercise-title small {font-size:11px}.weekly-exercise-content {padding:0 14px 14px}.weekly-rep-table thead th {padding:11px 8px;font-size:10px}.weekly-rep-table td,.weekly-rep-table tbody th {padding:14px 8px}.weekly-rep-count {font-size:22px;display:block;margin-right:0}.weekly-rep-table td>strong {font-size:20px}.weekly-load-change {font-size:12px;padding:5px 6px}.weekly-exercise-icon {flex-basis:38px;width:38px;height:38px}.weekly-previous-load {font-size:10px!important}}
