@@ -41,6 +41,17 @@ export function GymSession(p: Props) {
   const { exercise: e, rows } = p;
   useEffect(()=>{window.scrollTo({top:0});},[e.id]);
   const completed = rows.filter((s) => s.done).length;
+  // Only consecutive, explicitly numbered labels (F1, F2...) form a circuit.
+  const label = (x: Exercise) => /^([A-Za-z])\s*([1-9]\d*)$/.exec((x.order || "").trim());
+  const currentLabel = label(e);
+  let start = p.index, end = p.index;
+  if (currentLabel) {
+    while (start > 0 && label(p.exercises[start - 1])?.[1].toUpperCase() === currentLabel[1].toUpperCase()) start--;
+    while (end + 1 < p.exercises.length && label(p.exercises[end + 1])?.[1].toUpperCase() === currentLabel[1].toUpperCase()) end++;
+  }
+  const circuit = currentLabel && end > start && p.exercises.slice(start, end + 1).every((x, n) => Number(label(x)?.[2]) === n + 1);
+  const nextCircuitIndex = p.index < end ? p.index + 1 : start;
+  const partner = p.exercises[nextCircuitIndex];
   function valid(row:SetLog) {
     return (row.reps != null || row.seconds != null) &&
       [row.weight,row.reps,row.seconds].every(v=>v==null || (Number.isFinite(v)&&v>=0)) &&
@@ -50,7 +61,7 @@ export function GymSession(p: Props) {
   }
   function validate(i:number) {
     p.onField(i,"done",!rows[i].done);
-    if(!rows[i].done)p.onRest(i);
+    if (!rows[i].done && (!circuit || (p.index === end && p.exercises.slice(start, end).every(x => p.allSets[x.id]?.[i]?.done)))) p.onRest(i);
   }
   const editable = !p.locked && !p.finishing;
   const hasReference =
@@ -105,6 +116,13 @@ export function GymSession(p: Props) {
         />
         <h1>{e.canonical_name || e.movement_name || e.name}</h1>
       </div>
+      {circuit && <div className="session-circuit" role="note">
+        <strong>Exercices à enchaîner · {p.exercises.slice(start, end + 1).map(x => x.order).join(" → ")}</strong>
+        <p>Fais une série de chaque exercice dans l’ordre, puis prends le repos. Recommence ensuite à {p.exercises[start].order}.</p>
+        <button className="outline" disabled={p.finishing} onClick={() => p.onSelect(nextCircuitIndex)}>
+          {p.index < end ? "Enchaîner avec" : "Revenir à"} {partner.order} · {partner.canonical_name || partner.movement_name || partner.name}
+        </button>
+      </div>}
       {e.is_document ? (
         <div className="gym-document">
           <p>{e.training_instruction}</p>
@@ -167,7 +185,7 @@ export function GymSession(p: Props) {
             <input type="number" inputMode="numeric" min={0} max={1000} step={1} value={row.reps??''} aria-label={`Répétitions série ${i+1}`} disabled={!editable} onChange={ev=>p.onField(i,'reps',ev.target.value===''?null:Number(ev.target.value))}/>
             <button className={'session-check '+(row.done?'validated':'')} aria-label={`Valider la série ${i+1}`} aria-pressed={row.done} disabled={!editable||(!row.done&&!valid(row))} onClick={()=>validate(i)}><Check size={24}/></button>
           </div>
-          <small className="session-line-rest">Repos après cette série : {seriesRest(e.rest||e.short_rest||"",i,rows.length)||"non précisé"}</small>
+          <small className="session-line-rest">{circuit && p.index < end ? `Enchaîne avec ${partner.order} avant le repos` : `Repos ${circuit ? "après les exercices enchaînés" : "après cette série"} : ${seriesRest(e.rest||e.short_rest||"",i,rows.length)||"non précisé"}`}</small>
         </div>)}
         <details className="session-row-options"><summary>Durées / recopier une charge</summary>
           {rows.map((row,i)=><div className="session-extra-row" key={i}><label>Secondes · série {i+1}<input type="number" inputMode="numeric" min={0} max={7200} step={1} value={row.seconds??''} aria-label={`Secondes série ${i+1}`} disabled={!editable} onChange={ev=>p.onField(i,'seconds',ev.target.value===''?null:Number(ev.target.value))}/></label>{i>0&&rows[i-1].weight!=null&&<button className="text-button" disabled={!editable} onClick={()=>p.onField(i,'weight',rows[i-1].weight)}>Série {i+1} : même poids que la précédente · {rows[i-1].weight} kg</button>}</div>)}

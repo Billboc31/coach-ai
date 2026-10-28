@@ -309,3 +309,7 @@ body.gym-session-active .app > main {
 .gym-progression-dialog > div {display:grid;gap:10px;margin-top:16px;}
 .gym-progression-dialog button {min-height:48px;justify-content:center;}
 .gym-progression-preview {font-weight:600;}
+
+.session-circuit {background:#eaf1e2;border:1px solid #cbdcc0;border-radius:14px;padding:14px;margin:0 0 18px;color:#354f29;}
+.session-circuit p {margin:6px 0 12px;color:#516d44;font-size:14px;}
+.session-circuit button {min-height:44px;text-align:left;justify-content:flex-start;width:100%;}
