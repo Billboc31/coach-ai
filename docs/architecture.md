@@ -380,3 +380,16 @@ reference is the most recent matching session before the selected week; records
 compare with all previous recorded sets. Volume is the entered kg × repetitions,
 without guessing body weight or multiplying dumbbell loads. Weekly observations
 are computed locally without a paid model call or a claim about recovery.
+
+
+### Session-local ramp warm-ups
+
+A row beginning with `gamme montante` prepares the immediately following movement
+in that session. The original Excel label and raw cells are retained. A contextual
+warm-up exercise ID keeps targets and work sets out of each other’s load history.
+Unresolved, hidden or document-only next rows are marked for review rather than
+resolved across session boundaries. Explicit name corrections take precedence.
+Existing programs are repaired idempotently on read; Excel history is reassigned
+only for the matching program/source row. Recorded workout IDs, sets, reps and
+weights stay unchanged. Workout displays resolve against their own session snapshot,
+so later program edits do not change the warm-up’s historical target.

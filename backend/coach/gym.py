@@ -16,7 +16,7 @@ from openpyxl import load_workbook
 from pydantic import BaseModel, Field
 from sqlalchemy import text
 
-from coach import db, exercise_catalog
+from coach import db, exercise_catalog, gym_warmups
 from coach.config import user_id
 
 lock = threading.RLock()
@@ -122,13 +122,56 @@ def performance_view(entry):
     }
 
 
+def repair_warmups(program):
+    if not program:
+        return program
+    with lock:
+        # Reload under the edit lock before persisting a correction during a read.
+        original = db.record("gym_program", program["id"]) or program
+        corrected = json.loads(json.dumps(original))
+        for day in corrected.get("days", []):
+            day["exercises"] = gym_warmups.resolve(day["exercises"])
+        if corrected == original:
+            return original
+        for day in corrected.get("days", []):
+            for item in day["exercises"]:
+                if not item.get("warmup_for_id"):
+                    continue
+                if not db.record("gym_exercise", item["exercise_id"]):
+                    db.upsert_record(
+                        "gym_exercise",
+                        item["exercise_id"],
+                        {
+                            "id": item["exercise_id"],
+                            "name": item["name"],
+                            "video_id": None,
+                        },
+                    )
+                history_key = item.get("imported_history_id")
+                entry = db.record("gym_excel_history", history_key) if history_key else {}
+                if (
+                    entry
+                    and entry.get("program_id") == corrected["id"]
+                    and entry.get("exercise_id") != item["exercise_id"]
+                ):
+                    # Only reassign this source row's Excel history, never logged workouts.
+                    db.upsert_record(
+                        "gym_excel_history",
+                        history_key,
+                        {**entry, "exercise_id": item["exercise_id"]},
+                    )
+        corrected["revision"] = original.get("revision", 1) + 1
+        db.upsert_record("gym_program", corrected["id"], corrected)
+        return corrected
+
+
 def repair_program(program):
     """Repair old display labels in place; preserve IDs and all actual workout logs."""
     if not program or program.get("display_version") == 2:
-        return program
+        return repair_warmups(program)
     source = db.record("gym_source", program["id"])
     if not source:
-        return program
+        return repair_warmups(program)
     book = load_workbook(io.BytesIO(base64.b64decode(source["base64"])), keep_links=False)
     try:
         for day in program["days"]:
@@ -168,7 +211,7 @@ def repair_program(program):
         db.upsert_record("gym_program", program["id"], program)
     finally:
         book.close()
-    return program
+    return repair_warmups(program)
 
 
 def document_view(item, program):
@@ -207,9 +250,26 @@ def workout_view(value, snapshot=None):
         return value
     program = repair_program(db.record("gym_program", value["program_id"]))
     items = {e["id"]: e for d in (program or {}).get("days", []) for e in d["exercises"]}
+    session_items = {e["id"]: e for e in gym_warmups.resolve(value["exercises"])}
     exercises = []
     for exercise in value["exercises"]:
         item = items.get(exercise["id"], {})
+        contextual = session_items[exercise["id"]]
+        warmup = (
+            {
+                k: contextual[k]
+                for k in ("name", "source_name", "is_warmup", "warmup_for_id", "warmup_target_name")
+                if k in contextual
+            }
+            if contextual.get("is_warmup")
+            else {}
+        )
+        contextual_id = (
+            contextual["exercise_id"]
+            if contextual.get("warmup_for_id")
+            else exercise["exercise_id"]
+        )
+        legacy_warmup = contextual_id != exercise["exercise_id"]
         labels = {
             k: item[k]
             for k in ("reps", "rm", "rest", "short_rest", "tempo", "sets_label", "warnings")
@@ -219,15 +279,32 @@ def workout_view(value, snapshot=None):
             {
                 **exercise,
                 **labels,
-                "excel_history": imported_history(exercise["exercise_id"])
-                or [performance_view(h) for h in exercise.get("excel_history", [])],
+                **warmup,
+                "catalogue_exercise_id": contextual_id,
+                "excel_history": imported_history(contextual_id)
+                or (
+                    []
+                    if legacy_warmup
+                    else [performance_view(h) for h in exercise.get("excel_history", [])]
+                ),
                 "reference": next(
-                    (h for h in history(exercise["exercise_id"]) if h["workout_id"] != value["id"]),
+                    (h for h in history(contextual_id) if h["workout_id"] != value["id"]),
                     None,
                 ),
             }
         )
-    decorated = [document_view(exercise_catalog.decorate(e, snapshot), program) for e in exercises]
+    decorated = [
+        document_view(
+            {
+                **exercise_catalog.decorate(
+                    {**e, "exercise_id": e["catalogue_exercise_id"]}, snapshot
+                ),
+                "exercise_id": e["exercise_id"],
+            },
+            program,
+        )
+        for e in exercises
+    ]
     if not value.get("finished_at") and not value.get("suggestions_applied"):
         for e in decorated:
             changed = (
@@ -646,7 +723,7 @@ def confirm(key, selection, *, rebuild=False):
             db.upsert_record("gym_excel_history", entry["id"], entry)
         db.upsert_record("gym_program", key, program)
         db.upsert_record("gym_import", key, {**source, "program_id": key})
-        return program
+        return repair_warmups(program)
 
 
 def history(exercise_id):

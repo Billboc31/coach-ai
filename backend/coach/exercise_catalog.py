@@ -493,6 +493,14 @@ def decorate(item, snapshot=None):
         )
     entry = catalogue().get(resolved["catalog_id"])
     movement, instruction = coaching(item["name"])
+    if item.get("is_warmup"):
+        target = item.get("warmup_target_name")
+        if target:
+            instruction = f"Échauffement pour {target} : augmente progressivement la charge au fil des séries prévues, avant les séries de travail."
+        else:
+            entry = None
+            resolved = {**resolved, "catalog_id": None, "method": "unresolved"}
+            instruction = "Échauffement en gamme montante : l’exercice suivant est à préciser dans cette séance."
     thumbnail = blue_thumbnail(entry)
     return {
         **item,
@@ -504,7 +512,12 @@ def decorate(item, snapshot=None):
         "legacy_recorded_catalog_id": item.get("catalog_id"),
         "recorded_catalog_id": current_id(item.get("catalog_id")),
         "recorded_canonical_name": item.get("canonical_name"),
-        "canonical_name": entry["name"] if entry else None,
+        "canonical_name": (
+            "Échauffement · "
+            + (entry["name"] if entry else item.get("warmup_target_name") or "Gamme montante")
+        )
+        if item.get("is_warmup")
+        else (entry["name"] if entry else None),
         "catalog_id": resolved["catalog_id"],
         "weight_convention": resolved["weight_convention"],
         "weight_context": resolved.get("weight_context", ""),
@@ -549,6 +562,17 @@ def set_binding(exercise_id, body):
 
 def compatible_ids(exercise_id):
     """Only confirmed compatible charge conventions pool distinct private aliases."""
+
+    def ramp(key):
+        return bool(
+            re.match(
+                r"^gamme montante(?:\s|$)",
+                normalized(db.record("gym_exercise", key).get("name", "")),
+            )
+        )
+
+    if ramp(exercise_id):
+        return [exercise_id]
     current = binding(exercise_id)
     if (
         not current["catalog_id"]
@@ -569,4 +593,4 @@ def compatible_ids(exercise_id):
                 "context": current.get("weight_context", ""),
             },
         ).all()
-    return sorted({exercise_id, *(r[0] for r in rows)})
+    return sorted({exercise_id, *(r[0] for r in rows if not ramp(r[0]))})
